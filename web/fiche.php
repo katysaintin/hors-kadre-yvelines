@@ -1,4 +1,15 @@
 <?php
+/*
+ * Hors Kadre — Data Exploration Tool
+ * Copyright (c) 2026 Katy Saintin
+ *
+ * Code: MIT License
+ * Content and analysis: CC BY-NC 4.0
+ *
+ * https://creativecommons.org/licenses/by-nc/4.0/
+ *
+ * Author: Katy Saintin 
+ */
 
 include('config.php');
 include('functions.php');
