@@ -213,3 +213,85 @@ L’épisode sur la création du site IVAL est à ajouter à la série de 5 épi
 
 *Généré le 19 avril 2026 — Session Claude — Complément à IA_Reference.md v3.0*  
 *E=HK² — Plus on creuse, plus ça explose.*
+
+
+---
+
+## SESSION DU 19 AVRIL 2026 — LANCEMENT PAGE FACEBOOK HORS KADRE
+
+### Avancements concrets
+
+- **Page Facebook Hors Kadre** : créée et live ✅
+  - Logo HK en photo de profil
+  - Bannière : femme asiatique réflexive + E=HK² en bulle de pensée + HORS KADRE + sous-titre + Saïgon-sur-Seine
+  - Description : "Hors Kadre - Ce que personne ne dit vraiment, sourcé et vécu"
+  - 3 publications au lancement
+
+- **Épisode 1 storytelling** : rédigé, validé, publié ✅
+  - Hook : "Tu connais cette personne qui ouvre 47 onglets…"
+  - Twist : "Ce que je prenais pour un bug ? C'était mon système d'exploitation."
+  - Signature : E=HK² — Ma théorie de la relativité éditoriale. Einstein avait la sienne. 💥
+  - Image générée (Copilot) : femme asiatique souriante au milieu d'onglets volants — palette HK ✅
+  - Relai profil perso FB : rédigé ✅
+
+- **Épisode 2 storytelling** : rédigé, validé ✅
+  - Thème : "J'ai toujours eu un pied dans deux mondes"
+  - Ajout clé : informaticiens vs scientifiques (plus précis que hommes/femmes)
+  - Hook émotionnel : "je n'avais ma place nulle part"
+  - Twist : "C'était mon angle de vue unique"
+  - Prompt image généré : femme entre labo scientifique (gauche) et environnement IT (droite), dos à dos ✅
+
+- **Épisode IVAL** : rédigé ✅ (à insérer entre épisode 3 et 4)
+  - "Ce que 40 ans de journalistes n'avaient pas fait, on l'a fait en un jour"
+  - Lien vers katysaintin.github.io/hors-kadre-yvelines
+  - Note : lien exceptionnellement en commentaire (cohérence assumée + humour 😄)
+
+### Décisions éditoriales prises
+
+- **Préfixe titre Mediapart** : "Angle mort :" — validé et intégré dans tous les titres du tableau de bord
+- **Chapô Mediapart** : ouvre systématiquement par "Hors Kadre décrypte ce que les médias n'abordent pas."
+- **Hashtags Facebook** : 3-5 max (conseil ChatGPT validé)
+- **Lien toujours dans le post** — jamais en commentaire (sauf exception IVAL assumée avec humour)
+- **E=HK²** intégré comme signature de clôture de chaque épisode storytelling
+- **"Détecté" plutôt que "diagnostiqué"** — la neurodiversité n'est pas une maladie
+- **"Cerveau Haut Potentiel"** en toutes lettres plutôt que sigle HPI — plus accessible
+
+### Formulations validées
+
+- ✅ "Ce que je prenais pour un bug ? C'était mon système d'exploitation." (épisodes 1 ET 2 en bis)
+- ✅ "E=HK² — Ma théorie de la relativité éditoriale. Einstein avait la sienne."
+- ✅ "Traduire les angles morts entre les mondes." (signature épisode 2)
+- ✅ "Cerveau Haut Potentiel / TDA détecté tardivement — comme la majorité des femmes."
+
+### Données clés
+
+- **Épisode 1 Parcoursup** (référence preuve sociale) : 57 commentaires / 6 partages / 20 réactions / 0 négative — sans hashtag, sans lien en commentaire
+- **Neurosciences HPI** (Rex Jung) : connectivité neuronale plus dense → pensée transversale naturelle
+- **Stat Facebook emojis** : 1-2 emojis stratégiques = +25% engagement / >4 = pénalisé algo
+
+### Fichiers produits
+
+Aucun .docx cette session — tout en Markdown et posts Facebook directement.
+
+### Pending — prochaine session
+
+- [ ] Publier épisode 2 Facebook + image Copilot
+- [ ] Générer image épisode 2 (prompt validé ✅)
+- [ ] Rédiger épisodes 3, 4, 5 storytelling
+- [ ] Publier article 2 (Algorithmes) sur Mediapart
+- [ ] Créer post relai profil perso pour épisode 2
+- [ ] Envisager Linktree pour centraliser tous les liens
+
+### Prompts storytelling générés en session
+
+**Prompt image épisode 1 :**
+> Flat cartoon illustration. A young woman with long dark hair and Asian features sits at a desk overwhelmed by an explosion of browser tabs flying everywhere. She looks simultaneously stressed and fascinated, slight smile. Navy blue, terracotta, off-white. No text.
+
+**Prompt image épisode 2 :**
+> Flat cartoon illustration. A young woman with long dark hair and Asian features stands with one foot on each side of a dividing line. Left: scientific research environment with physics equations, lab equipment (navy blue). Right: IT/computing environment with servers, code screens (terracotta). The two worlds have their backs turned to each other — she faces forward, calm and slightly amused. No text.
+
+---
+
+*Mis à jour le 19 avril 2026 — E=HK²*
+
+
