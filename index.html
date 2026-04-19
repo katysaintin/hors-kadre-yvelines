@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hors Kadre – Classement exploratoire des lycées des Yvelines</title>
+<style>
+:root {
+  --navy:#1B3A6B; --terra:#C4572A; --offwhite:#F5F0EB;
+  --gold:#B8860B; --gray:#555; --border:#d9d1ca; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;color:var(--navy);line-height:1.6}
+a{color:var(--terra)}
+.container{max-width:1100px;margin:0 auto;padding:24px 16px 60px}
+
+/* HEADER */
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);padding:20px 16px;margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand-text h1{font-size:1.8rem;color:var(--navy);letter-spacing:.5px}
+.brand-text .tagline{color:var(--gray);font-size:.9rem;font-style:italic}
+.brand-text .formula{font-weight:700;color:var(--terra);font-size:1.1rem}
+.links{margin-top:8px;font-size:.9rem}
+.links a{margin-right:14px}
+
+/* INTRO */
+.intro-panel{background:var(--offwhite);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:20px}
+.intro-panel h2{color:var(--terra);font-size:1.15rem;margin-bottom:10px}
+
+/* METHODE */
+.methode{background:#fff;border:1px solid var(--border);border-left:5px solid var(--navy);border-radius:8px;padding:14px;margin-bottom:20px;font-size:.93rem}
+.methode strong{color:var(--navy)}
+
+/* FILTERS */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;align-items:flex-end}
+.filters label{font-size:.88rem;color:var(--gray);display:block;margin-bottom:3px}
+.filters input,.filters select{padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:Georgia,serif;color:var(--navy);background:#fff}
+.btn{padding:8px 18px;background:var(--terra);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:.9rem;font-family:Georgia,serif;font-weight:600}
+.btn-reset{background:#fff;color:var(--navy);border:1px solid var(--border)}
+.result-info{font-size:.88rem;color:var(--gray);margin-bottom:10px}
+
+/* TABLE */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{background:var(--navy);color:#fff;padding:10px 8px;text-align:left;cursor:pointer;white-space:nowrap;user-select:none}
+th:hover{background:#254d8f}
+th.sorted-asc::after{content:" ▲"}
+th.sorted-desc::after{content:" ▼"}
+td{padding:9px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:nth-child(even) td{background:#faf7f4}
+tr:hover td{background:#f0ebe4}
+.rank{font-weight:700;color:var(--navy);text-align:center}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.82rem;font-weight:600}
+.badge-pos{background:#d4edda;color:#155724}
+.badge-neg{background:#f8d7da;color:#721c24}
+.badge-neu{background:#e2e3e5;color:#383d41}
+.btn-fiche{display:inline-block;padding:3px 10px;background:var(--offwhite);border:1px solid var(--border);border-radius:6px;font-size:.8rem;color:var(--navy);text-decoration:none;white-space:nowrap}
+.btn-fiche:hover{background:var(--navy);color:#fff}
+.nom-cell{min-width:180px}
+.nom-cell .nom{font-weight:600;color:var(--navy)}
+.nom-cell .uai{font-size:.75rem;color:var(--gray)}
+.nom-cell .src{font-size:.75rem}
+
+/* STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}
+.stat-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center}
+.stat-card .val{font-size:1.6rem;font-weight:700;color:var(--terra)}
+.stat-card .lbl{font-size:.82rem;color:var(--gray);margin-top:4px}
+
+/* FOOTER */
+footer{text-align:center;color:var(--gray);font-size:.82rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
+
+@media(max-width:600px){
+  th,td{padding:7px 5px;font-size:.8rem}
+  .filters{flex-direction:column}
+  .brand-text h1{font-size:1.4rem}
+}
+</style>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <div class="formula">E=HK²</div>
+        <h1>HORS KADRE</h1>
+        <div class="tagline">Ce que personne ne dit vraiment, sourcé et vécu — Saïgon-sur-Seine</div>
+        <div class="links">
+          <a href="https://www.facebook.com/HorsKadre" target="_blank">Page Facebook</a>
+          <a href="https://blogs.mediapart.fr/katy-ho/blog/150426/parcoursup-ce-que-ni-les-classements-des-lycees-ni-les-enseignants-ne-vous-disent" target="_blank">Article Mediapart — Parcoursup</a>
+          <a href="http://katy.ho.free.fr" target="_blank">Outil national complet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="intro-panel">
+    <h2>Classement exploratoire des lycées des Yvelines — données IVAL 2025</h2>
+    <p>Cette page propose une <strong>lecture exploratoire</strong> de données publiques officielles sur les lycées du département des Yvelines (78). Il ne s'agit pas d'un classement officiel. Les données proviennent du Ministère de l'Éducation nationale (IVAL 2025).</p>
+  </div>
+
+  <div class="methode">
+    <strong>Méthode :</strong>
+    <strong>Évolution des effectifs</strong> = effectif de Terminale moins effectif de Seconde.
+    <strong>Mentions pondérées</strong> = taux de mentions × √(effectif de Terminale) — pour comparer équitablement des établissements de tailles différentes.
+    <strong>Tri par défaut :</strong> évolution des effectifs décroissante (attractivité).
+    <em>Pondération indicateur global de référence : 40% IVAL, 25% évolution des effectifs, 15% taux de réussite au bac, 20% mentions pondérées.</em>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="val" id="stat-total">87</div><div class="lbl">lycées dans les Yvelines</div></div>
+    <div class="stat-card"><div class="val" id="stat-gains">—</div><div class="lbl">lycées en hausse d'effectifs</div></div>
+    <div class="stat-card"><div class="val" id="stat-pertes">—</div><div class="lbl">lycées en perte d'effectifs</div></div>
+    <div class="stat-card"><div class="val" id="stat-paradox">—</div><div class="lbl">≥99% bac & perte >20 élèves</div></div>
+  </div>
+
+  <div class="filters">
+    <div>
+      <label>Nom du lycée</label>
+      <input type="text" id="f-nom" placeholder="Rechercher..." oninput="applyFilters()">
+    </div>
+    <div>
+      <label>Ville</label>
+      <input type="text" id="f-ville" placeholder="Ville..." oninput="applyFilters()">
+    </div>
+    <div>
+      <label>Statut</label>
+      <select id="f-statut" onchange="applyFilters()">
+        <option value="">Tous</option>
+        <option value="Public">Public</option>
+        <option value="Privé">Privé</option>
+      </select>
+    </div>
+    <div>
+      <label>Tri par</label>
+      <select id="f-sort" onchange="applyFilters()">
+        <option value="evolution-desc">Évolution effectifs ↓</option>
+        <option value="evolution-asc">Évolution effectifs ↑</option>
+        <option value="taux_bac-desc">Taux bac ↓</option>
+        <option value="taux_bac-asc">Taux bac ↑</option>
+        <option value="ival-desc">IVAL ↓</option>
+        <option value="ival-asc">IVAL ↑</option>
+        <option value="score_mentions-desc">Mentions pondérées ↓</option>
+        <option value="taux_acces_seconde-desc">Taux d'accès ↓</option>
+      </select>
+    </div>
+    <div>
+      <button class="btn btn-reset" onclick="resetFilters()">Réinitialiser</button>
+    </div>
+  </div>
+
+  <div class="result-info" id="result-info"></div>
+
+  <div class="table-wrap">
+    <table id="main-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Lycée</th>
+          <th>Ville</th>
+          <th>Statut</th>
+          <th>IVAL</th>
+          <th>Bac %</th>
+          <th>Mentions %</th>
+          <th>Seconde</th>
+          <th>Terminale</th>
+          <th>Évolution</th>
+          <th>Accès 2nde→Bac</th>
+          <th>Mentions pond.</th>
+          <th>Fiche</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:20px;padding:14px;background:#fff;border:1px solid var(--border);border-radius:8px;font-size:.85rem;color:var(--gray)">
+    <strong>Sources :</strong> Les données proviennent des publications publiques du Ministère de l'Éducation nationale : indicateurs IVAL 2025, taux de réussite au bac, taux de mentions, indicateurs d'accès au bac et effectifs.<br>
+    Les champs calculés affichés sur cette page relèvent d'un modèle d'analyse indépendant.<br>
+    Cette page ne comporte pas d'espace de commentaire et affiche uniquement des données publiques agrégées.<br>
+    <strong>© Katy Ho — Hors Kadre 2026</strong> — Analyse exploratoire indépendante, non officielle.
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    Hors Kadre — Ce que personne ne dit vraiment, sourcé et vécu — katy.ho.free.fr
+  </div>
+</footer>
+
+<script>
+var DATA = [{"id":1,"nom":"LYCEE MARIE CURIE","ville":"VERSAILLES","uai":"0780537G","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-1.0,"taux_bac":96.0,"taux_mentions":49.0,"taux_acces_seconde":91.0,"effectif_seconde":311,"effectif_premiere":418,"effectif_terminale":469,"evolution":158,"score_mentions":1061.61,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780537G&year=2025"},{"id":2,"nom":"LYCEE NOTRE DAME DU GRANDCHAMP","ville":"VERSAILLES","uai":"0780627T","departement":"YVELINES","academie":"VERSAILLES","statut":"Priv\u00e9","ival":1.0,"taux_bac":100.0,"taux_mentions":91.0,"taux_acces_seconde":98.0,"effectif_seconde":281,"effectif_premiere":362,"effectif_terminale":372,"evolution":91,"score_mentions":1755.49,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780627T&year=2025"},{"id":3,"nom":"LYCEE JEAN-BAPTISTE POQUELIN (GENERAL ET TECHNO.)","ville":"SAINT GERMAIN EN LAYE","uai":"0780519L","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-1.0,"taux_bac":93.0,"taux_mentions":67.0,"taux_acces_seconde":89.0,"effectif_seconde":134,"effectif_premiere":195,"effectif_terminale":202,"evolution":68,"score_mentions":951.55,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780519L&year=2025"},{"id":4,"nom":"LYCEE ST EXUPERY","ville":"MANTES LA JOLIE","uai":"0780504V","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":2.0,"taux_bac":95.0,"taux_mentions":63.0,"taux_acces_seconde":86.0,"effectif_seconde":441,"effectif_premiere":524,"effectif_terminale":498,"evolution":57,"score_mentions":1406.15,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780504V&year=2025"},{"id":5,"nom":"LYCEE DE VILLAROY","ville":"GUYANCOURT","uai":"0780652V","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-6.0,"taux_bac":89.0,"taux_mentions":49.0,"taux_acces_seconde":89.0,"effectif_seconde":263,"effectif_premiere":329,"effectif_terminale":316,"evolution":53,"score_mentions":870.88,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780652V&year=2025"},{"id":6,"nom":"LYCEE EMILIE DE BRETEUIL (GENERAL ET TECHNO.)","ville":"MONTIGNY LE BRETONNEUX","uai":"0781819D","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-2.0,"taux_bac":95.0,"taux_mentions":67.0,"taux_acces_seconde":90.0,"effectif_seconde":270,"effectif_premiere":313,"effectif_terminale":316,"evolution":46,"score_mentions":1191.02,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0781819D&year=2025"},{"id":7,"nom":"LYCEE SAINT THOMAS DE VILLENEUVE","ville":"SAINT GERMAIN EN LAYE","uai":"0780611Z","departement":"YVELINES","academie":"VERSAILLES","statut":"Priv\u00e9","ival":1.0,"taux_bac":100.0,"taux_mentions":87.0,"taux_acces_seconde":99.0,"effectif_seconde":129,"effectif_premiere":163,"effectif_terminale":170,"evolution":41,"score_mentions":1133.95,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780611Z&year=2025"},{"id":8,"nom":"LYCEE PIERRE CORNEILLE (GENERAL ET TECHNO.)","ville":"LA CELLE SAINT CLOUD","uai":"0780488C","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":0.0,"taux_bac":96.0,"taux_mentions":75.0,"taux_acces_seconde":90.0,"effectif_seconde":322,"effectif_premiere":355,"effectif_terminale":341,"evolution":19,"score_mentions":1384.64,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780488C&year=2025"},{"id":9,"nom":"LYCEE DESCARTES","ville":"MONTIGNY LE BRETONNEUX","uai":"0781512V","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":0.0,"taux_bac":98.0,"taux_mentions":73.0,"taux_acces_seconde":92.0,"effectif_seconde":312,"effectif_premiere":310,"effectif_terminale":313,"evolution":1,"score_mentions":1291.5,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0781512V&year=2025"},{"id":10,"nom":"LYCEE MANSART","ville":"SAINT CYR L ECOLE","uai":"0780539J","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-1.0,"taux_bac":95.0,"taux_mentions":65.0,"taux_acces_seconde":89.0,"effectif_seconde":267,"effectif_premiere":283,"effectif_terminale":271,"evolution":4,"score_mentions":1069.76,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780539J&year=2025"},{"id":11,"nom":"LYCEE SAINT-EXUPERY","ville":"MONTIGNY LE BRETONNEUX","uai":"0781974X","departement":"YVELINES","academie":"VERSAILLES","statut":"Priv\u00e9","ival":1.0,"taux_bac":100.0,"taux_mentions":75.0,"taux_acces_seconde":97.0,"effectif_seconde":117,"effectif_premiere":124,"effectif_terminale":116,"evolution":-1,"score_mentions":807.78,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0781974X&year=2025"},{"id":12,"nom":"LYCEE JEAN MONNET (GENERAL ET TECHNO.)","ville":"LA QUEUE LES YVELINES","uai":"0780497N","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-2.0,"taux_bac":96.0,"taux_mentions":67.0,"taux_acces_seconde":88.0,"effectif_seconde":341,"effectif_premiere":334,"effectif_terminale":339,"evolution":-2,"score_mentions":1233.03,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780497N&year=2025"},{"id":13,"nom":"LYCEE HOCHE","ville":"VERSAILLES","uai":"0780596J","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":0.0,"taux_bac":99.0,"taux_mentions":86.0,"taux_acces_seconde":88.0,"effectif_seconde":415,"effectif_premiere":388,"effectif_terminale":377,"evolution":-38,"score_mentions":1669.0,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780596J&year=2025"},{"id":14,"nom":"LYCEE LOUIS DE BROGLIE","ville":"MARLY LE ROI","uai":"0780503U","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":0.0,"taux_bac":99.0,"taux_mentions":82.0,"taux_acces_seconde":87.0,"effectif_seconde":305,"effectif_premiere":278,"effectif_terminale":266,"evolution":-39,"score_mentions":1337.5,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780503U&year=2025"},{"id":15,"nom":"LYCEE BLANCHE DE CASTILLE","ville":"LE CHESNAY ROCQUENCOURT","uai":"0780570E","departement":"YVELINES","academie":"VERSAILLES","statut":"Priv\u00e9","ival":-1.0,"taux_bac":99.0,"taux_mentions":86.0,"taux_acces_seconde":90.0,"effectif_seconde":295,"effectif_premiere":262,"effectif_terminale":245,"evolution":-50,"score_mentions":1346.08,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780570E&year=2025"},{"id":16,"nom":"LYCEE JEANNE D'ALBRET","ville":"SAINT GERMAIN EN LAYE","uai":"0780520M","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":0.0,"taux_bac":99.0,"taux_mentions":80.0,"taux_acces_seconde":88.0,"effectif_seconde":438,"effectif_premiere":407,"effectif_terminale":387,"evolution":-51,"score_mentions":1573.9,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780520M&year=2025"},{"id":17,"nom":"LYCEE SAINT FRANCOIS D'ASSISE","ville":"MONTIGNY LE BRETONNEUX","uai":"0781899R","departement":"YVELINES","academie":"VERSAILLES","statut":"Priv\u00e9","ival":0.0,"taux_bac":100.0,"taux_mentions":97.0,"taux_acces_seconde":92.0,"effectif_seconde":228,"effectif_premiere":198,"effectif_terminale":173,"evolution":-55,"score_mentions":1275.84,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0781899R&year=2025"},{"id":18,"nom":"LYCEE LA BRUYERE","ville":"VERSAILLES","uai":"0780530Z","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-2.0,"taux_bac":97.0,"taux_mentions":73.0,"taux_acces_seconde":83.0,"effectif_seconde":414,"effectif_premiere":395,"effectif_terminale":384,"evolution":-30,"score_mentions":1430.96,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780530Z&year=2025"},{"id":19,"nom":"LYCEE CHARLES DE GAULLE","ville":"POISSY","uai":"0780484X","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":1.0,"taux_bac":98.0,"taux_mentions":72.0,"taux_acces_seconde":89.0,"effectif_seconde":412,"effectif_premiere":381,"effectif_terminale":352,"evolution":-60,"score_mentions":1350.62,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780484X&year=2025"},{"id":20,"nom":"LYCEE INTERNATIONAL","ville":"SAINT GERMAIN EN LAYE","uai":"0780617F","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":0.0,"taux_bac":100.0,"taux_mentions":85.0,"taux_acces_seconde":91.0,"effectif_seconde":363,"effectif_premiere":364,"effectif_terminale":347,"evolution":-16,"score_mentions":1583.57,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780617F&year=2025"},{"id":21,"nom":"LYCEE NOTRE DAME","ville":"SAINT GERMAIN EN LAYE","uai":"0780609X","departement":"YVELINES","academie":"VERSAILLES","statut":"Priv\u00e9","ival":0.0,"taux_bac":100.0,"taux_mentions":88.0,"taux_acces_seconde":96.0,"effectif_seconde":212,"effectif_premiere":204,"effectif_terminale":192,"evolution":-20,"score_mentions":1219.39,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780609X&year=2025"},{"id":22,"nom":"LYCEE NOTRE DAME","ville":"VERNEUIL SUR SEINE","uai":"0780628U","departement":"YVELINES","academie":"VERSAILLES","statut":"Priv\u00e9","ival":1.0,"taux_bac":100.0,"taux_mentions":88.0,"taux_acces_seconde":93.0,"effectif_seconde":353,"effectif_premiere":351,"effectif_terminale":327,"evolution":-26,"score_mentions":1592.59,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780628U&year=2025"},{"id":23,"nom":"LYCEE ALAIN","ville":"LE VESINET","uai":"0780461Y","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-1.0,"taux_bac":98.0,"taux_mentions":75.0,"taux_acces_seconde":87.0,"effectif_seconde":463,"effectif_premiere":379,"effectif_terminale":330,"evolution":-133,"score_mentions":1362.92,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0780461Y&year=2025"},{"id":24,"nom":"LYCEE LES PIERRES VIVES","ville":"CARRIERES SUR SEINE","uai":"0781437B","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":1.0,"taux_bac":99.0,"taux_mentions":82.0,"taux_acces_seconde":89.0,"effectif_seconde":516,"effectif_premiere":462,"effectif_terminale":405,"evolution":-111,"score_mentions":1649.79,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0781437B&year=2025"},{"id":25,"nom":"LYCEE LES SEPT MARES","ville":"MAUREPAS","uai":"0781061P","departement":"YVELINES","academie":"VERSAILLES","statut":"Public","ival":-1.0,"taux_bac":97.0,"taux_mentions":65.0,"taux_acces_seconde":80.0,"effectif_seconde":335,"effectif_premiere":254,"effectif_terminale":226,"evolution":-109,"score_mentions":977.3,"fiche_ival_url":"https://www.education.gouv.fr/recherche-ival?city=&department=&domain=All&name=&page=0&sector=All&series=All&type=&uai=0781061P&year=2025"}];
+
+var filtered = DATA.slice();
+var sortField = 'evolution';
+var sortDir = 'desc';
+
+function fmt(v, d) {
+  if (v === null || v === undefined) return '-';
+  return parseFloat(v).toFixed(d || 0);
+}
+
+function evoBadge(v) {
+  if (v === null || v === undefined) return '<span class="badge badge-neu">-</span>';
+  var cls = v > 0 ? 'badge-pos' : v < 0 ? 'badge-neg' : 'badge-neu';
+  var txt = v > 0 ? '+' + v : v;
+  return '<span class="badge ' + cls + '">' + txt + '</span>';
+}
+
+function renderTable() {
+  var tbody = document.getElementById('table-body');
+  var html = '';
+  if (filtered.length === 0) {
+    html = '<tr><td colspan="13" style="text-align:center;padding:20px;color:#888">Aucun résultat</td></tr>';
+  } else {
+    for (var i = 0; i < filtered.length; i++) {
+      var d = filtered[i];
+      var rowBg = i % 2 === 1 ? 'style="background:#faf7f4"' : '';
+      var ficheLink = d.fiche_ival_url ? '<a class="btn-fiche" href="' + d.fiche_ival_url + '" target="_blank" rel="noopener">Fiche officielle</a>' : '-';
+      html += '<tr>' +
+        '<td class="rank">' + (i+1) + '</td>' +
+        '<td class="nom-cell"><div class="nom">' + d.nom + '</div><div class="uai">UAI ' + d.uai + '</div><div class="src">Source 2025</div></td>' +
+        '<td>' + d.ville + '</td>' +
+        '<td>' + d.statut + '</td>' +
+        '<td>' + fmt(d.ival, 1) + '</td>' +
+        '<td>' + fmt(d.taux_bac, 0) + '%</td>' +
+        '<td>' + fmt(d.taux_mentions, 0) + '%</td>' +
+        '<td>' + (d.effectif_seconde || '-') + '</td>' +
+        '<td>' + (d.effectif_terminale || '-') + '</td>' +
+        '<td>' + evoBadge(d.evolution) + '</td>' +
+        '<td>' + fmt(d.taux_acces_seconde, 0) + '%</td>' +
+        '<td>' + fmt(d.score_mentions, 0) + '</td>' +
+        '<td>' + ficheLink + '</td>' +
+        '</tr>';
+    }
+  }
+  tbody.innerHTML = html;
+  document.getElementById('result-info').textContent = filtered.length + ' lycée(s) affiché(s)';
+  updateStats();
+}
+
+function updateStats() {
+  var gains = filtered.filter(function(d){return d.evolution > 0;}).length;
+  var pertes = filtered.filter(function(d){return d.evolution < 0;}).length;
+  var paradox = filtered.filter(function(d){return d.taux_bac >= 99 && d.evolution < -20;}).length;
+  document.getElementById('stat-total').textContent = filtered.length;
+  document.getElementById('stat-gains').textContent = gains;
+  document.getElementById('stat-pertes').textContent = pertes;
+  document.getElementById('stat-paradox').textContent = paradox;
+}
+
+function applyFilters() {
+  var nom = document.getElementById('f-nom').value.toLowerCase();
+  var ville = document.getElementById('f-ville').value.toLowerCase();
+  var statut = document.getElementById('f-statut').value;
+  var sortVal = document.getElementById('f-sort').value.split('-');
+  sortField = sortVal[0];
+  sortDir = sortVal[1] || 'desc';
+
+  filtered = DATA.filter(function(d) {
+    if (nom && d.nom.toLowerCase().indexOf(nom) < 0) return false;
+    if (ville && d.ville.toLowerCase().indexOf(ville) < 0) return false;
+    if (statut && d.statut !== statut) return false;
+    return true;
+  });
+
+  filtered.sort(function(a, b) {
+    var va = a[sortField], vb = b[sortField];
+    if (va === null || va === undefined) return 1;
+    if (vb === null || vb === undefined) return -1;
+    return sortDir === 'desc' ? vb - va : va - vb;
+  });
+
+  renderTable();
+}
+
+function resetFilters() {
+  document.getElementById('f-nom').value = '';
+  document.getElementById('f-ville').value = '';
+  document.getElementById('f-statut').value = '';
+  document.getElementById('f-sort').value = 'evolution-desc';
+  applyFilters();
+}
+
+applyFilters();
+</script>
+</body>
+</html>
