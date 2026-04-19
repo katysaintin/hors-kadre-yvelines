@@ -1,5 +1,17 @@
 <?php
 
+/*
+ * Hors Kadre — Data Exploration Tool
+ * Copyright (c) 2026 Katy Saintin
+ *
+ * Code: MIT License
+ * Content and analysis: CC BY-NC 4.0
+ *
+ * https://creativecommons.org/licenses/by-nc/4.0/
+ *
+ * Author: Katy Saintin 
+ */
+ 
 include('config.php');
 include('functions.php');
 
@@ -244,10 +256,10 @@ function fmt_signed_local($value)
 
 function build_page_url($pageNumber)
 {
-    $params = $_GET;
-    $params['page'] = $pageNumber;
+	$params = $_GET;
+    $params['page'] = intval($pageNumber);
 
-    return '?' . http_build_query($params);
+    return '?' . build_query_string($params);
 }
 
 function sort_label($sort)
@@ -895,7 +907,13 @@ $currentOrderLabel = order_label($order);
 
     <p class="footer-note">
         Cette page ne comporte pas d'espace de commentaire et affiche uniquement des donnees publiques agregees.
-    </p>
+	</p>
+	
+	<p style="font-size:12px;color:#555;">
+	©2026 Katy Ho — Hors Kadre  
+	Données publiques — Traitement et analyse indépendante  
+	Réutilisation autorisée avec attribution
+	</p>
 
 </div>
 </body>
