@@ -132,3 +132,23 @@ function fetch_all_assoc($result)
 
     return $rows;
 }
+
+function build_query_string($params)
+{
+    $query = '';
+
+    foreach ($params as $key => $value) {
+
+        if ($value === '' || $value === null) {
+            continue;
+        }
+
+        if ($query !== '') {
+            $query .= '&';
+        }
+
+        $query .= urlencode($key) . '=' . urlencode($value);
+    }
+
+    return $query;
+}
