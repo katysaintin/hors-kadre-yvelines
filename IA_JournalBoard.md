@@ -292,6 +292,85 @@ Aucun .docx cette session — tout en Markdown et posts Facebook directement.
 
 ---
 
+## SESSION DU 19 AVRIL 2026 — Aidants neurodivergents, Rudy Simone, pitch médias
+
+### Avancements concrets
+
+- **Article #10 — "Et toi, qui prend soin de toi ?"** (Neurodiversité / Aidance)
+  - Statut : RÉDIGÉ → version finale v3 corrigée suite analyse ChatGPT
+  - Fichier produit : `aidant_naturel_v3_final.md`
+  - Corrections intégrées : cadrage "vécu vs science", nuance neurosciences, phrase de portée, généralisations atténuées
+  - Complet avec titre Mediapart (78 car.), chapô (397 car.), mots-clés, prompt illustration
+
+- **Synthèse Rudy Simone** — *22 Things a Woman Must Know If She Loves a Man with Asperger's Syndrome*
+  - Lecture intégrale du PDF (141 pages, 1558 lignes extraites)
+  - Synthèse reformulée en français (22 points + concepts clés + note personnelle)
+  - Fichier produit : `synthese_rudy_simone_fr.md`
+  - Statut légal vérifié : synthèse reformulée = légal / traduction mot à mot = non
+
+- **Traductions anglaises** des deux articles
+  - `article_caregivers_EN.md` — traduction article #10
+  - `rudy_simone_reading_EN.md` — traduction synthèse Rudy Simone
+  - Usage : liens pour Rudy Simone et Jessica Kingsley Publishers uniquement (pas de publication)
+
+- **Pitch médias** rédigés — 2 versions
+  - À Rudy Simone directement (email personnel, anglais)
+  - À Jessica Kingsley Publishers / droits (rights@jkp.com, anglais, ISBN inclus)
+  - Proposition : adaptation française + coécriture d'un 2e volet (angle aidant neurodivergent lui-même)
+
+- **Pitch Zèbres & Cie** rédigé — 2 versions
+  - Destinataires nommés : Céline Lis-Raoux (directrice rédaction) + Claudine Proust (rédactrice en chef santé)
+  - Timing recommandé : envoi février/mars pour numéro juin (Journée nationale TDAH 12 juin)
+
+- **Résumé + mots-clés Mediapart** validés pour article #10
+
+### Données clés produites
+
+- 40% des aidants souffrent d'anxiété et dépression (CRAIF)
+- 1 000 heures supplémentaires/an pour parents d'enfants autistes (étude suédoise)
+- 50% comorbidité TSA/TDAH (INSERM) — argument clé pour pitch JKP
+- Zèbres & Cie : 10 000 abonnés, trimestriel, lancé oct. 2024, patronage ministère de la santé
+- Rudy Simone contact : help4aspergers.com
+- JKP droits : rights@jkp.com
+
+- **Formulations validées :**
+  - ✅ "de nombreuses personnes la vivent, souvent en silence" (vs "des milliers")
+  - ✅ "mécanismes largement décrits en neurosciences" (vs "réalité mesurable")
+  - ✅ "Ce modèle est une simplification utile, pas une équation absolue"
+  - ✅ "aidance réciproque dans les systèmes neurodivergents" — à ÉVITER (jargon froid, ne parle pas au lectorat)
+  - ✅ Phrase de cadrage intro : "Il part d'une expérience vécue de l'intérieur — pas d'une étude généralisable."
+
+- **Décisions éditoriales actées :**
+  - ChatGPT = relecteur rigueur scientifique uniquement, pas rédacteur
+  - Articles publiés en français sur Mediapart / versions anglaises = usage externe exclusivement
+  - Projet livre explorée : coécriture avec Rudy Simone prioritaire sur écriture solo
+
+### Fichiers produits
+
+| Fichier | Contenu | Statut |
+|---|---|---|
+| `aidant_naturel_v3_final.md` | Article #10 version finale corrigée + éléments Mediapart | PRÊT À PUBLIER |
+| `synthese_rudy_simone_fr.md` | Synthèse 22 points Rudy Simone en français | COMPLET |
+| `article_caregivers_EN.md` | Traduction anglaise article #10 | COMPLET |
+| `rudy_simone_reading_EN.md` | Traduction anglaise synthèse Rudy Simone | COMPLET |
+
+### Pending — à faire en prochaine session
+
+1. **Publier article #10** sur Mediapart (lien à ajouter au JournalBoard une fois live)
+2. **Envoyer pitch à Zèbres & Cie** — après publication Mediapart (lien à inclure)
+3. **Envoyer pitch à Rudy Simone** — après publication Mediapart
+4. **Envoyer à JKP** (rights@jkp.com) en parallèle
+5. **Mettre à jour statut article #10** dans tableau de bord : EN COURS → RÉDIGÉ puis PUBLIÉ
+6. **Article #11** (détection tardive femmes HPI/TDA/Autisme) — démarrer plan
+
+### Contexte session
+
+- Document de référence utilisé : HorsKadre_Reference_v2.1 (Word)
+- Analyse comparative ChatGPT intégrée et arbitrée
+- Repositionnement éditorial confirmé : "vécu structuré + vulgarisation sourcée" — pas essai académique
+
+---
 *Mis à jour le 19 avril 2026 — E=HK²*
+
 
 
