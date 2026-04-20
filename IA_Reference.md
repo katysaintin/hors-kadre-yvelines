@@ -101,8 +101,11 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | Gris | #555555 | Sources, notes, textes secondaires |
 
 **Style visuel**
-- Flat/Cartoon → articles analytiques, humoristiques, sociétaux
-- Réaliste/Photo → articles intimes, témoignages, deuil, maladie
+| Style | Registre | Exemples d'articles |
+| --- | --- | --- |
+| Flat/Cartoon | Analytique, sociétal, données, humour | IVAL, Parcoursup, filières techno, biais cognitifs |
+| Realistic illustration | Intime, témoignage, aidance, vécu | Aidants, neurodiversité, deuil, maladie |
+| Dramatique/grain | Dénonciation, injustice, systémique | pHARe, violences institutionnelles, harcèlement |
 
 **Thématiques**
 1. **NEURODIVERSITÉ & INVISIBILITÉ** — TDAH, HPI, autisme, aidants, femmes non diagnostiquées
