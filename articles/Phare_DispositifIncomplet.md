@@ -125,13 +125,14 @@ Il y a donc un écart textuel entre ce que la loi permet de poursuivre et ce que
 
 ### Ce que le dispositif couvre — et ne couvre pas
 
-| Type de situation | Dispositif mobilisable | Couverture |
-|:------------------|:-----------------------|:----------:|
-| Élève → Élève | pHARe | ✅ Couvert |
-| Cyberharcèlement entre élèves | pHARe + 3018 | ✅ Couvert |
-| Adulte (enseignant) → Élève | Procédures internes RH | ⚠️ Lacune structurelle |
-| Situation hybride (élèves + adulte) | Aucun protocole unifié | ⚠️ Lacune structurelle |
-| Signalement parental formalisé sans réponse | Aucun circuit dédié | ⚠️ Lacune structurelle |
+| Type de situation | Dispositif mobilisable | Voie institutionnelle | Couverture |
+|:------------------|:-----------------------|:---------------------:|:----------:|
+| Élève → Élève | pHARe | Protocole établissement | ✅ Couvert |
+| Cyberharcèlement entre élèves | pHARe + 3018 | Protocole établissement + e-Enfance | ✅ Couvert |
+| Adulte (enseignant) → Élève | Procédures internes RH | Hiérarchie directe / Rectorat | ⚠️ Lacune structurelle |
+| Situation hybride (élèves + adulte) | Aucun protocole unifié | Multiple, non coordonnée | ⚠️ Lacune structurelle |
+| Parent → Enseignant | Protection fonctionnelle | Hiérarchie / Direction | ✅ Couvert |
+| Signalement parental formalisé sans réponse | Aucun circuit dédié | Protocole établissement | ⚠️ Lacune structurelle |
 
 *(Tableau complet disponible en format image dans le fichier .docx joint)*
 
