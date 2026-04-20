@@ -1,291 +1,217 @@
-Harcèlement scolaire : ce que pHARe refuse encore de voir
+# Angle mort : ce que le programme pHARe refuse encore de voir
 
-Chapô
+*Harcèlement scolaire, violence institutionnelle et parents ingérants : quand le dispositif national protège le système plutôt que les élèves.*
 
-Le programme pHARe est présenté comme la réponse centrale à un fléau qui touche des milliers d’élèves. Mais derrière les chiffres et les campagnes, une question dérange : que fait-on des violences qui ne rentrent pas dans ses cases ? Enquête sur un angle mort institutionnel, à la lumière de l’affaire Evaëlle.
+*Par Katy Ho — Hors Kadre | Avril 2026*
 
-⸻
+---
 
-Une politique publique construite sur un récit partiel
+**Chapô** — Le programme pHARe est présenté comme la réponse centrale au harcèlement scolaire. Derrière les protocoles et les chiffres, une lacune structurelle persiste : que fait-on des violences qui ne rentrent pas dans ses cases ? Et que fait-on quand c'est l'institution elle-même qui bloque ? Sept ans de mandat de représentante de parents d'élèves. Un constat documenté.
 
-Le récit officiel est clair : le harcèlement scolaire, ce sont des élèves qui s’en prennent à d’autres élèves.
+---
 
-Les chiffres sont connus :
+## 1. Evaëlle — ce que la justice a dit que l'institution n'a pas voulu entendre
 
-* environ 5 % des collégiens subissent un harcèlement sévère
-* près d’1 enfant sur 6 en primaire est concerné
-* le suicide est la deuxième cause de mortalité chez les adolescents
+Le 21 juin 2019, Evaëlle Dupuis, 11 ans, se suicide après des mois de souffrance au collège Isabelle-Autissier d'Herblay-sur-Seine.
 
-Depuis les suicides médiatisés — Evaëlle (2019), Lucas (2023), Nicolas (Poissy) — la réponse publique s’est structurée.
+L'instruction a établi qu'elle était victime à la fois de camarades et de son enseignante de français. Selon les témoignages recueillis, cette enseignante avait notamment organisé une séance de "vie de classe" sur le thème du harcèlement, au cours de laquelle Evaëlle avait été placée au centre de l'attention de toute la classe. Exposée devant ses camarades, elle avait fondu en larmes. L'enseignante s'était énervée. Evaëlle était rentrée ce soir-là en disant à ses parents que c'était la "pire journée de sa vie".
 
-Mais cette réponse repose sur une définition étroite.
+Le 10 avril 2025, le tribunal correctionnel de Pontoise relaxe l'enseignante. Le parquet fait appel. Le 13 avril 2026, la cour d'appel de Versailles condamne l'enseignante à **un an de prison avec sursis** et une **interdiction définitive d'enseigner**. Le rectorat est condamné à verser **100 000 euros** de dommages et intérêts aux parties civiles.
 
-Le harcèlement scolaire est pensé, organisé et traité comme un problème entre élèves.
+Sept ans de procédure. Une famille qui a dû se battre contre l'institution autant que contre le dossier judiciaire.
 
-⸻
+Ce que cette affaire révèle n'est pas exceptionnel. C'est systémique.
 
-Evaëlle : un cas qui dérange le cadre
+---
 
-Le 21 juin 2019, Evaëlle, 11 ans, se suicide après des mois de souffrance.
-Selon l’instruction, elle était victime à la fois d’élèves et d’une enseignante, accusée d’avoir contribué à son isolement et à son humiliation.  
+## 2. Ce que les chiffres mesurent — et ce qu'ils occultent
 
-En avril 2026, la cour d’appel condamne cette enseignante à un an de prison avec sursis et une interdiction définitive d’enseigner.  
+Selon le baromètre national DEPP de novembre 2024, **5 % des collégiens**, **3 % des écoliers** (CE2-CM2) et **3 % des lycéens** se déclarent en situation de harcèlement répété. Ces taux sont stables.
 
-Ce dossier révèle un point central :
+Ces chiffres reposent sur une grille d'auto-évaluation mesurant exclusivement les atteintes subies *de la part d'autres élèves*.
 
-la violence scolaire peut être un continuum, impliquant à la fois élèves et adultes.
+La violence qui vient d'un adulte n'est pas mesurée. Elle n'est donc pas comptée. Ce qui n'est pas compté n'est pas traité.
 
-Mais ce continuum n’existe pas dans les dispositifs.
+Une précision méthodologique s'impose : le SNALC note que ce baromètre sous-estime probablement les situations réelles — les grilles passant par les mains des enseignants, le biais de confiance envers les adultes altère les réponses. L'enquête PISA établit de son côté un taux de 9 %, en hausse. Les chiffres officiels sont donc à lire avec prudence.
 
-⸻
+---
 
-Un système qui ne sait pas traiter ce qui le concerne lui-même
+## 3. Sept ans de mandat — ce que j'ai appris sur le mur
 
-L’enquête sur l’affaire Evaëlle met en lumière des éléments troublants :
+Je suis représentante de parents d'élèves depuis sept ans. Ce qui suit est issu de situations réelles, recomposées pour protéger les familles concernées, mais documentées.
 
-* des humiliations en classe
-* une stigmatisation publique
-* des alertes parentales insuffisamment prises en compte
-* et surtout, une incapacité à intervenir sur un adulte
+### Ce qui fonctionne — et pourquoi ça ne suffit pas
 
-Un responsable reconnaît même que
+Dans certaines situations, le dialogue direct avec un enseignant a fonctionné. Une communication factuelle, sans accusation, centrée sur les effets observés sur les élèves. Des profs qui ont entendu, qui ont ajusté. Ces situations existent. Elles ne font pas la une, mais elles existent.
 
-“le temps administratif n’était pas adapté à la situation”  
+Ce que j'ai appris de ces échanges réussis : ils ne fonctionnent que lorsque l'enseignant accepte d'être questionné. Ce qui suppose qu'il se sente en sécurité pour l'entendre. Ce n'est pas toujours le cas.
 
-Autrement dit :
-le système savait… mais n’a pas su agir.
+### Quand le dialogue ne suffit pas
 
-⸻
+D'autres situations ne se débloquent pas. J'en ai vécu plusieurs. La séquence est toujours la même.
 
-Trois ans de silence : ce que vivent les parents
+Premier niveau : contact direct avec l'enseignant concerné. Pas de réponse, ou une réponse défensive.
 
-Ce que révèle cette affaire, je l’ai vécu à une autre échelle.
+Deuxième niveau : escalade vers la direction. La réponse obtenue — plusieurs fois, dans des établissements différents — ressemble à ceci :
 
-Depuis trois ans, en tant que représentante de parents d’élèves, j’ai adressé plusieurs courriers au rectorat.
+*"Les enseignants reçoivent beaucoup de messages virulents de la part de parents. Ils en ont assez. Ce n'est pas le bon moment."*
 
-Des signalements argumentés.
-Des situations documentées.
-Des faits précis.
+Ce que cette réponse dit, c'est que la souffrance professionnelle des enseignants est un motif valable pour ne pas traiter un signalement. Ce n'est pas une position défendable. Mais c'est la position réelle.
 
-Aucune réponse.
+Dans plusieurs cas, des responsables m'ont reconnu **officieusement** que l'enseignant signalé était déjà connu pour ses méthodes — y compris de ses collègues. Et qu'il était *"délicat"* d'intervenir. On m'a conseillé de régler le problème directement avec l'enseignante concernée.
+
+Troisième niveau : le rectorat. Depuis trois ans, des courriers documentés, des situations précises, des faits datés. Aucune réponse.
 
 Pas une.
 
-Ce silence n’est pas un accident.
-C’est un mécanisme.
+### Ce que ça dit du système
 
-Ce qui dérange le cadre institutionnel est plus facilement ignoré que traité.
+Ce silence n'est pas un accident administratif. C'est le résultat prévisible d'un système qui n'a pas de procédure pour traiter les signalements concernant des adultes — et qui n'est donc pas outillé pour y répondre autrement que par l'évitement.
 
-⸻
+---
 
-Le malaise enseignant : réalité… et verrou
+## 4. Ce que certains élèves entendent en classe
 
-Dans les établissements, un argument revient systématiquement :
+Ce qui suit est une recomposition fictionnalisée de phrases recueillies au fil de plusieurs années de mandat, dans plusieurs contextes. Les détails identifiants ont été modifiés. La réalité des propos, elle, n'a pas été édulcorée.
 
-les enseignants sont eux-mêmes victimes de violences.
+Des élèves ont entendu, en classe, des formulations de ce type :
 
-C’est vrai.
+*"Avec des résultats pareils, vous ne ferez pas de grandes études."*
 
-Les études montrent :
+*"Dans cette classe, il n'y en a pas trois capables de suivre."*
 
-* une forte prévalence du stress
-* une fatigue chronique
-* une montée des tensions avec les parents
+*"Ce n'est pas un problème de méthode. C'est vous qui ne travaillez pas. Tous."*
 
-Mais cette réalité produit un effet secondaire :
+*"Ceux qui ont choisi cette option se sont trompés. Ils vont souffrir."*
 
-elle rend toute critique inaudible.
+*"Ce niveau-là, ça ne s'améliore pas."*
 
-Dans ce contexte :
+Ces phrases ont été prononcées devant 30 à 35 élèves. Certains de ces élèves avaient entre 15 et 17 ans. Certains envisageaient précisément les orientations citées. Ces phrases ont planté des graines — sur leur propre valeur, sur l'inutilité d'essayer, sur ce qu'ils méritaient ou ne méritaient pas.
 
-* alerter devient attaquer
-* questionner devient accuser
-* signaler devient agresser
+Ce que j'ai observé ensuite dans les conseils de classe : ces mêmes enseignants étaient irréprochables. Dans les inspections, impeccables. Dans les instances officielles, intouchables.
 
-⸻
+C'est le harcèlement de confort institutionnel : ce qui se passe en classe, entre les murs, n'a pas de témoin fiable. Seuls les élèves ont entendu. Et la parole des élèves, face à celle d'un enseignant, ne pèse pas le même poids.
 
-Une confusion qui protège le système, pas les personnes
+---
 
-Ce glissement est dangereux.
+## 5. Le bouclier Samuel Paty — et pourquoi il doit être nommé
 
-Car il empêche de distinguer deux choses fondamentales :
+Samuel Paty a été assassiné le 16 octobre 2020. Cet enseignant est mort parce qu'il faisait son travail, parce qu'il enseignait la liberté d'expression, parce qu'une rumeur amplifiée sur les réseaux sociaux a conduit à sa mort. C'est une réalité. Elle est gravée.
 
-* la violence envers les enseignants
-* et les comportements problématiques de certains enseignants
+Ce drame a produit un effet collatéral documenté : il est devenu un argument systématique pour rendre inaudible toute alerte concernant un comportement enseignant problématique.
 
-Sans cette distinction, tout est confondu.
-Et rien ne peut être corrigé.
+Le mécanisme est simple. Dès qu'un parent signale quelque chose, la réponse institutionnelle peut mobiliser implicitement ou explicitement ce registre : *les enseignants sont des victimes, les parents sont des agresseurs, questionner un prof c'est mettre sa sécurité en danger*.
 
-⸻
+Ce glissement est dangereux. Non pas parce qu'il est faux dans son point de départ — la violence envers les enseignants existe et doit être combattue — mais parce qu'il **confond deux réalités distinctes** pour en neutraliser une :
 
-Un système fragmenté face à une réalité globale
+- La violence envers les enseignants : réelle, documentée, inacceptable.
+- Les comportements problématiques de certains enseignants envers des élèves : réels, documentés, inacceptables.
 
-Aujourd’hui, les violences scolaires sont traitées séparément :
+Ces deux réalités coexistent. L'une n'annule pas l'autre. Un système de protection efficace doit traiter les deux. Pas utiliser l'une pour occulter l'autre.
 
-* élève → élève : pHARe
-* enseignant → élève : procédures internes
-* parent → enseignant : protection fonctionnelle
-* enseignant → enseignant : hiérarchie
+Nommer ce mécanisme n'est pas une attaque contre les enseignants. C'est une condition pour que les élèves victimes cessent d'être invisibles.
 
-Mais la réalité ne fonctionne pas en silos.
+---
 
-Les affaires récentes montrent au contraire :
+## 6. La lacune structurelle de pHARe — ce que les textes révèlent
 
-des situations imbriquées, complexes, systémiques
+Le programme pHARe, lancé en 2021 et généralisé à tous les établissements publics, repose sur un protocole solide pour un périmètre précis : le harcèlement entre élèves.
 
-⸻
+La **loi n° 2022-299 du 2 mars 2022** — dite loi contre le harcèlement scolaire — est plus large. Elle définit le harcèlement scolaire comme les faits commis *"à l'encontre d'un élève par toute personne étudiant ou exerçant une activité professionnelle au sein du même établissement"*. Les personnels de l'établissement sont explicitement inclus dans le champ des auteurs potentiels.
 
-Ce que pHARe ne couvre pas
+La circulaire du 2 février 2024, elle, précise que le protocole pHARe repose sur *"le recueil de la parole de l'élève victime et la réponse systématique et proportionnée de l'institution à toutes les formes de violence et d'intimidation **entre élèves**"*.
 
-Le problème n’est pas l’existence de pHARe.
-C’est son périmètre.
+Il y a donc un écart textuel entre ce que la loi permet de poursuivre et ce que le principal dispositif national est structurellement conçu pour traiter. Cet écart n'est pas une question de moyens humains ou de budget. C'est une question de périmètre défini.
 
-En l’état, il ne traite pas clairement :
+### Ce que le dispositif couvre — et ne couvre pas
 
-* les humiliations venant d’adultes
-* les violences symboliques
-* les situations hybrides (élèves + adultes)
-* les blocages institutionnels
+| Type de situation | Dispositif mobilisable | Couverture |
+|:------------------|:-----------------------|:----------:|
+| Élève → Élève | pHARe | ✅ Couvert |
+| Cyberharcèlement entre élèves | pHARe + 3018 | ✅ Couvert |
+| Adulte (enseignant) → Élève | Procédures internes RH | ⚠️ Lacune structurelle |
+| Situation hybride (élèves + adulte) | Aucun protocole unifié | ⚠️ Lacune structurelle |
+| Signalement parental formalisé sans réponse | Aucun circuit dédié | ⚠️ Lacune structurelle |
 
-⸻
+*(Tableau complet disponible en format image dans le fichier .docx joint)*
 
-Changer de cadre : une responsabilité partagée
+---
 
-Plutôt que d’opposer élèves et enseignants, une autre approche est possible :
+## 7. Ce que peuvent faire les familles — maintenant
 
-penser le harcèlement comme un phénomène global
-impliquant toutes les relations dans l’école
+Face à un mur institutionnel, plusieurs leviers existent. Ils ne sont pas tous efficaces. Certains sont épuisants. Mais ils existent.
 
-* élèves entre eux
-* enseignants entre eux
-* enseignants ↔ élèves
-* parents ↔ institution
+**Formaliser systématiquement.** Toute alerte doit être écrite, datée, envoyée en recommandé avec accusé de réception — même sans espoir de réponse immédiate. Ces traces ont une valeur probatoire. L'affaire Evaëlle l'a démontré : le dossier judiciaire a été construit sur des années d'éléments documentés.
 
-Ce changement de regard est essentiel.
+**Ne pas rester seul.** S'appuyer sur les représentants de parents, le CPE, l'infirmière scolaire, la médecin scolaire. Multiplier les interlocuteurs change le rapport de force.
 
-Non pour accuser.
-Mais pour rendre le système cohérent.
+**Distinguer les faits des jugements dans toute communication.** Décrire ce qui a été observé, les effets sur l'élève, les demandes concrètes. Ne pas formuler d'accusations directes — non pas pour protéger l'enseignant, mais pour protéger la recevabilité du signalement.
 
-⸻
+**Utiliser les structures extérieures.** Le 3018 (e-Enfance) pour les situations de harcèlement ; le Défenseur des droits pour les situations où l'institution ne répond pas ; les associations Marion la Main Tendue, Hugo!, Les Papillons pour l'accompagnement des familles.
 
-Que faire concrètement ? (parents, élèves, représentants)
+**Le recours hiérarchique au rectorat**, par écrit, en recommandé. Et si nécessaire — comme l'a fait la famille d'Evaëlle pendant sept ans — la voie judiciaire.
 
-Cette question est centrale. Voici des pistes issues du terrain.
+---
 
-⸻
+## 8. Ce que le gouvernement doit faire — concrètement
 
-1. Ne pas rester seul
+pHARe a des acquis réels : 150 référents académiques créés en 2024, protocoles de détection, 10 heures de sensibilisation annuelles pour les élèves, obligation de mise en œuvre dans tous les établissements publics.
 
-S’appuyer sur :
+Ces acquis ne suffisent pas. Trois évolutions sont possibles sans réforme législative — elles nécessitent une décision administrative :
 
-* les représentants de parents
-* les CPE
-* les infirmières scolaires
-* les psychologues de l’Éducation nationale
+**Étendre le protocole pHARe aux situations impliquant un adulte**, avec des procédures de traitement qui ne passent pas par la hiérarchie directe de l'enseignant concerné. La loi de 2022 le permet déjà. Le dispositif ne le prévoit pas encore.
 
-Même si le système est lent, multiplier les interlocuteurs change le rapport de force.
+**Créer un circuit de signalement indépendant** pour les alertes concernant des adultes — avec une réponse écrite obligatoire dans un délai défini. Ce qui n'existe pas actuellement. Un signalement sans réponse n'est pas un signalement traité.
 
-⸻
+**Rendre les signalements parentaux traçables et opposables.** Aujourd'hui, un courrier au rectorat peut rester sans réponse pendant trois ans. Ce n'est pas conforme à l'obligation de service public. Une réponse formelle, même négative, est un droit.
 
-2. Formaliser, toujours
+La loi de 2022 a posé le bon cadre légal. Le programme pHARe a posé les bonnes bases opérationnelles pour une partie du problème. Il reste à combler l'écart entre les deux.
 
-* écrire
-* dater
-* conserver les échanges
+Ce n'est pas une question de moyens. C'est une question de volonté administrative.
 
-Même sans réponse, ces traces comptent.
+---
 
-⸻
+## Conclusion
 
-3. Privilégier les échanges directs (quand c’est possible)
+L'affaire Evaëlle n'est pas une anomalie. C'est la version extrême et judiciaire d'un mécanisme quotidien : une violence qui ne correspond pas aux catégories prévues devient invisible. Et ce qui est invisible n'est pas traité.
 
-Dans certains cas, sortir du cadre conflictuel fonctionne.
+Les élèves qui subissent des humiliations répétées en classe, devant leurs camarades, par un adulte en position d'autorité — ces élèves-là n'ont pas de case dans pHARe. Les parents qui signalent ces situations n'ont pas de circuit de réponse garanti. Les représentants de parents qui documentent depuis des années n'ont pas d'interlocuteur tenu de répondre.
 
-Exemple vécu :
+Ce n'est pas normal. Ce n'est pas acceptable. Et ce n'est pas irréparable.
 
-* demander un échange en dehors des conseils de classe
-* parler en privé
-* utiliser une communication non violente (faits, ressentis, besoins)
+Le système sait comment construire des dispositifs efficaces — il l'a prouvé pour le harcèlement entre élèves. Il peut faire la même chose pour le reste. La question n'est pas de savoir si c'est possible. C'est de savoir si l'institution est prête à regarder ce qu'elle préfère ne pas voir.
 
-Non pas pour accuser, mais pour dire :
+**E=HK²** — plus on creuse, plus ça explose.
 
-“voilà ce que vivent les élèves”
+---
 
-Cela permet parfois de désamorcer des situations.
+> **📋 Note éditoriale**
+>
+> Les situations décrites dans cet article sont des reconstructions composites issues de plusieurs années de signalements recueillis dans le cadre d'un mandat de représentante de parents d'élèves. Les détails identifiants — établissements, matières, niveaux de classe, formulations précises — ont été modifiés ou redistribués pour protéger les familles et les élèves concernés. La réalité des situations décrites n'a pas été édulcorée.
+>
+> Les éléments factuels relatifs à l'affaire Evaëlle sont issus de sources AFP/Le Monde et La Gazette de France (13 avril 2026) et de la page Wikipédia dédiée (mise à jour avril 2026).
 
-⸻
+---
 
-4. Dépersonnaliser quand c’est possible
+## Sources
 
-Agir comme tiers (représentant, parent extérieur) permet :
+- DEPP — Baromètre national harcèlement scolaire, novembre 2024 — education.gouv.fr
+- DEPP — Note d'information n° 23.08 — Enquête nationale de climat scolaire et de victimation, collégiens, 2023
+- Loi n° 2022-299 du 2 mars 2022 visant à combattre le harcèlement scolaire — Légifrance
+- Circulaire du 2 février 2024 — Lutter contre le harcèlement à l'École — BO n° 6 du 8 février 2024
+- Ministère de l'Éducation nationale — Programme pHARe — education.gouv.fr/non-au-harcelement
+- Affaire Evaëlle — Arrêt cour d'appel de Versailles, 13 avril 2026 — AFP/Le Monde, La Gazette de France
+- SNALC — Compte rendu réunion harcèlement scolaire, 12 mars 2024 — snalc.fr
+- Conseil des ministres, 23 mai 2025 — Lutte contre le harcèlement scolaire — vie-publique.fr
 
-* de réduire les tensions
-* d’éviter les conflits directs
-* de remettre du recul
+---
 
-⸻
+*Titre Mediapart (78 car.) :* `Angle mort : ce que le programme pHARe refuse encore de voir`
 
-5. Nommer sans accuser
+*Chapô Mediapart (399 car.) :* `Hors Kadre décrypte ce que les médias n'abordent pas. Le programme pHARe protège les élèves du harcèlement entre pairs. Mais que fait-on quand la violence vient d'un adulte ? Sept ans de mandat de représentante de parents d'élèves, des signalements sans réponse, et une lacune structurelle que l'affaire Evaëlle vient de rendre impossible à ignorer.`
 
-Éviter :
+*Mots-clés :* harcèlement scolaire, pHARe, loi 2022-299, harcèlement adulte-élève, violence institutionnelle, Evaëlle, signalement, représentants de parents, parents ingérants, Hors Kadre
 
-* les jugements
-* les accusations directes
+*Prompt image :* `A child sitting alone at a school desk facing a closed institutional door — flat editorial illustration, navy blue and terracotta palette, no text, wide format 1200x630`
 
-Privilégier :
-
-* les faits
-* les effets sur l’élève
-* les conséquences concrètes
-
-⸻
-
-6. S’appuyer sur des structures spécialisées
-
-Plusieurs associations peuvent accompagner :
-
-* e-Enfance (numéro 3018)
-* Marion la Main Tendue
-* Hugo!
-* Les Papillons
-
-Ces structures permettent :
-
-* de sortir de l’isolement
-* d’avoir un regard extérieur
-* d’être accompagné juridiquement ou psychologiquement
-
-⸻
-
-7. Dernier levier : médiatisation ou recours
-
-Quand tout échoue :
-
-* Défenseur des droits
-* signalement académique
-* voire presse
-
-C’est souvent ce qui débloque les situations.
-
-⸻
-
-Conclusion
-
-Le problème n’est pas seulement le harcèlement.
-
-C’est ce que l’institution accepte de voir.
-
-L’affaire Evaëlle a montré une chose :
-
-lorsque la violence ne correspond pas aux catégories prévues,
-elle devient invisible.
-
-Et ce qui est invisible… n’est pas traité.
-
-⸻
-
-Si vous voulez, je peux encore :
-
-* rendre le titre encore plus “coup de poing”
-* adapter exactement au format publication Mediapart (avec chapô calibré SEO + signature)
-* ou ajouter une accroche personnelle très forte en ouverture (type récit direct)
+*Article publié sur Mediapart / Le Club — Hors Kadre — Katy Ho — Avril 2026*
