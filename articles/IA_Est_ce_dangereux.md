@@ -1,238 +1,202 @@
-# Angle mort : l'IA ne vous rend pas stupide — c'est vous qui décidez
+# Angle mort : vous avez peur du mauvais outil
 
-*Pourquoi vous avez peur de l'IA alors que vous scrollez trois heures par jour sans y penser.*
+*Pourquoi vous donnez 2h15 par jour à un algorithme conçu pour vous garder — et craignez celui qui attend votre intention.*
 
 *Par Katy Ho — Hors Kadre | Avril 2026*
 
 ---
 
-**Chapô** — Hors Kadre décrypte ce que les médias n'abordent pas. Dans mon article sur le biais de négativité, j'annonçais une suite sur les IA et nos biais collectifs. La voilà. 50 % des Français voient l'IA négativement. Les mêmes scrollent 2h15 par jour sans s'interroger. Personne ne fait la différence. C'est l'angle mort de ce débat.
+**Chapô** — Hors Kadre décrypte ce que les médias n'abordent pas. Le danger n'est pas l'outil. C'est l'absence d'intention. Et ça, personne ne vous l'explique vraiment.
 
 ---
 
 ## 0. La suite promise
 
-Dans mon article *"T'as pas à te plaindre — et autres phrases qui t'ont menti toute ta vie"*, je concluais par cette phrase :
+Dans mon article *"T'as pas à te plaindre — et autres phrases qui t'ont menti toute ta vie"*, je concluais :
 
 *"La suite abordera comment les intelligences artificielles héritent de nos biais collectifs — et pourquoi ça nous concerne tous."*
 
-Cet article est cette suite. Et elle commence là où l'autre s'est arrêtée : au filtre.
+La voilà. Elle commence là où l'autre s'est arrêtée : au filtre.
 
 *"Ce n'est pas le monde qui est uniquement négatif. C'est votre cerveau qui filtre l'information de cette manière."*
 
-Ce filtre, appliqué à l'IA, produit exactement le même effet qu'appliqué au monde : nous voyons les dangers, nous ignorons les leviers. Nous craignons ce que nous ne comprenons pas. Et pendant ce temps, nous utilisons sans questionner ce qui mérite vraiment d'être questionné.
+Ce filtre, appliqué à l'IA, produit exactement le même effet : vous voyez les dangers, vous ignorez les leviers. Et pendant ce temps, vous utilisez sans questionner ce qui mérite vraiment d'être questionné.
 
 ---
 
-## 1. Le test pour commencer
-
-Avant de lire la suite, une question honnête.
+## 1. Un test pour commencer
 
 Cette semaine, avez-vous :
-- Scrollé Instagram, TikTok ou Facebook plus de 20 minutes d'affilée sans intention précise ?
+- Scrollé Instagram, TikTok ou Facebook plus de 20 minutes sans intention précise ?
 - Vérifié votre téléphone dans les 5 minutes après vous être réveillé ?
 - Regardé une vidéo recommandée par l'algorithme alors que vous n'aviez pas prévu de regarder des vidéos ?
 
-Si vous avez répondu oui à au moins une de ces questions — et que vous vous inquiétez des dangers de l'IA — cet article est fait pour vous.
+Si oui à au moins une — et que vous vous inquiétez des dangers de l'IA — continuez.
 
-Parce que vous venez de décrire exactement le problème. Mais pas celui que vous croyez.
-
----
-
-## 2. Le biais de négativité à l'œuvre — encore
-
-Dans l'article sur le biais de négativité, j'ai détaillé le mécanisme : notre amygdale, conçue pour détecter les menaces sur la savane africaine, n'a pas été mise à jour. Elle traite chaque notification, chaque titre de journal, chaque comparaison sociale comme une menace potentielle. Comme l'écrit le neuroscientifique Rick Hanson : *"Le cerveau est comme du velcro pour le négatif, et du téflon pour le positif."*
-
-Le test Gapminder en est la preuve la plus brutale. La moyenne française est de **2,2 sur 12** sur des questions factuelles sur l'état du monde. Les singes répondant au hasard obtiendraient statistiquement 4. Moi-même — ingénieure de formation, habituée à me fier aux données — j'ai eu 2 sur 12.
-
-Ce n'est pas une question d'intelligence. C'est de la biologie.
-
-Ce même biais s'applique directement au débat sur l'IA. Selon une enquête Ipsos-CESI 2025, **50 % des Français estiment que l'IA a un impact négatif sur la société**. Dans le même temps, près d'un sur deux l'utilise déjà. On utilise quelque chose qu'on craint. On craint quelque chose qu'on comprend mal.
-
-Et pendant ce temps, on scrolle en moyenne **2h15 par jour sur les réseaux sociaux** sans que personne ne s'en alarme.
-
-**Le filtre négatif ne vous protège pas de l'IA. Il vous empêche de voir ce qu'elle peut faire pour vous.**
+Vous venez de décrire exactement le problème. Mais pas celui que vous croyez.
 
 ---
 
-## 3. L'amalgame qui fausse tout : IA vs réseaux sociaux
+## 2. Vous avez peur du mauvais outil
 
-Voici l'angle mort central du débat — que je n'ai vu traité nulle part dans les médias grand public français. L'IA conversationnelle et les réseaux sociaux sont deux technologies **radicalement différentes** dans leur conception, leur mécanisme, et leur impact. On les confond parce qu'elles partagent un écran.
+50 % des Français estiment que l'IA a un impact négatif sur la société (Ipsos-CESI, 2025).
 
-C'est comme confondre un marteau et un scalpel parce que ce sont tous les deux des outils métalliques.
+Les mêmes passent en moyenne **2h15 par jour** à scroller des plateformes conçues délibérément pour capter leur attention.
 
-### Ce que font les réseaux sociaux — documenté et assumé
+Ce n'est pas un hasard. C'est un biais cognitif documenté — le **biais de négativité** — que j'ai détaillé dans mon article précédent avec le test Gapminder. La moyenne française : **2,2 sur 12** sur des questions factuelles sur l'état du monde. Les singes au hasard font mieux. Moi la première, ingénieure de formation : 2 sur 12.
 
-Dans mon article *"Pourquoi votre lien est en commentaire"*, j'ai cité Sean Parker, cofondateur de Facebook, qui l'a avoué publiquement en 2017 :
+Nous ne sommes pas mal informés. Nous sommes mal calibrés.
+
+Et cette mauvaise calibration s'applique directement à l'IA : **les scénarios catastrophe sur l'IA captent l'attention exactement comme les réseaux sociaux**. L'alarme est plus rentable que la nuance. Ce n'est pas un complot — c'est de la neurobiologie appliquée à l'économie de l'attention.
+
+**Le problème n'est pas l'IA. C'est que vous confondez deux technologies qui n'ont rien à voir.**
+
+---
+
+## 3. Réseaux sociaux vs IA — la distinction que personne ne fait
+
+Dans mon article *"Pourquoi votre lien est en commentaire"*, j'ai documenté le mécanisme. Sean Parker, cofondateur de Facebook, l'a avoué publiquement en 2017 :
 
 > *"Comment consommons-nous le plus de temps et d'attention possible ? Nous devons vous donner une petite dose de dopamine de temps en temps."*
-> — Sean Parker, interview Axios, novembre 2017
 
-Ce n'est pas une théorie. C'est une déclaration publique. Les plateformes ont été conçues délibérément sur le modèle des expériences de B.F. Skinner sur les souris : la récompense variable et imprévisible crée une compulsion bien plus forte que la récompense systématique. C'est la mécanique des machines à sous. Appliquée à votre téléphone.
+Ce n'est pas une métaphore. C'est le modèle explicite de B.F. Skinner — la récompense variable et imprévisible crée une compulsion bien plus forte que la récompense systématique. C'est la mécanique des machines à sous. Une étude *NeuroImage* (2021) a montré qu'**il suffit de 15 minutes de TikTok** pour activer le système dopaminergique. Quinze minutes.
 
-Une étude parue en 2021 dans la revue *NeuroImage* a montré qu'il suffit de **15 minutes de visionnage de vidéos TikTok** pour activer le réseau cérébral du mode par défaut et stimuler le système dopaminergique. Quinze minutes.
+**Les réseaux sociaux sont conçus pour capter votre attention. L'IA est conçue pour répondre à votre intention.**
 
-Les chiffres d'usage sont sans ambiguïté :
+Cette phrase seule résume tout.
 
-- Les **15-24 ans** passent **3h50 par jour sur Internet**, dont **58 % sur les réseaux sociaux** — soit environ **2h15 de scroll quotidien** (Médiamétrie, 2024)
-- **11 % des adolescents européens** ont une utilisation problématique des réseaux sociaux (OMS, 2024)
-- Pendant 3 ans, les algorithmes de Facebook ont favorisé la réaction "En colère" avec un score **5 fois supérieur** aux likes (Facebook Files, Frances Haugen, 2021)
-- *"Brain rot"* — pourrissement du cerveau — a été désigné **mot de l'année 2024 par Oxford University Press**
+L'un vous garde. L'autre vous sert. L'un optimise votre temps passé. L'autre optimise votre résultat. L'un a besoin que vous soyez passif. L'autre a besoin que vous soyez actif.
 
-### Ce que fait l'IA conversationnelle
+Les chiffres confirment la différence :
 
-L'IA conversationnelle fonctionne à l'opposé.
-
-Pas de fil infini. Pas de notifications push. Pas de comparaison sociale. Pas de like. Pas de récompense variable imprévisible. **Usage actif : vous posez une question, vous obtenez une réponse, vous fermez l'outil.**
-
-C'est une technologie qui **attend votre intention** — elle ne cherche pas à la créer.
-
-**93 % des 18-25 ans** ont utilisé une IA en 2025. **71 % déclarent gagner du temps** (Born AI 2025). **82 % des jeunes jugent ces outils utiles** (Ifop / Jedha AI School, 2025).
-
-### Le tableau comparatif
-
-| Caractéristique | Réseaux sociaux | IA conversationnelle |
-|:----------------|:---------------:|:--------------------:|
+| | **Réseaux sociaux** | **IA conversationnelle** |
+|:--|:--:|:--:|
 | Conception | Maximiser le temps d'écran | Répondre à une demande |
-| Usage | Passif, subi, scroll | Actif, intentionnel |
-| Mécanisme dopaminergique | Récompense variable conçue pour accrocher | Récompense liée à l'utilité perçue |
-| Fil infini | ✅ Oui | ❌ Non |
-| Notifications push addictives | ✅ Oui | ❌ Non |
-| Comparaison sociale | ✅ Conçue pour ça | ❌ Non applicable |
-| Impact santé mentale documenté | Problématique pour 11 % des ados (OMS) | Pas d'équivalent documenté |
-| Temps moyen jeunes | ~2h15/jour (Médiamétrie 2024) | Sessions courtes orientées tâche |
+| Usage | Passif, subi, scroll infini | Actif, intentionnel |
+| Dopamine | Récompense variable conçue pour accrocher | Liée à l'utilité perçue |
+| Notifications push | ✅ Conçues pour interrompre | ❌ Inexistantes |
+| Comparaison sociale | ✅ Moteur du modèle | ❌ Non applicable |
+| Impact documenté | 11 % des ados en usage problématique (OMS 2024) | Aucun équivalent documenté |
+| Temps jeunes | ~2h15/jour de scroll (Médiamétrie 2024) | Sessions courtes, orientées tâche |
+
+"Brain rot" — pourrissement du cerveau — a été désigné **mot de l'année 2024 par Oxford University Press**. Il décrit les réseaux. Pas l'IA.
 
 ---
 
-## 4. D'où vient vraiment la peur des parents
+## 4. Ils voient un écran. Ils projettent une peur. Ils ne regardent pas l'usage.
 
-Quand un parent s'inquiète de voir son enfant utiliser ChatGPT pour ses devoirs, voici ce qui se passe dans son cerveau : il voit un écran. Il voit son enfant "absorbé". Il active automatiquement le registre d'inquiétude associé aux écrans — légitime, nourri par des années de préoccupations justifiées sur les réseaux sociaux.
+Quand un parent s'inquiète de voir son enfant sur ChatGPT, voici ce qui se passe réellement : il voit un écran. Il projette la peur légitime des réseaux sociaux sur un outil qui n'a pas le même mécanisme. Il ne regarde pas ce que l'enfant *fait*.
 
-Mais l'outil n'est pas le même. Le mécanisme n'est pas le même.
-
-Comme je le montre dans l'article sur les algorithmes : *"L'algorithme a été conçu pour amplifier vos émotions. Pas votre réflexion."* L'IA conversationnelle, elle, amplifie votre réflexion. C'est précisément l'inverse.
-
-Un enfant qui utilise une IA pour comprendre un cours qu'il n'a pas saisi, reformuler une dissertation, explorer un sujet qui l'intéresse — **est en train d'apprendre activement**. Ce n'est pas du scrolling passif. C'est du travail intellectuel assisté.
+Un enfant qui utilise une IA pour comprendre un cours, reformuler une dissertation, explorer un sujet — **apprend activement**. Ce n'est pas du scroll passif. C'est du travail intellectuel assisté.
 
 Confondre les deux, c'est confondre un adolescent qui lit et un adolescent qui regarde des vidéos recommandées par algorithme pendant trois heures. L'écran est le même. L'activité cognitive ne l'est pas du tout.
 
+**Le danger n'est pas l'outil. C'est l'absence d'intention.**
+
 ---
 
-## 5. Ce que j'ai fait avec l'IA — la preuve par 5 jours
+## 5. La preuve par 5 jours
 
 En cinq jours. En plâtre. En arrêt maladie.
 
-Depuis que j'utilise Claude et ChatGPT de façon intensive, j'ai arrêté spontanément la télé, TikTok, Instagram, et les jeux type Candy Crush. Pas par discipline. Par désintérêt naturel — parce que ce que je faisais était infiniment plus stimulant.
+Depuis que j'utilise Claude et ChatGPT de façon intensive, j'ai arrêté spontanément la télé, TikTok, Instagram et Candy Crush. Pas par discipline — par désintérêt naturel. Ce que je faisais était infiniment plus stimulant.
 
-Voici le bilan de ces cinq jours :
+En 5 jours, j'ai produit plus que certains en 6 mois. Pas parce que je suis plus intelligente. Parce que j'ai arrêté de scroller.
 
-- **5 articles rédigés et publiés** sur Mediapart — dont un sur Parcoursup qui a généré 57 commentaires, 6 partages, 20 réactions en 24h, sans stratégie algorithmique, sans lien en commentaire
-- **Une page Facebook Hors Kadre** lancée avec ses épisodes fondateurs
-- **Un compte LinkedIn Katy Saintin** étoffé — une vingtaine de demandes de connexion spontanées en tant qu'experte SCADA
-- **Un podcast technique YouTube** — *Katy in Control* — en anglais, dédié à la vulgarisation des systèmes SCADA pour rendre l'ingénierie industrielle accessible et représentée
-- **4 chansons composées avec Suno**, dont une disponible sur Spotify
-- **Un site web PHP** national sur les classements de lycées par IVAL — 4 360 établissements, construit en une journée avec des données publiques, librement accessible sur katy.ho.free.fr
+Le bilan concret : 5 articles publiés sur Mediapart dont un à 57 commentaires sans stratégie algorithmique, une page Facebook Hors Kadre, un compte LinkedIn expert SCADA (+20 demandes de connexion), un podcast YouTube en anglais avec digital twin, 4 chansons dont une sur Spotify, un site web PHP national sur 4 360 lycées — construit en une journée à partir de données publiques du Ministère de l'Éducation.
 
-Et tout ça plâtrée. En arrêt maladie.
+Ma dopamine n'est plus générée par des likes. Elle est générée par des choses constructives.
 
-Ce n'est pas de la productivité dopée aux stimulants. C'est ce qui se passe quand un cerveau trouve enfin des outils à sa hauteur — et arrête de gaspiller son énergie dans des boucles de scroll qui ne produisent rien.
-
-Ma dopamine n'est plus générée par des likes et des vidéos recommandées. Elle est générée par des choses constructives. Ce n'est pas une discipline. C'est une redirection naturelle — vers ce que le cerveau cherchait depuis le début.
-
-**C'est une promesse pour la suite.** Il y aura un avant et un après. Et l'avant, c'était la télé et Candy Crush.
+**C'est une promesse pour la suite. Il y aura un avant et un après.**
 
 ---
 
-## 6. Digital twin ≠ deepfake — une distinction que personne n'explique
+## 6. Digital twin ≠ deepfake
 
-Pour *Katy in Control*, j'utilise un **digital twin** — un avatar numérique à mon image, qui me permet de produire des épisodes de vulgarisation SCADA en anglais, sans studio, sans caméra, sans montage vidéo lourd. Juste le contenu, la voix, le fond.
+Pour mon podcast *Katy in Control*, j'utilise un **digital twin** — un avatar numérique à mon image.
 
-Le terme fait peur parce qu'on l'associe immédiatement aux **deepfakes** — ces vidéos falsifiées utilisées pour diffuser de fausses déclarations de personnalités publiques, alimenter la désinformation, usurper des identités à des fins malveillantes. Ce danger est réel, documenté, et mérite d'être combattu. En 2024, l'utilisation des deepfakes a augmenté de 140 % en France. L'AI Act impose désormais la mention "Fabriqué par IA" sur tout contenu synthétique diffusé publiquement.
+La punchline est simple : **un deepfake vole une identité. Un digital twin prolonge la vôtre.**
 
-Mais le digital twin d'un créateur de contenu qui produit **sa propre voix, ses propres idées, son propre visage numérique** — c'est une réalité radicalement différente.
+Le deepfake est une falsification — quelqu'un usurpe votre image sans votre consentement pour vous faire dire ce que vous n'avez pas dit. C'est documenté, criminalisé par l'AI Act, et réellement dangereux.
 
-La distinction est simple :
+Le digital twin créateur, c'est l'inverse : vous produisez votre propre contenu, avec votre voix, vos idées, votre image numérique — sans studio, sans budget, sans barrière technique. L'AI Act l'encadre clairement : mention "Fabriqué par IA" obligatoire, usage consenti, cadre légal défini.
 
-| | **Deepfake malveillant** | **Digital twin créateur** |
-|---|:---:|:---:|
-| Qui décide du contenu ? | Un tiers, sans consentement | Le créateur lui-même |
-| Objectif | Tromper, nuire, usurper | Produire, diffuser, créer |
-| Consentement | ❌ Aucun | ✅ Total |
-| Cadre légal | Interdit et criminalisé | Autorisé et encadré par l'AI Act |
+Ce que ça change concrètement : une ingénieure experte peut vulgariser les systèmes SCADA en anglais pour une audience mondiale, depuis son canapé, plâtrée. Sans équipe de production. Sans financement.
 
-Ce que l'IA m'a permis de faire : être ingénieure experte SCADA, pédagogue, créatrice de contenu **en même temps** — sans budget de production, depuis mon canapé, en plâtre. En anglais impeccable. Pour une audience mondiale.
-
-**Ce n'est pas du danger. C'est de l'émancipation créative pour ceux qui ont quelque chose à dire et n'avaient pas les moyens techniques de le dire.**
-
-Un réalisateur indépendant qui utilise un logiciel de montage ne falsifie pas le cinéma. Un musicien qui enregistre à domicile avec une interface audio ne vole pas les studios. Un créateur qui utilise un digital twin pour diffuser ses idées ne trompe personne — il s'affranchit d'une barrière technique qui, jusqu'ici, réservait la production audiovisuelle à ceux qui avaient les moyens de la financer.
+**Ce n'est pas du danger. C'est la démocratisation de la parole experte.**
 
 ---
 
-## 7. Choisir ses IA — parce que toutes ne se valent pas
+## 7. Toutes les IA ne se valent pas — choisir, c'est reprendre le contrôle
 
-Ce point est peu traité dans les médias généralistes, et il est pourtant central.
+Choisir son IA en connaissance de cause, c'est exactement l'opposé de la passivité algorithmique. C'est l'acte de reprise de contrôle que les réseaux sociaux ne vous encouragent jamais à faire.
 
-**L'AI Act européen** est entré en vigueur en août 2024. Les interdictions d'IA à risque inacceptable sont effectives depuis février 2025. Application complète prévue août 2026.
+**L'AI Act européen** est entré en vigueur en août 2024. Interdictions effectives depuis février 2025. Application complète août 2026.
 
-**DeepSeek** stocke toutes les données utilisateurs en Chine, n'a pas de représentant légal dans l'UE (violation de l'article 27 du RGPD), et a été interdit en Italie début 2025. **Grok** (xAI) présente une conformité RGPD partielle. **Mistral** est français, conforme par construction au droit européen. **Claude** (Anthropic) et **ChatGPT** (OpenAI) ont des DPA disponibles et respectent les obligations RGPD pour les utilisateurs européens.
+| IA | Siège | Conformité RGPD | Données | Usage |
+|:--|:--:|:--:|:--:|:--:|
+| **Claude** (Anthropic) | USA | ✅ DPA disponible | USA, encadré | Usage général, rédaction, analyse |
+| **ChatGPT** (OpenAI) | USA | ✅ DPA disponible | USA, encadré | Usage général, web, polyvalent |
+| **Mistral** | 🇫🇷 France | ✅ Siège UE | France / UE | Souveraineté maximale |
+| **DeepSeek** | Chine | ❌ Viole art. 27 RGPD | Chine | ⚠️ Éviter données personnelles |
+| **Grok** (xAI) | USA | ⚠️ Partielle | USA / X servers | ⚠️ Éviter sujets sensibles |
 
-Choisir son IA en connaissance de cause, c'est exactement l'opposé de la passivité algorithmique des réseaux sociaux. C'est reprendre le contrôle.
+**DeepSeek** stocke vos données en Chine, n'a pas de représentant légal dans l'UE, et a été interdit en Italie début 2025. Ce que vous tapez peut être accessible aux autorités chinoises — c'est dans leur politique de confidentialité, pas une théorie.
+
+**Mistral** mérite une mention spéciale : IA française, conforme par construction, qui représente exactement la souveraineté numérique que l'Europe cherche à construire.
 
 ---
 
-## 8. Cinq réflexes pour utiliser l'IA sans crainte
+## 8. Cinq réflexes — parce que l'intention s'apprend
 
 **1. Comprendre avant d'utiliser.** Si vous ne comprenez pas la réponse, posez une question de suivi. Ne copiez jamais ce que vous n'avez pas compris.
 
-**2. Vérifier les informations factuelles.** Dates, chiffres, noms — recoupez toujours avec une source primaire. Même Gapminder vous le dirait.
+**2. Vérifier les faits.** Dates, chiffres, noms — recoupez. Pas parce que l'IA ment, mais parce que toute source peut se tromper.
 
-**3. Formuler précisément.** La qualité de ce que vous obtenez dépend de la précision de ce que vous demandez. C'est une compétence qui améliore aussi votre propre clarté de pensée.
+**3. Formuler précisément.** La qualité de ce que vous obtenez dépend de la précision de ce que vous demandez. C'est une compétence qui améliore aussi votre propre pensée.
 
-**4. Ne jamais mettre de données sensibles dans une IA non conforme.** Données médicales, fichiers RH, informations bancaires — réservez-les aux outils dont vous avez vérifié la conformité RGPD.
+**4. Protéger vos données sensibles.** Données médicales, RH, bancaires — uniquement dans des outils dont vous avez vérifié la conformité RGPD.
 
-**5. Commencer par un problème réel.** L'usage sans intention préalable est le seul qui ressemble au scroll passif.
+**5. Partir d'un problème réel.** L'usage sans intention préalable est le seul qui ressemble au scroll passif.
 
 ---
 
-## 9. L'angle que personne ne traite
+## Pour finir
 
-Dans l'article sur le biais de négativité, je citais Hans Rosling : plus un pays est riche, éduqué et informé, plus sa perception du monde est pessimiste par rapport à la réalité. Nous ne sommes pas mal informés sur l'IA. **Nous sommes mal calibrés.**
+L'IA ne vous rendra pas stupide.
 
-Les réseaux sociaux ont été conçus pour capter votre attention sans votre consentement éclairé. L'IA conversationnelle est un outil. Comme un tableur, comme un moteur de recherche, comme un dictionnaire. Son impact dépend entièrement de l'usage qu'on en fait.
+Mais le scroll, oui — et ça, vous l'avez déjà accepté.
 
-Faire l'amalgame entre les deux, c'est avoir peur du scalpel parce qu'on s'est coupé avec un couteau.
+Le vrai angle mort de ce débat n'est pas la dangerosité de l'IA. C'est que nous débattons du mauvais outil pendant que le bon danger, lui, est dans notre poche depuis des années — optimisé, documenté, assumé par ses propres créateurs.
 
-Ce que j'ai fait avec deux IA en cinq jours, plâtrée — n'importe qui avec les bonnes questions peut le faire. La démocratisation de la puissance intellectuelle se passe maintenant, en silence, pendant qu'on débat de ses dangers imaginaires.
+La lucidité ne rend pas les algorithmes moins puissants. Mais elle vous rend moins prévisible. Et c'est déjà beaucoup.
 
 **E=HK²** — Plus on creuse, plus ça explose.
 
 ---
 
-> **Note de l'auteure**
->
-> Cet article est la suite annoncée de *"T'as pas à te plaindre"* (Hors Kadre, Mediapart, avril 2026). Il croise également *"Pourquoi votre lien est en commentaire"* (Hors Kadre, Mediapart, avril 2026). Je n'ai aucun intérêt commercial dans les outils cités.
+> **Note de l'auteure** — Cet article est la suite annoncée de *"T'as pas à te plaindre"* et croise *"Pourquoi votre lien est en commentaire"* (Hors Kadre, Mediapart, avril 2026). Aucun intérêt commercial dans les outils cités.
 
 ---
 
 ## Sources
 
 **Articles Hors Kadre**
-- *"T'as pas à te plaindre — et autres phrases qui t'ont menti toute ta vie"* — Hors Kadre / Mediapart, avril 2026
+- *"T'as pas à te plaindre"* — Hors Kadre / Mediapart, avril 2026
 - *"Pourquoi votre lien est en commentaire"* — Hors Kadre / Mediapart, avril 2026
 - *"98 % de réussite au bac. Et après ?"* — katy.ho.free.fr / Mediapart, avril 2026
 
-**Neurosciences**
+**Neurosciences et mécanismes cognitifs**
 - Rick Hanson — *Le cerveau de Bouddha* (2011)
 - Hans Rosling — *Factfulness* (2018)
 - Schultz W. (1997) — *Predictive reward signal of dopamine neurons*, Journal of Neurophysiology
 - B.F. Skinner — travaux sur le renforcement à ratio variable
-- Étude *NeuroImage* (2021) — impact TikTok en 15 minutes
-
-**Données usage**
+- Étude *NeuroImage* (2021) — impact TikTok sur le système dopaminergique en 15 minutes
 - Sean Parker — interview Axios, novembre 2017
 - Facebook Files — Frances Haugen, Wall Street Journal, septembre 2021
+
+**Données usage**
 - Médiamétrie — *L'Année Internet 2024*
-- Diplomeo/BDM — Enquête jeunes, mars 2025
 - Ifop / Jedha AI School — octobre 2025
 - Heaven / BDM — Born AI 2025
 - Ipsos-CESI — *L'usage de l'IA par les Français*, 2025
@@ -241,18 +205,17 @@ Ce que j'ai fait avec deux IA en cinq jours, plâtrée — n'importe qui avec le
 
 **Réglementation**
 - AI Act (EU) 2024/1689 — application complète août 2026
-- CNPD Luxembourg — *Recommandations sur DeepSeek*, février 2025
+- CNPD Luxembourg — Recommandations DeepSeek, février 2025
 - Garante Italie — Interdiction DeepSeek, janvier 2025
-- Sénateur Hugues Saury — rapport deepfakes en période électorale, 2024
 
 ---
 
-*Titre Mediapart :* `Angle mort : l'IA ne vous rend pas stupide — c'est vous qui décidez`
+*Titre Mediapart :* `Angle mort : vous avez peur du mauvais outil`
 
-*Chapô :* `Hors Kadre décrypte ce que les médias n'abordent pas. Suite annoncée de l'article sur le biais de négativité. 50% des Français craignent l'IA, les mêmes scrollent 2h15/jour sans s'interroger. Personne ne fait la différence entre usage passif subi et usage actif choisi. Sourcé et vécu.`
+*Chapô :* `Hors Kadre décrypte ce que les médias n'abordent pas. Suite de l'article sur le biais de négativité. Les réseaux sociaux sont conçus pour capter votre attention. L'IA est conçue pour répondre à votre intention. Personne ne fait la différence. C'est l'angle mort du débat — sourcé et vécu.`
 
-*Mots-clés :* intelligence artificielle, réseaux sociaux, biais de négativité, Gapminder, addiction, algorithme, dopamine, digital twin, deepfake, usage actif, IA Act, RGPD, DeepSeek, Mistral, Hors Kadre
+*Mots-clés :* intelligence artificielle, réseaux sociaux, biais de négativité, Gapminder, dopamine, Sean Parker, digital twin, deepfake, IA Act, RGPD, DeepSeek, Mistral, usage actif, Hors Kadre
 
-*Prompt image :* `Flat editorial illustration. Split scene: left side shows a young woman passively scrolling a phone, surrounded by floating likes and notification icons pulling at her attention — right side shows the same woman actively engaged at a desk, connected to an AI interface with purposeful thought bubbles, clearly in control. Navy blue and terracotta palette, no text, wide format 1200x630.`
+*Prompt image :* `Flat editorial illustration. Split scene: left side shows a young woman passively scrolling a phone, surrounded by floating likes and notification icons — right side shows the same woman actively engaged at a desk with an AI interface, structured thought bubbles, clearly in control. Navy blue and terracotta palette, no text, wide format 1200x630.`
 
 *Article publié sur Mediapart / Le Club — Hors Kadre — Katy Ho — Avril 2026*
