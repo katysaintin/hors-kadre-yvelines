@@ -197,13 +197,13 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 5 épisodes fondateurs (J-4 → J) :
 
-| Épisode | Titre | Visuel |
-|---------|-------|--------|
-| 1 | "J'avais 500 000 onglets ouverts" | Cerveau flat/cartoon avec 50 000 onglets |
-| 2 | "J'ai toujours eu un pied dans deux mondes" | Personnage sur deux ponts distincts |
-| 3 | "Une IA m'a aidée à accoucher d'une idée que j'avais depuis 40 ans" | Femme face à écran, arborescence lumineuse |
-| 4 | "Comment on nomme un blog quand on vit entre deux mondes ?" + E=HK² | Logo HK avec le K qui s'échappe |
-| 5 | Le manifeste + l'invitation | La femme du marionnettiste — celle qui lève les yeux |
+| Épisode | Titre | Visuel | Post FB |
+|---------|-------|--------| --------|
+| 1 | "J'avais 500 000 onglets ouverts" | Cerveau flat/cartoon avec 50 000 onglets |  **PUBLIÉ**  |
+| 2 | "J'ai toujours eu un pied dans deux mondes" | Personnage sur deux ponts distincts |  **PUBLIÉ**  |
+| 3 | "Une IA m'a aidée à accoucher d'une idée que j'avais depuis 40 ans" | Femme face à écran, arborescence lumineuse |  **PUBLIÉ**  |
+| 4 | "Comment on nomme un blog quand on vit entre deux mondes ?" + E=HK² | Logo HK avec le K qui s'échappe |  **PUBLIÉ**  |
+| 5 | Le manifeste + l'invitation | La femme du marionnettiste — celle qui lève les yeux | PROGRAMMÉ |
 
 ---
 
