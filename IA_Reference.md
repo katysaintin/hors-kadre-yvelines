@@ -154,8 +154,8 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 ### TRILOGIE 1 — Société & Lucidité
 | # | Titre | Statut | Post FB  |
 |---|-------|--------|----------|
-| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** | - |
-| 2 | Angle mort : pourquoi vous souffrez malgré votre frigo plein | **PUBLIÉ** | PROGRAMMÉ Episode 5 FB |
+| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** | PROGRAMMÉ Episode 5 FB |
+| 2 | Angle mort : pourquoi vous souffrez malgré votre frigo plein | **PUBLIÉ** | - |
 | 3 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
