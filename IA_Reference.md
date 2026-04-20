@@ -167,7 +167,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 6 | Angle mort : communication efficace avec les équipes éducatives (CNV) | IDÉE | - |
 | 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE | - |
 | 8 | Angle mort : les Neuromythes et leur impact à l'école | IDÉE | - |
-| 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré | RÉDIGÉ | - |
+| 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré |  **PUBLIÉ** | :heavy_check_mark: |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut | Post FB  |
