@@ -449,6 +449,90 @@ Aucun .docx cette session — tout en Markdown et posts Facebook directement.
 
 ---
 
-*Mis à jour le 19 avril 2026 — E=HK²*
+## SESSION DU 20 AVRIL 2026 — Anniversaire : 3 articles + stratégie médias
 
+### Avancements concrets
+
+**Articles finalisés aujourd'hui :**
+- **Article #10** — *Aidants neurodivergents* → `HorsKadre_Article10_v3.md` ✅
+  - Troubles Dys intégrés (dyslexie, dysorthographie, dyscalculie, dyspraxie, dysphasie)
+  - TDI intégré sobrement
+  - HPI repositionné : note explicite (évaluation psychométrique ≠ diagnostic clinique)
+  - Sources neurosciences ajoutées : Barkley 1997, Capuozzo 2024, Lukito 2020
+  - Chiffres DREES 9,3M aidants, 1/3 ne se reconnaît pas, 62% femmes
+  - Section conseils pratiques entièrement rédigée (était [À compléter] dans le PDF source)
+  - PDF source analysé : `Neurodivergent.pdf` (5 pages, print-to-PDF, texte en images)
+
+- **Article #13** — *IA vs réseaux sociaux* → `HorsKadre_Article13_IA_v5.md` ✅
+  - 5 versions successives avec relectures ChatGPT intégrées
+  - Angle inédit confirmé : confusion RS/IA non traitée dans médias grand public français
+  - Comparatif chiffré RS/IA sourcé : Médiamétrie 2024, OMS 2024, Born AI 2025
+  - Section digital twin vs deepfake ajoutée — punchline : *"Un deepfake vole une identité. Un digital twin prolonge la vôtre."*
+  - Tableau conformité RGPD des IA (Claude, ChatGPT, Mistral, DeepSeek, Grok) en Markdown
+  - Suite promise de l'article biais de négativité — lien éditorial explicite
+  - Image validée : `ChatGPT_Image_20_avr__2026__21_09_51.png` (split RS/IA, palette HK)
+  - Pitchs médias générés : The Conversation, Numerama, Maddyness, Slate → `HorsKadre_Article13_Pitchs.md`
+
+**PDFs analysés en session :**
+- `Algorithmes.pdf` — article #1 publié, références Sean Parker, Skinner, NeuroImage intégrées dans #13
+- `BiaisNegativite.pdf` — article #2 publié, références Rick Hanson, Gapminder, score 2,2/12 intégrées dans #13
+- `Neurodivergent.pdf` — article #10 source, section conseils complétée
+
+### Données clés produites
+
+**Comparatif RS/IA (prêt à réutiliser) :**
+- RS jeunes 15-24 : 3h50/jour internet, 58% RS = ~2h15 scroll (Médiamétrie 2024)
+- IA jeunes 18-25 : 93% utilisateurs, 71% gagnent du temps (Born AI 2025)
+- OMS 2024 : 11% ados européens usage problématique RS
+- Oxford 2024 : "brain rot" mot de l'année
+
+**Formulations validées :**
+- ✅ *"Les réseaux sociaux sont conçus pour capter votre attention. L'IA est conçue pour répondre à votre intention."*
+- ✅ *"Un deepfake vole une identité. Un digital twin prolonge la vôtre."*
+- ✅ *"L'IA ne vous rendra pas stupide. Mais le scroll, oui — et ça, vous l'avez déjà accepté."*
+- ✅ *"Le danger n'est pas l'outil. C'est l'absence d'intention."*
+- ✅ HPI = "détecté" (pas diagnostiqué) — TDA = "diagnostiqué"
+- ✅ Charte visuelle finalisée : Flat/Cartoon (analytique) / Realistic illustration (intime) / Dramatique/grain (dénonciation)
+
+**Chiffres TND confirmés (article #10) :**
+- Dyslexie : 5-17% enfants scolarisés
+- Dyspraxie/TDC : jusqu'à 6% population générale
+- TSA : 1% population, 42% présentent aussi TDAH
+- TDAH : 6% enfants, 2,5-3% adultes
+- TDI : ~1% population
+- 50% des TND ont un second TND, 70% difficultés cognitives persistent adulte
+
+### Fichiers produits
+
+| Fichier | Contenu | Statut |
+|---------|---------|--------|
+| `HorsKadre_Article10_v3.md` | Article aidants neurodivergents v3 finale | ✅ Prêt à publier |
+| `HorsKadre_Article13_IA_v5.md` | Article IA vs RS v5 finale | ✅ Prêt à publier |
+| `HorsKadre_Article13_Pitchs.md` | Pitchs The Conversation, Numerama, Maddyness, Slate, LinkedIn FR+EN | ✅ Prêt à envoyer |
+| `IA_Reference_charte_visuelle_patch.md` | Patch charte visuelle 3 styles | ✅ À merger GitHub |
+| `TodoList_20avril2026.md` | Ce fichier — todo + JournalBoard | ✅ |
+
+### Pending — à faire en prochaine session
+
+1. **[PRIORITÉ 1]** Publier article #9 pHARe sur Mediapart (actualité Evaëlle encore chaude)
+2. **[PRIORITÉ 2]** Publier article #13 IA + post LinkedIn FR + EN le même jour
+3. **[PRIORITÉ 3]** Publier article #10 Aidants + post Facebook Hors Kadre
+4. **[PRIORITÉ 4]** Merger patch charte visuelle dans `IA_Reference.md` sur GitHub
+5. **[J+3]** Pitcher Café Pédagogique — pHARe d'abord → `redaction@cafepedagogique.net`
+6. **[J+7]** Pitcher The Conversation + Maddyness — article #13
+7. **[J+8]** Pitcher Le Monde (Mattea Battaglia) + FCPE — article #9 pHARe
+8. **[FUTUR]** Générer v4 article #13 avec vécu 5 jours ✅ fait — publier
+9. **[FUTUR]** Article #14 ou suite — à définir en prochaine session
+
+### Prompts LinkedIn générés en session
+
+**FR :**
+> En 5 jours plâtrée et en arrêt maladie, j'ai : → Publié 5 articles sur Mediapart (dont un Parcoursup à 57 commentaires sans algo) → Lancé un podcast YouTube SCADA en anglais avec digital twin → Construit un outil national sur 4360 lycées en une journée → Composé 4 chansons dont une sur Spotify → Arrêté spontanément la télé, TikTok, Instagram et Candy Crush. Non pas parce que j'ai de la volonté. Parce que ma dopamine est enfin générée par quelque chose de constructif. Le vrai angle mort du débat IA : on confond réseaux sociaux (conçus pour vous garder passif) et IA conversationnelle (qui attend votre intention). L'un capture votre cerveau. L'autre l'amplifie. → [LIEN MEDIAPART] #IA #SCADA #WomenInTech #CreateurDeContenu
+
+**EN :**
+> 5 days. In a cast. On sick leave. → Published 5 articles (one hit 57 comments with zero algorithmic strategy) → Launched a SCADA podcast with a digital twin (@KatyInControl) → Built a national tool covering 4,360 high schools in one day → Composed 4 songs, one now on Spotify → Spontaneously stopped TV, TikTok, Instagram and Candy Crush. Not willpower. Dopamine redirected toward something constructive. The real blind spot in the AI debate: people confuse social media (engineered to keep you passive) with conversational AI (which waits for your intent). One captures your brain. The other amplifies it. #AI #SCADA #WomenInEngineering #KatyInControl
+
+---
+
+*Mis à jour le 20 avril 2026 — E=HK²*
 
