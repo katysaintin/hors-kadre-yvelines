@@ -152,43 +152,44 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 **Logique de séquence** : Universel → Éducation → Personnel → Storytelling
 
 ### TRILOGIE 1 — Société & Lucidité
-| # | Titre | Statut |
-|---|-------|--------|
-| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** |
-| 2 | Angle mort : pourquoi vous souffrez malgré votre frigo plein | **PUBLIÉ** |
-| 3 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE |
+| # | Titre | Statut | Post FB  |
+|---|-------|--------|----------|
+| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** | - |
+| 2 | Angle mort : pourquoi vous souffrez malgré votre frigo plein | **PUBLIÉ** | - |
+| 3 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
-| # | Titre | Statut |
-|---|-------|--------|
-| 4 | Angle mort : Parcoursup, ce que ni les classements ni les profs ne disent | **PUBLIÉ** |
-| 5 | Angle mort : préparer son enfant au lycée & Parcoursup simplifié | IDÉE |
-| 6 | Angle mort : communication efficace avec les équipes éducatives (CNV) | IDÉE |
-| 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE |
-| 8 | Angle mort : les Neuromythes et leur impact à l'école | IDÉE |
-| 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré | IDÉE |
+| # | Titre | Statut | Post FB  |
+|---|-------|--------|----------|
+| 4 | Angle mort : Parcoursup, ce que ni les classements ni les profs ne disent | **PUBLIÉ** | :heavy_check_mark: |
+| 20 | Angle mort : 98% de réussite et après, le classement selon les IVAL | **PUBLIÉ** | :heavy_check_mark: |
+| 5 | Angle mort : préparer son enfant au lycée & Parcoursup simplifié | IDÉE | - |
+| 6 | Angle mort : communication efficace avec les équipes éducatives (CNV) | IDÉE | - |
+| 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE | - |
+| 8 | Angle mort : les Neuromythes et leur impact à l'école | IDÉE | - |
+| 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré | RÉDIGÉ | - |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
-| # | Titre | Statut |
-|---|-------|--------|
-| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant neurodivergent | **EN COURS** |
-| 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE |
-| 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE |
-| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | IDÉE |
+| # | Titre | Statut | Post FB  |
+|---|-------|--------|----------|
+| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant neurodivergent | **EN COURS** | - |
+| 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - |
+| 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - |
+| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs |  **EN COURS** | - |
 
 ### BLOC 4 — Identité & Développement personnel
-| # | Titre | Statut |
-|---|-------|--------|
-| 14 | Angle mort : ma double culture franco-vietnamienne — nulle part chez soi | IDÉE |
-| 15 | Angle mort : les femmes dans les sciences et la tech | IDÉE |
-| 16 | Angle mort : les 4 accords Toltèques appliqués à la vie pro et au handicap | EN COURS |
-| 17 | Angle mort : le biais de négativité — detox physique & mentale | **PUBLIÉ** |
+| # | Titre | Statut | Post FB  |
+|---|-------|--------|----------|
+| 14 | Angle mort : ma double culture franco-vietnamienne — nulle part chez soi | IDÉE | - |
+| 15 | Angle mort : les femmes dans les sciences et la tech | IDÉE | - |
+| 16 | Angle mort : les 4 accords Toltèques appliqués à la vie pro et au handicap | EN COURS | - |
+| 17 | Angle mort : le biais de négativité — detox physique & mentale | **PUBLIÉ** | - |
 
 ### BLOC 5 — Storytelling personnel
-| # | Titre | Statut |
-|---|-------|--------|
-| 18 | Errance médicale — rupture du tendon d'Achille mal diagnostiquée | IDÉE |
-| 19 | Le deuil périnatal — mon fils en 2007, résilience et reconstruction | IDÉE |
+| # | Titre | Statut | Post FB  |
+|---|-------|--------|----------|
+| 18 | Errance médicale — rupture du tendon d'Achille mal diagnostiquée | IDÉE | - |
+| 19 | Le deuil périnatal — mon fils en 2007, résilience et reconstruction | IDÉE | - |
 
 ---
 
