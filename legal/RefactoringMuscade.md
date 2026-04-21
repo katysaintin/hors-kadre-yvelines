@@ -340,5 +340,56 @@ muscade.anibus.view            ← FENETRE, ANIBIMG, CWANIME, widgets
 muscade.anibus.render          ← CWFORMAT, CWIMAGE, palette
 muscade.anibus.acquisition     ← ACQUIS, CWSCANF (à terme remplacé)
 
+**La gestion des index PCX — où ça se passe exactement**
+Le mécanisme complet est réparti sur 3 niveaux :
+Niveau 1 — La palette globale dans ANIBUS (référence statique)
+
+// Dans AppConfig (qu'on a refactorisé) :
+public static final byte[] Ri = new byte[256];  // Rouge initial
+public static final byte[] Gi = new byte[256];  // Vert initial  
+public static final byte[] Bi = new byte[256];  // Bleu initial
+// Chargés une seule fois depuis le fichier PCX au démarrage
+
+C'est la palette de référence immuable — celle qui vient du fichier PCX de Christian.
+Niveau 2 — La palette courante dans ANIBIMG (mutable par vue)
+
+// Dans ANIBIMG — une copie par fenêtre synoptique :
+byte Rc[] = new byte[256];  // Rouge courant (modifié par PALET)
+byte Gc[] = new byte[256];  // Vert courant
+byte Bc[] = new byte[256];  // Bleu courant
+byte Ri[] = new byte[256];  // Rouge initial (copie locale)
+
+Niveau 3 — Le cycle d'animation (le coeur)
+
+TORPALET.Rafraichir()
+    │
+    ▼
+ANIBIMG.commutePalet(coulinit, coulfinale)
+    │   ← modifie Rc[coulinit] = Ri[coulfinale]
+    │   ← pose ModifPalet = true
+    ▼
+ANIBIMG.update(Graphics g)
+    │   ← si ModifPalet == true
+    ▼
+ANIBIMG.GetImage()
+    │   ← reconstruit l'image avec MemoryImageSource
+    │   ← new IndexColorModel(8, 256, Rc, Gc, Bc)
+    │   ← même Bufimage[] pixel par pixel, nouvelle palette
+    ▼
+repaint() → l'image s'affiche avec les nouvelles couleurs
+
+La réponse à ta vraie question
+L'index PCX c'est coulinit — le numéro de couleur dans la palette (0 à 255) qui est associé à un groupe de pixels dans Bufimage[]. Quand tu as dans le DXG :
+
+PALET;LT1900>50[1];195;10;8;1275;275;
+
+
+Ça dit : "l'index de couleur 195 dans la palette → quand LT1900>50, mettre la couleur 10 (vert), sinon mettre la couleur 8 (gris foncé)".
+Christian n'anime pas des widgets — il repeint des groupes de pixels en changeant leur entrée de palette. Tous les pixels qui avaient la couleur 195 dans l'image PCX changent de couleur en même temps. C'est pour ça que les cuves se remplissent, que les LEDs changent de couleur — ce sont des zones de pixels partageant le même index de palette.
+
+Conséquence pour ton refactoring
+Tu ne touches pas à ce mécanisme. ANIBIMG + TORPALET + le tableau Ri/Gi/Bi dans AppConfig — c'est le moteur PALET, il reste intact.
+Ce que tu remplaces c'est uniquement ce qui est par-dessus l'image : JBUTTON, VALNUM, EQUTOR... Les Tier 1 et 2 de l'estimation.
+Le Tier 4 (FENETRE + ANIBIMG) c'est juste migrer le conteneur de Frame AWT vers JLayeredPane Swing, sans toucher à la logique palette. 🎯
 
 
