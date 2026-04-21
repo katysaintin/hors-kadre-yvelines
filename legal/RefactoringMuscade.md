@@ -285,5 +285,60 @@ Estimation refactoring View (pour référence)
 TierClassesDurée1 — Swing direct (JBUTTON, VALNUM, EQUTOR...)6 classes3 semaines2 — paintComponent (BOUTON, BARGRAF, DISQUE...)6 classes4 semaines3 — JFreeChart (COURBE, TREND, YFX...)4 classes6 semaines4 — FENETRE + ANIBIMG (conteneur JLayeredPane)2 classes4 semaines5 — CI/tests—2 semainesTotal~19 semaines concentrées
 
 Pour reprendre immédiatement
+
+
 La prochaine action est de corriger RemoteFileHelper dans DatabaseLoader.java en inlinant le code de ANIBUS.saveRemoteJarToLocal() (code fourni ci-dessus), puis de produire le diagramme de packages (étape 5) et la présentation .md pour les collègues.
 Le fichier source de référence est disponible à /tmp/src/muscade/anibus/ (si session container active) ou dans le ZIP muscade-anibus-maven-v2.zip livré à Katy.
+-------------------
+FENETRE extends NB_ID_MENU  ← une Frame AWT avec un MenuBar intégré
+    │
+    ├── Panneau (AnibusImage)  ← le fond PCX + animations
+    ├── BarBouton (BARBUTT)    ← barre de boutons en haut
+    ├── BarInfo (BARINFO)      ← barre d'info en bas
+    └── sp (ScrollPane)        ← scroll si image > écran
+
+------------------------
+
+**Rôle de chaque classe CW**
+
+CWANIME — classe abstraite de base de tous les widgets animés. Déjà documentée. ✅
+CWBASE — la base de données en mémoire. Contient la liste de tous les CWDATA (ANA + TOR), indexée par symbole et par (trame, paramètre). C'est le registre central que DatabaseLoader remplit et que ANIBIMG interroge.
+CWDATA — classe abstraite d'une variable process. Déjà documentée. ✅
+CWDATANA — variable analogique. Déjà documentée. ✅
+CWDATTOR — variable digitale. Déjà documentée. ✅
+CWDATA_IANA — variable interne analogique calculée (BD_EXT.CFG). Évaluée en local par un script JavaScript ou une procédure Java — pas reçue du serveur. Exemple : PUISSANCE = DEBIT * (TSORTIE - TENTREE).
+CWDATA_INTERNE — interface factory pour les variables internes. getInstance(ArrayList) retourne un CWDATA. Implémentée par CWDATA_IANA.
+CWDATE — variable interne spéciale qui retourne l'heure courante. Utilisée dans les synoptiques pour afficher un horodatage.
+CWEVENT — représente un événement d'alarme horodaté dans la file de messages. Porteur de données pour AlarmManager.
+CWFORMAT — utilitaire de formatage d'une valeur double en chaîne selon le code DisplayFormat (les 9 formats définis en Annexe 8 de la doc Christian). Utilisé par VALNUM, EQUTOR, etc.
+CWIMAGE — conteneur de la liste des objets CWANIME d'une vue. Maintient TabObj (le Vector des animations) et NbrItem. C'est le "scène graph" de la vue — ANIBIMG itère dessus pour peindre.
+CWOBSERV — implémentation concrète de CWObserver. Reçoit les notifications de changement de valeur depuis CWObservable.
+CWObservable — Observable custom (non utilisé dans le flux principal, héritage du pattern Observer de Christian pour certains widgets interactifs).
+CWObserver — interface Observer correspondante.
+CWSCANF — parseur de chaîne ASCII reçue du serveur. Découpe la trame ("0 : val1 val2 ... val64") et distribue les valeurs aux bons CWDATA par (trame, paramètre).
+CWTXTF — affichage d'une variable en mode texte dans les vues .IMG (fond texte). Spécifique au mode Txt de ANIBIMG.
+
+Ta vision — et elle est juste
+Modèle actuel (Christian) :
+  Serveur → BD.CFG/ANA.CFG/TOR.CFG → CWBASE en mémoire → ANIBIMG
+                                           ↑
+                               DatabaseLoader reconstruit tout ça
+
+Ta cible :
+  Serveur Gilles → read_db() → List<Symbol, Type, ...>
+  Serveur Gilles → read(Symbol) / write(Symbol, value) → valeur temps réel
+  ANIBIMG → s'abonne aux symboles dont il a besoin → reçoit les valeurs
+Ce que ça veut dire architecturalement :
+CWBASE + DatabaseLoader + les fichiers CFG → à terme inutiles. La base de données vit sur le serveur de Gilles. Le client n'a qu'à demander read_db() pour construire sa liste de variables à la volée.
+CWDATA + CWDATANA + CWDATTOR → à remplacer par un modèle plus léger. Juste un ProcessVariable { String symbol; Type type; double value; } qui reçoit les mises à jour par socket.
+CWSCANF → à remplacer par un parseur de la réponse de l'API de Gilles.
+Ce qu'il faut garder : CWFORMAT (le formatage des valeurs), CWEVENT (les alarmes), CWIMAGE + CWANIME (le moteur de rendu).
+
+muscade.anibus.model.legacy    ← CWBASE, CWDATA*, DatabaseLoader (isolé)
+muscade.anibus.model.api       ← IDataServer, IVariable (ton nouveau modèle léger)
+muscade.anibus.view            ← FENETRE, ANIBIMG, CWANIME, widgets
+muscade.anibus.render          ← CWFORMAT, CWIMAGE, palette
+muscade.anibus.acquisition     ← ACQUIS, CWSCANF (à terme remplacé)
+
+
+
