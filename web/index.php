@@ -320,6 +320,15 @@ $currentOrderLabel = order_label($order);
     <meta charset="UTF-8">
     <title>Hors Kadre - Classement exploratoire des lycees</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTNJ36H5D"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-TTTNJ36H5D');
+	</script>
 
     <style>
         :root {
@@ -680,7 +689,8 @@ $currentOrderLabel = order_label($order);
 
         <ul class="info-list">
             <li><strong>Page Facebook :</strong> <a href="https://www.facebook.com/people/Hors-Kadre/61570725300507/" target="_blank">@Hors Kadre</a></li>
-            <li><strong>Article Mediapart :</strong> <a href="https://blogs.mediapart.fr/katy-ho/blog/150426/parcoursup-ce-que-ni-les-classements-des-lycees-ni-les-enseignants-ne-vous-disent" target="_blank">Parcoursup : ce que ni les classements des lycees ni les enseignants ne vous disent</a></li>
+			<li><strong>Article Mediapart 1 :</strong> <a href="https://blogs.mediapart.fr/katy-ho/blog/190426/98-de-reussite-au-bac-et-apres" target="_blank">98 % de réussite au bac. Et après ?</a></li>
+			<li><strong>Article Mediapart 2 :</strong> <a href="https://blogs.mediapart.fr/katy-ho/blog/150426/parcoursup-ce-que-ni-les-classements-des-lycees-ni-les-enseignants-ne-vous-disent" target="_blank">Parcoursup : ce que ni les classements des lycees ni les enseignants ne vous disent</a></li>
         </ul>
     </section>
 
@@ -906,15 +916,35 @@ $currentOrderLabel = order_label($order);
     </section>
 
     <p class="footer-note">
-        Cette page ne comporte pas d'espace de commentaire et affiche uniquement des donnees publiques agregees.
+        Cette page ne comporte pas d'espace de commentaire et affiche uniquement des donnees publiques agregees.<BR>
+		©2026 Katy Ho — Hors Kadre 
+		Données publiques — Traitement et analyse indépendante  
+		Réutilisation autorisée avec attribution
 	</p>
-	
-	<p style="font-size:12px;color:#555;">
-	©2026 Katy Ho — Hors Kadre  
-	Données publiques — Traitement et analyse indépendante  
-	Réutilisation autorisée avec attribution
+	<p class="footer-note">
+	<a href="legal/apropos.html">À propos / Méthodologie</a> |
+	<a href="legal/mentions-legales.html">Mentions légales</a>
 	</p>
 
 </div>
+<!-- Bandeau RGPD -->
+    <style>
+      #rgpd{position:fixed;bottom:0;left:0;right:0;background:#1B3A6B;color:#F5F0EB;
+      padding:12px 20px;font-size:13px;display:flex;justify-content:space-between;
+      align-items:center;z-index:9999;font-family:Georgia,serif;}
+      #rgpd a{color:#C4572A;}
+      #rgpd button{background:#C4572A;color:#fff;border:none;padding:8px 16px;
+      cursor:pointer;border-radius:4px;margin-left:20px;white-space:nowrap;font-size:13px;}
+    </style>
+    <div id="rgpd">
+      <span>Ce site utilise Google Analytics pour mesurer l'audience anonymement.
+      <a href="mailto:katy.saintin@gmail.com">Contact</a></span>
+      <button onclick="document.getElementById('rgpd').style.display='none';
+        document.cookie='rgpd=1;max-age=31536000;path=/'">J'ai compris</button>
+    </div>
+    <script>
+      if(document.cookie.indexOf('rgpd=1')>=0)
+        document.getElementById('rgpd').style.display='none';
+    </script>
 </body>
 </html>
