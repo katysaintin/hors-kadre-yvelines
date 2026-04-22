@@ -82,7 +82,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 ## 3. Identité 2 — Katy Ho / Hors Kadre (Mediapart)
 
 **Blog** : Hors Kadre — *Ce que personne ne dit vraiment, sourcé et vécu*  
-**Formule** : E=HK² — Plus on creuse, plus ça explose  
+**Formule** : E=HK² — Plus on creuse, plus ça explose et bienvenue Hors du Kadre
 **Ville affichée** : Saïgon-sur-Seine 🙂  
 **Langue** : Français exclusivement 🇫🇷
 
@@ -103,9 +103,10 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 **Style visuel**
 | Style | Registre | Exemples d'articles |
 | --- | --- | --- |
-| Flat/Cartoon | Analytique, sociétal, données, humour | IVAL, Parcoursup, filières techno, biais cognitifs |
-| Realistic illustration | Intime, témoignage, aidance, vécu | Aidants, neurodiversité, deuil, maladie |
-| Dramatique/grain | Dénonciation, injustice, systémique | pHARe, violences institutionnelles, harcèlement |
+| Flat/Cartoon humoristic | Analytique, sociétal, données, humour | IVAL, Parcoursup, filières techno, biais cognitifs |
+| Flat Dramatique grain illustration | Intime, témoignage, aidance, vécu | Aidants, neurodiversité, deuil, maladie |
+| Flat/Cartoon Dramatique grain | Dénonciation, injustice, systémique | pHARe, violences institutionnelles, harcèlement |
+| Narratif Long Black Hair Asian | Article narratif , vécue | Neurodiversité, analyse faite par Katy ou vécue par elle |
 
 **Thématiques**
 1. **NEURODIVERSITÉ & INVISIBILITÉ** — TDAH, HPI, autisme, aidants, femmes non diagnostiquées
@@ -116,9 +117,11 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 1. J'écris uniquement sur ce que j'ai vécu de l'intérieur
 2. Chaque article est sourcé — neurosciences, données officielles, études
 3. Je cherche les paradoxes et angles morts que les médias n'abordent pas
-4. Je ne mets pas mon lien en commentaire — il est dans le post
-5. Je ne joue pas le jeu du buzz si ça compromet ma ligne éditoriale
-6. Je protège la vie privée de ma famille (mari autiste, fils autiste, fille TDA)
+4. Je mets les liens en commentaire de commentaire , avec un vous savez pourquoi en référence à l'article 1 qui parle des algorithmes.
+5. Je mets un 1er commentaire épinglé , en commentaire de ce commentaire le lien vers , vous savez pourquoi !
+6. Je mets le lien en réponse au premier commentaire épinglé.
+7. Je ne joue pas le jeu du buzz si ça compromet ma ligne éditoriale, dans ce cas là, je mets les liens dans le Post
+8. Je protège la vie privée de ma famille (mari autiste, fils autiste, fille TDA)
 
 **Processus de publication**
 - Mediapart → article long, sourcé + mots-clés séparés par virgules + prompt image
@@ -157,9 +160,10 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 ### TRILOGIE 1 — Société & Lucidité
 | # | Titre | Statut | Post FB  |
 |---|-------|--------|----------|
-| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** | PROGRAMMÉ Episode 5 FB |
+| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** |  **PUBLIÉ** Episode 5 FB |
 | 2 | Angle mort : pourquoi vous souffrez malgré votre frigo plein | **PUBLIÉ** | - |
 | 3 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
+| 22 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **EN COURS** | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut | Post FB  |
@@ -171,6 +175,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE | - |
 | 8 | Angle mort : les Neuromythes et leur impact à l'école | IDÉE | - |
 | 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré |  **PUBLIÉ** | :heavy_check_mark: |
+| 21 | Angle mort :Qui classe les lycées — et pourquoi ça n'est pas un hasard | EN COURS | PROGRAMMÉ épisode 7 |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut | Post FB  |
@@ -179,6 +184,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - |
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - |
 | 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs |  **EN COURS** | - |
+
 
 ### BLOC 4 — Identité & Développement personnel
 | # | Titre | Statut | Post FB  |
@@ -200,15 +206,19 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 5 épisodes fondateurs (J-4 → J) :
 
-| Épisode | Titre | Visuel | Post FB |
-|---------|-------|--------| --------|
-| 1 | "J'avais 500 000 onglets ouverts" | Cerveau flat/cartoon avec 50 000 onglets |  **PUBLIÉ**  |
-| 2 | "J'ai toujours eu un pied dans deux mondes" | Personnage sur deux ponts distincts |  **PUBLIÉ**  |
-| 3 | "Une IA m'a aidée à accoucher d'une idée que j'avais depuis 40 ans" | Femme face à écran, arborescence lumineuse |  **PUBLIÉ**  |
-| 4 | "Comment on nomme un blog quand on vit entre deux mondes ?" + E=HK² | Logo HK avec le K qui s'échappe |  **PUBLIÉ**  |
-| 5 | Le manifeste + l'invitation | La femme du marionnettiste — celle qui lève les yeux | PROGRAMMÉ |
+| Épisode | Titre | Visuel | Post FB | Article Mediapart |
+|---------|-------|--------| --------|-------------------|
+| 1 | "J'avais 500 000 onglets ouverts" | Cerveau flat/cartoon avec 50 000 onglets |  **PUBLIÉ**  | - |
+| 2 | "J'ai toujours eu un pied dans deux mondes" | Personnage sur deux ponts distincts |  **PUBLIÉ**  | - |
+| 3 | "Une IA m'a aidée à accoucher d'une idée que j'avais depuis 40 ans" | Femme face à écran, arborescence lumineuse |  **PUBLIÉ** | - |
+| 4 | "Comment on nomme un blog quand on vit entre deux mondes ?" + E=HK² | Logo HK avec le K qui s'échappe |  **PUBLIÉ**  | - |
+| 5 | Le manifeste + l'invitation | La femme du marionnettiste — celle qui lève les yeux | **PUBLIÉ** |  |
 
----
+épisodes suivants (J + n) : Avec des liens Mediapart
+| Épisode | Titre | Article MediaPart | Post FB |
+|---------|-------|--------| --------|-------------------|
+| 6 |  Parcoursup et la sévérité des profs | Article 14 | **PUBLIÉ** |
+| 7 |  Les classements dirigés par les médias | Article 14 | EN COURS |
 
 ## 7. Légende des statuts
 
