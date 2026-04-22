@@ -326,8 +326,7 @@ $currentOrderLabel = order_label($order);
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
-		gtag('config', 'G-TTTNJ36H5D');
+		gtag('config', 'G-TTTNJ36H5D', { 'anonymize_ip': true });
 	</script>
 
     <style>
