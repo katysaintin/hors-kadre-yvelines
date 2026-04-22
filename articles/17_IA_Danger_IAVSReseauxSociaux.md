@@ -95,6 +95,30 @@ Confondre les deux, c'est confondre un adolescent qui lit et un adolescent qui r
 
 ---
 
+## 4bis. Le cas suédois — ou comment confondre l'outil et l'usage
+
+En ce moment même, un article circule massivement sur les réseaux : *"La Suède dépense 120 millions d'euros pour abandonner les iPads et revenir aux manuels scolaires."* Les commentaires s'enchaînent : preuve que le numérique nuit aux enfants. Preuve que les écrans sont mauvais. Preuve que l'IA aussi, forcément.
+
+Voici ce que l'article ne dit pas — ou dit en tout petit.
+
+La Suède a généralisé les tablettes dès 2009 — jusque dans les crèches. L'objectif était pédagogique : former des générations à la maîtrise du numérique. En pratique, les tablettes ont progressivement remplacé les manuels **sans cadre d'usage clair**. Les élèves naviguaient entre contenus éducatifs et YouTube. Le scroll passif s'est installé en classe.
+
+Un professeur en neurosciences cognitives cité dans la couverture de ce retour en arrière le dit explicitement : il ne remet pas en cause l'utilisation des tablettes et des ordinateurs dans l'éducation.
+
+La Suède n'a pas prouvé que le numérique est mauvais. Elle a prouvé que **l'outil sans intention ne produit rien.**
+
+Ce qui a échoué en Suède : le scroll passif non structuré — appliqué à des enfants de 6 ans, financé par l'État à hauteur de 104 millions d'euros.
+
+Ce qui fonctionne : l'usage actif et intentionnel du numérique — que ce soit un manuel, une tablette avec un projet défini, ou une IA conversationnelle avec une question précise.
+
+C'est exactement la distinction de cet article. Un enfant qui demande à une IA de lui expliquer la photosynthèse n'est pas en train de scroller. Il est en train d'apprendre. L'écran est le même. Le mécanisme cognitif est à l'opposé.
+
+Le biais de négativité fait le reste : une décision politique scandinave devient une preuve générale que *"les écrans c'est mauvais"* — et l'IA trinque avec les iPads YouTube.
+
+**Je dis ça, je dis rien.**
+
+---
+
 ## 5. La preuve par 5 jours
 
 En cinq jours. En plâtre. En arrêt maladie.
