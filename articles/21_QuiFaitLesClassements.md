@@ -50,6 +50,9 @@ C'est un indicateur simple. Trop simple. Parce qu'il ne mesure pas ce que l'éta
 
 Un lycée qui sélectionne des élèves excellents à l'entrée et obtient 98 % de réussite n'a peut-être rien fait d'exceptionnel. Un lycée qui accueille des élèves fragiles et obtient 87 % a peut-être accompli quelque chose de remarquable.
 
+**Un lycée à 98 % de réussite peut être moins efficace qu'un lycée à 87 %.**
+Tout dépend de ce qu'il fait de ses élèves — pas de qui il choisit à l'entrée.
+
 Le Ministère de l'Éducation nationale le sait. C'est pour ça qu'il a créé, **dès 1993**, un indicateur différent : les **IVAL — Indicateurs de Valeur Ajoutée des Lycées**.
 
 La valeur ajoutée mesure l'écart entre les résultats obtenus et les résultats *attendus* — attendus en fonction du profil social, scolaire et démographique des élèves à l'entrée. Elle répond à la vraie question : **qu'est-ce que cet établissement a ajouté au niveau initial de ses élèves ?**
@@ -115,7 +118,6 @@ Le tableau qui résume tout :
 | **Le Parisien Étudiant** | Note composite opaque | LVMH / Bernard Arnault | Méthodologie non publiée — 191 journalistes sur 226 ont voté une motion de défiance éditoriale en 2023 |
 | **L'Étudiant** | Taux brut + IVAL atténués | Comexposium — salons orientation | Publie les classements ET organise les salons où ces mêmes établissements paient pour recruter des élèves — situation de dépendance économique potentielle |
 | **Éducation nationale** | IVAL — le plus juste | L'État | Produit les données depuis 1993. N'a jamais fait l'outil pour les rendre accessibles. |
-| **Hors Kadre** | IVAL + taux de mention pondérée — tri libre sur tous les indicateurs | Katy Ho — indépendante, sans financement publicitaire | Construit en une journée en avril 2026 à partir des données open data du Ministère — accès gratuit — katy.ho.free.fr |
 
 *Note méthodologique : le paradoxe 63 % / 23 % est issu de l'analyse croisée des données IVAL 2025 disponibles sur education.gouv.fr, appliquée aux 4 360 lycées référencés sur katy.ho.free.fr. Méthodologie détaillée disponible sur le site.*
 
@@ -176,12 +178,19 @@ Pas besoin de se téléphoner. Le système se reproduit seul.
 ## 6. Ce que vous pouvez faire dès maintenant
 
 **Consulter les IVAL avant de choisir un lycée.**
-Rendez-vous sur **katy.ho.free.fr** — outil gratuit, 4 360 lycées, données officielles du Ministère.
+J'ai construit un outil simple pour ça : **katy.ho.free.fr** — 4 360 lycées, données officielles du Ministère, accès gratuit. Pour la première fois, les familles peuvent voir ce que les classements médiatiques ne montrent pas — et comparer librement sur tous les indicateurs.
 
 Avant de regarder le taux de réussite d'un lycée, regardez sa valeur ajoutée. La différence vous dira si ce lycée accompagne vraiment ses élèves — ou s'il sélectionne les bons profils à l'entrée.
 
 **Poser la question à votre lycée.**
 *"Quel est votre taux d'accès de seconde au baccalauréat ?"* C'est l'indicateur qui mesure la proportion d'élèves entrés en seconde qui obtiennent finalement le bac dans l'établissement. Un lycée qui fait partir ses élèves fragiles avant l'examen affichera un taux de réussite élevé — et un taux d'accès révélateur.
+
+**Trois réflexes concrets pour votre enfant :**
+1. Regardez la **valeur ajoutée** (IVAL) — pas le taux brut
+2. Comparez avec le **taux d'accès** de seconde au bac — il révèle l'écrémage
+3. Vérifiez l'**évolution des effectifs** — un lycée qui perd des élèves en route n'accompagne pas
+
+Un lycée performant n'est pas celui qui sélectionne. C'est celui qui fait progresser.
 
 **Partager cet article.**
 Pas parce qu'il vous met en colère. Parce qu'il vous donne une information que les médias qui font de l'argent avec les classements n'ont pas intérêt à vous donner.
