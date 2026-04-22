@@ -76,6 +76,42 @@ footer{text-align:center;color:var(--gray);font-size:.82rem;margin-top:40px;padd
   .brand-text h1{font-size:1.4rem}
 }
 </style>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1H0D33HE0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N1H0D33HE0');
+</script>
+<!-- Bandeau RGPD minimal -->
+<style>
+  #rgpd-banner {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: #1a2a4a; color: #fff;
+    padding: 12px 20px; font-size: 13px;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 9999; font-family: sans-serif;
+  }
+  #rgpd-banner a { color: #e07a5f; }
+  #rgpd-btn {
+    background: #e07a5f; color: white; border: none;
+    padding: 8px 16px; cursor: pointer; border-radius: 4px;
+    margin-left: 20px; white-space: nowrap;
+  }
+</style>
+<div id="rgpd-banner">
+  <span>Ce site utilise Google Analytics pour mesurer l'audience.
+  <a href="/legal/mentions-legales.html">En savoir plus</a></span>
+  <button id="rgpd-btn" onclick="document.getElementById('rgpd-banner').style.display='none';
+    localStorage.setItem('rgpd-ok','1')">J'ai compris</button>
+</div>
+<script>
+  if(localStorage.getItem('rgpd-ok')) 
+    document.getElementById('rgpd-banner').style.display='none';
+</script>
 </head>
 <body>
 
