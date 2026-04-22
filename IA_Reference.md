@@ -218,9 +218,10 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 4 | "Comment on nomme un blog quand on vit entre deux mondes ?" + E=HK² | Logo HK avec le K qui s'échappe |  **PUBLIÉ**  | - |
 | 5 | Le manifeste + l'invitation | La femme du marionnettiste — celle qui lève les yeux | **PUBLIÉ** |  |
 
-épisodes suivants (J + n) : Avec des liens Mediapart
+épisodes suivants (J + n) : Avec des liens Mediapart :
+
 | Épisode | Titre | Article MediaPart | Post FB |
-|---------|-------|--------| --------|-------------------|
+|---------|-------|-------------------|---------|
 | 6 |  Parcoursup et la sévérité des profs | Article 14 | **PUBLIÉ** |
 | 7 |  Les classements dirigés par les médias | Article 14 | EN COURS |
 
