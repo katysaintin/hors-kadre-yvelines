@@ -110,7 +110,6 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | Flat/Cartoon humoristic | Analytique, sociétal, données, humour | IVAL, Parcoursup, filières techno, biais cognitifs |
 | Flat Dramatique grain illustration | Intime, témoignage, aidance, vécu | Aidants, neurodiversité, deuil, maladie |
 | Flat/Cartoon Dramatique grain | Dénonciation, injustice, systémique | pHARe, violences institutionnelles, harcèlement |
-| Narratif Long Black Hair Asian | Article narratif , vécue | Neurodiversité, analyse faite par Katy ou vécue par elle |
 
 **Thématiques**
 1. **NEURODIVERSITÉ & INVISIBILITÉ** — TDAH, HPI, autisme, aidants, femmes non diagnostiquées
@@ -234,6 +233,54 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | EN COURS | Plan ou ébauche disponible |
 | PROGRAMMÉ | Post programmé sur la plateforme |
 | IDÉE | À développer |
+
+## 8. Outils & Analytics
+
+### Sites en production
+| Outil | URL | Description |
+|-------|-----|-------------|
+| Outil national lycées | http://katy.ho.free.fr | PHP + MySQL, 4 360 lycées, données IVAL 2025 |
+| Classement Yvelines | https://katysaintin.github.io/hors-kadre-yvelines | GitHub Pages, 87 lycées 78 |
+
+### Google Analytics — deux flux distincts
+| Propriété | ID de mesure | URL suivie |
+|-----------|-------------|------------|
+| Classement national | 14417131902 | katy.ho.free.fr |
+| Classement Yvelines | 14417235807 | katysaintin.github.io/hors-kadre-yvelines |
+
+**Notes techniques :**
+- `anonymize_ip: true` activé sur les deux — conformité RGPD
+- Bandeau consentement intégré dans la charte HK (navy/terracotta)
+- Cookie `rgpd=1` posé 1 an sur free.fr / localStorage sur GitHub Pages
+- Données temps réel disponibles immédiatement — historique dans 24-48h
+
+### Charte personnage — prompts image
+**Descriptor obligatoire pour tous les visuels avec personnage :**
+- ❌ `woman` seul → Copilot génère cheveux bruns au carré par défaut
+- ❌ `dark hair` seul → interprété comme brun foncé
+- ✅ `long straight black hair, Asian features` → résultat cohérent
+
+**Images de référence validées :**
+- Aidants neurodivergents → `AidantNaturel.png` (realistic illustration)
+- IA vs RS → `ChatGPT_Image_20_avr__2026.png` (flat cartoon split RS/IA)
+- Classements lycées → `IMG_8380.png` (flat cartoon, soulève classement)
+- Parcoursup → `IMG_8382.png` (flat cartoon, yeux écarquillés, logo Parcoursup)
+
+### Épinglage commentaire Facebook — règle validée
+Facebook bloque l'épinglage des commentaires contenant des liens externes.
+
+**Stratégie actuelle :**
+- Option A (lien dans le post) : lien à la fin du post, assumé avec humour
+- Option B (commentaire sans lien épinglé) : commentaire épinglé sans lien → lien dans réponse au commentaire
+- Clin d'œil systématique : *"Vous savez pourquoi le lien est là. 😄"*
+
+### Stats Hubspot email UNAAPE (avril 2026)
+- Envoyé à : 1 220 parents
+- Taux d'ouverture : **46,17 %** (moyenne secteur : 20-25 %)
+- Clics uniques : **147** — taux de clics : 13,57 %
+- Clics/ouvertures : 29,4 %
+- 81 % des clics depuis mobile
+- 0 avis négatif
 
 ---
 
