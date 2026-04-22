@@ -118,6 +118,7 @@ Le tableau qui résume tout :
 | **Le Parisien Étudiant** | Note composite opaque | LVMH / Bernard Arnault | Méthodologie non publiée — 191 journalistes sur 226 ont voté une motion de défiance éditoriale en 2023 |
 | **L'Étudiant** | Taux brut + IVAL atténués | Comexposium — salons orientation | Publie les classements ET organise les salons où ces mêmes établissements paient pour recruter des élèves — situation de dépendance économique potentielle |
 | **Éducation nationale** | IVAL — le plus juste | L'État | Produit les données depuis 1993. N'a jamais fait l'outil pour les rendre accessibles. |
+| **Hors Kadre** | IVAL + taux de mention pondérée — tri libre sur tous les indicateurs | Katy Ho — indépendante, sans financement publicitaire | Construit en une journée en avril 2026 à partir des données open data du Ministère — accès gratuit — katy.ho.free.fr |
 
 *Note méthodologique : le paradoxe 63 % / 23 % est issu de l'analyse croisée des données IVAL 2025 disponibles sur education.gouv.fr, appliquée aux 4 360 lycées référencés sur katy.ho.free.fr. Méthodologie détaillée disponible sur le site.*
 
