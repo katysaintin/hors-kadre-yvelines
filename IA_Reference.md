@@ -176,7 +176,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 5 | Angle mort : préparer son enfant au lycée & Parcoursup simplifié | IDÉE | - |
 | 6 | Angle mort : communication efficace avec les équipes éducatives (CNV) | IDÉE | - |
 | 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE | - |
-| 8 | Angle mort : les Neuromythes et leur impact à l'école | IDÉE | - |
+| 8 | Angle mort : Valorisation des filières pro techno - SI on juge un poisson | **PUBLIÉ** | - |
 | 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré |  **PUBLIÉ** | :heavy_check_mark: |
 | 21 | Angle mort :Qui classe les lycées — et pourquoi ça n'est pas un hasard | EN COURS | PROGRAMMÉ épisode 7 |
 
