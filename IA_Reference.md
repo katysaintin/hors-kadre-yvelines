@@ -164,9 +164,9 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | # | Titre | Statut | Post FB  |
 |---|-------|--------|----------|
 | 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** |  **PUBLIÉ** Episode 5 FB |
-| 2 | Angle mort : pourquoi vous souffrez malgré votre frigo plein | **PUBLIÉ** | - |
+| 2 | Angle mort : le biais de négativité — Gap Minder Singe | **PUBLIÉ** | - |
 | 3 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
-| 22 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **EN COURS** | - |
+| 17 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **EN COURS** | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut | Post FB  |
@@ -195,7 +195,6 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 14 | Angle mort : ma double culture franco-vietnamienne — nulle part chez soi | IDÉE | - |
 | 15 | Angle mort : les femmes dans les sciences et la tech | IDÉE | - |
 | 16 | Angle mort : les 4 accords Toltèques appliqués à la vie pro et au handicap | EN COURS | - |
-| 17 | Angle mort : le biais de négativité — detox physique & mentale | **PUBLIÉ** | - |
 
 ### BLOC 5 — Storytelling personnel
 | # | Titre | Statut | Post FB  |
