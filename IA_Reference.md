@@ -178,7 +178,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE | - |
 | 8 | Angle mort : Valorisation des filières pro techno - SI on juge un poisson | **PUBLIÉ** | - |
 | 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré |  **PUBLIÉ** | :heavy_check_mark: |
-| 21 | Angle mort :Qui classe les lycées — et pourquoi ça n'est pas un hasard | EN COURS | PROGRAMMÉ épisode 7 |
+| 21 | Angle mort :Qui classe les lycées — et pourquoi ça n'est pas un hasard | **PUBLIÉ** | PROGRAMMÉ épisode 7 |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut | Post FB  |
