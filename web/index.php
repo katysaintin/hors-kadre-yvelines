@@ -690,7 +690,8 @@ $currentOrderLabel = order_label($order);
             <li><strong>Page Facebook :</strong> <a href="https://www.facebook.com/people/Hors-Kadre/61570725300507/" target="_blank">@Hors Kadre</a></li>
 			<li><strong>Article Mediapart 1 :</strong> <a href="https://blogs.mediapart.fr/katy-ho/blog/190426/98-de-reussite-au-bac-et-apres" target="_blank">98 % de réussite au bac. Et après ?</a></li>
 			<li><strong>Article Mediapart 2 :</strong> <a href="https://blogs.mediapart.fr/katy-ho/blog/150426/parcoursup-ce-que-ni-les-classements-des-lycees-ni-les-enseignants-ne-vous-disent" target="_blank">Parcoursup : ce que ni les classements des lycees ni les enseignants ne vous disent</a></li>
-        </ul>
+        	<li><strong>Article Mediapart 3 :</strong> <a href="https://blogs.mediapart.fr/katy-ho/blog/230426/qui-classe-les-lycees-et-pourquoi-ca-nest-pas-un-hasard" target="_blank">Article Mediapart — Qui classe les lycées </a></li>
+		</ul>
     </section>
 
     <section class="panel">
