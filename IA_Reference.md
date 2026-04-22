@@ -81,10 +81,14 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 ## 3. Identité 2 — Katy Ho / Hors Kadre (Mediapart)
 
-**Blog** : Hors Kadre — *Ce que personne ne dit vraiment, sourcé et vécu*  
-**Formule** : E=HK² — Plus on creuse, plus ça explose et bienvenue Hors du Kadre
+**Blog** : Hors Kadre — *Ce que personne ne dit vraiment, sourcé et vécu* 
+**Signature** : E=HK²
+**Formules** : 3 possibles, selon le ton E=HK² — Plus on creuse, plus ça explose 💥, E=HK² la formule de la relativité éditoriale, Einstein avait la sienne.
+**Message d'invitation** : Bienvenue Hors du Kadre
 **Ville affichée** : Saïgon-sur-Seine 🙂  
 **Langue** : Français exclusivement 🇫🇷
+**Ton des articles** : humoristique décalé, si le sujet est adapté.
+
 
 **Contraintes Mediapart**
 - Titre : 80 caractères maximum — préfixe recommandé : "Angle mort :"
