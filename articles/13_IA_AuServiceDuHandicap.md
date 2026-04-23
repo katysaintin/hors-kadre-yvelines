@@ -120,6 +120,10 @@ Le TDAH n'est pas seul dans cette galère. Voici comment les principaux troubles
 
 ---
 
+> Ce que je décris ici n'est pas isolé. Les neurosciences parlent de surcharge exécutive, de difficulté de structuration, de fatigue décisionnelle. Pour ces profils, l'IA ne remplace pas la pensée. Elle la rend possible. Ce n'est pas de la dépendance. C'est de l'égalisation.
+
+---
+
 ## 2. Ce que l'IA fait — la distinction que personne ne fait
 
 Il existe deux façons d'utiliser l'IA. Et la confusion entre les deux explique à la fois les peurs infondées et les usages sous-estimés.
@@ -306,7 +310,7 @@ Ce n'est pas une demande futuriste. C'est une demande d'équité.
 
 ---
 
-## 7. Le lien avec l'article #13
+## 7. Le lien avec l'article sur les réseaux sociaux
 
 Dans mon article *"Angle mort : vous avez peur du mauvais outil"*, j'écris :
 
@@ -396,11 +400,13 @@ L'IA est le premier outil qui s'adapte à moi.
 
 Pas à ma pathologie. À ma façon de penser. À ma vitesse. À mon mode de traitement de l'information.
 
+*Ce que vous appelez dépendance, certains l'appellent enfin respirer.*
+
 Ce n'est pas une révolution technologique.
 
 C'est une révolution d'équité.
 
-E=HK² 💥
+**E=HK²** 💥
 
 ---
 
@@ -436,8 +442,8 @@ E=HK² 💥
 - AI Act (EU) 2024/1689
 
 **Références Hors Kadre**
-- Article #10 — *Aidants neurodivergents* (Mediapart, avril 2026)
-- Article #13 — *IA vs réseaux sociaux* (Mediapart, avril 2026)
+- *"Angle mort : vous avez peur du mauvais outil"* — Hors Kadre / Mediapart, avril 2026
+- *"Et toi, qui prend soin de toi ?"* — Hors Kadre / Mediapart, avril 2026
 
 ---
 
@@ -447,6 +453,6 @@ E=HK² 💥
 
 *Mots-clés :* intelligence artificielle, TDAH, RQTH, handicap invisible, neurodiversité, prothèse cognitive, fonctions exécutives, dyslexie, TSA, dyspraxie, aménagement poste, Hors Kadre
 
-*Image :* `ChatGPT_Image_22_avr__2026__21_51_39.png` ✅
+*Image principale :* `IA_AvantApres.png` ✅
 
 *Article publié sur Mediapart / Le Club — Hors Kadre — Katy Ho — Avril 2026*
