@@ -208,13 +208,13 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 5 épisodes fondateurs (J-4 → J) :
 
-| Épisode | Titre | Visuel | Post FB | Article Mediapart |
+| Épisode | Titre | Visuel |  Article Mediapart | Post FB |
 |---------|-------|--------| --------|-------------------|
-| 1 | "J'avais 500 000 onglets ouverts" | Cerveau flat/cartoon avec 50 000 onglets |  **PUBLIÉ**  | - |
-| 2 | "J'ai toujours eu un pied dans deux mondes" | Personnage sur deux ponts distincts |  **PUBLIÉ**  | - |
-| 3 | "Une IA m'a aidée à accoucher d'une idée que j'avais depuis 40 ans" | Femme face à écran, arborescence lumineuse |  **PUBLIÉ** | - |
-| 4 | "Comment on nomme un blog quand on vit entre deux mondes ?" + E=HK² | Logo HK avec le K qui s'échappe |  **PUBLIÉ**  | - |
-| 5 | Le manifeste + l'invitation | La femme du marionnettiste — celle qui lève les yeux | **PUBLIÉ** |  |
+| 1 | "J'avais 500 000 onglets ouverts" | Cerveau flat/cartoon avec 50 000 onglets | - | :heavy_check_mark: |
+| 2 | "J'ai toujours eu un pied dans deux mondes" | Personnage sur deux ponts distincts | - | :heavy_check_mark: |
+| 3 | "Une IA m'a aidée à accoucher d'une idée que j'avais depuis 40 ans" | Femme face à écran, arborescence lumineuse | - | :heavy_check_mark: |
+| 4 | "Comment on nomme un blog quand on vit entre deux mondes ?" + E=HK² | Logo HK avec le K qui s'échappe | - | :heavy_check_mark: |
+| 5 | Le manifeste + l'invitation | La femme du marionnettiste — celle qui lève les yeux | Article 1 | :heavy_check_mark: |
 
 épisodes suivants (J + n) : Avec des liens Mediapart :
 
