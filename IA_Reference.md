@@ -183,7 +183,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut | Post FB  |
 |---|-------|--------|----------|
-| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant neurodivergent | **EN COURS** | - |
+| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant neurodivergent | **PUBLIÉ** | - |
 | 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - |
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - |
 | 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs |  **EN COURS** | - |
