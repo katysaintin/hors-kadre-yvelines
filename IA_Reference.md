@@ -128,7 +128,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 **Processus de publication**
 - Mediapart → article long, sourcé + mots-clés séparés par virgules + prompt image
-- Facebook → adaptation avec hashtags viraux + lien dans le post (jamais en commentaire)
+- Facebook → adaptation avec hashtags viraux + lien en commentaire de commentaire épinglé
 - LinkedIn → uniquement si contenu professionnel + hashtags viraux
 - X (Twitter) → tweet très court avec lien et hashtags viraux
 
@@ -163,30 +163,30 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 ### TRILOGIE 1 — Société & Lucidité
 | # | Titre | Statut | Post FB  |
 |---|-------|--------|----------|
-| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** |  **PUBLIÉ** Episode 5 FB |
-| 2 | Angle mort : le biais de négativité — Gap Minder Singe | **PUBLIÉ** | - |
+| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** |  :heavy_check_mark: Episode 5  |
+| 2 | Angle mort : le biais de négativité — Gap Minder Singe | **PUBLIÉ** | PROGRAMMÉ épisode 11 |
 | 3 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
-| 17 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **PUBLIÉ** | - |
+| 17 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **PUBLIÉ** | PROGRAMMÉ épisode 8 |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut | Post FB  |
 |---|-------|--------|----------|
-| 4 | Angle mort : Parcoursup, ce que ni les classements ni les profs ne disent | **PUBLIÉ** | :heavy_check_mark: |
+| 4 | Angle mort : Parcoursup, ce que ni les classements ni les profs ne disent | **PUBLIÉ** | :heavy_check_mark: épisode 6 |
 | 20 | Angle mort : 98% de réussite et après, le classement selon les IVAL | **PUBLIÉ** | :heavy_check_mark: |
 | 5 | Angle mort : préparer son enfant au lycée & Parcoursup simplifié | IDÉE | - |
 | 6 | Angle mort : communication efficace avec les équipes éducatives (CNV) | IDÉE | - |
 | 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE | - |
-| 8 | Angle mort : Valorisation des filières pro techno - SI on juge un poisson | **PUBLIÉ** | - |
+| 8 | Angle mort : Valorisation des filières pro techno - SI on juge un poisson | **PUBLIÉ** | PROGRAMMÉ épisode 12 |
 | 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré |  **PUBLIÉ** | :heavy_check_mark: |
-| 21 | Angle mort :Qui classe les lycées — et pourquoi ça n'est pas un hasard | **PUBLIÉ** | PROGRAMMÉ épisode 7 |
+| 21 | Angle mort :Qui classe les lycées — et pourquoi ça n'est pas un hasard | **PUBLIÉ** | :heavy_check_mark: épisode 7 |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut | Post FB  |
 |---|-------|--------|----------|
-| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant neurodivergent | **PUBLIÉ** | - |
+| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant des neurodivergents | **PUBLIÉ** | PROGRAMMÉ épisode 10 |
 | 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - |
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - |
-| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs |  **EN COURS** | - |
+| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs |  **PUBLIÉ** | PROGRAMMÉ épisode 9 |
 
 
 ### BLOC 4 — Identité & Développement personnel
@@ -220,8 +220,13 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 | Épisode | Titre | Article MediaPart | Post FB |
 |---------|-------|-------------------|---------|
-| 6 |  Parcoursup et la sévérité des profs | Article 14 | **PUBLIÉ** |
-| 7 |  Les classements dirigés par les médias | Article 14 | EN COURS |
+| 6 |  Parcoursup et la sévérité des profs | Article 4 | :heavy_check_mark:  |
+| 7 |  Les classements dirigés par les médias | Article 21 | :heavy_check_mark: |
+| 8 |  IA conversationnelle VS Réseaux sociaux | Article 17 | PROGRAMMÉ en réponse d'une Vidéo France TV |
+| 9 |  IA prothèse cognitive pour les handicaps invisibles | Article 13 | PROGRAMMÉ & sur LinkedIn |
+| 10 |  L'aidant des neurodivergents | Article 10 | PROGRAMMÉ |
+| 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | PROGRAMMÉ |
+| 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ |
 
 ## 7. Légende des statuts
 
