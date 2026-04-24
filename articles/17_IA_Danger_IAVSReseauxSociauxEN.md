@@ -12,8 +12,6 @@ Maybe.
 
 But what if we are simply afraid of the wrong tool?
 
----
-
 ## A confusion that changes everything
 
 When people talk about AI, they often mix together two completely different systems:
@@ -27,8 +25,6 @@ One is built to **reduce cognitive friction**.
 The other is built to **maximize it — just in the wrong way.**
 
 And yet, in public discussions, they are constantly confused.
-
----
 
 ## The real machine shaping our behavior
 
@@ -53,8 +49,6 @@ For several years, Facebook's algorithm amplified emotional reactions — with "
 These systems are not neutral.
 They are optimized for engagement — not for thinking.
 
----
-
 ## The scale of the problem
 
 This is not marginal.
@@ -74,13 +68,9 @@ In 2024, Oxford University Press chose **"brain rot"** as its word of the year.
 Not because of AI.
 Because of what constant low-quality digital consumption is doing to our minds.
 
----
-
 ## And yet, the tool we actually fear is not the one causing this
 
 It's the one trying to fix it.
-
----
 
 ## A personal shift
 
@@ -101,8 +91,6 @@ But because I was using AI.
 **The tool didn't replace my thinking.**
 **It finally kept up with it.**
 
----
-
 ## AI works differently
 
 AI doesn't need your attention.
@@ -116,7 +104,6 @@ Then you leave.
 
 That's a completely different model.
 
----
 
 ## From attention capture to cognitive support
 
@@ -130,8 +117,6 @@ That's a completely different model.
 One fragments your thinking.
 The other amplifies it.
 
----
-
 ## The bias behind the fear
 
 We fear what is new.
@@ -141,8 +126,6 @@ This is a classic cognitive bias.
 
 We worry about the tool that is still evolving,
 while ignoring the system that has already reshaped our attention, our habits, and our ability to focus.
-
----
 
 ## The real question
 
@@ -155,15 +138,11 @@ It is:
 **"Why are we so afraid of a tool that helps us think,
 and so comfortable with systems that prevent us from doing so?"**
 
----
-
 ## Final thought
 
 The danger is not AI.
 
 The danger is that we keep looking in the wrong direction.
-
----
 
 *Katy Saintin is a SCADA engineer and AI PhD candidate at CEA-Irfu. She writes [Hors Kadre](https://blogs.mediapart.fr/katy-ho), a French blog exploring neurodiversity, education, and the blind spots that nobody talks about.*
 
