@@ -6,7 +6,7 @@
 
 ---
 
-**Chapô** — "Hors Kadre décrypte ce que les médias n'abordent pas. Cloner une voix sans consentement : illégal. Utiliser l'IA pour créer et produire : libérateur. Entre les deux, un gouffre que le débat public refuse de traverser. On peut être pro-IA et contre le plagiat. Ce n'est pas incompatible. Sourcé et vécu."
+**Chapô** — Hors Kadre décrypte ce que le débat public refuse de distinguer. Cloner une voix sans consentement : illégal. Utiliser l'IA pour créer avec intention : libérateur. Entre les deux, un gouffre que médias et experts mélangent en permanence. On peut être pro-IA et contre le plagiat. Ce n'est pas contradictoire. C'est lucide.
 
 ---
 
@@ -79,6 +79,8 @@ Parce que ce que l'IA ne peut pas faire à ma place :
 ---
 
 ### Mes élèves de Master 2 — la preuve par le hackathon
+
+Et ce que j'observe chez mes étudiants confirme exactement la même chose.
 
 Je n'enseigne pas seulement à l'école d'ingénieurs. J'y enseigne depuis des années — et certains de mes anciens élèves de 2017 me suivent encore sur LinkedIn aujourd'hui.
 
@@ -160,22 +162,20 @@ Voici ce que mes propres données disent — en temps réel, vérifiables, sans 
 
 **1 parent sur 3 qui ouvre clique.** Sans relance, sans hashtag, sans stratégie algorithmique. Juste un contenu utile, envoyé aux bonnes personnes.
 
-La phrase qui résume :
-
 *"1 220 parents. 47% d'ouverture. 82% des clics depuis mobile. Sans algorithme, sans hashtag. Juste un outil utile qui dit quelque chose de vrai."*
 
 C'est ça, l'usage avec intention. Et les chiffres le prouvent.
 
 ---
 
-Hier soir, zéro page ouverte de mon côté sur katy.ho.free.fr.
+Et pourtant, pendant que je n'y pensais même plus, zéro page ouverte de mon côté sur katy.ho.free.fr.
 Google Analytics : 1 utilisateur actif. France. En temps réel.
 
 Quelqu'un consultait mon site. Sans que je le sache.
 
-Ce site que j'ai construit en un jour. Avec une IA. Moi qui suis ingénieure — donc, accordons-le, pas tout à fait la même chose qu'une personne sans compétences informatiques.
+Ce site que j'ai construit en un jour. Avec une IA. Moi qui suis ingénieure — donc, accordons-le, pas tout à fait la même chose qu'une personne sans expertise du domaine.
 
-Mais justement : **sans la connaissance du domaine, l'IA ne produit rien d'utile.** Elle aurait pu me pondre un site générique sur les lycées. C'est moi qui ai su quelles données extraire, comment les croiser, quelle formule de pondération inventer, et pourquoi ça manquait depuis 40 ans.
+Mais justement : **sans expertise du domaine, l'IA ne produit rien d'utile.** Elle aurait pu me pondre un site générique sur les lycées. C'est moi qui ai su quelles données extraire, comment les croiser, quelle formule de pondération inventer, et pourquoi ça manquait depuis 40 ans.
 
 L'IA a codé. J'ai pensé.
 
@@ -371,13 +371,15 @@ L'IA est un amplificateur. Pas un créateur. Elle amplifie ce que vous lui appor
 | Enseigner avec l'IA | Exiger la trace du processus |
 | Produire plus vite | Garder votre identité intacte |
 
-Ce ne sont pas des positions contradictoires. Ce sont des positions cohérentes — à condition de faire la distinction que le débat public refuse de faire.
+Ce n'est pas contradictoire. C'est juste que personne ne fait la distinction.
 
 Ceux qui ont peur de l'IA ont peur de perdre le contrôle.
 Ceux qui la maîtrisent se libèrent enfin.
 
 Les deux réalités coexistent. Le débat devrait les distinguer.
 Il ne le fait pas encore.
+
+Le problème n'est pas l'outil. C'est l'usage qu'on refuse de nommer.
 
 C'est ça, l'angle mort.
 
@@ -422,7 +424,6 @@ C'est ça, l'angle mort.
 **Analytics personnels — données vérifiables**
 - Google Analytics — katy.ho.free.fr — activé 22 avril 2026
 - HubSpot — campagne email UNAAPE Descartes — avril 2026
-- Google Analytics ID : 14417131902 (national) / 14417235807 (Yvelines)
 
 **Réglementation**
 - AI Act (EU) 2024/1689 — application complète août 2026
@@ -436,4 +437,14 @@ C'est ça, l'angle mort.
 
 ---
 
+*Titre Mediapart :* `Angle mort : "Fais-le toi-même. Tu as une IA."`
+*(43 caractères ✅)*
 
+*Chapô :* `Hors Kadre décrypte ce que le débat public refuse de distinguer. Cloner une voix sans consentement : illégal. Utiliser l'IA pour créer avec intention : libérateur. Entre les deux, un gouffre que médias et experts mélangent en permanence. On peut être pro-IA et contre le plagiat. Ce n'est pas contradictoire. C'est lucide.`
+*(329 caractères ✅)*
+
+*Mots-clés :* intelligence artificielle, doublage, TouchePasMaVF, deepfake, digital twin, Suno, AI Act, productivité, éducation, technophobie, fracture numérique, usage actif, intention, liberté créative, Hors Kadre, hackathon, ingénierie
+
+*Image principale :* `IA_CreativeOK.png` ✅
+
+*Article publié sur Mediapart / Le Club — Hors Kadre — Katy Ho — Avril 2026*
