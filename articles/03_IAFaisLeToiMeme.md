@@ -36,7 +36,7 @@ Il existe trois usages de l'IA. Radicalement différents. Traités comme s'ils �
 |-------|-------------|---------|
 | ❌ **Usage illégal** | Cloner une voix sans consentement, deepfake, entraîner un modèle sur des œuvres protégées sans accord | **Illégal. Poursuivi.** |
 | ⚠️ **Usage passif** | Copier-coller sans comprendre, scroller du contenu IA sans intention, laisser l'algorithme décider | **Appauvrit.** |
-| ✅ **Usage créatif** | Diriger avec précision, apporter son expertise, valider, corriger, produire avec intention, inventer | **Libère.** |
+| ✅ **Usage créatif** | Inventer, diriger avec précision, apporter son expertise, valider, corriger, produire avec intention | **Libère.** |
 
 La confusion entre ces trois usages est la source de presque tous les malentendus du débat public.
 
@@ -69,7 +69,7 @@ Parce que ce que l'IA ne peut pas faire à ma place :
 - Savoir que la citation du poisson n'est pas d'Einstein
 - Connaître Gapminder, Céline Alvarez, Rudy Simone, Faber & Mazlish
 - Avoir passé 5 ans comme représentante de parents d'élèves
-- Avoir vécu le diagnostic TDAH de l'intérieur
+- Avoir 40 ans d'expertise, de vécu et de curiosité transversale
 - Savoir coder en MySQL et PHP pour construire le site
 - Jouer la mélodie de *"Tenir debout"* au piano — tablature et accords à l'appui
 - Et avoir vécu le racisme ordinaire anti-asiatique pour l'écrire sans fard
