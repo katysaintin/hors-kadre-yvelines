@@ -34,9 +34,9 @@ Il existe trois usages de l'IA. Radicalement différents. Traités comme s'ils �
 
 | Usage | Description | Verdict |
 |-------|-------------|---------|
-| ❌ **Vol numérique** | Cloner une voix sans consentement, deepfake, entraîner un modèle sur des œuvres protégées sans accord | **Illégal. Poursuivi.** |
+| ❌ **Usage illégal** | Cloner une voix sans consentement, deepfake, entraîner un modèle sur des œuvres protégées sans accord | **Illégal. Poursuivi.** |
 | ⚠️ **Usage passif** | Copier-coller sans comprendre, scroller du contenu IA sans intention, laisser l'algorithme décider | **Appauvrit.** |
-| ✅ **Prothèse cognitive** | Diriger avec précision, apporter son expertise, valider, corriger, produire avec intention | **Libère.** |
+| ✅ **Usage créatif** | Diriger avec précision, apporter son expertise, valider, corriger, produire avec intention, inventer | **Libère.** |
 
 La confusion entre ces trois usages est la source de presque tous les malentendus du débat public.
 
