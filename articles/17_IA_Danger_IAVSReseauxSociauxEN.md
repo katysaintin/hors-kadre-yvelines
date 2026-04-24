@@ -43,6 +43,24 @@ Dopamine loops.
 These systems don’t help you think.  
 They fragment your thinking.
 
+## A personal shift
+
+I used to scroll without even noticing.
+
+Not because I wanted to — but because the system was designed that way.
+
+Now, when I open an AI tool, I come with an intention.
+
+I don’t scroll anymore.  
+I create.
+
+Not a little.  
+In bursts.
+
+The difference is not discipline.
+
+It’s the tool.
+
 ## AI works differently
 
 AI doesn’t need your attention.
@@ -76,13 +94,10 @@ The other helps you organize them.
 
 ## The bias behind the fear
 
-There is a reason why we fear AI more than social media.
+We fear what is new.  
+We normalize what already controls us.
 
-It’s not because it is more dangerous.
-
-It’s because it is new.
-
-This is a classic cognitive bias: we overestimate new risks and underestimate familiar ones.
+This is a classic cognitive bias.
 
 We worry about the tool that is still evolving,  
 while ignoring the system that has already reshaped our attention, our habits, and our ability to focus.
@@ -110,11 +125,6 @@ It’s the existence of systems that exploit our attention without giving anythi
 
 ## Final thought
 
-We are not entering a world where machines think for us.
+The danger is not AI.
 
-We are entering a world where we finally have tools that can support how we think.
-
-The danger is not that AI will replace our thinking.
-
-The danger is that we keep blaming the wrong system —  
-and never question the one that has been shaping our minds all along.
+The danger is that we keep looking in the wrong direction.
