@@ -388,9 +388,113 @@ Tu es :
 
 💥 preuve vivante d’un usage Hors Kadre
 
+
+# TODO — Diffusion article IA (Medium + LinkedIn)
+
+## 🎯 OBJECTIF
+Diffuser l’article Medium + amorcer visibilité + soumettre à publication
+
 ---
 
-## E=HK²
+## ✅ ÉTAPE 1 — Répondre à Jason (LinkedIn) → MAINTENANT
 
-Plus on creuse, plus ça explose.
--
+👉 Réponse à poster :
+
+Hi Jason — thank you again for your comment, it really resonates.
+
+I actually wrote a full article expanding on this idea of AI as a cognitive prosthesis.
+
+👉 [COLLER TON LIEN MEDIUM]
+
+What you describe — not needing to mask anymore — is exactly the shift.
+
+It’s not about productivity. It’s about finally being able to function.
+
+---
+
+## ✅ ÉTAPE 2 — Post LinkedIn (si pas encore fait)
+
+👉 Structure :
+
+HOOK (déjà validé dans ton post actuel)
++
+Commentaire à ajouter sous ton post :
+
+Full article (English version):
+
+👉 [COLLER TON LIEN MEDIUM]
+
+For some people, AI is not about productivity.
+
+It’s about access.
+
+---
+
+## ✅ ÉTAPE 3 — Soumission Medium (IMPORTANT mais rapide)
+
+👉 Cible 1 (prioritaire) :
+Better Humans
+
+👉 Cible 2 :
+The Startup
+
+---
+
+## ✉️ PITCH À ENVOYER (copier-coller)
+
+Subject: Submission — AI as cognitive prosthesis (neurodiversity perspective)
+
+Hello,
+
+I would like to submit an article for consideration.
+
+Title: AI didn’t make my life easier — it made it possible
+
+This piece explores AI not as a productivity tool, but as a form of cognitive accessibility — especially for neurodivergent profiles (ADHD, etc.).
+
+It combines lived experience with a systems-level perspective on how tools interact with different types of cognition.
+
+👉 Article link:
+[COLLER TON LIEN MEDIUM]
+
+Thank you for your consideration.
+
+Best regards,  
+Katy Saintin
+
+---
+
+## 🧠 RÈGLE ANTI-TDAH
+
+👉 Tu fais dans cet ordre UNIQUEMENT :
+
+1. Réponse Jason ✅
+2. Post LinkedIn / commentaire ✅
+3. Pitch Medium (1 seule publication suffit aujourd’hui) ✅
+
+👉 PAS PLUS
+
+---
+
+## 💥 BONUS (si énergie)
+
+👉 noter :
+- nombre de likes
+- commentaires
+- vues
+
+---
+
+## 🚫 À NE PAS FAIRE
+
+❌ attendre validation Medium  
+❌ envoyer 10 pitches  
+❌ refaire l’article  
+
+---
+
+## 🎯 RÉSULTAT ATTENDU
+
+👉 ton article circule
+👉 tu testes ton message
+👉 tu crées ton premier point d’ancrage international
