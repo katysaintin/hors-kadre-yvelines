@@ -1,4 +1,4 @@
-# We Are Afraid of the Wrong Tool
+# We are afraid of the wrong tool
 
 ## AI is not the problem. The attention economy is.
 
@@ -36,30 +36,59 @@ Social media platforms are designed around one core principle:
 
 👉 capture and keep your attention for as long as possible
 
-Endless scrolling.  
-Notifications.  
-Dopamine loops.  
+This is not speculation.
 
-These systems don’t help you think.  
-They fragment your thinking.
+Sean Parker, former president of Facebook, explained it clearly:
+
+> “We need to give you a little dopamine hit every once in a while.”
+
+Internal documents later revealed that Facebook’s algorithm amplified emotional reactions — with “angry” reactions weighted up to five times more than likes for several years.
+
+These systems are not neutral.
+
+They are optimized for engagement — not for thinking.
+
+## The scale of the problem
+
+This is not marginal.
+
+According to Médiamétrie (2024), the average user spends more than **2 hours per day** on social media.
+
+Research published in *NeuroImage* (2021) shows that even short exposure — around 15 minutes — can activate the brain’s dopaminergic system.
+
+The result is a feedback loop:
+
+👉 more stimulation  
+👉 more fragmentation  
+👉 less sustained attention  
+
+In 2024, Oxford University Press chose “brain rot” as its word of the year.
+
+Not because of AI.
+
+Because of what constant low-quality digital consumption is doing to our minds.
 
 ## A personal shift
 
-I used to scroll without even noticing.
+I’m an engineer. My work is structured, complex, system-based.
 
-Not because I wanted to — but because the system was designed that way.
+I was also diagnosed with ADHD late.
 
-Now, when I open an AI tool, I come with an intention.
+For years, the problem wasn’t thinking.
 
-I don’t scroll anymore.  
-I create.
+It was holding everything together long enough to act.
 
-Not a little.  
-In bursts.
+Then something changed.
 
-The difference is not discipline.
+During a period where I was physically immobilized — five days, a leg in a cast — I wrote ten articles and built a structured dataset covering 4,360 high schools.
 
-It’s the tool.
+Not because I suddenly became more disciplined.
+
+But because I was using AI.
+
+The tool didn’t replace my thinking.
+
+It finally kept up with it.
 
 ## AI works differently
 
@@ -112,16 +141,6 @@ It is:
 
 **“Why are we so afraid of a tool that helps us think,  
 and so comfortable with systems that prevent us from doing so?”**
-
-## A shift in perspective
-
-AI can be misused. Of course.
-
-But so can any tool.
-
-The real issue is not the existence of tools that reduce effort.
-
-It’s the existence of systems that exploit our attention without giving anything back.
 
 ## Final thought
 
