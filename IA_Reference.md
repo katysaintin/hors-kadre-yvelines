@@ -165,8 +165,9 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 |---|-------|--------|----------|
 | 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** |  :heavy_check_mark: Episode 5  |
 | 2 | Angle mort : le biais de négativité — Gap Minder Singe | **PUBLIÉ** | PROGRAMMÉ épisode 11 |
-| 3 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
+| 3 | Angle mort : l'IA vous fait peur. Mais laquelle ? | IDÉE | - |
 | 17 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **PUBLIÉ** | PROGRAMMÉ épisode 8 |
+| 22 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut | Post FB  |
