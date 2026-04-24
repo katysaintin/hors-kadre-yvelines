@@ -436,19 +436,4 @@ C'est ça, l'angle mort.
 
 ---
 
-*Titre Mediapart :* `Angle mort : l'IA vous fait peur. Mais laquelle ?`
-*(47 caractères ✅)*
 
-*Chapô :* `Hors Kadre décrypte ce que les médias n'abordent pas. Cloner une voix sans consentement : illégal. Utiliser l'IA pour créer et produire : libérateur. On peut être pro-IA et contre le plagiat. Ce n'est pas incompatible. Sourcé et vécu.`
-*(238 caractères ✅)*
-
-*Mots-clés :* intelligence artificielle, doublage, TouchePasMaVF, deepfake, digital twin, Suno, AI Act, productivité, éducation, technophobie, fracture numérique, usage actif, intention, liberté créative, Hors Kadre, prothèse cognitive, hackathon, master, ingénierie, Google Analytics, HubSpot
-
-*Images disponibles :*
-- `17_IADangerSatire1.png` — satirique "Sans IA / Avec IA" ✅
-- `778F1F6C...png` — "Sans IA débordé / Avec IA zen" ✅
-- `TestChatGPT.png` — capture 3+3=9 ✅
-
-*Prompt image principale :* `Flat cartoon with dramatic grain. Three panels side by side: LEFT — shadowy figure cloning a voice, red warning sign, chains (dark). CENTER — person copy-pasting glazed, empty thought bubble (gray). RIGHT — same Hors Kadre woman with headphones, piano keys floating, directing AI with precision, structured thought bubbles, slight smile (navy blue, terracotta). Three labels in French: "Vol" / "Usage passif" / "Prothèse créative". No logos. Wide format 1200x630.`
-
-*Article publié sur Mediapart / Le Club — Hors Kadre — Katy Ho — Avril 2026*
