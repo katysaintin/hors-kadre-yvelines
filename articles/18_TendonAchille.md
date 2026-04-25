@@ -33,6 +33,9 @@ En prenant mon élan pour un smash particulièrement sournois sur ma fille de 15
 
 Comme un élastique qui cède net.
 
+Et dans ma tête, j'ai su.
+Mais visiblement, j'étais la seule.
+
 La douleur est vive. Trente minutes intenses. Puis elle s'estompe.
 
 Mon mari — hypochondriaque notoire, ce qui dans ce cas précis s'avère comique — examine ma chaussure avec la concentration d'un médecin légiste. Verdict :
@@ -65,7 +68,12 @@ La médecin commande une radio. Pas de fracture. Elle me demande de bouger la ch
 
 *"Si c'était le tendon, vous ne pourriez pas marcher et vous auriez très très mal."*
 
-**Information médicale importante que personne ne m'a donnée ce soir-là :**
+Le problème, ce n'était pas la douleur.
+C'était qu'elle n'était pas visible.
+
+Et ce qui n'est pas visible — dans ce système — n'existe pas vraiment.
+
+*(J'ai déjà écrit ça quelque part. À propos d'autre chose. C'est troublant.)*
 Une rupture TOTALE du tendon d'Achille n'empêche absolument pas de marcher. Elle empêche uniquement de se mettre et de se maintenir sur la pointe des pieds. Et comme les nerfs sont sectionnés net — la douleur disparaît en 48 heures. Complètement. Comme si de rien n'était.
 
 Mais ça, je ne le saurais que 53 jours plus tard.
@@ -205,8 +213,6 @@ Il m'écoute. Il hoche la tête.
 
 *"C'est un sketch votre histoire. C'est pas possible. C'est du jamais vu."*
 
-*"J'ai l'habitude."*
-
 Il programme l'opération au 10 mars. Il m'explique que vu le délai, ça ne changera plus rien à la situation — je pouvais marcher tranquillement en attendant.
 
 Et là — mon mari et moi nous regardons. Nous pensons la même chose. Nous sommes supposés partir aux sports d'hiver début février.
@@ -215,7 +221,33 @@ Et là — mon mari et moi nous regardons. Nous pensons la même chose. Nous som
 
 Le chirurgien réfléchit deux secondes.
 
-*"Je ne vous le contre-indique pas. J'ai des amis sportifs qui l'ont fait."*
+*"Pourquoi pas ... Je ne vous le contre-indique pas. J'ai des amis sportifs qui l'ont fait."*
+
+---
+
+## 6bis. L'IRM — et la leçon de condescendance
+
+Le chirurgien, méfiant envers l'échographie, prescrit une IRM pour confirmation.
+
+Je me retrouve donc dans un centre d'imagerie, allongée dans la machine. Après le bilan, le médecin radiologue me présente les images.
+
+Moi — ingénieure, habituée à lire des données complexes — je pose une question parfaitement raisonnable :
+
+*"Vous pouvez me montrer où se trouve la rupture sur l'image ? La dernière fois on m'a bien expliqué et j'ai besoin d'être sûre."*
+
+Réponse, avec le ton d'un professeur face à un élève particulièrement lent :
+
+*"C'est normal que vous ne comprenez pas. C'est un métier madame. Nous sommes experts."*
+
+Je prends une grande inspiration.
+
+Je ne lui dis pas que je suis ingénieure au CEA. Ni doctorante. Ni que j'ai passé 53 jours à chercher ce diagnostic que ses collègues n'avaient pas su poser.
+
+Certaines batailles ne valent pas l'énergie.
+
+Mais je note mentalement : la seule personne qui m'a dit *"vous ne comprenez pas — c'est un métier"* — c'est dans le système où personne n'avait compris pendant 53 jours.
+
+*Je dis ça, je dis rien.*
 
 ---
 
@@ -224,6 +256,10 @@ Le chirurgien réfléchit deux secondes.
 Une semaine. Les Alpes. Les pistes bleues, les rouges, et quelques noires pour l'honneur.
 
 La botte de ski stabilise parfaitement le pied. Le tendon rompu ne se met de toute façon jamais sur la pointe des pieds en ski. Tout allait pour le mieux dans le meilleur des mondes.
+
+La preuve photographique de cette semaine existe encore sur mon visage — sous forme de marques de bronzage en forme de masque de ski.
+
+*(Pour ceux qui douteraient encore.)*
 
 Nougat, elle, est restée à la maison. Gardée par la famille. Dépressive.
 
@@ -241,9 +277,21 @@ Immobilisation totale : 45 jours. Piqûre d'anticoagulant chaque jour. Interdict
 
 Pour une TDAH hyperactive qui fatigue sa chienne sur 10 km et ne tient pas en place — c'est la peine capitale.
 
-Deux jours après l'opération, l'angoisse de l'immobilisation totale me saisit.
+Mais attendez — ce n'est pas une peine capitale simple. C'est une **double** peine capitale.
 
-Solution : je claque l'intégralité de mon CPF dans une formation en intelligence artificielle à distance.
+Parce que je suis également en arrêt de travail pour une autre raison — que je n'aborderai pas ici, ce sera l'objet d'un prochain article. Une raison qui interdisait toute activité professionnelle, même à distance.
+
+Donc : immobilisée physiquement. Immobilisée cognitivement. Interdite de sport ET de travail.
+
+Pour un cerveau TDAH qui carbure sur deux moteurs simultanément — sport et activité intellectuelle — c'est l'équivalent d'une coupure de courant totale.
+
+L'angoisse est arrivée au bout de deux jours.
+
+Solution : j'ai claqué mon CPF dans une formation en intelligence artificielle à distance.
+
+Ou plutôt — mon CPF a fait *clac*.
+
+*(Je dis ça, je dis rien. 😄)*
 
 **Ce qui s'est passé ensuite :**
 - 5 articles publiés sur Mediapart
@@ -314,8 +362,17 @@ Programme affiché sur le carnet dans mon salon :
 Et sortir Nougat sur 10 km.
 
 Elle attend depuis le 10 mars. Elle a été patiente.
-
 Plus que moi.
+
+⸻
+
+53 jours.
+
+Il y avait bien un problème.
+
+Comme quoi — parfois, le plus dur ce n'est pas de se blesser.
+
+**C'est de se faire croire.**
 
 *Libérée. Délivrée.* 🎵
 
