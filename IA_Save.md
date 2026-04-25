@@ -6,7 +6,7 @@ Lis d'abord ces deux documents existants pour ne pas faire de doublons :
    https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/IA_Reference.md
 
 2. IA_JournalBoard.md (journal de bord existant — à compléter, pas à réécrire)
-   https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/IA_JournalBoard.md
+  https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/IA_JournalBoard.md
 
 Génère un bloc Markdown à ajouter au JournalBoard, daté d'aujourd'hui.
 
