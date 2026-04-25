@@ -600,3 +600,45 @@ Aucun .docx cette session — tout en Markdown et posts Facebook directement.
 
 *Mis à jour le 20 avril 2026 — E=HK²*
 
+## SESSION DU 25 AVRIL 2026 — Podcast SCADA Star Wars anglais
+
+### Avancements concrets
+- Création complète du concept podcast **Katy in Control** — micro-interviews experts SCADA / TANGO / EPICS
+- Liste de questions d'interview originales rédigée (FR + EN) — 16 questions en 4 thèmes
+- Email de prise de contact rédigé en 3 versions : FR formel, FR tutoiement, EN friendly
+- Script épisode 1 rédigé en anglais : architecture SCADA vulgarisée via analogie Star Wars (Hardware / Bus / Business Logic)
+- Script épisode 2 rédigé en anglais : TANGO vs EPICS couche par couche — PV vs Attribute, Channel Access vs CORBA/ZMQ, IOC vs Device Server + Commands
+- Correction technique validée : IOC EPICS → PV accessibles **soit en lecture, soit en écriture** (pas les deux simultanément) — à détailler dans un épisode dédié
+- Annonce fin épisode 2 : prochain épisode = historique comparé TANGO et EPICS
+
+### Données clés produites
+- Signature récurrente validée pour le podcast : **"May the uptime be with you"**
+- Analogies Star Wars validées et cohérentes sur 2 épisodes :
+  - Droids / Stormtroopers = capteurs / actionneurs
+  - Réseau holographique = bus de communication
+  - Emperor / Dark Vador = serveur SCADA / superviseur temps réel
+  - AT-AT = PLC/automate industriel
+  - Alderaan = panne réseau catastrophique
+  - Order 66 = commande TANGO déclenchant une séquence complexe
+- Distinctions techniques vulgarisées et validées :
+  - EPICS : Process Variable (PV) — Channel Access (pub/sub) — IOC (lecture OU écriture)
+  - TANGO : Attribute — CORBA (polling) + ZMQ (événementiel) — Device Server + Commands
+
+### Fichiers produits
+- Aucun fichier .md ou .docx produit — contenu généré directement en session chat
+
+### Pending — à faire en prochaine session
+1. Script épisode 3 : **historique comparé TANGO et EPICS** — origines, équipes, institutions
+2. Script épisode 4 : deep dive couche Hardware — PV / Attributes / StreamDevice / Asyn
+3. Préparer la liste des experts à contacter (noms, institutions, communautés Tango/EPICS)
+4. Définir le nom officiel du podcast (pas encore arrêté)
+5. Décider de la plateforme de diffusion (pas abordé en session)
+
+### Note stratégique
+- Ce podcast est rattaché au pilier **Katy in Control / Katy Saintin** — anglais exclusivement
+- Aucun lien avec Hors Kadre / Katy Ho
+- Format micro-interview = compatible avec contrainte rééducation (pas de tournage lourd)
+
+---
+*Mis à jour le 25 avril 2026 — E=HK²*
+
