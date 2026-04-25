@@ -642,3 +642,70 @@ Aucun .docx cette session — tout en Markdown et posts Facebook directement.
 ---
 *Mis à jour le 25 avril 2026 — E=HK²*
 
+
+---
+
+## SESSION DU 25 AVRIL 2026 — Aidants neurodivergents, Rudy Simone, pitch médias
+
+### Avancements concrets
+
+- **Article #10 — "Et toi, qui prend soin de toi ?"** (Trilogie 3 — Neurodiversité / Aidance)
+  - Statut : EN COURS → **RÉDIGÉ** (version finale v3 corrigée)
+  - Fichier : `aidant_naturel_v3_final.md`
+  - Corrections intégrées suite double audit ChatGPT : cadrage "vécu vs science", nuances neurosciences, phrase de portée, généralisations atténuées
+  - Livré complet : titre Mediapart (78 car.), chapô (397 car.), mots-clés, prompt illustration
+
+- **Synthèse Rudy Simone** — article séparé à créer
+  - Lecture intégrale PDF (141 pages)
+  - Synthèse 22 points reformulée en français — légale (reformulation, pas traduction)
+  - Fichier : `synthese_rudy_simone_fr.md`
+
+- **Traductions anglaises** (usage externe uniquement — pas de publication)
+  - `article_caregivers_EN.md` — article #10 en anglais
+  - `rudy_simone_reading_EN.md` — synthèse Rudy Simone en anglais
+  - Usage : pièces jointes pour pitch Rudy Simone + JKP uniquement
+
+- **Pitch médias rédigés**
+  - À Rudy Simone (help4aspergers.com) — email personnel anglais, angle coécriture 2e volet
+  - À Jessica Kingsley Publishers (rights@jkp.com) — droits adaptation française + coécriture
+  - À Zèbres & Cie — 2 versions (Céline Lis-Raoux + Claudine Proust)
+
+### Données clés produites
+
+- 40% des aidants souffrent d'anxiété et dépression — source CRAIF
+- Zèbres & Cie : 10 000 abonnés, lancé oct. 2024, trimestriel
+- JKP droits : rights@jkp.com | Rudy Simone : help4aspergers.com
+- Journées clés pour pitch médias : 2 avril (autisme) + 12 juin (TDAH)
+
+**Formulations validées :**
+- ✅ "de nombreuses personnes, souvent en silence" (vs "des milliers")
+- ✅ "mécanismes largement décrits en neurosciences" (vs "réalité mesurable")
+- ✅ "Ce modèle est une simplification utile, pas une équation absolue"
+- ❌ "aidance réciproque dans les systèmes neurodivergents" — jargon froid, à éviter
+
+**Décisions actées :**
+- ChatGPT = relecteur rigueur uniquement, pas rédacteur
+- Versions anglaises = usage externe exclusivement, jamais publiées
+- Projet livre : approche coécriture avec Rudy Simone prioritaire sur écriture solo
+- Envoi pitchs médias conditionné à la publication préalable sur Mediapart (lien à inclure)
+
+### Fichiers produits
+
+| Fichier | Contenu | Statut |
+|---|---|---|
+| `aidant_naturel_v3_final.md` | Article #10 version finale + éléments Mediapart | PRÊT À PUBLIER |
+| `synthese_rudy_simone_fr.md` | Synthèse 22 points Rudy Simone FR | COMPLET |
+| `article_caregivers_EN.md` | Traduction EN article #10 | USAGE EXTERNE |
+| `rudy_simone_reading_EN.md` | Traduction EN synthèse Rudy Simone | USAGE EXTERNE |
+
+### Pending — prochaine session
+
+1. Publier article #10 sur Mediapart → mettre à jour statut + URL ici
+2. Envoyer pitch Zèbres & Cie après publication (inclure lien Mediapart)
+3. Envoyer pitch Rudy Simone + JKP après publication
+4. Démarrer plan article #11 (détection tardive femmes HPI/TDA/Autisme)
+5. Mettre à jour IA_Reference.md : article #10 → PUBLIÉ
+
+---
+*Mis à jour le 25 avril 2026 — E=HK²*
+
