@@ -201,6 +201,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - | - | - |
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - | - | - |
 | 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicap.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicapEN.md) | :heavy_check_mark: | :heavy_check_mark: |
+| 23 | Le mauvais lac | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_mauvaislac.md) | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_mauvaislacEN.md) |  - | - |
 
 
 ### BLOC 4 — Identité & Développement personnel
