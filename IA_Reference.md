@@ -194,7 +194,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant des neurodivergents | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/10_AidantsNeurodivergents.md) | À FAIRE | PROGRAMMÉ épisode 10 | - |
 | 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - | - | - |
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - | - | - |
-| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicap.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicapEN.md) | PROGRAMMÉ épisode 9 | :heavy_check_mark: |
+| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicap.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicapEN.md) | :heavy_check_mark: | :heavy_check_mark: |
 
 
 ### BLOC 4 — Identité & Développement personnel
@@ -232,8 +232,8 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 7 |  Les classements dirigés par les médias | Article 21 | :heavy_check_mark: | :heavy_check_mark: |
 | 8 |  IA conversationnelle VS Réseaux sociaux | Article 17 | :heavy_check_mark: | :heavy_check_mark: |
 | 9 |  IA prothèse cognitive pour les handicaps invisibles | Article 13 | :heavy_check_mark: | :heavy_check_mark: |
-| SPECIAL | Tendon d'Achille , déplâtrage | Article 18 | PROGRAMMÉ | PROGRAMMÉ |
 | 10 |  L'aidant des neurodivergents | Article 10 | PROGRAMMÉ | PROGRAMMÉ |
+| SPECIAL | Tendon d'Achille , déplâtrage | Article 18 | PROGRAMMÉ | PROGRAMMÉ |
 | 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | PROGRAMMÉ | PROGRAMMÉ |
 | 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ | PROGRAMMÉ |
 | 13 |  IA Fais le toi !  | Article 13 | À FAIRE | À FAIRE |
