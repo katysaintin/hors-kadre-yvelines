@@ -168,11 +168,11 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 ### TRILOGIE 1 — Société & Lucidité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
 |---|-------|------------------|---------------|----------|---------------|
-| 1 | [L'algorithme qui tient vos ficelles](https://blogs.mediapart.fr/katy-ho/blog/160426/le-lien-en-commentaire-ou-comment-lalgorithme-vous-tient) | **PUBLIÉ** | - |  :heavy_check_mark: Episode 5  |
-| 2 | Angle mort : le biais de négativité — Gap Minder Singe | **PUBLIÉ** | PROGRAMMÉ épisode 11 |
-| 3 | Angle mort : Fais-le toi-même. Tu as une IA. | **EN COURS** | - |
-| 17 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **PUBLIÉ** | PROGRAMMÉ épisode 8 |
-| 22 | Angle mort : IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - |
+| 1 | L'algorithme qui tient vos ficelles | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/01_Algorithmes.md)  | À FAIRE | :heavy_check_mark: | À FAIRE  |
+| 2 | Le biais de négativité — Gap Minder Singe | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_BiaisNegativite.md) | À FAIRE | PROGRAMMÉ épisode 11 | À FAIRE  |
+| 3 | Fais-le toi-même. Tu as une IA. | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_IAFaisLeToiMeme.md) |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_DoItYourself_Medium.md) | À FAIRE | À FAIRE |
+| 17 | IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociaux.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociauxEN.md) | PROGRAMMÉ épisode 8 | :heavy_check_mark: |
+| 22 | IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - | - | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut | Post FB  |
