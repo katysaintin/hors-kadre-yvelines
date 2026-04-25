@@ -836,3 +836,96 @@ Nouveaux éléments dans la v3.0 transmise en session :
 - Style visuel étendu (3 registres : flat cartoon / flat dramatique / flat cartoon dramatique)
 
 *Mis à jour le 25 avril 2026 — E=HK²*
+
+---
+
+## SESSION DU 25 AVRIL 2026 — LINKEDIN KATY SAINTIN & SCADA TRIBUNE
+
+### Avancements concrets
+
+**LinkedIn Katy Saintin — trilogie Femmes STEM finalisée**
+- Post non-mixité + Légion d'honneur : PUBLIÉ ✅
+- Post anniversaire 20 avril — IUT + cerveau différent : PROGRAMMÉ 📅
+- Post trajectoire — 4 filles sur 100 à l'IUT : RÉDIGÉ 🟣 (à programmer J+14 après anniversaire)
+- Tribune SCADA — Bob Dalesio + IT/OT : RÉDIGÉ 🟢 (à programmer ~20 mai)
+- Post IVAL lycées (français, exception LinkedIn) : RÉDIGÉ ✅ prêt à publier
+
+**Tribune SCADA finalisée**
+- 2 799 caractères — dans les limites LinkedIn ✅
+- Accroche 210 caractères validée : *"I said one sentence at an international scientific conference. The co-creator of one of the world's most used control systems quoted it back to me."*
+- Image : slide Bob Dalesio EPICS Meeting Oak Ridge (version scan nettoyée)
+- Commentaire épinglé sourcé : 3 présentations + 3 sources données + lien profil
+
+**Document de référence HorsKadre_Reference_v2.1.docx mis à jour**
+- Ajout tableau de bord LinkedIn Katy Saintin complet
+- Ajout section contraintes techniques LinkedIn (3 000 car., 210 car. hook, liens en commentaire)
+- Ajout section Katy in Control complète (YouTube, format, audience, sujets)
+- Ajout méthodologie accroche 210 caractères + méthode commentaire épinglé
+
+**Réseau — Wojciech Soroka / S2Innovation**
+- Message de prise de contact reçu via LinkedIn
+- Analyse de S2Innovation effectuée : société de services TANGO, joint-venture Cosylab, ~15 personnes
+- Réponse rédigée : posture experte, références publiques uniquement (GitHub PR #3602, ICALEPCS), R&D non révélée
+- Question finale stratégique : le faire parler de ses besoins avant de parler des nôtres
+
+### Données clés produites
+
+**Post IVAL lycées — chiffres validés pour LinkedIn FR**
+- 4 360 lycées base nationale — 2 712 LGT périmètre article
+- Lycées perdant ≥50 élèves : taux bac moyen **95,6%**
+- Lycées gagnant ≥20 élèves : taux bac moyen **90,7%**
+- Privés : 23% de l'échantillon, 63% du paradoxe "≥99% bac + forte perte"
+
+**Tribune SCADA — chiffres sourcés intégrés**
+- 50% des organisations : différences culturelles IT/OT = premier frein (Ponemon Institute / Dragos)
+- Marché IT/OT convergence : 50Md$ en 2024, +12,6%/an (Virtue Market Research)
+- Seulement 35% des organisations : modèle IT/OT mature (Fortinet 2025)
+- MUSCADE CEA-Irfu : 90 serveurs, 20 projets, 18 sites, 185 tickets support 2024
+
+**Formulations validées — LinkedIn Katy Saintin**
+- Accroche mystère universelle > accroche nom propre inconnu
+- "IT/OT convergence is not a technology problem. It is a translation problem." → punchline signature
+- "Both ecosystems. Both cultures. One translator." → personal brand en 6 mots
+- "I am usually the only woman in the room. That changes nothing about the problem. And everything about why I keep talking about it." → Women in Engineering incarné sans pathos
+
+### Règles stratégiques actées
+
+**Protection des développements R&D TANGO/EPICS**
+- Ne jamais mentionner le device Java TANGO→EPICS et l'IOC EPICS→TANGO en public
+- Citer uniquement les travaux publiquement tracés : GitHub PR #3602, ICALEPCS 2019, 2025, Journées IN2P3 nov. 2025
+- Toujours signer MIT + méthodologie transparente sur les outils publiés
+- Règle contacts professionnels suspects : faire parler l'autre de ses besoins avant de parler des siens
+
+**Post IVAL — exception langue LinkedIn**
+- Ce post est en français (sujet 100% franco-français, cible EN + journalistes FR)
+- Mention Hors Kadre autorisée dans le corps ("dans le cadre de mon blog Hors Kadre")
+- Liens → commentaire épinglé (règle algorithme LinkedIn)
+
+### Fichiers produits
+
+| Fichier | Contenu | Statut |
+|---------|---------|--------|
+| `HorsKadre_Reference_v2.1.docx` | Document référence complet mis à jour | ✅ Livré |
+| Post anniversaire 20 avril | LinkedIn EN, Katy Saintin | ✅ Rédigé |
+| Post trajectoire 4 filles/100 | LinkedIn EN, Katy Saintin | ✅ Rédigé |
+| Tribune SCADA Bob Dalesio | LinkedIn EN, 2 799 car. + commentaire épinglé sourcé | ✅ Rédigé |
+| Post IVAL lycées | LinkedIn FR (exception), 1 673 car. + commentaire épinglé | ✅ Rédigé |
+| Message Wojciech Soroka | LinkedIn, réponse stratégique | ✅ Rédigé |
+
+### Pending — prochaine session
+
+1. **Programmer** post trajectoire 4 filles/100 (J+14 après 20 avril = ~4 mai)
+2. **Programmer** tribune SCADA (~20 mai)
+3. **Publier** post IVAL lycées + coller commentaire épinglé immédiatement après
+4. **Attendre réponse** Wojciech Soroka — analyser selon sa réponse à la question finale
+5. **Thème 2 SCADA** — article Hors Kadre version FR (Katy Ho) à construire
+6. **Article #10** aidant neurodivergent — EN COURS — à reprendre quand énergie disponible
+7. **Épisode Facebook** site IVAL — prompt disponible dans JournalBoard du 19 avril
+
+### Prompt storytelling Facebook — Épisode IVAL (rappel)
+
+*(Déjà dans JournalBoard 19 avril — ne pas dupliquer)*
+
+---
+
+*Mis à jour le 25 avril 2026 — E=HK²*
