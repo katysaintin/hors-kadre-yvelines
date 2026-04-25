@@ -752,3 +752,87 @@ Aucun .docx cette session — tout en Markdown et posts Facebook directement.
 
 ### Prompt Facebook Épisode 3 — tokens/IA
 
+## SESSION DU 25 AVRIL 2026 — Analytics, email UNAAPE, post lancement
+
+### Avancements concrets
+
+**Google Analytics — en production sur les 2 sites**
+- katy.ho.free.fr : ID mesure 14417131902
+- katysaintin.github.io/hors-kadre-yvelines : ID mesure 14417235807
+- anonymize_ip: true, bandeau RGPD intégré charte HK
+- Premiers chiffres J+1 : 15 utilisateurs actifs, 103 événements, 12 France, 3 Organic Social
+- Courbe montante le 21 avril = signal de départ confirmé
+
+**Email HubSpot UNAAPE — envoi à 1 210 parents**
+
+| Indicateur | Résultat | Benchmark |
+|---|---|---|
+| Taux d'ouverture | 38,12 % | 20-25 % |
+| Taux de clic | 7,83 % | 2-3 % |
+| Clics/ouvertures | 20,54 % | 10 % |
+| Mobile | 73 % | — |
+| Rejets | 137 (11,32 %) | — |
+| Désinscriptions | 1 (0,09 %) | — |
+
+**Liens les plus cliqués dans l'email :**
+1. Article Parcoursup — 59 clics ← locomotive confirmée
+2. Article "Qui classe les lycées" — 24 clics
+3. Article "98% réussite" — 19 clics
+4. katy.ho.free.fr — 7 clics
+
+**Leçon clé** : l'article Parcoursup reste la locomotive. Les nouveaux articles surfent dans son sillage.
+
+**Sites — licence et mentions légales**
+- Licence MIT déposée sur les deux sites
+- Mentions légales et A propos ajoutés
+
+**Post de lancement article 4 — version finale validée**
+Fusion ADN Hors Kadre + recommandations ChatGPT :
+- Accroche courte percutante conservée
+- E=HK² réintégré (ChatGPT l'avait supprimé)
+- Phrase choc ajoutée : *"Certains lycées 'performants' voient disparaître une partie de leurs élèves en cours de route"*
+- Timing recommandé : 20h-22h (parents) ou 12h30 (profs/institutions)
+- Liens en premier commentaire si Facebook pénalise
+
+**Image article 4 — validée**
+Visuel Copilot : loupe 400→280→180→120 + 100%! + chaises vides
+Verdict : parfaite, ne pas changer — lisible en 2 secondes, charte navy/terracotta respectée
+
+### Décisions éditoriales actées
+
+- **Ne PAS attendre les 5 épisodes storytelling** avant de publier l'article IVAL
+- Publier article + post FB simultanément, LinkedIn 48h après
+- Pitch Café Pédagogique uniquement après premiers partages (preuve sociale)
+- Logos L'Étudiant/Le Parisien : **refusé** — risque juridique + contre-productif
+- Compte perso FB : post court sans référence à l'article Parcoursup — outil seul suffit
+- Tableaux dans articles Mediapart : convertir en texte structuré (Mediapart ne gère pas les tables Markdown)
+
+### Instruction ajoutée pour Claude — Mediapart
+
+### Fichiers produits
+
+| Fichier | Contenu | Statut |
+|---|---|---|
+| `HorsKadre_Article4_IVAL.md` | Article 4 converti en Markdown propre | ✅ Prêt GitHub/Mediapart |
+| `PROMPT_SAUVEGARDE_SESSION.md` | Prompt fin de session → mise à jour JournalBoard | ✅ Dans le repo |
+| `Session_Notes_Avril2026.md` | Notes complémentaires session 19 avril | ✅ Archivé |
+| `index.html` | Page statique 87 lycées Yvelines v2 — données complètes | ✅ En production |
+
+### Pending — prochaine session
+
+1. Vérifier analytics 48-72h après publication article 4
+2. Rédiger post LinkedIn Katy Saintin (angle ingénieure/données, français exception)
+3. Pitch Café Pédagogique si ≥20 partages observés
+4. Valider les 2 témoignages article 3 (BUT GMP + STI2D/Génie Méca)
+5. Épisode storytelling FB "naissance du site IVAL" — prompt disponible dans JournalBoard v1
+
+### IA_Reference.md — mise à jour v3.0 intégrée
+
+Nouveaux éléments dans la v3.0 transmise en session :
+- Tableau de bord articles complété (articles 20, 21 PUBLIÉS)
+- Google Analytics IDs ajoutés section Outils
+- Règles épinglage commentaire Facebook validées
+- Stats HubSpot UNAAPE avril 2026 ajoutées
+- Style visuel étendu (3 registres : flat cartoon / flat dramatique / flat cartoon dramatique)
+
+*Mis à jour le 25 avril 2026 — E=HK²*
