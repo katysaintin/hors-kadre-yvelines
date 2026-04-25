@@ -39,15 +39,17 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | Pilier | Identité | Plateforme | Langue | Angle |
 |--------|----------|------------|--------|-------|
 | Pro | **Katy Saintin** | [LinkedIn](https://www.linkedin.com/in/katy-saintin-3318245b/) | 🇬🇧 Anglais / Français => Expert SCADA, IA , Femmes STEM / Parcoursup |
-| Editorial Hors Kadre | **Katy Ho** |[Mediapart](https://blogs.mediapart.fr/katy-ho/blog) | 🇫🇷 Français | Neurodiversité, Éducation, Société, IA, Perso |
-| Editorial Anglais | **Katy Saintin** | [Medium](https://medium.com/@katy.saintin) | 🇬🇧 Anglais | Neurodiversité , IA, articles médiapart traduits |
+| Editorial Blog Hors Kadre | **Katy Ho** |[Mediapart](https://blogs.mediapart.fr/katy-ho/blog) | 🇫🇷 Français | Neurodiversité, Éducation, Société, IA, Perso |
+| Editorial Medium Anglais | **Katy Saintin** | [Medium](https://medium.com/@katy.saintin) | 🇬🇧 Anglais | Neurodiversité , IA, articles médiapart traduits |
+| Editorial Livre | **Katy Saintin** | à chercher | Français | Projet de roman ou livre autobiographique en cours de réfléxion, regroupe tous les articles dans une histoire |
 | Pédagogique | **Katy in Control** | [YouTube](https://www.youtube.com/@katyincontrol) | 🇬🇧 Anglais | SCADA accessible, vulgarisation ,Digital Twin |
 
 **Règles de pont entre piliers**
 - ✅ YouTube → relayé sur LinkedIn (angle expert en anglais uniquement)
 - ❌ LinkedIn → jamais mentionné sur Mediapart
 - ❌ Katy Saintin et Katy Ho ne se croisent jamais publiquement
-- ✅ Les 4 piliers se renforcent sans se cannibaler
+- ✅ Les 5 piliers se renforcent sans se cannibaler
+- ✅ Le projet de livre regroupe toutes les histoires écrites dans chaque article.
 
 **Charte graphique**
 | Couleur | Code | Usage |
@@ -175,38 +177,38 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 22 | IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - | - | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
-| # | Titre | Statut | Post FB  |
-|---|-------|--------|----------|
-| 4 | Angle mort : Parcoursup, ce que ni les classements ni les profs ne disent | **PUBLIÉ** | :heavy_check_mark: épisode 6 |
-| 20 | Angle mort : 98% de réussite et après, le classement selon les IVAL | **PUBLIÉ** | :heavy_check_mark: |
-| 5 | Angle mort : préparer son enfant au lycée & Parcoursup simplifié | IDÉE | - |
-| 6 | Angle mort : communication efficace avec les équipes éducatives (CNV) | IDÉE | - |
-| 7 | Angle mort : tensions parents/profs — décoder et s'en sortir | IDÉE | - |
-| 8 | Angle mort : Valorisation des filières pro techno - SI on juge un poisson | **PUBLIÉ** | PROGRAMMÉ épisode 12 |
-| 9 | Angle mort : projet pHARe — harcèlement adulte/enfant ignoré |  **PUBLIÉ** | :heavy_check_mark: |
-| 21 | Angle mort :Qui classe les lycées — et pourquoi ça n'est pas un hasard | **PUBLIÉ** | :heavy_check_mark: épisode 7 |
+| # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
+|---|-------|------------------|---------------|----------|---------------|
+| 4 | Parcoursup, ce que ni les classements ni les profs ne disent |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/04_ParcoursupSeveriteProfs.md) | - | :heavy_check_mark: | - |
+| 20 | 98% de réussite et après, le classement selon les IVAL |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/20_ClassementIVAL98%Bac.md) | - | :heavy_check_mark: | - |
+| 5 | préparer son enfant au lycée & Parcoursup simplifié | IDÉE | - | - | - |
+| 6 | communication efficace avec les équipes éducatives (CNV) | IDÉE | - | - | - |
+| 7 | Tensions parents/profs — décoder et s'en sortir | IDÉE | - | - | - |
+| 8 | Valorisation des filières pro techno - SI on juge un poisson | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/08_ValorisationFiliereProTechnoPoisson.md) | À FAIRE | PROGRAMMÉ épisode 12 | :heavy_check_mark: |
+| 9 | projet pHARe — harcèlement adulte/enfant ignoré | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/09_PhareDispositifIncompletEvaelle.md) | - | :heavy_check_mark: | - |
+| 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
-| # | Titre | Statut | Post FB  |
-|---|-------|--------|----------|
-| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant des neurodivergents | **PUBLIÉ** | PROGRAMMÉ épisode 10 |
-| 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - |
-| 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - |
-| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs |  **PUBLIÉ** | PROGRAMMÉ épisode 9 |
+| # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
+|---|-------|------------------|---------------|----------|---------------|
+| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant des neurodivergents | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/10_AidantsNeurodivergents.md) | À FAIRE | PROGRAMMÉ épisode 10 | - |
+| 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - | - | - |
+| 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - | - | - |
+| 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicap.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicapEN.md) | PROGRAMMÉ épisode 9 | :heavy_check_mark: |
 
 
 ### BLOC 4 — Identité & Développement personnel
-| # | Titre | Statut | Post FB  |
-|---|-------|--------|----------|
+| # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
+|---|-------|------------------|---------------|----------|---------------|
 | 14 | Angle mort : ma double culture franco-vietnamienne — nulle part chez soi | IDÉE | - |
-| 15 | Angle mort : les femmes dans les sciences et la tech | IDÉE | - |
-| 16 | Angle mort : les 4 accords Toltèques appliqués à la vie pro et au handicap | EN COURS | - |
+| 15 | Angle mort : les femmes dans les sciences et la tech | EN COURS | - |
+| 16 | Angle mort : les 4 accords Toltèques appliqués à la vie pro et au handicap | IDÉE | - |
 
 ### BLOC 5 — Storytelling personnel
-| # | Titre | Statut | Post FB  |
-|---|-------|--------|----------|
-| 18 | Errance médicale — rupture du tendon d'Achille mal diagnostiquée | IDÉE | - |
-| 19 | Le deuil périnatal — mon fils en 2007, résilience et reconstruction | IDÉE | - |
+| # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
+|---|-------|------------------|---------------|----------|---------------|
+| 18 | Errance médicale — rupture du tendon d'Achille mal diagnostiquée | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/18_TendonAchille.md) | - | PROGRAMMÉ épisode spécial | PROGRAMMÉ |
+| 19 | Le deuil périnatal — mon fils en 2007, résilience et reconstruction | IDÉE | - | - | - |
 
 ---
 
@@ -224,15 +226,17 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 épisodes suivants (J + n) : Avec des liens Mediapart :
 
-| Épisode | Titre | Article MediaPart | Post FB |
-|---------|-------|-------------------|---------|
-| 6 |  Parcoursup et la sévérité des profs | Article 4 | :heavy_check_mark:  |
-| 7 |  Les classements dirigés par les médias | Article 21 | :heavy_check_mark: |
-| 8 |  IA conversationnelle VS Réseaux sociaux | Article 17 | PROGRAMMÉ en réponse d'une Vidéo France TV |
-| 9 |  IA prothèse cognitive pour les handicaps invisibles | Article 13 | PROGRAMMÉ & sur LinkedIn |
-| 10 |  L'aidant des neurodivergents | Article 10 | PROGRAMMÉ |
-| 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | PROGRAMMÉ |
-| 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ |
+| Épisode | Titre | Article MediaPart | Post FB | Post LinkedIn |
+|---------|-------|-------------------|---------|---------------|
+| 6 |  Parcoursup et la sévérité des profs | Article 4 | :heavy_check_mark: | - |
+| 7 |  Les classements dirigés par les médias | Article 21 | :heavy_check_mark: | :heavy_check_mark: |
+| 8 |  IA conversationnelle VS Réseaux sociaux | Article 17 | :heavy_check_mark: | :heavy_check_mark: |
+| 9 |  IA prothèse cognitive pour les handicaps invisibles | Article 13 | :heavy_check_mark: | :heavy_check_mark: |
+| SPECIAL | Tendon d'Achille , déplâtrage | Article 18 | PROGRAMMÉ | PROGRAMMÉ |
+| 10 |  L'aidant des neurodivergents | Article 10 | PROGRAMMÉ | PROGRAMMÉ |
+| 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | PROGRAMMÉ | PROGRAMMÉ |
+| 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ | PROGRAMMÉ |
+| 13 |  IA Fais le toi !  | Article 13 | À FAIRE | À FAIRE |
 
 ## 7. Légende des statuts
 
