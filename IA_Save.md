@@ -34,6 +34,7 @@ Génère un bloc Markdown à ajouter au JournalBoard, daté d'aujourd'hui.
 ---
 
 RÈGLES DE GÉNÉRATION :
+- Considérer le document IA_Reference.md comme le plus à jour (numéro d'article et statut)
 - Ne pas dupliquer ce qui est déjà dans IA_Reference.md
 - Ne pas dupliquer les entrées déjà dans IA_JournalBoard.md
 - Être factuel et dense — pas de rembourrage
