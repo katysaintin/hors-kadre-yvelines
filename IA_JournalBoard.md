@@ -709,3 +709,46 @@ Aucun .docx cette session — tout en Markdown et posts Facebook directement.
 ---
 *Mis à jour le 25 avril 2026 — E=HK²*
 
+---
+
+## SESSION DU 25 AVRIL 2026 — Tokens, IA addiction & storytelling FB
+
+### Avancements concrets
+- **Article #13 HK** (IA / neurodiversité) : premier jet rédigé complet — 
+  `HK_article_IA_drogue.md` ✅
+- **HorsKadre_Reference_v3.md** : doc de référence converti en .md pur, 
+  section ⚙️ INSTRUCTIONS CLAUDE ajoutée en tête ✅
+- **Prompt Facebook Épisode 3** : généré et validé (voir section Prompts)
+- **Découverte GitHub comme source directe** : Claude lit les raw URLs 
+  sans upload — économie tokens validée ✅
+
+### Données clés produites
+- Formule tokens validée : `message + historique complet + fichiers + réponse`
+- 1 PDF 1 page = 1 500 à 3 000 tokens
+- 1 capture iPhone standard = ~1 334 tokens
+- Image recadrée = ~54 tokens (25x moins cher)
+- Format le moins gourmand : `.md` ou `.txt` (vs .docx gorgé de métadonnées)
+- Connexion Apple sur PC : fonctionnalité **manquante** sur Claude — 
+  3 emails support envoyés, Dispatch découvert le lendemain matin
+
+### Fichiers produits
+| Fichier | Contenu | Statut |
+|---------|---------|--------|
+| `HK_article_IA_drogue.md` | Article complet — tokens, addiction, neurosciences, conseils pratiques | ✅ Prêt relecture |
+| `HorsKadre_Reference_v3.md` | Doc référence v3 en .md — instructions Claude intégrées | ✅ À pousser GitHub |
+
+### Décisions éditoriales prises
+- Format de livraison Claude → **exclusivement .md** désormais, plus de .docx
+- GitHub raw URL = méthode de transmission principale des docs à Claude
+- Article #13 positionné dans Trilogie 3 Neurodiversité (tableau de bord)
+- Pipeline IA confirmé : rédaction Claude → audit ChatGPT → repauffinage Claude
+
+### Pending — prochaine session
+1. Pousser `HorsKadre_Reference_v3.md` sur GitHub (remplace v2 .docx)
+2. Pousser `HK_article_IA_drogue.md` sur GitHub
+3. Audit ChatGPT de l'article IA addiction
+4. Rédiger l'Épisode 3 Facebook avec le prompt généré
+5. Vérifier quota Claude restant avant jeudi 21h (reset hebdo)
+
+### Prompt Facebook Épisode 3 — tokens/IA
+
