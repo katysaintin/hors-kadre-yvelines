@@ -7,8 +7,8 @@
 
 ## 🔴 PRIORITÉ 1 — Cette semaine
 
-- [ ] **Déplâtrage lundi 28 avril** — prévoir énergie limitée lundi/mardi
-- [ ] **Thomas Galoisy** — attendre réponse lundi 28 avril (prof lycée Descartes, témoignage article IA Pour/Contre)
+- [ ] **Déplâtrage lundi 27 avril** — prévoir énergie limitée lundi/mardi
+- [ ] **Thomas Galoisy** — attendre réponse lundi 27 avril (prof lycée Descartes, témoignage article IA Pour/Contre)
 - [ ] **Publier article #3 IA Fais-le toi-même** sur Mediapart — après réception témoignage Thomas Galoisy
 - [ ] **Post LinkedIn article 13 bilingue** — programmé vendredi 8h30 (vérifier que c'est bien parti)
 - [ ] **Post LinkedIn IVAL lycées** (français, exception) — publier + coller commentaire épinglé immédiatement après
