@@ -1,6 +1,6 @@
 # LE MAUVAIS LAC / THE WRONG LAKE
 *Article bilingue — Medium — Katy Saintin | Avril 2026*
-*Version FR → EN — Hors Kadre ADN — Framework Medium ChatGPT*
+*V2 — Micro-révisions intégrées*
 
 ---
 
@@ -74,7 +74,7 @@ C'est tentant comme conclusion. Et c'est exactement là que le système se tromp
 
 *Toi visuel. Toi auditif. Toi cerveau droit.* Des plans d'accompagnement distribués comme des étiquettes, avec la conviction de bien faire. Ce sont des neuromythes documentés — des simplifications qui ont l'apparence de la bienveillance et les effets du catalogage. On a juste remplacé une case par plusieurs cases. Le mécanisme est identique.
 
-Ce qui est documenté par les neurosciences — notamment les travaux sur la plasticité cérébrale — c'est autre chose : le cerveau ne correspond pas à un profil fixe. Il se développe, s'adapte, se révèle **en fonction de ce que l'environnement lui propose**. Ce n'est pas "quel type es-tu" — c'est "qu'est-ce que cet environnement permet ou interdit".
+Ce que les neurosciences documentent, c'est autre chose : le cerveau n'est pas un profil fixe. Il se développe et se révèle **en fonction de ce que l'environnement lui propose**. Ce n'est pas "quel type es-tu" — c'est "qu'est-ce que cet environnement permet ou interdit".
 
 Le diagnostic genré en est la preuve par l'absurde. Les critères du TDAH ont été calibrés sur des garçons détectés jeunes — hyperactifs, visibles, bruyants. Les filles compensent, camouflent, s'épuisent à s'adapter. Et restent invisibles pendant des décennies. Pas parce qu'elles n'ont pas de TDAH. Parce que le profil de référence n'était pas le leur.
 
@@ -96,9 +96,7 @@ Je pilote le système de contrôle-commande d'ISEULT — l'un des IRM les plus p
 
 Et parallèlement — parce que les deux sont liés pour moi depuis 2017 — je suis passionnée de neurodiversité. Pas comme sujet d'étude. Comme réalité vécue, dans ma propre vie et dans celle de mes enfants.
 
-Ce que les chercheurs qui travaillent avec ISEULT documentent rejoint ce que j'ai vécu : le cerveau n'est pas un profil fixe à identifier et à placer dans la bonne filière. C'est un système dynamique, façonné en permanence par ses interactions avec l'environnement.
-
-La plasticité cérébrale n'est pas une métaphore motivationnelle. C'est un fait biologique.
+La plasticité cérébrale n'est pas une métaphore motivationnelle. C'est un fait biologique : le cerveau est façonné en permanence par ses interactions avec l'environnement.
 
 **Ce qui façonne un cerveau, ce n'est pas la case dans laquelle on le met. C'est la richesse de ce qu'on lui donne à explorer.**
 
@@ -148,7 +146,9 @@ Certains le découvrent à 20 ans. D'autres à 37. D'autres à 46. D'autres jama
 
 Ce n'est pas de la modestie de dire que je ne comprends pas toujours pourquoi ça fonctionne quand je suis dans mon élément. C'est de l'honnêteté. Je suis juste dans le bon lac.
 
-**Le lac existait depuis le début. Personne ne m'avait dit que je pouvais nager.**
+**Le lac existait depuis le début.**
+**Personne ne m'avait dit que je pouvais nager.**
+**Alors j'ai appris à croire que je ne le pouvais pas.**
 
 🐟
 
@@ -233,7 +233,7 @@ That's a tempting conclusion. And it's exactly where the system makes its second
 
 *You're visual. You're auditory. You're right-brained.* Individualized accommodation plans distributed like name tags, with the best intentions. These are documented neuromyths — oversimplifications that look like kindness and function like cataloguing. We just replaced one box with several boxes. The mechanism is identical.
 
-What neuroscience actually documents — particularly research on brain plasticity — is something else: the brain doesn't correspond to a fixed profile. It develops, adapts, and reveals itself **based on what the environment offers it**. The question isn't "what type are you" — it's "what does this environment allow or prevent."
+What neuroscience actually documents is something else: the brain is not a fixed profile. It develops and reveals itself **based on what the environment offers it**. The question isn't "what type are you" — it's "what does this environment allow or prevent."
 
 The gendered diagnosis problem is proof by absurdity. ADHD criteria were calibrated on boys detected early — hyperactive, visible, disruptive. Girls compensate, mask, exhaust themselves adapting. And remain invisible for decades. Not because they don't have ADHD. Because the reference profile wasn't theirs.
 
@@ -255,9 +255,7 @@ I run the control system of ISEULT — one of the most powerful MRI machines in 
 
 And alongside that — because the two have been connected for me since 2017 — I am deeply interested in neurodiversity. Not as an academic subject. As a lived reality, in my own life and in my children's.
 
-What the researchers working with ISEULT document aligns with what I've experienced: the brain is not a fixed profile to be identified and placed in the right track. It is a dynamic system, permanently shaped by its interactions with the environment.
-
-Brain plasticity is not a motivational metaphor. It is a biological fact.
+Brain plasticity is not a motivational metaphor. It is a biological fact: the brain is permanently shaped by its interactions with its environment.
 
 **What shapes a brain is not the box you put it in. It's the richness of what you give it to explore.**
 
@@ -307,7 +305,9 @@ Some people discover this at 20. Others at 37. Others at 46. Others never — be
 
 It's not modesty to say I don't always understand why things work when I'm in my element. It's honesty. I'm just in the right lake.
 
-**The lake was there all along. No one told me I could swim.**
+**The lake was there all along.**
+**No one told me I could swim.**
+**So I learned to believe I couldn't.**
 
 🐟
 
