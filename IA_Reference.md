@@ -34,15 +34,15 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 ---
 
-## 1. Vision globale — L'écosystème en 4 piliers
+## 1. Vision globale — L'écosystème en 5 piliers
 
 | Pilier | Identité | Plateforme | Langue | Angle |
 |--------|----------|------------|--------|-------|
-| Pro | **Katy Saintin** | [LinkedIn](https://www.linkedin.com/in/katy-saintin-3318245b/) | 🇬🇧 Anglais / Français => Expert SCADA, IA , Femmes STEM / Parcoursup |
-| Editorial Blog Hors Kadre | **Katy Ho** |[Mediapart](https://blogs.mediapart.fr/katy-ho/blog) | 🇫🇷 Français | Neurodiversité, Éducation, Société, IA, Perso |
-| Editorial Medium Anglais | **Katy Saintin** | [Medium](https://medium.com/@katy.saintin) | 🇬🇧 Anglais | Neurodiversité , IA, articles médiapart traduits |
-| Editorial Livre | **Katy Saintin** | à chercher | Français | Projet de roman ou livre autobiographique en cours de réfléxion, regroupe tous les articles dans une histoire |
+| Pro | **Katy Saintin** | [LinkedIn](https://www.linkedin.com/in/katy-saintin-3318245b/) | 🇬🇧 Anglais / 🇫🇷 Français => Expert SCADA, IA , Femmes STEM / Parcoursup |
+| Editorial | **Katy Ho** |[Mediapart](https://blogs.mediapart.fr/katy-ho/blog) | 🇫🇷 Français | Neurodiversité, Éducation, Société, IA, Perso |
 | Pédagogique | **Katy in Control** | [YouTube](https://www.youtube.com/@katyincontrol) | 🇬🇧 Anglais | SCADA accessible, vulgarisation ,Digital Twin |
+| Universel | **Katy Saintin** | [Medium](https://medium.com/@katy.saintin) | 🇬🇧 Anglais | Neurodiversité, cognition, systèmes — vécu incarné |
+| Livre | **Katy Saintin** | à chercher | Français | Projet de roman ou livre autobiographique en cours de réfléxion, regroupe tous les articles dans une histoire |
 
 **Règles de pont entre piliers**
 - ✅ YouTube → relayé sur LinkedIn (angle expert en anglais uniquement)
