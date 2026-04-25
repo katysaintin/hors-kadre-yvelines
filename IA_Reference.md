@@ -34,29 +34,51 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 ---
 
-## 1. Vision globale — L'écosystème en 3 piliers
+## 1. Vision globale — L'écosystème en 4 piliers
 
 | Pilier | Identité | Plateforme | Langue | Angle |
 |--------|----------|------------|--------|-------|
-| Pro | **Katy Saintin** | LinkedIn | 🇬🇧 Anglais | Expert SCADA, Femmes STEM |
-| Editorial | **Katy Ho** | Mediapart | 🇫🇷 Français | Neurodiversité, Éducation, Société |
-| Pédagogique | **Katy in Control** | YouTube | 🇬🇧 Anglais | SCADA accessible, vulgarisation |
+| Pro | **Katy Saintin** | [LinkedIn](https://www.linkedin.com/in/katy-saintin-3318245b/) | 🇬🇧 Anglais / Français => Expert SCADA, IA , Femmes STEM / Parcoursup |
+| Editorial Hors Kadre | **Katy Ho** |[Mediapart](https://blogs.mediapart.fr/katy-ho/blog) | 🇫🇷 Français | Neurodiversité, Éducation, Société, IA, Perso |
+| Editorial Anglais | **Katy Saintin** | [Medium](https://medium.com/@katy.saintin) | 🇬🇧 Anglais | Neurodiversité , IA, articles médiapart traduits |
+| Pédagogique | **Katy in Control** | [YouTube](https://www.youtube.com/@katyincontrol) | 🇬🇧 Anglais | SCADA accessible, vulgarisation ,Digital Twin |
 
 **Règles de pont entre piliers**
-- ✅ YouTube → relayé sur LinkedIn (angle expert)
-- ❌ Mediapart → jamais mentionné sur LinkedIn
+- ✅ YouTube → relayé sur LinkedIn (angle expert en anglais uniquement)
 - ❌ LinkedIn → jamais mentionné sur Mediapart
 - ❌ Katy Saintin et Katy Ho ne se croisent jamais publiquement
-- ✅ Les trois piliers se renforcent sans se cannibaler
+- ✅ Les 4 piliers se renforcent sans se cannibaler
+
+**Charte graphique**
+| Couleur | Code | Usage |
+|---------|------|-------|
+| Navy blue | #1B3A6B | Titres, encadrés principaux |
+| Terracotta | #C4572A | Accents, sous-titres, 'Pour aller plus loin' |
+| Blanc cassé | #F5F0EB | Arrière-plans encadrés |
+| Or | #B8860B | Étoile logo, touches rares |
+| Gris | #555555 | Sources, notes, textes secondaires |
+
+**Style visuel**
+| Style | Registre | Exemples d'articles |
+| --- | --- | --- |
+| Flat/Cartoon humoristic | Satirique ,  Analytique, sociétal, données, humour | IVAL, Parcoursup, filières techno, biais cognitifs |
+| Flat Dramatique grain illustration | Intime, témoignage, aidance, vécu | Aidants, neurodiversité, deuil, maladie |
+| Flat/Cartoon Dramatique grain | Satirique , Dénonciation, injustice, systémique | pHARe, violences institutionnelles, harcèlement |
+| Flat realistic | LinkedIn et Medium | SCADA , IA  sérieux professionnel |
+
+**Thématiques**
+1. **NEURODIVERSITÉ & INVISIBILITÉ** — TDAH, HPI, autisme, aidants, femmes non diagnostiquées
+2. **ÉDUCATION & PARENTALITÉ** — Parcoursup, orientation, neuromythes, harcèlement
+3. **SOCIÉTÉ & LUCIDITÉ** — biais cognitifs, IA, algorithmes, double culture, résilience
 
 ---
 
-## 2. Identité 1 — Katy Saintin (LinkedIn)
+## 2. Identité 1 — Katy Saintin (LinkedIn) et (Medium)
 
-**Positionnement** : Ingénieure experte senior SCADA / TANGO / EPICS — CEA-Irfu. Unique experte transverse des deux systèmes. Doctorante IA + SCADA.
+**Positionnement** : Ingénieure experte senior SCADA / TANGO / EPICS — CEA-Irfu. Unique experte transverse des deux systèmes. Doctorante IA + SCADA / Neurodiversité
 
 **Ton** : Professionnel, expert, inspirant — sans filtre inutile  
-**Langue** : Anglais exclusivement 🇬🇧
+**Langue** : Anglais exclusivement 🇬🇧 sauf pour les sujets d'actualité Français Parcoursup et Education Nationale
 
 **Sujets ✅**
 - Femmes dans les sciences et la tech (STEM)
@@ -64,18 +86,11 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 - Systèmes SCADA / IT-OT / convergence des communautés techniques
 - Formation des jeunes aux systèmes industriels
 - Chaîne YouTube Katy in Control (@katyincontrol)
+- IA et Neurodiversité
 
 **Sujets ❌**
 - Pas de mention TDAH / HPI de façon explicite
-- Pas de référence au blog Hors Kadre / Katy Ho
-- Pas de sujets neurodiversité, deuil, famille
-- Pas de français (sauf hashtags ponctuels)
-
-**Tableau de bord LinkedIn**
-- ✅ Post non-mixité + Légion d'honneur — PUBLIÉ
-- 📅 Post anniversaire 20 avril — IUT + cerveau différent — PROGRAMMÉ
-- 🔜 Thème SCADA / IT-OT / formation — À CONSTRUIRE
-- 🔜 Pitch médias internationaux — À CONSTRUIRE
+- Pas de mention sur le Burnout
 
 ---
 
@@ -95,27 +110,12 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 - Chapô : 400 caractères maximum — ouvre par : "Hors Kadre décrypte ce que les médias n'abordent pas."
 - Mots-clés : séparés par virgules
 
-**Charte graphique**
-| Couleur | Code | Usage |
-|---------|------|-------|
-| Navy blue | #1B3A6B | Titres, encadrés principaux |
-| Terracotta | #C4572A | Accents, sous-titres, 'Pour aller plus loin' |
-| Blanc cassé | #F5F0EB | Arrière-plans encadrés |
-| Or | #B8860B | Étoile logo, touches rares |
-| Gris | #555555 | Sources, notes, textes secondaires |
-
-**Style visuel**
-| Style | Registre | Exemples d'articles |
-| --- | --- | --- |
-| Flat/Cartoon humoristic | Analytique, sociétal, données, humour | IVAL, Parcoursup, filières techno, biais cognitifs |
-| Flat Dramatique grain illustration | Intime, témoignage, aidance, vécu | Aidants, neurodiversité, deuil, maladie |
-| Flat/Cartoon Dramatique grain | Dénonciation, injustice, systémique | pHARe, violences institutionnelles, harcèlement |
-
-**Thématiques**
-1. **NEURODIVERSITÉ & INVISIBILITÉ** — TDAH, HPI, autisme, aidants, femmes non diagnostiquées
-2. **ÉDUCATION & PARENTALITÉ** — Parcoursup, orientation, neuromythes, harcèlement
-3. **SOCIÉTÉ & LUCIDITÉ** — biais cognitifs, IA, algorithmes, double culture, résilience
-
+**Contraintes Medium**
+- Traduction des articles mediapart en anglais
+- Pas de tableaux dans les messages, mais du texte facile à mettre en forme
+- Pas d'usage de  -- dans les articles qui ne passent pas
+- Format plus compact et moins brodé qu'en français
+  
 **Principes éditoriaux non négociables**
 1. J'écris uniquement sur ce que j'ai vécu de l'intérieur
 2. Chaque article est sourcé — neurosciences, données officielles, études
@@ -128,9 +128,14 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 **Processus de publication**
 - Mediapart → article long, sourcé + mots-clés séparés par virgules + prompt image
+- Medium → si un article Mediapart mérite traduction + prompt image plus sérieuse (pas cartoon)
 - Facebook → adaptation avec hashtags viraux + lien en commentaire de commentaire épinglé
-- LinkedIn → uniquement si contenu professionnel + hashtags viraux
-- X (Twitter) → tweet très court avec lien et hashtags viraux
+- LinkedIn → uniquement si contenu professionnel + hashtags viraux + prompt image plus sérieuse ou réelle
+
+- ChatGPT fait une relecture qui est soumise à Claude
+- Claude fusionne les recommandations de ChatGPT mais conserver l'ADN Hors Kadre
+- Proposition de Pitch Media à contacter
+- Proposition de soumission d'article sous Medium
 
 ---
 
@@ -156,14 +161,14 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
 ---
 
-## 5. Tableau de bord — Hors Kadre (séquence Mediapart)
+## 5. Tableau de bord — Hors Kadre (séquence Mediapart, FB , Medium , LinkedIn)
 
 **Logique de séquence** : Universel → Éducation → Personnel → Storytelling
 
 ### TRILOGIE 1 — Société & Lucidité
-| # | Titre | Statut | Post FB  |
-|---|-------|--------|----------|
-| 1 | Angle mort : l'algorithme qui tient vos ficelles | **PUBLIÉ** |  :heavy_check_mark: Episode 5  |
+| # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
+|---|-------|------------------|---------------|----------|---------------|
+| 1 | [L'algorithme qui tient vos ficelles](https://blogs.mediapart.fr/katy-ho/blog/160426/le-lien-en-commentaire-ou-comment-lalgorithme-vous-tient) | **PUBLIÉ** | - |  :heavy_check_mark: Episode 5  |
 | 2 | Angle mort : le biais de négativité — Gap Minder Singe | **PUBLIÉ** | PROGRAMMÉ épisode 11 |
 | 3 | Angle mort : Fais-le toi-même. Tu as une IA. | **EN COURS** | - |
 | 17 | Angle mort : IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  **PUBLIÉ** | PROGRAMMÉ épisode 8 |
@@ -237,6 +242,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | RÉDIGÉ | Prêt à publier ou en relecture |
 | EN COURS | Plan ou ébauche disponible |
 | PROGRAMMÉ | Post programmé sur la plateforme |
+| À FAIRE | À faire |
 | IDÉE | À développer |
 
 ## 8. Outils & Analytics
