@@ -531,7 +531,71 @@ Aucun .docx cette session — tout en Markdown et posts Facebook directement.
 
 **EN :**
 > 5 days. In a cast. On sick leave. → Published 5 articles (one hit 57 comments with zero algorithmic strategy) → Launched a SCADA podcast with a digital twin (@KatyInControl) → Built a national tool covering 4,360 high schools in one day → Composed 4 songs, one now on Spotify → Spontaneously stopped TV, TikTok, Instagram and Candy Crush. Not willpower. Dopamine redirected toward something constructive. The real blind spot in the AI debate: people confuse social media (engineered to keep you passive) with conversational AI (which waits for your intent). One captures your brain. The other amplifies it. #AI #SCADA #WomenInEngineering #KatyInControl
+>
+> 
+---
 
+## SESSION DU 25 AVRIL 2026 — TRILOGIE IA + MEDIUM + DÉPLÂTRAGE LUNDI
+
+### Avancements concrets
+
+**Articles publiés ou finalisés**
+
+- **Article 17** — *"Angle mort : vous avez peur du mauvais outil"* (IA vs RS)
+  → PUBLIÉ sur Mediapart ✅
+  → Image satirique générée (deux personnages : femme paniquée RS / garçon studieux IA) ✅
+  → Post FB épisode 8 programmé (carrousel image satirique + capture ChatGPT 3+3=9) ✅
+  → Post LinkedIn publié avec image IA vs RS ✅
+
+- **Article 13** — *"L'IA ne m'a pas rendu la vie plus facile. Elle m'a rendu la vie possible."*
+  → PUBLIÉ sur Mediapart ✅
+  → Fichier : `13_IA_AuServiceDuHandicap_final.md` ✅
+  → Image : `IA_AvantApres.png` avec E=HK² ajouté sous le stylo ✅
+  → Post FB épisode 9 rédigé ✅
+  → Post LinkedIn bilingue 🇫🇷/🇬🇧 programmé vendredi 8h30 ✅
+  → Envoyé à Mission Handicap CEA-Irfu ✅
+
+- **Article IA Pour/Contre** — *"Angle mort : Fais-le toi-même. Tu as une IA."*
+  → Fichier : `HorsKadre_ArticleIA_v3_final.md` ✅
+  → PRÊT À PUBLIER — en attente témoignage Thomas Galoisy (lundi 28 avril)
+  → Image principale : `IA_CreativeOK.png` (3 panneaux : Usage illégal / passif / créatif) ✅
+  → Image secondaire : `778F1F6C...png` (Sans IA débordé / Avec IA zen) ✅
+
+**Medium — lancement compte @katy.saintin**
+
+- Compte créé : https://medium.com/@katy.saintin
+- Article 1 publié : *"We Are Afraid of the Wrong Tool"*
+  → Fichier final : `Medium_Article1_WrongTool_Final.md` ✅
+  → Soumission AI Advanced : refusée (trop tôt — compte trop récent)
+- Article 2 publié : *"AI Didn't Make My Life Easier — It Made It Possible"*
+  → Fichier final : `Medium_Article2_AIpossible_Final.md` ✅
+- Article 3 rédigé : *"AI Isn't Cheating. It Reveals Who Was Struggling All Along."*
+  → Fichier final : `Medium_Article3_DoItYourself_Final.md` ✅
+  → Trilogie Medium cohérente et complète ✅
+
+**Storytelling Facebook — épisodes produits**
+
+| Épisode | Titre | Statut |
+|---------|-------|--------|
+| 1 | "J'avais 500 000 onglets ouverts" | ✅ PUBLIÉ |
+| 2 | "J'ai toujours eu un pied dans deux mondes" | ✅ PUBLIÉ |
+| 3 | "Une IA m'a aidée à accoucher d'une idée" | ✅ RÉDIGÉ |
+| 4 | "Comment on nomme un blog..." + E=HK² | ✅ RÉDIGÉ |
+| 5 | Le manifeste + 57 commentaires + E=HK² | ✅ RÉDIGÉ |
+| 8 | IA vs RS — réponse vidéo France TV | 📅 PROGRAMMÉ |
+| 9 | IA prothèse cognitive | 📅 PROGRAMMÉ |
+
+**Contact Thomas Galoisy**
+- Mail envoyé via ENT Lycée Descartes ✅
+- Réponse reçue : en vacances à Trouville jusqu'à dimanche
+- Réponse attendue : **lundi 28 avril**
+- Section réservée dans article IA Pour/Contre ✅
+
+**Google Analytics — activé 22 avril**
+
+| Site | ID mesure | Stats 48h |
+|------|-----------|-----------|
+| katy.ho.fr
 ---
 
 *Mis à jour le 20 avril 2026 — E=HK²*
