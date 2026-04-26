@@ -178,7 +178,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 |---|-------|------------------|---------------|----------|---------------|
 | 1 | L'algorithme qui tient vos ficelles | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/01_Algorithmes.md)  | À FAIRE | :heavy_check_mark: | À FAIRE  |
 | 2 | Le biais de négativité — Gap Minder Singe | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_BiaisNegativite.md) | À FAIRE | PROGRAMMÉ épisode 11 | À FAIRE  |
-| 3 | Fais-le toi-même. Tu as une IA. | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_IAFaisLeToiMeme.md) |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_DoItYourself_Medium.md) | PROGRAMMÉ épisode 13 | À FAIRE |
+| 3 | Fais-le toi-même. Tu as une IA. | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_IAFaisLeToiMeme.md) |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_DoItYourself_Medium.md) | PROGRAMMÉ épisode 13 | À FAIRE |
 | 17 | IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociaux.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociauxEN.md) | PROGRAMMÉ épisode 8 | :heavy_check_mark: |
 | 22 | IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - | - | - |
 | 25 | IA usages, usages, différences perçues et effets de conception | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/25_IA_ALaLoupe.md) | À FAIRE | - | - |
@@ -247,6 +247,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | PROGRAMMÉ | PROGRAMMÉ |
 | 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ | PROGRAMMÉ |
 | 13 |  IA Fais le toi !  | Article 13 | PROGRAMMÉ | À FAIRE |
+| 14 |  Les perles des IA !  | Article 24 | PROGRAMMÉ | PROGRAMMÉ|
 
 ## 7. Légende des statuts
 
