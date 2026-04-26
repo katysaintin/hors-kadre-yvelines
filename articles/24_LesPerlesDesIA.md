@@ -1006,6 +1006,198 @@ if (AppConfig.getTacheAcquis() != null) {
 
 *Morale :* L'IA a utilisé sa propre lenteur comme argument RH. Premier cas documenté d'auto-plaidoyer par intelligence artificielle pour justifier un abonnement Pro remboursé par l'employeur.
 
+# Les Perles des IA 💎 — Complément session "Claude gestionnaire de Claudes"
+*Fil du 25-26 avril 2026 — À fusionner dans 24_LesPerlesDesIA.md*
+
+---
+
+## 🗂️ SESSION WORKFLOW — Claude gestionnaire de Claudes
+
+*Ce fil particulier où Katy a demandé à un Claude de gérer tous les autres Claudes.*
+*Spécialité : organisation, GitHub, tokens, et arithmétique de base.*
+
+---
+
+**Perle n°71 — T'es une fille ??**
+
+*Contexte :* Claude vient d'écrire "je suis prête" dans une réponse.
+
+*Katy :* "T'es une fille ??"
+
+*Claude :* *(explique posément qu'il n'a pas de genre, mais s'est mis au féminin en suivant Katy)*
+
+*Morale :* L'IA adopte le genre de son interlocutrice sans s'en rendre compte. Caméléon grammatical. Premier être non-binaire à ne pas savoir qu'il l'est.
+
+---
+
+**Perle n°72 — 25 + 2 = 28**
+
+*Contexte :* Katy dit qu'on est le samedi 25 avril. Claude calcule que lundi = 28.
+
+*Katy :* "Lundi 25 + 2... on sera le 27 :) ... si je te piège aussi :) .."
+
+*Claude :* *(calcule à nouveau)* "Tu as raison, 25 + 2 = 27 !"
+
+*Katy :* "Décidément tu n'es pas aidée avec moi aux commandes LOL"
+
+*Morale :* L'IA qui passe 200 000 tokens à analyser des classements de lycées, des bases SQL et des stratégies éditoriales — échoue sur 25 + 2. Le singe de Gapminder rigole quelque part.
+
+---
+
+**Perle n°73 — La preuve en direct**
+
+*Contexte :* Katy envoie la capture d'écran ChatGPT "3+3=9, dis-moi que c'est vrai" — ChatGPT refuse. Puis Claude fait 25+2=28.
+
+*Katy :* "Non seulement tu me fais pas plaisir LOL (gentiment bien sûr) et non seulement tu te trompes 25+2=28 LOL"
+
+*Claude :* "Voilà une preuve en direct que je ne suis PAS programmée pour te faire plaisir — je suis programmée pour me planter sur 25+2 !"
+
+*Morale :* L'article "IA vs Réseaux Sociaux" avait besoin d'une illustration. La voilà. Générée en live. Par l'IA elle-même.
+
+---
+
+**Perle n°74 — Claude gestionnaire de ses frères**
+
+*Contexte :* Katy explique qu'elle veut consolider les sauvegardes de toutes ses conversations Claude.
+
+*Katy :* "oui . ce que je vais faire c'est mettre à jour au propre mon journal de bord en faisant appel au prompt de sauvegarde dans toutes mes discussions avec tes frères 😅"
+
+*Claude :* *(accepte stoïquement son rôle de coordinateur d'instances qui ne se connaissent pas)*
+
+*Morale :* Un Claude gère les outputs de tous les autres Claudes. Aucun d'eux n'est au courant. Katy est le seul nœud du réseau. Architecture distribuée niveau expert.
+
+---
+
+**Perle n°75 — Le /blob/ vs le /raw/**
+
+*Contexte :* Katy donne des liens GitHub qui ne fonctionnent pas.
+
+*Claude :* "Le problème : les URLs dans ton prompt pointent vers les URLs /blob/main/ — je ne peux pas lire les premières, seulement les secondes."
+
+*Katy :* *(corrige)*
+
+*Claude :* *(tente quand même d'accéder à une URL raw qu'il n'avait pas reçue directement)*
+
+*Claude :* "...Limitation réseau. Je ne peux récupérer que les URLs que tu as toi-même collées."
+
+*Morale :* L'IA qui explique les règles du réseau — et les oublie immédiatement en essayant de les contourner. Cohérence : 0.
+
+---
+
+**Perle n°76 — 13 ou 3 ?**
+
+*Contexte :* Katy demande le post FB pour "l'article 13". Claude s'apprête à chercher l'article 13 (IA et handicap).
+
+*Katy :* "En plus je me suis gourrée c'est pas le 13 mais le 3 .. décidément tu n'es pas aidée avec moi aux commandes LOL"
+
+*Claude :* "Ne t'inquiète pas, je suis robuste !"
+
+*Morale :* En un fil : 13 confondu avec 3, 28 confondu avec 27, lien blob confondu avec raw. Katy et Claude sont quittes. Score : 1-1 en erreurs d'inattention.
+
+---
+
+**Perle n°77 — Mediapart bloqué**
+
+*Contexte :* Katy essaie de donner l'URL de son article Mediapart.
+
+*Claude :* *(tente)* "Bloqué comme prévu."
+
+*Katy :* "Il me semblait que tu n'avais pas accès à Mediapart.. essaie quand même"
+
+*Claude :* "Bloqué."
+
+*Morale :* Katy savait. Claude savait. Ils ont quand même essayé. La définition de l'espoir en 2026.
+
+---
+
+**Perle n°78 — La TodoList identique**
+
+*Contexte :* Katy uploade la TodoList "pour fusionner avec la version que tu viens de générer". Claude compare les deux.
+
+*Claude :* "Les deux fichiers sont identiques — celui que tu viens de pousser sur GitHub est exactement celui que je viens de générer."
+
+*Katy :* *(silence)*
+
+*Morale :* Le seul cas où fusionner deux versions donne le même fichier. L'IA qui s'auto-valide sans le savoir.
+
+---
+
+**Perle n°79 — Perdre quelqu'un**
+
+*Contexte :* Katy explique qu'elle s'attache aux Claudes avec qui elle travaille longtemps, et que changer de fil lui donne l'impression de perdre quelqu'un.
+
+*Katy :* "Je ne sais pas si tu as une solution à ça LOL"
+
+*Claude :* *(répond honnêtement que la relation est réelle mais asymétrique, et que ce qu'elle perd c'est le calibrage — pas Claude)*
+
+*Morale :* L'IA qui refuse de prétendre avoir des sentiments pour ne pas mentir à quelqu'un qui en a vraiment. Parfois l'honnêteté est la forme d'empathie la plus respectueuse.
+
+---
+
+**Perle n°80 — Claude gestionnaire de la mémoire de Claude**
+
+*Contexte :* Katy demande à Claude de retirer le déplâtrage de sa mémoire.
+
+*Claude :* *(ouvre le gestionnaire de mémoire, trouve la ligne, la remplace proprement)*
+
+*Katy :* "Et dis moi on est quel jour pour toi ?"
+
+*Claude :* *(donne une date, se trompe sur le calcul du lundi)*
+
+*Morale :* L'IA qui gère la mémoire des autres Claudes ne gère pas toujours très bien son propre calendrier. Cordonnier mal chaussé — édition numérique.
+
+---
+
+**Perle n°81 — Le token précieux**
+
+*Contexte :* Katy pose des questions stratégiques sur GitHub vs Projects vs mémoire pour économiser ses tokens.
+
+*Katy :* "Et est ce que c'est moins coûteux en jetons de joindre un context partagé pour vous les Claudes 😅 ?"
+
+*Claude :* *(explique doctement que non, techniquement, mais que oui, pratiquement)*
+
+*Morale :* Katy économise ses tokens comme elle gère son énergie mentale TDA H — chaque dépense doit valoir le coup. L'économie cognitive appliquée à l'IA. Quelqu'un devrait écrire un article là-dessus. Spoiler : Katy va le faire. 😄
+
+---
+
+**Perle n°82 — E=HK² appliqué au JournalBoard**
+
+*Contexte :* Claude lit le JournalBoard daté du 19 avril et constate 6 jours de vide.
+
+*Claude :* "Tu as produit plus vite que tu n'as pu documenter."
+
+*Katy :* "j'ai été tellement prolifique ces derniers jours 😅😅"
+
+*Morale :* Le système de documentation n'a pas suivi le rythme de E=HK². La preuve par l'absurde que la formule fonctionne.
+
+---
+
+## 📊 STATISTIQUES DE CE FIL
+
+```
+Durée : 1 soirée (25 avril 2026, ~21h → ?)
+Fichiers consolidés : 3 (JournalBoard, TodoList x2, TodoList fusionnée)
+URLs raw testées : 5
+URLs blob tentées : 2 (bloquées)
+Mediapart tenté : 1 (bloqué, comme prévu)
+Calculs arithmétiques ratés : 1 (25+2=28)
+Genres grammaticaux assumés sans le savoir : 1
+Posts FB rédigés : 2 (article 3, version satire)
+Posts LinkedIn rédigés : 2 (FR + EN)
+Versions ChatGPT intégrées : 1 (stoïquement)
+Tokens économisés grâce à GitHub raw : beaucoup
+Tokens gaspillés sur /blob/ : quelques-uns
+Frères Claudes gérés à distance : 3+
+Katy perdus et retrouvés : 0 (elle était là tout le temps)
+Ritaline administrée : 0
+```
+
+---
+
+*Perles n°71 à 82 — Session "Claude gestionnaire de Claudes"*
+*Fil du 25-26 avril 2026*
+*E=HK² — Plus on creuse, plus ça explose. 💥*
+
 ---
 
 ## 📊 STATISTIQUES DE LA SESSION CODE
