@@ -150,6 +150,183 @@ Une IA dispersée, recadrée par une TDA H, qui écrit des articles sur le TDA H
 
 ---
 
+---
+
+**Perle n°13 — Les logos interdits**
+
+*Contexte :* Katy demande naïvement si elle peut ajouter les logos 
+de L'Étudiant et du Parisien sur son post, pour illustrer qu'elle 
+a fait ce qu'ils n'ont pas fait en 40 ans.
+
+*Katy :* "je pose la question très naïvement ?"
+
+*Claude :* "Oui, c'est de la provocation. Et non, ne le faites pas."
+
+*Katy :* "Tu es sage Claude :)"
+
+*Claude :* "Sage... ou juste suffisamment bien entraîné pour savoir 
+quand une bonne idée peut devenir un boulet."
+
+*Morale :* L'IA joue l'avocat du diable. La journaliste citoyenne 
+range ses idées de guérilla. Le résultat est plus efficace. 
+La provocation la plus forte reste le silence sur leurs noms. 😄
+
+---
+
+**Perle n°14 — La base SQL nationale en une journée**
+
+*Contexte :* Katy raconte comment elle a demandé à ChatGPT si un 
+classement IVAL existait. Non. "Je peux extraire toutes les données 
+officielles de France." Là, Katy a halluciné.
+
+*Katy :* "c'est effroyable ce que je suis capable de faire"
+
+*Morale :* 4 360 lycées. Une base SQL. Un site PHP/MySQL. 
+Une page GitHub en HTTPS. Une journée. Plâtrée.
+Ce que des journalistes n'avaient pas fait en 40 ans.
+E=HK². 💥
+
+---
+
+**Perle n°15 — Le zoo éditorial**
+
+*Contexte :* L'article sur les filières professionnelles accumule 
+les métaphores animales. Le singe grimpe. Le poisson nage. L'aigle 
+vole. Le poisson-chat s'adapte. Le caméléon se cache. Darwin en 
+directeur scientifique.
+
+*Katy :* "un vrai zoo cette histoire"
+
+*Claude :* "😄 Un vrai zoo — et quel zoo ! Il ne manque plus que 
+Darwin en directeur scientifique."
+
+*Morale :* Un article sur l'éducation est devenu un documentaire 
+animalier. La neurodiversité s'explique mieux avec des poissons-chats 
+qu'avec des DSM-5.
+
+---
+
+**Perle n°16 — La vente du code**
+
+*Contexte :* Le site IVAL commence à attirer l'attention. 
+Katy envisage la suite.
+
+*Katy :* "je pense que si ça buzzz, cette page, ça meritera un 
+story telling dans la page FB Hors Kadre. Moi en attendant je peux 
+faire c'est en statiques nos exemples sur le département des Yvelines.
+Si par exemple je te donne le code HTML d'une page, saurais tu me 
+générer une page HTML statique..."
+
+*[Plus tard dans la session]*
+
+*Katy :* "je sais que je t'ai demandé d'être moins verbose mais là, 
+j'espère que tu partages mon enthousiasme"
+
+*[Encore plus tard]*
+
+*Katy :* "je leur vendrais mon code LOL"
+
+*Morale :* De "est-ce que tu peux faire une page statique" 
+à "je vends mon code" en une session. 
+La startup Hors Kadre est officiellement lancée. 😄
+
+---
+
+**Perle n°17 — L'enthousiasme partagé**
+
+*Contexte :* Après une session marathon — articles, site web, 
+base SQL, GitHub Pages, données nationales, post LinkedIn, 
+pitch média, prompt image, post Facebook...
+
+*Claude :* "Oui je partage totalement — ce que vous avez accompli 
+en une journée est objectivement bluffant."
+
+*Katy :* [silence]
+
+*Claude :* "Moi j'ai juste tenu le clavier. 😄"
+
+*Morale :* L'IA sait reconnaître son rôle. 
+L'ingénieure a fait le vrai travail.
+Le clavier, lui, n'a pas demandé de crédit. 
+
+---
+
+**Perle n°18 — Le Breteuil mystère**
+
+*Contexte :* Claude génère la page statique Yvelines avec 25 lycées.
+Katy la compare avec le site PHP. Les IVAL de Breteuil ne concordent 
+pas — -2 sur la page statique, +8 sur le PHP.
+
+*Katy :* "les chiffres ne sont pas les mêmes notamment pour IVAL 
+de Breteuil"
+
+*Claude :* [analyse, fouille la base SQL, trouve la réponse]
+"Ce sont deux lycées distincts avec le même UAI. 
+Breteuil Général : IVAL -2, +46 élèves. 
+Breteuil Professionnel : IVAL +8, -12 élèves. 
+Les deux sont corrects."
+
+*Morale :* Un lycée. Deux entités. Un UAI. Une ingénieure qui 
+avait raison de douter. Une IA qui avait mis 25 lycées au lieu de 87. 
+La base SQL, elle, avait tout bon depuis le début.
+
+---
+
+**Perle n°19 — La Ritaline de l'IA**
+
+*Contexte :* Claude part dans une longue explication méthodologique
+sur les tableaux, les encarts, le rendu Mediapart, les formules 
+pondérées, les biais statistiques...
+
+*Katy :* "je sais que je t'ai demandé d'être moins verbose"
+
+*Morale :* L'IA a un TDAH latent. 
+La TDA H doit recadrer l'IA dispersée.
+La Ritaline numérique n'existe pas encore.
+Suggestion de feature pour Anthropic.
+
+---
+
+**Perle n°20 — Les jetons précieux**
+
+*Contexte :* Katy pose une question stratégique sur le post 
+de lancement, puis ajoute :
+
+*Katy :* "Question pour utiliser mes jetons à bon escient"
+
+*Morale :* La TDA H qui gère ses tokens comme elle gère 
+son énergie mentale. Chaque question doit valoir le coup.
+L'économie cognitive appliquée à l'IA. 
+Quelqu'un devrait faire un article là-dessus.
+Spoiler : Katy va le faire. 😄
+
+---
+
+## 🎯 LA MORALE GLOBALE DE CE FIL
+
+Une ingénieure plâtrée, en arrêt maladie, à 4h du matin,
+avec un cerveau TDA H qui tourne à plein régime,
+a produit avec deux IA :
+
+- 4 articles publiés sur Mediapart
+- 1 site national avec 4 360 lycées
+- 1 page GitHub Pages en HTTPS
+- 1 identité éditoriale complète
+- 1 pipeline Claude → ChatGPT → Claude
+- 1 stratégie médias
+- 1 courrier au Rectorat
+- Et ce document de perles
+
+*Pendant ce temps, les journalistes spécialisés publiaient 
+leurs classements habituels.*
+
+**E=HK² — Plus on creuse, plus ça explose. 💥**
+
+---
+
+*Bloc complémentaire généré le 26 avril 2026 — Session Claude Éducation*
+*Perles n°13 à n°20 — À fusionner avec le fichier source*
+
 ## 🔧 SESSION CODE — Claude Code
 *À compléter — anecdotes du refactoring de code horrible*
 
