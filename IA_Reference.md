@@ -181,6 +181,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 3 | Fais-le toi-même. Tu as une IA. | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_IAFaisLeToiMeme.md) |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/03_DoItYourself_Medium.md) | PROGRAMMÉ épisode 13 | À FAIRE |
 | 17 | IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociaux.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociauxEN.md) | PROGRAMMÉ épisode 8 | :heavy_check_mark: |
 | 22 | IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - | - | - |
+| 25 | IA usages, usages, différences perçues et effets de conception | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/25_IA_ALaLoupe.md) | À FAIRE | - | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
@@ -201,7 +202,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - | - | - |
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - | - | - |
 | 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicap.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicapEN.md) | :heavy_check_mark: | :heavy_check_mark: |
-| 23 | Le mauvais lac | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac.md) | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac_EN.md) |  - | - |
+| 23 | Le mauvais lac | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac.md) | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac_EN.md) | - | - |
 
 
 ### BLOC 4 — Identité & Développement personnel
@@ -216,7 +217,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 |---|-------|------------------|---------------|----------|---------------|
 | 18 | Errance médicale — rupture du tendon d'Achille mal diagnostiquée | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/18_TendonAchille.md) | - | PROGRAMMÉ épisode spécial | PROGRAMMÉ |
 | 19 | Le deuil périnatal — mon fils en 2007, résilience et reconstruction | IDÉE | - | - | - |
-| 24 | Les perles des IA | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_LesPerlesDesIA.md) | À FAIRE  |  - | - |
+| 24 | Les perles des IA | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_LesPerlesDesIA.md) | À FAIRE  | À FAIRE | - |
 
 
 ---
