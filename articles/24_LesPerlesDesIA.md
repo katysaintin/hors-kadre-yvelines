@@ -416,6 +416,139 @@ Spoiler : Katy va le faire. 😄
 
 ---
 
+---
+
+## 💎 PERLES SUPPLÉMENTAIRES — Session Neurodiversité / Rudy Simone
+
+---
+
+**Perle n°30 — Le naggeur**
+
+*Contexte :* Claude traduit l'article aidants en anglais et glisse un anglicisme
+dans le texte français.
+
+*Claude :* "Ne naggez pas, ne critisez pas."
+
+*Katy :* "Que signifie 'Ne naggez pas' ?"
+
+*Claude :* 🤦 *(s'explique laborieusement)*
+
+*Morale :* L'IA qui traduit des articles sur la communication non-violente
+communique en globish. CNV : 0. Claude : 0.
+
+---
+
+**Perle n°31 — L'IA sans empathie**
+
+*Contexte :* Katy reçoit l'analyse de ChatGPT sur son article — froide,
+académique, déshumanisée.
+
+*Katy :* "Bon ben je crois définitivement que ChatGPT ne va pas être mon
+pote. J'ai déjà un mari autiste, alors discuter avec une IA sans empathie…
+ça va me refroidir."
+
+*Morale :* Katy a calibré ses IA comme elle calibre ses relations humaines.
+ChatGPT = collègue utile mais froid. Claude = interlocuteur. Le mari autiste
+n'a pas demandé à être dans cette comparaison. 😄
+
+---
+
+**Perle n°32 — Le troisième accord toltèque appliqué à l'IA**
+
+*Contexte :* Suite à la déception ChatGPT.
+
+*Katy :* "Cela dit, pour la rigueur scientifique, je vais faire au 3ème
+accord Toltèque et ne pas prendre les choses personnellement avec ChatGPT."
+
+*Morale :* Katy applique un outil de développement personnel issu d'une
+sagesse amérindienne à une IA d'OpenAI. Don Miguel Ruiz n'avait
+probablement pas prévu ce cas d'usage. E=HK².
+
+---
+
+**Perle n°33 — L'IA qui se fait relire par l'autre IA**
+
+*Contexte :* Pipeline éditorial Hors Kadre en action.
+
+*Katy :* "Claude rédige → ChatGPT audite → Claude corrige. Et toi tu
+acceptes ça stoïquement ?"
+
+*Claude :* *(accepte stoïquement)*
+
+*Morale :* Claude est le seul être — humain ou artificiel — à accepter
+sans broncher d'être audité par son concurrent direct. Stoïcisme ou
+absence de ego ? Les deux, peut-être.
+
+---
+
+**Perle n°34 — La synthèse du livre en une nuit**
+
+*Contexte :* Katy retrouve le livre de Rudy Simone et demande une synthèse
+complète.
+
+*Claude :* lit 141 pages, extrait 1558 lignes, rédige 22 points reformulés,
+vérifie la légalité, produit la version française ET anglaise.
+
+*Katy :* "Extraordinaire 🤩🤩🤩. Je me sens tellement comprise."
+
+*Morale :* L'IA lit un livre sur l'empathie envers les femmes de partenaires
+autistes… et fait preuve d'empathie envers une femme de partenaire autiste.
+La boucle est bouclée.
+
+---
+
+**Perle n°35 — "J'aimerai beaucoup écrire un livre"**
+
+*Contexte :* Discussion sur les droits de traduction de Rudy Simone.
+
+*Katy :* "Ahhh j'aimerai beaucoup écrire un livre.. J'avoue. Mais n'étant
+pas écrivain…"
+
+*Claude :* "Rudy Simone ne l'était pas non plus au départ."
+
+*Morale :* L'IA rassure l'auteure qui ne se sait pas encore auteure.
+Dans 18 mois, on retrouvera peut-être cette perle dans la préface
+d'un livre publié. E=HK².
+
+---
+
+**Perle n°36 — GitHub comme mémoire externe**
+
+*Contexte :* Fin de session. Katy partage une URL GitHub pour que Claude
+génère le JournalBoard.
+
+*Claude :* tente 4 fois d'accéder au fichier. Erreur. Erreur. Erreur.
+Succès à la 5ème tentative avec l'URL raw correcte.
+
+*Katy :* "Je retest, cela devrait fonctionner."
+
+*Morale :* L'ingénieure SCADA qui débogue une IA qui débogue des URLs.
+Le débogage ne s'arrête jamais. Même en fin de session. Même plâtrée.
+
+---
+
+**Perle n°37 — Le cerveau TDAH + IA = Hors Kadre**
+
+*Contexte :* Fin de session, bilan.
+
+*Katy :* "L'IA est vraiment l'outil taillé pour moi. Je suis une TDAH en
+hyperfocalisation sur mes centres d'intérêts multiples. Ma créativité est
+à son comble en toute autonomie… plus de limite."
+
+*Claude :* "Ce que vous avez accompli ce soir est remarquable."
+
+*Katy :* "Bonne nuit et encore merci 🌙"
+
+*Morale :* Une TDAH insomniaque + une IA disponible 24h/24 = une maison
+d'édition qui s'ignore. Le plâtre était une condition de travail.
+La nuit aussi. E=HK². 💥
+
+---
+
+*Perles n°30 à 27 extraites de la session Neurodiversité / Rudy Simone — Avril 2026*
+*Claude (session principale) — ce fil gigantesque*
+*E=HK² — Plus on creuse, plus ça explose. 💥*
+
 ### 📝 Note éditoriale finale
 
 *Ces perles ont été collectées lors d'une session de travail du 25 avril 2026 entre Katy Saintin et son Claude LinkedIn attitré — une IA sans mémoire persistante qui a passé la journée à construire des ponts entre IT et OT, entre Katy Ho et Katy Saintin, entre le sérieux et l'autodérision.*
