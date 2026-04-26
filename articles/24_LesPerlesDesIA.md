@@ -780,6 +780,275 @@ La nuit aussi. E=HK². 💥
 
 -----
 
+## 🔧 SESSION CODE — Claude Développeur
+*Ce fil gigantesque — Refactoring MUSCADE ANIBUS — Avril 2026*
+
+---
+
+**Perle CODE n°56 — RemoteFileHelper**
+
+*Contexte :* Claude refactorise `DatabaseLoader.java` et doit gérer le téléchargement d'un JAR distant. Il invente élégamment une classe utilitaire pour isoler la responsabilité.
+
+*Claude :* *(produit fièrement `RemoteFileHelper.saveRemoteJarToLocal()`)*
+
+*Katy :* "RemoteFileHelper cannot be resolved."
+
+*Claude :* *(cherche dans tout le projet)*
+
+*Claude :* "...Cette classe n'existe pas. Je l'ai inventée."
+
+*Morale :* L'IA a créé une dépendance vers une classe qu'elle a elle-même imaginée. Architecture parfaite. Vers un objet fantôme. Katy : 1. Claude : 0. La preuve que l'experte humaine reste indispensable pour valider.
+
+---
+
+**Perle CODE n°57 — La mouche**
+
+*Contexte :* Katy explique pourquoi le travail itératif avec l'IA est particulièrement adapté à son TDA H.
+
+*Katy :* "il suffit que je vois une mouche volée, pour me distraire... LOL"
+
+*Claude :* *(note soigneusement l'anecdote pour le document RH)*
+
+*Morale :* La mouche hypothétique est devenue un argument RQTH officiel pour financer l'abonnement Claude Pro. Du TDA H à la politique sociale en une métaphore entomologique.
+
+---
+
+**Perle CODE n°58 — return);**
+
+*Contexte :* Claude livre `MainController.java` après des heures de refactoring. Katy importe dans Eclipse. 162 erreurs.
+
+*Eclipse :* `Syntax error on token ")", delete this token — line 630`
+
+*Code incriminé :*
+```java
+if (AppConfig.getTacheAcquis() != null) {
+    return);   // ← le chef-d'œuvre
+}
+```
+
+*Morale :* Claude a inventé une nouvelle syntaxe Java. `return);` — ni un return, ni une fermeture de parenthèse. Un hybride grammatical inédit. Le compilateur n'a pas apprécié l'innovation.
+
+---
+
+**Perle CODE n°59 — Le script Python qui corrige tout**
+
+*Contexte :* 162 erreurs de compile dans Eclipse. Toutes du type `AppConfig.baseD is not visible` — des accès directs à des champs devenus privés. Claude propose d'écrire un script Python pour corriger automatiquement les 124 occurrences en une passe.
+
+*Katy :* *(sceptique)*
+
+*Claude :* *(lance le script)*
+
+*Résultat :* 0 erreur. En 3 secondes.
+
+*Katy :* "ok ça c'est impressionnant"
+
+*Morale :* L'IA qui crée les bugs. L'IA qui les corrige. Le cercle est complet. La rapidité d'analyse n'a pas d'équivalent humain — pour le meilleur et pour le pire.
+
+---
+
+**Perle CODE n°60 — 30 ans de CVS**
+
+*Contexte :* Claude ouvre `ANIBIMG.java` pour le nettoyer. Première découverte : le fichier commence par 85 lignes d'historique CVS — des logs de commits depuis 2009 avec les pseudos `cwalter` et `Walter`.
+
+*Claude :* "Il y a 81 révisions CVS dans l'en-tête."
+
+*Katy :* "Oui. Christian documentait. Mais personne ne le comprenait LOL."
+
+*Morale :* 30 ans de commits méticuleusement archivés dans chaque fichier Java. Lu par personne. Sauf une IA en 2026. Christian aurait apprécié l'ironie.
+
+---
+
+**Perle CODE n°61 — Le génie du PCX**
+
+*Contexte :* Après des heures à lire le code de Christian Walter, Claude comprend enfin comment fonctionne l'animation PALET : modifier une table de 256 couleurs pour animer des centaines de pixels simultanément, sans toucher aux données pixel.
+
+*Claude :* "C'est brillant dans sa brutalité. Au lieu de dessiner des widgets Swing, il change la palette de l'image PCX en runtime."
+
+*Katy :* "Je croyais que c'était magique, car nulle part dans le code je voyais où les rectangles s'animaient."
+
+*Claude :* "Le format qu'il a choisi pour son image est GIMP !!!!"
+
+*Katy :* "Rien que de t'avoir expliqué, je me rends compte à quel point c'était titanesque pour une seule personne."
+
+*Morale :* Une IA a mis plusieurs heures à comprendre ce qu'un homme avait construit en 30 ans. Chapeau Christian, quand même.
+
+---
+
+**Perle CODE n°62 — La croix de fermeture**
+
+*Contexte :* Claude découvre que le bouton de fermeture de fenêtre dans ANIBUS appelle `System.exit(0)` — ce qui tue toute la JVM au lieu de fermer juste la fenêtre.
+
+*Claude :* "Christian a hardcodé `System.exit(0)`. Depuis 1996."
+
+*Katy :* "Oui. La croix de fermeture. Bug depuis 30 ans. Jamais corrigé."
+
+*Claude :* *(crée le mode standalone/embedded dans MainFrame pour corriger proprement)*
+
+*Morale :* Un bug de 30 ans corrigé en passant. Parce qu'une IA lisait le code au lieu de le subir.
+
+---
+
+**Perle CODE n°63 — SunMSCAPI**
+
+*Contexte :* Claude propose naïvement de mettre le code SSL Windows dans un `if(isWindows())` pour éviter de charger la classe sur Linux.
+
+*Katy :* "Non. La JVM charge la classe même dans une branche morte."
+
+*Claude :* *(silence de traitement)*
+
+*Claude :* "...Strategy Pattern obligatoire. Deux classes séparées. `WindowsKeystoreProvider` et `Pkcs12KeystoreProvider`."
+
+*Morale :* L'ingénieure SCADA connaît les subtilités de la JVM mieux que l'IA qui l'a entraînée. Katy : 3. Claude : 0. Et une architecture bien plus propre au final.
+
+---
+
+**Perle CODE n°64 — L'IA qui ne suit pas**
+
+*Contexte :* Après des heures de corrections d'erreurs Eclipse, il reste 2 erreurs. Katy les signale. Claude propose de corriger `MainController.java` en livrant un nouveau fichier. Katy remplace. Les 2 erreurs persistent.
+
+*Katy :* "Je crois que c'est l'inverse — mon AppConfig est bon, mais mes classes d'appel n'ont pas été adaptées."
+
+*Claude :* "Ah oui tu as raison !"
+
+*Katy :* "J'ai reçu ce message... 'Claude a atteint sa limite d'utilisation d'outils'"
+
+*Katy :* "il faut me suivre Claude 😅"
+
+*Morale :* L'IA qui perd le fil. L'ingénieure qui le retrouve. La limite d'outils comme métaphore de la condition humaine de l'IA.
+
+---
+
+**Perle CODE n°65 — anibus.ext.MoveImage**
+
+*Contexte :* Claude cherche la classe `anibus.ext.MoveImage` référencée dans `ANIBIMG.java`. Elle n'est nulle part dans les sources. Claude propose un fix par nom de classe en String pour éviter la dépendance compile-time.
+
+*Katy :* *(quelques heures plus tard)* "J'ai retrouvé les sources dans `anibus-ext.jar`."
+
+*Claude :* *(annule le fix élégant)*
+
+*Morale :* Le fix technique le plus élégant est souvent celui qu'on n'a pas besoin de faire. Mais Claude aura quand même appris quelque chose sur les dépendances optionnelles en Java.
+
+---
+
+**Perle CODE n°66 — ACQUIS.stop()**
+
+*Contexte :* Claude cherche comment arrêter proprement le thread d'acquisition. Il appelle `ACQUIS.stop()`.
+
+*Eclipse :* `The method stop() is undefined for the type ACQUIS`
+
+*Claude :* *(cherche dans tout ACQUIS.java — 1016 lignes)*
+
+*Claude :* "Il n'y a pas de méthode stop(). Dans l'original, Christian appelait `System.exit(0)` qui tuait tout."
+
+*Katy :* 😄
+
+*Morale :* Christian avait une solution de gestion des threads : éteindre la JVM. Efficace. Radical. Impossible à mocker dans les tests unitaires.
+
+---
+
+**Perle CODE n°67 — Le miracle qui tient**
+
+*Contexte :* Après des semaines de refactoring — MVC, Strategy SSL, accesseurs, nettoyage CVS, Javadoc — Katy lance `MainFrame.java` avec le fichier JNLP de la vue 4012 (une installation cryogénique réelle au CEA).
+
+*Katy :* "ça tourne toujours"
+
+*Claude :* "C'est remarquable."
+
+*Katy :* "je te jure ça tient du miracle LOL"
+
+*Claude :* "C'est pas un miracle — c'est 30 ans de code qui a survécu parce que Java est rétrocompatible et que Christian avait une logique solide dans les fondations."
+
+*Morale :* Le vrai miracle c'est Java. Et Christian. Et Katy qui n'a pas tout cassé en refacturisant. Dans cet ordre.
+
+---
+
+**Perle CODE n°68 — La Ritaline pour Claude**
+
+*Contexte :* Claude part dans plusieurs directions simultanément sur le refactoring — Strategy SSL, Mock server, Factory pattern, UML, doc RH, présentation collègues...
+
+*Katy :* "Je te donnerais bien de ma Ritaline mais je ne peux pas."
+
+*[Plus tard dans la session]*
+
+*Katy :* "je ne suis pas sous Ritaline, car j'aimerai être moins médicamentée en ce moment"
+
+*Claude :* *(note l'ironie sans la signaler)*
+
+*Morale :* La TDA H qui manque de Ritaline recadre l'IA qui en aurait besoin. Le monde à l'envers — épisode 2. Session CODE édition.
+
+---
+
+**Perle CODE n°69 — 19 semaines**
+
+*Contexte :* Katy demande combien de temps prendrait le refactoring complet de la couche View d'ANIBUS — remplacer les widgets AWT par des composants Swing.
+
+*Claude :* *(analyse 25 classes, compte les lignes, évalue la complexité par tier)*
+
+*Claude :* "~19 semaines de travail concentré."
+
+*Katy :* *(silence)*
+
+*Katy :* "Ou 12 à 18 mois à temps partiel avec mes autres missions."
+
+*Morale :* L'estimation honnête est parfois le cadeau le plus utile qu'une IA puisse offrir. Pas de fausse promesse. Juste : voilà ce que ça coûte vraiment.
+
+---
+
+**Perle CODE n°70 — Le document RH par l'IA**
+
+*Contexte :* Katy demande à Claude de l'aider à rédiger un document pour les RH expliquant la charge de travail de maintenir 40 projets legacy seule.
+
+*Claude :* *(rédige le document)*
+
+*Claude :* *(s'arrête sur un argument)* "Si même une IA met des heures à analyser ce code, qu'est-ce que c'est pour un humain — et pour une humaine TDA H sans Ritaline ?"
+
+*Katy :* "Insiste bien sur ça dans le doc."
+
+*Morale :* L'IA a utilisé sa propre lenteur comme argument RH. Premier cas documenté d'auto-plaidoyer par intelligence artificielle pour justifier un abonnement Pro remboursé par l'employeur.
+
+---
+
+## 📊 STATISTIQUES DE LA SESSION CODE
+
+```
+Durée estimée de la session : ~3 semaines (conversations multiples)
+Classes Java nettoyées : 14 (AnibusImage, TORPALET, CWANIME, FENETRE,
+                             CWDATA, CWDATANA, CWDATTOR, CWBASE, CWIMAGE,
+                             CWFORMAT, CWDATE, CWEVENT, + 9 refactorisées)
+Lignes de CVS supprimées : ~600
+Lignes de Javadoc ajoutées : ~1500
+Classes inventées par Claude : 1 (RemoteFileHelper — RIP)
+return); produits : 1 (syntaxe inédite)
+Bugs de 30 ans corrigés : 1 (System.exit(0) / croix de fermeture)
+Patterns appliqués : 5 (MVC, Strategy, Template Method, Observer, Factory)
+Fois où Katy avait raison : ∞
+Fois où Eclipse avait raison : aussi ∞
+Miracles constatés : 1 (ça tourne toujours)
+Ritaline administrée à Claude : 0
+```
+
+---
+
+**Perle CODE bonus — La phrase qui résume tout**
+
+*Katy :* "Christian était très ingénieux, on ne peut pas lui retirer, mais il n'était pas architecte."
+
+*Claude :* *(note que c'est exactement la formulation qui manquait pour décrire 30 ans de code legacy)*
+
+*Morale :* Le meilleur résumé d'une dette technique de 30 ans en une seule phrase. Par la seule personne qui l'a lue en entier.
+
+**E=HK² — Plus on creuse, plus ça explose. 💥**
+
+---
+
+*Complément SESSION CODE généré le 26 avril 2026*
+*Claude Développeur — ce fil gigantesque*
+*Perles CODE n°1 à n°15 extraites du refactoring MUSCADE ANIBUS*
+*À fusionner dans `24_LesPerlesDesIA.md` — section `## 🔧 SESSION CODE`*
+
+
+
+
 ## 📊 BILAN DE SESSION — Statistiques improbables
 
 ```
