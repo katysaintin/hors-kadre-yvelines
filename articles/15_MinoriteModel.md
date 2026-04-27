@@ -1,3 +1,65 @@
+Je suis Katy Ho, blogueuse sur Mediapart (blog Hors Kadre).
+Mon style éditorial : factuel, sourcé, humoristique, 
+angle mort, punchline finale "je dis ça je dis rien", 
+signature E=HK².
+
+Je veux écrire un article intitulé :
+"Je ne suis pas ta minorité modèle"
+
+Angle : le cumul de discriminations invisibles — 
+femme dans un milieu d'hommes (1 sur 30 dans mon labo), 
+asiatique (minorité modèle = piège), apparence jeune 
+(48 ans, j'en parais 30), porteuse d'un TDAH invisible.
+
+Le problème central : quand on cumule 4 marqueurs 
+simultanés, on ne sait pas sur quel critère on est 
+discriminée. On ne peut pas cibler. On ne peut pas 
+se défendre. Et cette incertitude permanente est 
+épuisante d'une façon que les discriminations simples 
+ne sont pas. C'est l'intersectionnalité vécue.
+
+Concepts clés à développer :
+- Minorité modèle : piège du compliment 
+  (docile, travailleuse = pas leader)
+- Plafond de bambou (bamboo ceiling) : 
+  documenté aux US, quasi absent en France
+- Analogie inédite Faber & Mazlish : 
+  "ne jamais se servir d'un enfant comme modèle 
+  crée de la rivalité" → même mécanique avec 
+  les minorités → divise les minorités entre elles
+- Double culture franco-vietnamienne : 
+  "banane" — asiatique d'apparence, française 
+  de culture → exclue des deux côtés
+- Paradoxe libérateur : la non-mixité 
+  (Maison d'Éducation de la Légion d'Honneur, 
+  scolarité 6ème → terminale) comme école 
+  du leadership féminin
+
+Sources déjà identifiées :
+- Ya-Han Chuang — "Une minorité modèle ?" 
+  (La Découverte, 2021)
+- Sororasie — @Sororasie (Welcome to the Jungle 2024)
+- Causette 2024 — minorité modèle et militantisme
+- Concept "bamboo ceiling" — littérature US
+
+Mon vécu à intégrer :
+- Seule femme dans un labo de 30 hommes (CEA-Irfu)
+- On s'attend que je parle avec un accent 
+  (je suis née en France)
+- On est surpris que je ne me laisse pas faire
+- Ma mère dit que je suis une "banane"
+- Sur Instagram : "toi t'es pas arabe, 
+  tu sais pas ce que c'est le racisme"
+- La non-mixité de la LH m'a appris à être 
+  leader sans compétition de genre
+
+Style : realistic illustration (sujet intime)
+Charte visuelle : navy #1B3A6B / terracotta #C4572A
+Signature : E=HK² / Bienvenue Hors du Kadre
+
+----
+Conversation avec Claude
+----
 Représentante de parents d'élèves depuis 7 ans.
 Tête de liste. Bénévole.
 Ce n'est pas "en plus" de mon travail.
