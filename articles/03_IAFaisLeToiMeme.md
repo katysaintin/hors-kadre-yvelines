@@ -284,15 +284,38 @@ Ce sont des questions. Pas des accusations.
 
 ## 6. Le regard d'un enseignant — Thomas Galoisy
 
-*[Section réservée — en attente de la réponse de M. Galoisy, professeur d'histoire-géographie, spécialiste IA et collaborateur Educavox au lycée Descartes. Réponse attendue lundi 28 avril 2026.]*
+Thomas Galoisy est professeur d'histoire-géographie, et spé HGGSP,
+spécialiste IA et collaborateur Educavox au lycée 
+Descartes. Je lui ai posé trois questions.
 
-*Trois questions lui ont été soumises :*
+**Comment utilisez-vous l'IA dans votre pratique ?**
 
-*1. Comment utilisez-vous l'IA dans votre pratique pédagogique — et quelle différence voyez-vous chez les élèves qui l'utilisent bien vs ceux qui l'utilisent mal ?*
+*"Pour créer du contenu, aider les élèves à faire 
+des recherches, apprendre à poser des questions 
+(les prompts), s'organiser et préparer un examen 
+comme le Grand oral."*
 
-*2. Comment répondez-vous à vos collègues qui voient l'IA comme de la triche systématique ?*
+Ce qu'il observe chez ses élèves est précis : 
+la différence entre ceux qui l'utilisent bien 
+et les autres réside dans *"la capacité à l'intégrer 
+dans une démarche intellectuelle. C'est un copilote. 
+Apprendre à analyser une réponse de l'IA me paraît 
+important."*
 
-*3. Si vous deviez donner UNE règle aux parents pour aider leurs enfants à utiliser l'IA intelligemment — ce serait laquelle ?*
+**Comment répondez-vous aux collègues méfiants ?**
+
+*"Peu voient l'IA comme de la triche systématique, 
+mais beaucoup sont méfiants. Ce qui me paraît 
+essentiel est d'expliquer que l'IA est un outil 
+au service d'une démarche pédagogique. 
+C'est un copilote pour travailler."*
+
+**La règle unique pour les parents ?**
+
+*"Ne pas recopier sans réfléchir une réponse 
+de l'IA."*
+
+Une phrase. Dix mots. Tout est dit.
 
 ---
 
