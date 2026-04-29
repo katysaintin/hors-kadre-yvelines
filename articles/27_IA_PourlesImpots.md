@@ -56,11 +56,9 @@ Un tiers des Français se dit atteint de phobie administrative. Un jeune sur deu
 
 Donc si vous avez déjà fermé l'onglet impots.gouv.fr en disant *"je reviens demain"* — et que demain est devenu fin mai — vous êtes statistiquement dans la majorité silencieuse.
 
-La plus célèbre représentante de cette majorité reste Thomas Thévenoud. Secrétaire d'État au Commerce extérieur en 2014, ancien collaborateur de Laurent Fabius au ministère des Finances — *oui, des Finances* — il n'avait pas déclaré ses revenus depuis plusieurs années.
+La plus célèbre représentante de cette majorité reste Thomas Thévenoud. Ancien collaborateur de Laurent Fabius au ministère des Finances — *oui, des Finances* — il n'avait pas déclaré ses revenus depuis plusieurs années. Sa défense ? La *"phobie administrative"* — terme qu'il a même déposé à l'INPI. Comme une marque. 😄
 
-Sa défense ? La *"phobie administrative"*. Terme qu'il a même déposé à l'INPI. Comme une marque. 😄
-
-Il restera dans les annales comme le ministre le plus éphémère de la Ve République : neuf jours au gouvernement. Condamné pour fraude fiscale. Et à son procès, il a fini par reconnaître que *"phobie administrative"* était *"une expression maladroite"*.
+Neuf jours au gouvernement. Condamné pour fraude fiscale. À son procès : *"expression maladroite"*.
 
 *(Je dis ça, je dis rien.)*
 
@@ -110,7 +108,6 @@ C'est vrai.
 
 Mais vous savez ce qui dit aussi n'importe quoi avec beaucoup de confiance ?
 
-La banquière de 1997.
 L'avocat qui déconseille l'IA pour lire les contrats — dans un article rédigé, note en bas de page, *avec l'aide d'une IA générative*.
 Et Thomas Thévenoud, qui a inventé la phobie administrative tout en travaillant au ministère des Finances.
 
@@ -179,15 +176,27 @@ Ce prof vacataire, c'était une prof.
 
 Et cette prof, c'était moi — en 2016, sans IA. *(Coup de vieux.)*
 
-Et cet article — celui que vous venez de lire jusqu'au bout — a été écrit avec ChatGPT.
+---
+
+Et si vous avez lu jusqu'ici — en comprenant, en souriant, peut-être en vous reconnaissant —
+vous venez de vivre la démonstration.
+
+Pas besoin de vous convaincre.
+L'article l'a fait à votre place.
+
+C'est ça, la vulgarisation.
 
 *"La connaissance appartient à tout le monde."* — Marie Curie
 
-*"Sauf apparemment quand c'est ChatGPT qui l'explique."* — Katy Ho, 2026
+*"Sauf apparemment quand c'est une IA qui l'explique."* — Katy Ho, 2026
 
 **Est-ce que ça a changé quelque chose ?**
 
 *E=HK² — Plus on creuse, plus ça explose. 💥*
+
+---
+
+*Cet article a été écrit avec l'aide d'une IA.*
 
 ---
 
