@@ -43,10 +43,11 @@ Livraison en .md uniquement.
 # "[TITRE PROVISOIRE]"
 
 ## IDENTITÉ
-→ Voir IA_Reference.md joint
+→ Voir IA_Reference.md déjà lu
+https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/[IDEES.md]
 
 ## SUJET
-[Décrire l'idée centrale en 3-4 lignes]
+Voir les idées notées en vrac dans le fichier 
 
 ## ANGLE
 [Ce qui est original / inédit / angle Hors Kadre]
