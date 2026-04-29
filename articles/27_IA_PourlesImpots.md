@@ -161,7 +161,7 @@ En face de lui : des étudiants qui avaient suivi trois mois de cours de program
 
 Résultat après trois mois : rien compris, rien appris, rien réalisé.
 
-Le prof vacataire, lui, commençait par un Hello World sur Eclipse. Il montait crescendo. Des pizzas pour représenter les classes. Pikachu pour les méthodes. Il avait passé des mois à construire ces cours — sans IA, en 2016. *(Coup de vieux.)*
+Le prof vacataire, lui, commençait par un Hello World sur Eclipse. Il montait crescendo. Des pizzas pour représenter les classes. Pikachu pour les méthodes. Il avait passé des mois à construire ces cours — sans IA, en 2016.
 
 À la fin de la séance — une heure, une seule — un étudiant lui écrivait :
 
@@ -177,7 +177,7 @@ La différence ? Pas le diplôme. Pas l'ancienneté. Pas le jargon.
 
 Ce prof vacataire, c'était une prof.
 
-Et cette prof, c'était moi.
+Et cette prof, c'était moi — en 2016, sans IA. *(Coup de vieux.)*
 
 Et cet article — celui que vous venez de lire jusqu'au bout — a été écrit avec ChatGPT.
 
