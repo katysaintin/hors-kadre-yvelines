@@ -186,17 +186,14 @@ L'article l'a fait à votre place.
 
 C'est ça, la vulgarisation.
 
+Et si de surcroît, avant cet article, vous étiez contre l'usage des IA —
+sachez que cet article a été écrit avec l'aide d'une IA.
+
 *"La connaissance appartient à tout le monde."* — Marie Curie
 
 *"Sauf apparemment quand c'est une IA qui l'explique."* — Katy Ho, 2026
 
-**Est-ce que ça a changé quelque chose ?**
-
 *E=HK² — Plus on creuse, plus ça explose. 💥*
-
----
-
-*Cet article a été écrit avec l'aide d'une IA.*
 
 ---
 
