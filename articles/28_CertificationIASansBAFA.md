@@ -79,11 +79,12 @@ Ma réponse spontanée — qui EST la thèse :
 que je cherche. Juste faire passer mes idées 
 donc ça le touche."
 
+Rebondir avec l'article et Fais le toi tu as une IA
+Et article 27 J'ai compris mes impôts avec ChatGPT.
+
 ## LA QUESTION CENTRALE
-Si ça vous a donné envie de lire jusqu'au bout —
-si ça a fait écho en vous —
-qu'est-ce que ça change que l'IA ait aidé 
-à le formuler ?
+Utilisation d'une IA pour apprendre, est-ce de la triche ?
+
 
 ## ANGLES À DÉVELOPPER
 
