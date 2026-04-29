@@ -223,7 +223,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
 |---|-------|------------------|---------------|----------|---------------|
 | 14 | Angle mort : ma double culture franco-vietnamienne — nulle part chez soi | IDÉE | - |
-| 15 | Angle mort : Le plafond de Bambou |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/15_LePlafondBambou.md | - |
+| 15 | Angle mort : Le plafond de Bambou |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/15_LePlafondBambou.md) | - |
 | 16 | Angle mort : les 4 accords Toltèques appliqués à la vie pro et au handicap | IDÉE | - |
 
 ### BLOC 5 — Storytelling personnel
