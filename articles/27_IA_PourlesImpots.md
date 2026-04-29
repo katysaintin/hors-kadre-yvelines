@@ -2,6 +2,16 @@
 
 *Hors Kadre — Katy Ho — Avril 2026*
 
+Public : Grand public, moldus, 
+         lecteurs tendon d'achille
+Titre : "Les impôts ? J'ai enfin tout compris. 
+         Merci ChatGPT."
+Timing : MAINTENANT — on est en plein dedans !
+Ton : Universel, accessible, satirique
+Cœur : L'avocat, les impôts, la Banque Postale,
+        "qui ça menace que tout le monde 
+         devienne brillant ?"
+
 ---
 
 ## Le commentaire
