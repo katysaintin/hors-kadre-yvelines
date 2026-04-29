@@ -2,8 +2,6 @@
 
 *How AI became the first thing that actually explained what I was supposed to fill in.*
 
-*By Katy Ho | Hors Kadre*
-
 ---
 
 Every year, it's the same ritual.
@@ -153,9 +151,7 @@ know that this article was written with the help of an AI.
 
 *"Knowledge belongs to everyone."* — Marie Curie
 
-*"Except apparently when an AI is the one explaining it."* — Katy Ho, 2026
-
-*E=HK² — The deeper you dig, the bigger the explosion. 💥*
+*"Except apparently when an AI is the one explaining it."* — Katy Saintin, 2026
 
 ---
 
