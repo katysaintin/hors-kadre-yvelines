@@ -193,7 +193,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 17 | IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociaux.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociauxEN.md) | PROGRAMMÉ épisode 8 | :heavy_check_mark: |
 | 22 | IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - | - | - |
 | 25 | IA usages, usages, différences perçues et effets de conception | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/25_IA_ALaLoupe.md) | À FAIRE | - | - |
-| 27 | IA vulgarisation accessibilité les impôts | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_PourlesImpots.md) | À FAIRE | - | - |
+| 27 | IA vulgarisation accessibilité les impôts | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_PourlesImpots.md) | [EN COURRS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_TaxesMediumEN.md) PROGRAMME | PROGRAMME |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
@@ -256,10 +256,11 @@ Rendre compréhensible ce qui ne l’était pas.
 | 7 |  Les classements dirigés par les médias | Article 21 | :heavy_check_mark: | :heavy_check_mark: |
 | 8 |  IA conversationnelle VS Réseaux sociaux | Article 17 | :heavy_check_mark: | :heavy_check_mark: |
 | 9 |  IA prothèse cognitive pour les handicaps invisibles | Article 13 | :heavy_check_mark: | :heavy_check_mark: |
-| 10 |  L'aidant des neurodivergents | Article 10 | PROGRAMMÉ | PROGRAMMÉ |
-| SPECIAL | Tendon d'Achille , déplâtrage | Article 18 | PROGRAMMÉ | PROGRAMMÉ |
-| 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | PROGRAMMÉ | PROGRAMMÉ |
-| 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ | PROGRAMMÉ |
+| 10 |  L'aidant des neurodivergents | Article 10 |  :heavy_check_mark: |  - |
+| SPECIAL | Tendon d'Achille , déplâtrage | Article 18 |  :heavy_check_mark: |  :heavy_check_mark: |
+| 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | :heavy_check_mark: | - |
+| SPECIAL | J'ai rempli mes impôts avec ChatGPT | Article 27 | PROGRAMMÉ |  PROGRAMMÉ |
+| 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ | - |
 | 13 |  IA Fais le toi !  | Article 13 | PROGRAMMÉ | À FAIRE |
 | 14 |  Les perles des IA !  | Article 24 | PROGRAMMÉ | PROGRAMMÉ|
 
