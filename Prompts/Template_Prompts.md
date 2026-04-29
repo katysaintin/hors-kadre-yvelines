@@ -31,7 +31,6 @@ identité, charte graphique, principes éditoriaux,
 tableau de bord des articles, écosystème complet.
 Lis-le avant de commencer.
 Réponds directement sans reformuler ma question.
-Livraison en .md uniquement.
 ```
 
 ---
