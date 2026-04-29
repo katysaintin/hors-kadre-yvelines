@@ -1,10 +1,21 @@
 # HORS KADRE ✦ E=HK²
 *Document de référence — Écosystème éditorial & Stratégie*  
-Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 
-> **E = HK²** — *"Plus on creuse, plus ça explose."*  
-> HK = Katy Ho = Hors Kadre. La formule éditoriale d'une ingénieure qui décortique les systèmes.
+# Positionnement 
+Je suis Katy Saintin en Pro / Katy Ho sur le Blog
+J’écris sur des sujets que je vis de l’intérieur.
 
+Ligne éditoriale :
+- IA = accès, pas remplacement
+- Neurodiversité = invisibilité à rendre lisible
+- Éducation = systèmes à décrypter
+
+**E = HK²** — *"Plus on creuse, plus ça explose."*  
+HK = Katy Ho = Hors Kadre. La formule éditoriale d'une ingénieure qui décortique les systèmes.
+
+
+Objectif :
+Rendre compréhensible ce qui ne l’était pas.
 ---
 
 ## ⚙️ INSTRUCTIONS CLAUDE — LIRE EN PREMIER
@@ -14,7 +25,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 **Format de réponse**
 - Répondre exclusivement en Markdown (.md) — jamais de .docx
 
-- ## Ton & Collaboration avec Claude
+- ## Ton & Collaboration avec Claude & ChatGPT
 - Humour décalé, ironique, pince-sans-rire assumé
 - Pas de justification excessive — aller droit au but
 - Tutoiement
@@ -182,6 +193,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 17 | IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociaux.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociauxEN.md) | PROGRAMMÉ épisode 8 | :heavy_check_mark: |
 | 22 | IA et hyperconnexion — le paradoxe des jeunes | IDÉE | - | - | - |
 | 25 | IA usages, usages, différences perçues et effets de conception | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/25_IA_ALaLoupe.md) | À FAIRE | - | - |
+| 27 | IA vulgarisation accessibilité les impôts | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_PourlesImpots.md) | À FAIRE | - | - |
 
 ### TRILOGIE 2 — Éducation & Parentalité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
@@ -194,6 +206,7 @@ Katy Ho / Katy Saintin | Avril 2026 | Version 3.0
 | 8 | Valorisation des filières pro techno - SI on juge un poisson | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/08_ValorisationFiliereProTechnoPoisson.md) | À FAIRE | PROGRAMMÉ épisode 12 | :heavy_check_mark: |
 | 9 | projet pHARe — harcèlement adulte/enfant ignoré | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/09_PhareDispositifIncompletEvaelle.md) | - | :heavy_check_mark: | - |
 | 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
+| 28 | Certification IA grâce à mon IA sans BAFA | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
