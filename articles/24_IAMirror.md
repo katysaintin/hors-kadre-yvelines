@@ -62,7 +62,9 @@ The blank page. The administrative form that requires organizing three things si
 
 In five days — in a cast, on sick leave, at absurd hours — I published five sourced articles, built a national tool covering 4,360 high schools from open government data, launched a blog with a full visual identity, and released four songs including one on Spotify.
 
-I'm not saying this to brag. I'm saying it because I've had those ideas for years. The tools and the knowledge were always there. What was missing was something that could hold the thread while my brain jumped.
+I'm not saying this to brag. These weren't new ideas. They'd been waiting for the right conditions to exist.
+
+What was missing was something that could hold the thread while my brain jumped.
 
 **Claude held the thread.**
 
@@ -104,6 +106,24 @@ That texture is what made me actually use it. Consistently. Long enough to produ
 
 ---
 
+## What actually works — for the record
+
+If you have ADHD and want to try this, here's what made the difference for me:
+
+**1. Brain dump first, structure later**
+Don't organize before you write. Just type everything you know. Ask Claude to structure it after. The blank page disappears.
+
+**2. Give it your context once, explicitly**
+Tell Claude who you are, how you think, what you need. It adapts within the conversation — faster than you'd expect.
+
+**3. Use it for the friction points, not everything**
+Administrative documents, starting emails, structuring complex thoughts. Not for thinking — for translating thinking into form.
+
+**4. Let it be wrong**
+The 25+2=28 moment taught me something. An imperfect tool you actually use beats a perfect one you abandon after three days.
+
+---
+
 ## For the brains that don't fit the tools
 
 If you're neurodivergent — ADHD, autistic, dyslexic, or just wired differently than the systems built around you — you've probably experienced this.
@@ -139,4 +159,4 @@ I'm choosing to take that as a compliment.
 
 ---
 
-**Tags:** ADHD, Neurodiversity, Artificial Intelligence, Mental Health, Productivity
+**Tags:** ADHD, Neurodiversity, Artificial Intelligence, Mental Health, Productivity, Better Humans
