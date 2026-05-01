@@ -263,8 +263,9 @@ Rendre compréhensible ce qui ne l’était pas.
 | 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | :heavy_check_mark: | - |
 | SPECIAL | J'ai rempli mes impôts avec ChatGPT | Article 27 |  :heavy_check_mark: |  :heavy_check_mark: |
 | 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ | - |
-| 13 |  IA Fais le toi !  | Article 13 | PROGRAMMÉ | À FAIRE |
-| 14 |  Les perles des IA !  | Article 24 | PROGRAMMÉ | PROGRAMMÉ|
+| 13 |  Mauvais Lac  | Article 23 | PROGRAMMÉ | À FAIRE |
+| 14 |  IA Fais le toi !  | Article 13 | PROGRAMMÉ | À FAIRE |
+| 15 |  Les perles des IA !  | Article 24 | PROGRAMMÉ | PROGRAMMÉ|
 
 ## 7. Légende des statuts
 
