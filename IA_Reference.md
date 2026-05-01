@@ -205,7 +205,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 5 | préparer son enfant au lycée & Parcoursup simplifié | IDÉE | - | - | - |
 | 6 | Et si on rendait les ados un peu moins malheureux | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/06_AdoMalheureux.md) | - | - | - |
 | 7 | Tensions parents/profs — décoder et s'en sortir | IDÉE | - | - | - |
-| 8 | Valorisation des filières pro techno - SI on juge un poisson | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/08_ValorisationFiliereProTechnoPoisson.md) | À FAIRE | PROGRAMMÉ épisode 12 | :heavy_check_mark: |
+| 8 | Valorisation des filières pro techno - SI on juge un poisson | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/08_ValorisationFiliereProTechnoPoisson.md) | - | PROGRAMMÉ épisode 12 | :heavy_check_mark: |
 | 9 | projet pHARe — harcèlement adulte/enfant ignoré | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/09_PhareDispositifIncompletEvaelle.md) | - | :heavy_check_mark: | - |
 | 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
 | 28 | Certification IA grâce à mon IA sans BAFA | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
@@ -213,11 +213,11 @@ Rendre compréhensible ce qui ne l’était pas.
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
 |---|-------|------------------|---------------|----------|---------------|
-| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant des neurodivergents | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/10_AidantsNeurodivergents.md) | À FAIRE | PROGRAMMÉ épisode 10 | - |
+| 10 | Angle mort : et toi, qui prend soin de toi ? L'aidant des neurodivergents | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/10_AidantsNeurodivergents.md) | À FAIRE | :heavy_check_mark: | - |
 | 11 | Angle mort : détection tardive des femmes HPI, TDA, Autisme | IDÉE | - | - | - |
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - | - | - |
 | 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicap.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicapEN.md) | :heavy_check_mark: | :heavy_check_mark: |
-| 23 | Le mauvais lac | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac.md) | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac_EN.md) | - | - |
+| 23 | Le mauvais lac | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac.md) | [DRAFT](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac_EN.md) | PROGRAMMÉ épisode 14  | - |
 | 26 | Neurodiversité égale Switch Case | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/26_NeurodivesiteSwitchCase.md) | - | - | - |
 
 
@@ -233,7 +233,7 @@ Rendre compréhensible ce qui ne l’était pas.
 |---|-------|------------------|---------------|----------|---------------|
 | 18 | Errance médicale — rupture du tendon d'Achille mal diagnostiquée | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/18_TendonAchille.md) | - | PROGRAMMÉ épisode spécial | PROGRAMMÉ |
 | 19 | Le deuil périnatal — mon fils en 2007, résilience et reconstruction | IDÉE | - | - | - |
-| 24 | Les perles des IA | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_LesPerlesDesIA.md) |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_IAMirror.md) [**HTML**S](https://katysaintin.github.io/hors-kadre-yvelines/lesperlesia_en.html)  | PROGRAMMÉ épisode 14 | - |
+| 24 | Les perles des IA | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_LesPerlesDesIA.md) |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_IAMirror.md) [**HTML**S](https://katysaintin.github.io/hors-kadre-yvelines/lesperlesia_en.html)  | PROGRAMMÉ épisode 15 | - |
 
 
 ---
