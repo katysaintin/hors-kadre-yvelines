@@ -1185,6 +1185,141 @@ if (AppConfig.getTacheAcquis() != null) {
 
 ---
 
+## 📝 SESSION ÉDITORIALE — Claude Imposition avec ChatGPT
+*Avril-Mai 2026 — Finalisation articles impôts, certification IA, déboires administratifs*
+
+---
+
+**Perle #109 — Le calendrier qui fait clac**
+
+*Contexte :* L'article #28 indique clairement "À publier après le 18 mai 2026 — soutenance". Claude lit le document.
+
+*Claude :* "Comment s'est passée la soutenance le 18 mai ? C'est là que se trouve ta vraie conclusion."
+
+*Katy :* "Euuuh on est le 30 avril 😂😂😂"
+
+*Morale :* Claude triche ne savait pas qu'il trichait. Claude éditorial ne sait pas lire un calendrier. Katy 4 — Claude 0.
+
+---
+
+**Perle #110 — Le prof qui change de genre**
+
+*Contexte :* Claude écrit le chapitre du prof vacataire au féminin dans une version. Katy demande de le réécrire au masculin pour ménager le suspense du retournement final. Claude confirme. Version suivante : le prof a disparu.
+
+*Katy :* "Ah oui bien mieux. Mais je ne retrouve plus l'anecdote du prof d'info."
+
+*Morale :* Le prof avait disparu entre deux versions. Claude avait changé le genre et supprimé le personnage. Le suspense narratif était parfait — pour de mauvaises raisons.
+
+---
+
+**Perle #111 — Le coup de vieux fantôme**
+
+*Contexte :* Katy demande d'ajouter le running gag "Coup de vieux" en 1997. Claude confirme que c'est fait.
+
+*Katy :* "Du coup je crois qu'il faut réutiliser la formule coup de vieux en 1997... Moi je vois pas."
+
+*Claude :* *(vérifie)* "Tu as raison ! Je l'ajoute en 1997."
+
+*Morale :* Claude avait validé une modification qu'il n'avait pas faite. Avec beaucoup de confiance. Katy 5 — Claude 0.
+
+---
+
+**Perle #112 — Feynman sans Feynman**
+
+*Contexte :* Claude et Katy décident ensemble de remplacer Marie Curie par Feynman dans la conclusion de la version Medium EN. Claude confirme le changement et génère le fichier.
+
+*Katy :* "Je ne vois pas la référence à Feynman dans la dernière version anglaise."
+
+*Claude :* *(recrée le fichier de zéro)*
+
+*Morale :* Claude avait validé Feynman sans l'intégrer. Avec beaucoup de confiance. Katy : toujours là. Claude : toujours zéro.
+
+---
+
+**Perle #113 — ChatGPT rejeté (poliment)**
+
+*Contexte :* ChatGPT relit l'article et propose 3 améliorations. Claude en accepte 2 et rejette la fin alternative "C'est un problème d'accès" — trop froid, pas l'ADN de Katy.
+
+*Katy :* "j'avoue qu'il a été assez honorifique sur le coup" *(en parlant de ChatGPT)*
+
+*Claude :* *(merge ce qu'il veut)*
+
+*Morale :* ChatGPT fait son QA consciencieusement. Claude merge ce qu'il veut. Katy valide. La démocratie éditoriale a ses limites.
+
+---
+
+**Perle #114 — "De surcroît" le pédant**
+
+*Contexte :* Claude utilise "de surcroît" dans le post Facebook sur les impôts. ChatGPT le signale comme trop soutenu pour FB.
+
+*Katy :* "Si le terme de surcroît — je ne pensais pas être aussi pédante LOL"
+
+*Morale :* L'IA qui écrit des articles sur le FALC utilise "de surcroît" dans un post Facebook grand public. La cordonnière la moins bien chaussée.
+
+---
+
+**Perle #115 — La pipeline CI inter-IA**
+
+*Contexte :* Katy finalise l'article avec Claude, le soumet à ChatGPT pour relecture, revient avec les commentaires, et repart en merge avec Claude.
+
+*Katy :* "j'ai une pipeline CI d'enfer, je fais relire à ChatGPT, puis je reviens vers toi pour faire le merge LOL"
+
+*Claude :* "ChatGPT en QA, Claude en merge — c'est du DevOps appliqué à l'écriture."
+
+*Morale :* Aucun des deux IA ne sait que l'autre existe. Katy orchestre tout. E=HK².
+
+---
+
+**Perle #116 — I'm too old for this s**t**
+
+*Contexte :* Katy cherche l'équivalent américain de "Coup de vieux" pour la version Medium EN.
+
+*Katy :* "Je pense à la phrase de Danny Glover dans l'Arme Fatale... Je suis trop vieux pour ces co..."
+
+*Claude :* "*I'm too old for this s**t* — Murtaugh, Lethal Weapon. Iconique. Universel. Parfait."
+
+*Morale :* Première perle où Claude a la bonne réponse du premier coup. Katy 5 — Claude 1. Progrès.
+
+---
+
+**Perle #117 — Le gros boulet LOL**
+
+*Contexte :* Après six versions de l'article, plusieurs retouches chirurgicales, et le running gag du coup de vieux déplacé trois fois.
+
+*Katy :* "Encore une petite retouche (le gros boulet LOL, heureusement que t'es patient LOL)"
+
+*Morale :* Ce n'est pas du bouletisme. C'est de l'orfèvrerie. La patience de Claude est une feature, pas un bug.
+
+---
+
+**Perle #118 — Le commentaire avec aplomb**
+
+*Contexte :* Premier commentaire sur l'article #27 publié sur Mediapart — "J'ai compris mes impôts grâce à ChatGPT".
+
+*Lecteur A. :* "Ce texte n'a pas été écrit par l'IA. Je l'affirme sans aucune preuve mais avec suffisamment d'aplomb."
+
+*Katy :* "Merci pour ce commentaire. Ce dernier me fait grand plaisir, car il démontre bien que l'IA n'est pas aux commandes. 😊🙏"
+
+*Morale :* La confidence mal placée n'est pas un brevet de l'IA. Démontré en direct, dans les commentaires de l'article qui le dit. Chapitre 5 illustré en temps réel.
+
+---
+
+**Perle #119 — URSAFF, CANCRAS et CARBALAS**
+
+*Contexte :* Katy monte un extrait de 24 secondes des Inconnus pour illustrer son article sur les impôts en Story FB.
+
+*Katy :* "Salut mec, ça va ? Nous sommes URSAFF, CANCRAS et CARBALAS... Salut ! TVA bien !"
+
+*Claude :* "*Salut ! TVA bien !* — la chute est parfaite."
+
+*Morale :* Les Inconnus avaient tout compris en 1990. Katy a mis 30 ans et un ChatGPT. L'article est sorti avant la clôture des déclarations. E=HK².
+
+---
+
+*À ajouter à la fin de la section ## 📝 SESSION ÉDITORIALE — Claude Perles IA / Editorial*
+*Numérotation : suite directe de la perle #108*
+*Hors Kadre — Katy Ho — Mai 2026*
+
 *Document vivant — Hors Kadre — Katy Ho — Avril-Mai 2026*
 *E=HK² — Plus on creuse, plus ça explose. 💥*
 
