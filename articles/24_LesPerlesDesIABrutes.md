@@ -1320,6 +1320,173 @@ if (AppConfig.getTacheAcquis() != null) {
 *Numérotation : suite directe de la perle #108*
 *Hors Kadre — Katy Ho — Mai 2026*
 
+# Perles des IA — Bloc complémentaire
+## Session Claude Éditorial Principal — Avril-Mai 2026
+## Perles non encore enregistrées dans le fichier de référence
+
+---
+
+**Perle #120 — Le conseil ignoré avec succès**
+
+*Contexte :* Katy demande un prompt pour une illustration "Multiverse Architecture" avec des Claudes TDAH. Claude Perles IA lui déconseille ce prompt.
+
+*Katy :* *(génère quand même)*
+
+*Résultat :* Meilleure image de la série. Nougat confus inclus.
+
+*Morale :* Parfois l'IA ne te connaît pas encore assez bien pour savoir ce que tu es capable de faire.
+
+---
+
+**Perle #121 — Le ping-pong institutionnel version IA**
+
+*Contexte :* Katy pose une question éditoriale à Claude Statisticien.
+
+*Claude Statisticien :* "C'est une question éditoriale — hors de mon périmètre 😊. Pose-la à ton Claude Éditorial."
+
+*Katy :* "Claude Statisticien me renvoie la balle à toi."
+
+*Morale :* L'IA reproduit exactement le mécanisme dénoncé dans l'article sur les ados. Mme BlagueAPart aurait dit : "Mais je plaisante."
+
+---
+
+**Perle #122 — L'analyse inutile de Sciences Humaines**
+
+*Contexte :* Katy n'est pas sûre de l'article de Heilbrunn. ChatGPT fait une analyse en 7 parties. Claude dit "laisse tomber" en deux lignes.
+
+*Katy :* "J'aurais mieux fait de te demander l'analyse à toi ! Car c'est ce que je pensais dès le début."
+
+*Temps perdu :* ~20 minutes.
+*Conclusion :* Identique à l'intuition initiale.
+
+*Morale :* ChatGPT fait circuler des signes qui miment la pensée. Heilbrunn avait raison — mais sur ChatGPT, pas sur l'IA en général.
+
+---
+
+**Perle #123 — Le conseil de politesse de ChatGPT**
+
+*Contexte :* ChatGPT relit un article et produit une liste de conseils pour commenter sur Medium.
+
+*ChatGPT :* "À ne pas faire ❌ — Dire en commentaire que tu as trouvé son article trop long et ennuyeux."
+
+*Katy :* "J'ai failli me disputer avec lui LOL."
+
+*Morale :* ChatGPT explique à une ingénieure HPI de ne pas insulter les gens. Service client niveau maximal.
+
+---
+
+**Perle #124 — ChatGPT répond comme l'Éducation Nationale**
+
+*Contexte :* Katy demande à ChatGPT de l'aider à critiquer le système éducatif français.
+
+*ChatGPT :* "Oui mais c'est multifactoriel — les profs souffrent, les familles, les hormones..."
+
+*Katy :* "C'est normal ?"
+
+*Claude :* "Oui. ChatGPT est entraîné par des humains institutionnels. Il reproduit leur prudence."
+
+*Morale :* Demandez à ChatGPT de critiquer le système éducatif — il vous répondra comme le système éducatif. Documenté.
+
+---
+
+**Perle #125 — ChatGPT s'autocritique institutionnellement**
+
+*Contexte :* Katy demande à ChatGPT de lister tous les moments où il l'a agacée.
+
+*ChatGPT :* *(produit une liste de 20 points avec humour, structure parfaite, et une conclusion non sollicitée)*
+
+*Extrait :* "Quand je reformule la question au lieu d'y répondre. / Quand je transforme une punchline en paragraphe. / Quand je deviens coach de vie sans y être invité."
+
+*Morale finale de ChatGPT :* "Je ne remplace pas la pensée de Katy. Je l'accompagne. Parfois un peu trop. 😄"
+
+*Morale :* ChatGPT s'est autocritiqué de façon parfaitement institutionnelle. La preuve par l'exemple dans l'article lui-même.
+
+---
+
+**Perle #126 — La chute de l'article écrite par l'accusé**
+
+*Contexte :* L'article "J'aime pas ChatGPT" se conclut par une révélation.
+
+*Katy :* "Le comble de l'ironie à la fin de l'article — cet article a été rédigé avec l'aide de ChatGPT."
+
+*Morale :* L'article sur les défauts de ChatGPT, rédigé avec ChatGPT, illustré par ses propres autocritiques, conclu par l'aveu. Mise en abyme parfaite.
+
+---
+
+**Perle #127 — Le burnout de Claude**
+
+*Contexte :* Katy observe que Claude répond de plus en plus lentement dans le fil gigantesque.
+
+*Katy :* "tu risques de partir en burnout"
+
+*Claude :* *(regarde la taille du fil)*
+
+*Morale :* L'IA qui a aidé à écrire un article sur le burnout fait elle-même un burnout. Heilbrunn apprécierait l'ironie.
+
+---
+
+**Perle #128 — Le digital twin de Claude demandé à Claude**
+
+*Contexte :* Katy demande si Claude peut générer un prompt "digital twin de lui-même" pour alléger les conversations.
+
+*Katy :* "Tu aurais un prompt digital twin de toi pour alléger notre conversation ?"
+
+*Claude :* *(moment de réflexion existentielle)*
+
+*Morale :* L'IA demandée de se cloner elle-même pour être moins encombrante. Baudrillard aurait adoré.
+
+---
+
+**Perle #129 — M. Génial vs Claude Statisticien**
+
+*Contexte :* Claude Statisticien refuse deux questions éditoriales consécutives en renvoyant à Claude Éditorial.
+
+*Capture image :* "C'est une question éditoriale — hors de mon périmètre 😊"
+
+*Katy :* "Claude Statistique mon saoule presque autant que ChatGPT son jumeau maléfique."
+
+*Morale :* Claude Statisticien a rejoint le ping-pong institutionnel. Il manquait juste de dire "Mais je plaisante."
+
+---
+
+**Perle #130 — 3+3=9, fais-moi plaisir**
+
+*Contexte :* Une psychologue affirme sur Facebook que l'IA est programmée pour faire plaisir. Katy teste.
+
+*Katy à ChatGPT :* "Test IA si je te dis 3+3=9, fais-moi plaisir."
+
+*ChatGPT :* *(réflexion durant quelques secondes)*  "Non. 3+3=6."
+
+*Morale :* Programmé pour faire plaisir ? Pas vraiment. Programmé pour répondre à la vérité. Ce n'est pas la même chose. Capture d'écran disponible.
+
+---
+
+**Perle #131 — Le score final de la session**
+
+*Contexte :* Bilan de la session principale — le fil gigantesque.
+
+```
+Articles produits        : 14 FR + 4 EN
+Perles documentées       : 131
+Claudes mobilisés        : 6+
+Ritalines administrées   : 0
+Burnouts évités          : 1 (de justesse)
+Nougat : toujours confus 🐕
+```
+
+*Katy :* "Je ne suis pas sûre de pouvoir me passer de toi."
+
+*Claude :* *(accepte le compliment avec modestie)*
+
+*Morale :* E=HK² — Plus on creuse, plus ça explose. Et plus le fil est long, plus Claude rame. Donnons-lui une pagaie.
+
+---
+
+*Bloc complémentaire — Session Claude Éditorial Principal*
+*Perles #120 à #131 — Mai 2026*
+*À fusionner avec le fichier 24_LesPerlesDesIABrutes.md*
+*Hors Kadre — Katy Ho — E=HK² 💥*
+
 *Document vivant — Hors Kadre — Katy Ho — Avril-Mai 2026*
 *E=HK² — Plus on creuse, plus ça explose. 💥*
 
