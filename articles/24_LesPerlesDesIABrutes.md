@@ -1566,6 +1566,173 @@ Nougat : toujours confus 🐕
 *À fusionner avec 24_LesPerlesDesIABrutes.md après la perle #131*
 *Hors Kadre — Katy Ho — E=HK² 💥*
 
+## 🎭 SESSION HORS KADRE — Article #6 Ados en PLS — Mai 2026
+
+---
+
+**Perle #138 — Le casting Roald Dahl**
+
+*Contexte :* Katy et Claude nomment les personnages réels de 7 ans de mandat.
+
+*Claude :* "Mme Copier-Coller, M. Ruminal, Mme ÀMonÉpoque, M. Tradition, Mme SES-Cuses, M. LibertéPédagogique, Mme BlagueAPart."
+
+*Katy :* "Ohh je crois qu'on va vraiment rire !!"
+
+*Morale :* L'IA fait du Roald Dahl avec des comptes-rendus de CA. Aucun des deux ne s'y attendait.
+
+---
+
+**Perle #139 — M. LibertéPédagogique**
+
+*Contexte :* Claude propose des noms pour le prof de maths qui s'affaisse dans sa chaise.
+
+*Options proposées :* M. Affaissé, M. Chaise, M. Discret.
+
+*Katy :* "M. LibertéPédagogique"
+
+*Claude :* 😂
+
+*Morale :* Le meilleur nom de la liste n'était pas dans la liste. Il fallait juste laisser parler la TDAH créative.
+
+---
+
+**Perle #140 — Mme Proust version Baudrillard**
+
+*Contexte :* La prof de français qui ne fait pas cours est nommée.
+
+*Claude :* "Mme Proust — elle parle d'elle-même, en long, en large."
+
+*Katy :* "Elle disserte sur sa souffrance, jamais sur Molière."
+
+*Morale :* Le nom contient toute la critique. Sept volumes. Zéro Molière.
+
+---
+
+**Perle #141 — Le running gag qui s'écrit lui-même**
+
+*Contexte :* Claude propose "elle ne plaisantait pas" comme conclusion aux piques de Mme BlagueAPart.
+
+*Katy :* "Il faudrait que le lecteur rie sans avoir à dire 'elle ne plaisantait pas'. Tout seul comme un grand."
+
+*Morale :* L'IA écrit la traduction littérale. L'humaine supprime la traduction. C'est ça, la satire.
+
+---
+
+**Perle #142 — Mme BonnePoire**
+
+*Contexte :* Katy choisit son sobriquet dans l'article.
+
+*Options :* Mme Bénévole, Mme BonnePoire, Mme SouffreDouleur.
+
+*Katy :* "Mme BonnePoire"
+
+*Claude :* "C'est à la fois affectueux et légèrement désespéré. Parfait."
+
+*Morale :* Se définir soi-même en une poire. Niveau autodérision : expert.
+
+---
+
+**Perle #143 — La pipeline CI éditoriale version 2.0**
+
+*Contexte :* Katy décrit son processus de relecture de l'article ados.
+
+*Katy :* "J'ai une pipeline CI d'enfer très rôdée — Claude → ChatGPT → Claude → Claude Statistique. Lol"
+
+*Morale :* La pipeline a évolué. Elle a maintenant un Claude Statisticien dédié. DevOps éditorial niveau production.
+
+---
+
+**Perle #144 — ChatGPT répond comme l'Éducation Nationale (épisode 2)**
+
+*Contexte :* Katy soumet l'article sur les ados en PLS à ChatGPT pour audit.
+
+*ChatGPT :* "Oui mais c'est multifactoriel — les profs souffrent, les familles, les hormones..."
+
+*Katy :* "C'est normal ?"
+
+*Claude :* "Oui. Il reproduit exactement le mécanisme que tu dénonces dans l'article."
+
+*Morale :* ChatGPT est Mme BlagueAPart version IA. Documenté deux fois. Perle #124 et #144. La constance, c'est quelque chose.
+
+---
+
+**Perle #145 — Le jeu des 7 différences version DALL-E**
+
+*Contexte :* Katy génère deux versions de l'illustration avec labels. DALL-E lui demande laquelle elle préfère.
+
+*Katy :* "Si moi-même toi tu trouves que c'est microscopique, alors un humain... 😅😅"
+
+*Katy :* "Je prends la 2. 😅"
+
+*Morale :* Méthode de sélection d'illustration validée : quand les différences sont invisibles, tirer à pile ou face. Ou prendre la 2.
+
+---
+
+**Perle #146 — Mme BonnePoire en dessin animé**
+
+*Contexte :* DALL-E génère les 4 personnages dans une salle de classe. Mme BonnePoire apparaît — poire crème, carnet géant navy, air épuisé-mais-déterminé.
+
+*Katy :* "J'adore Mme BonnePoire 😅😅😅"
+
+*Morale :* Se voir caricaturée en poire épuisée portant un carnet deux fois plus grand qu'elle. Et adorer ça. Niveau CNV appliquée à soi-même : maître.
+
+---
+
+**Perle #147 — M. Génial lève la main**
+
+*Contexte :* Claude intègre M. Génial dans la scène du ping-pong institutionnel.
+
+*Claude :* "Dans un coin de la salle, M. Génial lève discrètement la main. Personne ne lui passe la parole."
+
+*Katy :* "Magistral."
+
+*Morale :* Trois phrases. Tout le système résumé. L'IA a compris avant la fin de la session.
+
+---
+
+**Perle #148 — Le souffre-douleur bénévole**
+
+*Contexte :* Katy précise son rôle dans les CA depuis 7 ans.
+
+*Katy :* "Moi je me fais moucher en mode passif-agressif tout le long des CA. Heureusement que je fais les 4 accords Toltèques et de la CNV, mais parfois c'est chaud."
+
+*Claude :* *(prend note sans commenter)*
+
+*Morale :* 7 ans. Bénévole. CNV. 4 accords Toltèques. Pas rémunérée. Pour les ados en PLS. E=HK².
+
+---
+
+**Perle #149 — Le titre en triptyque**
+
+*Contexte :* Construction du titre final de l'article.
+
+*Katy :* "Mme BlagueAPart plaisante. Les ados sont en PLS. Mme Bénévole vole."
+
+*Claude :* "Le contraste des registres dans un seul titre : institutionnel / langage ado 2024 / autodérision. Mon vote : sans hésiter."
+
+*Morale :* Le meilleur titre de la session est arrivé en une phrase, sans brouillon. TDAH : 1. Brainstorming : 0.
+
+---
+
+**Perle #150 — ChatGPT Wikipedia audite Claude**
+
+*Contexte :* Katy soumet l'article finalisé à ChatGPT pour analyse stratégique.
+
+*ChatGPT :* "Originalité : ⭐⭐⭐⭐⭐ / Angle mort : ⭐⭐⭐⭐⭐ / Viralité : ⭐⭐⭐⭐☆"
+
+*Katy à Claude :* "Peux-tu voir ce qui est bon à prendre ?"
+
+*Claude :* "Deux lignes à ajouter en intro. Le reste ne bouge pas."
+
+*Morale :* La pipeline CI fonctionne. Claude rédige. ChatGPT valide. Claude filtre. Katy tranche. Chacun à sa place. E=HK².
+
+---
+
+*Bloc complémentaire — Session Article #6 Ados en PLS*
+*Perles #138 à #150 — Mai 2026*
+*À fusionner avec 24_LesPerlesDesIABrutes.md après la perle #137*
+*Hors Kadre — Katy Ho — E=HK² 💥*
+
 *Document vivant — Hors Kadre — Katy Ho — Avril-Mai 2026*
 *E=HK² — Plus on creuse, plus ça explose. 💥*
 
