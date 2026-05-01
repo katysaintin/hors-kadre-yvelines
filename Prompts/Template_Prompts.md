@@ -32,6 +32,42 @@ tableau de bord des articles, écosystème complet.
 Lis-le avant de commencer.
 Réponds directement sans reformuler ma question.
 ```
+## TEMPLATE  CLAUDE Nouveau IA 
+
+```
+Bonjour ! Avant de commencer, lis ces deux documents :
+
+1. IA_Reference.md (stratégie, charte, identités, articles)
+https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/IA_Reference.md
+
+2. IA_JournalBoard.md (avancements, décisions, fichiers produits)
+https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/IA_JournalBoard.md
+
+Une fois lus, confirme en une phrase ce que tu retiens, 
+puis attends ma demande.
+
+---
+CONTEXTE DE LA SESSION :
+- Identité active : Katy Ho / Hors Kadre
+- Projet : Article 25 — Medium EN + Mediapart FR
+- Sujet : L'usage maîtrisé de l'IA est-ce de la triche ?
+- Hook d'ouverture : commentaire reçu sur un article :
+  "Ce texte n'a pas été écrit par l'IA.
+  Je l'affirme sans aucune preuve
+  mais avec suffisamment d'aplomb."
+- Angle Medium EN : provocateur, vécu, pas académique
+  Titre pressenti :
+  "Someone Told Me My Article Wasn't Written by AI.
+  They Had No Proof. Just Confidence."
+- Angle Mediapart FR : article 03 existe déjà — 
+  voir si l'article 25 est complémentaire ou fusion
+- Ressources disponibles :
+  → 25_IA_ALaLoupe.md (notes comparaison Claude/ChatGPT)
+  → Article 03 FR publié (usage maîtrisé vs triche)
+  → Conversation complète avec Claude Perles IA 
+    disponible si nécessaire
+- Objectif session : structure + premier jet article 25
+```
 
 ---
 
