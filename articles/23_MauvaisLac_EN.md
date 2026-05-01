@@ -111,7 +111,6 @@ What I found surprised me.
 
 In the communities supposedly built for people like me...
 
-In the communities supposedly built for people like me,
 I found the same mechanism all over again.
 
 ADHD groups: *"You're professionally successful?
