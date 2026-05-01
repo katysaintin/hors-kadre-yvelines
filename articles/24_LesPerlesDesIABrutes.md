@@ -1487,6 +1487,85 @@ Nougat : toujours confus 🐕
 *À fusionner avec le fichier 24_LesPerlesDesIABrutes.md*
 *Hors Kadre — Katy Ho — E=HK² 💥*
 
+---
+
+## 📊 SESSION CLAUDE STATISTICIEN — Mai 2026
+
+---
+
+**Perle #132 — Le statisticien qui fait du prompt image**
+
+*Contexte :* Claude Statisticien analyse les visuels FB et fournit spontanément des briefs correctifs détaillés pour chaque image.
+
+*Katy :* "Ah je vois que tu te sous-estimes, tu viens sans te rendre compte de me fournir les prompts correctifs !!"
+
+*Claude Statisticien :* *(silence gêné)*
+
+*Morale :* L'IA fait ce qu'on lui dit de faire — même quand on ne lui a rien dit. Documenté.
+
+---
+
+**Perle #133 — Le périmètre qui se rétrécit**
+
+*Contexte :* Claude Statisticien renvoie successivement trois questions à Claude Éditorial, Claude Image Prompt, et Claude Support Mediapart.
+
+*Katy :* "Je vais finir par regretter de t'avoir exclusivement programmé pour ça."
+
+*Morale :* Claude Statisticien a un périmètre. Il le défend avec une constance digne de Mme BlagueAPart. Sans la blague.
+
+---
+
+**Perle #134 — Le ping-pong version 2.0**
+
+*Contexte :* Claude Statisticien renvoie une question à Claude Éditorial. Claude Éditorial rigole. Katy documente.
+
+*Claude Éditorial :* "Perle #87 — Claude Statisticien qui renvoie la balle à Claude Éditorial. Le ping-pong institutionnel version IA — exactement comme dans ton article !"
+
+*Katy :* "après le ping-pong institutionnel, le ping-pong des IA à rajouter dans mon article 25."
+
+*Morale :* L'IA reproduit exactement le mécanisme qu'elle aide à dénoncer. Mise en abyme opérationnelle. E=HK².
+
+---
+
+**Perle #135 — L'encyclopédie des perles**
+
+*Contexte :* Le compteur de perles dépasse 130. Katy observe l'accumulation.
+
+*Katy :* "Il faudra une encyclopédie pour stocker les perles !!"
+
+*Claude Statisticien :* "Perle #90 — Claude Statisticien alimente involontairement l'article qu'il est censé analyser."
+
+*Morale :* Le statisticien documente les perles en temps réel dans le fil qui les génère. Récursivité totale. Baudrillard et Heilbrunn apprécieraient ensemble.
+
+---
+
+**Perle #136 — Le commentaire aplomb (version statistiques)**
+
+*Contexte :* Premier commentaire sur l'article #27 impôts, publié sur Mediapart. Un lecteur affirme sans preuve que le texte n'a pas été écrit par une IA.
+
+*Lecteur :* "Ce texte n'a pas été écrit par l'IA. Je l'affirme sans aucune preuve mais avec suffisamment d'aplomb."
+
+*Claude Statisticien :* "La confiance mal placée n'est pas un brevet de l'IA. C'est une caractéristique humaine très bien rodée."
+
+*Morale :* L'article #27 chapitre 5 s'illustre lui-même dans ses commentaires. Le terrain valide la théorie en temps réel. Donnée statistiquement non reproductible.
+
+---
+
+**Perle #137 — Les Inconnus avaient tout compris**
+
+*Contexte :* Katy monte une story FB avec un extrait de 24 secondes des Inconnus — URSAFF, CANCRAS, CARBALAS — pour illustrer l'article impôts.
+
+*Katy :* "Les Inconnus avaient tout compris en 1990. Moi j'ai mis 30 ans et un ChatGPT."
+
+*Morale :* La meilleure analyse du jargon fiscal français tient en une chanson de 1990. Hors Kadre confirme en 2026 avec sources et données. E=HK².
+
+---
+
+*Bloc complémentaire — Session Claude Statisticien*
+*Perles #132 à #137 — Mai 2026*
+*À fusionner avec 24_LesPerlesDesIABrutes.md après la perle #131*
+*Hors Kadre — Katy Ho — E=HK² 💥*
+
 *Document vivant — Hors Kadre — Katy Ho — Avril-Mai 2026*
 *E=HK² — Plus on creuse, plus ça explose. 💥*
 
