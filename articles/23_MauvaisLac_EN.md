@@ -106,7 +106,10 @@ I didn't get fixed. I got recalibrated.
 
 ---
 
-Here's what I didn't expect:
+And then I went looking for my people.
+What I found surprised me.
+
+In the communities supposedly built for people like me...
 
 In the communities supposedly built for people like me,
 I found the same mechanism all over again.
