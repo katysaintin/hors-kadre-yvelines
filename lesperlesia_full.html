@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Perles des IA 💎 — Archive complète</title>
+  <meta name="description" content="Archive chronologique complète — toutes les perles, toutes les sessions, sans filtre.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P3NRDBYDS8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P3NRDBYDS8', { 'anonymize_ip': true });
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Marked.js pour parser le Markdown -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+
+  <style>
+    :root {
+      --navy: #1B2A4A;
+      --terracotta: #C4622D;
+      --terracotta-light: #E8845A;
+      --cream: #F7F3EE;
+      --cream-dark: #EDE7DC;
+      --text: #2C2C2C;
+      --text-light: #6B6B6B;
+      --gold: #D4A843;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--navy);
+      color: var(--cream);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba(196,98,45,0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .header-top img { width: 48px; height: 48px; object-fit: contain; }
+
+    .lang-switch {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lang-switch a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: rgba(247,243,238,0.6);
+      text-decoration: none;
+      border: 1px solid rgba(247,243,238,0.3);
+      padding: 0.2rem 0.6rem;
+    }
+
+    .header-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terracotta-light);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      position: relative;
+    }
+
+    .gem { color: var(--gold); }
+
+    .subtitle {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: rgba(247,243,238,0.7);
+      margin-bottom: 1rem;
+    }
+
+    .header-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      color: rgba(247,243,238,0.4);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── BANDEAU RETOUR ── */
+    .back-banner {
+      background: var(--terracotta);
+      color: var(--cream);
+      text-align: center;
+      padding: 0.7rem 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+    }
+
+    .back-banner a {
+      color: var(--cream);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .back-banner a:hover { color: var(--gold); }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--cream-dark);
+      padding: 0.8rem 2rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-light);
+      border-bottom: 2px solid var(--navy);
+    }
+
+    .stats-bar span { color: var(--terracotta); font-weight: 600; }
+
+    /* ── SEARCH ── */
+    .search-bar {
+      max-width: 820px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      border: 2px solid var(--cream-dark);
+      background: white;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus { border-color: var(--terracotta); }
+
+    .search-bar input::placeholder { color: var(--text-light); }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    /* ── LOADING ── */
+    .loading {
+      text-align: center;
+      padding: 4rem 2rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    .loading::before {
+      content: '💎';
+      display: block;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ── PERLES RENDUES DEPUIS MARKDOWN ── */
+    #perles-container h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--navy);
+    }
+
+    #perles-container h2:first-child { margin-top: 2rem; }
+
+    /* Chaque perle = un bloc entre deux --- */
+    .perle-card {
+      background: white;
+      margin-bottom: 1.2rem;
+      border-left: 4px solid var(--terracotta);
+      box-shadow: 2px 2px 0 var(--cream-dark);
+      animation: fadeIn 0.3s ease both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .perle-card .perle-title {
+      background: var(--navy);
+      color: var(--cream);
+      padding: 0.5rem 1.2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .perle-card .perle-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--terracotta-light);
+      letter-spacing: 0.1em;
+      flex-shrink: 0;
+    }
+
+    .perle-card .perle-body {
+      padding: 1rem 1.4rem;
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+
+    .perle-card .perle-body em {
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    .perle-card .perle-body strong {
+      color: var(--terracotta);
+      font-style: normal;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+    }
+
+    /* Morale */
+    .morale-line {
+      margin-top: 0.8rem;
+      padding-top: 0.7rem;
+      border-top: 1px solid var(--cream-dark);
+      font-size: 0.83rem;
+    }
+
+    .morale-line::before {
+      content: '→ ';
+      color: var(--terracotta);
+      font-weight: bold;
+    }
+
+    /* Code inline */
+    .perle-card code {
+      background: var(--cream-dark);
+      color: var(--terracotta);
+      padding: 0.1rem 0.35rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+    }
+
+    /* Bloc code */
+    .perle-card pre {
+      background: var(--navy);
+      color: #a8d8a8;
+      padding: 0.8rem 1rem;
+      margin: 0.6rem 0;
+      overflow-x: auto;
+      border-left: 3px solid var(--terracotta);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+    }
+
+    .perle-card pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+
+    /* ── COMPTEUR RÉSULTATS ── */
+    .results-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .results-count span { color: var(--terracotta); }
+
+    /* ── EPIGRAPHE ── */
+    .epigraph {
+      max-width: 820px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .epigraph blockquote {
+      border-left: 3px solid var(--terracotta);
+      padding: 0.5rem 1rem;
+      font-style: italic;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .epigraph blockquote cite {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--terracotta);
+    }
+
+    /* ── FORMAT AIDE ── */
+    .format-aide {
+      max-width: 820px;
+      margin: 0 auto 1rem;
+      padding: 0 1.5rem;
+    }
+
+    details {
+      background: var(--cream-dark);
+      padding: 0.8rem 1.2rem;
+    }
+
+    summary {
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      text-transform: uppercase;
+    }
+
+    details pre {
+      background: var(--navy);
+      color: #a8d8a8;
+      padding: 0.8rem;
+      margin-top: 0.8rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      overflow-x: auto;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(247,243,238,0.45);
+      text-align: center;
+      padding: 2rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+    }
+
+    footer .ehk {
+      color: var(--terracotta-light);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .stats-bar { gap: 1rem; }
+      main { padding: 0 1rem 3rem; }
+      .lang-switch { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <!-- LOGO HK : remplacer par <img src="HorsKadre.png" alt="Hors Kadre" class="logo-hk"> -->
+    <div style="width:48px;height:48px;background:var(--terracotta);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:0.75rem;color:var(--cream);font-weight:700;flex-shrink:0;">HK</div>
+    <div>
+      <div class="header-tag">Hors Kadre — Archive complète</div>
+    </div>
+    <div class="lang-switch">
+      <a href="lesperlesia.html">← Version thématique</a>
+    </div>
+  </div>
+  <h1><span class="gem">💎</span> Full Gems</h1>
+  <p class="subtitle">Toutes les perles. Dans l'ordre. Sans filtre.</p>
+  <p class="header-meta" id="header-count">Chargement...</p>
+</header>
+
+<div class="back-banner">
+  ← Version thématique →
+  <a href="lesperlesia.html">Les Perles des IA — édition classée</a>
+  &nbsp;|&nbsp;
+  <a href="lesperlesia_en.html">🇬🇧 AI Gems (EN)</a>
+</div>
+
+<div class="stats-bar" id="stats-bar">
+  <div>Perles : <span id="count-total">—</span></div>
+  <div>Sessions : <span>6+</span></div>
+  <div>Katy : <span>∞</span></div>
+  <div>Claude : <span>0</span></div>
+  <div>Ritaline administrée : <span>0</span></div>
+</div>
+
+<div class="epigraph">
+  <blockquote>
+    "Les enfants disent des mignonneries qu'on note pour ne pas les oublier. Les IA aussi."
+    <cite>— Katy Ho, 4h du matin, plâtrée</cite>
+  </blockquote>
+</div>
+
+<div class="search-bar">
+  <input type="text" id="search-input" placeholder="🔍 Rechercher une perle... (ex: 25+2, Ritaline, return, Claude triche)" autocomplete="off">
+</div>
+
+<div class="format-aide">
+  <details>
+    <summary>📋 Comment ajouter une perle dans GitHub</summary>
+    <pre>
+---
+
+**Perle #N — Titre court**
+
+*Contexte :* Ce qui se passait.
+
+*Katy :* "Citation exacte."
+
+*Claude :* "Réponse ou réaction."
+
+*Morale :* La leçon en une ligne.
+
+---</pre>
+    <p style="font-size:0.78rem;color:var(--text-light);margin-top:0.6rem;font-family:'JetBrains Mono',monospace;">
+      1. Ouvrir <strong>24_LesPerlesDesIA_clean.md</strong> sur GitHub<br>
+      2. Cliquer sur ✏️ (crayon)<br>
+      3. Coller le bloc à la fin<br>
+      4. Incrémenter le numéro<br>
+      5. Commit — la page se met à jour automatiquement
+    </p>
+  </details>
+</div>
+
+<main>
+  <div class="results-count" id="results-count" style="display:none;">
+    <span id="results-num">0</span> perle(s) trouvée(s)
+  </div>
+  <div id="perles-container">
+    <div class="loading">Chargement des perles depuis GitHub...</div>
+  </div>
+</main>
+
+<footer>
+  <span class="ehk">E=HK²</span>
+  Hors Kadre — Katy Ho — Avril-Mai 2026<br>
+  Plus on creuse, plus ça explose. 💥<br><br>
+  <a href="https://blogs.mediapart.fr/katy-ho" target="_blank" style="color:var(--terracotta-light);text-decoration:none;">Mediapart — Hors Kadre</a>
+  &nbsp;|&nbsp;
+  <a href="https://medium.com/@katy.saintin" target="_blank" style="color:var(--terracotta-light);text-decoration:none;">Medium — @katy.saintin</a>
+</footer>
+
+<script>
+// ============================================================
+// URL DU FICHIER MARKDOWN SUR GITHUB
+// ← Modifier ici si tu changes le nom du fichier
+// ============================================================
+const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_LesPerlesDesIA_clean.md';
+
+// ============================================================
+// PARSER : transforme le Markdown en cartes HTML
+// ============================================================
+function parsePerles(markdown) {
+  const lines = markdown.split('\n');
+  const perles = [];
+  let currentPerle = null;
+  let inPerle = false;
+  let bodyLines = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Détection d'une nouvelle perle : **Perle #N — Titre**
+    const perleMatch = line.match(/^\*\*Perle #?(\d+)[^—]*—\s*(.+)\*\*/);
+
+    if (perleMatch) {
+      // Sauvegarder la perle précédente
+      if (currentPerle) {
+        currentPerle.body = bodyLines.join('\n').trim();
+        perles.push(currentPerle);
+      }
+      currentPerle = {
+        num: parseInt(perleMatch[1]),
+        title: perleMatch[2].replace(/\*\*/g, '').trim(),
+        body: ''
+      };
+      bodyLines = [];
+      inPerle = true;
+      continue;
+    }
+
+    // Séparateur --- = fin de perle
+    if (line.trim() === '---' && inPerle && currentPerle) {
+      currentPerle.body = bodyLines.join('\n').trim();
+      perles.push(currentPerle);
+      currentPerle = null;
+      inPerle = false;
+      bodyLines = [];
+      continue;
+    }
+
+    // Titre de section H2 : ## SESSION ...
+    if (line.startsWith('## ') && !inPerle) {
+      perles.push({ type: 'section', title: line.replace('## ', '').trim() });
+      continue;
+    }
+
+    // Corps de perle
+    if (inPerle && currentPerle) {
+      bodyLines.push(line);
+    }
+  }
+
+  // Dernière perle sans ---
+  if (currentPerle && bodyLines.length > 0) {
+    currentPerle.body = bodyLines.join('\n').trim();
+    perles.push(currentPerle);
+  }
+
+  return perles;
+}
+
+// ============================================================
+// RENDU HTML d'une perle
+// ============================================================
+function renderPerle(perle) {
+  if (perle.type === 'section') {
+    return `<h2>${perle.title}</h2>`;
+  }
+
+  // Parser le corps en Markdown → HTML
+  let bodyHtml = marked.parse(perle.body);
+
+  // Identifier et styliser la ligne Morale
+  bodyHtml = bodyHtml.replace(
+    /<p><em>Morale :<\/em>(.*?)<\/p>/gs,
+    '<p class="morale-line">$1</p>'
+  );
+
+  return `
+    <div class="perle-card" data-num="${perle.num}" data-text="${escapeAttr(perle.title + ' ' + perle.body)}">
+      <div class="perle-title">
+        <span class="perle-num">PERLE #${String(perle.num).padStart(3, '0')}</span>
+        <span>${escapeHtml(perle.title)}</span>
+      </div>
+      <div class="perle-body">${bodyHtml}</div>
+    </div>
+  `;
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function escapeAttr(str) {
+  return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;').toLowerCase();
+}
+
+// ============================================================
+// CHARGEMENT DEPUIS GITHUB
+// ============================================================
+let allPerles = [];
+let allRendered = [];
+
+async function loadPerles() {
+  const container = document.getElementById('perles-container');
+
+  try {
+    const response = await fetch(GITHUB_RAW_URL + '?t=' + Date.now());
+    if (!response.ok) throw new Error('Erreur réseau : ' + response.status);
+    const markdown = await response.text();
+
+    allPerles = parsePerles(markdown);
+    renderAll();
+
+  } catch (err) {
+    container.innerHTML = `
+      <div style="text-align:center;padding:3rem;font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--text-light);">
+        ⚠️ Impossible de charger le fichier depuis GitHub.<br><br>
+        <small>${err.message}</small><br><br>
+        <a href="${GITHUB_RAW_URL}" target="_blank" style="color:var(--terracotta);">Ouvrir le fichier directement →</a>
+      </div>
+    `;
+  }
+}
+
+function renderAll() {
+  const container = document.getElementById('perles-container');
+  const perlesOnly = allPerles.filter(p => !p.type);
+  const total = perlesOnly.length;
+
+  // Mise à jour stats
+  document.getElementById('count-total').textContent = total;
+  document.getElementById('header-count').textContent = `${total} perles · Archive chronologique · ${new Date().getFullYear()}`;
+
+  // Rendu complet
+  allRendered = allPerles.map(renderPerle);
+  container.innerHTML = allRendered.join('');
+}
+
+// ============================================================
+// RECHERCHE EN TEMPS RÉEL
+// ============================================================
+const searchInput = document.getElementById('search-input');
+const resultsCount = document.getElementById('results-count');
+const resultsNum = document.getElementById('results-num');
+
+searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase().trim();
+  const container = document.getElementById('perles-container');
+
+  if (!query) {
+    container.innerHTML = allRendered.join('');
+    resultsCount.style.display = 'none';
+    return;
+  }
+
+  const filtered = allPerles.filter(p => {
+    if (p.type === 'section') return false;
+    const text = (p.title + ' ' + p.body).toLowerCase();
+    return text.includes(query);
+  });
+
+  if (filtered.length === 0) {
+    container.innerHTML = `
+      <div style="text-align:center;padding:3rem;font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--text-light);">
+        Aucune perle trouvée pour "<strong style="color:var(--terracotta);">${escapeHtml(query)}</strong>"
+      </div>
+    `;
+  } else {
+    container.innerHTML = filtered.map(renderPerle).join('');
+  }
+
+  resultsNum.textContent = filtered.length;
+  resultsCount.style.display = 'block';
+});
+
+// ============================================================
+// INIT
+// ============================================================
+loadPerles();
+</script>
+
+</body>
+</html>
