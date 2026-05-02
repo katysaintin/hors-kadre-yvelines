@@ -3,6 +3,103 @@
 *Basé sur IA_Reference.md v3.0 (source de vérité) + JournalBoard*  
 *Ne contient que ce qui reste à faire — les items PUBLIÉS / PROGRAMMÉS ✅ sont exclus*
 
+# Calendrier Éditorial — Mai 2026
+*Hors Kadre — Katy Ho / Katy Saintin*
+*Généré par Claude Statisticien — 2 mai 2026*
+
+---
+
+## 📘 LINKEDIN — Katy Saintin
+*Cadence : 2 posts/semaine — 8h00*
+
+| Date | Jour | Sujet | Visuel | Statut |
+|------|------|-------|--------|--------|
+| 4 mai | Lundi | EPICS / Bob Dalesio — IT/OT Convergence | Photo slide conférence EPICS | ✅ Prêt |
+| 5 mai | Mardi | CEA Tuteurs — Republication CEA | Carrousel CEA (KatyMathis + Tuteurs) | ✅ Prêt |
+| 12 mai | Lundi | UNAAPE Bénévolat — Leadership non rémunéré | KatyBenevole.jfif | ✅ Prêt |
+| 14 mai | Mercredi | IA Fais-le toi — Usage actif vs passif | 03_FaisLeToi3.png | 🔄 À construire avec Claude LinkedIn |
+| TBD | À caler | Republication Thomas Galoisy — IA éducation | — | 🔄 À sélectionner |
+
+### Notes LinkedIn
+- Hashtags : maximum 5-8 par post
+- Liens externes : éviter dans le corps du post (pénalise la portée)
+- Tagger les apprentis sur le post CEA Tuteurs
+- 2 posts/semaine recommandés par Claude LinkedIn
+
+---
+
+## 📘 FACEBOOK — Hors Kadre (Katy Ho)
+*Cadence : 1 post/semaine — 12h15*
+
+| Date | Jour | Épisode | Article | Visuel | Statut |
+|------|------|---------|---------|--------|--------|
+| ✅ 30 avril | Jeudi | Ép. SPÉCIAL | #27 Impôts / ChatGPT | ImpotChatGPT.png | ✅ Publié |
+| 7 mai | Jeudi | Ép. 12 | #8 Poisson / Filières Pro | Poisson.jpeg | ✅ Prêt |
+| 12 mai | Lundi | Ép. 13 | #23 Mauvais Lac | MauvaisLacClair.png | ✅ Prêt |
+| 19 mai | Lundi | Ép. 14 | #03 Fais-le toi-même | 03_FaisLeToi3.png | ✅ Prêt |
+| 26 mai | Lundi | Ép. 15 | #24 Les Perles des IA | PerlesIA.png | ✅ Prêt |
+
+### Titres des posts FB validés
+- Ép. 12 — *"On vous a dit de grimper sur un arbre. Vous êtes un poisson."*
+- Ép. 13 — *"Vous aviez trouvé un lac. Mais était-ce le bon ?"*
+- Ép. 14 — *"Fais-le toi-même. Tu as une IA."*
+- Ép. 15 — *"Les Perles des IA"*
+
+### Notes Facebook
+- Heure de publication : 12h15 (créneau validé par stats)
+- Visuel : 1 personnage central, fond épuré, texte minimal
+- Lien article : en commentaire épinglé (sauf exception assumée)
+- Ne pas rééditier les posts publiés (pénalité algorithmique)
+
+---
+
+## 📘 MEDIUM EN — Katy Saintin
+*À programmer après publication FB/LinkedIn*
+
+| Titre | Statut | Publication cible |
+|-------|--------|-------------------|
+| For the First Time, a Tool Adapted to My ADHD Brain | ✅ Prêt | Mardi 6 mai, 14h-15h |
+| The Wrong Lake | ✅ Prêt | Mardi 13 mai, 14h-15h |
+
+### Publications cibles Medium
+- **For the First Time** → Better Humans (1er choix) / Invisible Illness
+- **The Wrong Lake** → Invisible Illness (1er choix) / Age of Awareness
+
+---
+
+## 📘 JUIN — À venir
+*Dates à confirmer*
+
+| Plateforme | Épisode | Article | Notes |
+|------------|---------|---------|-------|
+| FB | Ép. 16 | #06 Mme BlagueAPart / Ados en PLS | Mercredi 4 juin, 12h15 |
+| LinkedIn | Post certification IA | #28 Certification sans BAFA | Après soutenance 18 mai |
+| Mediapart | #26 Switch/Case neurodiversité | — | À rédiger |
+| Mediapart | #15 Plafond de bambou | — | À rédiger |
+
+---
+
+## ✅ CHECKLIST GLOBALE MAI
+
+- [ ] Programmer Ép. 12 FB — 7 mai 12h15
+- [ ] Programmer Ép. 13 FB — 12 mai 12h15
+- [ ] Programmer Ép. 14 FB — 19 mai 12h15
+- [ ] Programmer Ép. 15 FB — 26 mai 12h15
+- [ ] Publier post EPICS LinkedIn — 4 mai 8h00
+- [ ] Publier post CEA Tuteurs LinkedIn — 5 mai 8h00 (tagger apprentis)
+- [ ] Programmer post UNAAPE LinkedIn — 12 mai 8h00
+- [ ] Construire post IA Fais-le toi LinkedIn avec Claude LinkedIn — avant 14 mai
+- [ ] Sélectionner republication Thomas Galoisy LinkedIn
+- [ ] Soumettre article ADHD/Claude à Better Humans — avant 6 mai
+- [ ] Soumettre The Wrong Lake à Invisible Illness — avant 13 mai
+- [ ] Préparer post certification IA LinkedIn pour après 18 mai
+- [ ] Mettre à jour IA_Reference.md avec ce calendrier
+
+---
+
+*E=HK² — Plus on creuse, plus ça explose. 💥*
+*Claude Statisticien — Hors Kadre — Mai 2026*
+
 ---
 
 ## 🔴 PRIORITÉ 1 — Cette semaine
