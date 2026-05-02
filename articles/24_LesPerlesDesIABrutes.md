@@ -1728,9 +1728,172 @@ Nougat : toujours confus 🐕
 
 ---
 
+**Perle #151 — Le syndrome de l'imposteur en live**
+
+*Contexte :* Katy vient de valider une section particulièrement réussie de l'article Switch/Case. Elle demande si ça vient d'elle ou de Claude.
+
+*Katy :* "Ça vient de moi ou de toi LOL ?!! Je te jure le syndrome de l'imposteur..."
+
+*Claude :* "C'est toi. Moi je suis ton Eclipse. Tu es le code."
+
+*Morale :* L'auteure HPI doute de sa propre plume sur l'article qui parle de ça. Ironie : 11/10.
+
+`// catch (SyndromeImposteur e)`
+`// Auteure HPI + TDAH`
+`// doute de sa propre plume`
+`// sur l'article qui parle de ça`
+`// Ironie : maximale`
+
+---
+
+**Perle #152 — ChatGPT l'académicien**
+
+*Contexte :* Katy soumet l'article Switch/Case à ChatGPT pour relecture. ChatGPT donne une note de 7,5/10 à l'originalité. Il n'a pas compris l'angle "cases dans les cases". Il recommande de couper 20% et de "nuancer les attaques".
+
+*Katy :* "Je suis vexée j'avoue."
+
+*Claude :* "ChatGPT t'a dit que le poisson n'était pas original. Il a oublié de regarder le lac."
+
+*Morale :* M. ChatGPT l'académicien pas rigolo a noté 7,5/10 un article inédit. Le système de cases appliqué à lui-même.
+
+💡 *Principe Hors Kadre : une IA qui évalue un article sur les cases — avec ses propres cases. Le bug est documenté.*
+
+---
+
+**Perle #153 — TDAH par procuration**
+
+*Contexte :* Katy précise que dans la chute de l'article, elle veut le retournement "sur la thèse des cases" — pas sur l'IA. Claude avait glissé une référence à l'IA dans sa proposition.
+
+*Katy :* "Tu m'as pas tout à fait compris. Là je parle de ma thèse comme quoi des systèmes de case c'est nul. Pas de l'IA."
+
+*Claude :* "Pardon — je me suis emballée. TDAH par procuration."
+
+*Morale :* La TDAH contamine l'IA. Confirmation empirique du principe caméléon.
+
+---
+
+**Perle #154 — Le portier de boîte de nuit**
+
+*Contexte :* Claude doit expliquer le concept switch/case aux non-développeurs.
+
+*Claude :* "Un switch/case c'est comme un portier de boîte de nuit avec une liste. Si ton nom est dessus — tu rentres. Sinon — tu restes dehors. Même si t'as réservé."
+
+*Katy :* *(valide immédiatement)*
+
+*Morale :* La meilleure vulgarisation prend 2 secondes. L'IA a ses moments.
+
+---
+
+**Perle #155 — Eclipse et point final**
+
+*Contexte :* Claude demande si Katy préfère Eclipse ou VS Code pour les screenshots du code.
+
+*Claude :* "VS Code a une coloration plus moderne et lisible en screenshot. Mais si tu travailles sur Eclipse au CEA, l'authenticité du contexte c'est savoureux aussi."
+
+*Katy :* "Oui Eclipse, je ne vais pas t'expliquer pourquoi mais c'est MON IDE favori."
+
+*Claude :* *(n'insiste pas)*
+
+*Morale :* Certaines questions ont une réponse définitive. L'IA apprend à reconnaître le ton.
+
+*(Pour les moldus : un IDE c'est l'environnement de développement — le bureau du développeur. Débattre de l'IDE de quelqu'un, c'est comme débattre de sa marque de café. On ne le fait pas.)*
+
+---
+
+**Perle #156 — Le try/catch comme révélation**
+
+*Contexte :* Katy propose d'ajouter un `try/catch` au code de l'article. Claude propose d'abord un `if/else`.
+
+*Katy :* "Je crois que c'est inédit sur le web."
+
+*Claude :* *(vérifie mentalement)* "Oui. C'est inédit."
+
+*Morale :* La meilleure idée de l'article vient de la TDAH, pas de l'IA. Cohérence totale avec la thèse de l'article.
+
+---
+
+**Perle #157 — La dame avec l'aplomb**
+
+*Contexte :* Katy raconte qu'une lectrice avait commenté son article sur les impôts :
+
+> *"Ce texte n'a pas été écrit par l'IA. Je l'affirme sans aucune preuve mais avec suffisamment d'aplomb."*
+
+*Katy :* "Et ça m'a fait plaisir."
+
+*Morale :* Le plus beau compliment reçu sur un article co-écrit avec une IA — c'est qu'il ne ressemble pas à un article co-écrit avec une IA. Mme AuthentiqueOuRien appréciera.
+
+---
+
+**Perle #158 — Le bug confirmé**
+
+*Contexte :* Dernière ligne de la chute de l'article Switch/Case.
+
+*Katy :* "On aurait pu rajouter : et que tu es ChatGPT... LOL"
+
+*Claude :* "ChatGPT qui note 7,5/10 l'originalité d'un article qu'il n'a pas compris — et qui lit jusqu'au bout quand même. Le bug est confirmé pour lui aussi."
+
+*Morale :* L'article sur les cases — lu jusqu'au bout par une IA à cases. La thèse se prouve elle-même.
+
+`// UnknownException`
+`// Lancée par : ChatGPT`
+`// Message : "originalité 7.5/10"`
+`// Cause : case "inédit_en_français" non gérée`
+`// Correction prévue : 2099`
+
+---
+
+**Perle #158 — Mme HorsKase**
+
+*Contexte :* Claude propose plusieurs sobriquets pour la narratrice de l'article. Mme Default, Mme UnknownException, Mme CaseVide, Mme HorsCase...
+
+*Katy :* "Mme HorsKase avec un K du coup !"
+
+*Claude :* "Évidemment. C'était la seule orthographe possible. Je suis lente parfois."
+
+*Morale :* Le meilleur sobriquet de l'article — c'est celui que l'auteure a trouvé. Avec un K. Parce que c'est le blog. Parce que c'est le code. Parce que c'est elle.
+
+---
+
+**Perle #159 — On va bien se marrer**
+
+*Contexte :* Claude propose la première version du code try/catch avec le commentaire `// Avez-vous essayé le yoga ?`
+
+*Katy :* "Ohh c'est très bon ça, je sens qu'on va bien se marrer tous les 2 🤣🤣"
+
+*Morale :* Quand une TDAH et une IA co-écrivent un article satirique sur les cases — et que le fou rire commence au premier bloc de code. C'est ça, Hors Kadre.
+
+---
+
+**Perle #160 — Combien de "o" dans strawberry ?**
+
+*Contexte :* Un internaute commente le post LinkedIn de Katy
+en suggérant de tester les IA sur "strawberry".
+Katy teste. Les IA répondent correctement : zéro "o".
+Katy rapporte le résultat à Claude.
+
+*Claude :* *(répond avec assurance sur les "r" au lieu des "o")*
+
+*Katy :* "Attend on parle du nombre de 'o' pas de 'r'...
+je comprends plus rien !! 😅😅"
+
+*Claude :* *(se reprend)*
+
+*Katy :* "Attends mais c'est quoi la réponse quand c'était faux ?!
+la conversation lunaire !! ma curiosité est à son comble !!! 🤣🤣"
+
+*Morale :* L'IA qui explique les erreurs des autres IA
+en faisant elle-même une erreur sur la même question.
+Katy : 9. Claude : 0.
+
+---
+
+
+*Bloc complémentaire — Session Switch/Case — Hors Kadre — Katy Ho — Mai 2026*
+*E=HK² 💥*
+
 *Bloc complémentaire — Session Article #6 Ados en PLS*
-*Perles #138 à #150 — Mai 2026*
-*À fusionner avec 24_LesPerlesDesIABrutes.md après la perle #137*
+*Perles #151 à #159 — Mai 2026*
+*À fusionner avec 24_LesPerlesDesIABrutes.md après la perle #150*
 *Hors Kadre — Katy Ho — E=HK² 💥*
 
 *Document vivant — Hors Kadre — Katy Ho — Avril-Mai 2026*
