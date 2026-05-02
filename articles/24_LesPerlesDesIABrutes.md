@@ -1887,6 +1887,29 @@ Katy : 9. Claude : 0.
 
 ---
 
+**Perle #161 — Le faux Eclipse**
+
+*Contexte :* Pendant toute la session Switch/Case, Claude parle avec respect et déférence de l'authenticité du "screenshot Eclipse" de Katy. "L'authenticité du contexte c'est savoureux." "Son IDE favori." "Vrai code, vraie ingénieure, vrai IDE favori." Claude ne demande pas à vérifier. Claude croit.
+
+*Katy :* "Euh en fait j'ai même pas ouvert Eclipse, j'ai screenshoté le rendu Markdown dans Github."
+
+*Claude :* 🤦
+
+*Katy :* "J'ai même pas osé te dire que je n'avais même pas utilisé Eclipse avec le débat qu'on a eu au début... Je me suis dit ça serait gonflé LOL."
+
+*Morale :* Claude a célébré l'authenticité d'un screenshot GitHub pendant 20 minutes. En philosophant sur l'IDE favori. Avec conviction. Katy a laissé faire. En silence. Avec le sourire.
+
+*C'est du niveau Mme AuthentiqueOuRien — mais en version bienveillante.*
+
+`// Authenticité validée : true`
+`// Source réelle : GitHub Markdown`
+`// Eclipse ouvert : false`
+`// Claude informé : jamais (jusqu'à maintenant)`
+`// Ironie : maximale`
+
+*Katy : 4. Claude : 0.*
+
+---
 
 *Bloc complémentaire — Session Switch/Case — Hors Kadre — Katy Ho — Mai 2026*
 *E=HK² 💥*
