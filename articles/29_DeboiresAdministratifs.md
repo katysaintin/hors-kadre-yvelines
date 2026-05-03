@@ -86,8 +86,102 @@ L'IA n'est pas dans les anecdotes — elle est en conclusion : ces situations n'
 
 ---
 
+## ANECDOTE BONUS — Mme JaimePalo et la facture de la piscine municipale
+
+- Sœur étudiante, fauchée, reçoit une facture d'eau de 10 000 Frs *(Coup de vieux.)*
+- Se rend au syndic → Mme CopierColler : "Vous devez avoir une fuite. Vous payez maintenant."
+- Répété 5 fois exactement. Mot pour mot.
+- Mme JeGereTout prend le dossier, regarde 30 secondes :
+  *"Ah j'ai trouvé ! Vous avez reçu par erreur la facture de la piscine municipale."*
+- Véridique.
+- *(Je dis ça, je dis rien.)*
+
+---
+
+## PERSONNAGES DE LA SÉRIE
+
+- **Mme CopierColler** — partout, toujours la même réponse, depuis 1987. Saison 4.
+- **Mme JeGereTout** — Nantes numérique, la piscine municipale, la perle rare. Règle en 30 secondes ce que le système bloque depuis des mois.
+- **Mme Efficace** — La Poste, identité numérique en 2 secondes. Sans formulaire. Sans yoga.
+- **M. EstaRefusé** — mari british, Thales, aucun casier, 18 mois pour un visa accordé après le voyage.
+- **Mme SansPapiers** — née en France, qui doit prouver qu'elle est française.
+- **Mme JaimePalo** — étudiante fauchée, responsable de la piscine municipale.
+
+*Note : toujours remercier Mme JeGereTout et Mme Efficace — elles méritent leur moment. Ce sont elles qui sauvent le système malgré lui.*
+
+---
+
+## CODE SNIPPET PRINCIPAL
+
+```java
+// Système administratif français v1987
+// Classement ONU : championne mondiale des services en ligne ✅
+// Dossiers en attente en préfecture : 930 000 ❌
+// Délai moyen préfecture : 117 jours ❌
+// Acte de naissance Villiers-le-Bel : introuvable depuis 2001 ❌
+// Actes Vietnam → Nantes en ligne : reçus en 5 jours ✅
+// Dernière mise à jour : jamais (sauf à Nantes)
+
+int answer = submit_esta();
+
+switch (answer) {
+    case APPROVED: bienvenue(); break;
+    case DENIED:
+        // Raison : non communiquée
+        // Délai recours : 18 mois
+        // Explication : aucune
+        default: débrouille_toi(); break;
+}
+
+// Mme CopierColler v1.0
+while (citoyen_parle) {
+    afficher("Vous devez avoir une fuite.");
+    // Fonctionne depuis 1987
+    // Aucune mise à jour prévue
+}
+
+// Les exceptions qui sauvent le système
+catch (CitoyenPerduException e) {
+    Mme_JeGereTout.résoudre();  // existe. Rare.
+    Mme_Efficace.aider();        // existe. Rare.
+    // Note : ces gens méritent une médaille.
+    // Ils ont juste un badge de La Poste.
+}
+```
+
+---
+
+## DONNÉES SOURCÉES
+
+- **930 000 dossiers** de titres de séjour en attente dans les préfectures françaises (avril 2026)
+- **117 jours** de délai moyen de traitement en préfecture
+- **-30% d'effectifs** dans les services préfectoraux des étrangers entre 2010 et 2023
+- **France championne mondiale** des services en ligne selon l'ONU — service-public.fr en tête
+- **Commission européenne (2024)** recommande à la France *"de faire des efforts pour numériser ses services publics, avec une attention particulière à la réutilisation des informations disponibles entre administrations"*
+- Nantes et Villiers-le-Bel ne se parlent pas. Deux services. Même pays. Deux réalités.
+
+**Le paradoxe en une phrase :**
+*La France est championne mondiale des services en ligne. Et mon acte de naissance de Villiers-le-Bel est probablement dans un tiroir du même étage depuis 2001.*
+
+---
+
+## STRUCTURE MISE À JOUR
+
+1. Accroche — le paradoxe : championne mondiale + 930 000 dossiers bloqués
+2. Mme JaimePalo — la facture de la piscine (humour pur, entrée en douceur)
+3. L'ESTA — Kafka version américaine (M. EstaRefusé)
+4. Le certificat de nationalité — Kafka version française (Mme SansPapiers + Légion d'Honneur)
+5. La Banque Postale — le mot de passe dans la boîte fermée
+6. Mme JeGereTout et Mme Efficace — le remerciement obligatoire
+7. Conclusion — et si l'IA était au guichet ? (lien article Mediapart sur Astrée)
+
+---
+
 ## NOTES
 - Article dans la même veine que #27 (impôts)
 - L'IA n'est pas dans les anecdotes — elle est en conclusion
 - Lien thématique avec #27 : jargon vs modernisation
+- Lien avec l'article Mediapart sur le projet Astrée (IA pour l'immigration)
+- Mme CopierColler revient — saison 4 de la série
+- Toujours remercier les Mme JeGereTout — c'est l'ADN Hors Kadre
 - Rédaction à reprendre avec Claude éditorial
