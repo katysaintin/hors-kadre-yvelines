@@ -181,7 +181,7 @@ catch (CitoyenPerduException e) {
 - Article dans la même veine que #27 (impôts)
 - L'IA n'est pas dans les anecdotes — elle est en conclusion
 - Lien thématique avec #27 : jargon vs modernisation
-- Lien avec l'article Mediapart sur le projet Astrée (IA pour l'immigration)
+- Lien avec l'article Mediapart sur le projet Astrée (IA pour l'immigration)https://www.mediapart.fr/journal/france/300426/le-ministere-de-l-interieur-compte-experimenter-l-usage-de-l-ia-pour-l-immigration
 - Mme CopierColler revient — saison 4 de la série
 - Toujours remercier les Mme JeGereTout — c'est l'ADN Hors Kadre
 - Rédaction à reprendre avec Claude éditorial
