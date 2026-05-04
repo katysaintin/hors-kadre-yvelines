@@ -10,7 +10,7 @@
 | Date | Jour | Épisode | Article | Visuel | Statut |
 |------|------|---------|---------|--------|--------|
 | 30 avril | Jeudi | Ép. SPÉCIAL | #27 Impôts / ChatGPT | ImpotChatGPT.png | ✅ Publié |
-| 7 mai | Mercredi | Ép. 12 | #8 Poisson / Filières Pro | Poisson.jpeg | ✅ À programmer |
+| 7 mai | Jeudi | Ép. 12 | #8 Poisson / Filières Pro | Poisson.jpeg | ✅ À programmer |
 | 12 mai | Lundi | Ép. 13 | #23 Mauvais Lac | MauvaisLacClair.png | ✅ À programmer |
 | 19 mai | Lundi | Ép. 14 | #03 Fais-le toi-même | 03_FaisLeToi3.png | ✅ À programmer |
 | 26 mai | Lundi | Ép. 15 | #24 Les Perles des IA | PerlesIA.png | ✅ À programmer |
