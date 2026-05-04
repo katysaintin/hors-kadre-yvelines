@@ -57,7 +57,7 @@ Voici l'histoire de l'une d'elles.
 
 ## 2. Mlle JeVeuxApprendre — la pension
 
-Mlle JeVeuxApprendre est pensionnaire à la Maison d'Éducation de la Légion d'Honneur. Une institution fondée par Napoléon. Des couloirs qui sentent l'Histoire avec un grand H. Des uniformes. Des règles. Uniquement des filles — les demoiselles de la Légion d'honneur.
+Mlle JeVeuxApprendre est pensionnaire. Une institution ancienne. Des couloirs qui sentent l'Histoire avec un grand H. Des uniformes. Des règles. Uniquement des filles.
 
 Elle est sage. Discrète. Sans histoire.
 
@@ -191,7 +191,7 @@ M. Génial, lui, est devenu prof de HGGSP — Histoire-Géographie, Géopolitiqu
 
 Ce soir-là, réunion du Conseil d'Administration.
 
-**Mme BlagueAPart** *(proviseure, 22 ans d'établissement)* :
+**M BlagueAPart** *(proviseur, 22 ans d'établissement)* :
 *"Nous allons examiner la DGH prévisionnelle, en tenant compte des DBM du trimestre précédent et de l'impact des HSA sur l'enveloppe globale."*
 
 Mme JeVeuxComprendre réfléchit.
@@ -213,7 +213,7 @@ Comme à l'époque.
 **Mme JeVeuxComprendre** :
 *"Madame BlagueAPart ? Pardon — que signifie HSA ?"*
 
-**Mme BlagueAPart** :
+**M BlagueAPart** :
 *"HSA signifie Heures Supplémentaires Années."*
 
 Petit temps. Sourire en coin.
@@ -232,7 +232,7 @@ La pomme était rouge. Comme toujours.
 
 ## 5. La suite du CA — Mme CopierColler entre en scène
 
-**Mme BlagueAPart** :
+**M BlagueAPart** :
 *"Bon — on passe à la question suivante des parents !"*
 
 **Mme JeSaisMieuxQueToi** *(se redressant)* :
@@ -266,7 +266,7 @@ M. Génial lève la main. Personne ne lui passe la parole.
 **Mme CopierColler** :
 *"L'IA c'est de la triche."*
 
-**Mme BlagueAPart** *(avec son sourire)* :
+**M BlagueAPart** *(avec son sourire)* :
 *"Bon — Mme JeVeuxComprendre et son IA, ses tableaux Excel... on voit que ça vous passionne."*
 
 M. Génial et Mme JeVeuxComprendre échangent un regard.
@@ -430,7 +430,7 @@ C'est subversif. C'est simple. Et c'est dévastateur quand cette voix est étouf
 
 Quand M. LibertéPédagogique répond *"Question bête. Réponse bête"* — il n'humilie pas qu'un élève. Il apprend à toute une classe que poser des questions est dangereux. Il fabrique le silence. Et dans ce silence, les erreurs passent, les incompréhensions s'accumulent, et des générations entières grandissent en pensant qu'elles sont le problème.
 
-Quand Mme BlagueAPart dit *"vous avez une obsession pour les acronymes, enfin je plaisante"* — elle reconduit le même mécanisme. À l'âge adulte. Dans une salle où des parents bénévoles essaient de comprendre comment fonctionne le lycée de leurs enfants.
+Quand M BlagueAPart dit *"vous avez une obsession pour les acronymes, enfin je plaisante"* — elle reconduit le même mécanisme. À l'âge adulte. Dans une salle où des parents bénévoles essaient de comprendre comment fonctionne le lycée de leurs enfants.
 
 Et Mme JeSaisMieuxQueToi — ancienne Mlle JeSaisTout — qui pouffe et acquiesce — n'est pas méchante. Elle a juste appris, elle aussi, que le groupe a toujours raison.
 
