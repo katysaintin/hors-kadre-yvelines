@@ -75,10 +75,10 @@
 ## ✅ CHECKLIST MAI — Actions immédiates
 
 ### Aujourd'hui — Lundi 4 mai
-- [ ] Programmer Ép. 12 FB — 7 mai 12h15 (Poisson.jpeg)
-- [ ] Programmer Ép. 13 FB — 12 mai 12h15 (MauvaisLacClair.png)
-- [ ] Programmer Ép. 14 FB — 19 mai 12h15 (03_FaisLeToi3.png)
-- [ ] Programmer Ép. 15 FB — 26 mai 12h15 (PerlesIA.png)
+- [x] Programmer Ép. 12 FB — 7 mai 12h15 (Poisson.jpeg)
+- [x] Programmer Ép. 13 FB — 12 mai 12h15 (MauvaisLacClair.png)
+- [x] Programmer Ép. 14 FB — 19 mai 12h15 (03_FaisLeToi3.png)
+- [x] Programmer Ép. 15 FB — 26 mai 12h15 (PerlesIA.png)
 - [ ] Publier groupe EPICS repost — ce soir 18h00 (tagger Ralph Lange)
 
 ### Demain — Mardi 5 mai
@@ -87,7 +87,7 @@
 - [ ] Soumettre ADHD/Claude à Better Humans — Medium
 
 ### Semaine du 11 mai
-- [ ] Programmer UNAAPE Bénévolat LinkedIn — 11 mai 8h00
+- [x] Programmer UNAAPE Bénévolat LinkedIn — 11 mai 8h00
 - [ ] Construire post IA Fais-le toi avec Claude LinkedIn — avant 13 mai
 - [ ] Caler Wrong Lake LinkedIn EN — 14h00 (jour à définir)
 - [ ] Sélectionner republication Thomas Galoisy
@@ -103,7 +103,7 @@
 
 ### Divers
 - [ ] Lancer outil Parcoursup — avant 20 mai ⚠️ timing critique
-- [ ] Mettre à jour IA_Reference.md avec ce calendrier
+- [x] Mettre à jour IA_Reference.md avec ce calendrier
 - [ ] Relancer podcast SCADA YouTube
 - [ ] Contacter directeur de thèse SCADA+IA
 
