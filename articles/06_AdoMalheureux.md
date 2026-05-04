@@ -1,4 +1,4 @@
-# Mme BlagueAPart plaisante. Les ados sont en PLS. Mme Bénévole vole.
+# M BlagueAPart plaisante. Les ados sont en PLS. Mme Bénévole vole.
 ## Et M. Génial rame. Il mérite une pagaie.
 
 *Par Katy Ho — Hors Kadre | Mai 2026*
@@ -87,33 +87,33 @@ Mme Copier-Coller vient de rebooter. Troisième fois. Les profs regardent leurs 
 
 *"La folie, c'est de faire toujours la même chose en espérant un résultat différent."*
 
-Mme BlagueAPart sourit :
+M BlagueAPart sourit :
 
 *"Mme BonnePoire s'intéresse beaucoup aux sciences. Mais je plaisante. Au suivant !"*
 
 ---
 
-## 2. Mme Proust, ou la souffrance comme programme annuel
+## 2. M Proust, ou la souffrance comme programme annuel
 
-Mme Proust enseigne le français en Première.
+M Proust enseigne dans une matière littéraire.
 
-Mme Proust souffre. C'est établi, documenté, et communiqué aux élèves à chaque heure de cours avec une constance digne des grands auteurs qu'elle est censée leur enseigner. Les profs souffrent, vous savez. C'est une époque difficile. Vous ne pouvez pas comprendre.
+M Proust souffre. C'est établi, documenté, et communiqué aux élèves à chaque heure de cours avec une constance digne des grands auteurs qu'il est censé leur enseigner. Les profs souffrent, vous savez. C'est une époque difficile. Vous ne pouvez pas comprendre.
 
 Les élèves écoutent. Ils sont polis. Ils attendent le cours.
 
 Pas de textes étudiés. Pas d'exercices. Pas de préparation à l'oral du bac.
 
-Le bac de français arrive, lui, à la date prévue.
+Les épreuves arrivent, elles, à la date prévue.
 
 La classe entière obtient des notes moyennes. Parcoursup s'en souvient.
 
-Parmi eux : une élève. Tête de classe. Sérieuse, travailleuse, projet bien défini — Sciences Po.
+Parmi eux : un élève. Tête de classe. Sérieux, travailleur, projet bien défini — une formation sélective qui exigeait un excellent niveau à l'écrit.
 
-Mme Proust lui avait mis 18 en bac blanc. Elle-même. Sur sa propre copie.
+M Proust lui avait mis 18 en contrôle continu. Sur sa propre copie.
 
-Au vrai bac : 14.
+Au bac : 14.
 
-Pas convoquée pour l'entretien Sciences Po.
+Dossier insuffisant pour l'école visée.
 
 Dans la même classe : 10 élèves ont pris des cours particuliers pour compenser ce que l'année n'avait pas fourni. Ceux qui avaient les moyens ont rattrapé. Les autres ont fait avec leurs 14.
 
@@ -121,7 +121,7 @@ Réunion parents-profs. Mme BonnePoire au rapport :
 
 *"Les élèves ne sont pas sûrs de connaître les textes au programme. Auriez-vous un document à leur communiquer ?"*
 
-Mme Proust :
+M Proust :
 
 *"Vous savez, les profs souffrent énormément en ce moment…"*
 
@@ -137,13 +137,13 @@ M. Génial, croisé dans le couloir après la réunion, soupire doucement :
 
 Mme BonnePoire rentre. Cherche le programme sur Éduscol. L'envoie aux parents.
 
-Mme Proust souffrait toujours. La tête de classe n'est pas allée à Sciences Po.
+Mme Proust souffrait toujours. La tête de classe n'est pas dans sa formation souhaitée.
 
-En conseil de classe, Mme BlagueAPart, l'œil pétillant :
+En conseil de classe, M BlagueAPart, l'œil pétillant :
 
 *"Mme BonnePoire est très impliquée dans la réussite des élèves. Trop, peut-être. Mais je plaisante."*
 
-Mme Proust n'était pas en vacances.
+M Proust n'était pas en vacances.
 
 Mais ça revenait au même.
 
@@ -191,7 +191,7 @@ Mme BonnePoire, avec tout son tact légendaire :
 
 Grand blanc.
 
-Mme BlagueAPart, son plus beau sourire :
+M BlagueAPart, son plus beau sourire :
 
 *"Mme BonnePoire a toujours une façon très… originale de voir les choses. Bon. On passe à la question suivante."*
 
@@ -215,7 +215,7 @@ Mme SES-Cuses, offusquée :
 
 Personne n'a dit qu'elle était en vacances. On a mentionné 16 heures. Avec des chiffres. Des vrais.
 
-Mme BlagueAPart, amusée :
+M BlagueAPart, amusé :
 
 *"Mme BonnePoire et ses tableaux Excel… on la connaît. Mais je plaisante."*
 
@@ -255,7 +255,7 @@ M. Génial, lui, reste après le conseil. Il s'approche de Mme BonnePoire :
 
 *"J'ai deux élèves de sa classe qui viennent me voir en permanence pour que je leur réexplique les maths. Je fais ce que je peux."*
 
-En sortant, Mme BlagueAPart, aimable :
+En sortant, M BlagueAPart, aimable :
 
 *"Vous savez, Mme BonnePoire, vous n'êtes pas obligée d'envoyer vos questions à minuit la veille. Mais je plaisante."*
 
@@ -269,7 +269,7 @@ Mme BonnePoire : *"Et si on formait les enseignants à la communication bienveil
 Mme Proust : *"On souffre."*
 
 Mme BonnePoire : *"Et si c'était intégré à la formation initiale à l'INSPE ?"*
-Mme BlagueAPart : *"Ça dépend du ministère. Nous on n'a pas la main. Mais je plaisante."*
+M BlagueAPart : *"Ça dépend du ministère. Nous on n'a pas la main. Mais je plaisante."*
 
 Mme BonnePoire : *"Et les cogni'classes ? Il y en a déjà dans les Yvelines—"*
 Mme SES-Cuses : *"On n'est pas en vacances !"*
@@ -374,7 +374,7 @@ Chaque année en conseil de classe, je vois des gamins de 13 ans à qui on dit �
 
 Et chaque année, quand je propose qu'on fasse autrement :
 
-Mme Proust souffre. M. LibertéPédagogique invoque la liberté pédagogique. Mme Copier-Coller reboot. Mme BlagueAPart passe à la question suivante.
+Mme Proust souffre. M. LibertéPédagogique invoque la liberté pédagogique. Mme Copier-Coller reboot. M BlagueAPart passe à la question suivante.
 
 Et M. Génial lève la main dans un coin.
 
@@ -384,7 +384,7 @@ Personne ne lui passe la parole.
 
 *M. Génial rame toujours. Avec le sourire.*
 
-*Mme BlagueAPart plaisante toujours.*
+*M BlagueAPart plaisante toujours.*
 
 *Et les ados, eux, continuent d'avoir 13 ans.*
 
@@ -415,7 +415,7 @@ Personne ne lui passe la parole.
 
 ---
 
-*Titre Mediapart (62 car.) :* `Mme BlagueAPart plaisante. Les ados sont en PLS. Mme Bénévole vole.`
+*Titre Mediapart (62 car.) :* `M BlagueAPart plaisante. Les ados sont en PLS. Mme Bénévole vole.`
 
 *Chapô (392 car.) :* `Hors Kadre décrypte ce que les médias n'abordent pas. Ce qui suit est une histoire vraie. Les noms ont été changés pour protéger les innocents, les moins innocents, et mon mandat qui court encore trois ans. Il est question d'ados en PLS, de ping-pong institutionnel, de profs qui sauvent des trajectoires en silence — et d'une bénévole qui fait des heures sup non rémunérées. Mais je plaisante.`
 
