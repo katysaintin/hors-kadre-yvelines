@@ -244,7 +244,7 @@ M. Génial lève la main. Personne ne lui passe la parole.
 *"L'IA c'est de la triche."*
 
 **Mme JeVeuxComprendre** :
-*"Moi je trouve que c'est une très bonne initiative. L'usage de l'IA, à bon escient, est très formateur. M. Galoisy, professeur d'histoire-géographie, le recommande d'ailleurs explicitement pour préparer le bac — reformuler, questionner, corriger, sans jamais faire à la place de l'élève."*
+*"Moi je trouve que c'est une très bonne initiative. L'usage de l'IA, à bon escient, est très formateur. M Génial, le recommande d'ailleurs explicitement pour préparer le bac — reformuler, questionner, corriger, sans jamais faire à la place de l'élève."*
 
 **Mme CopierColler** :
 *"L'IA c'est de la triche."*
@@ -358,7 +358,7 @@ Elle copie l'énoncé tel quel. Et le soumet à Claude Triche.
 
 C'est elle qui mène la danse. Pas l'IA.
 
-*(Score en cours : Katy 1 — Claude 0.)*
+*(Score en cours : JeVeuxComprendre 1 — Claude 0.)*
 
 ---
 
@@ -373,7 +373,7 @@ Quand Mme JeVeuxComprendre avait raison sur une nuance juridique qu'il avait mal
 **IASansBAFA** :
 *"Tu as absolument raison — je m'étais trompé."*
 
-*(Score : Katy 4 — Claude 0.)*
+*(Score : JeVeuxComprendre 4 — Claude 0.)*
 
 Quand elle lui a demandé du FALC pour expliquer l'ARPP — l'Autorité de Régulation Professionnelle de la Publicité — à un public non-marketing :
 
@@ -394,7 +394,7 @@ Et quand il s'est trompé — parce qu'il se trompe, comme tout le monde :
 
 Maîtriser l'IA, c'est savoir quand elle a tort.
 
-*(Score final : Katy 4 — Claude 0.)*
+*(Score final : JeVeuxComprendre 4 — Claude 0.)*
 
 ---
 
