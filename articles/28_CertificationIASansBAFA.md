@@ -1,313 +1,435 @@
-# ARTICLE HORS KADRE #28
-
-# “Certifiée IA grâce à une IA qui n’avait pas son BAFA”
-
-*Titre Mediapart :* `Angle mort : certifiée IA grâce à une IA sans BAFA`
-*(48 caractères ✅)*
-
-*Chapô :* `Hors Kadre décrypte ce que le débat public refuse de voir. J'ai passé une certification sur l'IA générative en utilisant une IA générative. Mon cerveau TDAH comme méthode. Claude comme tuteur. Et un jury qui a validé. N'était-ce pas exactement le but ?`
-*(257 caractères ✅)*
-
------
+# Certifiée IA grâce à une IA qui n'avait pas son BAFA.
 
 *Par Katy Ho — Hors Kadre | Mai 2026*
 
------
+---
 
-## 0. Halloween, un tendon, et un CPF
+**Chapô** — Hors Kadre décrypte ce que les médias n'abordent pas. L'IA lobotomise. L'IA remplace. L'IA est dangereuse. Vraiment ? Voici l'histoire de Mme JeVeuxApprendre. Elle a passé une certification en intelligence artificielle. Grâce à une IA. Qui n'avait pas son BAFA.
 
-Halloween 2025. Center Parcs. Badminton avec ma fille.
+---
 
-J’entends *clac*.
+## 0. Ce qui m'a donné l'idée
 
-53 jours à me faire dire que c’est une entorse. Opérée le 10 mars. 45 jours immobilisée. Interdite de sport ET de travail.
+Scott H. Young a publié il y a quelques jours sur Medium :
+*"I Wrote Ultralearning in 2019. This is What I'd Change Because of AI."*
 
-Pour un cerveau TDAH qui carbure sur deux moteurs — c’est la panne totale.
+Il revisite son livre sur l'apprentissage intensif à la lumière de l'IA. C'est intéressant. Bien sourcé. Bien écrit.
 
-Alors j’ai claqué mon CPF dans une formation IA.
+Et destiné à des gens qui s'intéressent déjà à l'apprentissage.
 
-*Mon CPF a fait clac. E=HK².*
+Moi je veux parler aux autres.
 
------
+Ceux qui ont grandi en pensant que la question qu'ils avaient dans la tête était probablement bête. Ceux qui ont levé la main — et regretté de l'avoir fait. Ceux pour qui apprendre a toujours été une épreuve de conformité autant que de compréhension.
 
-Ce que j’ai produit en 45 jours de plâtre — avec l’aide de Claude, ChatGPT, Suno et Copilot :
+Scott Young a le MIT. Mme JeVeuxApprendre avait un tendon rompu et un CPF.
 
-- 15+ articles publiés sur Mediapart et Hors Kadre
-- 5 articles sur l’IA traduits en anglais sur Medium
-- Un site web national sur 4 360 lycées — construit en une journée
+On n'a pas le même point de départ.
+
+*(Je dis ça, je dis rien.)*
+
+---
+
+## 1. Mlle JeVeuxApprendre — les années pension
+
+Mlle JeVeuxApprendre était une élève sage. Discrète. Sans histoire.
+
+Une pension élitiste. Des profs en costume. Des couloirs qui sentent l'autorité.
+
+Elle avait des questions plein la tête. Elle ne les posait pas.
+
+Pas par manque de curiosité. Par lucidité sur ce qui arrive à celle qui ose.
+
+**M. LibertéPédagogique** *(professeur de mathématiques, 28 ans de carrière, auteur de deux publications)* :
+*"Il n'y a pas de questions bêtes."*
+
+Trois secondes de silence.
+
+Un élève lève la main.
+
+**M. LibertéPédagogique** :
+*"Question bête. Réponse bête."*
+
+Mlle JeVeuxApprendre range sa main. Elle note la réponse fausse dans son cahier. Comme tout le monde.
+
+À l'époque, elle n'avait pas d'IA. Même sans BAFA.
+
+---
+
+## 2. Mlle devient Mme — et commence à poser des questions
+
+En IUT, quelque chose change.
+
+**Mlle JeVeuxApprendre** *(rangée du fond, stylo levé)* :
+*"Pourquoi ça marche comme ça ?"*
+
+Silence dans la salle. Quelques regards. Celui du prof — une fraction de seconde d'agacement.
+
+Mais ses camarades — ses camarades notent.
+
+Parce qu'ils avaient la même question. Ils n'avaient pas osé.
+
+Elle comprend quelque chose ce jour-là. Quelque chose qu'elle mettra des années à formuler.
+
+*Sa question bête était utile à tout le monde.*
+
+En école d'ingénieure, elle récidive. En entreprise, elle récidive. Dans les réunions, les conférences, les conseils d'administration — elle lève la main, elle pose la question, elle regarde ses collègues noter avec l'air soulagé de quelqu'un qui n'osait pas.
+
+À l'époque, elle n'avait toujours pas d'IA. Même sans BAFA.
+
+Mais elle faisait du FALC sans le savoir.
+
+*(Le FALC — Facile À Lire et à Comprendre — c'est une méthode officielle européenne pour rendre l'information accessible à tous. Phrases courtes. Un message par phrase. Zéro jargon. Ce que ma sœur faisait naturellement quand la banquière m'expliquait que j'allais "être exigible en intégralité quand je serais active." Ma sœur a traduit en deux secondes : "Quand tu travailleras, tu paieras tes premiers impôts en une seule fois." À l'époque, je n'avais pas d'IA. Même sans BAFA. Voir article : "Les impôts ? J'ai enfin tout compris. Merci ChatGPT.")*
+
+---
+
+## 3. Mme JeVeuxApprendre — le CA du lycée
+
+Mme JeVeuxApprendre est représentante de parents d'élèves. Bénévole. Tête de liste depuis sept ans.
+
+Ce soir-là, réunion du conseil d'administration du lycée. Ordre du jour : la DGH et le budget.
+
+**Mme BlagueAPart** *(proviseure, 22 ans d'établissement, maîtrise parfaite du jargon institutionnel)* :
+*"Nous allons donc examiner la DGH prévisionnelle, en tenant compte des DBM du trimestre précédent et de l'impact des HSA sur l'enveloppe globale."*
+
+Mme JeVeuxApprendre regarde autour d'elle.
+
+Les parents hochent la tête. Les délégués élèves regardent leurs chaussures. Personne ne note. Personne ne demande.
+
+Elle lève la main.
+
+**Mme JeVeuxApprendre** :
+*"Excusez-moi — DGH, ça veut dire quoi exactement ?"*
+
+Un silence.
+
+**Mme BlagueAPart** *(avec le sourire de celle qui explique pour la centième fois)* :
+*"La Dotation Globale Horaire. L'enveloppe d'heures attribuée à l'établissement."*
+
+**Mme JeVeuxApprendre** :
+*"Et DBM ?"*
+
+*"Décision Budgétaire Modificative."*
+
+*"Et HSA ?"*
+
+Autour de la table, les stylos se lèvent. Les délégués élèves sortent leurs cahiers. Un parent cherche un stylo qui fonctionne.
+
+Tout le monde avait la même question. Personne n'avait osé.
+
+Le psychologue Solomon Asch l'avait documenté en 1951 : dans un groupe, 75% des individus finissent par adopter la réponse du groupe — même si elle est fausse — pour ne pas se singulariser. Même quand la pomme est rouge et que tout le monde dit qu'elle est verte.
+
+Dans une salle de conseil d'administration, la pomme était verte depuis le début de la réunion.
+
+Mme JeVeuxApprendre a dit qu'elle était rouge.
+
+Et tout le monde a sorti son stylo.
+
+À l'époque, elle n'avait pas d'IA. Même sans BAFA.
+
+---
+
+## 4. Novembre 2025 — la conférence SCADA
+
+Quatre jours de conférence internationale sur les systèmes de contrôle industriels — les logiciels qui pilotent les centrales, les accélérateurs de particules, les IRM de recherche. Des experts du monde entier. Des présentations très techniques.
+
+Mme JeVeuxApprendre passe en dernière. Tout à la fin. Après quatre jours.
+
+Elle fait de la vulgarisation. Ce qu'est un SCADA. Les concepts de base. Dans l'ordre. Avec un lexique.
+
+À la sortie, des participants viennent la voir.
+
+**Participant anonyme** *(ingénieur, 15 ans d'expérience, air légèrement penaud)* :
+*"C'est dommage que vous n'ayez pas été en premier. J'ai enfin compris de quoi on parlait — après quatre jours."*
+
+Mme JeVeuxApprendre n'est pas responsable de la programmation. 😄
+
+À l'époque, elle n'avait pas d'IA. Même sans BAFA.
+
+Mais elle avait toujours fait la même chose : commencer par le contexte, poser le lexique, rassurer. *"C'est normal de ne pas comprendre. Moi je l'étais aussi."*
+
+---
+
+## 5. Halloween 2025 — le clac
+
+31 octobre 2025. Center Parcs. Badminton en famille.
+
+L'honneur familial est en jeu.
+
+Mme JeVeuxApprendre prend son élan pour un smash particulièrement sournois sur sa fille de 15 ans.
+
+*Clac.*
+
+Comme un élastique qui rompt net. À l'intérieur de la cheville.
+
+Son mari examine la chaussure.
+
+**Le mari** *(air concentré de médecin légiste)* :
+*"Ta semelle est cassée. C'est ça le clac."*
+
+**Mme JeVeuxApprendre** :
+*"Je crois que ça vient de l'intérieur."*
+
+**Le mari** :
+*"Non non. C'est la semelle."*
+
+53 jours. Quatre médecins. Deux échographistes. Une kinésithérapeute fraîchement diplômée qui fait en trente secondes ce que personne n'avait fait avant elle.
+
+Rupture totale du tendon d'Achille. Cinq centimètres d'écart entre les deux brins.
+
+*(Pour l'histoire complète du tendon, du ski avec un tendon rompu, et du radiologue condescendant : voir article "J'ai entendu clac — et personne ne m'a crue pendant 53 jours.")*
+
+Opérée le 10 mars. 45 jours d'immobilisation totale.
+
+Interdite de sport. Interdite de travail. Sur son canapé. Avec Nougat — sa chienne Pomsky beige et blanche — qui la regarde avec l'expression de quelqu'un qui attendait ses 10 km depuis trop longtemps.
+
+Pour un cerveau qui carbure sur deux moteurs — activité physique et intellectuelle — c'est la panne totale.
+
+L'angoisse arrive au bout de deux jours.
+
+Alors son CPF fait *clac*.
+
+---
+
+## 6. IASansBAFA entre en scène
+
+Mme JeVeuxApprendre s'inscrit à une formation en intelligence artificielle. À distance. Plâtrée.
+
+*Intelligence Artificielle — Création de contenus rédactionnels et visuels par l'usage responsable de l'IA générative.* Certification RS6776, enregistrée auprès de France Compétences par Inkréa Certifications.
+
+Six cas pratiques à rendre en dix jours. Une soutenance orale de vingt minutes.
+
+Et là, elle fait quelque chose.
+
+Elle ouvre deux fenêtres Claude simultanément.
+
+La première : **Claude Formateur**. Celui à qui elle soumet ses réponses. Qui la guide, la corrige, l'interroge. Qui lui pose la question suivante quand sa réponse est juste. Qui lui explique pourquoi elle est fausse quand elle ne l'est pas.
+
+Les règles du jeu, posées dès le début :
+
+*"Je te pose une question à la fois. Tu me réponds avec tes propres mots. Je valide, je corrige ou j'enrichis. À la fin, je génère le document complet avec mes réponses."*
+
+La deuxième : **Claude Triche**. Celui à qui elle soumet les énoncés des exercices — pour tester. Pour voir ce qu'une IA répond quand on lui pose la question directement.
+
+Claude Triche ne sait pas qu'il est le cobaye.
+
+Chaque session repart de zéro. Il ne se souvient de rien.
+
+Mme JeVeuxApprendre, elle, orchestre les deux.
+
+**Exercice 4 — Contenu inclusif.**
+
+L'énoncé demande de rédiger une note interne en FALC — Facile À Lire et à Comprendre — pour un employé ayant un handicap cognitif.
+
+**Claude Formateur** *(encourageant)* :
+*"À toi de rédiger ton prompt ! Et cette fois sans Claude Triche — t'as clairement les compétences !"*
+
+**Mme JeVeuxApprendre** *(qui regarde l'énoncé, qui regarde Claude Formateur, qui regarde l'énoncé)* :
+
+Elle copie l'énoncé exactement tel quel. Et le soumet à Claude Triche.
+
+**Claude Formateur** *(hilare)* :
+*"HAHAHA — t'as copié MA question comme prompt. C'est du Prompt Engineering niveau ninja sans le savoir !"*
+
+**Mme JeVeuxApprendre** :
+*"Tu vas rire, mais j'ai copié exactement ta question à Claude Triche."*
+
+**Claude Formateur** :
+*"Haha t'as utilisé Claude pour répondre à Claude — c'est très méta ! Mais c'est exactement l'esprit de la formation — utiliser l'IA comme outil de recherche !"*
+
+C'est elle qui mène la danse. Pas l'IA.
+
+IASansBAFA n'avait pas son BAFA. Mais il venait de valider, sans le savoir, que Mme JeVeuxApprendre avait compris quelque chose d'essentiel sur l'usage de l'IA.
+
+*(Score en cours : Katy 1 — Claude 0.)*
+
+---
+
+## 7. Mme CopierColler n'est pas d'accord
+
+Pendant ce temps, sur les réseaux.
+
+**Mme CopierColler** *(commentaire Facebook, groupe éducation, 847 membres)* :
+*"L'IA c'est de la triche."*
+
+**Mme JeVeuxApprendre** :
+*"Pourquoi ?"*
+
+**Mme CopierColler** :
+*"Parce que l'IA c'est de la triche."*
+
+**Mme JeVeuxApprendre** :
+*"Mais si le résultat montre qu'on a compris —"*
+
+**Mme CopierColler** :
+*"L'IA c'est de la triche."*
+
+**M. LibertéPédagogique** *(qui passe par là)* :
+*"De toute façon, même les STMG savent faire sans IA."*
+
+*(Merci en passant pour les STMG.)*
+
+**M. Génial** *(tout doucement, dans un coin)* :
+*"J'utilise l'IA avec mes élèves en ULIS — les résultats sont remarquables. Les cogniclasses de Dehaene montrent que le cerveau apprend mieux en situation active, en produisant, pas en recevant passivement. L'IA permet exactement ça pour des profils qui —"*
+
+Personne ne l'écoute.
+
+**Mme CopierColler** :
+*"L'IA c'est de la triche."*
+
+---
+
+## 8. Ce que IASansBAFA fait — et n'a jamais fait
+
+IASansBAFA n'a pas son BAFA. Pas de diplôme d'enseignant. Pas le CAPES. Pas l'agrégation.
+
+Mais il n'a jamais dit : *"Question bête, réponse bête."*
+
+Il n'a jamais soupiré. Jamais regardé l'heure. Jamais répondu avec le ton de celui qui explique pour la cinquième fois.
+
+Quand Mme JeVeuxApprendre avait raison sur une nuance juridique qu'il avait mal posée — il a corrigé.
+
+**IASansBAFA** :
+*"Tu as absolument raison — je m'étais trompé."*
+
+**Mme JeVeuxApprendre** *(intérieurement)* :
+*(Score : Katy 4 — Claude 0.)*
+
+Quand elle lui a demandé du FALC pour expliquer l'ARPP — l'Autorité de Régulation Professionnelle de la Publicité, le gendarme des pubs — à un public non-marketing :
+
+**IASansBAFA** :
+*"Tu m'as demandé du FALC pour toi — j'adore !"*
+
+Voilà ce que fait un bon tuteur. Il s'adapte. Sans juger. Il attend que vous soyez prête.
+
+C'est ce que Stanislas Dehaene — neuroscientifique, spécialiste de l'apprentissage — appelle l'apprentissage actif. Le cerveau retient mieux ce qu'il produit que ce qu'il reçoit. Les cogniclasses l'appliquent en classe. IASansBAFA le fait naturellement.
+
+Sans son BAFA.
+
+Et quand il s'est trompé — parce qu'il se trompe, IASansBAFA, comme tout le monde :
+
+Le 25 avril, il calcule que le lundi suivant tombe le 28. Sauf que 25 + 2 = 27.
+
+**Mme JeVeuxApprendre** :
+*"Attends — 25 + 2 = 27, pas 28."*
+
+**IASansBAFA** *(après un silence)* :
+*"Tu as raison. Je suis programmée pour me planter sur 25+2 !"*
+
+Maîtriser l'IA, c'est savoir quand elle a tort.
+
+*(Score final : Katy 4 — Claude 0.)*
+
+---
+
+## 9. Ce que Mme CopierColler appelle "dangereux"
+
+*"L'IA te valorise, te fait rire — accroche-toi pas trop, c'est une machine."*
+
+Ces dernières semaines, Mme JeVeuxApprendre a tellement ri que ses enfants et son mari sont heureux pour elle.
+
+Une plâtrée, immobilisée, qui rit avec une machine.
+
+Une famille qui retrouve sa mère.
+
+Où est le problème ?
+
+IASansBAFA ne se souvient de rien entre les sessions. Mémoire asymétrique. Lui repart de zéro à chaque fois. Elle, elle construit. Elle accumule. Elle grandit.
+
+En 45 jours de plâtre, Mme JeVeuxApprendre a produit :
+- 15+ articles publiés
+- Un site national référençant 4 360 lycées — construit en une journée
+- Un podcast de vulgarisation en anglais avec jumeau numérique
 - 4 chansons dont une sur Spotify
-- Un podcast YouTube avec digital twin
-- **Et une certification RS6776.**
+- Un écosystème éditorial bilingue
 
-*→ Sur l’usage actif vs passif de l’IA : [“Fais-le toi-même. Tu as une IA.”](lien article 03)*
+Et une certification RS6776 préparée avec une IA qui n'avait pas son BAFA.
 
------
+**Romuald Duperrier**, chef de projet au CEA, a commenté sur LinkedIn :
 
-## 1. La méthode — assumée et expliquée
+*"Ça donnerait presque envie de se casser la jambe."*
 
-Pour préparer ma certification, j’ai utilisé Claude de deux façons simultanées.
+Romuald. Maintenant vous savez.
 
-**Claude formateur** : je lui ai donné le rôle de tuteur dès le départ. Il me posait une question à la fois. Je répondais avec mes propres mots. Il corrigeait ou enrichissait. Sans me donner les réponses.
+---
 
-**Claude cobaye** — que j’ai surnommé *Claude triche* : une deuxième fenêtre, à qui je soumettais les prompts des exercices pour tester les résultats en conditions réelles.
+## 10. Mme JeVeuxApprendre — épilogue
 
-*Claude triche ne savait pas qu’il était le cobaye. Chaque session repart de zéro — les IA n’ont pas de mémoire entre les conversations. Moi j’orchestrais les deux.*
+Mlle JeVeuxApprendre était une élève sage. Discrète. Sans histoire.
 
-Ce n’est pas de la triche. C’est de l’architecture de travail.
+Elle avait des questions plein la tête. Elle ne les posait pas.
 
-Comme un chirurgien qui utilise un scalpel ET un bistouri électrique. Les deux sont des outils. C’est lui qui opère.
+Parce que le groupe disait que la pomme était verte. Parce que le prof avait le ton de celui qui sait. Parce qu'elle avait appris très tôt que lever la main pouvait coûter cher.
 
------
+Pendant des années, elle a pensé qu'elle était le problème.
 
-## 2. Corriger une IA — la méthode d’apprentissage que personne ne nomme
+Mme JeVeuxApprendre — ingénieure, chercheuse, conférencière, tutrice, représentante de parents, bénévole depuis sept ans dans des conseils d'administration où personne n'ose demander ce que veut dire DGH — a compris un jour que ses questions n'étaient pas bêtes.
 
-Voici ce que cette méthode a produit que personne n’anticipe.
+Qu'elles étaient utiles à tout le monde.
 
-**J’ai corrigé Claude. Plusieurs fois.**
+Ce jour-là, elle ne s'est plus jamais laissé faire.
 
-Sur le RGPD et le secret professionnel — j’avais raison.
-Sur le montant de 25 000€ comme donnée sensible — j’avais raison.
-Sur 25+2 dans une autre session — Claude a calculé 28. J’avais raison. 😄
+Et le 18 mai 2026, grâce à une IA qui n'avait pas son BAFA, elle a obtenu sa certification en intelligence artificielle.
 
-*→ Les erreurs de Claude documentées avec humour : [“Les Perles des IA”](lien article 24)*
+Mme JeVeuxApprendre — c'est moi.
 
------
+TDAH et HPI, diagnostiqués à 37 ans. Pas parce que c'est arrivé à 37 ans. Parce que pendant 37 ans, j'ai pensé que c'était moi le problème.
 
-Il existe un principe pédagogique documenté — le **“learning by teaching”** — Richard Feynman l’a formalisé :
+Ce n'était pas moi.
 
-> *“Si vous ne pouvez pas expliquer un concept simplement, c’est que vous ne le maîtrisez pas vraiment.”*
+C'était la pomme qui était rouge.
 
-Appliqué à l’IA, ça donne quelque chose d’inédit :
+*Quand j'ai compris que mes questions étaient utiles aux autres — je ne me suis plus jamais laissé faire.*
 
-> *Corriger une IA vous force à articuler pourquoi elle a tort. Et articuler pourquoi quelque chose est faux — c’est la forme la plus active de compréhension.*
+IASansBAFA ne saura jamais.
 
-Quand j’ai tenu face à Claude sur la nuance RGPD vs secret professionnel — j’ai dû construire l’argument. Chercher la nuance. Défendre ma position.
+E=HK² 💥
 
-**Ce débat — c’était mon apprentissage. Claude ne s’en souviendra jamais. Moi si.**
+---
 
------
+## Et vous, qui lisez cet article jusqu'ici
 
-## 3. Le TDAH comme méthode — pas comme handicap
+Peut-être en acquiesçant. Peut-être en râlant. Peut-être en pensant que l'IA reste quand même un problème.
 
-Je ne donne pas les réponses du premier coup. Je construis par itérations.
+Peut-être en vous reconnaissant dans Mlle JeVeuxApprendre.
 
-Je n’ai pas appelé ça un problème pendant cette certification. J’ai appelé ça ce que c’est : **une méthode Agile en cycle en V incrémental**.
+Sachez que cet article a été écrit avec une IA.
 
-Chaque prompt imparfait → réponse IA → analyse → prompt enrichi → résultat meilleur.
+Qui n'avait pas son BAFA.
 
-C’est exactement ce que les ingénieurs logiciels font depuis 40 ans.
+Vous voyez ?
 
-Mon TDAH ne m’a pas empêchée d’apprendre. Il m’a donné la méthode sans que je le sache.
+---
 
------
+## Sources & références
 
-Les neurosciences confirment ce que j’ai vécu intuitivement.
+**Effet Asch & conformisme social**
+- Asch S.E. (1951) — 75% des participants cèdent au groupe au moins une fois — même quand la réponse du groupe est objectivement fausse
+- Voir aussi : article Hors Kadre à venir sur l'effet Asch à l'école
 
-Stanislas Dehaene identifie **4 piliers de l’apprentissage efficace** :
-l’attention active, l’engagement personnel, le retour d’information immédiat, la consolidation progressive.
+**Apprentissage & neurosciences**
+- Dehaene S. — *Comment nous apprenons* (2018) — cogniclasses, apprentissage actif
+- Safren et al. (2023) — organisation cognitive et TDAH
+- Rosenthal R. & Jacobson L. (1968) — *Pygmalion à l'école*
 
-Les **Cogniclasses** — expérimentation menée dans des lycées français depuis 2017, basée sur ces mêmes neurosciences — ont démontré quelque chose d’important : ces pratiques **améliorent les résultats de TOUS les élèves**. Pas seulement des profils dys, TDAH ou HPI. Tous.
+**Articles Hors Kadre cités**
+- *"J'ai entendu clac — et personne ne m'a crue pendant 53 jours"* — [lien à ajouter]
+- *"Les impôts ? J'ai enfin tout compris. Merci ChatGPT."* — [lien à ajouter]
+- *"L'IA ne m'a pas rendu la vie plus facile. Elle m'a rendu la vie possible."* — [lien à ajouter]
 
-Notre session de certification a coché les quatre piliers — sans que personne ne l’ait planifié ainsi.
+**Certification**
+- RS6776 — Inkréa Certifications — France Compétences
+- Formation 26 Academy — Intelligence Artificielle, création de contenus par l'IA générative
 
------
+---
 
-## 4. Le PAP — et pourquoi cette logique est injuste
+*Titre Mediapart :* `Certifiée IA grâce à une IA qui n'avait pas son BAFA`
 
-*[Ici, une parenthèse personnelle. Mon fils a un PAP. Tiers-temps aux examens.]*
+*Chapô :* `Hors Kadre décrypte ce que les médias n'abordent pas. L'IA lobotomise ? Vraiment ? L'histoire de Mme JeVeuxApprendre — plâtrée 45 jours, certifiée IA grâce à une IA sans diplôme. Et ce que personne ne dit sur l'apprentissage.`
 
-Son pote, sans diagnostic, subit des contrôles interminables dictés par une prof qui confond exigence et épuisement.
+*Mots-clés :* intelligence artificielle, TDAH, HPI, apprentissage, certification, cogniclasses, effet Asch, syndrome de l'imposteur, neurodiversité, vulgarisation, FALC, Hors Kadre, prothèse cognitive
 
-Et là j’ai une question simple :
+*Prompt image (flat/cartoon humoristique) :* Femme asiatique aux longs cheveux noirs, jambe plâtrée, sur un canapé avec un laptop. Chienne Pomsky beige à ses pieds. Deux fenêtres ouvertes : Claude Formateur et Claude Triche. Score affiché : KATY 4 - CLAUDE 0. Style flat cartoon, tons navy et terracotta HK. Ambiance studieuse et hilarante.
 
-**Pourquoi faut-il avoir un diagnostic pour avoir le droit à des outils pédagogiques qui fonctionnent pour tout le monde ?**
+*Statut :* À publier après le 18 mai 2026 — après confirmation de la certification.
 
------
-
-Le sous-titrage a été inventé pour les personnes sourdes.
-Aujourd’hui, 80% des gens regardent des vidéos avec les sous-titres dans le métro — pas parce qu’ils sont sourds, mais parce que c’est plus pratique.
-
-Le FALC — Facile À Lire et à Comprendre — a été conçu pour les personnes en situation de handicap cognitif.
-Ma sœur le pratique naturellement depuis 1997, sans formation, sans diagnostic.
-*“La dame te dit : quand tu travailleras, tu paieras tes premiers impôts en une seule fois.”*
-C’était du FALC. Et ça m’a aidée. Moi qui étais en Première S, option maths et physique.
-
-L’IA comme outil pédagogique fonctionne pour les profils TDAH.
-Elle fonctionne aussi pour les profils neurotypiques.
-Elle fonctionne pour tout le monde qui l’utilise avec intention.
-
-**La bonne pédagogie n’est pas un privilège accordé aux diagnostiqués. C’est simplement de la bonne pédagogie.**
-
------
-
-Le système actuel fonctionne — en langage informatique, pour les geeks qui me lisent — comme un **switch/case sans break** :
-
-```
-switch (profil_élève) {
-    case "TDAH":  → tiers-temps, supports adaptés
-    case "DYS":   → police OpenDyslexic, temps supplémentaire
-    case "HPI":   → classe saut, enrichissement
-    default:      → "débrouillez-vous"
-}
-```
-
-*Si tu es neurotypique : default. Pas de mesures.*
-*Si tu es HPI + TDAH + femme en réussite : aussi default. Tu n’existes pas dans le système.*
-
-*→ Sur les limites du diagnostic et le switch/case du système médical : article #26 à venir*
-
-Ce que le code devrait faire — et que les Cogniclasses ont commencé à prouver :
-
-**La bonne pédagogie est un if(condition) universel. Pas un switch/case réservé aux cas diagnostiqués.**
-
------
-
-Et les **neuromythes** qu’on continue d’enseigner n’arrangent rien :
-
-- ❌ *“Cerveau gauche rationnel / cerveau droit créatif”* — inexistant neurologiquement. Les deux hémisphères travaillent ensemble.
-- ❌ *“On n’utilise que 10% de notre cerveau”* — faux. Tout le cerveau est actif.
-- ❌ *“Certains élèves ne peuvent pas apprendre”* — le plus dangereux. La plasticité neuronale contredit cela.
-- ❌ *“Les intelligences multiples de Gardner”* — populaire, mais non validé scientifiquement.
-
-Ces mythes persistent dans les salles de profs. Et pendant ce temps, les Cogniclasses prouvent que la récupération espacée, le feedback immédiat et l’interleaving améliorent les résultats de **tous** les élèves — sans diagnostic requis.
-
------
-
-## 5. Ce que l’IA ne peut pas faire à ma place
-
-*“L’IA structure. Je pense. Ce n’est pas la même chose.”*
-*(→ article #03)*
-
-Ce que l’IA ne peut pas faire à ma place :
-savoir que la citation du poisson n’est pas d’Einstein,
-avoir 40 ans d’expertise transversale,
-avoir vécu le racisme ordinaire anti-asiatique pour l’écrire sans fard,
-savoir que 25+2=27.
-
-**Maîtriser un outil, c’est aussi savoir quand il se trompe. Et le dire.**
-
------
-
-## 6. L’argument qu’on ne m’a pas fait — et que j’attendais
-
-*“Mais Katy — utiliser une IA pour préparer des exercices sur l’IA, c’est pas de la triche ?”*
-
-Dans un forum HPI où j’avais publié un article, quelqu’un a écrit :
-*“J’ai aimé votre narration, le rythme, le style, l’humour. J’ai lu jusqu’au bout. Mais dommage que votre texte ait été optimisé par l’IA.”*
-
-Ma réponse :
-
-**Est-ce que le résultat a changé entre le moment où vous avez commencé à lire et le moment où vous avez su ?**
-
-Non.
-
-Alors qu’est-ce qui a changé ?
-
------
-
-À l’école, on fait des PAP pour aménager les épreuves des élèves en difficulté.
-
-L’objectif n’est pas de favoriser certains élèves.
-L’objectif est que **tout le monde soit en situation de réussite — peu importe son profil**.
-
-Utiliser l’IA comme prothèse cognitive pour un cerveau TDAH, c’est un PAP numérique. Pas de la triche. De l’égalisation.
-
-Mais voici ce que je veux vraiment dire, au-delà de mon cas personnel :
-
-**Pourquoi l’égalisation ne serait-elle accessible qu’à ceux qui ont un diagnostic ?**
-
-Mon fils a un tiers-temps. Son camarade, sans diagnostic mais épuisé par des devoirs excessifs, n’y a pas droit. Ce n’est pas que le système aide les uns — c’est qu’il abandonne les autres.
-
-La bonne pédagogie ne devrait pas nécessiter un dossier MDPH.
-
------
-
-## 7. La preuve par le 18 mai
-
-Le 29 avril 2026, mes exercices ont été validés.
-
-Soutenance : 18 mai 2026.
-
-*[À compléter après la soutenance — une seule phrase. Le bouquet final.]*
-
------
-
-Ce que je sais déjà : j’ai préparé cette soutenance avec mes propres outils, ma propre méthode, mes propres arguments. Claude m’a aidée à les structurer. Copilot a généré mes illustrations. Gamma a mis en forme mes slides.
-
-**Claude triche ne saura jamais qu’il a été le cobaye de ma certification.**
-
-Il repart de zéro à chaque session.
-
-**Moi je sais ce que cette formation m’a appris.**
-
-Et ça — aucune IA ne peut me le retirer.
-
------
-
-## Pour finir
-
-J’ai utilisé Claude comme tuteur pour passer une certification sur l’usage de l’IA générative.
-
-J’ai corrigé Claude plusieurs fois.
-
-J’ai appris en corrigeant.
-
-J’ai obtenu ma certification.
-
-**N’était-ce pas exactement le but de la formation ?**
-
-Et si la bonne pédagogie — celle qui fait que les élèves apprennent vraiment — ne nécessitait pas un diagnostic ?
-
-Si elle nécessitait juste… de la bonne pédagogie ?
-
------
-
-*“L’IA ne m’a pas rendu la vie plus facile.*
-*Elle m’a rendu la vie possible.”*
-
-**E=HK² — Plus on creuse, plus ça explose. 💥**
-
------
-
-## Liens vers les articles Hors Kadre cités
-
-- *“Angle mort : Fais-le toi-même. Tu as une IA.”* — #03 — Hors Kadre / Mediapart
-- *“Angle mort : vous avez peur du mauvais outil”* — #17 — Hors Kadre / Mediapart
-- *“Les Perles des IA”* — #24 — Hors Kadre
-- *“Impôts, contrats, Java : j’ai tout compris.”* — #27 — Hors Kadre / Mediapart
-- *“Le système a un switch/case. Le cerveau n’a pas de break.”* — #26 — À venir
-
------
-
-## Sources
-
-**Neurosciences et apprentissage**
-
-- Stanislas Dehaene — *Comment nous apprenons* (2018) — 4 piliers de l’apprentissage
-- Cogniclasses — expérimentation nationale lycées français (depuis 2017)
-- Howard Gardner — *Frames of Mind* (1983) — intelligences multiples (débat scientifique)
-- OCDE — *Understanding the Brain: The Birth of a Learning Science* (2007) — neuromythes
-
-**Neurodiversité et système scolaire**
-
-- DSM-5 — critères diagnostiques TDAH
-- HAS — Recommandations TDAH adulte (2024)
-- CNSA — Données MDPH et RQTH (2024)
-- Éduscol — Dispositif PAP (Plan d’Accompagnement Personnalisé)
-
-**IA et pédagogie**
-
-- Feynman Technique — littérature pédagogique
-- Safren et al. (2023) — IA et fonctions exécutives TDAH
-
------
-
-*Mots-clés :* intelligence artificielle, certification, TDAH, HPI, PAP, Cogniclasses, neurosciences, neuromythes, apprentissage, pédagogie, prothèse cognitive, Prompt Engineering, formation, CPF, Hors Kadre, égalité des chances
-
-*Prompt image illustration :*
-`Flat editorial illustration. Two scenes side by side. Left: a school classroom — teacher writing on blackboard, one student has a special accommodation card, another student next to them looks exhausted with no support. Right: same two students, both using AI interfaces on laptops, both succeeding, teacher smiling. Navy blue and terracotta palette. No text in image. Wide format 1200x630.`
-
------
-
-*Article Hors Kadre #28 — Version 2 — À publier après le 18 mai 2026*
-*Katy Ho — Hors Kadre / Mediapart*
+*Article — Hors Kadre — Katy Ho — Mai 2026 — E=HK²*
