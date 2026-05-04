@@ -155,7 +155,7 @@ Si la structure n'est pas cohérente, tout le reste tombe.
 | Personnage | Qui c'est | Ton |
 |-----------|-----------|-----|
 | **Nougat** | Chienne Pomsky — baromètre émotionnel, aussi hyperactive que sa maîtresse | Affectif, ancrage réel |
-| **Mme BonnePoire** | Katy représentante parents d'élève pro CNV Faber&Mazlish — naïve mais lucide | Autodérision douce |
+| **Mme BonnePoire/Mrs Pushover** | Katy représentante parents d'élève pro CNV Faber&Mazlish — naïve mais lucide | Autodérision douce |
 | **Mme HorsKase/Mrs OutKase** | Katy ingénieure enseignante et qui dit tout haut ce que d'autre disent tout bas | Autodérision ironie un brin provoc mais toujours avec bienveillance |
 | **Mme JeVeuxApprendre/Mrs IDontUnderstand** | Katy à l'école TDAH et HPI inconnue — naïve mais lucide | Autodérision douce, discrète et timide |
 | **Mme BlagueAPart/Mrs PrivateJoke** | Proviseur agressive passive qui s'acharne sur Mme BonnePoire en CA et CC | Piques sournois et condescendants |
