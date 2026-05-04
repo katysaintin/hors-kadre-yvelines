@@ -162,7 +162,7 @@ Si la structure n'est pas cohérente, tout le reste tombe.
 | **Mme JeSaisMieuxQueToi/Mrs AlwaysRight** | Amie toxique de Katy adulte représentante de parents d'élèves comme Katy | Juge , n'est pas tolérante et est toujours d'accords avec l'institution |
 | **M JeSaisMieuxQueToi/Mr AlwaysRight** | Mari de Mme JeSaisMieuxQueToi, ingénieur informaticien | Bon techniquement mais ne sait pas vulgariser |
 | **M LibertéPédagogique/Mr FreedomToTeach** |Professeur condescendant qui ne s'adapte pas aux élèves et que ne vulgarise pas | Humilie et n'accepte pas les questions |
-| **Mme BlagueAPart/Mrs PrivateJoke** | Proviseur agressive passive qui s'acharne sur Mme BonnePoire en CA et CC | Piques sournois et condescendants |
+| **M BlagueAPart/Mr PrivateJoke** | Proviseur passif agressif qui s'acharne sur Mme BonnePoire en CA et CC | Piques sournois et condescendants |
 | **M. Génial/Mr Awesome** | Le prof idéal défendu — pédagogie vs diplôme | Contre-exemple positif |
 | **Mme CopierColler/Mrs CopyPast** | En cours — bureaucratie scolaire | Satirique |
 | **Le mari** | Hypochondriaque notoire — running gag assumé | Complicité familiale |
