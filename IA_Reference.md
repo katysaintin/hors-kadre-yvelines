@@ -268,6 +268,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 15 |  Les perles des IA !  | Article 24 | PROGRAMMÉ | PROGRAMMÉ|
 | 16 |  Mme BlagueAPart plaisante , les ados en PLS !  | Article 6 | PROGRAMMÉ | - |
 | 17 |  Mme HorsKase cherche désespérement une case !  | Article 26 | PROGRAMMÉ | À FAIRE |
+| 18 |  Certification IA sans BAFA  | Article 28 | PROGRAMMÉ | À FAIRE |
 
 
 ## 7. Légende des statuts
