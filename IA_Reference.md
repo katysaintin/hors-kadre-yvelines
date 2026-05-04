@@ -267,6 +267,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 14 |  IA Fais le toi !  | Article 13 | PROGRAMMÉ | À FAIRE |
 | 15 |  Les perles des IA !  | Article 24 | PROGRAMMÉ | PROGRAMMÉ|
 | 16 |  Mme BlagueAPart plaisante , les ados en PLS !  | Article 6 | PROGRAMMÉ | - |
+| 17 |  Mme HorsKase cherche désespérement une case !  | Article 26 | PROGRAMMÉ | À FAIRE |
 
 
 ## 7. Légende des statuts
