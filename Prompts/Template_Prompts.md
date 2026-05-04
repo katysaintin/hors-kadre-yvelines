@@ -29,6 +29,8 @@ Je joins mon document de référence https://raw.githubusercontent.com/katysaint
 qui contient tout ce dont tu as besoin :
 identité, charte graphique, principes éditoriaux,
 tableau de bord des articles, écosystème complet.
+Puis voici les informations me concernant pour la ligne éditoriale.
+https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/Prompts/KatyDigitalTwin.md
 Lis-le avant de commencer.
 Réponds directement sans reformuler ma question.
 ```
