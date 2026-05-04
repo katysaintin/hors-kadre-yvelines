@@ -233,7 +233,7 @@ Rendre compréhensible ce qui ne l’était pas.
 |---|-------|------------------|---------------|----------|---------------|
 | 18 | Errance médicale — rupture du tendon d'Achille mal diagnostiquée | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/18_TendonAchille.md) | - | PROGRAMMÉ épisode spécial | PROGRAMMÉ |
 | 19 | Le deuil périnatal — mon fils en 2007, résilience et reconstruction | IDÉE | - | - | - |
-| 24 | Les perles des IA | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_LesPerlesDesIA.md) |  [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_IAMirror.md) [**HTML**S](https://katysaintin.github.io/hors-kadre-yvelines/lesperlesia_en.html)  | PROGRAMMÉ épisode 15 | - |
+| 24 | Les perles des IA | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_LesPerlesDesIA.md) |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/24_IAMirror.md) [**HTML**S](https://katysaintin.github.io/hors-kadre-yvelines/lesperlesia_en.html)  | PROGRAMMÉ épisode 15 | - |
 
 
 ---
