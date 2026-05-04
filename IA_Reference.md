@@ -218,7 +218,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 12 | Angle mort : RQTH et TDAH — le parcours du combattant | IDÉE | - | - | - |
 | 13 | Angle mort : comment l'IA peut aider les TDAH / HPI / Créatifs | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicap.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/13_IA_AuServiceDuHandicapEN.md) | :heavy_check_mark: | :heavy_check_mark: |
 | 23 | Le mauvais lac | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac.md) | [DRAFT](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/23_MauvaisLac_EN.md) | PROGRAMMÉ épisode 14  | - |
-| 26 | Neurodiversité égale Switch Case | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/26_NeurodivesiteSwitchCase.md) | - | - | - |
+| 26 | Neurodiversité égale Switch Case | [**PRÊT**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/26_NeurodivesiteSwitchCase.md) | - | - | - |
 
 
 ### BLOC 4 — Identité & Développement personnel
