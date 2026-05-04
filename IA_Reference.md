@@ -275,6 +275,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | Statut | Signification |
 |--------|--------------|
 | PUBLIÉ | Article publié sur Mediapart |
+| PRÊT | Prêt en mode draft sous Mediapart ou Medium |
 | RÉDIGÉ | Prêt à publier ou en relecture |
 | EN COURS | Plan ou ébauche disponible |
 | PROGRAMMÉ | Post programmé sur la plateforme |
