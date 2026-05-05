@@ -202,13 +202,13 @@ Rendre compréhensible ce qui ne l’était pas.
 |---|-------|------------------|---------------|----------|---------------|
 | 4 | Parcoursup, ce que ni les classements ni les profs ne disent |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/04_ParcoursupSeveriteProfs.md) | - | :heavy_check_mark: | - |
 | 20 | 98% de réussite et après, le classement selon les IVAL |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/20_ClassementIVAL98%Bac.md) | - | :heavy_check_mark: | - |
-| 5 | préparer son enfant au lycée & Parcoursup simplifié | EN COURS | - | - | - |
+| 5 | préparer son enfant au lycée & Parcoursup simplifié |  [**EN COURS**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/05_ParcoursupSansStress.md) | - | - | - |
 | 6 | Mme BlagueAPart plaisante , les ados en PLS | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/06_AdoMalheureux.md) | - | PROGRAMMÉ épisode 16  | - |
 | 7 | Tensions parents/profs — décoder et s'en sortir | IDÉE | - | - | - |
 | 8 | Valorisation des filières pro techno - SI on juge un poisson | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/08_ValorisationFiliereProTechnoPoisson.md) | - | PROGRAMMÉ épisode 12 | :heavy_check_mark: |
 | 9 | projet pHARe — harcèlement adulte/enfant ignoré | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/09_PhareDispositifIncompletEvaelle.md) | - | :heavy_check_mark: | - |
 | 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
-| 28 | Certification IA grâce à mon IA sans BAFA | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
+| 28 | Certification IA grâce à mon IA sans BAFA | [**PRÊT**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
