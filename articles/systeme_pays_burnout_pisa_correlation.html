@@ -1,0 +1,184 @@
+
+<style>
+  .chart-section { margin-bottom: 2rem; }
+  .chart-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px; }
+  .chart-subtitle { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 12px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; font-size: 12px; color: var(--color-text-secondary); }
+  .legend span { display: flex; align-items: center; gap: 5px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .note { font-size: 11px; color: var(--color-text-tertiary); margin-top: 8px; padding: 8px; border-left: 2px solid var(--color-border-secondary); }
+  .source { font-size: 10px; color: var(--color-text-tertiary); margin-top: 4px; }
+</style>
+
+<h2 class="sr-only">Comparaison internationale : organisation du travail, burnout adultes et résultats scolaires</h2>
+
+<div class="chart-section">
+  <p class="chart-title">Adultes — heures travaillées/an vs % d'anxiété au travail</p>
+  <p class="chart-subtitle">Source : OCDE (heures), Eurofound European Working Conditions Survey 2024</p>
+  <div class="legend">
+    <span><span class="legend-dot" style="background:#185FA5;"></span>Heures travaillées/an</span>
+    <span><span class="legend-dot" style="background:#D85A30;"></span>% anxiété/burnout au travail</span>
+  </div>
+  <div style="position:relative;width:100%;height:320px;">
+    <canvas id="chart1" role="img" aria-label="Graphique comparant heures de travail et anxiété par pays">Finlande 1600h 15%, Danemark 1570h 19%, Pays-Bas 1427h 18%, France 1694h 49%, Pologne 1830h 55%.</canvas>
+  </div>
+  <p class="note">⚠️ Corrélation observée — pas de lien de causalité établi. D'autres facteurs (culture, protection sociale, management) entrent en jeu.</p>
+  <p class="source">Sources : OCDE Average annual hours actually worked per worker 2023 · Eurofound EWCS 2024 · Moka Care / IFOP 2024</p>
+</div>
+
+<div class="chart-section">
+  <p class="chart-title">Enfants — scores PISA 2022 (maths) vs heures de cours annuelles</p>
+  <p class="chart-subtitle">Source : OCDE PISA 2022 · Education at a Glance 2023</p>
+  <div class="legend">
+    <span><span class="legend-dot" style="background:#1D9E75;"></span>Score PISA maths 2022</span>
+    <span><span class="legend-dot" style="background:#BA7517;"></span>Heures de cours/an (collège)</span>
+  </div>
+  <div style="position:relative;width:100%;height:320px;">
+    <canvas id="chart2" role="img" aria-label="Graphique comparant scores PISA et heures de cours par pays">Finlande score 484 heures 892, Danemark 489 heures 900, Pays-Bas 493 heures 940, France 474 heures 1189, Pologne 489 heures 1007.</canvas>
+  </div>
+  <p class="note">⚠️ La Finlande a connu une baisse PISA depuis 2018 (−23 pts en maths). La corrélation "moins d'heures = meilleurs résultats" est plus complexe qu'il n'y paraît — la qualité pédagogique et la formation des enseignants jouent un rôle majeur.</p>
+  <p class="source">Sources : OCDE PISA 2022 Results Volume I · Education at a Glance 2023 (tableau D1.1)</p>
+</div>
+
+<div class="chart-section">
+  <p class="chart-title">Vue systémique — corrélation entre bien-être adulte et résultats enfants</p>
+  <p class="chart-subtitle">Indice composite : score PISA normalisé + inverse du taux d'anxiété adulte</p>
+  <div class="legend">
+    <span><span class="legend-dot" style="background:#534AB7;"></span>Indice bien-être global (adultes + enfants)</span>
+  </div>
+  <div style="position:relative;width:100%;height:260px;">
+    <canvas id="chart3" role="img" aria-label="Indice composite bien-être adultes et enfants par pays">Pays-Bas 82, Danemark 80, Finlande 75, Pologne 52, France 48.</canvas>
+  </div>
+  <p class="note">⚠️ Cet indice composite est une construction éditoriale — pas une mesure officielle. Il illustre la tendance, pas une vérité statistique. À présenter comme tel dans l'article.</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const pays = ['Finlande','Danemark','Pays-Bas','France','Pologne'];
+
+const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+const gridColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+const textColor = isDark ? '#aaa' : '#666';
+
+const baseOpts = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { ticks: { color: textColor, font: { size: 11 }, autoSkip: false }, grid: { color: gridColor } },
+    y: { ticks: { color: textColor, font: { size: 11 } }, grid: { color: gridColor } }
+  }
+};
+
+new Chart(document.getElementById('chart1'), {
+  type: 'bar',
+  data: {
+    labels: pays,
+    datasets: [
+      {
+        label: 'Heures/an',
+        data: [1600, 1570, 1427, 1694, 1830],
+        backgroundColor: '#185FA5',
+        borderRadius: 4,
+        yAxisID: 'y'
+      },
+      {
+        label: '% anxiété',
+        data: [15, 19, 18, 49, 55],
+        backgroundColor: '#D85A30',
+        borderRadius: 4,
+        yAxisID: 'y2'
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { color: textColor, font: { size: 11 }, autoSkip: false }, grid: { color: gridColor } },
+      y: {
+        type: 'linear', position: 'left',
+        ticks: { color: '#185FA5', font: { size: 10 }, callback: v => v + 'h' },
+        grid: { color: gridColor },
+        min: 1200, max: 2000,
+        title: { display: true, text: 'heures/an', color: '#185FA5', font: { size: 10 } }
+      },
+      y2: {
+        type: 'linear', position: 'right',
+        ticks: { color: '#D85A30', font: { size: 10 }, callback: v => v + '%' },
+        grid: { drawOnChartArea: false },
+        min: 0, max: 80,
+        title: { display: true, text: '% anxiété', color: '#D85A30', font: { size: 10 } }
+      }
+    }
+  }
+});
+
+new Chart(document.getElementById('chart2'), {
+  type: 'bar',
+  data: {
+    labels: pays,
+    datasets: [
+      {
+        label: 'Score PISA',
+        data: [484, 489, 493, 474, 489],
+        backgroundColor: '#1D9E75',
+        borderRadius: 4,
+        yAxisID: 'y'
+      },
+      {
+        label: 'Heures cours/an',
+        data: [892, 900, 940, 1189, 1007],
+        backgroundColor: '#BA7517',
+        borderRadius: 4,
+        yAxisID: 'y2'
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { color: textColor, font: { size: 11 }, autoSkip: false }, grid: { color: gridColor } },
+      y: {
+        type: 'linear', position: 'left',
+        ticks: { color: '#1D9E75', font: { size: 10 } },
+        grid: { color: gridColor },
+        min: 440, max: 520,
+        title: { display: true, text: 'score PISA', color: '#1D9E75', font: { size: 10 } }
+      },
+      y2: {
+        type: 'linear', position: 'right',
+        ticks: { color: '#BA7517', font: { size: 10 }, callback: v => v + 'h' },
+        grid: { drawOnChartArea: false },
+        min: 800, max: 1300,
+        title: { display: true, text: 'heures cours', color: '#BA7517', font: { size: 10 } }
+      }
+    }
+  }
+});
+
+new Chart(document.getElementById('chart3'), {
+  type: 'bar',
+  data: {
+    labels: ['Pays-Bas','Danemark','Finlande','Pologne','France'],
+    datasets: [{
+      label: 'Indice composite',
+      data: [82, 80, 75, 52, 48],
+      backgroundColor: ['#534AB7','#534AB7','#534AB7','#D85A30','#D85A30'],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { color: textColor, font: { size: 11 }, autoSkip: false }, grid: { color: gridColor } },
+      y: { ticks: { color: textColor, font: { size: 11 } }, grid: { color: gridColor }, min: 0, max: 100 }
+    }
+  }
+});
+</script>
