@@ -41,6 +41,7 @@ Ce qui n'existe pas : le lien historique + neurosciences + burnout adulte + pays
 
 ### 0. Accroche
 Emmanuel Macron dit que les élèves ont "trop de vacances".
+https://www.leparisien.fr/societe/les-eleves-francais-ont-ils-trop-de-vacances-scolaires-comme-le-pretend-emmanuel-macron-05-02-2025-I5IK42SUNBEDPLTMX6PR4AVZXA.php
 Réponse : les vacances d'été françaises ont été allongées en 1939.
 Pour aligner les enfants sur les congés payés des adultes.
 Ironie : aujourd'hui les adultes sont en burnout. Et on veut réduire les vacances des enfants.
