@@ -295,3 +295,199 @@ Ou plus provocateur :
 *Mémo Article Hors Kadre #29 — À rédiger pour rentrée 2026*
 *Katy Ho — Hors Kadre / Mediapart*
 *E=HK²*
+
+
+---
+## PROPOSITION ChatGPT
+
+# Angle mort : nos enfants subissent le modèle qui nous épuise
+
+**Hors Kadre décrypte ce que les médias n'abordent pas.**  
+On débat des vacances scolaires comme si le problème était là. Mais si la vraie question était ailleurs ? Et si ce n’était pas le nombre de semaines, mais la manière dont on organise nos journées — enfants comme adultes — qui posait problème ?
+
+---
+
+## 1. Les vacances scolaires : une histoire d’adultes
+
+Emmanuel Macron relance régulièrement le débat : les élèves français ont-ils trop de vacances ?
+
+Petit détour historique.
+
+Les longues vacances d’été n’ont jamais été pensées pour les enfants :
+- Moyen Âge : pauses agricoles  
+- XIXe siècle : organisation scolaire nationale  
+- 1936 : congés payés  
+- 1939 : allongement des vacances pour aligner enfants et parents  
+- 1972 : zones A/B/C pour le tourisme  
+
+Conclusion simple :
+
+> Le calendrier scolaire est un compromis social et économique.  
+> Pas un modèle pensé pour le cerveau des enfants.
+
+---
+
+## 2. Le vrai problème : la densité, pas la durée
+
+Les neurosciences sont assez claires :
+
+- un cerveau fatigué apprend moins bien  
+- l’apprentissage espacé est plus efficace  
+- la récupération est essentielle  
+
+Autrement dit :
+
+> Ce n’est pas la quantité de travail qui pose problème.  
+> C’est la manière dont il est concentré.
+
+---
+
+## 3. France vs autres modèles : ce que montrent les données
+
+*(Insérer ici Graphique 1 — burnout vs pays)*  
+*(Insérer ici Graphique 2 — PISA vs temps scolaire)*  
+*(Insérer ici Graphique 3 — corrélation globale)*  
+
+Les données ne prouvent pas un lien de causalité direct.
+
+Mais elles montrent une tendance troublante :
+
+- des pays avec des journées moins denses  
+→ bons résultats scolaires  
+→ niveaux de stress plus faibles  
+
+Et à l’inverse :
+
+- des systèmes plus intensifs  
+→ pas de meilleurs résultats  
+→ plus de fatigue  
+
+👉 Ce que ces données montrent surtout :
+
+> Il est possible de faire autrement.  
+> Et d’obtenir de bons résultats sans épuiser tout le monde.
+
+---
+
+## 4. Pendant ce temps-là…
+
+En 2020, mon fils entre en 6e.
+
+Pour lui, tout est nouveau :  
+Pronote, ENT, mails.
+
+Très vite, les remarques tombent :
+- ne consulte pas assez  
+- oublie des devoirs  
+- manque d’autonomie  
+
+En conseil de classe — où je suis représentante — le constat est quasi généralisé :
+
+> “manque d’autonomie”
+
+Pas un cas isolé.  
+Une classe entière.
+
+Nous avons pu l’aider.  
+Parce que nous travaillons dans l’informatique.
+
+Mais ce jour-là, je n’ai pas pensé à lui.
+
+J’ai pensé aux autres.
+
+---
+
+## 5. Le paradoxe de l’hyperconnexion
+
+Au même moment, de mon côté :
+
+- mails en continu  
+- réunions qui s’enchaînent  
+- notifications permanentes  
+
+La mécanique est déjà là.
+
+Le burnout aussi, même si je ne le sais pas encore.
+
+Le parallèle est évident :
+
+> on demande à des enfants de gérer  
+> ce que les adultes eux-mêmes n’arrivent pas à contenir
+
+Car l’hyperconnexion, ce n’est pas les écrans.
+
+C’est :
+- vérifier  
+- anticiper  
+- répondre  
+- ne rien oublier  
+
+Une charge mentale permanente.
+
+Avant :
+- un cahier de texte  
+
+Aujourd’hui :
+- un flux  
+
+> Nous avons appris à gérer un cahier.  
+> Eux doivent apprendre à gérer un flux.
+
+---
+
+## 6. Et si la question n’était pas les vacances ?
+
+Soyons honnêtes.
+
+Les longues vacances ont une fonction :
+- organisation familiale  
+- contraintes économiques  
+- récupération  
+
+Personne n’a envie de les supprimer.
+
+Mais posons une autre question.
+
+Imaginons deux modèles :
+
+- journées longues + devoirs + charge le soir  
+- journées plus courtes + vraie coupure  
+
+Dans lequel est-on le moins épuisé ?
+
+Pas seulement les enfants.
+
+Les adultes aussi.
+
+---
+
+## 7. Le vrai sujet
+
+La France travaille beaucoup.  
+Enseigne beaucoup.
+
+Et pourtant :
+- burnout élevé  
+- résultats moyens  
+
+Ce n’est pas une question de flemme.
+
+> C’est une question d’organisation.
+
+---
+
+## Conclusion
+
+Les vacances scolaires françaises ont été conçues pour aligner les enfants sur la société des adultes.
+
+Aujourd’hui, cette société est épuisée.
+
+Alors peut-être que la vraie question n’est pas de réduire les vacances.
+
+Mais de se demander :
+
+> quel modèle on veut transmettre à nos enfants.
+
+---
+
+**E=HK² 💥**
