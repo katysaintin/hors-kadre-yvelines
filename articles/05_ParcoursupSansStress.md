@@ -1093,24 +1093,26 @@ Résultat :
 
 ---
 
-## 6. Et les enseignants ?
+## 6. Et les professionnels de l’orientation ?
 
-C’est une question importante.
+Un point mérite d’être précisé.
 
-Pourquoi ces informations ne sont-elles pas mieux expliquées ?
+Tous les acteurs de l’orientation ne sont pas dans la même position.
 
-La réponse est simple :
+Les conseillers d’orientation, eux, sont au cœur du système.
+Ils accompagnent les élèves, croisent les données, et ont une vision plus globale des parcours.
 
-> les enseignants n’ont pas toujours accès à ces informations.
+Au fil de mes échanges, notamment avec des professionnels engagés comme Virginie Busquet, conseillère d’orientation, une réalité ressort clairement :
 
-Ils ne siègent pas dans les commissions d’admission.
-Ils ne connaissent pas les volumes réels de candidatures.
-Ils n’ont pas toujours les critères précis.
+> ce n’est pas un manque d’implication.
+> c’est un manque de lisibilité du système.
 
-Ils font au mieux.
+Les informations existent.
+Mais elles sont dispersées, techniques, et rarement traduites pour les familles.
 
-Mais ils ne peuvent pas tout savoir.
-
+Et c’est souvent sur ce point que se creuse l’écart :
+entre ce que le système produit…
+et ce que les parents comprennent.
 ---
 
 ## 7. Ce que j’ai découvert (et pourquoi j’ai creusé)
