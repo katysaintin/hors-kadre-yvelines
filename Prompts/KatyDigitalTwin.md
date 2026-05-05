@@ -151,6 +151,7 @@ Si la structure n'est pas cohérente, tout le reste tombe.
 ---
 
 ## PERSONNAGES RÉCURRENTS
+Seulement pour les articles satiriques et sur les sujets légers.
 
 | Personnage | Qui c'est | Ton |
 |-----------|-----------|-----|
