@@ -986,5 +986,227 @@ ou version plus développée (autorité)
 
 Je te fais une première ébauche directement.
 
+---
+## Proposition Article Mediapart ChatGPT
+
+
+# Parcoursup : ce qu’on ne vous explique pas… et pourquoi ce n’est pas votre faute
+
+Chaque année, c’est la même scène.
+
+Des parents découvrent Parcoursup en Terminale.
+Des élèves stressent.
+Des familles cherchent à comprendre… trop tard.
+
+Et toujours la même impression :
+
+> “On n’a pas compris comment ça marche.”
+
+La réalité est plus simple — et plus dérangeante :
+
+> Le problème n’est pas Parcoursup.  
+> C’est qu’on ne vous l’explique pas au bon moment.
+
+---
+
+## 1. Parcoursup n’est pas ce que vous croyez
+
+On parle souvent de Parcoursup comme d’un algorithme qui décide de l’avenir des élèves.
+
+C’est faux.
+
+Parcoursup ne choisit pas.
+
+Parcoursup est une plateforme.
+Un intermédiaire.
+
+Il transmet les dossiers aux formations.
+
+Ce sont les formations qui décident.
+
+---
+
+## 2. Ce que Parcoursup ne fait pas
+
+Parcoursup :
+- ne lit pas les lettres de motivation  
+- ne compare pas les lycées  
+- ne “corrige” pas les notes  
+
+👉 Il ne trie pas.
+
+> Ce sont les formations qui trient.
+
+Et elles doivent le faire… avec des milliers de candidatures.
+
+---
+
+## 3. Ce qui se passe vraiment
+
+Prenons un exemple réel.
+
+Un BUT en Île-de-France peut recevoir jusqu’à 8000 candidatures.
+
+Impossible de lire chaque dossier.
+
+Alors comment font-ils ?
+
+👉 Premier tri : les notes.
+
+Pas les appréciations.
+Pas les lettres.
+
+Les notes.
+
+Et souvent, uniquement certaines matières.
+
+---
+
+## 4. Pourquoi les parents sont perdus
+
+Ce système n’est pas illogique.
+
+Mais il est mal expliqué.
+
+- les informations arrivent en Terminale  
+- les fiches sont complexes  
+- les critères sont dispersés  
+
+Et surtout :
+
+> les décisions importantes sont prises… bien avant.
+
+---
+
+## 5. Le vrai moment clé : la Seconde
+
+Le choix des spécialités en Seconde conditionne l’accès aux formations.
+
+Mais à ce moment-là :
+- on ne parle pas de Parcoursup  
+- on ne parle pas des attendus  
+- on rassure… sans expliquer  
+
+Résultat :
+
+> les familles découvrent les règles du jeu… après avoir joué.
+
+---
+
+## 6. Et les enseignants ?
+
+C’est une question importante.
+
+Pourquoi ces informations ne sont-elles pas mieux expliquées ?
+
+La réponse est simple :
+
+> les enseignants n’ont pas toujours accès à ces informations.
+
+Ils ne siègent pas dans les commissions d’admission.
+Ils ne connaissent pas les volumes réels de candidatures.
+Ils n’ont pas toujours les critères précis.
+
+Ils font au mieux.
+
+Mais ils ne peuvent pas tout savoir.
+
+---
+
+## 7. Ce que j’ai découvert (et pourquoi j’ai creusé)
+
+En tant que représentante de parents d’élèves, j’ai vu ces situations se répéter.
+
+Des élèves sérieux, refusés.
+Des familles incompréhensives.
+Des décisions qui semblaient incohérentes.
+
+Alors j’ai commencé à creuser.
+
+J’ai croisé :
+- les données publiques  
+- les fiches Parcoursup  
+- les retours des formations  
+
+Et j’ai compris une chose :
+
+> les données existent.  
+> Elles sont juste… illisibles.
+
+---
+
+## 8. Rendre visible ce qui ne l’est pas
+
+C’est ce qui m’a amenée à construire un outil.
+
+Un outil simple.
+
+Pour répondre à une question très concrète :
+
+> “Avec mon profil, j’en suis où réellement ?”
+
+Pas pour prédire.
+Pas pour promettre.
+
+Mais pour comprendre.
+
+---
+
+## 9. Rassurer sans mentir
+
+Parcoursup fait peur.
+
+Parce qu’on le découvre tard.
+Parce qu’on ne comprend pas les règles.
+Parce qu’on pense que tout est arbitraire.
+
+Mais ce n’est pas le cas.
+
+> Parcoursup n’est pas injuste.
+
+Il est simplement opaque.
+
+Et cette opacité crée du stress.
+
+---
+
+## 10. Ce qu’on peut changer (simplement)
+
+On ne changera pas Parcoursup demain.
+
+Mais on peut changer une chose :
+
+👉 le moment où on en parle.
+
+Pas en Terminale.
+
+En Seconde.
+
+---
+
+## Conclusion
+
+Parcoursup ne décide pas à votre place.
+
+Mais il impose un cadre.
+
+Et ce cadre, aujourd’hui, est mal compris.
+
+Pas parce que les parents ne s’y intéressent pas.
+
+Mais parce que l’information arrive trop tard.
+
+Alors peut-être que la vraie question n’est pas :
+
+> “Comment fonctionne Parcoursup ?”
+
+Mais :
+
+> “Pourquoi ne nous l’explique-t-on pas plus tôt ?”
+
+---
+
+E=HK² 💥
+
 
 
