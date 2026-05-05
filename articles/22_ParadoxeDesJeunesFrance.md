@@ -82,6 +82,62 @@ Tableau comparatif :
 - **Argument** : on applique aux enfants un modèle dont on constate déjà les effets délétères chez les adultes
 
 ### 5. Le paradoxe de l'hyperconnexion
+En 2020, pendant la pandémie, mon fils entre en 6e.
+
+Pour lui, tout est nouveau : les mails, Pronote, l’ENT.
+Il découvre un système qui suppose déjà une autonomie numérique qu’il n’a pas encore construite.
+
+Très vite, les remarques apparaissent :
+ne consulte pas assez son Pronote, ne vérifie pas ses devoirs, ne lit pas ses messages.
+
+En conseil de classe, où je suis présente comme représentante de parents d’élèves, le constat revient presque systématiquement :
+“manque d’autonomie”.
+
+Ce qui frappe, ce n’est pas un cas particulier.
+C’est que cette remarque concerne une grande partie de la classe.
+
+Autrement dit, ce n’est pas un problème individuel.
+C’est une attente collective, posée à des élèves de 11 ans.
+
+Dans notre cas, nous avons pu accompagner notre fils, parce que nous travaillons dans l’informatique.
+Mais ce jour-là, ce n’est pas pour lui que j’ai ressenti de la peine.
+C’est pour les autres.
+
+Pour tous ceux à qui l’on demande de s’organiser dans un environnement que personne ne leur a vraiment appris à maîtriser.
+
+Au même moment, de mon côté, la mécanique est déjà enclenchée.
+Les mails s’accumulent, les notifications s’enchaînent, les réunions se multiplient.
+La journée déborde. Le stress s’installe.
+
+Le parallèle est difficile à ignorer :
+on demande à des enfants d’apprendre à gérer une charge numérique que beaucoup d’adultes peinent eux-mêmes à contenir.
+
+Car l’hyperconnexion ne se limite pas aux écrans.
+Elle impose une logique de disponibilité permanente :
+
+* vérifier
+* anticiper
+* répondre
+* ne rien oublier
+
+Autrement dit, une charge mentale continue.
+
+Ce qui était autrefois contenu dans la classe — un cahier de texte, un livre, un rythme identifiable — s’est transformé en flux.
+
+Le temps scolaire ne s’arrête plus à la sortie de l’école.
+Il se prolonge, de manière diffuse, dans les notifications, les plateformes, les messages.
+
+Et c’est là que le lien avec le reste du système apparaît clairement :
+
+ce n’est pas seulement la durée de la journée qui pèse,
+c’est sa densité réelle, visible et invisible.
+
+On a ajouté une couche numérique à un modèle déjà intensif,
+sans en repenser l’équilibre.
+
+Résultat :
+on demande aux enfants de s’adapter à une organisation que les adultes eux-mêmes décrivent comme épuisante.
+
 - Enfants : Pronote, tablettes, ENT, mails entre profs et parents, devoirs numériques
 - Adultes : Teams, Visio, mails 20h, notifications permanentes
 - Et on dit aux deux : "vous êtes trop sur vos écrans"
