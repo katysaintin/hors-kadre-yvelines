@@ -463,7 +463,7 @@ function renderTable(){
       '<td><div class="bac-bars">'+barreBac('BG',d.pct_bg,'#1B3A6B')+barreBac('BT',d.pct_bt,'#C4572A')+barreBac('BP',d.pct_bp,'#B8860B')+'</div></td>' +
       '<td style="text-align:center;font-size:1rem;font-weight:700;color:'+tauxColor+'">'+(d.taux!==null?fmt(d.taux,0)+'%':'<span style="color:#999">N/D</span>')+'</td>' +
       '<td style="text-align:center;font-weight:700">'+(d.rang!==null?fmtInt(d.rang):'<span style="color:#999">N/D</span>')+'</td>' +
-      '<td style="white-space:nowrap"><a class="btn-fiche" href="'+lienFiche+'" rel="noopener">Comprendre ↗</a><br><a href="'+lienOffic+'" target="_blank" rel="noopener" style="font-size:.7rem;color:var(--gray);text-decoration:underline">fiche officielle</a></td>' +
+      '<td style="white-space:nowrap"><a class="btn-fiche" href="'+lienFiche+'" target="_blank" rel="noopener">Comprendre ↗</a><br><a href="'+lienOffic+'" target="_blank" rel="noopener" style="font-size:.7rem;color:var(--gray);text-decoration:underline">fiche officielle</a></td>' +
       '</tr>';
   });
   tbody.innerHTML = html;
