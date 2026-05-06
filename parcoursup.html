@@ -156,10 +156,23 @@ footer a{color:var(--terra)}
   <!-- FILTRES -->
   <div class="filters">
     <div class="field">
-      <label>Type de formation</label>
+      <label>Famille de formation <a href="typeformation.html" target="_blank" style="font-size:.75rem;font-weight:400;color:var(--terra)">C'est quoi ? →</a></label>
       <select id="f-type">
-        <option value="">— Tous —</option>
+        <option value="">— Toutes —</option>
+        <option value="BUT">🎓 BUT — Bachelor Universitaire de Technologie</option>
+        <option value="BTS">📋 BTS — Brevet de Technicien Supérieur</option>
+        <option value="Licence">📚 Licence (université, 3 ans)</option>
+        <option value="CPGE">⭐ Prépa (CPGE) — Classes Préparatoires</option>
+        <option value="Sante">🏥 Santé — Infirmier, Kiné, Médecine…</option>
+        <option value="Ingenieur">⚙️ École d'ingénieurs</option>
+        <option value="Commerce">💼 Commerce / Management</option>
+        <option value="Art">🎨 Art / Design / Architecture</option>
+        <option value="Autre">📌 Autre</option>
       </select>
+    </div>
+    <div class="field">
+      <label>Préciser la spécialité</label>
+      <input type="text" id="f-motcle" placeholder="ex: Informatique, GEII, Infirmier…">
     </div>
     <div class="field">
       <label>Ville</label>
@@ -176,15 +189,15 @@ footer a{color:var(--terra)}
     <div class="field">
       <label>Trier par</label>
       <select id="f-sort">
-        <option value="ratio-desc">Ratio (plus tendu en 1er)</option>
-        <option value="ratio-asc">Ratio (plus accessible en 1er)</option>
-        <option value="taux-asc">Taux d'accès (plus difficile en 1er)</option>
-        <option value="taux-desc">Taux d'accès (plus facile en 1er)</option>
-        <option value="cand-desc">Nb candidats (plus demandé en 1er)</option>
+        <option value="ratio-desc">Plus tendu en 1er</option>
+        <option value="ratio-asc">Plus accessible en 1er</option>
+        <option value="taux-asc">Plus difficile d'accès en 1er</option>
+        <option value="taux-desc">Plus facile d'accès en 1er</option>
+        <option value="cand-desc">Plus demandé en 1er</option>
         <option value="commune-asc">Ville (A→Z)</option>
       </select>
     </div>
-    <div style="display:flex;gap:8px;align-items:flex-end">
+    <div style="display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap">
       <button class="btn" onclick="applyFilters()">Filtrer</button>
       <button class="btn btn-reset" onclick="resetFilters()">Réinitialiser</button>
     </div>
@@ -260,18 +273,17 @@ var filtered = [];
 var sortField = 'ratio';
 var sortDir = 'desc';
 
-/* Remplir le select type */
-var types = [];
-DATA_PARCOURSUP.forEach(function(d){
-  if(d.type && types.indexOf(d.type) < 0) types.push(d.type);
-});
-types.sort();
-var selType = document.getElementById('f-type');
-types.forEach(function(t){
-  var o = document.createElement('option');
-  o.value = t; o.textContent = t;
-  selType.appendChild(o);
-});
+/* Mapping familles → types réels dans les données */
+var FAMILLE_MAPPING = {
+  'BUT': function(type){ return type.indexOf('BUT') >= 0 || type.indexOf('DUT') >= 0; },
+  'BTS': function(type){ return type.indexOf('BTS') >= 0 || type.indexOf('BTSA') >= 0 || type.indexOf('BTSM') >= 0; },
+  'Licence': function(type){ return type.indexOf('Licence') >= 0; },
+  'CPGE': function(type){ return type.indexOf('CPGE') >= 0; },
+  'Sante': function(type){ return type.indexOf('santé') >= 0 || type.indexOf('Santé') >= 0 || type.indexOf('Etudes de') >= 0; },
+  'Ingenieur': function(type){ return type.indexOf('ingénieurs') >= 0 || type.indexOf('ingénieur') >= 0; },
+  'Commerce': function(type){ return type.indexOf('commerce') >= 0 || type.indexOf('Commerce') >= 0 || type.indexOf('management') >= 0 || type.indexOf('Management') >= 0; },
+  'Art': function(type){ return type.indexOf('art') >= 0 || type.indexOf('Art') >= 0 || type.indexOf('design') >= 0 || type.indexOf('architecture') >= 0 || type.indexOf('Architecture') >= 0; }
+};
 
 function ratioColor(r){
   if(r===null) return '#999';
@@ -305,15 +317,29 @@ function barreBac(label, pct, color){
 }
 
 function applyFilters(){
-  var typeVal   = document.getElementById('f-type').value;
-  var communeVal= document.getElementById('f-commune').value.toLowerCase().trim();
-  var selVal    = document.getElementById('f-sel').value;
-  var sortVal   = document.getElementById('f-sort').value.split('-');
+  var familleVal = document.getElementById('f-type').value;
+  var motcleVal  = document.getElementById('f-motcle').value.toLowerCase().trim();
+  var communeVal = document.getElementById('f-commune').value.toLowerCase().trim();
+  var selVal     = document.getElementById('f-sel').value;
+  var sortVal    = document.getElementById('f-sort').value.split('-');
   sortField = sortVal[0];
   sortDir   = sortVal[1] || 'desc';
 
   filtered = DATA_PARCOURSUP.filter(function(d){
-    if(typeVal    && d.type !== typeVal) return false;
+    // Filtre famille
+    if(familleVal && familleVal !== 'Autre') {
+      var fn = FAMILLE_MAPPING[familleVal];
+      if(fn && !fn(d.type)) return false;
+    } else if(familleVal === 'Autre') {
+      var matched = false;
+      for(var k in FAMILLE_MAPPING) { if(FAMILLE_MAPPING[k](d.type)){ matched=true; break; } }
+      if(matched) return false;
+    }
+    // Filtre mot-clé spécialité (cherche dans nom + type)
+    if(motcleVal) {
+      var haystack = (d.nom + ' ' + d.type + ' ' + d.etab).toLowerCase();
+      if(haystack.indexOf(motcleVal) < 0) return false;
+    }
     if(communeVal && d.commune.toLowerCase().indexOf(communeVal) < 0) return false;
     if(selVal !== '' && String(d.sel) !== selVal) return false;
     return true;
@@ -335,6 +361,7 @@ function applyFilters(){
 
 function resetFilters(){
   document.getElementById('f-type').value = '';
+  document.getElementById('f-motcle').value = '';
   document.getElementById('f-commune').value = '';
   document.getElementById('f-sel').value = '';
   document.getElementById('f-sort').value = 'ratio-desc';
@@ -415,7 +442,8 @@ function renderTable(){
     var color = ratioColor(d.ratio);
     var label = ratioLabel(d.ratio);
     var tauxColor = d.taux===null?'#999':d.taux>=50?'#2d8a4e':d.taux>=20?'#c47f00':'#b0261e';
-    var lienFiche = 'https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod='+d.cod+'&typeBac=0&originePc=0';
+    var lienFiche = 'http://katy.ho.free.fr/formation.php?cod='+d.cod;
+    var lienOffic = 'https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod='+d.cod+'&typeBac=0&originePc=0';
 
     var tags = '';
     tags += d.sel ? '<span class="tag tag-sel">Sélective</span>' : '<span class="tag tag-open">Non sélective</span>';
@@ -435,7 +463,7 @@ function renderTable(){
       '<td><div class="bac-bars">'+barreBac('BG',d.pct_bg,'#1B3A6B')+barreBac('BT',d.pct_bt,'#C4572A')+barreBac('BP',d.pct_bp,'#B8860B')+'</div></td>' +
       '<td style="text-align:center;font-size:1rem;font-weight:700;color:'+tauxColor+'">'+(d.taux!==null?fmt(d.taux,0)+'%':'<span style="color:#999">N/D</span>')+'</td>' +
       '<td style="text-align:center;font-weight:700">'+(d.rang!==null?fmtInt(d.rang):'<span style="color:#999">N/D</span>')+'</td>' +
-      '<td><a class="btn-fiche" href="'+lienFiche+'" target="_blank" rel="noopener">Voir ↗</a></td>' +
+      '<td style="white-space:nowrap"><a class="btn-fiche" href="'+lienFiche+'" rel="noopener">Comprendre ↗</a><br><a href="'+lienOffic+'" target="_blank" rel="noopener" style="font-size:.7rem;color:var(--gray);text-decoration:underline">fiche officielle</a></td>' +
       '</tr>';
   });
   tbody.innerHTML = html;
