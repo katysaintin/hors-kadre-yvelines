@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quelle formation après le bac ? — Hors Kadre</title>
+<meta name="description" content="BUT, BTS, Licence, Prépa, école d'ingénieurs… comprendre les différences en 5 minutes. Guide FALC pour les familles.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1H0D33HE0"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','G-N1H0D33HE0',{'anonymize_ip':true});
+</script>
+<style>
+:root{
+  --navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
+  --gold:#B8860B;--gray:#555;--border:#d9d1ca;--white:#fff;
+  --green:#2d8a4e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;color:var(--navy);line-height:1.6}
+a{color:var(--terra);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);padding:20px 16px;text-align:center}
+.site-header img{max-width:460px;width:60%;height:auto;display:inline-block;margin-bottom:10px}
+.nav-links{font-size:.88rem;margin-top:8px}
+.nav-links a{margin:0 10px;color:var(--navy);font-weight:600}
+.nav-links a:hover{color:var(--terra)}
+
+.container{max-width:900px;margin:0 auto;padding:28px 16px 80px}
+
+.page-title{font-size:1.5rem;color:var(--terra);margin-bottom:6px}
+.page-sub{font-size:.93rem;color:var(--gray);margin-bottom:24px;line-height:1.6}
+
+/* NAV FORMATIONS */
+.nav-formations{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.nav-btn{padding:6px 14px;border-radius:20px;border:2px solid var(--border);background:var(--white);color:var(--navy);font-family:Georgia,serif;font-size:.85rem;cursor:pointer;text-decoration:none;display:inline-block}
+.nav-btn:hover,.nav-btn.active{background:var(--terra);color:var(--white);border-color:var(--terra);text-decoration:none}
+
+/* CARD FORMATION */
+.formation-card{background:var(--white);border:1px solid var(--border);border-radius:14px;margin-bottom:28px;overflow:hidden;scroll-margin-top:20px}
+.card-header{padding:18px 22px;display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--border)}
+.card-icon{font-size:2.2rem;flex-shrink:0}
+.card-header h2{font-size:1.2rem;color:var(--navy);margin-bottom:2px}
+.card-header .accroche{font-size:.88rem;color:var(--gray);font-style:italic}
+.card-body{padding:20px 22px}
+
+/* GRILLE INFOS */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:18px}
+.info-bloc{background:var(--offwhite);border-radius:8px;padding:12px 14px}
+.info-bloc .label{font-size:.75rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.info-bloc .value{font-size:.92rem;color:var(--navy);line-height:1.5}
+.info-bloc .value strong{color:var(--terra)}
+
+/* EXPLICATION */
+.explication{font-size:.92rem;color:var(--navy);line-height:1.7;margin-bottom:14px}
+.explication p{margin-bottom:8px}
+.explication p:last-child{margin-bottom:0}
+
+/* AVANTAGES / POINTS D'ATTENTION */
+.deux-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.avantages,.attention{border-radius:8px;padding:12px 14px;font-size:.88rem}
+.avantages{background:#d1fae5;border:1px solid #6ee7b7}
+.attention{background:#fef3c7;border:1px solid #fcd34d}
+.avantages h4{color:#065f46;margin-bottom:6px;font-size:.85rem}
+.attention h4{color:#92400e;margin-bottom:6px;font-size:.85rem}
+.avantages li,.attention li{margin-left:14px;margin-bottom:3px;line-height:1.5}
+
+/* LIEN */
+.lien-officiel{display:inline-flex;align-items:center;gap:6px;background:var(--offwhite);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:.85rem;color:var(--navy);text-decoration:none;margin-top:4px}
+.lien-officiel:hover{background:var(--navy);color:var(--white);text-decoration:none}
+
+/* ENCART CONSEIL */
+.conseil-global{background:var(--offwhite);border:1px solid var(--border);border-left:5px solid var(--terra);border-radius:8px;padding:16px 18px;margin-bottom:24px;font-size:.92rem;line-height:1.7}
+.conseil-global h3{color:var(--terra);margin-bottom:8px;font-size:1rem}
+
+/* FOOTER */
+footer{text-align:center;color:var(--gray);font-size:.82rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);line-height:1.9}
+footer a{color:var(--terra)}
+
+#rgpd-banner{position:fixed;bottom:0;left:0;right:0;background:#1a2a4a;color:#fff;padding:12px 20px;font-size:13px;display:flex;justify-content:space-between;align-items:center;z-index:9999;font-family:sans-serif}
+#rgpd-banner a{color:#e07a5f}
+#rgpd-btn{background:#e07a5f;color:white;border:none;padding:8px 16px;cursor:pointer;border-radius:4px;margin-left:20px;white-space:nowrap}
+
+@media(max-width:600px){
+  .deux-col{grid-template-columns:1fr}
+  .info-grid{grid-template-columns:1fr}
+  .card-header{flex-direction:column;align-items:flex-start;gap:8px}
+  #rgpd-banner{flex-direction:column;gap:8px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="nav-links">
+    <a href="index.html">← Accueil</a>
+    <a href="parcoursup.html">Comprendre Parcoursup</a>
+    <a href="indexival.html">Comparer les lycées</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <h1 class="page-title">Quelle formation après le bac ?</h1>
+  <p class="page-sub">
+    BUT, BTS, Licence, Prépa… Ces mots reviennent partout mais personne ne les explique vraiment.
+    Voici un guide simple — sans jargon — pour comprendre les différences et choisir en connaissance de cause.
+  </p>
+
+  <!-- Navigation rapide -->
+  <div class="nav-formations">
+    <a href="#but" class="nav-btn">🎓 BUT</a>
+    <a href="#bts" class="nav-btn">📋 BTS</a>
+    <a href="#licence" class="nav-btn">📚 Licence</a>
+    <a href="#cpge" class="nav-btn">⭐ Prépa (CPGE)</a>
+    <a href="#ingenieur" class="nav-btn">⚙️ École d'ingénieurs</a>
+    <a href="#sante" class="nav-btn">🏥 Santé</a>
+    <a href="#commerce" class="nav-btn">💼 Commerce</a>
+    <a href="#art" class="nav-btn">🎨 Art / Design</a>
+  </div>
+
+  <!-- CONSEIL GLOBAL -->
+  <div class="conseil-global">
+    <h3>💡 Avant de choisir — ce qu'il faut savoir</h3>
+    <p>
+      Il n'y a pas de "meilleure" formation. Il y a la formation la plus adaptée
+      au profil et au projet de votre enfant.
+      Un BTS bien choisi vaut mieux qu'une Licence subie.
+      Une Prépa réussie ouvre des portes, mais une Prépa mal vécue peut être épuisante.
+    </p>
+    <p>
+      <strong>Le vrai conseil :</strong> commencer par le métier visé, puis remonter vers la formation —
+      pas l'inverse. Et aller aux Journées Portes Ouvertes dès la Première.
+    </p>
+  </div>
+
+  <!-- BUT -->
+  <div class="formation-card" id="but">
+    <div class="card-header">
+      <div class="card-icon">🎓</div>
+      <div>
+        <h2>BUT — Bachelor Universitaire de Technologie</h2>
+        <div class="accroche">Anciennement DUT. Une formation professionnelle à l'université, en 3 ans.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value"><strong>3 ans</strong> (Bac+3)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Sur dossier Parcoursup — <strong>sélectif</strong></div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Contrôle continu + projets + stage</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value"><strong>Gratuit</strong> (frais d'inscription université ~175€/an)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value">Cours + travaux pratiques + stages. Encadrement fort.</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Emploi direct ou poursuite en Licence Pro / école d'ingénieurs</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          Le BUT se passe dans un <strong>IUT</strong> (Institut Universitaire de Technologie), rattaché à une université.
+          C'est une formation très pratique, avec beaucoup de projets, de travaux en groupe et deux stages obligatoires.
+          Les groupes sont petits (~25 élèves) et les professeurs connaissent leurs étudiants.
+        </p>
+        <p>
+          Il existe des dizaines de spécialités : Informatique, Génie Électrique, Réseaux, Commerce, Gestion, Chimie…
+          Chaque spécialité est différente — il faut regarder les <strong>attendus</strong> de chaque IUT.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>Très professionnalisant, stages inclus</li>
+            <li>Petits groupes, bon encadrement</li>
+            <li>Gratuit ou peu coûteux</li>
+            <li>Bonne insertion professionnelle</li>
+            <li>Passerelles vers école d'ingénieurs</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Sélection à l'entrée (concurrence réelle)</li>
+            <li>Rythme soutenu, peu de liberté</li>
+            <li>Pas forcément disponible près de chez vous</li>
+            <li>Certaines spécialités très demandées (ex: Informatique)</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-IUT-instituts-universitaires-de-technologie" target="_blank" class="lien-officiel">
+        En savoir plus sur le BUT — ONISEP ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- BTS -->
+  <div class="formation-card" id="bts">
+    <div class="card-header">
+      <div class="card-icon">📋</div>
+      <div>
+        <h2>BTS — Brevet de Technicien Supérieur</h2>
+        <div class="accroche">La formation courte la plus répandue en France. 2 ans, très professionnelle.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value"><strong>2 ans</strong> (Bac+2)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Sur dossier Parcoursup — <strong>variable selon filière</strong></div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Contrôle continu + examen final (BTS)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value"><strong>Gratuit</strong> en lycée public. Payant en école privée.</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value">Proche du lycée — horaires fixes, encadrement fort</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Emploi direct (la majorité) ou poursuite en Licence Pro / BUT</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          Le BTS se prépare dans un lycée (public ou privé). Il dure 2 ans et mène à un diplôme d'État reconnu.
+          C'est la formation idéale pour entrer rapidement dans la vie active.
+          Il existe plus de <strong>100 spécialités</strong> de BTS : commerce, informatique, électrotechnique,
+          comptabilité, hôtellerie, santé, agriculture, design…
+        </p>
+        <p>
+          Attention : certains BTS sont très demandés et donc sélectifs à l'entrée.
+          D'autres ont encore des places disponibles. Regardez les données Parcoursup pour chaque formation.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>2 ans — insertion rapide</li>
+            <li>Très concret, peu de théorie</li>
+            <li>Partout en France — près de chez vous</li>
+            <li>Gratuit en lycée public</li>
+            <li>Idéal pour les profils pratiques</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Bac+2 seulement (mais passerelles possibles)</li>
+            <li>Rythme intense, proche du lycée</li>
+            <li>Qualité très variable selon l'établissement</li>
+            <li>Exam final = pression en fin de 2ème année</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-BTS-brevets-de-technicien-superieur" target="_blank" class="lien-officiel">
+        En savoir plus sur le BTS — ONISEP ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- LICENCE -->
+  <div class="formation-card" id="licence">
+    <div class="card-header">
+      <div class="card-icon">📚</div>
+      <div>
+        <h2>Licence — Formation universitaire générale</h2>
+        <div class="accroche">3 ans à l'université. Liberté et autonomie — mais il faut être organisé.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value"><strong>3 ans</strong> (Bac+3) → peut continuer en Master (Bac+5)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Sur dossier Parcoursup — <strong>très variable</strong> selon filière</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Partiels (examens en fin de semestre) + parfois contrôle continu</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value"><strong>Gratuit</strong> (frais d'inscription ~175€/an)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value">Plus libre qu'au lycée — gestion personnelle du temps indispensable</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Master (spécialisation), concours, école, emploi selon filière</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          La Licence se passe à l'<strong>université</strong>. Elle couvre presque tous les domaines :
+          Droit, Économie, Lettres, Sciences, Informatique, Histoire, Psychologie, STAPS…
+          C'est une formation plus théorique que le BUT ou le BTS.
+          Elle demande beaucoup d'autonomie : personne ne viendra vous chercher si vous ratez des cours.
+        </p>
+        <p>
+          Certaines Licences sont très sélectives (Médecine, Sciences Po, doubles diplômes).
+          D'autres acceptent la plupart des candidats — mais le taux d'échec en 1ère année peut être élevé.
+          Regardez le <strong>taux d'accès</strong> sur la fiche Parcoursup de chaque formation.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>Très large choix de spécialités</li>
+            <li>Gratuit, accessible à tous</li>
+            <li>Passerelle vers Master et doctorat</li>
+            <li>Idéal pour qui aime la théorie et la recherche</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Taux d'échec en L1 parfois élevé</li>
+            <li>Demande beaucoup d'autonomie</li>
+            <li>Peu de stages intégrés</li>
+            <li>Débouchés pas toujours clairs à Bac+3</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-universites" target="_blank" class="lien-officiel">
+        En savoir plus sur la Licence — ONISEP ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- CPGE -->
+  <div class="formation-card" id="cpge">
+    <div class="card-header">
+      <div class="card-icon">⭐</div>
+      <div>
+        <h2>Prépa — Classes Préparatoires aux Grandes Écoles (CPGE)</h2>
+        <div class="accroche">2 ans très intensifs pour accéder aux Grandes Écoles via concours.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value"><strong>2 ans</strong> de prépa → puis Grande École (2-3 ans)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Très sélectif sur dossier — <strong>excellents résultats requis</strong></div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Contrôle continu intense + concours national en fin de 2ème année</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value"><strong>Gratuit</strong> en lycée public (internat souvent disponible)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value"><strong>Très intensif</strong> — 35-45h de cours par semaine + travail personnel</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Grandes Écoles (ingénieurs, commerce, ENS…) via concours</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          La Prépa (CPGE) se prépare dans un lycée pendant 2 ans — avec un rythme très soutenu.
+          L'objectif : passer les <strong>concours des Grandes Écoles</strong> (Polytechnique, Centrale, HEC, ENS…).
+          Ce sont des classes à effectif réduit, avec beaucoup de travail personnel.
+        </p>
+        <p>
+          Il existe plusieurs types de Prépa :
+          <strong>MPSI/MP</strong> (Maths-Physique), <strong>PCSI/PC</strong> (Physique-Chimie),
+          <strong>BCPST</strong> (Biologie), <strong>ECG</strong> (Commerce), <strong>Lettres</strong>…
+          Même sans intégrer une Grande École, une Prépa sur le CV est un signal fort pour les recruteurs.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>Ouvre les portes des meilleures écoles</li>
+            <li>Formation très rigoureuse et reconnue</li>
+            <li>Gratuit en lycée public</li>
+            <li>Même sans intégrer une Grande École, la valeur reste</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Rythme épuisant — vie sociale réduite</li>
+            <li>Résultats incertains (concours national)</li>
+            <li>Pas fait pour tout le monde — mal vécu si subi</li>
+            <li>Demande d'être dans les meilleurs de sa classe</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-classes-preparatoires-aux-grandes-ecoles-CPGE" target="_blank" class="lien-officiel">
+        En savoir plus sur la Prépa — ONISEP ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- ÉCOLE D'INGÉNIEURS -->
+  <div class="formation-card" id="ingenieur">
+    <div class="card-header">
+      <div class="card-icon">⚙️</div>
+      <div>
+        <h2>École d'ingénieurs</h2>
+        <div class="accroche">5 ans après le bac (Bac+5). Accès direct ou via Prépa.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value"><strong>5 ans</strong> après le bac (Bac+5 — grade Master)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Via concours (après Prépa) ou <strong>accès direct sur Parcoursup</strong></div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Contrôle continu + projets + stages + rapport de fin d'études</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value">Variable : <strong>gratuit</strong> (publiques) à <strong>8 000-15 000€/an</strong> (privées)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value">Intensif — projets, stages, parfois alternance possible</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Emploi cadre dans l'industrie, le numérique, l'énergie, etc.</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          Les écoles d'ingénieurs délivrent un <strong>diplôme d'ingénieur</strong> — titre protégé,
+          reconnu parmi les plus recherchés par les employeurs.
+          Certaines s'intègrent après la Prépa via concours (Polytechnique, Centrale, Arts et Métiers…).
+          D'autres acceptent des candidats <strong>directement sur Parcoursup</strong> après le bac — c'est le cas
+          d'ESTACA, ESEO, ISTY et d'autres en Yvelines.
+        </p>
+        <p>
+          Attention aux écoles privées : le coût peut être très élevé.
+          Vérifiez toujours si le diplôme est <strong>accrédité CTI</strong>
+          (Commission des Titres d'Ingénieur) — c'est la garantie de la qualité.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>Diplôme très valorisé sur le marché</li>
+            <li>Salaire à l'embauche souvent élevé</li>
+            <li>Réseau d'anciens élèves puissant</li>
+            <li>Accès direct possible sans Prépa</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Coût élevé pour les écoles privées</li>
+            <li>5 ans d'études — investissement long</li>
+            <li>Vérifier l'accréditation CTI</li>
+            <li>Concurrence forte pour les meilleures écoles</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.cti-commission.fr/index-annuaire-des-formations-accreditees" target="_blank" class="lien-officiel">
+        Vérifier l'accréditation CTI d'une école ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- SANTÉ -->
+  <div class="formation-card" id="sante">
+    <div class="card-header">
+      <div class="card-icon">🏥</div>
+      <div>
+        <h2>Études de santé — Infirmier, Médecine, Kiné…</h2>
+        <div class="accroche">Des voies très diverses, souvent très sélectives, avec un fort sens du service.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value">3 ans (IDE) à 9 ans (Médecine)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Très sélectif — certaines filières parmi les plus demandées</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Contrôle continu + stages cliniques + examens</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value">Variable — IFSI publics gratuits, certaines formations payantes</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value">Théorie en cours + stages pratiques en milieu de soin</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Emploi quasi-garanti dans le secteur de la santé</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          Les études de santé regroupent des voies très différentes :
+          <strong>Infirmier (IDE)</strong> en 3 ans via IFSI,
+          <strong>Kinésithérapeute</strong> en 4 ans, <strong>Médecin</strong> en 9 ans minimum,
+          <strong>Ergothérapeute, Psychomotricien</strong>, etc.
+        </p>
+        <p>
+          Pour la Médecine, le parcours passe désormais par le <strong>PASS</strong>
+          (Parcours d'Accès Spécifique Santé) ou la <strong>LAS</strong> (Licence avec accès santé).
+          Ce sont des filières extrêmement sélectives — regardez les données Parcoursup avec attention.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>Emploi stable et recherché</li>
+            <li>Travail concret, avec du sens</li>
+            <li>Passerelles entre spécialités</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Très sélectif à l'entrée</li>
+            <li>Stages intensifs dès la 1ère année</li>
+            <li>Médecine = très longues études</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-etudes-de-sante" target="_blank" class="lien-officiel">
+        En savoir plus sur les études de santé — ONISEP ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- COMMERCE -->
+  <div class="formation-card" id="commerce">
+    <div class="card-header">
+      <div class="card-icon">💼</div>
+      <div>
+        <h2>Écoles de commerce et de management</h2>
+        <div class="accroche">Du Bachelor (3 ans) au Master (5 ans). Attention aux frais de scolarité.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value"><strong>3 à 5 ans</strong> selon le niveau visé</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Dossier Parcoursup (accès direct) ou concours (après Prépa ECG)</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Projets, études de cas, stages, parfois concours d'entrée</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value"><strong>Très variable</strong> : de 3 000€ à 15 000€/an selon l'école</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value">Projets, voyages, stages, alternance souvent possible</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Commerce, marketing, RH, finance, entrepreneuriat…</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          Les écoles de commerce vont du <strong>Bachelor</strong> (accessible directement après le bac)
+          aux Grandes Écoles de commerce comme HEC, ESSEC, EDHEC (accessibles après Prépa ECG).
+          La qualité et la réputation varient beaucoup d'une école à l'autre.
+        </p>
+        <p>
+          <strong>Vérifiez toujours</strong> si l'école est reconnue par l'État
+          (visa ou grade de Master accordé par le Ministère) et si elle est accréditée
+          (AACSB, EQUIS, AMBA). Ces labels garantissent un niveau sérieux.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>Réseau professionnel dès les études</li>
+            <li>Stages et alternance intégrés</li>
+            <li>Profils variés acceptés</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Coût souvent très élevé</li>
+            <li>Qualité très inégale entre écoles</li>
+            <li>Vérifier accréditation et reconnaissance</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-ecoles-de-commerce" target="_blank" class="lien-officiel">
+        En savoir plus sur les écoles de commerce — ONISEP ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- ART / DESIGN -->
+  <div class="formation-card" id="art">
+    <div class="card-header">
+      <div class="card-icon">🎨</div>
+      <div>
+        <h2>Art, Design et Architecture</h2>
+        <div class="accroche">Des formations créatives souvent sélectives, avec concours ou dossier artistique.</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="info-grid">
+        <div class="info-bloc">
+          <div class="label">Durée</div>
+          <div class="value"><strong>3 à 5 ans</strong> selon le diplôme visé</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Accès</div>
+          <div class="value">Dossier Parcoursup + souvent <strong>épreuve artistique ou entretien</strong></div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Évaluation</div>
+          <div class="value">Projets, portfolio, présentation orale, mémoire</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Coût</div>
+          <div class="value">Variable — DN MADE gratuit en lycée public, écoles privées payantes</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Rythme</div>
+          <div class="value">Ateliers pratiques, projets créatifs, peu de cours magistraux</div>
+        </div>
+        <div class="info-bloc">
+          <div class="label">Après</div>
+          <div class="value">Design, communication, architecture, mode, jeux vidéo, cinéma…</div>
+        </div>
+      </div>
+      <div class="explication">
+        <p>
+          Les formations artistiques sont très diverses. On y trouve le <strong>DN MADE</strong>
+          (Diplôme National des Métiers d'Art et du Design, 3 ans en lycée),
+          les <strong>écoles supérieures d'art</strong>, les <strong>écoles d'architecture</strong>
+          et des <strong>formations privées</strong> en cinéma, animation, jeux vidéo, mode…
+        </p>
+        <p>
+          L'accès se fait souvent sur dossier + épreuve artistique ou entretien de motivation.
+          Le portfolio (recueil de vos créations) est souvent aussi important que les notes scolaires.
+        </p>
+      </div>
+      <div class="deux-col">
+        <div class="avantages">
+          <h4>✅ Points forts</h4>
+          <ul>
+            <li>Pratique et créatif — pas de cours magistraux</li>
+            <li>Passion et projet au cœur des études</li>
+            <li>DN MADE gratuit en lycée public</li>
+          </ul>
+        </div>
+        <div class="attention">
+          <h4>⚠️ Points d'attention</h4>
+          <ul>
+            <li>Marché de l'emploi parfois difficile</li>
+            <li>Écoles privées très coûteuses</li>
+            <li>Demande un projet artistique clair</li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-ecoles-d-art" target="_blank" class="lien-officiel">
+        En savoir plus sur les formations artistiques — ONISEP ↗
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    ©2026 Katy Saintin — Hors Kadre · Yvelines (78)<br>
+    Sources : ONISEP, CTI, Ministère de l'Enseignement supérieur<br>
+    <a href="index.html">Accueil</a> |
+    <a href="parcoursup.html">Comprendre Parcoursup</a> |
+    <a href="mailto:katy.saintin@gmail.com">Contact</a>
+  </footer>
+
+</div>
+
+<div id="rgpd-banner">
+  <span>Ce site utilise Google Analytics pour mesurer l'audience.
+    <a href="legal/mentions-legales.html">En savoir plus</a></span>
+  <button id="rgpd-btn" onclick="document.getElementById('rgpd-banner').style.display='none';
+    localStorage.setItem('rgpd-ok','1')">J'ai compris</button>
+</div>
+<script>
+  if(localStorage.getItem('rgpd-ok'))
+    document.getElementById('rgpd-banner').style.display='none';
+
+  // Highlight nav active au scroll
+  var cards = document.querySelectorAll('.formation-card');
+  var navBtns = document.querySelectorAll('.nav-btn');
+  document.addEventListener('scroll', function(){
+    var scrollY = window.scrollY + 80;
+    cards.forEach(function(card){
+      if(card.offsetTop <= scrollY && card.offsetTop + card.offsetHeight > scrollY){
+        navBtns.forEach(function(b){ b.classList.remove('active'); });
+        var target = document.querySelector('.nav-btn[href="#'+card.id+'"]');
+        if(target) target.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
