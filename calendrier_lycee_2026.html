@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendrier Lycée – Mai/Juillet 2026 · UNAAPE</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --blue: #1a4a7a;
+    --sky: #3b82c4;
+    --gold: #e8a020;
+    --mint: #2eb89a;
+    --rose: #d95a5a;
+    --lilac: #7c6fcd;
+    --bg: #f4f6fa;
+    --card: #ffffff;
+    --text: #1a2230;
+    --muted: #6b7a90;
+    --border: #dde3ef;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0 0 40px;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    color: white;
+    padding: 32px 24px 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 180px; height: 180px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -30px; left: -20px;
+    width: 120px; height: 120px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+  }
+  .header .badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .header p {
+    font-size: 13px;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px 16px 4px;
+    justify-content: center;
+  }
+  .leg {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11.5px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .leg-dot {
+    width: 10px; height: 10px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  /* SECTION */
+  .section {
+    padding: 20px 14px 0;
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .section-icon {
+    width: 34px; height: 34px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .section-sub {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 400;
+    margin-top: 1px;
+  }
+
+  /* CARDS */
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .event-card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 11px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-left: 4px solid var(--border);
+    transition: transform 0.15s;
+  }
+  .event-card .date-pill {
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 5px 9px;
+    text-align: center;
+    min-width: 54px;
+    flex-shrink: 0;
+  }
+  .date-pill .day {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--navy);
+  }
+  .date-pill .month {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .event-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .event-title {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.35;
+  }
+  .event-detail {
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-top: 3px;
+    font-weight: 400;
+  }
+  .event-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* color themes */
+  .c-blue  { border-left-color: var(--sky);    }
+  .c-gold  { border-left-color: var(--gold);   }
+  .c-mint  { border-left-color: var(--mint);   }
+  .c-rose  { border-left-color: var(--rose);   }
+  .c-lilac { border-left-color: var(--lilac);  }
+  .c-navy  { border-left-color: var(--navy);   }
+
+  .tag-blue  { background: #dbeafe; color: #1d4ed8; }
+  .tag-gold  { background: #fef3c7; color: #92400e; }
+  .tag-mint  { background: #d1fae5; color: #065f46; }
+  .tag-rose  { background: #fee2e2; color: #991b1b; }
+  .tag-lilac { background: #ede9fe; color: #4c1d95; }
+  .tag-navy  { background: #e0e7ff; color: #1e3a8a; }
+
+  .icon-blue  { background: #dbeafe; }
+  .icon-gold  { background: #fef3c7; }
+  .icon-mint  { background: #d1fae5; }
+  .icon-rose  { background: #fee2e2; }
+  .icon-lilac { background: #ede9fe; }
+  .icon-navy  { background: #e0e7ff; }
+
+  /* MEMO BOX */
+  .memo-box {
+    background: #fff8e8;
+    border: 1.5px dashed var(--gold);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin: 20px 14px 0;
+  }
+  .memo-box h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #92400e;
+    margin-bottom: 8px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .memo-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .memo-box li {
+    font-size: 12px;
+    color: #78350f;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .memo-box li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+  }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 22px 14px 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 24px 16px 0;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .footer strong {
+    color: var(--navy);
+  }
+
+  /* range card */
+  .range-card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 11px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-left: 4px solid var(--border);
+  }
+  .range-dates {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    min-width: 80px;
+    text-align: center;
+    line-height: 1.3;
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 6px 8px;
+  }
+  .range-dates .range-sep {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--muted);
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="badge">UNAAPE · Lycée Montigny</div>
+  <h1>Calendrier de fin d'année<br>2025–2026</h1>
+  <p>Mai · Juin · Juillet 2026 — Information parents</p>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="leg"><div class="leg-dot" style="background:var(--sky)"></div>Seconde</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--gold)"></div>Première</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--mint)"></div>Terminale</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--rose)"></div>BTS</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--lilac)"></div>Prépa</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--navy)"></div>Commun</div>
+</div>
+
+<!-- ═══ MAI ═══ -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon icon-navy">📅</div>
+    <div>
+      <div class="section-label">Mai 2026</div>
+    </div>
+  </div>
+
+  <div class="card-list">
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">8</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Jour férié</div>
+        <div class="event-detail">Pas de cours</div>
+        <span class="event-tag tag-navy">Tous niveaux</span>
+      </div>
+    </div>
+
+    <div class="event-card c-gold">
+      <div class="date-pill"><div class="day">11–12</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Oraux étude de gestion STMG</div>
+        <div class="event-detail">+ lundi 18 mai</div>
+        <span class="event-tag tag-gold">Première</span>
+      </div>
+    </div>
+
+    <div class="event-card c-rose">
+      <div class="date-pill"><div class="day">12</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Conseil de classe BTS STS2</div>
+        <span class="event-tag tag-rose">BTS STS2</span>
+      </div>
+    </div>
+
+    <div class="event-card c-rose">
+      <div class="date-pill"><div class="day">13</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Fin des cours BTS STS2</div>
+        <span class="event-tag tag-rose">BTS STS2</span>
+      </div>
+    </div>
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">14–16</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Week-end de l'Ascension</div>
+        <div class="event-detail">Jeudi 14, vendredi 15, samedi 16 — non travaillés</div>
+        <span class="event-tag tag-navy">Tous niveaux</span>
+      </div>
+    </div>
+
+    <div class="event-card c-rose">
+      <div class="date-pill"><div class="day">18–21</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Épreuves écrites du BTS 2026</div>
+        <div class="event-detail">Au lycée (oraux à l'extérieur)</div>
+        <span class="event-tag tag-rose">BTS STS2</span>
+      </div>
+    </div>
+
+    <div class="event-card c-rose">
+      <div class="date-pill"><div class="day">18 Mai–<br/>26 Juin</div><div class="month"></div></div>
+      <div class="event-body">
+        <div class="event-title">Stage BTS STS1</div>
+        <div class="event-detail">Conseil de classe le mardi 2 juin</div>
+        <span class="event-tag tag-rose">BTS STS1</span>
+      </div>
+    </div>
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">19</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Grand oral blanc Terminales</div>
+        <div class="event-detail">Pas de cours pour Secondes et Premières ce jour</div>
+        <span class="event-tag tag-navy">2de · 1ère · Tle</span>
+      </div>
+    </div>
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">25</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Lundi de Pentecôte — Férié</div>
+        <span class="event-tag tag-navy">Tous niveaux</span>
+      </div>
+    </div>
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">26</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Oraux ETLV</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">21–29</div><div class="month">Mai</div></div>
+      <div class="event-body">
+        <div class="event-title">Conseils de classe — 3ème trimestre</div>
+        <div class="event-detail">Secondes & Premières</div>
+        <span class="event-tag tag-navy">2de · 1ère</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ JUIN ═══ -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon icon-gold">🎓</div>
+    <div>
+      <div class="section-label">Juin 2026</div>
+    </div>
+  </div>
+
+  <div class="card-list">
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">2</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">Épreuve pratique Physique</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">4</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">Épreuves pratiques SVT & NSI</div>
+        <div class="event-detail">Matin : inscription Terminale générale (Premières) · Après-midi : inscription Terminale STMG</div>
+        <span class="event-tag tag-mint">Terminale · 1ère</span>
+      </div>
+    </div>
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">9</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">🔔 Fin des cours — tous niveaux</div>
+        <div class="event-detail">Dernier soir de cours (2de, 1ère, Tle)</div>
+        <span class="event-tag tag-navy">2de · 1ère · Tle</span>
+      </div>
+    </div>
+
+    <div class="event-card c-gold">
+      <div class="date-pill"><div class="day">11</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">Épreuve Bac Français — Écrit</div>
+        <div class="event-detail">À partir de 8h00</div>
+        <span class="event-tag tag-gold">Première</span>
+      </div>
+    </div>
+
+    <div class="event-card c-gold">
+      <div class="date-pill"><div class="day">12</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">Épreuve Bac Mathématiques — Écrit</div>
+        <div class="event-detail">À partir de 8h00 · Calculatrice non autorisée sauf notification</div>
+        <span class="event-tag tag-gold">Première</span>
+      </div>
+    </div>
+
+    <div class="event-card c-sky">
+      <div class="date-pill"><div class="day">15–26</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">Stage obligatoire en entreprise</div>
+        <div class="event-detail">Restitution à la maison + fiche bilan (pas de PowerPoint)</div>
+        <span class="event-tag tag-blue">Seconde</span>
+      </div>
+    </div>
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">15</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">Épreuve de Philosophie — Bac</div>
+        <div class="event-detail">À partir de 8h00</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">16–17</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">Épreuves de Spécialités — Bac</div>
+        <div class="event-detail">À partir de 8h00</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">19</div><div class="month">Juin</div></div>
+      <div class="event-body">
+        <div class="event-title">🍽️ Fermeture de la restauration</div>
+        <span class="event-tag tag-navy">Info pratique</span>
+      </div>
+    </div>
+
+    <div class="event-card c-gold">
+      <div class="date-pill"><div class="day">22 Juin–<br/>2 Juil</div><div class="month"></div></div>
+      <div class="event-body">
+        <div class="event-title">Oral de Français — Bac</div>
+        <div class="event-detail">Résultats au plus tard le 10 juillet sur Cyclades</div>
+        <span class="event-tag tag-gold">Première</span>
+      </div>
+    </div>
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">22 Juin–<br/>1 Juil</div><div class="month"></div></div>
+      <div class="event-body">
+        <div class="event-title">Grand Oral — Bac</div>
+        <div class="event-detail">Ne pas oublier la fiche grand oral</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MEMO EXAMENS -->
+<div class="memo-box">
+  <h3>📌 Rappels pour toutes les épreuves</h3>
+  <ul>
+    <li>Arriver <strong>30 minutes avant</strong> chaque épreuve</li>
+    <li>Apporter la <strong>convocation + pièce d'identité</strong></li>
+    <li>Français oral : apporter le descriptif des textes + les œuvres intégrales</li>
+    <li>Grand oral : apporter la fiche grand oral</li>
+  </ul>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ JUILLET ═══ -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon icon-mint">🏆</div>
+    <div>
+      <div class="section-label">Juillet 2026</div>
+    </div>
+  </div>
+
+  <div class="card-list">
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">7</div><div class="month">Juil</div></div>
+      <div class="event-body">
+        <div class="event-title">🎉 Résultats du Baccalauréat</div>
+        <div class="event-detail">Puis inscription dans l'établissement souhaité (Parcoursup)</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">8–9</div><div class="month">Juil</div></div>
+      <div class="event-body">
+        <div class="event-title">Oraux de rattrapage</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+    <div class="event-card c-mint">
+      <div class="date-pill"><div class="day">10</div><div class="month">Juil</div></div>
+      <div class="event-body">
+        <div class="event-title">Résultats après rattrapage</div>
+        <div class="event-detail">Affichage au lycée + disponible sur Cyclades</div>
+        <span class="event-tag tag-mint">Terminale</span>
+      </div>
+    </div>
+
+    <div class="event-card c-navy">
+      <div class="date-pill"><div class="day">10 Juil–<br/>25 Août</div><div class="month"></div></div>
+      <div class="event-body">
+        <div class="event-title">🔒 Fermeture administrative du lycée</div>
+        <span class="event-tag tag-navy">Info pratique</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PARCOURSUP -->
+<div class="memo-box" style="border-color:var(--mint); background:#f0fdf9; margin-top:20px;">
+  <h3 style="color:#065f46;">🎓 Parcoursup — Terminales</h3>
+  <ul style="color:#065f46;">
+    <li><strong>2 juin</strong> : Début de la phase d'admission</li>
+    <li><strong>5–8 juin</strong> : Classement des vœux en attente</li>
+    <li><strong>11 juin</strong> : Début de la phase complémentaire</li>
+    <li><em>Délais suspendus pendant les épreuves écrites du bac</em></li>
+    <li><strong>11 juillet</strong> : Fin de la phase principale</li>
+    <li><strong>10 septembre</strong> : Fin de la phase complémentaire</li>
+  </ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p><strong>UNAAPE — Représentants de parents d'élèves</strong><br>Lycée · Montigny · Année 2025–2026</p>
+  <p style="margin-top:6px; color:#b0bac8;">Document d'information — pour toute question, contactez l'administration du lycée.</p>
+</div>
+
+</body>
+</html>
