@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hors Kadre — Données éducatives et orientation — Yvelines</title>
-<meta name="description" content="Hors Kadre : outils d'exploration des données publiques sur les lycées (IVAL) et Parcoursup dans les Yvelines. Pour les familles.">
+<title>Hors Kadre — Yvelines — Comprendre l'orientation, simplement</title>
+<meta name="description" content="Hors Kadre Yvelines : outils gratuits pour comprendre Parcoursup et comparer les lycées des Yvelines. Pour les familles, sans jargon.">
 
-<!-- Google Analytics GitHub -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1H0D33HE0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,213 +16,244 @@
 
 <style>
 :root {
-  --navy:#1B3A6B; --terra:#C4572A; --offwhite:#F5F0EB;
-  --gold:#B8860B; --gray:#555; --border:#d9d1ca; --white:#fff;
+  --navy:     #1B3A6B;
+  --terra:    #C4572A;
+  --offwhite: #F5F0EB;
+  --gray:     #666;
+  --border:   #d9d1ca;
+  --white:    #fff;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;color:var(--navy);line-height:1.6}
-a{color:var(--terra);text-decoration:none}
-a:hover{text-decoration:underline}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #fcfaf8;
+  color: var(--navy);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+a { color: var(--terra); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-/* HEADER */
-.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);padding:20px 16px;text-align:center}
-.site-header img{max-width:460px;width:50%;height:auto;display:inline-block;margin-bottom:12px}
-.tagline{color:var(--gray);font-size:.9rem;font-style:italic;margin-bottom:6px}
-.mediapart-links{font-size:.82rem;margin:10px 0;line-height:2}
-.mediapart-links a{margin:0 8px;color:var(--navy)}
-.mediapart-links a:hover{color:var(--terra)}
-.nav-links{margin-top:10px;font-size:.88rem}
-.nav-links a{margin:0 10px;color:var(--navy);font-weight:600}
-.nav-links a:hover{color:var(--terra)}
+.site-header {
+  background: var(--offwhite);
+  border-bottom: 3px solid var(--terra);
+  padding: 20px 16px 16px;
+  text-align: center;
+}
+.site-header img {
+  max-width: 420px;
+  width: 60%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-size: .88rem;
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.mediapart-links {
+  font-size: .82rem;
+  margin-bottom: 10px;
+  line-height: 2.2;
+}
+.mediapart-links a { margin: 0 8px; color: var(--navy); }
+.mediapart-links a:hover { color: var(--terra); }
 
-/* CONTAINER */
-.container{max-width:900px;margin:0 auto;padding:32px 16px 80px}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
 
-/* INTRO */
-.intro{background:var(--offwhite);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:28px}
-.intro h2{color:var(--terra);font-size:1.1rem;margin-bottom:10px}
-.intro p{font-size:.93rem;color:var(--navy);margin-bottom:8px;line-height:1.7}
-.intro p:last-child{margin-bottom:0}
+/* ALERTE YVELINES */
+.alerte-scope {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f5;
+  border-left: 5px solid var(--navy);
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-size: .85rem;
+  color: var(--navy);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.alerte-scope a { color: var(--terra); }
 
-/* ALERTE HTTP */
-.alerte-http{background:#fff8e1;border:1px solid #ffe082;border-left:5px solid #c47f00;border-radius:8px;padding:12px 14px;margin-bottom:24px;font-size:.85rem;color:#555;line-height:1.6}
-.alerte-http a{color:var(--terra)}
+.accroche {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.accroche h1 {
+  font-size: 1.35rem;
+  color: var(--terra);
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.accroche p {
+  font-size: .93rem;
+  color: var(--gray);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
 
-/* CARDS OUTILS */
-.outils-titre{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--border)}
+.tuiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
 
-.outils-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:32px}
+.tuile {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 20px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: border-color .2s, box-shadow .2s, transform .15s;
+}
+.tuile:hover {
+  border-color: var(--terra);
+  box-shadow: 0 6px 20px rgba(196,87,42,.15);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: var(--navy);
+}
+.tuile-icon { font-size: 2.4rem; }
+.tuile h2 { font-size: 1rem; color: var(--navy); line-height: 1.3; margin: 0; }
+.tuile p { font-size: .82rem; color: var(--gray); line-height: 1.5; margin: 0; }
+.tuile .badge {
+  display: inline-block;
+  background: #fef3c7; color: #92400e;
+  border: 1px solid #fcd34d;
+  border-radius: 10px;
+  font-size: .72rem; font-weight: 700;
+  padding: 2px 8px;
+}
+.tuile-primary {
+  border-color: var(--terra);
+  background: linear-gradient(135deg, #fff 80%, #fdf5f2);
+}
 
-.outil-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:22px;display:flex;flex-direction:column;transition:box-shadow .2s,border-color .2s}
-.outil-card:hover{box-shadow:0 4px 16px rgba(196,87,42,.12);border-color:var(--terra)}
-.outil-icon{font-size:2rem;margin-bottom:12px}
-.outil-card h3{font-size:1.05rem;color:var(--navy);margin-bottom:8px}
-.outil-card .desc{font-size:.88rem;color:var(--gray);line-height:1.65;flex:1;margin-bottom:16px}
-.tag-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
-.tag{display:inline-block;padding:2px 9px;border-radius:10px;font-size:.75rem;font-weight:600;background:var(--offwhite);color:var(--navy);border:1px solid var(--border)}
-.tag-new{background:#fef3c7;color:#92400e;border-color:#fcd34d}
+.citation {
+  background: var(--offwhite);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+  text-align: center;
+  font-size: .88rem;
+}
+.citation blockquote { font-style: italic; color: var(--navy); margin-bottom: 6px; line-height: 1.6; }
+.citation cite { font-size: .8rem; color: var(--gray); }
+.citation cite a { color: var(--terra); }
 
-.btn-outil{display:inline-block;background:var(--terra);color:var(--white);padding:9px 20px;border-radius:8px;font-size:.88rem;font-weight:600;font-family:Georgia,serif;text-align:center;text-decoration:none;transition:background .2s}
-.btn-outil:hover{background:#a8452a;color:var(--white);text-decoration:none}
+footer {
+  text-align: center;
+  color: var(--gray);
+  font-size: .8rem;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  line-height: 1.9;
+}
+footer a { color: var(--terra); }
 
-/* EDITO */
-.edito{background:var(--white);border:1px solid var(--border);border-left:5px solid var(--navy);border-radius:8px;padding:18px 20px;margin-bottom:28px;font-size:.9rem}
-.edito h2{color:var(--navy);font-size:1rem;margin-bottom:10px}
-.edito p{color:var(--gray);margin-bottom:8px;line-height:1.7}
-.edito p:last-child{margin-bottom:0}
+#rgpd-banner {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: #1a2a4a; color: #fff;
+  padding: 12px 20px; font-size: 13px;
+  display: flex; justify-content: space-between; align-items: center;
+  z-index: 9999; font-family: sans-serif;
+}
+#rgpd-banner a { color: #e07a5f; }
+#rgpd-btn {
+  background: #e07a5f; color: white; border: none;
+  padding: 8px 16px; cursor: pointer; border-radius: 4px;
+  margin-left: 20px; white-space: nowrap;
+}
 
-/* VIRGINIE */
-.citation{background:var(--offwhite);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:28px;font-size:.88rem}
-.citation blockquote{font-style:italic;color:var(--navy);line-height:1.7;margin-bottom:8px}
-.citation cite{font-size:.82rem;color:var(--gray)}
-.citation cite a{color:var(--terra)}
-
-/* FOOTER */
-footer{text-align:center;color:var(--gray);font-size:.82rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);line-height:1.9}
-footer a{color:var(--terra)}
-
-/* RGPD */
-#rgpd-banner{position:fixed;bottom:0;left:0;right:0;background:#1a2a4a;color:#fff;padding:12px 20px;font-size:13px;display:flex;justify-content:space-between;align-items:center;z-index:9999;font-family:sans-serif}
-#rgpd-banner a{color:#e07a5f}
-#rgpd-btn{background:#e07a5f;color:white;border:none;padding:8px 16px;cursor:pointer;border-radius:4px;margin-left:20px;white-space:nowrap}
-
-@media(max-width:600px){
-  .outils-grid{grid-template-columns:1fr}
-  .mediapart-links{font-size:.78rem}
-  #rgpd-banner{flex-direction:column;gap:8px;text-align:center}
+@media (max-width: 480px) {
+  .tuiles { grid-template-columns: 1fr; }
+  .accroche h1 { font-size: 1.2rem; }
+  #rgpd-banner { flex-direction: column; gap: 8px; text-align: center; }
 }
 </style>
 </head>
 <body>
 
 <header class="site-header">
-  <img src="https://katysaintin.github.io/hors-kadre-yvelines/LogoHorsKadre.png" alt="Logo Hors Kadre" class="hero-image" width="60" height="60">
-  <div class="tagline">Ce que personne ne dit vraiment, sourcé et vécu — Saïgon-sur-Seine</div>
-  <div class="tagline">Données publiques · Lecture indépendante · Pour les familles · Yvelines (78)</div>
+  <img src="https://katysaintin.github.io/hors-kadre-yvelines/LogoHorsKadre.png" alt="Hors Kadre">
+  <div class="tagline">Ce que personne ne dit vraiment — sourcé, vécu, pour les familles · Yvelines (78)</div>
   <div class="mediapart-links">
-    <a href="https://www.facebook.com/people/Hors-Kadre/61570725300507/" target="_blank">📘 Page Facebook</a>
-    <a href="https://blogs.mediapart.fr/katy-ho/blog/190426/98-de-reussite-au-bac-et-apres" target="_blank">98% de réussite au bac. Et après ?</a>
+    <a href="https://www.facebook.com/people/Hors-Kadre/61570725300507/" target="_blank">📘 Facebook</a>
+    <a href="https://blogs.mediapart.fr/katy-ho/blog/190426/98-de-reussite-au-bac-et-apres" target="_blank">98% au bac. Et après ?</a>
     <a href="https://blogs.mediapart.fr/katy-ho/blog/230426/qui-classe-les-lycees-et-pourquoi-ca-nest-pas-un-hasard" target="_blank">Qui classe les lycées ?</a>
-  </div>
-  <div class="nav-links">
-    <a href="indexival.html">Comparer les lycées</a>
-    <a href="parcoursup.html">Comprendre Parcoursup</a>
-    <a href="legal/apropos.html">À propos</a>
-    <a href="legal/mentions-legales.html">Mentions légales</a>
+    <a href="https://blogs.mediapart.fr/katy-ho" target="_blank">Parcoursup : une étape à la fois →</a>
   </div>
 </header>
 
 <div class="container">
 
-  <div class="intro">
-    <h2>L'information utile ne devrait pas rester enfouie dans les rapports officiels.</h2>
-    <p>
-      Hors Kadre explore les données publiques sur l'éducation et l'orientation —
-      celles que les institutions publient mais n'expliquent pas.
-      Pas de classement commercial, pas de publicité.
-      Des données sourcées, un regard factuel, une lecture accessible.
-    </p>
-    <p>
-      Ce site s'adresse aux <strong>familles</strong> qui cherchent à comprendre
-      comment fonctionne vraiment le système — lycée, Parcoursup, orientation.
-      <strong>Dès la Seconde</strong>, pas seulement en Terminale quand il est trop tard.
-    </p>
-  </div>
-
-  <div class="alerte-http">
-    🗺️ <strong>Cette page couvre uniquement les Yvelines (78).</strong>
-    Pour accéder à l'outil complet sur toute la France (lycées IVAL + Parcoursup national) :
+  <div class="alerte-scope">
+    🗺️ <strong>Cette version couvre uniquement les Yvelines (78).</strong>
+    Pour l'outil complet sur toute la France :
     <a href="http://katy.ho.free.fr" target="_blank">katy.ho.free.fr</a>
-    <em>(site en http — certains navigateurs peuvent afficher un avertissement, c'est normal)</em>
+    <em>(http — un avertissement peut s'afficher, c'est normal)</em>
   </div>
 
-  <div class="outils-titre">Nos outils gratuits — Yvelines</div>
+  <div class="accroche">
+    <h1>L'information utile sur l'orientation — enfin expliquée simplement.</h1>
+    <p>Des outils gratuits, des données publiques, des mots simples.<br>Pour les familles qui veulent comprendre — dès la Seconde.</p>
+  </div>
 
-  <div class="outils-grid">
+  <div class="tuiles">
 
-    <!-- IVAL -->
-    <div class="outil-card">
-      <div class="outil-icon">🏫</div>
-      <h3>Comparer les lycées des Yvelines</h3>
-      <p class="desc">
-        Tous les lycées ne notent pas pareil.
-        Cet outil vous montre le niveau réel de chaque lycée des Yvelines.
-        Un 13 dans un lycée exigeant, ce n'est pas le même 13 qu'ailleurs —
-        et Parcoursup ne fait pas cette différence.
-      </p>
-      <div class="tag-list">
-        <span class="tag">Yvelines (78)</span>
-        <span class="tag">Données 2025</span>
-        <span class="tag">Statique</span>
-      </div>
-      <a href="indexival.html" class="btn-outil">Comparer les lycées →</a>
-    </div>
+    <a href="parcoursup.html" class="tuile tuile-primary">
+      <div class="tuile-icon">🎓</div>
+      <h2>Comprendre Parcoursup</h2>
+      <p>Combien de candidats pour une place ? Quel profil a été admis ? Les vrais chiffres, en clair.</p>
+      <span class="badge">Yvelines (78)</span>
+    </a>
 
-    <!-- PARCOURSUP -->
-    <div class="outil-card">
-      <div class="outil-icon">🎓</div>
-      <h3>Comprendre Parcoursup — Yvelines</h3>
-      <p class="desc">
-        Recherchez une formation dans les Yvelines.
-        Combien de candidats pour une place ? Quel profil a été admis l'an dernier ?
-        La lettre de motivation est-elle vraiment lue ?
-        Les réponses — en clair, sans jargon.
-      </p>
-      <div class="tag-list">
-        <span class="tag">Yvelines (78)</span>
-        <span class="tag">Données 2025</span>
-        <span class="tag new tag-new">Nouveau !</span>
-      </div>
-      <a href="parcoursup.html" class="btn-outil">Comprendre Parcoursup →</a>
-    </div>
+    <a href="indexival.html" class="tuile">
+      <div class="tuile-icon">🏫</div>
+      <h2>Comparer les lycées</h2>
+      <p>Tous les lycées ne notent pas pareil. Voyez le niveau réel de chaque établissement.</p>
+      <span class="badge">Données 2025</span>
+    </a>
+
+    <a href="typeformation.html" class="tuile">
+      <div class="tuile-icon">📖</div>
+      <h2>Quelle formation après le bac ?</h2>
+      <p>BUT, BTS, Licence, Prépa… Les différences expliquées sans jargon, en 5 minutes.</p>
+    </a>
 
   </div>
 
-  <!-- EDITO -->
-  <div class="edito">
-    <h2>Parcoursup n'est pas nul. C'est nous qui n'avons pas été préparés.</h2>
-    <p>
-      Dans les médias, on lit surtout du négatif sur Parcoursup — comme si la plateforme
-      elle-même était responsable des refus. C'est une confusion fréquente.
-      <strong>Parcoursup est une plateforme de transmission, pas de sélection.</strong>
-      Elle collecte les dossiers et les transmet aux formations.
-      C'est la formation qui décide — selon ses propres critères, souvent non publiés.
-    </p>
-    <p>
-      Une formation qui reçoit 8 000 candidatures fait un tri sur la moyenne des bulletins.
-      Elle n'a pas le temps de lire 8 000 lettres de motivation.
-      Ce n'est pas la faute de Parcoursup — c'est une réalité mécanique
-      que personne n'explique aux familles.
-    </p>
-    <p>
-      <strong>Ce que nous faisons ici :</strong> rendre lisibles les données publiques
-      pour que chaque famille puisse comprendre le système — et s'y préparer
-      dès la Seconde, pas en panique en Terminale.
-    </p>
-  </div>
-
-  <!-- CITATION VIRGINIE -->
   <div class="citation">
-    <blockquote>
-      "Être bien informé permet d'accompagner les jeunes avec plus de sérénité et de confiance."
-    </blockquote>
-    <cite>
-      — <a href="https://www.linkedin.com/in/virginiebusquet/" target="_blank">Virginie Busquet</a>,
-      conseillère d'orientation
-    </cite>
+    <blockquote>"Être bien informé permet d'accompagner les jeunes avec plus de sérénité et de confiance."</blockquote>
+    <cite>— <a href="https://www.linkedin.com/in/virginiebusquet/" target="_blank">Virginie Busquet</a>, conseillère d'orientation</cite>
   </div>
 
   <footer>
     ©2026 Katy Saintin — Hors Kadre · Yvelines (78)<br>
-    Données publiques Open Data — Traitement et analyse indépendants — Réutilisation autorisée avec attribution<br>
-    <a href="legal/apropos.html">À propos / Méthodologie</a> |
+    Données Open Data — Traitement indépendant — Réutilisation autorisée avec attribution<br>
+    <a href="legal/apropos.html">À propos</a> |
     <a href="legal/mentions-legales.html">Mentions légales</a> |
     <a href="mailto:katy.saintin@gmail.com">Contact</a>
   </footer>
 
 </div>
 
-<!-- RGPD -->
 <div id="rgpd-banner">
   <span>Ce site utilise Google Analytics pour mesurer l'audience.
     <a href="legal/mentions-legales.html">En savoir plus</a></span>
