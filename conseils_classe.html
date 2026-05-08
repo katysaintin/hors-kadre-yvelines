@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conseils de classe T3 – Lycée Descartes · UNAAPE</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --blue: #1a4a7a;
+    --sky: #3b82c4;
+    --gold: #e8a020;
+    --mint: #2eb89a;
+    --rose: #d95a5a;
+    --lilac: #7c6fcd;
+    --bg: #f4f6fa;
+    --card: #ffffff;
+    --text: #1a2230;
+    --muted: #6b7a90;
+    --border: #dde3ef;
+    --urgent: #dc2626;
+    --urgent-bg: #fef2f2;
+    --urgent-border: #fca5a5;
+    --past: #9ca3af;
+    --past-bg: #f3f4f6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 40px; }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    padding: 32px 24px 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before { content:''; position:absolute; top:-40px; right:-40px; width:180px; height:180px; background:rgba(255,255,255,0.05); border-radius:50%; }
+  .header::after  { content:''; position:absolute; bottom:-30px; left:-20px; width:120px; height:120px; background:rgba(255,255,255,0.04); border-radius:50%; }
+  .header .badge { display:inline-block; background:var(--gold); color:var(--navy) !important; font-size:11px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; padding:4px 14px; border-radius:20px; margin-bottom:12px; }
+  .header h1 { font-family:'Playfair Display',serif; font-size:26px; font-weight:900; line-height:1.15; margin-bottom:6px; color:#fff !important; position:relative; }
+  .header p  { font-size:13px; opacity:0.75; font-weight:300; color:#fff !important; }
+
+  /* LEGEND */
+  .legend { display:flex; flex-wrap:wrap; gap:10px; padding:16px 16px 4px; justify-content:center; }
+  .leg { display:flex; align-items:center; gap:6px; font-size:11.5px; font-weight:500; color:var(--muted); }
+  .leg-dot { width:10px; height:10px; border-radius:3px; flex-shrink:0; }
+
+  /* TABS */
+  .tabs { display:flex; gap:0; padding:16px 14px 0; overflow-x:auto; }
+  .tab { flex-shrink:0; padding:8px 16px; border-radius:8px 8px 0 0; font-size:12.5px; font-weight:600; cursor:pointer; border:1.5px solid var(--border); border-bottom:none; background:#e8ecf3; color:var(--muted); transition:all 0.15s; }
+  .tab.active { background:var(--card); color:var(--navy); border-color:var(--border); }
+  .tab-content { display:none; background:var(--card); border:1.5px solid var(--border); border-radius:0 12px 12px 12px; padding:16px; margin:0 14px; }
+  .tab-content.active { display:block; }
+
+  /* TABLE */
+  .conseil-table { width:100%; border-collapse:collapse; }
+  .conseil-table thead th {
+    background: var(--navy);
+    color: #fff !important;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 10px 12px;
+    text-align: left;
+  }
+  .conseil-table thead th:first-child { border-radius:8px 0 0 0; }
+  .conseil-table thead th:last-child  { border-radius:0 8px 0 0; }
+  .conseil-table tbody tr { border-bottom:1px solid var(--border); transition:background 0.1s; }
+  .conseil-table tbody tr:hover { background:#f8fafc; }
+  .conseil-table td { padding:10px 12px; font-size:13px; vertical-align:middle; }
+
+  /* CLASSE BADGE */
+  .classe-badge {
+    display:inline-block;
+    font-size:12px; font-weight:700;
+    padding:3px 10px;
+    border-radius:20px;
+    background:#e0e7ff; color:#1e3a8a;
+    white-space:nowrap;
+  }
+  .classe-badge.stmg { background:#fef3c7; color:#92400e; }
+  .classe-badge.term { background:#d1fae5; color:#065f46; }
+  .classe-badge.sec  { background:#dbeafe; color:#1d4ed8; }
+  .classe-badge.prem { background:#ede9fe; color:#4c1d95; }
+
+  /* DATE CELL */
+  .date-cell { white-space:nowrap; font-weight:600; font-size:13px; }
+  .date-cell .heure { font-size:11px; font-weight:400; color:var(--muted); display:block; margin-top:2px; }
+  .status-dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; flex-shrink:0; }
+
+  /* STATUS COLORS */
+  tr.past td { color: var(--past) !important; }
+  tr.past .classe-badge { background:#e5e7eb !important; color:#9ca3af !important; }
+  tr.past .date-cell { color: var(--past) !important; }
+  tr.past .heure { color: #bcc0c9 !important; }
+  tr.past .btn-sondage { opacity:0.4; pointer-events:none; }
+  tr.past .status-dot { background:#d1d5db; }
+
+  tr.urgent td { background: var(--urgent-bg); }
+  tr.urgent .date-cell { color: var(--urgent) !important; font-weight:700; }
+  tr.urgent .status-dot { background: var(--urgent); animation: pulse 1.5s infinite; }
+
+  @keyframes pulse {
+    0%,100% { opacity:1; } 50% { opacity:0.4; }
+  }
+
+  tr.normal .status-dot { background: var(--mint); }
+
+  /* BUTTONS */
+  .btn-sondage {
+    display:inline-flex; align-items:center; gap:5px;
+    background: var(--sky); color:#fff !important;
+    font-size:11.5px; font-weight:600;
+    padding:5px 11px; border-radius:20px;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:background 0.15s;
+  }
+  .btn-sondage:hover { background: var(--blue); }
+  .btn-stats {
+    display:inline-flex; align-items:center; gap:5px;
+    background: #f0fdf9; color: var(--mint) !important;
+    font-size:11px; font-weight:600;
+    padding:4px 10px; border-radius:20px;
+    text-decoration:none; border:1.5px solid var(--mint);
+    white-space:nowrap; margin-top:4px;
+    transition:background 0.15s;
+  }
+  .btn-stats:hover { background: #d1fae5; }
+  .btn-wrap { display:flex; flex-direction:column; gap:2px; }
+
+  /* MEMO */
+  .memo-box { background:#fff8e8; border:1.5px dashed var(--gold); border-radius:14px; padding:14px 16px; margin:20px 14px 0; }
+  .memo-box h3 { font-size:13px; font-weight:700; color:#92400e; margin-bottom:8px; }
+  .memo-box ul { list-style:none; display:flex; flex-direction:column; gap:5px; }
+  .memo-box li { font-size:12px; color:#78350f; padding-left:16px; position:relative; line-height:1.4; }
+  .memo-box li::before { content:'→'; position:absolute; left:0; font-weight:600; }
+
+  /* SONDAGE INDIVIDUEL */
+  .individuel-box { background:#f0f4ff; border:1.5px solid #c7d2fe; border-radius:14px; padding:14px 16px; margin:16px 14px 0; display:flex; align-items:flex-start; gap:14px; }
+  .individuel-box .icon { font-size:28px; flex-shrink:0; }
+  .individuel-box h3 { font-size:13px; font-weight:700; color:#3730a3; margin-bottom:4px; }
+  .individuel-box p  { font-size:12px; color:#4338ca; line-height:1.5; }
+  .btn-individuel { display:inline-block; margin-top:8px; background:#4f46e5; color:#fff !important; font-size:12px; font-weight:600; padding:6px 14px; border-radius:20px; text-decoration:none; }
+
+  /* SECTION TITLE */
+  .section { padding:20px 14px 0; }
+  .section-title { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+  .section-icon { width:34px; height:34px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; }
+
+  .footer { text-align:center; padding:24px 16px 0; font-size:11px; color:var(--muted); }
+  .footer strong { color:var(--navy); }
+
+  /* responsive */
+  @media (max-width: 500px) {
+    .conseil-table td:nth-child(4) { display:none; }
+    .conseil-table th:nth-child(4) { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="badge">UNAAPE · Lycée Descartes – Montigny</div>
+  <h1>Conseils de classe<br>3ème trimestre 2026</h1>
+  <p>Répondez au sondage avant le conseil de votre classe</p>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="leg"><div class="leg-dot" style="background:var(--mint)"></div>À venir</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--urgent)"></div>Dans moins de 2 semaines ⚠️</div>
+  <div class="leg"><div class="leg-dot" style="background:#d1d5db"></div>Passé</div>
+</div>
+
+<!-- TABS -->
+<div class="section" style="padding-bottom:0;">
+  <div class="section-title">
+    <div class="section-icon" style="background:#dbeafe;">🏫</div>
+    <div style="font-family:'Playfair Display',serif; font-size:17px; font-weight:700; color:var(--navy);">Votre classe</div>
+  </div>
+</div>
+
+<div style="padding:0 14px;">
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('sec')">Secondes</div>
+    <div class="tab" onclick="showTab('prem')">Premières</div>
+    <div class="tab" onclick="showTab('term')">Terminales</div>
+  </div>
+
+  <!-- SECONDES -->
+  <div id="tab-sec" class="tab-content active">
+    <table class="conseil-table">
+      <thead>
+        <tr>
+          <th>Classe</th>
+          <th>Date du conseil</th>
+          <th>Contact représentants</th>
+          <th>Sondage & Stats</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-sec">
+        <tr data-date="2026-05-22T18:30">
+          <td><span class="classe-badge sec">2GT1</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 22 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:2gt1-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt1-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="https://forms.gle/placeholder-2gt1" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-26T18:30">
+          <td><span class="classe-badge sec">2GT2</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 26 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:2gt2-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt2-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-26T17:00">
+          <td><span class="classe-badge sec">2GT3</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 26 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:2gt3-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt3-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-28T17:00">
+          <td><span class="classe-badge sec">2GT4</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 28 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:2gt4-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt4-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-21T17:00">
+          <td><span class="classe-badge sec">2GT5</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 21 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:2gt5-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt5-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-28T18:30">
+          <td><span class="classe-badge sec">2GT6</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 28 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:2gt6-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt6-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-22T17:00">
+          <td><span class="classe-badge sec">2GT7</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 22 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:2gt7-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt7-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-29T17:00">
+          <td><span class="classe-badge sec">2GT8</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 29 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:2gt8-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt8-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-21T18:30">
+          <td><span class="classe-badge sec">2GT9</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 21 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:2gt9-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt9-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PREMIERES -->
+  <div id="tab-prem" class="tab-content">
+    <table class="conseil-table">
+      <thead>
+        <tr>
+          <th>Classe</th>
+          <th>Date du conseil</th>
+          <th>Contact représentants</th>
+          <th>Sondage & Stats</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-prem">
+        <tr data-date="2026-05-29T17:00">
+          <td><span class="classe-badge prem">1A</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 29 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:1a-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1a-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-28T18:30">
+          <td><span class="classe-badge prem">1B</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 28 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:1b-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1b-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-22T18:30">
+          <td><span class="classe-badge prem">1C</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 22 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:1c-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1c-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-21T18:30">
+          <td><span class="classe-badge prem">1D</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 21 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:1d-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1d-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-21T17:00">
+          <td><span class="classe-badge prem">1E</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 21 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:1e-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1e-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-26T17:00">
+          <td><span class="classe-badge prem">1F</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 26 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:1f-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1f-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-22T17:00">
+          <td><span class="classe-badge prem">1G</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 22 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:1g-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1g-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-26T18:30">
+          <td><span class="classe-badge stmg">1STMG1</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 26 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:1stmg1-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1stmg1-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-28T17:00">
+          <td><span class="classe-badge stmg">1STMG2</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Jeudi 28 mai<span class="heure">17h00</span></td>
+          <td><a href="mailto:1stmg2-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1stmg2-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-29T18:30">
+          <td><span class="classe-badge stmg">1STMG3</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 29 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:1stmg3-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">1stmg3-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- TERMINALES -->
+  <div id="tab-term" class="tab-content">
+    <table class="conseil-table">
+      <thead>
+        <tr>
+          <th>Classe</th>
+          <th>Date du conseil</th>
+          <th>Contact représentants</th>
+          <th>Sondage & Stats</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-term">
+        <tr data-date="2026-06-01T18:30">
+          <td><span class="classe-badge term">TA</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Lundi 1er juin<span class="heure">18h30</span></td>
+          <td><a href="mailto:ta-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">ta-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-06-01T17:00">
+          <td><span class="classe-badge term">TB</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Lundi 1er juin<span class="heure">17h00</span></td>
+          <td><a href="mailto:tb-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">tb-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-06-02T18:30">
+          <td><span class="classe-badge term">TC</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 2 juin<span class="heure">18h30</span></td>
+          <td><a href="mailto:tc-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">tc-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-06-02T17:00">
+          <td><span class="classe-badge term">TD</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 2 juin<span class="heure">17h00</span></td>
+          <td><a href="mailto:td-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">td-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-06-02T18:30">
+          <td><span class="classe-badge term">TE</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 2 juin<span class="heure">18h30</span></td>
+          <td><a href="mailto:te-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">te-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-06-01T17:00">
+          <td><span class="classe-badge term">TF</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Lundi 1er juin<span class="heure">17h00</span></td>
+          <td><a href="mailto:tf-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">tf-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-06-02T17:00">
+          <td><span class="classe-badge term">TG</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Mardi 2 juin<span class="heure">17h00</span></td>
+          <td><a href="mailto:tg-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">tg-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-05-29T18:30">
+          <td><span class="classe-badge stmg">TSTMG1</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Vendredi 29 mai<span class="heure">18h30</span></td>
+          <td><a href="mailto:tstmg1-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">tstmg1-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="https://docs.google.com/forms/d/1DtmxiIItLErGrOeK7otho0Ce4Xp6fM5dHZ67T6ytXTk/edit" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+        <tr data-date="2026-06-01T18:30">
+          <td><span class="classe-badge stmg">TSTMG2</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Lundi 1er juin<span class="heure">18h30</span></td>
+          <td><a href="mailto:tstmg2-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">tstmg2-descartes@googlegroups.com</a></td>
+          <td><div class="btn-wrap"><a class="btn-sondage" href="#" target="_blank">📝 Sondage</a><a class="btn-stats" href="#" target="_blank">📊 Stats publiques</a></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- MEMO -->
+<div class="memo-box">
+  <h3>📌 Pourquoi répondre au sondage ?</h3>
+  <ul>
+    <li>Le questionnaire principal est <strong>anonyme</strong>, questions fermées uniquement</li>
+    <li>Les résultats globaux sont <strong>accessibles à tous les parents</strong> de la classe</li>
+    <li>Répondez <strong>avant le conseil</strong> pour que les représentants puissent vous représenter</li>
+    <li>Temps estimé : <strong>~1 minute</strong> sans difficulté particulière · <strong>5–7 min</strong> pour détailler</li>
+  </ul>
+</div>
+
+<!-- SONDAGE INDIVIDUEL -->
+<div class="individuel-box">
+  <div class="icon">💬</div>
+  <div>
+    <h3>Remarque individuelle ou situation particulière ?</h3>
+    <p>Un formulaire complémentaire <strong>confidentiel</strong> est disponible si vous souhaitez transmettre une situation particulière, une remarque détaillée, ou demander un échange individuel avec les représentants.<br>Les réponses sont accessibles uniquement aux représentants de parents.</p>
+    <a class="btn-individuel" href="https://forms.gle/r5CPc1QQLYoy2NWH8" target="_blank">💬 Formulaire individuel (facultatif)</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p><strong>UNAAPE &amp; FCPE — Représentants de parents d'élèves</strong><br>Lycée Descartes · Montigny-le-Bretonneux · Année 2025–2026</p>
+  <p style="margin-top:6px;color:#b0bac8;">Document d'information — pour toute question, contactez vos représentants de classe.</p>
+</div>
+
+<script>
+  function showTab(name) {
+    document.querySelectorAll('.tab').forEach((t,i) => {
+      const names = ['sec','prem','term'];
+      t.classList.toggle('active', names[i] === name);
+    });
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+  }
+
+  function colorRows() {
+    const now = new Date();
+    const twoWeeks = new Date(now.getTime() + 14 * 24 * 60 * 60 * 1000);
+
+    document.querySelectorAll('tr[data-date]').forEach(row => {
+      const d = new Date(row.dataset.date);
+      row.classList.remove('past','urgent','normal');
+      if (d < now) {
+        row.classList.add('past');
+      } else if (d <= twoWeeks) {
+        row.classList.add('urgent');
+      } else {
+        row.classList.add('normal');
+      }
+    });
+  }
+
+  colorRows();
+</script>
+</body>
+</html>
