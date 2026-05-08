@@ -5,17 +5,17 @@
 
 ---
 
-Chaque année, la même scène se répète dans des milliers de familles.
+J'ai un enfant en Terminale cette année. Et depuis sept ans que je siège en conseil de classe, je vois défiler les mêmes questions sans réponse.
 
-Les résultats tombent le 2 juin. Un enfant rafraîchit sa messagerie. Ses parents retiennent leur souffle. Et quand la réponse n'est pas celle espérée, la phrase qui revient, invariablement :
+J'enseigne aussi en Master 2 — mon métier, c'est de rendre compréhensible ce qui semble compliqué. Alors j'ai fait ça, pour Parcoursup.
+
+Parce que chaque année, la même phrase revient dans des milliers de familles :
 
 *"C'est Parcoursup qui a refusé mon enfant."*
 
-Parcoursup n'a refusé personne. Des enseignants réunis en commission ont étudié le dossier et pris une décision — avec les outils dont ils disposaient. Ce n'est pas la même chose. Et comprendre cette différence change tout à la façon dont on prépare sa candidature.
+Cette phrase est compréhensible. Elle est aussi inexacte : ce sont des enseignants réunis en commission qui ont étudié le dossier et pris une décision — avec les outils dont ils disposaient. Parcoursup, lui, a transmis. Ce n'est pas la même chose.
 
-J'enseigne en Master 2. Mon métier, c'est d'expliquer des choses complexes avec des mots simples — à des étudiants qui n'ont pas forcément le bagage technique. Ce que vous allez lire, c'est exactement ça : court, sans jargon, et utile dès ce soir.
-
-Cet article n'est pas là pour accuser. Il est là pour expliquer, simplement, ce que personne ne dit vraiment.
+Ce que vous allez lire : court, sans jargon, utile dès ce soir.
 
 ---
 
@@ -35,23 +35,21 @@ Ce sont les formations — leurs enseignants, leurs équipes — qui examinent l
 
 ## 2. Pourquoi la confusion existe — et pourquoi c'est compréhensible
 
-Regardons comment Parcoursup est souvent représenté visuellement. Quand j'ai demandé à un outil d'IA de générer une illustration pour cet article, voilà ce qu'il a produit par défaut :
+Regardons comment Parcoursup est souvent représenté. Une illustration générée automatiquement pour cet article a produit ceci :
 
-**[image — version automatique]**
+![Parcoursup en image — version générée](ParcoursupEnImage.png)
 
-*"Parcoursup fait le lien entre les deux."* Des mains qui se serrent. Une icône active, humaine, décisionnaire.
+La formation *reçoit* les candidatures — icône maison, passive. Parcoursup *fait le lien* — des mains qui se serrent, actif, humain, décisionnaire.
 
-Puis j'ai repris le visuel en choisissant moi-même les mots et les icônes :
+Ces images semblent anodines. Elles ne le sont pas. Une maison ne décide pas. Mais des mains qui se serrent, si. Sans le vouloir, cette représentation fait de Parcoursup le vrai acteur — celui qui choisit. Et quand la réponse est décevante, c'est vers lui que se tourne la frustration.
 
-**[image — version Hors Kadre]**
+Voici comment j'ai repris ce visuel, en choisissant moi-même les mots et les icônes :
 
-*"Parcoursup centralise les réponses."* Une icône de document. Passive. Neutre. Juste.
+![Parcoursup en réalité — version Hors Kadre](ParcoursupEnRealite.png)
 
-La différence tient en trois mots. Mais ces trois mots déplacent toute la responsabilité.
+La formation *étudie* les candidatures — une personne, un verbe actif, une responsabilité incarnée. Parcoursup *centralise* les réponses — un formulaire, un outil, un rôle neutre.
 
-Sans le vouloir, la première représentation fait de Parcoursup un décideur actif. Ce n'est plus la formation qui *étudie*, c'est Parcoursup qui *agit*. Résultat : quand la réponse est décevante, c'est Parcoursup qu'on accuse.
-
-Pourtant, la réalité est plus simple — et plus rassurante. Parcoursup centralise. La formation étudie. Ce sont des humains qui lisent les dossiers et prennent les décisions. La distinction mérite d'être dite clairement, parce que personne ne la dit.
+Trois mots changés. Toute la responsabilité repositionnée. C'est aussi simple — et aussi puissant — que ça.
 
 ---
 
