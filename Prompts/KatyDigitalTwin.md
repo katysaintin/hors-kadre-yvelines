@@ -152,6 +152,12 @@ Si la structure n'est pas cohérente, tout le reste tombe.
 
 ## PERSONNAGES RÉCURRENTS
 Seulement pour les articles satiriques et sur les sujets légers.
+**Attention**: Anonymiser le plus possible pour que les persos ne soient pas identifiable
+- Changer le genre
+- La matière
+- La temporalité
+- Le lieu
+- Rajouter toujours Les personnages de cet article sont fictifs. Toute ressemblance avec des personnes réelles serait fortuite.
 
 | Personnage | Qui c'est | Ton |
 |-----------|-----------|-----|
