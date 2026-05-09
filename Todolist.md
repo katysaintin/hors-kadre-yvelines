@@ -16,7 +16,7 @@
 | 15 mai | Jeudi | Ép. 13 | #23 Mauvais Lac | MauvaisLacClair.png | ✅ Programmé |
 | 19 mai | Lundi | Ép. 14 | #03 Fais-le toi-même | 03_FaisLeToi3.png | ✅ Programmé |
 | 26 mai | Lundi | Ép. 15 | #24 Les Perles des IA | PerlesIA.png | ✅ Programmé |
-| 2 juin | Lundi | Ép. 16 | #06 Mme BlagueAPart / Ados en PLS | ConseilDeClasse.png | ⚠️ À programmer dès le 1er juin |
+| 2 juin | Lundi | Ép. 16 | #06 Mme BlagueAPart / Ados en PLS | ConseilDeClasse.png | ✅ Programmé |
 | 9 juin | Lundi | Ép. 17 | #26 Mme HorsKase / Switch Case | SwitchCaseFR.png | ⚠️ À programmer dès le 1er juin |
 | 16 juin | Lundi | Ép. 18 | #28 Certification IA sans BAFA | RedApple.png | ⚠️ À programmer après 18 mai |
 | 23 juin | Lundi | Ép. 19 | #33 Le Chat dans le transfo | ChatTransfoLumineux.png | ⚠️ À programmer dès le 1er juin |
