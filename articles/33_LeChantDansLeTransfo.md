@@ -79,6 +79,14 @@ Parce que les parents voient : les emplois du temps absurdes, les cours annulés
 
 Donc ils interpellent. Les profs. La direction. Les représentants de parents — nous.
 
+Le mail type arrive, toujours un peu le même :
+
+*"Bonjour, pourquoi mon fils finit à 18h le mardi ? Est-ce qu'on peut changer ça ?"*
+
+Ou encore :
+
+*"Ma fille a deux heures de permanence entre deux cours le jeudi. C'est n'importe quoi."*
+
 Et moi aussi, au début, j'avais des avis très arrêtés.
 
 *"C'est quoi cette organisation."*
@@ -194,6 +202,8 @@ Long silence.
 Gros moment de solitude.
 
 Moi qui avais pensé qu'il *suffisait de*. Moi qui avais intérieurement jugé les emplois du temps "absurdes". Moi et ma copine bac+12 — deux cerveaux bien câblés, outillés, motivés — on n'avait pas trouvé.
+
+Ce jour-là, j'ai compris quelque chose : certaines organisations qui semblent absurdes de l'extérieur sont parfois juste des systèmes humains qui tiennent encore debout malgré tout. Et les gens qui les font tenir méritent mieux que notre impatience.
 
 La proviseure, en conseil d'administration, avec son sourire :
 
