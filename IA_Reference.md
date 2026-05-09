@@ -197,6 +197,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 29 | Les déboires administratifs non modernisés | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/29_DeboiresAdministratifs.md) | A FAIRE | - |
 | 30 | IA conversationnelle, est elle neurotypique | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/30_IAEstElleNeurotypique.md) | - | - |
 | 31 | IA Usage Des Ecrans Deplacée Créativité | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/31_UsageDesEcransDeplacéeIA.md) | - | - |
+| 32 | FaceHook, JeTemTube et Mme DopamineÀZéro | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/31_UsageDesEcransDeplacéeIA.md) | - | - |
 
 
 
@@ -205,13 +206,14 @@ Rendre compréhensible ce qui ne l’était pas.
 |---|-------|------------------|---------------|----------|---------------|
 | 4 | Parcoursup, ce que ni les classements ni les profs ne disent |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/04_ParcoursupSeveriteProfs.md) | - | :heavy_check_mark: | - |
 | 20 | 98% de réussite et après, le classement selon les IVAL |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/20_ClassementIVAL98%Bac.md) | - | :heavy_check_mark: | - |
-| 5 | préparer son enfant au lycée & Parcoursup simplifié |  [**EN COURS**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/05_ParcoursupSansStress.md) | - | - | - |
+| 5 | Parcoursup sans stress |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/05_ParcoursupSansStress.md) | - | - | - |
 | 6 | Mme BlagueAPart plaisante , les ados en PLS | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/06_AdoMalheureux.md) | - | PROGRAMMÉ épisode 16  | - |
 | 7 | Tensions parents/profs — décoder et s'en sortir | [**IDÉE**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/07_DialogueParentsProfs.md) | - | - | - |
 | 8 | Valorisation des filières pro techno - SI on juge un poisson | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/08_ValorisationFiliereProTechnoPoisson.md) | - | PROGRAMMÉ épisode 12 | :heavy_check_mark: |
 | 9 | projet pHARe — harcèlement adulte/enfant ignoré | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/09_PhareDispositifIncompletEvaelle.md) | - | :heavy_check_mark: | - |
 | 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
 | 28 | Certification IA grâce à mon IA sans BAFA | [**PRÊT**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
+| 33 | FaceHook, JeTemTube et Mme DopamineÀZéro | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/33_LeChantDansLeTransfo.md) | - | - |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
@@ -265,7 +267,8 @@ Rendre compréhensible ce qui ne l’était pas.
 | SPECIAL | Tendon d'Achille , déplâtrage | Article 18 |  :heavy_check_mark: |  :heavy_check_mark: |
 | 11 |  Le biais de négativité — Gap Minder Singe | Article 2 | :heavy_check_mark: | - |
 | SPECIAL | J'ai rempli mes impôts avec ChatGPT | Article 27 |  :heavy_check_mark: |  :heavy_check_mark: |
-| 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | PROGRAMMÉ | - |
+| 12 |  Valorisation des filières pro techno - Si on juge un poisson  | Article 8 | :heavy_check_mark: | - |
+| SPECIAL | Parcoursup une étape à la fois  | Article 5 | PROGRAMMÉ | PROGRAMMÉ |
 | 13 |  Mauvais Lac  | Article 23 | PROGRAMMÉ | À FAIRE |
 | 14 |  IA Fais le toi !  | Article 13 | PROGRAMMÉ | À FAIRE |
 | 15 |  Les perles des IA !  | Article 24 | PROGRAMMÉ | PROGRAMMÉ|
