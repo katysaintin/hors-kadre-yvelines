@@ -10,12 +10,14 @@
 | Date | Jour | Épisode | Article | Visuel | Statut |
 |------|------|---------|---------|--------|--------|
 | 30 avril | Jeudi | Ép. SPÉCIAL | #27 Impôts / ChatGPT | ImpotChatGPT.png | ✅ Publié |
-| 7 mai | Jeudi | Ép. 12 | #8 Poisson / Filières Pro | Poisson.jpeg | ✅ À programmer |
-| 12 mai | Lundi | Ép. 13 | #23 Mauvais Lac | MauvaisLacClair.png | ✅ À programmer |
-| 19 mai | Lundi | Ép. 14 | #03 Fais-le toi-même | 03_FaisLeToi3.png | ✅ À programmer |
-| 26 mai | Lundi | Ép. 15 | #24 Les Perles des IA | PerlesIA.png | ✅ À programmer |
+| 7 mai | Jeudi | Ép. 12 | #8 Poisson / Filières Pro | Poisson.jpeg | ✅ Publié |
+| 12 mai | Mardi | Ép. SPÉCIAL | #5 Parcoursup une étape à la fois | ParcoursupInfo.png | ✅ programmé |
+| 15 mai | Vendredi | Ép. 13 | #23 Mauvais Lac | MauvaisLacClair.png | ✅ programmé |
+| 19 mai | Lundi | Ép. 14 | #03 Fais-le toi-même | 03_FaisLeToi3.png | ✅ À programmé |
+| 26 mai | Lundi | Ép. 15 | #24 Les Perles des IA | PerlesIA.png | ✅ À programmé |
 | 8 juin | Lundi | Ép. 16 | #06 Mme BlagueAPart / Ados en PLS | ConseilDeClasse.png | ⚠️ À programmer dès le 1er juin |
 | 15 juin | Lundi | Ép. 17 | #26 Mme HorsKase / Switch Case | SwitchCaseFR.png | ⚠️ À programmer dès le 1er juin |
+| ?? | ?? | Ép. 18 | #5 Le Chat dans le transfo | ChatTransfoLumineux.png | ⚠️ À programmer dès le 1er juin |
 
 ### Titres des posts FB validés
 - Ép. 12 — *"On vous a dit de grimper sur un arbre. Vous êtes un poisson."*
@@ -45,6 +47,7 @@
 | 5 mai | Mardi | CEA Tuteurs — Republication CEA | FR/EN | 8h00 | ✅ Prêt — tagger apprentis |
 | 11 mai | Lundi | UNAAPE Bénévolat — Leadership non rémunéré | FR | 8h00 | ✅ Prêt |
 | 13 mai | Mercredi | IA Fais-le toi — Usage actif vs passif | FR | 8h00 | 🔄 À construire avec Claude LinkedIn |
+| 20 mai | Mercredi | Le chat dans le transfo | FR | 8h00 | ✅ Prêt |
 | TBD | À caler | The Wrong Lake | EN | 14h00 | ✅ Prêt — semaine du 11 mai |
 | TBD | À caler | Republication Thomas Galoisy | FR | 8h00 | 🔄 À sélectionner |
 | Après 18 mai | À caler | Post certification IA | FR | 8h00 | 🔄 À rédiger après soutenance |
