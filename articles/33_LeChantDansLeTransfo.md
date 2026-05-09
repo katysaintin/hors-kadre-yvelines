@@ -6,601 +6,299 @@
 
 ---
 
-## Chapô
-
-Hors Kadre décrypte ce que les systèmes complexes rendent invisibles.
-
-Aujourd’hui :
-- les emplois du temps impossibles,
-- les DGH,
-- les conseils de classe,
-- les parents,
-- les profs,
-- les bénévoles,
-- les écrans rouges,
-- et un chat.
-
-Oui.
-Un vrai chat.
+**Chapô** — Hors Kadre décrypte ce que les médias n'abordent pas. Une nuit d'astreinte au synchrotron. Tous les écrans rouges. Des heures de debug. Moi, ingénieure SCADA, caféinée, fermement décidée à trouver. Et puis... c'était un chat. Depuis, chaque fois que je siège en conseil d'administration, je repense à ce chat. Parce que dans les systèmes complexes — industriels ou scolaires — ce qu'on voit en premier n'est presque jamais la vraie panne. E=HK²
 
 ---
 
-## 1. Les écrans sont rouges
+## 1. 4h du matin — les écrans sont rouges
 
-4h du matin.
+Le téléphone sonne.
 
-Téléphone d’astreinte.
+Astreinte.
 
-Tous les écrans SCADA sont rouges.
+Je travaille au synchrotron SOLEIL depuis des années. Je suis celle qui développe les interfaces de supervision — les IHM. La partie visible du système de contrôle. Ce que les opérateurs voient sur leurs écrans quand tout va bien.
 
-Le support niveau 1 est appelé en urgence.
+Et quand tout va mal.
 
-Les utilisateurs paniquent.
-Les alarmes tombent les unes après les autres.
-Les baies ne répondent plus.
-Le système semble s’effondrer.
+J'arrive en salle de supervision.
 
-Dans la salle de supervision, on essaie de comprendre :
-- bug logiciel ?
-- panne réseau ?
-- erreur humaine ?
-- coupure électrique ?
-- problème de supervision ?
+Tout va très mal.
 
-Tout le monde cherche.
+Le sapin de Noël. Chaque écran SCADA clignote rouge. Les alarmes tombent les unes après les autres. Les baies ne répondent plus. Le système s'effondre d'un seul coup, sans raison apparente, à 4h du matin.
 
-Et pendant plusieurs heures :
-les humains visibles absorbent la panique visible.
+Je suis ingénieure SCADA. J'ai 13 ans de support informatique derrière moi. J'ai redémarré des systèmes industriels en temps réel. J'ai débugué des architectures complexes dont personne ne comprenait plus la documentation. Je suis TDAH — donc à 4h du matin sous caféine, je suis dans mon état naturel : hyperfocalisée, méthodique, fermement convaincue que je vais trouver.
 
-Puis la vraie cause finit par tomber.
+Bug logiciel ? Vérifié.
+Coupure réseau ? Vérifié.
+Erreur humaine ? Vérifié.
+Problème d'alimentation ? Vérifié.
 
-Un chat s’est électrocuté dans un transformateur.
+Plusieurs heures. Beaucoup de café. Le genre de nuit où on commence à douter de tout — sauf de soi-même, parce que c'est comme ça que je suis câblée.
 
-Cette histoire est vraie.
+Et puis la vraie cause finit par tomber.
 
-J’ai même encore :
-- les photos,
-- la vidéo,
-- les écrans rouges,
-- les collègues en PLS à 4h du matin,
-- et mon chef qui finit par dire :
-> “La machine redémarre.”
-
-Pauvre chat.
-
-Notre fil conducteur.
-Au sens littéral comme au figuré.
+Un chat s'est électrocuté dans un transformateur.
 
 ---
 
-## 2. Et plus je siège en conseil d’administration, plus je repense à ce chat
+Gros blanc.
 
-Parce qu’au lycée aussi :
-les écrans sont souvent rouges.
+Moi. Ingénieure SCADA. 13 ans d'expérience. Caféinée à bloc. Hyperfocalisée depuis des heures.
 
-Les parents voient :
-- des emplois du temps absurdes,
-- des cours annulés,
-- des absences,
-- des spécialités incompatibles,
-- des profs épuisés,
-- des notes incompréhensibles,
-- Parcoursup,
-- des tensions.
+Vaincue par un chat.
 
-Donc ils interpellent :
-- les enseignants,
-- les professeurs principaux,
-- les représentants de parents,
-- la direction.
+La photo existe encore. La vidéo aussi — sept secondes. Mon chef, soulagé, qui annonce :
 
-Le front visible.
+*"La machine va redémarrer."*
 
-Comme dans le support informatique.
+Et nous, dans la salle, on rigole.
 
-Sauf qu’en coulisses :
-les causes sont souvent beaucoup plus loin.
+À 4h du matin.
 
-Et plus je siège en conseil d’administration,
-plus je repense à ce chat.
+Parce que c'est ça, le support. On debug des heures. On cherche une panne complexe avec toute la rigueur dont on est capable. Et parfois, la cause est un chat qui ne savait pas ce qu'il faisait dans un transformateur.
 
-Toujours au chat.
+*(Honnêtement. Ni lui ni nous.)*
+
+*Paix à son âme.*
+
+Notre fil conducteur. Au sens littéral comme au figuré.
 
 ---
 
-## 3. Le jour où j’ai découvert une DGH
+## 2. Et depuis, je repense souvent à ce chat
 
-Je suis ingénieure SCADA.
+Des années plus tard.
 
-Je travaille dans les systèmes complexes.
-Les vrais.
-Ceux avec :
-- contraintes,
-- dépendances,
-- supervision,
-- propagation d’erreurs,
-- interfaces,
-- utilisateurs,
-- alarmes.
+Je suis représentante de parents d'élèves depuis sept ans. Bénévole. Tête de liste. CNV en bandoulière. Questions envoyées 48h à l'avance.
 
-Je pensais être préparée.
+Moi qui ai redémarré une machine à 4h du mat à cause d'un chat — je peux gérer n'importe quel conseil d'administration.
 
-Puis un jour,
-en conseil d’administration au collège,
-on m’a montré une DGH.
+*Spoiler : non.*
 
-Je me souviens très bien de ma réaction intérieure :
+Parce que les parents voient : les emplois du temps absurdes, les cours annulés, les spécialités incompatibles, les classes surchargées, les profs épuisés, Parcoursup, les notes qui tombent sans explication.
 
-> “Mais où je suis tombée là ?”
+Donc ils interpellent. Les profs. La direction. Les représentants de parents — nous.
 
-DGH.
-HSA.
-BMP.
-TRMD.
-Groupes.
-Demi-groupes.
-Mutualisations.
-Options.
-Spécialités.
+Et moi aussi, au début, j'avais des avis très arrêtés.
 
-Tout le monde autour de la table semblait comprendre.
+*"C'est quoi cette organisation."*
+*"Ils sont nuls."*
+*"Il suffit de..."*
 
-Moi,
-j’ai activé :
-le mode “hochement de tête intelligent”.
+Le front visible absorbe la pression visible.
 
-Le même que quand quelqu’un t’explique les impôts.
+Exactement comme dans le support informatique.
 
-Je n’ai presque pas parlé ce jour-là.
+Et moi, à chaque réunion un peu tendue, je repense à ce chat.
 
-Pas par manque de questions.
+---
+
+## 3. Le jour où j'ai découvert une DGH
+
+Je suis ingénieure SCADA. Systèmes complexes. Contraintes. Dépendances. Propagations d'erreurs en cascade.
+
+J'allais comprendre une DGH les doigts dans le nez.
+
+*(Vous voyez où ça va.)*
+
+Premier conseil d'administration. La proviseure sort la DGH.
+
+DGH. HSA. BMP. TRMD. Groupes. Demi-groupes. Mutualisations. Horaires réglementaires. Dotations rectorales. Marges. Pactes enseignants. Pondérations.
+
+Tout le monde autour de la table hoche la tête.
+
+Moi — celle qui pose des questions à 4h du mat sur des chats électrocutés, celle qui interrompt toutes les deux minutes pour comprendre, celle dont le biais de conformisme est aussi développé que celui d'une huître — j'ai hoché la tête.
+
+*(L'effet Asch est expliqué dans mon article #28. Mais sachez que même moi, j'ai craqué.)*
+
+Je n'ai presque pas parlé ce jour-là.
+
 Par instinct de survie.
 
-Parce que si j’avais interrompu la principale toutes les deux minutes pour demander ce que signifiait chaque acronyme,
-on y serait probablement encore.
+Parce que la proviseure avait l'habitude de me taquiner affectueusement sur mes tableaux Excel de psychopathe. Et pour une fois dans ma vie, je n'ai pas osé ouvrir la bouche.
 
-Et honnêtement ?
+*"Vous avez des questions ?"*
 
-Depuis ce jour-là,
-j’ai un immense respect pour les chefs d’établissement.
+Intérieurement : oui. Environ quatre-vingt-sept.
 
-Parce qu’on peut critiquer :
-- les emplois du temps,
-- les répartitions,
-- les groupes,
-- les spécialités,
-- les incohérences.
+Extérieurement : sourire poli. Hochement de tête. 
 
-Mais dire que c’est simple ?
+Gros blanc intérieur.
 
-Non.
+Moi. Ingénieure SCADA. Celle qui debug des systèmes industriels en temps réel. Penaude comme une élève de sixième qui n'a pas fait ses devoirs.
 
-Ça,
-je refuse.
-
-Même avec mon métier.
-Même avec mon cerveau câblé systèmes complexes.
-Même avec des années de supervision industrielle.
-
-Je regarde certaines DGH comme je regarde les impôts :
-avec humilité.
+*Je suspecte fortement qu'un deuxième chat était mort quelque part.*
 
 ---
 
-## 4. Vulgarisation rapide : une DGH, c’est quoi exactement ?
+## 4. Une DGH — vulgarisation pour moldus
 
-Une DGH,
-c’est la Dotation Globale Horaire.
+*(Dont j'étais. Dont je suis encore un peu, soyons honnêtes.)*
 
-Dit simplement :
-c’est le nombre total d’heures accordé par le rectorat à un établissement pour faire fonctionner l’année scolaire.
+La DGH, c'est la Dotation Globale Horaire.
 
-Et avec cette enveloppe,
-il faut réussir à faire tenir :
-- les classes,
-- les spécialités,
-- les options,
-- les groupes,
-- les langues,
-- les enseignants disponibles,
-- les salles,
-- les contraintes réglementaires,
-- les absences,
-- les demi-groupes,
-- les réformes,
-- les emplois du temps,
-- et parfois :
-des combinaisons de spécialités totalement improbables.
+C'est l'enveloppe d'heures attribuée chaque année par le rectorat à un établissement. Avec ça — et seulement ça — il faut faire tenir toute l'année scolaire.
 
-Le tout :
-avec des moyens souvent réduits.
+Classes, spécialités, options, groupes, demi-groupes, langues, salles disponibles, contraintes réglementaires, absences prévues, réformes en cours, et emplois du temps qui doivent tenir debout sans que personne n'ait cours à minuit.
 
-À ce stade,
-j’ai commencé à suspecter qu’un deuxième chat était mort dans un transformateur.
+Concrètement : 1 309 heures à répartir. 31 classes. 1 069 élèves. 8 spécialités — quand la moyenne nationale tourne autour de 6 ou 7. Et toutes les triplettes de spécialités possibles acceptées, contrairement à d'autres lycées qui en figent le nombre pour simplifier l'équation.
+
+Générosité pédagogique. Prix à payer en complexité explosive.
 
 ---
 
-## 5. La réforme du lycée : quand les systèmes deviennent instables
-
-Avant :
-- S,
-- ES,
-- L.
-
-Le système avait plein de défauts,
-mais il était structurellement plus stable.
-
-Maintenant,
-les élèves composent leur menu.
-
-Et honnêtement :
-sur le principe,
-je trouve ça plutôt bien.
-
-On peut être excellent :
-- en maths,
-- ET en HGGSP,
-- ET vouloir faire autre chose qu’une prépa scientifique.
-
-Le problème,
-c’est que la complexité explose.
-
-Dans une même spécialité,
-on peut retrouver :
-- des élèves visant Polytechnique,
-- d’autres un BUT,
-- d’autres une école de commerce,
-- d’autres Sciences Po,
-- d’autres l’informatique,
-- d’autres encore totalement perdus.
-
-Et pourtant :
-- un seul cours,
-- une seule moyenne,
-- une seule dynamique de classe.
-
-Parfois,
-les professeurs continuent inconsciemment d’enseigner :
-pour le haut du spectre.
-
-Parce qu’historiquement,
-c’était leur public.
-
-Et là encore :
-les parents voient :
-les écrans rouges.
-
-Pas forcément :
-le transformateur.
+📎 *[SCREENSHOT — DGH anonymisée — à insérer ici. Légende : "Une DGH provisoire. Anonymisée. Je vous laisse regarder. Prenez le temps qu'il faut."]*
 
 ---
 
-## 6. Les profs : le support niveau 1 de l’Éducation nationale
+Résultat : certains cours de langue sont à 2,25h par semaine.
 
-C’est probablement la chose la plus contre-intuitive que j’ai comprise en devenant représentante de parents.
+2,25 heures.
 
-Les enseignants sont souvent :
-le support niveau 1 du système.
+La première fois que j'ai vu ça, j'ai cru à une coquille. Ou à un prof coupé en quatre-vingt-dixièmes. J'imaginais vaguement un enseignant d'espagnol qu'on tranchait en tranches fines et qu'on répartissait sur plusieurs créneaux.
 
-Les parents voient :
-- les notes,
-- les absences,
-- les EDT,
-- les changements,
-- les tensions.
+*(En réalité : une heure supplémentaire toutes les quatre semaines. Parce que les heures ne tombent pas rond. Pas rond. Littéralement.)*
 
-Donc :
-ils s’adressent aux profs.
+Alors j'ai fait ce que je fais toujours quand je ne comprends pas : un tableau.
 
-Logique.
+Avec une amie statisticienne — bac+12, chercheuse, le genre de personne qui fait des régressions linéaires pour se détendre — on s'est dit qu'on allait trouver la solution. Optimiser. Simplifier. Résoudre ce que la direction n'avait visiblement pas réussi à résoudre.
 
-Mais derrière,
-les causes peuvent être :
-- rectorales,
-- budgétaires,
-- organisationnelles,
-- systémiques,
-- structurelles,
-- ou parfois juste :
-humaines.
+On était parties pour vingt minutes.
 
-Comme dans les systèmes industriels.
+Trois heures plus tard.
 
-Le support visible absorbe la pression visible.
-
-Même quand la panne vient d’ailleurs.
+Vingt-six combinaisons de triplettes de spécialités différentes. Pour sept classes de 1ère. Avec les contraintes de salles. Les demi-groupes. Les options. Les langues vivantes. Les DNL. Les pactes enseignants.
 
 ---
 
-## 7. Et les représentants de parents dans tout ça ?
-
-Ah.
-
-Alors là.
-
-Comment dire.
-
-Nous aussi,
-on finit support niveau 1.
-
-Les parents :
-- adhèrent peu,
-- répondent peu aux appels à bénévoles,
-- ne font pas les comptes rendus,
-- ne préparent pas les conseils,
-- ne lisent pas toujours les documents.
-
-Mais dès qu’il y a un problème :
-mail.
-
-Et souvent :
-on nous demande d’aller “au casse-pipe” à leur place.
-
-Parler aux profs.
-Parler à la direction.
-Faire médiation.
-Temporiser.
-Expliquer.
-
-Le tout :
-bénévolement.
-
-Je dis ça,
-je dis rien.
+📎 *[SCREENSHOT — Tableau des triplettes anonymisé — à insérer ici. Légende : "Notre tableau. Trois heures de travail. Bac+12 et diplôme d'ingénieur réunis. Résultat : 'c'est chaud quand même'."]*
 
 ---
 
-## 8. Ce que mes tableaux Excel m’ont appris
+On se regardait toutes les deux.
 
-On me taquine souvent avec :
-> “Mme Saintin et ses tableaux Excel.”
+*"C'est chaud quand même."*
 
-Et honnêtement ?
-Ça me fait rire maintenant.
+*"Ouais."*
 
-Parce que mes tableaux ne servent pas :
-à accuser.
+*"Vraiment chaud."*
 
-Ils servent :
-à objectiver.
+*"Ouais."*
 
-À voir :
-- les tendances,
-- les corrélations,
-- les ruptures,
-- les effets systémiques,
-- les continuités pédagogiques,
-- les problèmes récurrents,
-- les écarts de perception.
+Long silence.
 
-Comprendre les contraintes ne veut pas dire accepter l’immobilisme.
+*"On fait comment ?"*
 
-Mais comprendre le système :
-change profondément la manière de parler aux humains qui le tiennent à bout de bras.
+*"...Je sais pas."*
 
----
+Gros moment de solitude.
 
-## 9. Conclusion — toujours le chat
+Moi qui avais pensé qu'il *suffisait de*. Moi qui avais intérieurement jugé les emplois du temps "absurdes". Moi et ma copine bac+12 — deux cerveaux bien câblés, outillés, motivés — on n'avait pas trouvé.
 
-Plus je découvre les coulisses des EPLE,
-plus je repense à cette nuit-là.
+La proviseure, en conseil d'administration, avec son sourire :
 
-Les écrans rouges.
-Le stress.
-Les alarmes.
-Les humains visibles qui absorbent la pression visible.
+*"Vous avez regardé les triplettes ?"*
 
-Et quelque part,
-loin derrière le système :
-un chat dans un transformateur.
+*"Oui."*
 
-Parfois,
-les problèmes visibles ne viennent pas des gens visibles.
+*"Et alors ?"*
 
+*"...C'est chaud."*
 
+*"Bienvenue."*
 
+Je ne donne plus de leçons sur les emplois du temps.
 
--------
+Je parle du chat.
 
-# Le chat dans le transfo , Note de travail ChatGPT
-
-## Plan de travail – Hors Kadre
+*Le chat, toujours là.*
 
 ---
 
-# 1. Ouverture : les écrans sont rouges
+## 5. Les profs — le support niveau 1 de l'Éducation nationale
 
-## Objectif
+C'est la chose la plus contre-intuitive que j'ai comprise en sept ans de mandat.
 
-Créer immédiatement :
+Les enseignants sont souvent le support niveau 1 du système.
 
-* tension,
-* humour,
-* mystère.
+Les parents voient les profs. Donc ils s'adressent aux profs. Logique.
 
-## Contenu
+Mais derrière ce que les parents voient, les causes peuvent être rectorales, budgétaires, réglementaires — ou simplement kafkaïennes.
 
-* Astreinte à 4h du matin.
-* Tous les écrans SCADA deviennent rouges.
-* Panique.
-* Support niveau 1 appelé.
-* Personne ne comprend.
-* Révélation finale :
-  un chat électrocuté dans un transformateur.
+Exemple. Pendant le COVID, les protocoles changeaient toutes les semaines. Parfois tous les trois jours. Les enseignants découvraient les nouvelles règles en même temps que les parents — voire après. 1 mètre de distance autour de chaque élève. Dans une classe de 35 élèves. Dans une pièce de 35 mètres carrés.
 
-## Idée centrale
+Je vous laisse faire le calcul.
 
-Les symptômes visibles ne racontent pas toujours la vraie panne.
+Les profs n'avaient pas décidé ça. Ils ont fait avec. Ils ont absorbé les questions des parents, les angoisses des élèves, l'absurdité du système — tout en essayant d'assurer la continuité pédagogique avec des règles qui changeaient avant qu'ils aient fini de les appliquer.
 
----
+Moi qui me suis retrouvée à 4h du matin à débuguer un système à cause d'un chat — je sais ce que c'est, absorber une pression qui ne vient pas de vous.
 
-# 2. Pourquoi cette histoire me revient souvent aujourd’hui
+Le front visible absorbe la pression visible.
 
-## Transition vers l’Éducation nationale
+Même quand la panne vient d'ailleurs.
 
-## Contenu
+Même quand le problème est un chat dans un transformateur.
 
-* Conseils de classe.
-* Parents inquiets.
-* Emplois du temps absurdes.
-* Professeurs absents.
-* Notes.
-* Parcoursup.
-* Tensions.
-* Représentants au front.
-* Professeurs au front.
-* Directions au front.
-
-## Phrase pivot
-
-“Plus je siège dans l’Éducation nationale, plus je pense à ce chat.”
+*Notre chat, toujours fidèle au poste.*
 
 ---
 
-# 3. Le jour où j’ai découvert une DGH
+## 7. Toujours le chat
 
-## Partie humour + vulnérabilité
+Je développe des sites web complexes en une journée. Je construis des outils de supervision pour des accélérateurs de particules. Je travaille sur des systèmes où une erreur d'une milliseconde peut tout arrêter.
 
-## Contenu
+Et les triplettes de spécialités d'un lycée de province — avec ma copine bac+12, trois heures de tableaux Excel, et toute notre bonne volonté — on n'a pas trouvé comment les simplifier.
 
-* Première DGH en CA.
-* Découverte des acronymes.
-* Effet Asch.
-* “Mode hochement de tête intelligent”.
-* Impression de rentrer dans un système alien.
+Pas parce qu'on est nulles.
 
-## Objectif
+Parce que c'est vraiment compliqué.
 
-Humaniser.
-Montrer qu’un parent extérieur ne comprend pas immédiatement.
+Alors la prochaine fois qu'un parent me dit *"c'est quoi cette organisation, il suffit de..."* — je ne lui montre pas le tableau.
 
----
+Je lui parle du chat.
 
-# 4. Vulgariser l’envers du décor
+Dans les systèmes complexes — industriels ou scolaires — le front visible absorbe souvent des problèmes invisibles.
 
-## Partie pédagogique accessible
+Les écrans rouges ne viennent pas toujours des gens qui sont devant les écrans.
 
-## Expliquer simplement
+Parfois, la panne vient de beaucoup plus loin. D'une décision rectorale. D'une réforme mal financée. D'une DGH qui ne tombe pas rond. De vingt-six triplettes impossibles à démêler.
 
-* DGH
-* HSA
-* BMP
-* spécialités
-* groupes
-* triplettes
-* contraintes EDT
+D'un chat dans un transformateur.
 
-## Métaphore
+**Et dans les deux cas : ce n'est pas la faute de ceux qui sont au front.**
 
-“Tetris sous contraintes”
-ou
-“ordonnanceur humain géant”.
+Chacun son expertise.
 
-## Objectif
-
-Faire comprendre la complexité sans noyer le lecteur.
+Même — et surtout — quand on est bien câblé.
 
 ---
 
-# 5. La réforme du lycée : quand les systèmes deviennent instables
+*Paix à son âme.*
 
-## Partie systémique
+*Notre fil conducteur. Au sens littéral comme au figuré.*
 
-## Contenu
-
-* Avant : S / ES / L.
-* Maintenant : menus personnalisés.
-* Liberté accrue MAIS explosion de complexité.
-* Classes hybrides.
-* Profils très différents dans une même spé.
-* Effets sur notation / rythme / orientation.
-
-## Objectif
-
-Montrer que certaines tensions viennent du système lui-même.
+*E=HK² 💥*
 
 ---
 
-# 6. Les profs : le support niveau 1 de l’Éducation nationale
+## Sources & transparence
 
-## Partie cœur émotionnel de l’article
-
-## Contenu
-
-* Les parents voient les profs.
-* Les profs absorbent :
-
-  * réformes,
-  * pénuries,
-  * absences,
-  * DGH,
-  * décisions rectorales.
-* Comparaison support informatique / urgences / accueil.
-
-## Important
-
-Ne PAS idéaliser.
-Ne PAS victimiser.
-Rester systémique.
+- DGH 2026 — document provisoire interne, anonymisé
+- Analyse des triplettes de spécialités 1ère 2024-2025 — UNAAPE Descartes
+- Compte rendu réunion de rentrée 2024 — UNAAPE Descartes
+- Expérience personnelle — 13 ans de support informatique au synchrotron SOLEIL, 7 ans de mandat UNAAPE, beaucoup de café ✅
 
 ---
 
-# 7. Et les représentants de parents dans tout ça ?
-
-## Partie auto-dérision / Mme BonnePoire
-
-## Contenu
-
-* Les parents qui adhèrent surtout quand il y a un problème.
-* Les bénévoles “tampon émotionnel”.
-* Les mails.
-* Les conseils.
-* Les restitutions.
-* Les gens qui veulent qu’on “aille parler aux profs”.
-
-## Objectif
-
-Montrer les couches intermédiaires du système.
+*Titre Mediapart (28 car.) :* `Le chat dans le transfo`
+*Sous-titre :* `Ou pourquoi les écrans rouges ne racontent pas toujours la vraie panne.`
+*Mots-clés :* DGH, emploi du temps, lycée, spécialités, réforme lycée, chefs d'établissement, représentante parents, SCADA, système complexe, Hors Kadre, vulgarisation
+*Numéro article :* **#33**
+*Déclinable Medium EN :* oui — *"The cat in the transformer"*
 
 ---
 
-# 8. Ce que les tableaux Excel m’ont appris
-
-## Partie réflexion mature
-
-## Contenu
-
-* Les chiffres ne servent pas à accuser.
-* Ils servent à objectiver.
-* Corrélations.
-* Continuité pédagogique.
-* Participation parents.
-* Effets systémiques.
-
-## Phrase importante
-
-“Comprendre les contraintes ne veut pas dire accepter l’immobilisme.”
-
----
-
-# 9. Conclusion : le chat dans le transfo
-
-## Boucle narrative
-
-## Retour à l’anecdote initiale
-
-## Idée finale
-
-Dans les systèmes complexes :
-
-* le front visible absorbe souvent des problèmes invisibles.
-
-Et parfois :
-les écrans rouges ne viennent pas du support.
-
-Parfois,
-le problème est un chat dans un transformateur.
-
-
-Et dans les systèmes complexes,
-c’est probablement la chose la plus difficile à expliquer.
+*Note production LinkedIn :*
+Vidéo 7 secondes — salle de supervision synchrotron SOLEIL — mon chef : *"La machine va redémarrer."*
+→ Tagger les collègues qui se souviennent de cette nuit-là.
+→ Photo : écrans rouges en arrière-plan, équipe qui rigole à 4h du mat. ✅
