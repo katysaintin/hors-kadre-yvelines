@@ -1,124 +1,198 @@
-# Le chat dans le transformateur
+# Le chat dans le transfo
 
-*Ou pourquoi les écrans rouges ne racontent pas toujours la vraie panne.*
+## Plan de travail – Hors Kadre
 
-## Idée d’article — Hors Kadre
+---
 
-4h du matin.
+# 1. Ouverture : les écrans sont rouges
 
-Téléphone d’astreinte.
+## Objectif
 
-Tous les écrans SCADA sont rouges.
+Créer immédiatement :
 
-Le support niveau 1 est appelé en urgence.
+* tension,
+* humour,
+* mystère.
 
-Les utilisateurs paniquent.
-Les baies ne répondent plus.
-Les alarmes tombent les unes après les autres.
-Le système semble s’effondrer.
+## Contenu
 
-Et au milieu de tout ça :
-une développeuse d’IHM industrielle, réveillée en catastrophe, sans les yeux en face des trous, essaie de comprendre pourquoi tout est rouge.
+* Astreinte à 4h du matin.
+* Tous les écrans SCADA deviennent rouges.
+* Panique.
+* Support niveau 1 appelé.
+* Personne ne comprend.
+* Révélation finale :
+  un chat électrocuté dans un transformateur.
 
-Les utilisateurs voient :
+## Idée centrale
 
-* des écrans,
-* des alarmes,
-* des interfaces,
-* un système visible.
+Les symptômes visibles ne racontent pas toujours la vraie panne.
 
-Donc ils appellent :
-le support visible.
+---
 
-Logique.
+# 2. Pourquoi cette histoire me revient souvent aujourd’hui
 
-Sauf que cette nuit-là, la vraie cause du problème n’était :
+## Transition vers l’Éducation nationale
 
-* ni logicielle,
-* ni réseau,
-* ni humaine.
+## Contenu
 
-Un chat s’était électrocuté dans un transformateur.
+* Conseils de classe.
+* Parents inquiets.
+* Emplois du temps absurdes.
+* Professeurs absents.
+* Notes.
+* Parcoursup.
+* Tensions.
+* Représentants au front.
+* Professeurs au front.
+* Directions au front.
 
-Cette histoire est vraie.
+## Phrase pivot
 
-Et plus je siège dans l’Éducation nationale comme représentante de parents d’élèves,
-plus je pense à ce chat.
+“Plus je siège dans l’Éducation nationale, plus je pense à ce chat.”
 
-Parce qu’au lycée aussi :
-les écrans sont souvent rouges.
+---
 
-Les parents voient :
+# 3. Le jour où j’ai découvert une DGH
 
-* des emplois du temps absurdes,
-* des cours annulés,
-* des notes incompréhensibles,
-* des profs absents,
-* des spécialités incompatibles,
-* des classes déséquilibrées,
-* Parcoursup,
-* des tensions.
+## Partie humour + vulnérabilité
 
-Donc ils interpellent :
+## Contenu
 
-* les enseignants,
-* les professeurs principaux,
-* la direction.
+* Première DGH en CA.
+* Découverte des acronymes.
+* Effet Asch.
+* “Mode hochement de tête intelligent”.
+* Impression de rentrer dans un système alien.
 
-Le front visible.
+## Objectif
 
-Mais derrière les écrans rouges, il y a parfois :
+Humaniser.
+Montrer qu’un parent extérieur ne comprend pas immédiatement.
 
-* des DGH impossibles,
-* des réformes empilées,
-* des pénuries de remplaçants,
-* des contraintes de spécialités ingérables,
-* des emplois du temps insolubles,
-* des décisions rectorales,
-* des arbitrages budgétaires,
-* des systèmes construits par couches successives.
+---
 
-Comme dans l’informatique industrielle.
+# 4. Vulgariser l’envers du décor
 
-Le support niveau 1 n’a pas créé la panne.
-Il gère juste les alarmes visibles.
+## Partie pédagogique accessible
 
-Et parfois, dans l’Éducation nationale aussi :
-le problème est un chat dans un transformateur.
+## Expliquer simplement
 
-## Axe de l’article
+* DGH
+* HSA
+* BMP
+* spécialités
+* groupes
+* triplettes
+* contraintes EDT
 
-* Expliquer la partie invisible des EPLE.
-* Montrer les contraintes systémiques derrière les symptômes visibles.
-* Expliquer pourquoi les enseignants deviennent souvent le “support niveau 1” du système.
-* Montrer que comprendre les contraintes n’empêche pas de demander des améliorations.
-* Faire de la médiation entre parents et équipes éducatives.
-* Vulgariser :
+## Métaphore
 
+“Tetris sous contraintes”
+ou
+“ordonnanceur humain géant”.
+
+## Objectif
+
+Faire comprendre la complexité sans noyer le lecteur.
+
+---
+
+# 5. La réforme du lycée : quand les systèmes deviennent instables
+
+## Partie systémique
+
+## Contenu
+
+* Avant : S / ES / L.
+* Maintenant : menus personnalisés.
+* Liberté accrue MAIS explosion de complexité.
+* Classes hybrides.
+* Profils très différents dans une même spé.
+* Effets sur notation / rythme / orientation.
+
+## Objectif
+
+Montrer que certaines tensions viennent du système lui-même.
+
+---
+
+# 6. Les profs : le support niveau 1 de l’Éducation nationale
+
+## Partie cœur émotionnel de l’article
+
+## Contenu
+
+* Les parents voient les profs.
+* Les profs absorbent :
+
+  * réformes,
+  * pénuries,
+  * absences,
   * DGH,
-  * emplois du temps,
-  * spécialités,
-  * contraintes de remplacement,
-  * effets de la réforme du lycée,
-  * tensions Parcoursup.
+  * décisions rectorales.
+* Comparaison support informatique / urgences / accueil.
 
-## Ton
+## Important
 
-* Humour absurde.
-* Métaphores techniques.
-* Narration incarnée.
-* Pas anti-profs.
-* Pas anti-parents.
-* Analyse systémique.
-* Accessible grand public.
+Ne PAS idéaliser.
+Ne PAS victimiser.
+Rester systémique.
 
-## Idées de titres
+---
 
-* Le chat dans le transformateur
-* Les écrans sont rouges
-* Le support niveau 1 de l’Éducation nationale
-* EPLE : la partie cachée de l’iceberg
-* Les profs ne sont pas le rectorat
-* Quand les écrans deviennent rouges
-* Symptômes visibles, causes invisibles
-* Mme BlagueAPart plaisante. Les écrans sont rouges.
+# 7. Et les représentants de parents dans tout ça ?
+
+## Partie auto-dérision / Mme BonnePoire
+
+## Contenu
+
+* Les parents qui adhèrent surtout quand il y a un problème.
+* Les bénévoles “tampon émotionnel”.
+* Les mails.
+* Les conseils.
+* Les restitutions.
+* Les gens qui veulent qu’on “aille parler aux profs”.
+
+## Objectif
+
+Montrer les couches intermédiaires du système.
+
+---
+
+# 8. Ce que les tableaux Excel m’ont appris
+
+## Partie réflexion mature
+
+## Contenu
+
+* Les chiffres ne servent pas à accuser.
+* Ils servent à objectiver.
+* Corrélations.
+* Continuité pédagogique.
+* Participation parents.
+* Effets systémiques.
+
+## Phrase importante
+
+“Comprendre les contraintes ne veut pas dire accepter l’immobilisme.”
+
+---
+
+# 9. Conclusion : le chat dans le transfo
+
+## Boucle narrative
+
+## Retour à l’anecdote initiale
+
+## Idée finale
+
+Dans les systèmes complexes :
+
+* le front visible absorbe souvent des problèmes invisibles.
+
+Et parfois :
+les écrans rouges ne viennent pas du support.
+
+Parfois,
+le problème est un chat dans un transformateur.
