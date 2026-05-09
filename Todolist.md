@@ -55,10 +55,10 @@
 | 13 mai | Mardi | Parcoursup — vulgarisation outil gratuit | FR | 8h00 | ✅ Prêt — tagger Virginie Busquet |
 | 15 mai | Jeudi | Wrong Lake | EN | 14h00 | ✅ Prêt |
 | 20 mai | Mardi | IA Fais-le toi | FR | 8h00 | 🔄 À construire avec Claude LinkedIn |
-| 21 mai | Mercredi | Le Chat dans le transfo | FR | 8h00 | ✅ Prêt — vidéo 7s + photo SOLEIL |
+| 21 mai | Mercredi | Le Chat dans le transfo | FR | 8h00 | ✅ Programmé — vidéo 7s + photo SOLEIL |
 | Après 18 mai | À caler | Post certification IA | FR | 8h00 | 🔄 À rédiger après soutenance |
 | TBD | À caler | Republication Thomas Galoisy | FR | 8h00 | 🔄 À sélectionner |
-| 10 juin | Mardi | Switch/Case — Mrs. OutKase | EN | 14h00 | ✅ Prêt |
+| 10 juin | Mardi | Switch/Case — Mrs. OutKase | EN | 14h00 | ✅ Programmé |
 
 ### Notes LinkedIn
 - Posts EN audience internationale → **14h00**
@@ -90,13 +90,13 @@
 - [ ] Soumettre ADHD/Claude à Better Humans — Medium
 
 ### Semaine du 12 mai
-- [ ] FB Ép. SPÉCIAL Parcoursup — 12 mai 12h15 ✅ programmé
-- [ ] LinkedIn Parcoursup — 13 mai 8h00 (tagger Virginie Busquet)
+- [x] FB Ép. SPÉCIAL Parcoursup — 12 mai 12h15 ✅ programmé
+- [x] LinkedIn Parcoursup — 13 mai 8h00 (tagger Virginie Busquet) ✅ programmé
 - [ ] LinkedIn Wrong Lake EN — 15 mai 14h00
 - [ ] Medium ADHD/Claude — 12 mai
 
 ### Semaine du 19 mai
-- [ ] FB Ép. 14 Fais-le toi — 19 mai 12h15
+- [x] FB Ép. 14 Fais-le toi — 19 mai 12h15
 - [ ] LinkedIn IA Fais-le toi — 20 mai 8h00 (construire avec Claude LinkedIn)
 - [ ] LinkedIn Chat dans le transfo — 21 mai 8h00 (vidéo + photo)
 - [ ] Sélectionner republication Thomas Galoisy
