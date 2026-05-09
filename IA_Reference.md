@@ -213,7 +213,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 9 | projet pHARe — harcèlement adulte/enfant ignoré | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/09_PhareDispositifIncompletEvaelle.md) | - | :heavy_check_mark: | - |
 | 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
 | 28 | Certification IA grâce à mon IA sans BAFA | [**PRÊT**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
-| 33 | FaceHook, JeTemTube et Mme DopamineÀZéro | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/33_LeChantDansLeTransfo.md) | - | - |
+| 33 | Le Chat dans le transfo | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/33_LeChantDansLeTransfo.md) | PROGRAMMÉ épisode 10| PROGRAMMÉ |
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
@@ -275,6 +275,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 16 |  Mme BlagueAPart plaisante , les ados en PLS !  | Article 6 | PROGRAMMÉ | - |
 | 17 |  Mme HorsKase cherche désespérement une case !  | Article 26 | PROGRAMMÉ | À FAIRE |
 | 18 |  Certification IA sans BAFA  | Article 28 | PROGRAMMÉ | À FAIRE |
+| 19 |  Le chat dans le transfo  | Article 33 | PROGRAMMÉ | PROGRAMMÉ |
 
 
 ## 7. Légende des statuts
