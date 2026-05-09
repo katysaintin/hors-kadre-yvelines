@@ -14,8 +14,8 @@
 | 7 mai | Mercredi | Ép. 12 | #8 Poisson / Filières Pro | Poisson.jpeg | ✅ Publié |
 | 12 mai | Lundi | Ép. SPÉCIAL | #5 Parcoursup — une étape à la fois | ParcoursupCover.png + carrousel 10 slides | ✅ Programmé |
 | 15 mai | Jeudi | Ép. 13 | #23 Mauvais Lac | MauvaisLacClair.png | ✅ Programmé |
-| 19 mai | Lundi | Ép. 14 | #03 Fais-le toi-même | 03_FaisLeToi3.png | ⚠️ À programmer |
-| 26 mai | Lundi | Ép. 15 | #24 Les Perles des IA | PerlesIA.png | ⚠️ À programmer |
+| 19 mai | Lundi | Ép. 14 | #03 Fais-le toi-même | 03_FaisLeToi3.png | ✅ Programmé |
+| 26 mai | Lundi | Ép. 15 | #24 Les Perles des IA | PerlesIA.png | ✅ Programmé |
 | 2 juin | Lundi | Ép. 16 | #06 Mme BlagueAPart / Ados en PLS | ConseilDeClasse.png | ⚠️ À programmer dès le 1er juin |
 | 9 juin | Lundi | Ép. 17 | #26 Mme HorsKase / Switch Case | SwitchCaseFR.png | ⚠️ À programmer dès le 1er juin |
 | 16 juin | Lundi | Ép. 18 | #28 Certification IA sans BAFA | RedApple.png | ⚠️ À programmer après 18 mai |
