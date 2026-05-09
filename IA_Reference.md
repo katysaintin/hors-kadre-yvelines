@@ -195,6 +195,9 @@ Rendre compréhensible ce qui ne l’était pas.
 | 25 | IA usages, usages, différences perçues et effets de conception | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/25_IA_ALaLoupe.md) | À FAIRE | - | - |
 | 27 | IA vulgarisation accessibilité les impôts | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_PourlesImpots.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_TaxesMediumEN.md) | PROGRAMME | PROGRAMME |
 | 29 | Les déboires administratifs non modernisés | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/29_DeboiresAdministratifs.md) | A FAIRE | - |
+| 30 | IA conversationnelle, est elle neurotypique | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/30_IAEstElleNeurotypique.md) | - | - |
+| 31 | IA Usage Des Ecrans Deplacée Créativité | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/31_UsageDesEcransDeplacéeIA.md) | - | - |
+
 
 
 ### TRILOGIE 2 — Éducation & Parentalité
