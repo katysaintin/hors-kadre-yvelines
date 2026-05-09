@@ -189,7 +189,7 @@ footer a{color:var(--terra)}
     </div>
     <div class="field">
       <label>Ville</label>
-      <input type="text" id="f-commune" placeholder="ex: Vélizy, Versailles…">
+      <input type="text" id="f-commune" placeholder="ex: Montigny, Paris, Yvelines…">
     </div>
     <div class="field">
       <label>Sélectivité</label>
@@ -312,7 +312,15 @@ fetch('data_idf.json')
       };
     });
     document.getElementById('loading').style.display = 'none';
-    // Déclencher l'affichage initial
+    // Paramètres URL ou défauts
+    var params = new URLSearchParams(window.location.search);
+    var dept    = params.get('dept')    || 'Yvelines';
+    var commune = params.get('commune') || 'Montigny-le-Bretonneux';
+    var famille = params.get('type')    || '';
+    // Pré-remplir les filtres
+    if(commune) document.getElementById('f-commune').value = commune;
+    if(dept && !commune) document.getElementById('f-commune').value = dept;
+    if(famille) document.getElementById('f-type').value = famille;
     applyFilters();
   })
   .catch(function(err){
@@ -393,7 +401,10 @@ function applyFilters(){
       var haystack = (d.nom + ' ' + d.type + ' ' + d.etab).toLowerCase();
       if(haystack.indexOf(motcleVal) < 0) return false;
     }
-    if(communeVal && d.commune.toLowerCase().indexOf(communeVal) < 0) return false;
+    if(communeVal) {
+      var hayCommune = (d.commune + ' ' + (d.dept||'')).toLowerCase();
+      if(hayCommune.indexOf(communeVal) < 0) return false;
+    }
     if(selVal !== '' && String(d.sel) !== selVal) return false;
     return true;
   });
