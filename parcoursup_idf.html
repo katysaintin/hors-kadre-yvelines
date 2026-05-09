@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parcoursup Décodé — Île-de-France — Hors Kadre</title>
+<meta name="description" content="Comprenez vraiment Parcoursup dans les Yvelines : ratio candidats/place, profil des admis, taux d'accès. Données Open Data 2025.">
+
+<!-- Google Analytics GitHub -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1H0D33HE0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N1H0D33HE0', { 'anonymize_ip': true });
+</script>
+
+<style>
+:root {
+  --navy:#1B3A6B; --terra:#C4572A; --offwhite:#F5F0EB;
+  --gold:#B8860B; --gray:#555; --border:#d9d1ca; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;color:var(--navy);line-height:1.6}
+a{color:var(--terra)}
+
+/* HEADER */
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);padding:20px 16px;text-align:center}
+.site-header img{max-width:100%;height:auto;margin-bottom:10px}
+.header-links{font-size:.88rem}
+.header-links a{margin:0 10px;color:var(--navy);text-decoration:none}
+.header-links a:hover{color:var(--terra)}
+
+.container{max-width:1100px;margin:0 auto;padding:24px 16px 80px}
+
+/* INTRO */
+.intro-panel{background:var(--offwhite);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:20px;font-size:.93rem}
+.intro-panel h2{color:var(--terra);font-size:1.1rem;margin-bottom:8px}
+.intro-panel p{color:var(--gray);margin-bottom:6px}
+.intro-panel p:last-child{margin-bottom:0}
+
+/* ALERTE YVELINES */
+.alerte-yvelines{background:#e8f4fd;border:1px solid #b3d9f5;border-left:5px solid var(--navy);border-radius:8px;padding:12px 14px;margin-bottom:20px;font-size:.88rem;color:var(--navy)}
+.alerte-yvelines a{color:var(--terra)}
+
+/* FILTRES */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:flex-end}
+.field{display:flex;flex-direction:column}
+.field label{font-size:.82rem;color:var(--gray);margin-bottom:3px;font-weight:600}
+.field select,.field input{padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:Georgia,serif;color:var(--navy);background:var(--white);min-width:160px}
+.btn{padding:8px 18px;background:var(--terra);color:var(--white);border:none;border-radius:8px;cursor:pointer;font-size:.9rem;font-family:Georgia,serif;font-weight:600}
+.btn-reset{background:var(--white);color:var(--navy);border:1px solid var(--border)}
+.result-info{font-size:.85rem;color:var(--gray);margin-bottom:10px}
+
+/* LÉGENDE */
+.legende{display:flex;flex-wrap:wrap;gap:12px;font-size:.82rem;margin-bottom:12px;align-items:center}
+.legende-titre{font-weight:700;color:var(--navy)}
+.legende-item{display:flex;align-items:center;gap:5px;color:var(--gray)}
+.legende-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+
+/* TABLE */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--white)}
+thead th{background:var(--navy);color:var(--white);padding:10px 8px;text-align:left;white-space:nowrap;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;user-select:none}
+thead th:hover{background:#254d8f}
+thead th.sorted-asc::after{content:" ▲"}
+thead th.sorted-desc::after{content:" ▼"}
+tbody td{padding:9px 8px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:nth-child(even) td{background:#faf7f4}
+tr:hover td{background:#f0ebe4}
+
+.formation-name{font-weight:700;color:var(--navy);font-size:.88rem}
+.etab-name{font-size:.78rem;color:var(--gray);margin-top:2px}
+.tag{display:inline-block;padding:1px 6px;border-radius:8px;font-size:.72rem;font-weight:600;margin-top:3px;margin-right:2px}
+.tag-sel{background:#fef3c7;color:#92400e}
+.tag-open{background:#d1fae5;color:#065f46}
+.tag-int{background:#dbeafe;color:#1e40af}
+.tag-app{background:#ede9fe;color:#4c1d95}
+
+.ratio-val{font-size:1rem;font-weight:700}
+.ratio-lbl{font-size:.72rem;margin-top:2px}
+.ratio-detail{font-size:.75rem;color:var(--gray);margin-top:2px}
+
+/* BARRES BAC */
+.bac-bars{min-width:110px}
+.bac-row{display:flex;align-items:center;gap:5px;margin-bottom:3px;font-size:.75rem}
+.bac-lbl{width:20px;color:var(--gray);flex-shrink:0}
+.bac-outer{flex:1;background:var(--border);border-radius:3px;height:7px}
+.bac-inner{height:7px;border-radius:3px}
+.bac-pct{width:30px;text-align:right;font-weight:700;color:var(--navy)}
+
+.btn-fiche{display:inline-block;padding:4px 10px;background:var(--offwhite);border:1px solid var(--border);border-radius:6px;font-size:.78rem;color:var(--navy);text-decoration:none;white-space:nowrap}
+.btn-fiche:hover{background:var(--navy);color:var(--white)}
+
+/* STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:16px 0}
+.stat-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center}
+.stat-card .val{font-size:1.5rem;font-weight:700;color:var(--terra)}
+.stat-card .lbl{font-size:.78rem;color:var(--gray);margin-top:4px}
+
+/* PLACEHOLDER */
+.placeholder{text-align:center;padding:48px 20px;color:var(--gray)}
+.placeholder .ico{font-size:3rem;margin-bottom:12px}
+.placeholder h3{color:var(--navy);font-size:1.1rem;margin-bottom:6px}
+
+/* FOOTER */
+footer{text-align:center;color:var(--gray);font-size:.82rem;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);line-height:1.8}
+footer a{color:var(--terra)}
+
+/* RGPD */
+#rgpd-banner{position:fixed;bottom:0;left:0;right:0;background:#1a2a4a;color:#fff;padding:12px 20px;font-size:13px;display:flex;justify-content:space-between;align-items:center;z-index:9999;font-family:sans-serif}
+#rgpd-banner a{color:#e07a5f}
+#rgpd-btn{background:#e07a5f;color:white;border:none;padding:8px 16px;cursor:pointer;border-radius:4px;margin-left:20px;white-space:nowrap}
+
+@media(max-width:700px){
+  /* Formulaire : chaque champ prend toute la largeur */
+  .filters{flex-direction:column}
+  .field{width:100%}
+  .field select,.field input{width:100%;min-width:unset}
+  .filters>div[style*="display:flex"]{width:100%}
+  .filters>div[style*="display:flex"] .btn{flex:1;text-align:center}
+
+  /* Tableau : masquer colonnes 4-5-6 (Profil, Taux, Rang) mais GARDER 1-2-3 et 7 (Comprendre) */
+  thead th:nth-child(4),thead th:nth-child(5),thead th:nth-child(6){display:none}
+  tbody td:nth-child(4),tbody td:nth-child(5),tbody td:nth-child(6){display:none}
+
+  /* Colonne Fiche (7) : version compacte */
+  thead th:nth-child(7){font-size:.65rem;padding:6px 4px}
+  tbody td:nth-child(7){padding:6px 4px}
+  .btn-fiche{padding:5px 7px;font-size:.72rem}
+
+  #rgpd-banner{flex-direction:column;gap:8px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="header-links">
+    <a href="index.html">← Accueil</a>
+    <a href="indexival.html">Classement IVAL</a>
+    <a href="http://katy.ho.free.fr/parcoursup.php" target="_blank">Outil complet France ↗</a>
+    <a href="legal/mentions-legales.html">Mentions légales</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="intro-panel">
+    <h2>Parcoursup Décodé — Île-de-France (78)</h2>
+    <p>
+      Recherchez une formation dans les Yvelines, comprenez le vrai niveau de concurrence.
+      Combien de candidats pour une place ? Quel profil a été admis l'an dernier ?
+      Ce que la vidéo officielle Parcoursup ne vous dit pas — en clair, avec les vrais chiffres.
+    </p>
+    <p>
+      <strong>Données 2025</strong> (résultats complets). Les données 2026 en temps réel
+      sont disponibles sur chaque fiche officielle Parcoursup.
+    </p>
+  </div>
+
+  <div class="alerte-yvelines">
+    🗺️ <strong>Version Yvelines uniquement.</strong>
+    Pour rechercher dans toute la France :
+    <a href="http://katy.ho.free.fr/parcoursup.php" target="_blank">outil complet sur katy.ho.free.fr ↗</a>
+  </div>
+
+  <!-- FILTRES -->
+  <div class="filters">
+    <div class="field">
+      <label>Famille de formation <a href="typeformation.html" target="_blank" style="font-size:.75rem;font-weight:400;color:var(--terra)">C'est quoi ? →</a></label>
+      <select id="f-type">
+        <option value="">— Toutes —</option>
+        <option value="BUT">🎓 BUT — Bachelor Universitaire de Technologie</option>
+        <option value="BTS">📋 BTS — Brevet de Technicien Supérieur</option>
+        <option value="Licence">📚 Licence (université, 3 ans)</option>
+        <option value="CPGE">⭐ Prépa (CPGE) — Classes Préparatoires</option>
+        <option value="Sante">🏥 Santé — Infirmier, Kiné, Médecine…</option>
+        <option value="Ingenieur">⚙️ École d'ingénieurs</option>
+        <option value="Commerce">💼 Commerce / Management</option>
+        <option value="Art">🎨 Art / Design / Architecture</option>
+        <option value="Autre">📌 Autre</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Préciser la spécialité</label>
+      <input type="text" id="f-motcle" placeholder="ex: Informatique, GEII, Infirmier…">
+    </div>
+    <div class="field">
+      <label>Ville</label>
+      <input type="text" id="f-commune" placeholder="ex: Vélizy, Versailles…">
+    </div>
+    <div class="field">
+      <label>Sélectivité</label>
+      <select id="f-sel">
+        <option value="">— Toutes —</option>
+        <option value="1">Sélective</option>
+        <option value="0">Non sélective</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Trier par</label>
+      <select id="f-sort">
+        <option value="ratio-desc">Plus tendu en 1er</option>
+        <option value="ratio-asc">Plus accessible en 1er</option>
+        <option value="taux-asc">Plus difficile d'accès en 1er</option>
+        <option value="taux-desc">Plus facile d'accès en 1er</option>
+        <option value="cand-desc">Plus demandé en 1er</option>
+        <option value="commune-asc">Ville (A→Z)</option>
+      </select>
+    </div>
+    <div style="display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap;width:100%">
+      <button class="btn" style="flex:1" onclick="applyFilters()">Filtrer</button>
+      <button class="btn btn-reset" style="flex:1" onclick="resetFilters()">Réinitialiser</button>
+    </div>
+  </div>
+
+  <div id="result-info" class="result-info"></div>
+
+  <!-- STATS DYNAMIQUES -->
+  <div class="stats-grid" id="stats-grid" style="display:none">
+    <div class="stat-card"><span class="val" id="stat-total">-</span><span class="lbl">formations affichées</span></div>
+    <div class="stat-card"><span class="val" id="stat-sel">-</span><span class="lbl">sélectives</span></div>
+    <div class="stat-card"><span class="val" id="stat-tendu">-</span><span class="lbl">très sélectives<br>(ratio > 30)</span></div>
+    <div class="stat-card"><span class="val" id="stat-acces">-</span><span class="lbl">taux d'accès<br>moyen</span></div>
+  </div>
+
+  <!-- LÉGENDE -->
+  <div class="legende" id="legende" style="display:none">
+    <span class="legende-titre">Ratio candidats/place :</span>
+    <span class="legende-item"><span class="legende-dot" style="background:#2d8a4e"></span> ≤ 5 Accessible</span>
+    <span class="legende-item"><span class="legende-dot" style="background:#c47f00"></span> ≤ 15 Modéré</span>
+    <span class="legende-item"><span class="legende-dot" style="background:#c45a00"></span> ≤ 30 Tendu</span>
+    <span class="legende-item"><span class="legende-dot" style="background:#b0261e"></span> > 30 Très sélectif</span>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrap">
+  <table id="main-table" style="display:none">
+    <thead>
+      <tr>
+        <th onclick="sortBy('nom')">Formation</th>
+        <th onclick="sortBy('commune')">Ville</th>
+        <th onclick="sortBy('ratio')" class="sorted-desc">Candidats/place</th>
+        <th>Profil admis<br><small style="font-weight:400;text-transform:none">BG/BT/BP</small></th>
+        <th onclick="sortBy('taux')">Taux d'accès</th>
+        <th onclick="sortBy('rang')">Rang dernier</th>
+        <th>Fiche</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+  </div>
+
+  <div id="loading" style="text-align:center;padding:40px;color:var(--gray);font-size:.95rem;">
+    ⏳ Chargement des formations en Île-de-France…
+  </div>
+  <div id="placeholder" class="placeholder">
+    <div class="ico">🎓</div>
+    <h3>Sélectionnez un filtre pour commencer</h3>
+    <p>Type de formation, ville, ou sélectivité</p>
+  </div>
+
+  <footer>
+    ©2026 Katy Saintin — Hors Kadre · Données Open Data Parcoursup 2025 — Licence Ouverte 2.0<br>
+    <a href="legal/apropos.html">À propos</a> |
+    <a href="legal/mentions-legales.html">Mentions légales</a> |
+    <a href="mailto:katy.saintin@gmail.com">Contact</a>
+  </footer>
+</div>
+
+<!-- RGPD -->
+<div id="rgpd-banner">
+  <span>Ce site utilise Google Analytics pour mesurer l'audience.
+    <a href="legal/mentions-legales.html">En savoir plus</a></span>
+  <button id="rgpd-btn" onclick="document.getElementById('rgpd-banner').style.display='none';
+    localStorage.setItem('rgpd-ok','1')">J'ai compris</button>
+</div>
+<script>
+  if(localStorage.getItem('rgpd-ok'))
+    document.getElementById('rgpd-banner').style.display='none';
+</script>
+
+<script>
+var DATA_PARCOURSUP = [];
+
+// Chargement du JSON externe
+fetch('data_idf.json')
+  .then(function(r){ return r.json(); })
+  .then(function(raw){
+    // Mapper les champs IDF vers les champs attendus par le JS
+    DATA_PARCOURSUP = raw.map(function(d){
+      return {
+        cod:      d.cod,
+        nom:      d.nom,
+        type:     d.type || '',
+        etab:     d.etab || '',
+        commune:  d.commune || '',
+        dept:     d.dept || '',
+        places:   d.places   ? parseFloat(d.places)   : null,
+        cand:     d.candidats ? parseFloat(d.candidats) : null,
+        taux:     d.taux     ? parseFloat(d.taux)     : null,
+        rang:     d.rang_dernier ? parseFloat(d.rang_dernier) : null,
+        sel:      d.sel === 'formation sélective' ? 1 : 0,
+        ratio:    d.ratio    ? parseFloat(d.ratio)    : null,
+        pct_bg:   null,
+        pct_bt:   null,
+        pct_bp:   null,
+        internat: 0,
+        apprent:  0
+      };
+    });
+    document.getElementById('loading').style.display = 'none';
+    // Déclencher l'affichage initial
+    applyFilters();
+  })
+  .catch(function(err){
+    document.getElementById('loading').innerHTML =
+      '⚠️ Erreur de chargement des données. <a href="http://katy.ho.free.fr/parcoursup.php">Essayer la version nationale →</a>';
+    console.error(err);
+  });
+
+var filtered = [];
+var sortField = 'ratio';
+var sortDir = 'desc';
+
+/* Mapping familles → types réels dans les données */
+var FAMILLE_MAPPING = {
+  'BUT': function(type){ return type.indexOf('BUT') >= 0 || type.indexOf('DUT') >= 0; },
+  'BTS': function(type){ return type.indexOf('BTS') >= 0 || type.indexOf('BTSA') >= 0 || type.indexOf('BTSM') >= 0; },
+  'Licence': function(type){ return type.indexOf('Licence') >= 0; },
+  'CPGE': function(type){ return type.indexOf('CPGE') >= 0; },
+  'Sante': function(type){ return type.indexOf('santé') >= 0 || type.indexOf('Santé') >= 0 || type.indexOf('Etudes de') >= 0; },
+  'Ingenieur': function(type){ return type.indexOf('ingénieurs') >= 0 || type.indexOf('ingénieur') >= 0; },
+  'Commerce': function(type){ return type.indexOf('commerce') >= 0 || type.indexOf('Commerce') >= 0 || type.indexOf('management') >= 0 || type.indexOf('Management') >= 0; },
+  'Art': function(type){ return type.indexOf('art') >= 0 || type.indexOf('Art') >= 0 || type.indexOf('design') >= 0 || type.indexOf('architecture') >= 0 || type.indexOf('Architecture') >= 0; }
+};
+
+function ratioColor(r){
+  if(r===null) return '#999';
+  if(r<=5)  return '#2d8a4e';
+  if(r<=15) return '#c47f00';
+  if(r<=30) return '#c45a00';
+  return '#b0261e';
+}
+function ratioLabel(r){
+  if(r===null) return 'N/D';
+  if(r<=5)  return 'Accessible';
+  if(r<=15) return 'Modéré';
+  if(r<=30) return 'Tendu';
+  return 'Très sélectif';
+}
+function fmt(v,d){
+  if(v===null||v===undefined) return '-';
+  return parseFloat(v).toFixed(d||0);
+}
+function fmtInt(v){
+  if(v===null||v===undefined) return '-';
+  return parseInt(v).toLocaleString('fr-FR');
+}
+function barreBac(label, pct, color){
+  var w = pct===null ? 0 : Math.min(100, Math.max(0, pct));
+  return '<div class="bac-row">' +
+    '<span class="bac-lbl">' + label + '</span>' +
+    '<div class="bac-outer"><div class="bac-inner" style="width:'+w+'%;background:'+color+'"></div></div>' +
+    '<span class="bac-pct">' + (pct===null ? '-' : fmt(pct,0)+'%') + '</span>' +
+    '</div>';
+}
+
+function applyFilters(){
+  if(DATA_PARCOURSUP.length === 0) return;
+  var familleVal = document.getElementById('f-type').value;
+  var motcleVal  = document.getElementById('f-motcle').value.toLowerCase().trim();
+  var communeVal = document.getElementById('f-commune').value.toLowerCase().trim();
+  var selVal     = document.getElementById('f-sel').value;
+  var sortVal    = document.getElementById('f-sort').value.split('-');
+  sortField = sortVal[0];
+  sortDir   = sortVal[1] || 'desc';
+
+  filtered = DATA_PARCOURSUP.filter(function(d){
+    // Filtre famille
+    if(familleVal && familleVal !== 'Autre') {
+      var fn = FAMILLE_MAPPING[familleVal];
+      if(fn && !fn(d.type)) return false;
+    } else if(familleVal === 'Autre') {
+      var matched = false;
+      for(var k in FAMILLE_MAPPING) { if(FAMILLE_MAPPING[k](d.type)){ matched=true; break; } }
+      if(matched) return false;
+    }
+    // Filtre mot-clé spécialité (cherche dans nom + type)
+    if(motcleVal) {
+      var haystack = (d.nom + ' ' + d.type + ' ' + d.etab).toLowerCase();
+      if(haystack.indexOf(motcleVal) < 0) return false;
+    }
+    if(communeVal && d.commune.toLowerCase().indexOf(communeVal) < 0) return false;
+    if(selVal !== '' && String(d.sel) !== selVal) return false;
+    return true;
+  });
+
+  filtered.sort(function(a,b){
+    var va = a[sortField], vb = b[sortField];
+    if(va===null||va===undefined) return 1;
+    if(vb===null||vb===undefined) return -1;
+    if(sortField==='nom'||sortField==='commune'){
+      return sortDir==='asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+    }
+    return sortDir==='desc' ? vb-va : va-vb;
+  });
+
+  renderTable();
+  updateStats();
+}
+
+function resetFilters(){
+  document.getElementById('f-type').value = '';
+  document.getElementById('f-motcle').value = '';
+  document.getElementById('f-commune').value = '';
+  document.getElementById('f-sel').value = '';
+  document.getElementById('f-sort').value = 'ratio-desc';
+  sortField='ratio'; sortDir='desc';
+  filtered=[];
+  document.getElementById('table-body').innerHTML='';
+  document.getElementById('main-table').style.display='none';
+  document.getElementById('placeholder').style.display='block';
+  document.getElementById('legende').style.display='none';
+  document.getElementById('stats-grid').style.display='none';
+  document.getElementById('result-info').textContent='';
+}
+
+var currentSortField = 'ratio';
+var currentSortDir = 'desc';
+
+function sortBy(field){
+  if(currentSortField===field){
+    currentSortDir = currentSortDir==='desc'?'asc':'desc';
+  } else {
+    currentSortField = field;
+    currentSortDir = 'desc';
+  }
+  sortField = currentSortField;
+  sortDir = currentSortDir;
+
+  // Mettre à jour les classes des en-têtes
+  var ths = document.querySelectorAll('thead th');
+  ths.forEach(function(th){ th.classList.remove('sorted-asc','sorted-desc'); });
+
+  filtered.sort(function(a,b){
+    var va=a[field], vb=b[field];
+    if(va===null||va===undefined) return 1;
+    if(vb===null||vb===undefined) return -1;
+    if(field==='nom'||field==='commune'){
+      return currentSortDir==='asc'?va.localeCompare(vb):vb.localeCompare(va);
+    }
+    return currentSortDir==='desc'?vb-va:va-vb;
+  });
+  renderTable();
+}
+
+function updateStats(){
+  var total = filtered.length;
+  var sel   = filtered.filter(function(d){return d.sel===1;}).length;
+  var tendu = filtered.filter(function(d){return d.ratio!==null&&d.ratio>30;}).length;
+  var tauxSum = 0, tauxN = 0;
+  filtered.forEach(function(d){if(d.taux!==null){tauxSum+=d.taux;tauxN++;}});
+  var tauxMoy = tauxN>0 ? Math.round(tauxSum/tauxN) : null;
+
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-sel').textContent   = sel;
+  document.getElementById('stat-tendu').textContent  = tendu;
+  document.getElementById('stat-acces').textContent  = tauxMoy!==null ? tauxMoy+'%' : '-';
+
+  document.getElementById('stats-grid').style.display = total>0 ? 'grid' : 'none';
+  document.getElementById('legende').style.display    = total>0 ? 'flex' : 'none';
+  document.getElementById('result-info').textContent  = total + ' formation' + (total>1?'s':'') + ' trouvée' + (total>1?'s':'');
+}
+
+function renderTable(){
+  var tbody = document.getElementById('table-body');
+  var table = document.getElementById('main-table');
+  var placeholder = document.getElementById('placeholder');
+
+  if(filtered.length===0){
+    tbody.innerHTML='<tr><td colspan="7" style="text-align:center;padding:20px;color:#888">Aucune formation trouvée — essayez d\'élargir votre recherche.</td></tr>';
+    table.style.display='table';
+    placeholder.style.display='none';
+    return;
+  }
+
+  table.style.display='table';
+  placeholder.style.display='none';
+
+  var html='';
+  filtered.forEach(function(d){
+    var color = ratioColor(d.ratio);
+    var label = ratioLabel(d.ratio);
+    var tauxColor = d.taux===null?'#999':d.taux>=50?'#2d8a4e':d.taux>=20?'#c47f00':'#b0261e';
+    var lienFiche = 'http://katy.ho.free.fr/formation.php?cod='+d.cod;
+    var lienOffic = 'https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod='+d.cod+'&typeBac=0&originePc=0';
+
+    var tags = '';
+    tags += d.sel ? '<span class="tag tag-sel">Sélective</span>' : '<span class="tag tag-open">Non sélective</span>';
+    if(d.internat) tags += '<span class="tag tag-int">Internat</span>';
+    if(d.apprent)  tags += '<span class="tag tag-app">Apprentissage</span>';
+
+    html += '<tr>' +
+      '<td><div class="formation-name">'+escHtml(d.nom)+'</div><div class="etab-name">'+escHtml(d.etab)+'</div><div>'+tags+'</div></td>' +
+      '<td><strong>'+escHtml(d.commune)+'</strong></td>' +
+      '<td style="text-align:center">' +
+        (d.ratio!==null ?
+          '<div class="ratio-val" style="color:'+color+'"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:'+color+';margin-right:3px;vertical-align:middle"></span>'+fmt(d.ratio,1)+' pour 1</div>' +
+          '<div class="ratio-lbl" style="color:'+color+'">'+label+'</div>' +
+          '<div class="ratio-detail">'+fmtInt(d.cand)+' cand. · '+fmtInt(d.places)+' places</div>'
+          : '<span style="color:#999;font-size:.82rem">N/D</span>') +
+      '</td>' +
+      '<td><div class="bac-bars">'+barreBac('BG',d.pct_bg,'#1B3A6B')+barreBac('BT',d.pct_bt,'#C4572A')+barreBac('BP',d.pct_bp,'#B8860B')+'</div></td>' +
+      '<td style="text-align:center;font-size:1rem;font-weight:700;color:'+tauxColor+'">'+(d.taux!==null?fmt(d.taux,0)+'%':'<span style="color:#999">N/D</span>')+'</td>' +
+      '<td style="text-align:center;font-weight:700">'+(d.rang!==null?fmtInt(d.rang):'<span style="color:#999">N/D</span>')+'</td>' +
+      '<td style="white-space:nowrap"><a class="btn-fiche" href="'+lienFiche+'" target="_blank" rel="noopener">Comprendre ↗</a><br><a href="'+lienOffic+'" target="_blank" rel="noopener" style="font-size:.7rem;color:var(--gray);text-decoration:underline">fiche officielle</a></td>' +
+      '</tr>';
+  });
+  tbody.innerHTML = html;
+}
+
+function escHtml(s){
+  if(!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Afficher toutes les formations par défaut au chargement
+/* init dans fetch */
+filtered.sort(function(a,b){
+  if(a.ratio===null) return 1;
+  if(b.ratio===null) return -1;
+  return b.ratio - a.ratio;
+});
+renderTable();
+updateStats();
+document.getElementById('placeholder').style.display='none';
+</script>
+</body>
+</html>
