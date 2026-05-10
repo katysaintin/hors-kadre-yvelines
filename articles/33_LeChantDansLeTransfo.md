@@ -217,6 +217,30 @@ La proviseure, en conseil d'administration, avec son sourire :
 
 *"Bienvenue."*
 
+---
+
+Et puis il y a la ligne 26.
+
+Regardez le tableau. Tout en bas.
+
+HGGSP + HLPHI + SVT. Un élève. Un seul. Tout seul dans sa combinaison.
+
+Avec le Latin et le Chinois par-dessus.
+
+Sa maman m'a contactée un jour pour me dire que son fils n'avait aucun camarade de classe dans ses spécialités. Que ses emplois du temps étaient incompréhensibles. Qu'il finissait à 18h certains soirs. Que c'était n'importe quoi.
+
+Je lui ai montré le tableau.
+
+La ligne 26.
+
+Le "1" tout seul au bout.
+
+Elle a compris.
+
+*(Je dis ça, je dis rien.)*
+
+---
+
 Je ne donne plus de leçons sur les emplois du temps.
 
 Je parle du chat.
