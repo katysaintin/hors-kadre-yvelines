@@ -1,21 +1,28 @@
-# AI Isn't Cheating. It Reveals Who Was Struggling All Along.
+# Do It Yourself Was Never a Neutral Instruction
 
-## "Do it yourself" was never a neutral instruction.
+*What AI really reveals about who was already struggling*
 
+Five days. A leg in a cast. Medical leave.
 
-There is a phrase we hear everywhere — in classrooms, in offices, in comment sections.
+During that time I published ten sourced articles, built a national interactive tool covering 4,360 French high schools using official open data, and composed four songs — one of which is now on Spotify.
 
-"Do it yourself."
-"You'll learn more."
-"It's better this way."
+With the help of Claude, ChatGPT, and Copilot.
 
-It sounds reasonable. Almost moral.
+Was I cheating?
 
-But what if this idea hides something we've never questioned?
+Before you answer — consider this.
 
+An estimated 2 million adults in France live with ADHD. Only 1% have an official diagnosis. More than 80% of disabilities are invisible — no wheelchair, no obvious sign, no immediate recognition (INSEE).
+
+These people were already working harder than everyone else. In silence. Without tools. Without recognition.
+
+"Do it yourself" was never a universal instruction.
+
+It was built around certain types of brains.
+
+And AI just made that visible.
 
 ## The illusion of equal starting points
-
 "Do it yourself" assumes something rarely examined:
 
 👉 that we all start from the same place
@@ -33,21 +40,7 @@ Finishing is unpredictable.
 Not because of a lack of will.
 Because of how the brain works.
 
-And the numbers confirm this is not marginal.
-
-In France alone, an estimated 2 million adults live with ADHD.
-Only 1% have an official diagnosis (The Lancet Psychiatry, 2021).
-
-More than 80% of disabilities are invisible — no wheelchair, no obvious sign, no immediate recognition (INSEE).
-
-These people were already working harder than everyone else.
-In silence.
-Without tools.
-Without recognition.
-
-
 ## When effort becomes invisible
-
 In most systems, effort is glorified.
 
 But only a specific kind of effort.
@@ -55,8 +48,6 @@ But only a specific kind of effort.
 👉 visible effort
 👉 linear effort
 👉 effort that looks like productivity
-
-The kind that fits expectations.
 
 What is rarely seen:
 
@@ -67,16 +58,8 @@ The cognitive cost of starting when your brain can't find the entry point.
 For some brains, the effort is already there.
 Just not in the place the system can see.
 
-
-## A personal data point
-
-Five days. A leg in a cast. Medical leave.
-
-During that period, I published ten sourced articles, built a national interactive tool covering 4,360 French high schools using official open data, and composed four songs — including one now on Spotify.
-
-Melody, chords, lyrics: mine. Production: Suno.
-
-With the help of Claude, ChatGPT, and Copilot.
+## What AI cannot do in my place
+Back to those five days.
 
 Was I cheating?
 
@@ -91,6 +74,13 @@ Because what AI cannot do in my place:
 
 **AI structured. I thought. Those are not the same thing.**
 
+The results speak for themselves.
+
+A mailing to 1,220 parents. 47% open rate — twice the sector average.
+A national database built in one day that journalists hadn't built in 40 years of annual rankings.
+A blog launched with zero marketing budget — 67% of traffic from direct word-of-mouth.
+
+Not shortcuts. Amplification.
 
 ## Where AI changes the equation
 
@@ -121,37 +111,15 @@ You focus on:
 The effort is still there.
 But it becomes usable.
 
-The results speak for themselves.
+## This is an access story
 
-A mailing to 1,220 parents. 47% open rate — twice the sector average.
-A national database built in one day that journalists hadn't built in 40 years of annual rankings.
-A blog launched with zero marketing budget — 67% of traffic from direct word-of-mouth.
+Jason Winter, a tech entrepreneur with ADHD, put it precisely after reading my previous piece:
 
-Not shortcuts. Amplification.
+*"Building my AI workflow over the last year has helped me to stop apologizing for how I work. Not needing to mask isn't a small thing. It's the difference between spending the day performing and spending the day actually making something."*
 
+This is not a productivity story.
 
-## The real discomfort
-
-The discomfort around AI is not only about the tool.
-
-It's about what it reveals.
-
-👉 that not everyone was struggling in the same way
-👉 that some people were already at a disadvantage
-👉 that "doing it alone" was never a neutral instruction
-
-AI doesn't create inequality.
-
-**It exposes it.**
-
-When a tool allows someone to produce in three weeks what previously required years of access, networks, and resources — it disrupts established hierarchies.
-
-That's the uncomfortable part.
-
-Not the tool. The mirror.
-
-
-## A different way to see it
+This is an access story.
 
 What looks like "taking a shortcut" from the outside…
 
@@ -163,17 +131,17 @@ Access to clarity.
 Access to structure.
 Access to execution.
 
-Jason Winter, a tech entrepreneur with ADHD, put it precisely after reading my previous piece:
+AI doesn't create inequality.
 
-*"Building my AI workflow over the last year has helped me to stop apologizing for how I work. Not needing to mask isn't a small thing. It's the difference between spending the day performing and spending the day actually making something."*
+**It exposes it.**
 
-This is not a productivity story.
+When a tool allows someone to produce in three weeks what previously required years of access, networks, and resources — it disrupts established hierarchies.
 
-This is an access story.
+That's the uncomfortable part.
 
+Not the tool. The mirror.
 
 ## Final thought
-
 "Do it yourself" was never a universal solution.
 
 It was a norm built around certain types of brains.
@@ -188,8 +156,6 @@ The question was never whether AI is cheating.
 
 The question is: **who was already cheating themselves out of access?**
 
+*Katy SAINTIN is a SCADA systems engineer at CEA-Irfu, preparing an AI certification and a PhD research project. She writes [Hors Kadre](https://blogs.mediapart.fr/katy-ho), a French blog exploring neurodiversity, education, and the blind spots that nobody talks about. This article is part of a series on AI, intention, and cognitive equity.*
 
-*Katy Saintin is a SCADA engineer and AI PhD candidate at CEA-Irfu. She writes [Hors Kadre](https://blogs.mediapart.fr/katy-ho), a French blog exploring neurodiversity, education, and the blind spots that nobody talks about. This article is part of a three-part series on AI, intention, and cognitive equity.*
-
-
-**Tags:** AI, Neurodiversity, Cognitive Science, ADHD, Education, Productivity, Inclusion, Future Of Work, Mental Health
+**Tags:** AI · Neurodiversity · ADHD · Cognitive Equity · Women In Tech · Education · Inclusion · Future Of Work
