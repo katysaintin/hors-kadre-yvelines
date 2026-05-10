@@ -1,4 +1,3 @@
-```md
 # TODO PARCOURSUP — VERSION SIMPLE FALC
 
 ## ✅ TERMINÉ
@@ -120,4 +119,4 @@ Plus tard.
 👉 publier
 👉 diffuser
 👉 observer
-```
+
