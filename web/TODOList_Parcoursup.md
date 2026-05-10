@@ -18,13 +18,13 @@
 À faire sur téléphone.
 
 Checklist :
-- [ ] Tous les liens fonctionnent
-- [ ] Les PDF s’ouvrent bien
-- [ ] Les outils chargent
-- [ ] Les ancres du sommaire marchent
-- [ ] Pas de bug Safari
-- [ ] Pas de texte cassé
-- [ ] Temps de chargement OK
+- [x] Tous les liens fonctionnent
+- [x] Les PDF s’ouvrent bien
+- [x] Les outils chargent
+- [x] Les ancres du sommaire marchent
+- [x] Pas de bug Safari
+- [x] Pas de texte cassé
+- [x] Temps de chargement OK
 
 ⚠️ IMPORTANT :
 ne PAS refaire le design 😄
