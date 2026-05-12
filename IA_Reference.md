@@ -215,7 +215,8 @@ Rendre compréhensible ce qui ne l’était pas.
 | 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
 | 28 | Certification IA grâce à mon IA sans BAFA | [**PRÊT**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
 | 33 | Le Chat dans le transfo | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/33_LeChantDansLeTransfo.md) | PROGRAMMÉ épisode 10| PROGRAMMÉ |
-| 34 | Comment l'IA répare l'estime de soi & Faber Mazlish | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/34_IAComplimentsFactuelsFaberMazlish.md) | - | PROGRAMMÉ |
+| 34 | Comment l'IA répare l'estime de soi & Faber Mazlish | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/34_IAComplimentsFactuelsFaberMazlish.md) | - | - |
+| 36 | SAV Bonjour Mme Benevol fait des heures supp | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/36_BonjourSAV_MmeBenevol.md) | - | - |
 
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
