@@ -193,11 +193,12 @@ Rendre compréhensible ce qui ne l’était pas.
 | 17 | IA diabolisé sur les Médias, confusion IA VS Réseaux sociaux |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociaux.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/17_IA_Danger_IAVSReseauxSociauxEN.md) | PROGRAMMÉ épisode 8 | :heavy_check_mark: |
 | 22 | IA et hyperconnexion — le paradoxe des jeunes | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/22_ParadoxeDesJeunesFrance.md) | - | - | - |
 | 25 | IA usages, usages, différences perçues et effets de conception | [EN COURS](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/25_IA_ALaLoupe.md) | À FAIRE | - | - |
-| 27 | IA vulgarisation accessibilité les impôts | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_PourlesImpots.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_TaxesMediumEN.md) | PROGRAMME | PROGRAMME |
+| 27 | J'ai compris mes impôts grâce à ChatGPT | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_PourlesImpots.md) | [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/27_IA_TaxesMediumEN.md) | PROGRAMME | PROGRAMME |
 | 29 | Les déboires administratifs non modernisés | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/29_DeboiresAdministratifs.md) | A FAIRE | - |
 | 30 | IA conversationnelle, est elle neurotypique | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/30_IAEstElleNeurotypique.md) | - | - |
 | 31 | IA Usage Des Ecrans Deplacée Créativité | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/31_UsageDesEcransDeplacéeIA.md) | - | - |
 | 32 | FaceHook, JeTemTube et Mme DopamineÀZéro | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/31_UsageDesEcransDeplacéeIA.md) | - | - |
+| 35 | Comment ChatGPT a sauvé mon couple, lors de ma déclaration des impôts | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/35_ChatGPTASauveMonCouple.md) | - | - |
 
 
 
@@ -214,6 +215,8 @@ Rendre compréhensible ce qui ne l’était pas.
 | 21 | Qui classe les lycées — et pourquoi ça n'est pas un hasard |  [**PUBLIÉ**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/21_QuiFaitLesClassements.md) | - | :heavy_check_mark: | :heavy_check_mark: |
 | 28 | Certification IA grâce à mon IA sans BAFA | [**PRÊT**](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/28_CertificationIASansBAFA.md) | À FAIRE | - | - |
 | 33 | Le Chat dans le transfo | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/33_LeChantDansLeTransfo.md) | PROGRAMMÉ épisode 10| PROGRAMMÉ |
+| 34 | Comment l'IA répare l'estime de soi & Faber Mazlish | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/34_IAComplimentsFactuelsFaberMazlish.md) | - | PROGRAMMÉ |
+
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
 | # | Titre | Statut Mediapart | Statut Medium | Post FB  | Post LinkedIn |
