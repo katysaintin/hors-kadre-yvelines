@@ -108,6 +108,24 @@ if ($pct_bp > $pct_bg && $pct_bp > $pct_bt) $bac_dominant = 'professionnel';
 function sur_10($pct) { return max(0, min(10, round($pct / 10))); }
 
 $titre_page   = $f['nom_long_formation'] ? $f['nom_long_formation'] : $f['type_formation'];
+
+/* Lien typeformation selon la famille */
+$type_form_str = strtolower($f['type_formation'] . ' ' . $f['nom_long_formation']);
+$type_anchor = '';
+if (strpos($type_form_str, 'but') !== false || strpos($type_form_str, 'bachelor') !== false)
+    $type_anchor = 'but';
+elseif (strpos($type_form_str, 'bts') !== false)
+    $type_anchor = 'bts';
+elseif (strpos($type_form_str, 'cpge') !== false || strpos($type_form_str, 'classe préparatoire') !== false || strpos($type_form_str, 'mpsi') !== false || strpos($type_form_str, 'pcsi') !== false)
+    $type_anchor = 'cpge';
+elseif (strpos($type_form_str, 'licence') !== false)
+    $type_anchor = 'licence';
+elseif (strpos($type_form_str, 'ingénieur') !== false || strpos($type_form_str, 'ingenieur') !== false)
+    $type_anchor = 'ingenieur';
+elseif (strpos($type_form_str, 'santé') !== false || strpos($type_form_str, 'infirmier') !== false || strpos($type_form_str, 'ifsi') !== false)
+    $type_anchor = 'sante';
+elseif (strpos($type_form_str, 'commerce') !== false || strpos($type_form_str, 'management') !== false)
+    $type_anchor = 'commerce';
 $lien_officiel = 'https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=' . urlencode($f['cod_aff_form']) . '&typeBac=0&originePc=0';
 ?>
 <!DOCTYPE html>
@@ -221,6 +239,32 @@ a:hover{text-decoration:underline;}
 .footer-note{text-align:center;color:var(--gray);font-size:.8rem;margin-top:36px;padding-top:18px;border-top:1px solid var(--border);line-height:1.8;}
 .footer-note a{color:var(--terra);}
 
+/* ONGLETS */
+.tabs-nav{display:flex;overflow-x:auto;gap:8px;padding:0 0 12px;margin-bottom:20px;scrollbar-width:none;}
+.tabs-nav::-webkit-scrollbar{display:none;}
+.tab-btn{
+  flex-shrink:0;
+  padding:9px 14px;
+  font-family:Georgia,serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--navy);
+  background:var(--white);
+  border:2px solid var(--border);
+  border-radius:20px;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:all .2s;
+}
+.tab-btn:hover{border-color:var(--terra);color:var(--terra);}
+.tab-btn.active{
+  background:var(--terra);
+  color:var(--white);
+  border-color:var(--terra);
+}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+
 #rgpd{position:fixed;bottom:0;left:0;right:0;background:var(--navy);color:#F5F0EB;padding:12px 20px;font-size:13px;display:flex;justify-content:space-between;align-items:center;z-index:9999;font-family:Georgia,serif;}
 #rgpd a{color:var(--terra);}
 #rgpd button{background:var(--terra);color:#fff;border:none;padding:8px 16px;cursor:pointer;border-radius:4px;margin-left:20px;white-space:nowrap;font-size:13px;}
@@ -276,6 +320,16 @@ a:hover{text-decoration:underline;}
   </div>
 
   <!-- BLOC 1 : LA CONCURRENCE EN CLAIR -->
+  <!-- NAVIGATION ONGLETS -->
+  <div class="tabs-nav">
+    <button class="tab-btn active" onclick="showTab('concurrence',this)">📊 Concurrence</button>
+    <button class="tab-btn" onclick="showTab('admis',this)">🎓 Qui a été admis ?</button>
+    <button class="tab-btn" onclick="showTab('profil',this)">🎯 Mon profil</button>
+    <button class="tab-btn" onclick="showTab('plus',this)">📖 En savoir +</button>
+  </div>
+
+  <!-- ONGLET 1 : CONCURRENCE -->
+  <div class="tab-panel active" id="tab-concurrence">
   <div class="bloc">
     <h2>📊 La concurrence en clair</h2>
 
@@ -345,6 +399,10 @@ a:hover{text-decoration:underline;}
   </div>
 
   <!-- BLOC 2 : QUI A ÉTÉ ADMIS -->
+  </div><!-- /tab-concurrence -->
+
+  <!-- ONGLET 2 : QUI A ÉTÉ ADMIS -->
+  <div class="tab-panel" id="tab-admis">
   <div class="bloc">
     <h2>🎓 Qui a été admis en 2025 ?</h2>
 
@@ -444,9 +502,12 @@ a:hover{text-decoration:underline;}
     <?php endif; ?>
   </div>
 
-  <!-- BLOC 3 : MON ENFANT, OÙ SE SITUE-T-IL ? -->
+  </div><!-- /tab-admis -->
+
+  <!-- ONGLET 3 : MON PROFIL -->
+  <div class="tab-panel" id="tab-profil">
   <div class="bloc">
-    <h2>👤 Mon enfant, où se situe-t-il ?</h2>
+    <h2>🎯 Mon enfant, où se situe-t-il ?</h2>
 
     <div class="encart encart-info" style="margin-bottom:14px;">
       Ces profils sont construits à partir des données 2025.
@@ -567,7 +628,10 @@ a:hover{text-decoration:underline;}
     </div>
   </div>
 
-  <!-- BLOC 4 : COMMENT LIRE LA FICHE OFFICIELLE -->
+  </div><!-- /tab-profil -->
+
+  <!-- ONGLET 4 : EN SAVOIR PLUS -->
+  <div class="tab-panel" id="tab-plus">
   <div class="bloc">
     <h2>🔍 Comment lire la fiche officielle Parcoursup ?</h2>
 
@@ -608,6 +672,22 @@ a:hover{text-decoration:underline;}
     </div>
   </div>
 
+      <div style="margin-top:16px;padding:14px 16px;background:var(--offwhite);border:1px solid var(--border);border-radius:10px;font-size:.88rem;">
+        📖 <strong>Vous ne savez pas ce qu'est cette formation ?</strong><br>
+        <?php if($type_anchor): ?>
+          <a href="typeformation.html#<?php echo $type_anchor; ?>" style="color:var(--terra);font-weight:600;">
+            → Comprendre ce qu'est un <?php echo strtoupper($type_anchor); ?> →
+          </a>
+        <?php else: ?>
+          <a href="typeformation.html" style="color:var(--terra);font-weight:600;">
+            → Comprendre les différences BUT, BTS, Licence, Prépa…
+          </a>
+        <?php endif; ?>
+      </div>
+  </div><!-- /tab-plus -->
+
+  <!-- FIN ONGLETS -->
+
   <p class="footer-note">
     ©2026 Katy Saintin — Hors Kadre<br>
     Données Open Data Parcoursup 2025 — Licence Ouverte 2.0<br>
@@ -631,5 +711,17 @@ a:hover{text-decoration:underline;}
     document.getElementById('rgpd').style.display = 'none';
 </script>
 
+<script>
+function showTab(id, btn) {
+  // Masquer tous les panneaux
+  document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  // Afficher le bon
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');
+  // Scroll en haut du panneau sur mobile
+  document.getElementById('tab-'+id).scrollIntoView({behavior:'smooth', block:'start'});
+}
+</script>
 </body>
 </html>
