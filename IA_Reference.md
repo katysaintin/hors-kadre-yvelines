@@ -217,6 +217,7 @@ Rendre compréhensible ce qui ne l’était pas.
 | 33 | Le Chat dans le transfo | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/33_LeChantDansLeTransfo.md) | PROGRAMMÉ épisode 10| PROGRAMMÉ |
 | 34 | Comment l'IA répare l'estime de soi & Faber Mazlish | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/34_IAComplimentsFactuelsFaberMazlish.md) | - | - |
 | 36 | SAV Bonjour Mme Benevol fait des heures supp | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/36_BonjourSAV_MmeBenevol.md) | - | - |
+| 38 | Yuka congitif le WAIS des réseaux sociaux | [IDEE](https://raw.githubusercontent.com/katysaintin/hors-kadre-yvelines/main/articles/38_YukaCognitif.md) | - | - |
 
 
 ### TRILOGIE 3 — Neurodiversité & Invisibilité
