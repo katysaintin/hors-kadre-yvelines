@@ -245,3 +245,4 @@ Parce qu’au fond :
   - sans humiliation sociale.
 
 Et les IA sont parfois les premières à le faire de manière stable.
+
