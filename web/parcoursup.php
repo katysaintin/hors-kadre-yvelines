@@ -41,15 +41,15 @@ $maxRows  = 200;
  * + mapping famille → filtre SQL sur type_formation
  */
 $famillesOptions = array(
-    'BUT'       => '🎓 BUT — Bachelor Universitaire de Technologie',
-    'BTS'       => '📋 BTS — Brevet de Technicien Supérieur',
-    'Licence'   => '📚 Licence (université, 3 ans)',
-    'CPGE'      => '⭐ Prépa (CPGE) — Classes Préparatoires',
-    'Sante'     => '🏥 Santé — Infirmier, Kiné, Médecine…',
-    'Ingenieur' => '⚙️ École d ingénieurs',
-    'Commerce'  => '💼 Commerce / Management',
-    'Art'       => '🎨 Art / Design / Architecture',
-    'Autre'     => '📌 Autre',
+    'BUT'       => 'BUT — Bachelor Universitaire de Technologie',
+    'BTS'       => 'BTS — Brevet de Technicien Supérieur',
+    'Licence'   => 'Licence (université, 3 ans)',
+    'CPGE'      => 'Prépa (CPGE) — Classes Préparatoires',
+    'Sante'     => 'Santé — Infirmier, Kiné, Médecine…',
+    'Ingenieur' => 'École d\'ingénieurs',
+    'Commerce'  => 'Commerce / Management',
+    'Art'       => 'Art / Design / Architecture',
+    'Autre'     => 'Autre',
 );
 
 /* Retourne la clause SQL WHERE pour une famille donnée */
@@ -905,7 +905,13 @@ tr:hover td { background: #f0ebe4; }
     </p>
   </section>
 
-  <p class="footer-note">
+    <!-- Lien PDF -->
+  <div style="text-align:center;margin:24px 0 8px;padding:14px 20px;background:var(--offwhite);border:1px solid var(--border);border-radius:10px;font-size:.88rem;">
+    📥 <a href="https://katysaintin.github.io/hors-kadre-yvelines/ParcoursupInfoHorsKadre.pdf" target="_blank" style="font-weight:600;color:var(--terra);">Télécharger le guide Parcoursup (PDF)</a>
+    <span style="color:var(--gray)"> — à imprimer ou partager avec les familles</span>
+  </div>
+
+<p class="footer-note">
     ©2026 Katy Saintin — Hors Kadre<br>
     Données publiques · Traitement et analyse indépendants · Réutilisation autorisée avec attribution<br>
     <a href="legal/apropos.html">À propos / Méthodologie</a> |
