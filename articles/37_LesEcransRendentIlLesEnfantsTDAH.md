@@ -2,6 +2,8 @@
 
 ## Angle central
 
+Ou pourquoi faut il être dans une case pour être accompagné.
+Suite de l'article Mme HorsKase
 Refuser les raccourcis actuels autour :
 
 * des écrans,
