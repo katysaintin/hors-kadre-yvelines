@@ -505,3 +505,292 @@ C’est aussi :
 > d’immigration,
 > de famille,
 > et de soulagement cognitif enfin partagé.
+
+---
+# Plan éditorial — “Comment ChatGPT a sauvé mon couple pendant ma déclaration d’impôts”
+
+## Objectif émotionnel global
+
+Le lecteur doit :
+- rire ;
+- se reconnaître ;
+- se sentir soulagé ;
+- puis être touché émotionnellement à la fin.
+
+Sans jamais avoir l’impression :
+- de lire un article techno ;
+- une pub IA ;
+- ou un manifeste militant.
+
+L’IA doit rester :
+> un révélateur de dynamiques humaines.
+
+---
+
+# 1. Cold open / Accroche immédiate
+
+Commencer directement par une scène concrète et drôle.
+
+Exemple :
+
+> “Cette année, j’ai décidé de faire un truc dangereux :
+> mes impôts.
+>
+> Avec une SCI familiale.
+> Et sans déclencher de crise diplomatique avec ma sœur.”
+
+Objectif :
+- immersion immédiate ;
+- ton humoristique ;
+- enjeu relationnel posé dès les premières lignes.
+
+---
+
+# 2. Le contexte : pourquoi j’étais déjà à bout avant même de commencer
+
+Introduire :
+- la procrastination ;
+- la fatigue anticipée ;
+- le poids administratif.
+
+Puis :
+- les articles alarmistes sur l’IA :
+  > “Attention, l’IA ne remplace pas les experts.”
+  >
+  > “Ne faites pas relire vos contrats à ChatGPT.”
+
+Ajouter votre irritation :
+- jargon incompréhensible ;
+- ton paternaliste ;
+- effet “niveau CP”.
+
+Très important :
+- faire rire ici ;
+- montrer le décalage entre :
+  - les débats médiatiques ;
+  - et la vraie vie.
+
+---
+
+# 3. Le pacte narratif : “Bon… je vais tester pour de vrai”
+
+Moment pivot.
+
+> “À force d’écrire que l’IA pouvait aider…
+> il fallait peut-être que j’arrête de procrastiner mes propres impôts.” 😅
+
+C’est le moment :
+- où vous vous mettez vous-même à l’épreuve ;
+- où le lecteur comprend :
+  - qu’il ne lira pas un article théorique.
+
+---
+
+# 4. Le ventre comique de l’article — succession d’anecdotes
+
+## Important
+
+Rythme :
+- court ;
+- vivant ;
+- très dialogué ;
+- avec auto-dérision.
+
+Chaque anecdote doit révéler :
+- une friction ;
+- puis une micro-résolution.
+
+---
+
+## Anecdote 1 — La case 2044 déjà cochée
+
+Mini chute :
+> “Ah oui… c’est écrit noir sur blanc.”
+
+Thème :
+- surcharge cognitive ;
+- pas manque d’intelligence.
+
+---
+
+## Anecdote 2 — Le bug des menus rouges
+
+Très bon passage humoristique.
+
+Parce que :
+- vous aviez raison ;
+- mais vous ne vous faisiez pas confiance.
+
+Phrase clé possible :
+> “J’avais correctement rempli les cases.
+> Mais comme l’administration française avait décidé de tout laisser en rouge, j’ai immédiatement conclu que j’étais coupable.” 😅
+
+---
+
+## Anecdote 3 — Le faux scandale fiscal CPAM
+
+Rythme détective.
+
+> “Les impôts se sont trompés !!”
+>
+> …
+>
+> “Ah non. C’était moi. Et la CPAM.”
+
+---
+
+# 5. Premier twist — le vrai gain n’était pas celui que je croyais
+
+Moment de ralentissement.
+
+Basculer progressivement :
+- du technique ;
+- vers l’humain.
+
+Expliquer :
+- que le vrai gain n’est pas :
+  - la vitesse ;
+  - ni l’automatisation.
+
+Mais :
+> la réduction de friction humaine.
+
+---
+
+# 6. Le couple sauvé 😅
+
+Moment léger mais très parlant.
+
+Votre mari devient :
+- le personnage secondaire calme ;
+- celui qui n’a eu qu’à donner sa fiche de paie.
+
+Phrase possible :
+> “Mon mari a traversé cette déclaration fiscale avec un niveau d’implication proche d’un figurant Netflix.” 😅
+
+Montrer :
+- le nombre d’interactions évitées ;
+- la fatigue relationnelle évitée ;
+- les micro tensions qui n’ont pas eu lieu.
+
+---
+
+# 7. Installation progressive du personnage de la sœur
+
+Très important :
+- ne pas révéler tout de suite son histoire.
+
+Au début :
+- elle doit apparaître comme :
+  - compétente ;
+  - ultra efficace ;
+  - un peu impatiente ;
+  - intimidante fiscalement 😅
+
+Presque :
+> “la boss finale administrative.”
+
+Le lecteur rit :
+- parce que tout le monde connaît une personne comme ça.
+
+---
+
+# 8. Deuxième twist — révélation émotionnelle
+
+Changement de tonalité.
+
+Ralentir le rythme.
+Plus de sincérité.
+Moins de blagues.
+
+Révéler progressivement :
+
+- immigrés vietnamiens ;
+- barrière de langue ;
+- sœur aînée ;
+- 5 enfants ;
+- papiers administratifs dès 8 ans.
+
+Et là :
+- tout son personnage se recontextualise.
+
+Son impatience devient :
+- compréhensible ;
+- presque émouvante.
+
+---
+
+# 9. La scène finale WhatsApp
+
+Très cinématographique.
+À garder quasiment brute.
+
+Vous :
+> “Ça y est j’ai fini, il ne me manque que la SCI.”
+
+Elle :
+> “Et moi j’ai pas commencé.”
+>
+> “Je vais demander à l’IA de le faire.”
+
+Et là :
+- silence narratif ;
+- le lecteur comprend tout seul.
+
+---
+
+# 10. Chute finale
+
+Ne PAS finir sur :
+- des prédictions ;
+- de la techno ;
+- de la morale.
+
+Finir sur :
+- l’humain ;
+- le soulagement ;
+- la transmission ;
+- la charge mentale enfin partagée.
+
+Exemple de tonalité :
+
+> “Finalement, peut-être que le plus beau dans cette histoire,
+> ce n’est pas que ChatGPT m’ait aidée à faire mes impôts.
+>
+> C’est qu’il puisse peut-être enfin aider ma sœur
+> à porter un peu moins seule
+> ce qu’elle porte depuis l’âge de 8 ans.”
+
+---
+
+# Structure émotionnelle globale
+
+## Acte 1
+Humour + procrastination + chaos administratif
+
+## Acte 2
+Résolutions absurdes + anecdotes + soulagement
+
+## Acte 3
+Révélation humaine + charge invisible + émotion
+
+## Acte 4
+Chute douce-amère et profondément humaine
+
+---
+
+# Ce qu’il faut absolument préserver
+
+- autodérision ;
+- sincérité ;
+- détails concrets ;
+- dialogues ;
+- petites phrases vraies ;
+- imperfections humaines.
+
+C’est précisément ce qui empêchera le texte :
+- d’avoir l’air “généré” ;
+- ou théorique.
+
+Votre force éditoriale est :
+> le vécu incarné et les micro détails vrais.
