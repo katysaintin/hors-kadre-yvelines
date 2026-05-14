@@ -119,9 +119,7 @@ if ($res_sugg) {
     }
 }
 ?>
-
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -142,124 +140,118 @@ a{color:var(--terra);text-decoration:none;}
 a:hover{text-decoration:underline;}
 
 <?php if(!$iframe): ?>
-
-.site-header{background:var(–offwhite);border-bottom:3px solid var(–terra);
-padding:16px;text-align:center;}
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);
+  padding:16px;text-align:center;}
 .site-header img{max-width:320px;width:50%;height:auto;}
 .nav-links{margin-top:8px;font-size:.85rem;}
-.nav-links a{margin:0 10px;color:var(–navy);font-weight:600;}
-.nav-links a:hover{color:var(–terra);}
-
+.nav-links a{margin:0 10px;color:var(--navy);font-weight:600;}
+.nav-links a:hover{color:var(--terra);}
 <?php endif; ?>
 
 .container{
-max-width:<?php echo $iframe ? '100%' : '860px'; ?>;
-margin:0 auto;
-padding:<?php echo $iframe ? '12px 8px' : '28px 16px 60px'; ?>;
+  max-width:<?php echo $iframe ? '100%' : '860px'; ?>;
+  margin:0 auto;
+  padding:<?php echo $iframe ? '12px 8px' : '28px 16px 60px'; ?>;
 }
 
 /* Page title */
 .page-title{font-size:<?php echo $iframe ? '1rem' : '1.3rem'; ?>;
-color:var(–terra);margin-bottom:4px;font-weight:700;}
-.page-sub{font-size:.82rem;color:var(–gray);margin-bottom:16px;line-height:1.6;}
+  color:var(--terra);margin-bottom:4px;font-weight:700;}
+.page-sub{font-size:.82rem;color:var(--gray);margin-bottom:16px;line-height:1.6;}
 
 /* Family navigation pills */
 .filiere-nav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
 .filiere-btn{
-padding:6px 12px;border-radius:20px;border:2px solid var(–border);
-background:var(–white);color:var(–navy);font-family:Georgia,serif;
-font-size:.8rem;cursor:pointer;text-decoration:none;
-display:inline-block;transition:all .2s;white-space:nowrap;
+  padding:6px 12px;border-radius:20px;border:2px solid var(--border);
+  background:var(--white);color:var(--navy);font-family:Georgia,serif;
+  font-size:.8rem;cursor:pointer;text-decoration:none;
+  display:inline-block;transition:all .2s;white-space:nowrap;
 }
-.filiere-btn:hover{border-color:var(–terra);color:var(–terra);text-decoration:none;}
-.filiere-btn.active{background:var(–terra);color:var(–white);border-color:var(–terra);}
+.filiere-btn:hover{border-color:var(--terra);color:var(--terra);text-decoration:none;}
+.filiere-btn.active{background:var(--terra);color:var(--white);border-color:var(--terra);}
 
 /* Sub-specialty filter row */
 .filtre-row{display:flex;gap:8px;align-items:center;
-flex-wrap:wrap;margin-bottom:14px;}
-.filtre-label{font-size:.82rem;color:var(–gray);white-space:nowrap;}
+  flex-wrap:wrap;margin-bottom:14px;}
+.filtre-label{font-size:.82rem;color:var(--gray);white-space:nowrap;}
 .filtre-input{
-flex:1;min-width:180px;padding:8px 14px;
-border:2px solid var(–border);border-radius:20px;
-font-family:Georgia,serif;font-size:.85rem;color:var(–navy);
-outline:none;transition:border-color .2s;background:var(–white);
+  flex:1;min-width:180px;padding:8px 14px;
+  border:2px solid var(--border);border-radius:20px;
+  font-family:Georgia,serif;font-size:.85rem;color:var(--navy);
+  outline:none;transition:border-color .2s;background:var(--white);
 }
-.filtre-input:focus{border-color:var(–terra);}
+.filtre-input:focus{border-color:var(--terra);}
 .filtre-clear{
-padding:8px 12px;border:2px solid var(–border);border-radius:20px;
-background:var(–white);font-family:Georgia,serif;font-size:.82rem;
-color:var(–gray);cursor:pointer;transition:all .2s;
+  padding:8px 12px;border:2px solid var(--border);border-radius:20px;
+  background:var(--white);font-family:Georgia,serif;font-size:.82rem;
+  color:var(--gray);cursor:pointer;transition:all .2s;
 }
-.filtre-clear:hover{border-color:var(–terra);color:var(–terra);}
+.filtre-clear:hover{border-color:var(--terra);color:var(--terra);}
 
 /* Active sub-specialty badge */
 .detail-badge{
-display:inline-flex;align-items:center;gap:8px;
-background:#fef3c7;border:1px solid #fcd34d;border-radius:8px;
-padding:8px 14px;font-size:.83rem;color:#92400e;
-margin-bottom:14px;
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fef3c7;border:1px solid #fcd34d;border-radius:8px;
+  padding:8px 14px;font-size:.83rem;color:#92400e;
+  margin-bottom:14px;
 }
-.detail-badge strong{color:var(–navy);}
+.detail-badge strong{color:var(--navy);}
 
 /* Global stats row */
 .stats-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;}
-.stat-pill{background:var(–offwhite);border:1px solid var(–border);
-border-radius:8px;padding:7px 12px;font-size:.8rem;text-align:center;}
-.stat-pill strong{display:block;font-size:1rem;color:var(–terra);}
+.stat-pill{background:var(--offwhite);border:1px solid var(--border);
+  border-radius:8px;padding:7px 12px;font-size:.8rem;text-align:center;}
+.stat-pill strong{display:block;font-size:1rem;color:var(--terra);}
 
 /* Doublette cards */
 .doublette-list{display:flex;flex-direction:column;gap:8px;}
 .doublette-row{
-background:var(–white);border:1px solid var(–border);
-border-radius:10px;padding:12px 14px;transition:border-color .15s;
+  background:var(--white);border:1px solid var(--border);
+  border-radius:10px;padding:12px 14px;transition:border-color .15s;
 }
-.doublette-row:hover{border-color:var(–terra);}
+.doublette-row:hover{border-color:var(--terra);}
 .doublette-row.top1{border-left:4px solid #B8860B;background:#fffdf5;}
 .doublette-row.top2{border-left:4px solid #888;}
 .doublette-row.top3{border-left:4px solid #cd7f32;}
 
 .row-header{display:flex;justify-content:space-between;
-align-items:flex-start;gap:8px;margin-bottom:6px;}
-.row-rang{font-size:.75rem;font-weight:700;color:var(–gray);
-min-width:22px;padding-top:2px;}
-.row-nom{font-size:.87rem;color:var(–navy);font-weight:600;
-flex:1;line-height:1.4;}
-.row-taux{font-size:1rem;font-weight:700;color:var(–terra);
-white-space:nowrap;}
+  align-items:flex-start;gap:8px;margin-bottom:6px;}
+.row-rang{font-size:.75rem;font-weight:700;color:var(--gray);
+  min-width:22px;padding-top:2px;}
+.row-nom{font-size:.87rem;color:var(--navy);font-weight:600;
+  flex:1;line-height:1.4;}
+.row-taux{font-size:1rem;font-weight:700;color:var(--terra);
+  white-space:nowrap;}
 
-.row-barre-bg{background:var(–border);border-radius:4px;
-height:5px;margin-bottom:6px;overflow:hidden;}
-.row-barre-fill{background:var(–terra);height:100%;border-radius:4px;}
+.row-barre-bg{background:var(--border);border-radius:4px;
+  height:5px;margin-bottom:6px;overflow:hidden;}
+.row-barre-fill{background:var(--terra);height:100%;border-radius:4px;}
 
-.row-details{font-size:.74rem;color:var(–gray);}
+.row-details{font-size:.74rem;color:var(--gray);}
 
 /* Note */
-.note-bas{font-size:.74rem;color:var(–gray);margin-top:16px;
-padding-top:12px;border-top:1px solid var(–border);
-font-style:italic;line-height:1.6;}
+.note-bas{font-size:.74rem;color:var(--gray);margin-top:16px;
+  padding-top:12px;border-top:1px solid var(--border);
+  font-style:italic;line-height:1.6;}
 
 <?php if(!$iframe): ?>
-
-footer{text-align:center;color:var(–gray);font-size:.78rem;
-margin-top:32px;padding-top:16px;border-top:1px solid var(–border);
-line-height:1.9;}
-footer a{color:var(–terra);}
-
+footer{text-align:center;color:var(--gray);font-size:.78rem;
+  margin-top:32px;padding-top:16px;border-top:1px solid var(--border);
+  line-height:1.9;}
+footer a{color:var(--terra);}
 <?php endif; ?>
 
 @media(max-width:500px){
-.filiere-btn{font-size:.74rem;padding:5px 8px;}
-.row-nom{font-size:.82rem;}
-.stat-pill{padding:6px 9px;font-size:.76rem;}
-.filtre-input{font-size:.82rem;}
+  .filiere-btn{font-size:.74rem;padding:5px 8px;}
+  .row-nom{font-size:.82rem;}
+  .stat-pill{padding:6px 9px;font-size:.76rem;}
+  .filtre-input{font-size:.82rem;}
 }
 </style>
-
 </head>
 <body>
 
 <?php if(!$iframe): ?>
-
 <header class="site-header">
   <img src="banniere.png" alt="Hors Kadre">
   <div class="nav-links">
@@ -273,7 +265,6 @@ footer a{color:var(–terra);}
 <div class="container">
 
   <?php if(!$iframe): ?>
-
   <h1 class="page-title">Quelles spécialités lycée mènent à chaque filière ?</h1>
   <p class="page-sub">
     Classement par taux d'admission — données nationales Parcoursup 2024, bacheliers généraux.
@@ -288,7 +279,6 @@ footer a{color:var(–terra);}
        FAMILY NAVIGATION
        One pill per filiere_agregee - reloads page with new param
        ------------------------------------------------------- -->
-
   <div class="filiere-nav">
     <?php foreach($filieres as $key => $label):
       $active = ($key === $filiere) ? ' active' : '';
@@ -309,20 +299,25 @@ footer a{color:var(–terra);}
        Submits as GET param ?detail=xxx
        JS also filters visible rows client-side for instant feedback
        ------------------------------------------------------- -->
-
   <form method="get" action="" style="margin:0;">
     <input type="hidden" name="filiere" value="<?php echo htmlspecialchars($filiere); ?>">
     <?php if($iframe): ?>
     <input type="hidden" name="iframe" value="1">
     <?php endif; ?>
     <div class="filtre-row">
-      <span class="filtre-label">Préciser la spécialité :</span>
+      <span class="filtre-label" style="font-weight:600;color:var(--navy);">
+        Préciser la filière :
+        <?php if(!$detail_active): ?>
+        <span style="color:var(--terra);font-size:.75rem;">← obligatoire pour voir les formations</span>
+        <?php endif; ?>
+      </span>
       <input type="text" name="detail" id="filtre-detail"
              class="filtre-input"
              value="<?php echo htmlspecialchars($detail_param); ?>"
-             placeholder="ex: Informatique, Commerce, Chimie…"
+             placeholder="ex: Informatique, Commerce, MPSI, Lettres…"
              list="suggestions-list"
-             autocomplete="off">
+             autocomplete="off"
+             style="<?php echo !$detail_active ? 'border-color:var(--terra);' : ''; ?>">
       <!-- Datalist fed from filiere_detail table -->
       <datalist id="suggestions-list">
         <?php foreach($suggestions as $s): ?>
@@ -341,9 +336,7 @@ footer a{color:var(–terra);}
   </form>
 
   <!-- Active sub-specialty badge -->
-
   <?php if($detail_active): ?>
-
   <div class="detail-badge">
     <span>📌 Spécialité filtrée :</span>
     <strong><?php echo htmlspecialchars($detail_label); ?></strong>
@@ -363,9 +356,7 @@ footer a{color:var(–terra);}
   <!-- -------------------------------------------------------
        GLOBAL STATS
        ------------------------------------------------------- -->
-
   <?php if(count($rows) > 0): ?>
-
   <div class="stats-bar">
     <div class="stat-pill">
       <strong><?php echo count($rows); ?></strong>
@@ -391,17 +382,11 @@ footer a{color:var(–terra);}
        Sorted by conversion rate DESC from SQL
        Top 3 get gold/silver/bronze border
        ------------------------------------------------------- -->
-
   <?php if(count($rows) === 0): ?>
-
-```
-<p style="color:var(--gray);font-style:italic;padding:20px 0;">
-  Aucune donnée disponible pour cette filière.
-</p>
-```
-
+    <p style="color:var(--gray);font-style:italic;padding:20px 0;">
+      Aucune donnée disponible pour cette filière.
+    </p>
   <?php else: ?>
-
   <div class="doublette-list" id="doublette-list">
     <?php foreach($rows as $i => $row):
       $rang      = $i + 1;
@@ -440,6 +425,13 @@ footer a{color:var(–terra);}
                   font-weight:600;text-decoration:none;white-space:nowrap;">
           Voir les <?php echo $nb_formations; ?> formations →
         </a>
+        <?php else: ?>
+        <span style="display:inline-block;background:#e5e7eb;color:#9ca3af;
+                     padding:4px 12px;border-radius:6px;font-size:.75rem;
+                     font-weight:600;white-space:nowrap;cursor:not-allowed;"
+              title="Précisez une filière pour voir les formations">
+          <?php echo $nb_formations_all; ?> formations — précisez la filière
+        </span>
         <?php endif; ?>
       </div>
     </div>
@@ -463,7 +455,6 @@ footer a{color:var(–terra);}
   <?php endif; ?>
 
   <?php if(!$iframe): ?>
-
   <footer>
     ©2026 Katy Saintin — Hors Kadre<br>
     <a href="parcoursup.php">Comprendre Parcoursup</a> |
