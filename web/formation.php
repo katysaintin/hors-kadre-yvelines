@@ -89,8 +89,8 @@ elseif (strpos($type_str, 'pass') !== false)        $filiere_agregee = 'PASS';
 $doublettes = array();
 if ($filiere_agregee !== '') {
     /* Sort by conversion rate (taux = nb_admis/nb_voeux) not raw volume.
-       Ensures Maths+SI ranks above Maths+PC for BUT Informatique even if
-       Maths+PC has more absolute admis nationally — rate is more meaningful.
+       Maths+SI ranks above Maths+PC for BUT because its rate is higher (34% vs 21%)
+       even though Maths+PC has more absolute admis nationally.
        Min 200 candidats to exclude anecdotal combinations. */
     $sql_doub = "SELECT doublette, nb_admis, nb_voeux,
                         ROUND(nb_admis/nb_voeux*100,1) AS taux
@@ -372,6 +372,7 @@ a:hover{text-decoration:underline;}
     <button class="tab-btn active" onclick="showTab('concurrence',this)">📊 Concurrence</button>
     <button class="tab-btn" onclick="showTab('admis',this)">🎓 Qui a été admis ?</button>
     <button class="tab-btn" onclick="showTab('profil',this)">🎯 Mon profil</button>
+    <button class="tab-btn" onclick="showTab('parcours',this)">📚 Parcours & Spés</button>
     <button class="tab-btn" onclick="showTab('plus',this)">📖 En savoir +</button>
   </div>
 
@@ -677,7 +678,86 @@ a:hover{text-decoration:underline;}
 
   </div><!-- /tab-profil -->
 
-  <!-- ONGLET 4 : EN SAVOIR PLUS -->
+  <!-- ONGLET 4 : PARCOURS & SPÉS -->
+  <div class="tab-panel" id="tab-parcours">
+  <div class="bloc">
+
+    <?php if($cart && !empty($cart['mentions_specialites'])): ?>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
+      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">🎓 Parcours proposés</div>
+      <?php
+        $raw = $cart['mentions_specialites'];
+        $raw = preg_replace('/,(BUT|BTS|BTSA|CPGE|Licence|D\.E|DEUST|DCG)\s+-/', '|$1 -', $raw);
+        $specs_list = explode('|', $raw);
+        foreach ($specs_list as $sp):
+          $sp = trim($sp); if ($sp === '') continue;
+      ?>
+        <div style="padding:6px 0;border-bottom:1px solid var(--border);font-size:.88rem;color:var(--navy);">
+          <span style="color:var(--terra);">›</span> <?php echo e($sp); ?>
+        </div>
+      <?php endforeach; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php
+    $has_app = $cart && intval($cart['has_apprentissage']) === 1;
+    $has_int = $cart && intval($cart['has_internat']) === 1;
+    if ($has_app || $has_int):
+    ?>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
+      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">⚙️ Modalités</div>
+      <?php if ($has_app): ?>
+        <div style="padding:8px 0;border-bottom:1px solid var(--border);">
+          <span style="background:#d1fae5;color:#065f46;border-radius:20px;padding:4px 14px;font-size:.85rem;font-weight:700;">✓ Alternance / Apprentissage disponible</span>
+        </div>
+      <?php endif; ?>
+      <?php if ($has_int): ?>
+        <div style="padding:8px 0;">
+          <span style="background:#dbeafe;color:#1e40af;border-radius:20px;padding:4px 14px;font-size:.85rem;font-weight:700;">✓ Internat disponible</span>
+        </div>
+      <?php endif; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php if(!empty($doublettes)): ?>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
+      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">
+        📊 Spécialités lycée des admis en <?php echo e($filiere_agregee); ?> (France, 2024)
+      </div>
+      <?php foreach($doublettes as $d): ?>
+        <div style="margin-bottom:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:.83rem;margin-bottom:3px;">
+            <span style="color:var(--navy);"><?php echo e($d['spec']); ?></span>
+            <span style="font-weight:700;color:var(--terra);"><?php echo $d['taux']; ?>%</span>
+          </div>
+          <div style="background:var(--border);border-radius:4px;height:5px;">
+            <div style="background:var(--terra);width:<?php echo min(100,round($d['taux']/40*100)); ?>%;height:100%;border-radius:4px;"></div>
+          </div>
+        </div>
+      <?php endforeach; ?>
+      <p style="font-size:.74rem;color:var(--gray);margin-top:8px;font-style:italic;">
+        Taux de conversion national 2024 — varient selon l'établissement.
+        Vérifiez aux Journées Portes Ouvertes.
+      </p>
+      <?php if($filiere_agregee !== ''): ?>
+      <div style="margin-top:8px;text-align:right;">
+        <a href="doublettes.php?filiere=<?php echo urlencode($filiere_agregee); ?>"
+           style="font-size:.78rem;color:var(--terra);font-weight:600;">
+          → Classement complet des doublettes <?php echo e($filiere_agregee); ?>
+        </a>
+      </div>
+      <?php endif; ?>
+    </div>
+    <?php else: ?>
+    <p style="color:var(--gray);font-style:italic;font-size:.9rem;">
+      Données de spécialités non disponibles pour cette filière.
+    </p>
+    <?php endif; ?>
+
+  </div>
+  </div><!-- /tab-parcours -->
+
+  <!-- ONGLET 5 : EN SAVOIR PLUS -->
   <div class="tab-panel" id="tab-plus">
   <div class="bloc">
 
