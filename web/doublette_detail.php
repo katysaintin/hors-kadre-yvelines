@@ -17,19 +17,23 @@ connect_db();
 
 /* ------------------------------------------------------------------
  * PARAMETERS
+ * magic_quotes_gpc active on old PHP (free.fr) adds backslashes automatically
+ * stripslashes() removes them to get clean values
  * ------------------------------------------------------------------ */
-/* magic_quotes_gpc active on old PHP (free.fr) adds backslashes automatically
-   stripslashes() removes them to get clean values */
 $filiere = isset($_GET['filiere']) ? stripslashes(trim($_GET['filiere'])) : '';
 $detail  = isset($_GET['detail'])  ? stripslashes(trim($_GET['detail']))  : '';
-$sort    = isset($_GET['sort'])    ? trim($_GET['sort'])    : 'taux';
+$sort    = isset($_GET['sort'])    ? trim($_GET['sort'])                  : 'taux';
 $iframe  = isset($_GET['iframe'])  && $_GET['iframe'] === '1';
 $doublette_display = isset($_GET['doublette'])
     ? stripslashes(trim($_GET['doublette'])) : '';
 
 if ($filiere === '' || $detail === '') { die('Parametres manquants.'); }
 
-/* Whitelist sort values to prevent SQL injection */
+/* ------------------------------------------------------------------
+ * SORT MAP - whitelist to prevent SQL injection
+ * Default for places/candidats/ratio = DESC (highest first)
+ * Default for taux = ASC (most selective = lowest % first)
+ * ------------------------------------------------------------------ */
 $sort_map = array(
     'taux'           => 'f25.taux_acces ASC',
     'taux_desc'      => 'f25.taux_acces DESC',
@@ -49,6 +53,7 @@ $detail_safe  = mysql_real_escape_string($detail);
 
 /* ------------------------------------------------------------------
  * STEP 1: Get cods from filiere_detail
+ * filiere_detail.cods = GROUP_CONCAT of cod_aff_form for this sub-specialty
  * ------------------------------------------------------------------ */
 $cods_str     = '';
 $nb_total     = 0;
@@ -71,7 +76,9 @@ if ($res_cods) {
 }
 if ($cods_str === '') { die('Aucune formation trouvee.'); }
 
-/* Sanitize cods */
+/* ------------------------------------------------------------------
+ * Sanitize cods - cast each to int to prevent SQL injection
+ * ------------------------------------------------------------------ */
 $cods_array = explode(',', $cods_str);
 $cods_clean = array();
 foreach ($cods_array as $c) {
@@ -112,7 +119,9 @@ if ($res_form) {
     }
 }
 
-/* Global stats */
+/* ------------------------------------------------------------------
+ * GLOBAL STATS
+ * ------------------------------------------------------------------ */
 $total_places = 0; $total_candidats = 0;
 foreach ($formations as $f) {
     $total_places    += intval($f['capacite']);
@@ -121,28 +130,47 @@ foreach ($formations as $f) {
 $ratio_moy = $total_places > 0
            ? round($total_candidats / $total_places, 1) : 0;
 
-/* Sort URL helper */
+/* ------------------------------------------------------------------
+ * SORT URL HELPER
+ * Builds the URL for a column header link, toggling ASC/DESC
+ * Preserves all current GET params (filiere, detail, doublette, iframe)
+ * ------------------------------------------------------------------ */
 function sort_url($col, $filiere, $detail, $iframe, $current_sort) {
-    /* Toggle ASC/DESC if same column */
     $next = $col;
     if ($current_sort === $col && isset($GLOBALS['sort_map'][$col.'_desc'])) {
-        $next = $col.'_desc';
-    } elseif ($current_sort === $col.'_desc') {
+        $next = $col . '_desc';
+    } elseif ($current_sort === $col . '_desc') {
         $next = $col;
     }
-    /* Preserve doublette param across sort clicks - use already-stripped value */
     $doublette_param = ($GLOBALS['doublette_display'] !== '')
-        ? '&doublette='.urlencode($GLOBALS['doublette_display']) : '';
-    return '?filiere='.urlencode($filiere)
-         . '&detail='.urlencode($detail)
-         . '&sort='.$next
+        ? '&doublette=' . urlencode($GLOBALS['doublette_display']) : '';
+    return '?filiere=' . urlencode($filiere)
+         . '&detail='  . urlencode($detail)
+         . '&sort='    . $next
          . $doublette_param
          . ($iframe ? '&iframe=1' : '');
 }
 
-function sort_arrow($col, $current) {
-    if ($current === $col)       return ' ↑';
-    if ($current === $col.'_desc') return ' ↓';
+/* ------------------------------------------------------------------
+ * SORT ARROW HELPER
+ *
+ * Returns the arrow character for a sortable column header.
+ *
+ * $col      : column identifier (e.g. 'places', 'taux')
+ * $current  : current active sort key from $_GET['sort']
+ * $inverted : false (default) -> first click = ASC = arrow UP
+ *             true            -> first click = DESC = arrow DOWN
+ *
+ * Usage:
+ *   Acces column (ASC first = most selective first):
+ *     sort_arrow('taux', $sort)           inverted=false
+ *
+ *   Places/Candidats/Ratio (DESC first = highest first):
+ *     sort_arrow('places', $sort, true)   inverted=true
+ * ------------------------------------------------------------------ */
+function sort_arrow($col, $current, $inverted = false) {
+    if ($current === $col)           return $inverted ? ' ↓' : ' ↑';
+    if ($current === $col . '_desc') return $inverted ? ' ↑' : ' ↓';
     return '';
 }
 ?>
@@ -171,77 +199,50 @@ a:hover{text-decoration:underline;}
 <?php endif; ?>
 .container{max-width:<?php echo $iframe?'100%':'920px'; ?>;
   margin:0 auto;padding:<?php echo $iframe?'12px 8px':'28px 16px 60px'; ?>;}
-
-/* Breadcrumb */
 .breadcrumb{font-size:.8rem;color:var(--gray);margin-bottom:12px;}
 .breadcrumb a{color:var(--terra);}
-
-/* Title */
 .page-title{font-size:1.15rem;color:var(--terra);font-weight:700;margin-bottom:2px;}
 .doublette-title{font-size:.88rem;color:var(--gray);margin-bottom:14px;
   padding:8px 12px;background:var(--offwhite);border-radius:8px;
   border-left:4px solid var(--terra);}
 .doublette-title strong{color:var(--navy);}
-
-/* Stats */
 .stats-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;}
 .stat-pill{background:var(--offwhite);border:1px solid var(--border);
   border-radius:8px;padding:7px 12px;font-size:.78rem;text-align:center;}
 .stat-pill strong{display:block;font-size:.95rem;color:var(--terra);}
-
-/* Filter */
 .filter-row{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
 .filter-input{flex:1;min-width:160px;padding:7px 12px;
   border:2px solid var(--border);border-radius:20px;
   font-family:Georgia,serif;font-size:.82rem;color:var(--navy);outline:none;}
 .filter-input:focus{border-color:var(--terra);}
-
-/* TABLE */
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;
   border:1px solid var(--border);border-radius:10px;}
 table{width:100%;border-collapse:collapse;font-size:.82rem;}
-thead th{
-  background:var(--navy);color:#fff;padding:10px 12px;
-  text-align:left;white-space:nowrap;font-weight:600;
-  font-family:Georgia,serif;
-}
+thead th{background:var(--navy);color:#fff;padding:10px 12px;
+  text-align:left;white-space:nowrap;font-weight:600;font-family:Georgia,serif;}
 thead th a{color:#fff;text-decoration:none;}
 thead th a:hover{text-decoration:underline;color:#fcd34d;}
 thead th.num{text-align:right;}
-
 tbody tr{border-bottom:1px solid var(--border);}
 tbody tr:last-child{border-bottom:none;}
 tbody tr:hover{background:var(--offwhite);}
 tbody td{padding:10px 12px;vertical-align:middle;}
 tbody td.num{text-align:right;font-weight:600;color:var(--navy);}
-tbody td.etab{font-weight:600;color:var(--navy);line-height:1.3;}
-tbody td.lieu{font-size:.76rem;color:var(--gray);}
-
-/* Taux color */
 .taux-hard{color:#C4572A;font-weight:700;}
 .taux-med{color:#c47f00;font-weight:700;}
 .taux-easy{color:#2d8a4e;font-weight:700;}
-
-/* Badge selectivite */
-.badge{display:inline-block;padding:1px 7px;border-radius:8px;
-  font-size:.7rem;font-weight:700;}
+.badge{display:inline-block;padding:1px 7px;border-radius:8px;font-size:.7rem;font-weight:700;}
 .badge-sel{background:#fef3c7;color:#92400e;border:1px solid #fcd34d;}
 .badge-open{background:#d1fae5;color:#065f46;border:1px solid #6ee7b7;}
-
-/* Button comprendre */
 .btn-comp{display:inline-block;background:var(--terra);color:#fff;
   padding:5px 12px;border-radius:6px;font-size:.76rem;font-weight:600;
   font-family:Georgia,serif;text-decoration:none;white-space:nowrap;}
 .btn-comp:hover{background:#a8452a;color:#fff;text-decoration:none;}
-
-/* Note */
 .note-bas{font-size:.74rem;color:var(--gray);margin-top:14px;
   padding-top:10px;border-top:1px solid var(--border);font-style:italic;}
-
 <?php if(!$iframe): ?>
 footer{text-align:center;color:var(--gray);font-size:.78rem;
-  margin-top:28px;padding-top:14px;border-top:1px solid var(--border);
-  line-height:1.9;}
+  margin-top:28px;padding-top:14px;border-top:1px solid var(--border);line-height:1.9;}
 footer a{color:var(--terra);}
 <?php endif; ?>
 @media(max-width:600px){
@@ -251,6 +252,7 @@ footer a{color:var(--terra);}
 </style>
 </head>
 <body>
+
 <?php if(!$iframe): ?>
 <header class="site-header">
   <img src="banniere.png" alt="Hors Kadre">
@@ -281,6 +283,7 @@ footer a{color:var(--terra);}
     <?php echo htmlspecialchars($filiere); ?> —
     <?php echo htmlspecialchars($detail_label); ?>
   </h1>
+
   <p style="font-size:.82rem;color:var(--gray);margin-bottom:10px;">
     Filière : <strong style="color:var(--navy);"><?php echo htmlspecialchars($filiere); ?></strong>
     &nbsp;›&nbsp;
@@ -294,7 +297,7 @@ footer a{color:var(--terra);}
   </div>
   <?php endif; ?>
 
-  <!-- Stats -->
+  <!-- Global stats -->
   <div class="stats-bar">
     <div class="stat-pill">
       <strong><?php echo count($formations); ?></strong> formations
@@ -310,13 +313,13 @@ footer a{color:var(--terra);}
     </div>
   </div>
 
-  <!-- Filters: free text on city/etab + select on departement -->
+  <!-- Filters: free text + departement select -->
   <div class="filter-row">
     <input type="text" id="filtre-ville" class="filter-input"
-           placeholder="Filtrer par ville ou établissement…"
+           placeholder="Filtrer par ville ou établissement..."
            oninput="filtrer()">
-    <select id="filtre-dept" class="filter-input" style="flex:0 0 auto;min-width:160px;"
-            onchange="filtrer()">
+    <select id="filtre-dept" class="filter-input"
+            style="flex:0 0 auto;min-width:160px;" onchange="filtrer()">
       <option value="">— Tous les départements —</option>
     </select>
     <button onclick="resetFiltres()"
@@ -338,17 +341,17 @@ footer a{color:var(--terra);}
         <th>Établissement</th>
         <th class="num">
           <a href="<?php echo sort_url('places',$filiere,$detail,$iframe,$sort); ?>">
-            Places<?php echo sort_arrow('places',$sort); ?>
+            Places<?php echo sort_arrow('places',$sort,true); ?>
           </a>
         </th>
         <th class="num">
           <a href="<?php echo sort_url('candidats',$filiere,$detail,$iframe,$sort); ?>">
-            Candidats<?php echo sort_arrow('candidats',$sort); ?>
+            Candidats<?php echo sort_arrow('candidats',$sort,true); ?>
           </a>
         </th>
         <th class="num">
           <a href="<?php echo sort_url('ratio',$filiere,$detail,$iframe,$sort); ?>">
-            Cand./place<?php echo sort_arrow('ratio',$sort); ?>
+            Cand./place<?php echo sort_arrow('ratio',$sort,true); ?>
           </a>
         </th>
         <th class="num">
@@ -361,25 +364,27 @@ footer a{color:var(--terra);}
     </thead>
     <tbody id="form-tbody">
     <?php foreach($formations as $f):
-      $taux  = floatval($f['taux_acces']);
-      $ratio = $f['ratio'] ? floatval($f['ratio']) : null;
-      $is_sel = strpos($f['selectivite'], 'sélective') !== false;
+      $taux    = floatval($f['taux_acces']);
+      $ratio   = $f['ratio'] ? floatval($f['ratio']) : null;
+      $is_sel  = strpos($f['selectivite'], 'sélective') !== false;
       $taux_cls = $taux <= 30 ? 'taux-hard'
                 : ($taux <= 60 ? 'taux-med' : 'taux-easy');
-      $search = strtolower($f['commune'].' '.$f['nom_etablissement'].' '.$f['departement']);
+      $search = strtolower(
+          $f['commune'] . ' ' . $f['nom_etablissement'] . ' ' . $f['departement']
+      );
     ?>
       <tr data-search="<?php echo htmlspecialchars($search); ?>"
           data-dept="<?php echo htmlspecialchars($f['departement']); ?>">
         <td>
-          <div class="etab">
+          <div style="font-weight:600;color:var(--navy);line-height:1.3;">
             <?php echo htmlspecialchars($f['nom_etablissement']); ?>
           </div>
-          <div class="lieu">
+          <div style="font-size:.76rem;color:var(--gray);">
             <?php echo htmlspecialchars($f['commune']); ?> —
             <?php echo htmlspecialchars($f['departement']); ?>
             &nbsp;
             <span class="badge badge-<?php echo $is_sel?'sel':'open'; ?>">
-              <?php echo $is_sel?'Sélective':'Non sélective'; ?>
+              <?php echo $is_sel ? 'Sélective' : 'Non sélective'; ?>
             </span>
           </div>
         </td>
@@ -411,8 +416,7 @@ footer a{color:var(--terra);}
   <p class="note-bas">
     Source : Open Data Parcoursup 2025.
     Accès en rouge = très sélectif (≤30%), orange = moyen, vert = accessible.
-    Cliquez sur les en-têtes de colonnes pour trier.
-    Cliquez sur "Comprendre" pour voir le profil complet des admis.
+    Cliquez sur les en-têtes pour trier. Cliquez sur "Comprendre" pour la fiche complète.
   </p>
   <?php endif; ?>
 
@@ -424,18 +428,17 @@ footer a{color:var(--terra);}
     <a href="index.php">Accueil</a>
   </footer>
   <?php endif; ?>
+
 </div>
 
 <script>
-/* Build departement dropdown from table data */
+/* Build departement dropdown from table rows on page load */
 document.addEventListener('DOMContentLoaded', function() {
   var rows = document.querySelectorAll('#form-tbody tr');
   var depts = {};
   rows.forEach(function(row) {
     var d = row.getAttribute('data-dept') || '';
-    if (d && !depts[d]) {
-      depts[d] = true;
-    }
+    if (d && !depts[d]) depts[d] = true;
   });
   var sel = document.getElementById('filtre-dept');
   Object.keys(depts).sort().forEach(function(d) {
@@ -445,20 +448,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-/* Filter on ville + departement */
+/* Client-side filter: combines free text and departement select */
 function filtrer() {
   var mot  = document.getElementById('filtre-ville').value.toLowerCase().trim();
   var dept = document.getElementById('filtre-dept').value;
-  var rows = document.querySelectorAll('#form-tbody tr');
-  rows.forEach(function(row) {
+  document.querySelectorAll('#form-tbody tr').forEach(function(row) {
     var s = row.getAttribute('data-search') || '';
-    var d = row.getAttribute('data-dept') || '';
-    var okMot  = !mot  || s.indexOf(mot) >= 0;
-    var okDept = !dept || d === dept;
-    row.style.display = (okMot && okDept) ? '' : 'none';
+    var d = row.getAttribute('data-dept')   || '';
+    row.style.display = ((!mot || s.indexOf(mot) >= 0) && (!dept || d === dept))
+        ? '' : 'none';
   });
 }
 
+/* Reset all filters */
 function resetFiltres() {
   document.getElementById('filtre-ville').value = '';
   document.getElementById('filtre-dept').value  = '';
