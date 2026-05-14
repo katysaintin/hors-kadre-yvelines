@@ -66,13 +66,8 @@ if ($res) { $f = mysql_fetch_assoc($res); }
 if (!$f)  { die('Formation introuvable.'); }
 
 /* Requête cartographie : parcours proposés */
-$sql_cart = "SELECT
-                    MAX(mentions_specialites) AS mentions_specialites,
-                    MAX(apprentissage)        AS has_apprentissage,
-                    MAX(internat)             AS has_internat
-             FROM cartographie_formations
-             WHERE cod_aff_form = '" . $cod . "'
-             AND session = 2026";
+$sql_cart = "SELECT mentions_specialites FROM cartographie_formations
+             WHERE cod_aff_form = '" . $cod . "' AND session = 2026 LIMIT 1";
 $res_cart = mysql_query($sql_cart);
 $cart = ($res_cart) ? mysql_fetch_assoc($res_cart) : false;
 
@@ -93,9 +88,17 @@ elseif (strpos($type_str, 'pass') !== false)        $filiere_agregee = 'PASS';
 
 $doublettes = array();
 if ($filiere_agregee !== '') {
-    $sql_doub = "SELECT doublette, nb_admis FROM specialites_filiere
+    /* Sort by conversion rate (taux = nb_admis/nb_voeux) not raw volume.
+       Ensures Maths+SI ranks above Maths+PC for BUT Informatique even if
+       Maths+PC has more absolute admis nationally — rate is more meaningful.
+       Min 200 candidats to exclude anecdotal combinations. */
+    $sql_doub = "SELECT doublette, nb_admis, nb_voeux,
+                        ROUND(nb_admis/nb_voeux*100,1) AS taux
+                 FROM specialites_filiere
                  WHERE filiere_agregee = '" . mysql_real_escape_string($filiere_agregee) . "'
-                 AND annee = 2024 ORDER BY nb_admis DESC LIMIT 8";
+                 AND annee = 2024
+                 AND nb_voeux >= 200
+                 ORDER BY taux DESC LIMIT 8";
     $res_doub = mysql_query($sql_doub);
     if ($res_doub) {
         $total_doub = 0; $rows_doub = array();
@@ -104,7 +107,7 @@ if ($filiere_agregee !== '') {
         }
         foreach ($rows_doub as $d) {
             $pct = ($total_doub > 0) ? round(intval($d['nb_admis']) / $total_doub * 100) : 0;
-            $doublettes[] = array('spec' => $d['doublette'], 'pct' => $pct);
+            $doublettes[] = array('spec' => $d['doublette'], 'pct' => $pct, 'taux' => floatval($d['taux']));
         }
     }
 }
@@ -359,9 +362,6 @@ a:hover{text-decoration:underline;}
         <span class="tag tag-open">Formation non sélective</span>
       <?php endif; ?>
       <?php if ($f['internat']): ?><span class="tag tag-int">Internat disponible</span><?php endif; ?>
-      <?php if ($cart && intval($cart['has_apprentissage']) === 1): ?>
-        <span class="tag" style="background:#d1fae5;color:#065f46;border-color:#6ee7b7;">Alternance disponible</span>
-      <?php endif; ?>
       <?php if ($f['apprentissage']): ?><span class="tag tag-app">Apprentissage possible</span><?php endif; ?>
     </div>
   </div>
@@ -372,7 +372,6 @@ a:hover{text-decoration:underline;}
     <button class="tab-btn active" onclick="showTab('concurrence',this)">📊 Concurrence</button>
     <button class="tab-btn" onclick="showTab('admis',this)">🎓 Qui a été admis ?</button>
     <button class="tab-btn" onclick="showTab('profil',this)">🎯 Mon profil</button>
-    <button class="tab-btn" onclick="showTab('parcours',this)">📚 Parcours & Spés</button>
     <button class="tab-btn" onclick="showTab('plus',this)">📖 En savoir +</button>
   </div>
 
@@ -679,15 +678,15 @@ a:hover{text-decoration:underline;}
   </div><!-- /tab-profil -->
 
   <!-- ONGLET 4 : EN SAVOIR PLUS -->
-  <!-- ONGLET 4 : PARCOURS & SPÉS -->
-  <div class="tab-panel" id="tab-parcours">
+  <div class="tab-panel" id="tab-plus">
   <div class="bloc">
 
     <?php if($cart && !empty($cart['mentions_specialites'])): ?>
     <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
-      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">🎓 Parcours proposés</div>
+      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">🎓 Parcours proposés par cette formation</div>
       <?php
         $raw = $cart['mentions_specialites'];
+        // Couper sur ",BUT" ",BTS" ",CPGE" etc.
         $raw = preg_replace('/,(BUT|BTS|BTSA|CPGE|Licence|D\.E|DEUST|DCG)\s+-/', '|$1 -', $raw);
         $specs_list = explode('|', $raw);
         foreach ($specs_list as $sp):
@@ -697,26 +696,6 @@ a:hover{text-decoration:underline;}
           <span style="color:var(--terra);">›</span> <?php echo htmlspecialchars($sp); ?>
         </div>
       <?php endforeach; ?>
-    </div>
-    <?php endif; ?>
-
-    <?php
-    $has_app = $cart && intval($cart['has_apprentissage']) === 1;
-    $has_int = $cart && intval($cart['has_internat']) === 1;
-    if ($has_app || $has_int):
-    ?>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
-      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">⚙️ Modalités</div>
-      <?php if ($has_app): ?>
-        <div style="padding:8px 0;border-bottom:1px solid var(--border);">
-          <span style="background:#d1fae5;color:#065f46;border-radius:20px;padding:4px 14px;font-size:.85rem;font-weight:700;">✓ Alternance / Apprentissage disponible</span>
-        </div>
-      <?php endif; ?>
-      <?php if ($has_int): ?>
-        <div style="padding:8px 0;">
-          <span style="background:#dbeafe;color:#1e40af;border-radius:20px;padding:4px 14px;font-size:.85rem;font-weight:700;">✓ Internat disponible</span>
-        </div>
-      <?php endif; ?>
     </div>
     <?php endif; ?>
 
@@ -737,25 +716,9 @@ a:hover{text-decoration:underline;}
         </div>
       <?php endforeach; ?>
       <p style="font-size:.74rem;color:var(--gray);margin-top:8px;font-style:italic;">Données nationales — varient selon l'établissement. Vérifiez aux Journées Portes Ouvertes.</p>
-      <div style="margin-top:10px;text-align:center;">
-        <a href="doublettes.php?filiere=<?php echo urlencode($filiere_agregee); ?>"
-           style="font-size:.8rem;color:var(--terra);font-weight:600;">
-          → Voir le classement complet des spécialités pour <?php echo htmlspecialchars($filiere_agregee); ?> →
-        </a>
-      </div>
     </div>
     <?php endif; ?>
 
-    <?php if(!$cart && empty($doublettes)): ?>
-    <p style="color:var(--gray);font-style:italic;font-size:.9rem;">Informations de parcours non disponibles pour cette formation.</p>
-    <?php endif; ?>
-
-  </div>
-  </div><!-- /tab-parcours -->
-
-  <!-- ONGLET 5 : EN SAVOIR + -->
-  <div class="tab-panel" id="tab-plus">
-  <div class="bloc">
     <h2>🔍 Comment lire la fiche officielle Parcoursup ?</h2>
 
     <p style="font-size:.88rem;color:var(--gray);margin-bottom:12px;">
