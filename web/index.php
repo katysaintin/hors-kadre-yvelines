@@ -219,7 +219,7 @@ footer a { color: var(--terra); }
     <a href="https://www.facebook.com/people/Hors-Kadre/61570725300507/" target="_blank">📘 Facebook</a>
     <a href="https://blogs.mediapart.fr/katy-ho/blog/190426/98-de-reussite-au-bac-et-apres" target="_blank">98% au bac. Et après ?</a>
     <a href="https://blogs.mediapart.fr/katy-ho/blog/230426/qui-classe-les-lycees-et-pourquoi-ca-nest-pas-un-hasard" target="_blank">Qui classe les lycées ?</a>
-    <a href="https://blogs.mediapart.fr/katy-ho" target="_blank">Parcoursup : une étape à la fois →</a>
+    <a href="https://blogs.mediapart.fr/katy-ho/blog/090526/parcoursup-une-etape-la-fois-et-tout-seclaircit-1" target="_blank">Parcoursup : une étape à la fois →</a>
   </div>
 </header>
 
@@ -246,10 +246,17 @@ footer a { color: var(--terra); }
       <span class="badge">Données 2025</span>
     </a>
 
-    <a href="typeformation.php" class="tuile">
+    <a href="typeformation.html" class="tuile">
       <div class="tuile-icon">📖</div>
       <h2>Quelle formation après le bac ?</h2>
       <p>BUT, BTS, Licence, Prépa… Les différences expliquées sans jargon, en 5 minutes.</p>
+    </a>
+
+    <a href="doublettes.php" class="tuile">
+      <div class="tuile-icon">📊</div>
+      <h2>Spécialités qui ouvrent les portes</h2>
+      <p>Maths+PC ouvre-t-elle vraiment toutes les portes ? Les données 2024 répondent.</p>
+      <span class="badge">Nouveau !</span>
     </a>
 
   </div>
@@ -259,7 +266,14 @@ footer a { color: var(--terra); }
     <cite>— <a href="https://www.linkedin.com/in/virginiebusquet/" target="_blank">Virginie Busquet</a>, conseillère d'orientation</cite>
   </div>
 
+  <!-- Lien PDF -->
+  <div style="text-align:center;margin:24px 0 8px;padding:14px 20px;background:var(--offwhite);border:1px solid var(--border);border-radius:10px;font-size:.88rem;">
+    📥 <a href="https://katysaintin.github.io/hors-kadre-yvelines/ParcoursupInfoHorsKadre.pdf" target="_blank" style="font-weight:600;color:var(--terra);">Télécharger le guide Parcoursup (PDF)</a>
+    <span style="color:var(--gray)"> — à imprimer ou partager avec les familles</span>
+  </div>
+
   <footer>
+        <a href="https://blogs.mediapart.fr/katy-ho/blog/090526/parcoursup-une-etape-la-fois-et-tout-seclaircit-1" target="_blank" style="font-weight:600;">📰 Lire l'article : Parcoursup, une étape à la fois</a><br>
     ©2026 Katy Saintin — Hors Kadre<br>
     Données Open Data — Traitement indépendant — Réutilisation autorisée avec attribution<br>
     <a href="legal/apropos.html">À propos</a> |
