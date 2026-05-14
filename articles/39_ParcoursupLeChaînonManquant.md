@@ -1,4 +1,4 @@
-# Angle mort : Parcoursup — le chaînon manquant entre les familles et ceux qui peuvent vraiment les aider
+# Parcoursup — le chaînon manquant entre les familles et ceux qui peuvent vraiment les aider
 
 *Hors Kadre décrypte ce que les médias n'abordent pas. Les données existent. Les conseillers existent. Les parents cherchent. Alors pourquoi personne ne les connecte ?*
 
@@ -56,7 +56,7 @@ Ce n'est la faute de personne. C'est la conséquence d'un système complexe où 
 
 Les enseignants font un travail considérable. Ils connaissent leurs élèves, leurs matières, leurs progressions. Ils assurent les conseils de classe, répondent aux familles, gèrent les conseils de classe et les orientations — tout en enseignant.
 
-Parcoursup est une spécialité à part entière. Comprendre que le BUT Informatique de Vélizy reçoit jusqu'à 8 000 candidatures et fait un premier tri sur les notes brutes — sans lire les lettres de motivation au premier passage — ce n'est pas une information qu'on peut attendre d'un professeur de Maths ou de SVT. Ce n'est pas son métier. Ce n'est pas son rôle.
+Parcoursup est une spécialité à part entière. Comprendre que le BUT Informatique de Vélizy reçoit jusqu'à 8 000 candidatures et fait un premier tri sur les notes brutes — sans lire les lettres de motivation au premier passage — ce n'est pas une information qu'on peut attendre d'un professeur de Maths ou de SVT. C'est le responsable Parcoursup de la formation qui me l'a dit lui-même, lors de la JPO. Mon fils était assis à côté de moi. Ce n'est pas son métier. Ce n'est pas son rôle.
 
 Ce n'est pas non plus une critique. C'est un constat structurel.
 
