@@ -737,6 +737,12 @@ a:hover{text-decoration:underline;}
         </div>
       <?php endforeach; ?>
       <p style="font-size:.74rem;color:var(--gray);margin-top:8px;font-style:italic;">Données nationales — varient selon l'établissement. Vérifiez aux Journées Portes Ouvertes.</p>
+      <div style="margin-top:10px;text-align:center;">
+        <a href="doublettes.php?filiere=<?php echo urlencode($filiere_agregee); ?>"
+           style="font-size:.8rem;color:var(--terra);font-weight:600;">
+          → Voir le classement complet des spécialités pour <?php echo htmlspecialchars($filiere_agregee); ?> →
+        </a>
+      </div>
     </div>
     <?php endif; ?>
 
