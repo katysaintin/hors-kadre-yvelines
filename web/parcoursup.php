@@ -917,6 +917,12 @@ tr:hover td { background: #f0ebe4; }
     <span style="color:var(--gray)"> — à imprimer ou partager avec les familles</span>
   </div>
 
+<div style="background:var(--offwhite);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:24px;text-align:center;">
+  <div style="font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:6px;">📊 Quelles spécialités lycée mènent à chaque filière ?</div>
+  <div style="font-size:.82rem;color:var(--gray);margin-bottom:10px;">Maths+PC ouvre-t-elle vraiment toutes les portes ? Les données 2024 répondent.</div>
+  <a href="doublettes.php" style="display:inline-block;background:var(--terra);color:#fff;padding:8px 20px;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none;">Voir le classement des spécialités →</a>
+</div>
+
 <p class="footer-note">
     ©2026 Katy Saintin — Hors Kadre<br>
     Données publiques · Traitement et analyse indépendants · Réutilisation autorisée avec attribution<br>
