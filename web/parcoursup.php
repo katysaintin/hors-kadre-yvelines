@@ -189,7 +189,7 @@ $where = $hasSearch ? 'WHERE ' . implode(' AND ', $whereParts) : '';
 $totalRows = 0;
 
 if ($hasSearch) {
-    $countSql = "SELECT COUNT(*) AS total
+    $countSql = "SELECT COUNT(DISTINCT f26.cod_aff_form) AS total
                  FROM formations_2026 f26
                  LEFT JOIN formations_2025 f25 ON f26.cod_aff_form = f25.cod_aff_form
                  " . $where;
@@ -220,16 +220,16 @@ $rows = array();
 
 if ($hasSearch) {
     $sql = "SELECT
-                f26.nom_etablissement,
-                f26.type_formation,
-                f26.nom_long_formation,
-                f26.nom_court_formation,
-                f26.commune,
-                f26.departement,
-                f26.region,
-                f26.lien_fiche_formation,
-                f26.internat,
-                f26.apprentissage,
+                MIN(f26.nom_etablissement)    AS nom_etablissement,
+                MIN(f26.type_formation)       AS type_formation,
+                MIN(f26.nom_long_formation)   AS nom_long_formation,
+                MIN(f26.nom_court_formation)  AS nom_court_formation,
+                MIN(f26.commune)              AS commune,
+                MIN(f26.departement)          AS departement,
+                MIN(f26.region)               AS region,
+                MIN(f26.lien_fiche_formation) AS lien_fiche_formation,
+                MAX(f26.internat)             AS internat,
+                MAX(f26.apprentissage)        AS apprentissage,
                 f26.cod_aff_form,
 
                 f25.capacite,
@@ -251,6 +251,12 @@ if ($hasSearch) {
             FROM formations_2026 f26
             LEFT JOIN formations_2025 f25 ON f26.cod_aff_form = f25.cod_aff_form
             " . $where . "
+            GROUP BY f26.cod_aff_form,
+                f25.capacite, f25.nb_candidats_total, f25.nb_admis_total,
+                f25.taux_acces, f25.pct_admis_neo_bg, f25.pct_admis_neo_bt,
+                f25.pct_admis_neo_bp, f25.rang_dernier_appele_g1, f25.selectivite,
+                f25.pct_admis_boursiers, f25.nb_admis_mention_tb,
+                f25.nb_admis_mention_tbf, f25.pct_admis_f
             ORDER BY " . build_order_by($sort) . "
             LIMIT " . intval($offset) . ", " . intval($limitForPage);
 
