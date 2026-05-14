@@ -307,14 +307,11 @@ footer a{color:var(--terra);}
     <div class="filtre-row">
       <span class="filtre-label" style="font-weight:600;color:var(--navy);">
         Préciser la filière :
-        <?php if(!$detail_active): ?>
-        <span style="color:var(--terra);font-size:.75rem;">← obligatoire pour voir les formations</span>
-        <?php endif; ?>
       </span>
       <input type="text" name="detail" id="filtre-detail"
              class="filtre-input"
              value="<?php echo htmlspecialchars($detail_param); ?>"
-             placeholder="ex: Informatique, Commerce, MPSI, Lettres…"
+             placeholder="ex: Informatique, MPSI, Lettres…"
              list="suggestions-list"
              autocomplete="off"
              style="<?php echo !$detail_active ? 'border-color:var(--terra);' : ''; ?>">
@@ -334,6 +331,11 @@ footer a{color:var(--terra);}
       <?php endif; ?>
     </div>
   </form>
+  <?php if(!$detail_active): ?>
+  <p style="font-size:.78rem;color:var(--terra);margin-bottom:10px;margin-top:-6px;">
+    ↑ Précisez une filière pour accéder à la liste des formations correspondantes.
+  </p>
+  <?php endif; ?>
 
   <!-- Active sub-specialty badge -->
   <?php if($detail_active): ?>
@@ -430,7 +432,7 @@ footer a{color:var(--terra);}
                      padding:4px 12px;border-radius:6px;font-size:.75rem;
                      font-weight:600;white-space:nowrap;cursor:not-allowed;"
               title="Précisez une filière pour voir les formations">
-          <?php echo $nb_formations_all; ?> formations — précisez la filière
+          Précisez la filière →
         </span>
         <?php endif; ?>
       </div>
