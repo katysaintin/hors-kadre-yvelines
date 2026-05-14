@@ -31,12 +31,16 @@ if ($filiere === '' || $detail === '') { die('Parametres manquants.'); }
 
 /* Whitelist sort values to prevent SQL injection */
 $sort_map = array(
-    'taux'      => 'f25.taux_acces ASC',
-    'taux_desc' => 'f25.taux_acces DESC',
-    'ratio'     => 'ratio DESC',
-    'places'    => 'f25.capacite DESC',
-    'candidats' => 'f25.nb_candidats_phase_principale DESC',
-    'commune'   => 'f26.commune ASC',
+    'taux'           => 'f25.taux_acces ASC',
+    'taux_desc'      => 'f25.taux_acces DESC',
+    'ratio'          => 'ratio DESC',
+    'ratio_desc'     => 'ratio ASC',
+    'places'         => 'f25.capacite DESC',
+    'places_desc'    => 'f25.capacite ASC',
+    'candidats'      => 'f25.nb_candidats_phase_principale DESC',
+    'candidats_desc' => 'f25.nb_candidats_phase_principale ASC',
+    'commune'        => 'f26.commune ASC',
+    'commune_desc'   => 'f26.commune DESC',
 );
 $order_by = isset($sort_map[$sort]) ? $sort_map[$sort] : $sort_map['taux'];
 
@@ -126,8 +130,9 @@ function sort_url($col, $filiere, $detail, $iframe, $current_sort) {
     } elseif ($current_sort === $col.'_desc') {
         $next = $col;
     }
-    /* Preserve doublette param across sort clicks */
-    $doublette_param = isset($_GET['doublette']) ? '&doublette='.urlencode($_GET['doublette']) : '';
+    /* Preserve doublette param across sort clicks - use already-stripped value */
+    $doublette_param = ($GLOBALS['doublette_display'] !== '')
+        ? '&doublette='.urlencode($GLOBALS['doublette_display']) : '';
     return '?filiere='.urlencode($filiere)
          . '&detail='.urlencode($detail)
          . '&sort='.$next
