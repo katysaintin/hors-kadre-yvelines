@@ -311,7 +311,7 @@ fetch('data_idf.json')
   .then(function(r){ return r.json(); })
   .then(function(raw){
     // Mapper les champs IDF vers les champs attendus par le JS
-    DATA_PARCOURSUP = raw.map(function(d){
+    var mapped = raw.map(function(d){
       return {
         cod:      d.cod,
         nom:      d.nom,
@@ -331,6 +331,13 @@ fetch('data_idf.json')
         internat: 0,
         apprent:  0
       };
+    });
+    // Dédoublonner par cod — garder la première occurrence
+    var seen = {};
+    DATA_PARCOURSUP = mapped.filter(function(d){
+      if(seen[d.cod]) return false;
+      seen[d.cod] = true;
+      return true;
     });
     document.getElementById('loading').style.display = 'none';
     // Paramètres URL ou défauts
