@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexique & Acronymes — Hors Kadre</title>
+<style>
+:root{
+  --navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
+  --gold:#B8860B;--gray:#555;--border:#d9d1ca;--white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;
+  color:var(--navy);line-height:1.7;}
+a{color:var(--terra);text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);
+  padding:16px;text-align:center;}
+.site-header img{max-width:320px;width:50%;height:auto;}
+.nav-links{margin-top:8px;font-size:.85rem;}
+.nav-links a{margin:0 10px;color:var(--navy);font-weight:600;}
+.nav-links a:hover{color:var(--terra);}
+
+.hero{background:var(--navy);color:var(--white);
+  padding:36px 16px 28px;text-align:center;}
+.hero h1{font-size:clamp(1.3rem,4vw,1.8rem);margin-bottom:8px;}
+.hero p{font-size:.9rem;color:#c5d3e8;max-width:520px;margin:0 auto;}
+
+.container{max-width:860px;margin:0 auto;padding:28px 16px 60px;}
+
+/* Filtre JS */
+.search-bar{display:flex;gap:8px;margin-bottom:20px;}
+.search-input{flex:1;padding:10px 16px;
+  border:2px solid var(--border);border-radius:24px;
+  font-family:Georgia,serif;font-size:.88rem;
+  color:var(--navy);outline:none;background:var(--white);}
+.search-input:focus{border-color:var(--terra);}
+
+/* Catégorie */
+.categorie{margin-bottom:32px;}
+.cat-titre{font-size:.8rem;font-weight:700;color:var(--gray);
+  text-transform:uppercase;letter-spacing:.1em;
+  padding-bottom:6px;margin-bottom:12px;
+  border-bottom:2px solid var(--terra);}
+
+/* Terme */
+.terme{background:var(--white);border:1px solid var(--border);
+  border-radius:8px;padding:12px 16px;margin-bottom:8px;
+  display:flex;gap:16px;align-items:flex-start;}
+.terme:hover{border-color:var(--terra);}
+.terme-acro{min-width:90px;font-weight:700;font-size:.92rem;
+  color:var(--terra);flex-shrink:0;padding-top:2px;}
+.terme-body{}
+.terme-nom{font-weight:600;color:var(--navy);font-size:.9rem;
+  margin-bottom:2px;}
+.terme-def{font-size:.84rem;color:var(--gray);line-height:1.6;}
+.terme-ex{font-size:.8rem;color:var(--terra);margin-top:4px;
+  font-style:italic;}
+
+/* Ancre */
+:target{scroll-margin-top:80px;}
+
+footer{text-align:center;color:var(--gray);font-size:.8rem;
+  margin-top:32px;padding-top:16px;
+  border-top:1px solid var(--border);line-height:1.9;}
+footer a{color:var(--terra);}
+
+@media(max-width:500px){
+  .terme{flex-direction:column;gap:4px;}
+  .terme-acro{min-width:auto;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="nav-links">
+    <a href="index.php">← Accueil</a>
+    <a href="parcoursup.php">Comprendre Parcoursup</a>
+    <a href="doublettes.php">Doublettes</a>
+    <a href="aide.html">Guide</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Lexique & Acronymes</h1>
+  <p>Tous les termes de l'orientation expliqués simplement —
+     spécialités lycée, formations, Parcoursup, indicateurs.</p>
+</div>
+
+<div class="container">
+
+  <div class="search-bar">
+    <input type="text" id="filtre-terme" class="search-input"
+           placeholder="Chercher un terme ou un acronyme… (ex: NSI, IVAL, BUT)"
+           oninput="filtrerTermes()">
+  </div>
+
+  <!-- SPÉCIALITÉS LYCÉE -->
+  <div class="categorie" id="specialites">
+    <div class="cat-titre">🎒 Spécialités lycée (Terminale)</div>
+
+    <div class="terme" data-search="maths mathématiques spécialité">
+      <div class="terme-acro">Maths</div>
+      <div class="terme-body">
+        <div class="terme-nom">Mathématiques Spécialité</div>
+        <div class="terme-def">Spécialité la plus choisie en Terminale.
+          Présente chez 32% des admis en BUT, 46% en CPGE scientifique.
+          Indispensable pour les prépas, très valorisée partout.</div>
+        <div class="terme-ex">Doublette efficace : Maths + PC, Maths + NSI, Maths + SVT</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="pc physique chimie spécialité">
+      <div class="terme-acro">PC</div>
+      <div class="terme-body">
+        <div class="terme-nom">Physique-Chimie Spécialité</div>
+        <div class="terme-def">Incontournable pour les CPGE scientifiques (45% des admis),
+          le PASS/médecine (44%) et les écoles d'ingénieurs.
+          Souvent associée à Maths.</div>
+        <div class="terme-ex">Doublette reine CPGE S : Maths + PC à 41.4% de taux de conversion</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="svt sciences vie terre spécialité biologie">
+      <div class="terme-acro">SVT</div>
+      <div class="terme-body">
+        <div class="terme-nom">Sciences de la Vie et de la Terre Spécialité</div>
+        <div class="terme-def">Spécialité santé par excellence. Présente chez 31% des admis en PASS.
+          Moins utile seule — à associer à PC pour le PASS (doublette PC+SVT : 48.6%).</div>
+        <div class="terme-ex">Sans PC, SVT ouvre moins de portes en médecine</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="nsi numérique sciences informatiques">
+      <div class="terme-acro">NSI</div>
+      <div class="terme-body">
+        <div class="terme-nom">Numérique et Sciences Informatiques</div>
+        <div class="terme-def">Spécialité créée par la réforme 2019. Taux de conversion élevé
+          en BUT Informatique quand associée à PC ou SI (29-31%).
+          Mais seulement 6.5% des admis BUT l'avaient seule.</div>
+        <div class="terme-ex">NSI + PC ou NSI + SI = profil efficace pour le numérique</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="ses sciences économiques sociales spécialité économie">
+      <div class="terme-acro">SES</div>
+      <div class="terme-body">
+        <div class="terme-nom">Sciences Économiques et Sociales Spécialité</div>
+        <div class="terme-def">2ème spécialité la plus fréquente chez les admis BUT (18%).
+          Efficace pour le commerce et la gestion.
+          Inattendue mais présente en BUT Informatique.</div>
+        <div class="terme-ex">Doublette efficace commerce : Maths + SES, SES + Langues</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="hggsp histoire géographie géopolitique sciences politiques">
+      <div class="terme-acro">HGGSP</div>
+      <div class="terme-body">
+        <div class="terme-nom">Histoire-Géographie, Géopolitique et Sciences Politiques</div>
+        <div class="terme-def">Spécialité aux débouchés larges : droit, sciences po, licences SHS.
+          8% des admis BUT l'avaient.
+          Forte en CPGE littéraires (HGGSP + HLP : 48.3%).</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="hlp humanités littérature philosophie">
+      <div class="terme-acro">HLP</div>
+      <div class="terme-body">
+        <div class="terme-nom">Humanités, Littérature et Philosophie</div>
+        <div class="terme-def">Spécialité des prépas littéraires.
+          Doublette HLP + HGGSP : 48.3% en CPGE L.
+          Peu présente dans les formations scientifiques.</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="llcer langues littératures cultures étrangères régionales">
+      <div class="terme-acro">LLCER</div>
+      <div class="terme-body">
+        <div class="terme-nom">Langues, Littératures et Cultures Étrangères et Régionales</div>
+        <div class="terme-def">Souvent appelée "Langues" ou "LVC".
+          6% des admis BUT l'avaient — souvent associée à PC ou SES.
+          Efficace pour le commerce international.</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="si sciences ingénieur">
+      <div class="terme-acro">SI</div>
+      <div class="terme-body">
+        <div class="terme-nom">Sciences de l'Ingénieur et Sciences Physiques</div>
+        <div class="terme-def">Spécialité technologique par excellence.
+          Doublette SI + NSI : 31.3% en BUT Informatique.
+          Maths + SI : 34.4% — meilleur taux de conversion BUT Informatique.</div>
+        <div class="terme-ex">Profil idéal BUT GEII : Maths + SI</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FORMATIONS -->
+  <div class="categorie" id="formations">
+    <div class="cat-titre">🎓 Types de formation post-bac</div>
+
+    <div class="terme" data-search="but bachelor universitaire technologie iut">
+      <div class="terme-acro">BUT</div>
+      <div class="terme-body">
+        <div class="terme-nom">Bachelor Universitaire de Technologie</div>
+        <div class="terme-def">3 ans en IUT (Institut Universitaire de Technologie).
+          Remplace le DUT depuis 2021. Formation professionnalisante
+          avec projets, stages et alternance possible.
+          Sélectif sur Parcoursup.</div>
+        <div class="terme-ex">BUT Informatique, BUT GEII, BUT GEA, BUT MMI...</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="bts brevet technicien supérieur lycée">
+      <div class="terme-acro">BTS</div>
+      <div class="terme-body">
+        <div class="terme-nom">Brevet de Technicien Supérieur</div>
+        <div class="terme-def">2 ans, souvent en lycée. Formation très opérationnelle,
+          tournée vers un métier précis. Non sélectif officiellement
+          mais demande forte sur certains BTS.</div>
+        <div class="terme-ex">BTS SIO, BTS Commerce International, BTS IRIS...</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="cpge classe préparatoire grandes écoles prépa mpsi pcsi ecg">
+      <div class="terme-acro">CPGE</div>
+      <div class="terme-body">
+        <div class="terme-nom">Classes Préparatoires aux Grandes Écoles</div>
+        <div class="terme-def">2 ans très intensifs pour préparer des concours
+          d'entrée en grandes écoles. Trois familles :
+          scientifiques (S), économiques (ECG), littéraires (L).</div>
+        <div class="terme-ex">MPSI, PCSI, PTSI, BCPST, MP2I (voie S) — ECG, ECT — Lettres, B/L</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="mpsi maths physique sciences ingénieur prépa">
+      <div class="terme-acro">MPSI</div>
+      <div class="terme-body">
+        <div class="terme-nom">Mathématiques, Physique et Sciences de l'Ingénieur</div>
+        <div class="terme-def">CPGE scientifique. Maths+PC : 41.4% de taux de conversion.
+          Débouche sur concours Polytechnique, Centrale, Mines, Arts et Métiers...</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="pcsi physique chimie sciences ingénieur prépa">
+      <div class="terme-acro">PCSI</div>
+      <div class="terme-body">
+        <div class="terme-nom">Physique, Chimie et Sciences de l'Ingénieur</div>
+        <div class="terme-def">CPGE scientifique orientée physique et chimie.
+          Mêmes concours que MPSI. Doublette reine : Maths + PC (41.4%).</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="pass parcours accès spécifique santé médecine">
+      <div class="terme-acro">PASS</div>
+      <div class="terme-body">
+        <div class="terme-nom">Parcours d'Accès Spécifique Santé</div>
+        <div class="terme-def">1ère année de médecine. Remplace le PACES depuis 2020.
+          Très sélectif — seule une minorité continue en 2ème année.
+          Doublette reine : PC + SVT (48.6%).</div>
+        <div class="terme-ex">PC est plus présente que SVT chez les admis en PASS</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="iut institut universitaire technologie">
+      <div class="terme-acro">IUT</div>
+      <div class="terme-body">
+        <div class="terme-nom">Institut Universitaire de Technologie</div>
+        <div class="terme-def">Établissement universitaire qui propose les BUT.
+          Souvent adossé à une université.
+          Cadre plus encadré que la licence classique.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PARCOURSUP -->
+  <div class="categorie" id="parcoursup-termes">
+    <div class="cat-titre">🖥️ Parcoursup & Orientation</div>
+
+    <div class="terme" data-search="taux accès admission parcoursup">
+      <div class="terme-acro">Taux d'accès</div>
+      <div class="terme-body">
+        <div class="terme-nom">Taux d'accès à une formation</div>
+        <div class="terme-def">Pourcentage de candidats ayant reçu au moins
+          une proposition d'admission. 30% = 7 candidats sur 10 n'ont rien reçu.
+          80% = presque tout le monde a eu une proposition.</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="rang dernier appelé liste attente">
+      <div class="terme-acro">Rang dernier appelé</div>
+      <div class="terme-body">
+        <div class="terme-nom">Rang du dernier candidat appelé</div>
+        <div class="terme-def">Si votre enfant est classé au-delà de ce rang,
+          il ne reçoit pas de proposition — sauf si des candidats
+          mieux classés renoncent, ce qui arrive souvent en juillet.</div>
+        <div class="terme-ex">Rang 639 signifie que la liste d'attente est descendue jusqu'au 639ème</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="doublette spécialités combinaison">
+      <div class="terme-acro">Doublette</div>
+      <div class="terme-body">
+        <div class="terme-nom">Couple de spécialités lycée</div>
+        <div class="terme-def">En Terminale générale, l'élève garde 2 spécialités.
+          Ce couple s'appelle une doublette.
+          Le taux de conversion mesure l'efficacité d'une doublette
+          pour accéder à une formation.</div>
+        <div class="terme-ex">Maths + PC : 41.4% en CPGE S — Maths + SI : 34.4% en BUT Informatique</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="taux conversion doublette spécialité efficacité">
+      <div class="terme-acro">Taux de conversion</div>
+      <div class="terme-body">
+        <div class="terme-nom">Taux de conversion d'une doublette</div>
+        <div class="terme-def">Nombre d'admis ayant cette doublette / nombre de candidats
+          ayant cette doublette. Mesure l'efficacité d'un profil
+          pour accéder à une formation. Différent du taux d'accès.</div>
+        <div class="terme-ex">34.4% = 34 candidats sur 100 avec Maths+SI ont eu le BUT Informatique</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="jpo journées portes ouvertes visite établissement">
+      <div class="terme-acro">JPO</div>
+      <div class="terme-body">
+        <div class="terme-nom">Journées Portes Ouvertes</div>
+        <div class="terme-def">Événements organisés par les établissements
+          pour présenter leurs formations. Indispensable pour comprendre
+          les critères de sélection réels d'une formation.
+          Généralement en janvier-février.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- INDICATEURS -->
+  <div class="categorie" id="indicateurs">
+    <div class="cat-titre">📊 Indicateurs lycée</div>
+
+    <div class="terme" data-search="ival indicateur valeur ajoutée lycée classement">
+      <div class="terme-acro" id="ival">IVAL</div>
+      <div class="terme-body">
+        <div class="terme-nom">Indicateur de Valeur Ajoutée des Lycées</div>
+        <div class="terme-def">Mesure ce que le lycée apporte réellement à ses élèves,
+          en comparant les résultats obtenus avec ceux attendus
+          selon le profil des élèves. Un IVAL positif = le lycée
+          fait mieux qu'attendu. Un IVAL négatif = en dessous des attentes.
+          Publié annuellement par le Ministère.</div>
+        <div class="terme-ex">IVAL +8 = le lycée fait nettement mieux qu'attendu pour ses élèves</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="taux bac réussite résultats lycée">
+      <div class="terme-acro">Taux bac</div>
+      <div class="terme-body">
+        <div class="terme-nom">Taux de réussite au baccalauréat</div>
+        <div class="terme-def">Pourcentage d'élèves ayant obtenu le bac.
+          Souvent proche de 98-99% — peu discriminant.
+          À croiser avec l'IVAL pour une vision complète.</div>
+        <div class="terme-ex">98% de réussite ne veut pas dire que le lycée est excellent</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="va valeur ajoutée lycée mentions">
+      <div class="terme-acro">VA Mentions</div>
+      <div class="terme-body">
+        <div class="terme-nom">Valeur Ajoutée sur les mentions</div>
+        <div class="terme-def">Composante de l'IVAL qui mesure
+          si le lycée obtient plus de mentions que prévu
+          pour le profil de ses élèves.</div>
+      </div>
+    </div>
+
+    <div class="terme" data-search="depp direction évaluation prospective performance ministère">
+      <div class="terme-acro">DEPP</div>
+      <div class="terme-body">
+        <div class="terme-nom">Direction de l'Évaluation, de la Prospective et de la Performance</div>
+        <div class="terme-def">Service statistique du Ministère de l'Éducation nationale.
+          Publie les données IVAL, les résultats au bac,
+          et les statistiques Parcoursup utilisées dans cet outil.</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  ©2026 Katy Saintin — Hors Kadre<br>
+  Données Open Data Parcoursup 2025 — Licence Ouverte 2.0<br>
+  Avec les éclairages de
+  <a href="https://www.linkedin.com/in/virginiebusquet/" target="_blank">
+    Virginie Busquet</a>, conseillère d'orientation.<br>
+  <a href="legal/mentions-legales.html">Mentions légales</a> |
+  <a href="mailto:katy.saintin@gmail.com">Contact</a>
+</footer>
+
+<script>
+function filtrerTermes() {
+  var mot = document.getElementById('filtre-terme').value.toLowerCase().trim();
+  var termes = document.querySelectorAll('.terme');
+  termes.forEach(function(t) {
+    var s = (t.getAttribute('data-search') || '') + ' ' +
+            (t.textContent || '').toLowerCase();
+    t.style.display = (!mot || s.indexOf(mot) >= 0) ? '' : 'none';
+  });
+  /* Masquer categories entières si vides */
+  document.querySelectorAll('.categorie').forEach(function(cat) {
+    var visibles = cat.querySelectorAll('.terme:not([style*="none"])');
+    cat.style.display = (visibles.length === 0 && mot !== '') ? 'none' : '';
+  });
+}
+</script>
+</body>
+</html>

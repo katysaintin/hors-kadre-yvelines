@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide d'utilisation — Hors Kadre</title>
+<style>
+:root{
+  --navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
+  --gold:#B8860B;--gray:#555;--border:#d9d1ca;--white:#fff;
+  --green:#2d8a4e;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;
+  color:var(--navy);line-height:1.7;}
+a{color:var(--terra);text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* HEADER */
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);
+  padding:16px;text-align:center;}
+.site-header img{max-width:320px;width:50%;height:auto;}
+.nav-links{margin-top:8px;font-size:.85rem;}
+.nav-links a{margin:0 10px;color:var(--navy);font-weight:600;}
+.nav-links a:hover{color:var(--terra);}
+
+/* HERO */
+.hero{background:var(--navy);color:var(--white);
+  padding:40px 16px 32px;text-align:center;}
+.hero h1{font-size:clamp(1.4rem,4vw,2rem);margin-bottom:10px;
+  line-height:1.3;}
+.hero p{font-size:.92rem;color:#c5d3e8;max-width:560px;
+  margin:0 auto;line-height:1.7;}
+
+/* CONTAINER */
+.container{max-width:860px;margin:0 auto;padding:32px 16px 60px;}
+
+/* TOC */
+.toc{background:var(--offwhite);border:1px solid var(--border);
+  border-radius:12px;padding:20px 24px;margin-bottom:32px;}
+.toc h2{font-size:.85rem;font-weight:700;color:var(--gray);
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;}
+.toc-links{display:flex;flex-direction:column;gap:6px;}
+.toc-links a{font-size:.9rem;color:var(--navy);font-weight:600;
+  padding:4px 0;border-bottom:1px dashed var(--border);}
+.toc-links a:last-child{border-bottom:none;}
+.toc-links a:hover{color:var(--terra);text-decoration:none;}
+.toc-num{color:var(--terra);margin-right:8px;font-weight:700;}
+
+/* SECTION */
+.section{margin-bottom:40px;}
+.section-title{font-size:1.15rem;color:var(--terra);font-weight:700;
+  margin-bottom:16px;padding-bottom:8px;
+  border-bottom:2px solid var(--terra);}
+
+/* STEP */
+.step{background:var(--white);border:1px solid var(--border);
+  border-radius:10px;padding:16px 18px;margin-bottom:12px;}
+.step-num{display:inline-flex;align-items:center;justify-content:center;
+  width:28px;height:28px;border-radius:50%;
+  background:var(--terra);color:#fff;
+  font-weight:700;font-size:.85rem;
+  flex-shrink:0;margin-right:10px;float:left;margin-top:2px;}
+.step h3{font-size:.95rem;color:var(--navy);margin-bottom:8px;
+  padding-left:38px;}
+.step p{font-size:.88rem;color:var(--gray);line-height:1.7;
+  margin-bottom:8px;}
+.step p:last-child{margin-bottom:0;}
+
+/* SCREENSHOT PLACEHOLDER */
+.screenshot{margin-top:12px;border:2px dashed var(--border);
+  border-radius:10px;background:#f8f7f5;
+  min-height:160px;display:flex;align-items:center;
+  justify-content:center;text-align:center;
+  color:var(--gray);padding:16px;overflow:hidden;}
+.screenshot img{max-width:100%;border-radius:8px;
+  border:1px solid var(--border);}
+.screenshot-label{font-size:.8rem;font-style:italic;}
+
+/* ENCART */
+.encart{border-radius:8px;padding:12px 14px;margin:10px 0;
+  font-size:.87rem;line-height:1.7;}
+.encart-tip{background:#fff8f0;border:1px solid #f5d0a9;
+  border-left:4px solid var(--terra);}
+.encart-info{background:#e8f4fd;border:1px solid #b3d9f5;
+  border-left:4px solid var(--navy);}
+.encart strong{color:var(--navy);}
+
+/* EXAMPLE */
+.example{background:var(--offwhite);border-left:4px solid var(--gold);
+  padding:10px 14px;border-radius:0 8px 8px 0;
+  font-size:.87rem;color:var(--gray);margin:10px 0;}
+.example strong{color:var(--navy);}
+
+/* GRID CARDS */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;margin:14px 0;}
+.card{background:var(--white);border:1px solid var(--border);
+  border-radius:10px;padding:14px 16px;}
+.card-tag{display:inline-block;background:var(--offwhite);
+  color:var(--terra);border:1px solid var(--terra);
+  border-radius:20px;padding:3px 12px;
+  font-size:.78rem;font-weight:700;margin-bottom:8px;}
+.card p{font-size:.83rem;color:var(--gray);line-height:1.6;}
+
+/* LIEN */
+.btn-link{display:inline-block;background:var(--offwhite);
+  color:var(--navy);border:1px solid var(--border);
+  border-radius:6px;padding:5px 12px;font-size:.83rem;
+  font-weight:600;margin-top:8px;}
+.btn-link:hover{background:var(--terra);color:#fff;
+  border-color:var(--terra);text-decoration:none;}
+
+/* FOOTER */
+footer{text-align:center;color:var(--gray);font-size:.8rem;
+  margin-top:32px;padding-top:16px;
+  border-top:1px solid var(--border);line-height:1.9;}
+footer a{color:var(--terra);}
+
+@media(max-width:600px){
+  .hero{padding:28px 16px 24px;}
+  .step h3{padding-left:0;margin-top:6px;}
+  .step-num{float:none;margin-bottom:6px;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="nav-links">
+    <a href="index.php">← Accueil</a>
+    <a href="parcoursup.php">Parcoursup</a>
+    <a href="indexival.php">Lycées</a>
+    <a href="typeformation.html">Formations</a>
+    <a href="doublettes.php">Spécialités</a>
+    <a href="acronymes.html" style="color:var(--terra);font-weight:700;">📖 Lexique</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Guide d'utilisation — Hors Kadre</h1>
+  <p>Ce guide aide les familles à utiliser Hors Kadre.
+     Comprendre l'orientation, les lycées et Parcoursup
+     avec des mots simples, des exemples et des repères concrets.</p>
+</div>
+
+<div class="container">
+
+  <!-- SOMMAIRE -->
+  <div class="toc">
+    <h2>Sommaire</h2>
+    <div class="toc-links">
+      <a href="#accueil"><span class="toc-num">1.</span>Partir de la page d'accueil</a>
+      <a href="#parcoursup"><span class="toc-num">2.</span>Comprendre une formation Parcoursup</a>
+      <a href="#ival"><span class="toc-num">3.</span>Comparer les lycées avec l'IVAL</a>
+      <a href="#formation"><span class="toc-num">4.</span>Choisir un type de formation</a>
+      <a href="#doublettes"><span class="toc-num">5.</span>Lire les doublettes de spécialités</a>
+      <a href="#solo"><span class="toc-num">5b.</span>Spécialités individuelles</a>
+      <a href="#prudence"><span class="toc-num">6.</span>Bien interpréter les données</a>
+    </div>
+  </div>
+
+  <!-- 1. ACCUEIL -->
+  <section id="accueil" class="section">
+    <h2 class="section-title">1. Partir de la page d'accueil</h2>
+    <div class="step">
+      <span class="step-num">1</span>
+      <h3>Choisir ce que l'on veut comprendre</h3>
+      <p>La page d'accueil propose plusieurs entrées : comprendre Parcoursup,
+         comparer les lycées, découvrir les formations après le bac,
+         ou accéder à l'outil complet pour toute la France.</p>
+      <div class="example">
+        <strong>Exemple :</strong> si votre enfant est en Première,
+        commencez par "Quelle formation après le bac ?".
+        Si vous préparez les vœux Parcoursup,
+        commencez par "Comprendre Parcoursup".
+      </div>
+      <div class="screenshot">
+        <div class="screenshot-label">📱 Capture à placer ici :<br>
+          <strong>screenshots/accueil.png</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PARCOURSUP -->
+  <section id="parcoursup" class="section">
+    <h2 class="section-title">2. Comprendre une formation Parcoursup</h2>
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <h3>Filtrer les formations</h3>
+      <p>Sur la page Parcoursup, on peut filtrer par famille de formation,
+         spécialité, département, ville et sélectivité.</p>
+      <a href="parcoursup.php" class="btn-link">Ouvrir Parcoursup décodé →</a>
+      <div class="screenshot">
+        <div class="screenshot-label">📱 Capture à placer ici :<br>
+          <strong>screenshots/parcoursup-filtres.png</strong></div>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <h3>Regarder la concurrence réelle</h3>
+      <p>Quatre indicateurs clés à observer :</p>
+      <ul style="font-size:.87rem;color:var(--gray);margin:8px 0 8px 1.2rem;line-height:1.9;">
+        <li><strong style="color:var(--navy);">Candidats / place</strong> —
+            plus le chiffre est haut, plus la formation est demandée.</li>
+        <li><strong style="color:var(--navy);">Taux d'accès</strong> —
+            donne une idée de l'accessibilité.</li>
+        <li><strong style="color:var(--navy);">Rang du dernier appelé</strong> —
+            montre jusqu'où la liste d'attente est descendue.</li>
+        <li><strong style="color:var(--navy);">Profil admis</strong> —
+            aide à comprendre le type de bac ou de profil souvent admis.</li>
+      </ul>
+      <div class="encart encart-tip">
+        <strong>À retenir :</strong> une formation "très sélective" peut rester possible.
+        Mais il faut aussi prévoir des vœux plus accessibles.
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <h3>Ouvrir une fiche formation</h3>
+      <p>La fiche formation sert à regarder le détail avant de faire un choix :
+         niveau de concurrence, profil des admis et spécialités lycée des admis.</p>
+      <a href="formation.php?cod=9993" class="btn-link">
+        Voir un exemple de fiche (BUT Info Vélizy) →</a>
+      <div class="screenshot">
+        <div class="screenshot-label">📱 Capture à placer ici :<br>
+          <strong>screenshots/fiche-formation.png</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. IVAL -->
+  <section id="ival" class="section">
+    <h2 class="section-title">3. Comparer les lycées avec l'IVAL</h2>
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <h3>Ne pas se limiter au taux de réussite au bac</h3>
+      <p>Le taux de réussite dit combien d'élèves ont obtenu le bac.
+         L'IVAL mesure la valeur ajoutée du lycée,
+         en tenant compte du profil des élèves accueillis.</p>
+      <div class="encart encart-tip">
+        <strong>À retenir :</strong> 98% de réussite au bac ne veut pas tout dire.
+        Il faut aussi regarder ce que le lycée apporte réellement à ses élèves.
+      </div>
+      <a href="acronymes.html#ival" class="btn-link">Comprendre l'IVAL →</a>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <h3>Lire une fiche lycée</h3>
+      <p>Une fiche lycée permet de replacer les résultats dans leur contexte :
+         réussite, valeur ajoutée, profil des élèves
+         et comparaison avec d'autres établissements.</p>
+      <div class="screenshot">
+        <div class="screenshot-label">📱 Capture à placer ici :<br>
+          <strong>screenshots/fiche-lycee.png</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. TYPE DE FORMATION -->
+  <section id="formation" class="section">
+    <h2 class="section-title">4. Choisir un type de formation</h2>
+
+    <p style="font-size:.9rem;color:var(--gray);margin-bottom:14px;">
+      La page "Quelle formation après le bac ?" explique les grandes voies :
+      BUT, BTS, Licence, Prépa, école d'ingénieurs, santé, commerce.
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag">BUT</span>
+        <p>3 ans, en IUT. Formation pratique avec projets et stages.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag">BTS</span>
+        <p>2 ans, souvent en lycée. Formation concrète, tournée vers un métier.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag">Licence</span>
+        <p>3 ans à l'université. Plus d'autonomie, souvent plus théorique.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag">Prépa</span>
+        <p>2 ans très intensifs pour préparer des concours.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <h3>Partir du projet, pas seulement du nom de la formation</h3>
+      <p>Le bon choix dépend du profil de l'élève : autonomie,
+         rythme de travail, besoin d'encadrement,
+         envie de stages, projet professionnel.</p>
+      <a href="typeformation.html" class="btn-link">
+        Ouvrir "Quelle formation après le bac ?" →</a>
+      <div class="screenshot">
+        <div class="screenshot-label">📱 Capture à placer ici :<br>
+          <strong>screenshots/types-formation.png</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DOUBLETTES -->
+  <section id="doublettes" class="section">
+    <h2 class="section-title">5. Lire les doublettes de spécialités</h2>
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <h3>Comprendre le mot "doublette"</h3>
+      <p>En Terminale générale, l'élève garde deux spécialités.
+         Ce couple de spécialités s'appelle une <strong>doublette</strong>.</p>
+      <div class="example">
+        <strong>Exemple :</strong>
+        Maths + Physique-Chimie est une doublette.
+        Maths + NSI en est une autre.
+        Elles n'ouvrent pas les mêmes portes.
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <h3>Comparer avec les formations visées</h3>
+      <p>La page doublettes aide à voir quelles spécialités reviennent souvent
+         chez les élèves admis dans une formation donnée.</p>
+      <div class="encart encart-info">
+        <strong>Deux vues disponibles :</strong>
+        "Par doublettes" montre les combinaisons gagnantes avec leur taux de conversion.
+        "Par spécialité" montre chaque spécialité individuellement —
+        utile pour comparer l'importance relative de Maths, PC, NSI, SES...
+      </div>
+      <a href="doublettes.php" class="btn-link">Ouvrir les doublettes →</a>
+      <div class="screenshot">
+        <div class="screenshot-label">📱 Capture à placer ici :<br>
+          <strong>screenshots/doublettes.png</strong></div>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <h3>Lire le taux de conversion</h3>
+      <p>Le taux de conversion = nb admis / nb candidats avec cette doublette.
+         C'est différent du taux d'accès de la formation.
+         Une doublette à 34% signifie que 34 candidats sur 100
+         ayant ce profil ont reçu une proposition.</p>
+      <div class="encart encart-tip">
+        <strong>À retenir :</strong> un taux élevé ne garantit pas l'admission —
+        il indique que ce profil est bien adapté à la formation.
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SPÉCIALITÉS INDIVIDUELLES -->
+  <section id="solo" class="section">
+    <h2 class="section-title">5b. Spécialités individuelles — la vue complémentaire</h2>
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <h3>Passer de "Par doublettes" à "Par spécialité"</h3>
+      <p>Dans la page doublettes, deux onglets sont disponibles.
+         L'onglet "Par spécialité" éclate chaque doublette
+         en deux spécialités séparées et cumule les admis.</p>
+      <div class="encart encart-info">
+        <strong>Ce que ça signifie :</strong> un admis avec Maths+PC est compté
+        une fois dans Maths ET une fois dans PC.
+        Le total dépasse donc 100% — c'est normal.
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <h3>Lire le classement par spécialité</h3>
+      <p>Le pourcentage indique la part des admis qui avaient cette spécialité.
+         C'est différent du taux de conversion des doublettes.</p>
+      <div class="example">
+        <strong>Exemple BUT Informatique :</strong>
+        Maths = 32% des admis l'avaient.
+        NSI = seulement 6.5% — malgré son image de "spécialité informatique".
+        SES = 18% — devant PC (17%) sur l'ensemble des BUT.
+      </div>
+      <a href="doublettes.php?filiere=BUT&tab=solo" class="btn-link">
+        Voir les spécialités individuelles BUT →</a>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <h3>Utiliser "Voir les formations"</h3>
+      <p>Sur chaque spécialité (si une filière est précisée),
+         un bouton "Voir les formations" apparaît.
+         Il affiche la liste des formations de cette filière
+         avec leurs données : places, candidats, taux d'accès,
+         et — pour les BTS et formations en lycée — le score IVAL
+         de l'établissement.</p>
+      <div class="encart encart-tip">
+        <strong>Astuce :</strong> triez par IVAL pour voir
+        quels établissements font le plus progresser leurs élèves.
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 7. PRUDENCE -->
+  <section id="prudence" class="section">
+    <h2 class="section-title">6. Bien interpréter les données</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3 style="font-size:.92rem;margin-bottom:8px;">Croiser les chiffres</h3>
+        <p>Un seul chiffre ne suffit pas.
+           Regardez plusieurs indicateurs ensemble.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:.92rem;margin-bottom:8px;">Équilibrer les vœux</h3>
+        <p>Sur Parcoursup, prévoir des vœux ambitieux,
+           réalistes et plus sécurisants.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:.92rem;margin-bottom:8px;">Vérifier la source</h3>
+        <p>Ce site aide à comprendre.
+           Pour candidater, passer par Parcoursup.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:.92rem;margin-bottom:8px;">Aller aux JPO</h3>
+        <p>Les Journées Portes Ouvertes restent
+           la meilleure source d'information sur une formation.</p>
+      </div>
+    </div>
+
+    <div class="encart encart-info" style="margin-top:16px;">
+      <strong>Données nationales — non disponibles par établissement.</strong>
+      Les doublettes et spécialités affichées couvrent la France entière.
+      Les pratiques varient selon l'établissement.
+      Confirmez aux JPO.
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  ©2026 Katy Saintin — Hors Kadre<br>
+  Données Open Data Parcoursup 2025 — Licence Ouverte 2.0<br>
+  Avec les éclairages de
+  <a href="https://www.linkedin.com/in/virginiebusquet/" target="_blank">
+    Virginie Busquet</a>, conseillère d'orientation.<br>
+  <a href="legal/mentions-legales.html">Mentions légales</a> |
+  <a href="mailto:katy.saintin@gmail.com">Contact</a>
+</footer>
+</body>
+</html>
