@@ -215,6 +215,14 @@ footer a { color: var(--terra); }
 <header class="site-header">
   <img src="banniere.png" alt="Hors Kadre">
   <div class="tagline">Ce que personne ne dit vraiment — sourcé, vécu, pour les familles</div>
+  <div class="nav-links" style="margin-top:8px;font-size:.82rem;">
+    <a href="aide.html" style="color:var(--terra);font-weight:600;">❓ Guide</a>
+    <a href="acronymes.html" style="color:var(--navy);font-weight:600;">📖 Lexique</a>
+    <a href="typeformation.html" style="color:var(--navy);font-weight:600;">🎓 Formations</a>
+    <a href="parcoursup.php" style="color:var(--navy);font-weight:600;">Parcoursup</a>
+    <a href="indexival.php" style="color:var(--navy);font-weight:600;">Lycées</a>
+    <a href="doublettes.php" style="color:var(--navy);font-weight:600;">Spécialités</a>
+  </div>
   <div class="mediapart-links">
     <a href="https://www.facebook.com/people/Hors-Kadre/61570725300507/" target="_blank">📘 Facebook</a>
     <a href="https://blogs.mediapart.fr/katy-ho/blog/190426/98-de-reussite-au-bac-et-apres" target="_blank">98% au bac. Et après ?</a>
@@ -257,6 +265,18 @@ footer a { color: var(--terra); }
       <h2>Spécialités qui ouvrent les portes</h2>
       <p>Maths+PC ouvre-t-elle vraiment toutes les portes ? Les données 2024 répondent.</p>
       <span class="badge">Nouveau !</span>
+    </a>
+
+    <a href="acronymes.html" class="tuile">
+      <div class="tuile-icon">📖</div>
+      <h2>Lexique & Acronymes</h2>
+      <p>BUT, BTS, IVAL, NSI, HGGSP… Tous les termes expliqués simplement, avec des exemples chiffrés.</p>
+    </a>
+
+    <a href="aide.html" class="tuile">
+      <div class="tuile-icon">❓</div>
+      <h2>Guide d'utilisation</h2>
+      <p>Vous ne savez pas par où commencer ? Ce guide vous accompagne étape par étape.</p>
     </a>
 
   </div>
