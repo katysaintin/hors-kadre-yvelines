@@ -1,5 +1,9 @@
 <?php
 /*
+ * Hors Kadre — Fiche formation Parcoursup
+ * Copyright (c) 2026 Katy Saintin
+ * Code: MIT License — Content: CC BY-NC 4.0
+ * Legacy hosting compatible (mysql_* only, PHP 5.3)
  * doublettes.php - Hors Kadre
  * Ranking of baccalaureate specialty combinations (doublettes) by admission rate
  * Data source: Open Data Parcoursup 2024 - general baccalaureate students only
@@ -133,6 +137,42 @@ if ($res) {
 $taux_max = count($rows) > 0 ? floatval($rows[0]['taux']) : 100;
 
 /* ------------------------------------------------------------------
+ * ACTIVE TAB - doublettes or spe_solo
+ * ------------------------------------------------------------------ */
+$tab = (isset($_GET['tab']) && $_GET['tab'] === 'solo') ? 'solo' : 'doublettes';
+
+/* ------------------------------------------------------------------
+ * SPE_SOLO QUERY - individual specialties cumulated from doublettes
+ * ------------------------------------------------------------------ */
+$solo_rows   = array();
+$solo_total  = 0;
+
+$where_sous_solo = ($sous_filiere !== '')
+    ? "AND sous_filiere = '" . mysql_real_escape_string($sous_filiere) . "'"
+    : ($filiere === 'CPGE' ? "AND sous_filiere != ''" : "AND (sous_filiere = '' OR sous_filiere IS NULL)");
+
+$sql_solo = "SELECT specialite, nb_admis_cumul, nb_voeux_cumul
+             FROM specialites_solo
+             WHERE filiere_agregee = '" . mysql_real_escape_string($filiere) . "'
+             AND annee = 2024
+             $where_sous_solo
+             ORDER BY nb_admis_cumul DESC";
+
+$res_solo = mysql_query($sql_solo);
+if ($res_solo) {
+    while ($r = mysql_fetch_assoc($res_solo)) {
+        $solo_rows[]  = $r;
+        $solo_total  += intval($r['nb_admis_cumul']);
+    }
+}
+/* PHP 4 compatible - no reference in foreach */
+for ($i = 0; $i < count($solo_rows); $i++) {
+    $solo_rows[$i]['pct'] = ($solo_total > 0)
+        ? round(intval($solo_rows[$i]['nb_admis_cumul']) / $solo_total * 100, 1) : 0;
+}
+$solo_pct_max = count($solo_rows) > 0 ? $solo_rows[0]['pct'] : 100;
+
+/* ------------------------------------------------------------------
  * SUB-SPECIALTY SUGGESTIONS
  * Load available sub-specialties for the selected family
  * Used to populate datalist for autocomplete
@@ -191,6 +231,31 @@ a:hover{text-decoration:underline;}
 .page-title{font-size:<?php echo $iframe ? '1rem' : '1.3rem'; ?>;
   color:var(--terra);margin-bottom:4px;font-weight:700;}
 .page-sub{font-size:.82rem;color:var(--gray);margin-bottom:16px;line-height:1.6;}
+
+/* View tabs (doublettes / spe_solo) */
+.view-tabs{display:flex;gap:0;margin-bottom:18px;
+  border-bottom:2px solid var(--border);}
+.view-tab{padding:8px 18px;font-family:Georgia,serif;font-size:.85rem;
+  font-weight:600;color:var(--gray);text-decoration:none;
+  border-bottom:3px solid transparent;margin-bottom:-2px;
+  transition:all .2s;white-space:nowrap;}
+.view-tab:hover{color:var(--navy);text-decoration:none;}
+.view-tab.active{color:var(--terra);border-bottom-color:var(--terra);}
+
+/* Solo specialty cards */
+.spe-list{display:flex;flex-direction:column;gap:8px;}
+.spe-row{background:var(--white);border:1px solid var(--border);
+  border-radius:10px;padding:12px 14px;}
+.spe-row.top1{border-left:4px solid #B8860B;background:#fffdf5;}
+.spe-row.top2{border-left:4px solid #888;}
+.spe-row.top3{border-left:4px solid #cd7f32;}
+.spe-header{display:flex;justify-content:space-between;
+  align-items:center;gap:8px;margin-bottom:6px;}
+.spe-rang{font-size:.75rem;font-weight:700;color:var(--gray);min-width:22px;}
+.spe-nom{font-size:.88rem;color:var(--navy);font-weight:600;flex:1;line-height:1.4;}
+.spe-pct{font-size:1rem;font-weight:700;color:var(--terra);white-space:nowrap;}
+.spe-barre-bg{background:var(--border);border-radius:4px;height:6px;margin-bottom:6px;}
+.spe-barre-fill{background:var(--terra);height:100%;border-radius:4px;}
 
 /* Family navigation pills */
 .filiere-nav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
@@ -291,7 +356,14 @@ footer a{color:var(--terra);}
     <a href="index.php">← Accueil</a>
     <a href="parcoursup.php">Comprendre Parcoursup</a>
     <a href="typeformation.html">Types de formation</a>
+    <!-- Bandeau aide/lexique -->
+  <div style="margin-top:8px;font-size:.8rem;">
+    <a href="aide.html" style="margin:0 8px;color:var(--terra);font-weight:600;">❓ Guide</a>
+    <a href="acronymes.html" style="margin:0 8px;color:var(--navy);font-weight:600;">📖 Lexique</a>
+    <a href="typeformation.html" style="margin:0 8px;color:var(--navy);">Types de formation</a>
+    <a href="index.php" style="margin:0 8px;color:var(--navy);">Accueil</a>
   </div>
+</div>
 </header>
 <?php endif; ?>
 
@@ -324,6 +396,25 @@ footer a{color:var(--terra);}
         <?php echo htmlspecialchars($label); ?>
       </a>
     <?php endforeach; ?>
+  </div>
+
+  <!-- -------------------------------------------------------
+       VIEW TABS : doublettes / spe_solo
+       ------------------------------------------------------- -->
+  <div class="view-tabs">
+    <?php
+    $base_url = '?filiere=' . urlencode($filiere)
+              . ($detail_param ? '&detail=' . urlencode($detail_param) : '')
+              . ($iframe ? '&iframe=1' : '');
+    ?>
+    <a href="<?php echo $base_url; ?>&tab=doublettes"
+       class="view-tab<?php echo $tab === 'doublettes' ? ' active' : ''; ?>">
+      📊 Par doublettes
+    </a>
+    <a href="<?php echo $base_url; ?>&tab=solo"
+       class="view-tab<?php echo $tab === 'solo' ? ' active' : ''; ?>">
+      🔢 Par spécialité
+    </a>
   </div>
 
   <!-- -------------------------------------------------------
@@ -416,10 +507,77 @@ footer a{color:var(--terra);}
   <?php endif; ?>
 
   <!-- -------------------------------------------------------
-       DOUBLETTE RANKING
-       Sorted by conversion rate DESC from SQL
-       Top 3 get gold/silver/bronze border
+       DOUBLETTE RANKING or SPE_SOLO depending on active tab
        ------------------------------------------------------- -->
+
+  <?php if($tab === 'solo'): ?>
+  <!-- SPE SOLO VIEW -->
+  <?php if(count($solo_rows) === 0): ?>
+    <p style="color:var(--gray);font-style:italic;padding:20px 0;">
+      Aucune donnée disponible pour cette filière.
+    </p>
+  <?php else: ?>
+  <div class="stats-bar" style="margin-bottom:16px;">
+    <div class="stat-pill">
+      <strong><?php echo count($solo_rows); ?></strong> spécialités
+    </div>
+    <div class="stat-pill">
+      <strong><?php echo $solo_rows[0]['pct']; ?>%</strong> spécialité dominante
+    </div>
+  </div>
+  <div class="spe-list">
+    <?php foreach($solo_rows as $i => $row):
+      $rang     = $i + 1;
+      $cls      = $rang===1 ? ' top1' : ($rang===2 ? ' top2' : ($rang===3 ? ' top3' : ''));
+      $medaille = $rang===1 ? '🥇 ' : ($rang===2 ? '🥈 ' : ($rang===3 ? '🥉 ' : ''));
+      $w        = $solo_pct_max > 0 ? round($row['pct'] / $solo_pct_max * 100) : 0;
+    ?>
+    <div class="spe-row<?php echo $cls; ?>">
+      <div class="spe-header">
+        <span class="spe-rang"><?php echo $rang; ?></span>
+        <span class="spe-nom"><?php echo $medaille . htmlspecialchars($row['specialite']); ?></span>
+        <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
+          <span class="spe-pct"><?php echo $row['pct']; ?>%</span>
+          <?php if($detail_active): ?>
+          <a href="doublette_detail.php?filiere=<?php echo urlencode($filiere);
+            ?>&detail=<?php echo urlencode($detail_param);
+            ?>&spe=<?php echo urlencode($row['specialite']); ?>"
+             style="display:inline-block;background:var(--terra);color:#fff;
+                    padding:3px 10px;border-radius:6px;font-size:.72rem;
+                    font-weight:600;text-decoration:none;white-space:nowrap;">
+            Voir les formations →
+          </a>
+          <?php else: ?>
+          <span style="display:inline-block;background:#e5e7eb;color:#9ca3af;
+                       padding:3px 10px;border-radius:6px;font-size:.72rem;
+                       font-weight:600;white-space:nowrap;cursor:not-allowed;"
+                title="Précisez une filière pour voir les formations">
+            Précisez la filière →
+          </span>
+          <?php endif; ?>
+        </div>
+      </div>
+      <div class="spe-barre-bg">
+        <div class="spe-barre-fill" style="width:<?php echo $w; ?>%;"></div>
+      </div>
+      <div style="font-size:.74rem;color:var(--gray);">
+        <?php echo number_format(intval($row['nb_admis_cumul']), 0, ',', ' '); ?> admis l'avaient
+        &nbsp;·&nbsp;
+        <?php echo number_format(intval($row['nb_voeux_cumul']), 0, ',', ' '); ?> candidats l'avaient
+      </div>
+    </div>
+    <?php endforeach; ?>
+  </div>
+  <p class="note-bas" style="margin-top:12px;">
+    Méthode : chaque doublette est éclatée en 2 spécialités.
+    Les admis sont cumulés — un admis Maths+PC compte pour Maths ET pour PC.
+    Le total cumulé dépasse 100% — c'est normal.
+    Source : Open Data Parcoursup 2024.
+  </p>
+  <?php endif; ?>
+
+  <?php else: /* DOUBLETTES VIEW */ ?>
+  <!-- DOUBLETTE RANKING -->
   <?php if(count($rows) === 0): ?>
     <p style="color:var(--gray);font-style:italic;padding:20px 0;">
       Aucune donnée disponible pour cette filière.
@@ -490,7 +648,8 @@ footer a{color:var(--terra);}
     Ces données donnent des tendances, pas des garanties individuelles.
     Vérifiez aux Journées Portes Ouvertes.
   </p>
-  <?php endif; ?>
+  <?php endif; /* end doublettes view */ ?>
+  <?php endif; /* end tab condition */ ?>
 
   <?php if(!$iframe): ?>
   <footer>
