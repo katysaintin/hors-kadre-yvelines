@@ -1,5 +1,14 @@
 <?php
 /*
+ * Hors Kadre — Fiche formation Parcoursup
+ * Copyright (c) 2026 Katy Saintin
+ * Code: MIT License — Content: CC BY-NC 4.0
+ * Legacy hosting compatible (mysql_* only, PHP 5.3)
+ * doublettes.php - Hors Kadre
+ * Ranking of baccalaureate specialty combinations (doublettes) by admission rate
+ * Data source: Open Data Parcoursup 2024 - general baccalaureate students only
+ * Compatible PHP 4/5 (free.fr legacy)
+ * 
  * doublette_detail.php - Hors Kadre
  * List of formations for a given filiere + sub-specialty
  * Displays sortable table: places, candidats, ratio, taux_acces
