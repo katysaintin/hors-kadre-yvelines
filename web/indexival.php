@@ -31,6 +31,7 @@ $departement = isset($_GET['departement']) ? trim($_GET['departement']) : '';
 $statut = isset($_GET['statut']) ? trim($_GET['statut']) : '';
 $ville = isset($_GET['ville']) ? trim($_GET['ville']) : '';
 $scope = isset($_GET['scope']) ? trim($_GET['scope']) : '';
+$voie  = isset($_GET['voie'])  ? trim($_GET['voie'])  : '';
 $sort = isset($_GET['sort']) ? trim($_GET['sort']) : 'score_global';
 $order = isset($_GET['order']) ? strtolower(trim($_GET['order'])) : 'desc';
 $page = isset($_GET['page']) ? max(1, intval($_GET['page'])) : 1;
@@ -142,6 +143,10 @@ if ($q !== '') {
     $whereParts[] = "nom LIKE '%" . sql_escape($q) . "%'";
 }
 
+if ($voie !== '') {
+    $whereParts[] = "voie = '" . sql_escape($voie) . "'";
+}
+
 $where = '';
 if (count($whereParts) > 0) {
     $where = ' WHERE ' . implode(' AND ', $whereParts);
@@ -158,6 +163,25 @@ if ($countResult) {
     $countRow = mysql_fetch_assoc($countResult);
     if ($countRow && isset($countRow['total'])) {
         $totalRows = intval($countRow['total']);
+    }
+}
+
+/*
+ * Load CPGE/BTS presence per lycee via cartographie_formations
+ * Grouped by uai - tells us if lycee hosts a CPGE or BTS
+ */
+$formations_lycees = array();
+$sql_form_lycees = "SELECT code_uai,
+    MAX(CASE WHEN type_formation LIKE '%CPGE%' OR type_formation LIKE '%Classe préparatoire%' THEN 1 ELSE 0 END) AS has_cpge,
+    MAX(CASE WHEN type_formation LIKE '%BTS%' THEN 1 ELSE 0 END) AS has_bts
+FROM cartographie_formations
+WHERE session = 2026
+AND code_uai IS NOT NULL AND code_uai != ''
+GROUP BY code_uai";
+$res_fl = mysql_query($sql_form_lycees);
+if ($res_fl) {
+    while ($rfl = mysql_fetch_assoc($res_fl)) {
+        $formations_lycees[$rfl['code_uai']] = $rfl;
     }
 }
 
@@ -203,7 +227,8 @@ $sql = "SELECT
             evolution_effectif,
             score_mentions,
             score_global,
-            source_annee
+            source_annee,
+            voie
         FROM lycees
         " . $where . "
         ORDER BY " . $sort . " " . $order . ", nom ASC
@@ -317,623 +342,385 @@ $currentOrderLabel = order_label($order);
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Hors Kadre - Classement exploratoire des lycees</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTNJ36H5D"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-TTTNJ36H5D', { 'anonymize_ip': true });
-	</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparer les lycées — Hors Kadre</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTNJ36H5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TTTNJ36H5D', { 'anonymize_ip': true });
+</script>
+<style>
+:root{--navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
+  --gray:#555;--border:#d9d1ca;--white:#fff;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;
+  color:var(--navy);line-height:1.6;}
+a{color:var(--terra);text-decoration:none;}
+a:hover{text-decoration:underline;}
 
-    <style>
-        :root {
-            --navy: #1B3A6B;
-            --terracotta: #C4572A;
-            --offwhite: #F5F0EB;
-            --gold: #B8860B;
-            --gray: #555555;
-            --border: #d9d1ca;
-            --white: #ffffff;
-            --green-soft: rgba(27, 58, 107, 0.10);
-            --orange-soft: rgba(196, 87, 42, 0.10);
-        }
+/* HEADER */
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);
+  padding:16px;text-align:center;}
+.site-header img{max-width:320px;width:50%;height:auto;}
+.nav-links{margin-top:8px;font-size:.82rem;}
+.nav-links a{margin:0 8px;color:var(--navy);font-weight:600;}
+.nav-links a:hover{color:var(--terra);}
 
-        * { box-sizing: border-box; }
+.container{max-width:100%;margin:0 auto;padding:24px 16px 60px;}
 
-        body {
-            margin: 0;
-            font-family: Georgia, "Times New Roman", serif;
-            background: #fcfaf8;
-            color: var(--navy);
-            line-height: 1.5;
-        }
+/* PAGE TITLE */
+.page-title{font-size:1.3rem;color:var(--terra);font-weight:700;margin-bottom:4px;}
+.page-sub{font-size:.82rem;color:var(--gray);margin-bottom:16px;line-height:1.6;}
 
-        a {
-            color: var(--terracotta);
-        }
+/* FILTRES */
+.filtres-panel{background:var(--offwhite);border:1px solid var(--border);
+  border-radius:12px;padding:16px 18px;margin-bottom:16px;}
+.filtres-panel h2{font-size:.82rem;font-weight:700;color:var(--gray);
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;}
+.filtres-grid{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:10px;align-items:end;}
+.field label{display:block;font-size:.8rem;font-weight:600;
+  color:var(--gray);margin-bottom:4px;}
+.field input,.field select{width:100%;padding:8px 12px;
+  border:1px solid var(--border);border-radius:8px;
+  background:var(--white);color:var(--navy);
+  font-family:Georgia,serif;font-size:.85rem;}
+.field input:focus,.field select:focus{outline:none;border-color:var(--terra);}
+.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.btn{display:inline-block;padding:8px 16px;border-radius:8px;
+  font-family:Georgia,serif;font-size:.85rem;font-weight:600;
+  cursor:pointer;text-decoration:none;}
+.btn-primary{background:var(--terra);color:#fff;border:none;}
+.btn-primary:hover{background:#a8452a;color:#fff;text-decoration:none;}
+.btn-secondary{background:var(--white);color:var(--navy);
+  border:1px solid var(--border);}
+.btn-secondary:hover{background:var(--offwhite);text-decoration:none;}
 
-        a:hover {
-            text-decoration: underline;
-        }
+/* STATS */
+.meta{font-size:.82rem;color:var(--gray);margin-top:8px;}
+.warning{color:var(--terra);font-size:.82rem;font-weight:600;margin-top:6px;}
 
-        .container {
-            max-width: 1380px;
-            margin: 0 auto;
-            padding: 24px 18px 42px;
-        }
+/* TABLE */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;
+  border:1px solid var(--border);border-radius:10px;
+  box-shadow:0 4px 18px rgba(27,58,107,.04);}
+table{width:100%;border-collapse:collapse;font-size:.82rem;
+  min-width:900px;}
+thead th{background:var(--navy);color:#fff;padding:10px 12px;
+  text-align:left;white-space:nowrap;font-weight:600;
+  font-family:Georgia,serif;}
+thead th a{color:#fff;text-decoration:none;}
+thead th a:hover{text-decoration:underline;color:#fcd34d;}
+thead th.num{text-align:right;}
+tbody tr{border-bottom:1px solid var(--border);}
+tbody tr:last-child{border-bottom:none;}
+tbody tr:nth-child(even){background:#fbf8f5;}
+tbody tr:hover{background:var(--offwhite);}
+tbody td{padding:9px 12px;vertical-align:middle;}
+tbody td.num{text-align:right;font-variant-numeric:tabular-nums;}
 
-        header {
-            margin-bottom: 20px;
-            border-left: 6px solid var(--gold);
-            padding: 6px 0 6px 16px;
-        }
+/* BADGES */
+.badge{display:inline-block;padding:2px 8px;border-radius:8px;
+  font-size:.7rem;font-weight:700;white-space:nowrap;}
+.badge-cpge{background:#fef3c7;color:#92400e;border:1px solid #fcd34d;}
+.badge-bts{background:#dbeafe;color:#1e40af;border:1px solid #93c5fd;}
+.badge-pub{background:#d1fae5;color:#065f46;}
+.badge-pri{background:#ede9fe;color:#4c1d95;}
 
-        h1 {
-            margin: 0 0 6px;
-            font-size: 2rem;
-            color: var(--navy);
-            line-height: 1.2;
-        }
+/* IVAL couleur */
+.ival-pos{color:#2d8a4e;font-weight:700;}
+.ival-neg{color:#C4572A;font-weight:700;}
+.ival-neu{color:var(--gray);}
 
-        .subtitle {
-            margin: 0;
-            color: var(--gray);
-            font-size: 0.98rem;
-        }
+.rank-badge{display:inline-flex;align-items:center;justify-content:center;
+  min-width:28px;padding:3px 6px;border-radius:999px;
+  background:rgba(27,58,107,.08);color:var(--navy);font-weight:700;}
 
-        .panel {
-            background: var(--offwhite);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 18px;
-            margin-bottom: 18px;
-            box-shadow: 0 4px 18px rgba(27, 58, 107, 0.04);
-        }
+.lycee-link{color:var(--navy);font-weight:700;text-decoration:none;}
+.lycee-link:hover{color:var(--terra);}
+.detail-btn{display:inline-block;padding:4px 10px;border:1px solid var(--navy);
+  border-radius:6px;font-size:.78rem;font-weight:600;
+  color:var(--navy);text-decoration:none;}
+.detail-btn:hover{background:var(--navy);color:#fff;text-decoration:none;}
 
-        .panel h2 {
-            margin: 0 0 12px;
-            color: var(--terracotta);
-            font-size: 1.18rem;
-        }
+/* PAGINATION */
+.pagination{display:flex;gap:6px;flex-wrap:wrap;
+  margin-top:16px;justify-content:center;}
+.pagination a,.pagination span{padding:6px 12px;border-radius:6px;
+  border:1px solid var(--border);font-size:.85rem;
+  text-decoration:none;color:var(--navy);}
+.pagination a:hover{background:var(--terra);color:#fff;border-color:var(--terra);}
+.pagination span.current{background:var(--navy);color:#fff;border-color:var(--navy);}
 
-        .hero-image {
-            width: 100%;
-            max-width: 100%;
-            display: block;
-            border-radius: 12px;
-            margin-bottom: 14px;
-        }
+footer{text-align:center;color:var(--gray);font-size:.78rem;
+  margin-top:28px;padding-top:14px;
+  border-top:1px solid var(--border);line-height:1.9;}
+footer a{color:var(--terra);}
 
-        .info-list {
-            margin: 0;
-            padding-left: 18px;
-        }
+#rgpd{position:fixed;bottom:0;left:0;right:0;background:var(--navy);
+  color:#F5F0EB;padding:12px 20px;font-size:13px;
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:9999;font-family:Georgia,serif;}
+#rgpd a{color:var(--terra);}
+#rgpd button{background:var(--terra);color:#fff;border:none;
+  padding:8px 16px;cursor:pointer;border-radius:4px;
+  margin-left:20px;white-space:nowrap;font-size:13px;}
 
-        .info-list li {
-            margin-bottom: 6px;
-        }
-
-        .filters-form {
-            display: grid;
-            grid-template-columns: repeat(7, minmax(120px, 1fr));
-            gap: 12px;
-            align-items: end;
-        }
-
-        .field label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 600;
-            font-size: 0.92rem;
-        }
-
-        .field input,
-        .field select {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            background: var(--white);
-            color: var(--navy);
-            font-size: 0.95rem;
-        }
-
-        .actions {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 14px;
-            border-radius: 10px;
-            text-decoration: none;
-            border: 1px solid var(--navy);
-            background: var(--navy);
-            color: var(--white);
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            text-decoration: none;
-            opacity: 0.95;
-        }
-
-        .btn-secondary {
-            background: var(--white);
-            color: var(--navy);
-        }
-
-        .meta {
-            color: var(--gray);
-            font-size: 0.92rem;
-            margin-top: 10px;
-        }
-
-        .warning {
-            margin-top: 10px;
-            color: var(--terracotta);
-            font-size: 0.92rem;
-            font-weight: 600;
-        }
-
-        .sort-box {
-            margin-top: 12px;
-            padding: 12px 14px;
-            background: rgba(245, 240, 235, 0.7);
-            border: 1px dashed var(--border);
-            border-radius: 10px;
-            color: var(--gray);
-            font-size: 0.94rem;
-        }
-
-        .sort-box strong {
-            color: var(--navy);
-        }
-
-        .method-list {
-            margin: 8px 0 0 18px;
-            padding: 0;
-        }
-
-        .method-list li {
-            margin-bottom: 6px;
-        }
-
-        .table-wrap {
-            overflow-x: auto;
-            background: var(--white);
-            border-radius: 14px;
-            border: 1px solid var(--border);
-            box-shadow: 0 4px 18px rgba(27, 58, 107, 0.04);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 1320px;
-            background: var(--white);
-        }
-
-        th, td {
-            padding: 12px 10px;
-            border-bottom: 1px solid #ece6e1;
-            text-align: left;
-            vertical-align: middle;
-        }
-
-        thead th {
-            background: var(--navy);
-            color: var(--white);
-            font-size: 0.9rem;
-            white-space: nowrap;
-        }
-
-        tbody tr:nth-child(even) {
-            background: #fbf8f5;
-        }
-
-        tbody tr:hover {
-            background: #f3ede7;
-        }
-
-        .num {
-            text-align: right;
-            white-space: nowrap;
-            font-variant-numeric: tabular-nums;
-        }
-
-        .rank-cell {
-            font-weight: 700;
-            color: var(--navy);
-        }
-
-        .rank-badge {
-            display: inline-block;
-            min-width: 32px;
-            text-align: center;
-            padding: 4px 8px;
-            border-radius: 999px;
-            background: var(--green-soft);
-            color: var(--navy);
-            font-weight: 700;
-        }
-
-        .small {
-            color: var(--gray);
-            font-size: 0.88rem;
-        }
-
-        .lycee-link {
-            color: var(--navy);
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        .lycee-link:hover {
-            color: var(--terracotta);
-        }
-
-        .official-link {
-            display: inline-block;
-            margin-top: 4px;
-            color: var(--terracotta);
-            text-decoration: none;
-            font-size: 0.86rem;
-        }
-
-        .detail-btn {
-            display: inline-block;
-            padding: 6px 10px;
-            border: 1px solid var(--navy);
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--navy);
-            background: var(--white);
-            font-size: 0.88rem;
-            font-weight: 600;
-        }
-
-        .detail-btn:hover {
-            background: var(--navy);
-            color: var(--white);
-            text-decoration: none;
-        }
-
-        .score-main {
-            font-weight: 700;
-            color: var(--navy);
-        }
-
-        .score-muted {
-            color: var(--gray);
-        }
-
-        .pagination {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-top: 18px;
-            justify-content: center;
-        }
-
-        .pagination a,
-        .pagination span {
-            display: inline-block;
-            padding: 8px 12px;
-            border-radius: 8px;
-            text-decoration: none;
-            border: 1px solid var(--border);
-            background: var(--white);
-            color: var(--navy);
-        }
-
-        .pagination .current {
-            background: var(--navy);
-            color: var(--white);
-            border-color: var(--navy);
-        }
-
-        .footer-note {
-            margin-top: 18px;
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
-        .accent {
-            color: var(--terracotta);
-            font-weight: 700;
-        }
-
-        @media (max-width: 1180px) {
-            .filters-form {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 760px) {
-            .filters-form {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-
-            .container {
-                padding: 18px 12px 30px;
-            }
-        }
-    </style>
+@media(max-width:600px){
+  .filtres-grid{grid-template-columns:1fr 1fr;}
+  #rgpd{flex-direction:column;gap:8px;text-align:center;}
+}
+</style>
 </head>
 <body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="nav-links">
+    <a href="index.php">← Accueil</a>
+    <a href="parcoursup.php">Parcoursup</a>
+    <a href="doublettes.php">Spécialités</a>
+    <a href="aide.html" style="color:var(--terra);font-weight:700;">❓ Guide</a>
+    <a href="acronymes.html">📖 Lexique</a>
+  </div>
+</header>
+
 <div class="container">
 
-    <header>
-        <h1>Classement exploratoire des lycees selon les IVAL par Hors Kadre</h1>
-        <p class="subtitle">
-            Lecture independante de donnees publiques sur les lycees - &copy; Katy Ho
-        </p>
-    </header>
+  <h1 class="page-title">Comparer les lycées — IVAL 2025</h1>
+  <p class="page-sub">
+    Classement exploratoire basé sur des données publiques.
+    Cliquez sur les en-têtes de colonnes pour trier.
+    Cliquez sur "Voir" pour la fiche complète d'un lycée.
+  </p>
 
-    <section class="panel">
-        <h2>Recherche et filtres</h2>
-
-        <form method="get" class="filters-form">
-            <div class="field">
-                <label for="q">Nom du lycee</label>
-                <input type="text" name="q" id="q" value="<?php echo safe_html($q); ?>" placeholder="Nom du lycee">
-            </div>
-
-            <div class="field">
-                <label for="ville">Ville</label>
-                <input type="text" name="ville" id="ville" value="<?php echo safe_html($ville); ?>" placeholder="Ville">
-            </div>
-
-            <div class="field">
-                <label for="academie">Academie</label>
-                <select name="academie" id="academie">
-                    <option value="">Toutes</option>
-                    <?php
-                    foreach ($academies as $item) {
-                        $selected = ($academie === (string)$item) ? 'selected="selected"' : '';
-                        echo '<option value="' . safe_html((string)$item) . '" ' . $selected . '>' . safe_html((string)$item) . '</option>';
-                    }
-                    ?>
-                </select>
-            </div>
-
-            <div class="field">
-                <label for="departement">Departement</label>
-                <select name="departement" id="departement">
-                    <option value="">Tous</option>
-                    <?php
-                    foreach ($departements as $item) {
-                        $selected = ($departement === (string)$item) ? 'selected="selected"' : '';
-                        echo '<option value="' . safe_html((string)$item) . '" ' . $selected . '>' . safe_html((string)$item) . '</option>';
-                    }
-                    ?>
-                </select>
-            </div>
-
-            <div class="field">
-                <label for="statut">Statut</label>
-                <select name="statut" id="statut">
-                    <option value="">Tous</option>
-                    <?php
-                    foreach ($statuts as $item) {
-                        $selected = ($statut === (string)$item) ? 'selected="selected"' : '';
-                        echo '<option value="' . safe_html((string)$item) . '" ' . $selected . '>' . safe_html((string)$item) . '</option>';
-                    }
-                    ?>
-                </select>
-            </div>
-
-            <div class="field">
-                <label for="sort">Tri par</label>
-                <select name="sort" id="sort">
-                    <!--<option value="score_global" <!-- if ($sort === 'score_global') { echo 'selected="selected"'; } ?>>Score global</option>-->
-                    <option value="ival" <?php if ($sort === 'ival') { echo 'selected="selected"'; } ?>>IVAL</option>
-                    <option value="taux_bac" <?php if ($sort === 'taux_bac') { echo 'selected="selected"'; } ?>>Taux de reussite au bac</option>
-                    <option value="taux_mentions" <?php if ($sort === 'taux_mentions') { echo 'selected="selected"'; } ?>>Taux de mentions</option>
-                    <option value="evolution_effectif" <?php if ($sort === 'evolution_effectif') { echo 'selected="selected"'; } ?>>Evolution des effectifs</option>
-                    <option value="score_mentions" <?php if ($sort === 'score_mentions') { echo 'selected="selected"'; } ?>>Mentions ponderees</option>
-                    <option value="nom" <?php if ($sort === 'nom') { echo 'selected="selected"'; } ?>>Nom du lycee</option>
-                    <option value="ville" <?php if ($sort === 'ville') { echo 'selected="selected"'; } ?>>Ville</option>
-                </select>
-            </div>
-
-            <div class="field">
-                <label for="order">Ordre</label>
-                <select name="order" id="order">
-                    <option value="desc" <?php if ($order === 'desc') { echo 'selected="selected"'; } ?>>Decroissant</option>
-                    <option value="asc" <?php if ($order === 'asc') { echo 'selected="selected"'; } ?>>Croissant</option>
-                </select>
-            </div>
-
-            <div class="actions">
-                <button type="submit" class="btn">Filtrer</button>
-                <a href="index.php" class="btn btn-secondary">Reinitialiser</a>
-            </div>
-        </form>
-
-        <p class="meta">
-            <?php echo fmt_int_local($displayableRows); ?> ligne<?php echo ($displayableRows > 1 ? 's' : ''); ?> affichee<?php echo ($displayableRows > 1 ? 's' : ''); ?>,
-            sur <?php echo fmt_int_local($totalRows); ?> resultat<?php echo ($totalRows > 1 ? 's' : ''); ?> correspondant<?php echo ($totalRows > 1 ? 's' : ''); ?>.
-        </p>
-
-        <?php if ($totalRows > $maxRows) { ?>
-            <p class="warning">
-                Seules les <?php echo $maxRows; ?> premieres lignes sont affichees pour des raisons de performance.
-                Merci d'affiner votre recherche.
-            </p>
-        <?php } ?>
-
-        <div class="sort-box">
-            <strong>Tri actuel :</strong> <?php echo safe_html($currentSortLabel); ?>, ordre <?php echo safe_html($currentOrderLabel); ?>.
+  <!-- FILTRES -->
+  <div class="filtres-panel">
+    <h2>Filtres</h2>
+    <form method="get" action="">
+      <!-- Conserver sort/order dans l'URL -->
+      <input type="hidden" name="sort"  value="<?php echo safe_html($sort); ?>">
+      <input type="hidden" name="order" value="<?php echo safe_html($order); ?>">
+      <?php if($scope !== ''): ?>
+      <input type="hidden" name="scope" value="<?php echo safe_html($scope); ?>">
+      <?php endif; ?>
+      <div class="filtres-grid">
+        <div class="field">
+          <label for="q">Nom du lycée</label>
+          <input type="text" name="q" id="q"
+                 value="<?php echo safe_html($q); ?>"
+                 placeholder="Descartes…">
         </div>
-    </section>
+        <div class="field">
+          <label for="ville">Ville</label>
+          <input type="text" name="ville" id="ville"
+                 value="<?php echo safe_html($ville); ?>"
+                 placeholder="Montigny…">
+        </div>
+        <div class="field">
+          <label for="departement">Département</label>
+          <select name="departement" id="departement">
+            <option value="">Tous</option>
+            <?php foreach($departements as $item):
+              $sel = ($departement === (string)$item) ? 'selected' : ''; ?>
+              <option value="<?php echo safe_html($item); ?>" <?php echo $sel; ?>>
+                <?php echo safe_html($item); ?></option>
+            <?php endforeach; ?>
+          </select>
+        </div>
+        <div class="field">
+          <label for="academie">Académie</label>
+          <select name="academie" id="academie">
+            <option value="">Toutes</option>
+            <?php foreach($academies as $item):
+              $sel = ($academie === (string)$item) ? 'selected' : ''; ?>
+              <option value="<?php echo safe_html($item); ?>" <?php echo $sel; ?>>
+                <?php echo safe_html($item); ?></option>
+            <?php endforeach; ?>
+          </select>
+        </div>
+        <div class="field">
+          <label for="statut">Statut</label>
+          <select name="statut" id="statut">
+            <option value="">Tous</option>
+            <?php foreach($statuts as $item):
+              $sel = ($statut === (string)$item) ? 'selected' : ''; ?>
+              <option value="<?php echo safe_html($item); ?>" <?php echo $sel; ?>>
+                <?php echo safe_html($item); ?></option>
+            <?php endforeach; ?>
+          </select>
+        </div>
+        <div class="field">
+          <label for="voie">Voie</label>
+          <select name="voie" id="voie">
+            <option value="">Toutes</option>
+            <option value="LGT" <?php echo $voie === 'LGT' ? 'selected' : ''; ?>>
+              🎓 Général & Techno (LGT)</option>
+            <option value="LP"  <?php echo $voie === 'LP'  ? 'selected' : ''; ?>>
+              🔧 Professionnel (LP)</option>
+          </select>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Filtrer</button>
+          <a href="indexival.php" class="btn btn-secondary">✕ Réinit.</a>
+          <a href="indexival.php?scope=all" class="btn btn-secondary">Tous →</a>
+        </div>
+      </div>
+    </form>
+    <p class="meta">
+      <?php echo $displayableRows; ?> lycée<?php echo $displayableRows > 1 ? 's' : ''; ?>
+      affiché<?php echo $displayableRows > 1 ? 's' : ''; ?>
+      sur <?php echo $totalRows; ?> résultat<?php echo $totalRows > 1 ? 's' : ''; ?>.
+    </p>
+    <?php if($totalRows > $maxRows): ?>
+    <p class="warning">Seuls les <?php echo $maxRows; ?> premiers résultats sont affichés — affinez votre recherche.</p>
+    <?php endif; ?>
+  </div>
 
-    <section class="panel">
-        <h2>Methode</h2>
-        <p>
-            Cette page propose une <span class="accent">lecture exploratoire</span> de donnees publiques.
-            Il ne s'agit pas d'un classement officiel.
-        </p>
-        <ul class="method-list">
-            <li><strong>Evolution des effectifs</strong> = effectif de terminale moins effectif de seconde.</li>
-            <li><strong>Mentions ponderees/Score mentions</strong> = taux de mentions multiplie par la racine carree de l'effectif de terminale.</li>
-            <!--<li><strong>Score global</strong> = combinaison ponderee d'indicateurs normalises.</li>-->
-        </ul>
-        <p class="small">
-            Ponderation de reference : 40% IVAL, 25% evolution des effectifs, 15% taux de reussite au bac, 20% mentions ponderees.
-        </p>
-    </section>
+  <!-- TABLEAU -->
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th class="num">Rang</th>
+        <th>
+          <a href="?<?php echo safe_html(build_query_string(array_merge($_GET,array('sort'=>'nom','order'=>$sort==='nom'&&$order==='asc'?'desc':'asc','page'=>1)))); ?>">
+            Lycée<?php echo $sort==='nom'?($order==='asc'?' ↑':' ↓'):''; ?>
+          </a>
+        </th>
+        <th>Ville</th>
+        <th>Dép.</th>
+        <th>Statut</th>
+        <th class="num">
+          <a href="?<?php echo safe_html(build_query_string(array_merge($_GET,array('sort'=>'ival','order'=>$sort==='ival'&&$order==='desc'?'asc':'desc','page'=>1)))); ?>">
+            IVAL<?php echo $sort==='ival'?($order==='desc'?' ↓':' ↑'):''; ?>
+          </a>
+        </th>
+        <th class="num">
+          <a href="?<?php echo safe_html(build_query_string(array_merge($_GET,array('sort'=>'taux_bac','order'=>$sort==='taux_bac'&&$order==='desc'?'asc':'desc','page'=>1)))); ?>">
+            Bac%<?php echo $sort==='taux_bac'?($order==='desc'?' ↓':' ↑'):''; ?>
+          </a>
+        </th>
+        <th class="num">
+          <a href="?<?php echo safe_html(build_query_string(array_merge($_GET,array('sort'=>'taux_mentions','order'=>$sort==='taux_mentions'&&$order==='desc'?'asc':'desc','page'=>1)))); ?>">
+            Mentions%<?php echo $sort==='taux_mentions'?($order==='desc'?' ↓':' ↑'):''; ?>
+          </a>
+        </th>
+        <th class="num">
+          <a href="?<?php echo safe_html(build_query_string(array_merge($_GET,array('sort'=>'effectif_seconde','order'=>$sort==='effectif_seconde'&&$order==='desc'?'asc':'desc','page'=>1)))); ?>">
+            Seconde<?php echo $sort==='effectif_seconde'?($order==='desc'?' ↓':' ↑'):''; ?>
+          </a>
+        </th>
+        <th class="num">
+          <a href="?<?php echo safe_html(build_query_string(array_merge($_GET,array('sort'=>'effectif_terminale','order'=>$sort==='effectif_terminale'&&$order==='desc'?'asc':'desc','page'=>1)))); ?>">
+            Terminale<?php echo $sort==='effectif_terminale'?($order==='desc'?' ↓':' ↑'):''; ?>
+          </a>
+        </th>
+        <th class="num">
+          <a href="?<?php echo safe_html(build_query_string(array_merge($_GET,array('sort'=>'evolution_effectif','order'=>$sort==='evolution_effectif'&&$order==='desc'?'asc':'desc','page'=>1)))); ?>">
+            Évol.<?php echo $sort==='evolution_effectif'?($order==='desc'?' ↓':' ↑'):''; ?>
+          </a>
+        </th>
+        <th style="text-align:center;">CPGE</th>
+        <th style="text-align:center;">BTS</th>
+        <th>Fiche</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php
+    if (!$rows) {
+        echo '<tr><td colspan="14" style="padding:20px;color:var(--gray);font-style:italic;">Aucun résultat.</td></tr>';
+    } else {
+        $rank = $offset + 1;
+        foreach ($rows as $row) {
+            $ficheUrl    = 'fiche.php?id=' . urlencode($row['id']);
+            $officialUrl = isset($row['fiche_ival_url']) ? trim((string)$row['fiche_ival_url']) : '';
+            $ival_val    = isset($row['ival']) && $row['ival'] !== '' ? floatval($row['ival']) : null;
+            $ival_cls    = $ival_val === null ? 'ival-neu' : ($ival_val >= 0 ? 'ival-pos' : 'ival-neg');
+            $ival_str    = $ival_val === null ? '—' : ($ival_val > 0 ? '+' : '') . number_format($ival_val, 1, ',', ' ');
+            $uai         = isset($row['uai']) ? $row['uai'] : '';
+            $fl          = isset($formations_lycees[$uai]) ? $formations_lycees[$uai] : null;
+            $has_cpge    = $fl && intval($fl['has_cpge']) === 1;
+            $has_bts     = $fl && intval($fl['has_bts'])  === 1;
+            $is_pub      = strpos(strtolower(isset($row['statut'])?$row['statut']:''), 'priv') === false;
 
-    <section class="table-wrap">
-        <table>
-            <thead>
-                <tr>
-                    <th class="num">Rang</th>
-                    <th>Lycee</th>
-                    <th>Ville</th>
-                    <th>Departement</th>
-                    <!--<th>Academie</th>-->
-                    <th>Statut</th>
-                    <th class="num">IVAL</th>
-                    <th class="num">Bac</th>
-                    <th class="num">Mentions</th>
-                    <th class="num">Seconde</th>
-                    <th class="num">Terminale</th>
-                    <th class="num">Evolution</th>
-                    <th class="num">Score mentions</th>
-                    <!--<th class="num">Score global</th>-->
-                    <th>Fiche</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php
-            if (!$rows) {
-                echo '<tr><td colspan="15">Aucun resultat</td></tr>';
-            } else {
-                $rank = $offset + 1;
+            echo '<tr>';
+            echo '<td class="num"><span class="rank-badge">' . $rank . '</span></td>';
 
-                foreach ($rows as $row) {
-                    $ficheUrl = 'fiche.php?id=' . urlencode($row['id']);
-                    $officialUrl = isset($row['fiche_ival_url']) ? trim((string)$row['fiche_ival_url']) : '';
-
-                    echo '<tr>';
-
-                    echo '<td class="num rank-cell"><span class="rank-badge">' . $rank . '</span></td>';
-
-                    echo '<td>';
-                    echo '<a class="lycee-link" href="' . safe_html($ficheUrl) . '">' . safe_html(isset($row['nom']) ? $row['nom'] : '') . '</a><br>';
-                    echo '<span class="small">Source ' . safe_html(isset($row['source_annee']) ? $row['source_annee'] : '') . '</span>';
-                    if (!empty($row['uai'])) {
-                        echo '<br><span class="small">UAI ' . safe_html($row['uai']) . '</span>';
-                    }
-                    if ($officialUrl !== '') {
-                        echo '<br><a class="official-link" href="' . safe_html($officialUrl) . '" target="_blank" rel="noopener noreferrer">Fiche officielle</a>';
-                    }
-                    echo '</td>';
-
-                    echo '<td>' . safe_html(isset($row['ville']) ? $row['ville'] : '') . '</td>';
-                    echo '<td>' . safe_html(isset($row['departement']) ? $row['departement'] : '') . '</td>';
-                    //echo '<td>' . safe_html(isset($row['academie']) ? $row['academie'] : '') . '</td>';
-                    echo '<td>' . safe_html(isset($row['statut']) ? $row['statut'] : '') . '</td>';
-                    echo '<td class="num score-main">' . fmt_num(isset($row['ival']) ? $row['ival'] : null, 1) . '</td>';
-                    echo '<td class="num">' . fmt_num(isset($row['taux_bac']) ? $row['taux_bac'] : null, 1) . '</td>';
-                    echo '<td class="num">' . fmt_num(isset($row['taux_mentions']) ? $row['taux_mentions'] : null, 1) . '</td>';
-                    echo '<td class="num">' . fmt_int_local(isset($row['effectif_seconde']) ? $row['effectif_seconde'] : null) . '</td>';
-                    echo '<td class="num">' . fmt_int_local(isset($row['effectif_terminale']) ? $row['effectif_terminale'] : null) . '</td>';
-                    echo '<td class="num">' . fmt_signed_local(isset($row['evolution_effectif']) ? $row['evolution_effectif'] : null) . '</td>';
-                    echo '<td class="num">' . fmt_num(isset($row['score_mentions']) ? $row['score_mentions'] : null, 2) . '</td>';
-                    //echo '<td class="num score-main">' . fmt_num(isset($row['score_global']) ? $row['score_global'] : null, 3) . '</td>';
-                    echo '<td><a class="detail-btn" href="' . safe_html($ficheUrl) . '">Voir</a></td>';
-
-                    echo '</tr>';
-
-                    $rank++;
-                }
+            echo '<td>';
+            echo '<a class="lycee-link" href="' . safe_html($ficheUrl) . '">' . safe_html(isset($row['nom'])?$row['nom']:'') . '</a>';
+            if ($officialUrl !== '') {
+                echo '<br><a href="' . safe_html($officialUrl) . '" target="_blank" rel="noopener" style="font-size:.75rem;color:var(--terra);">Fiche officielle ↗</a>';
             }
-            ?>
-            </tbody>
-        </table>
-    </section>
+            echo '</td>';
 
-    <?php if ($totalPages > 1) { ?>
-        <nav class="pagination" aria-label="Pagination">
-            <?php if ($page > 1) { ?>
-                <a href="<?php echo safe_html(build_page_url($page - 1)); ?>">&larr; Precedent</a>
-            <?php } ?>
+            echo '<td style="white-space:nowrap;">' . safe_html(isset($row['ville'])?$row['ville']:'') . '</td>';
+            echo '<td style="white-space:nowrap;font-size:.78rem;">' . safe_html(isset($row['departement'])?$row['departement']:'') . '</td>';
+            $voie_val = isset($row['voie']) ? $row['voie'] : '';
+            $voie_badge = $voie_val === 'LP'
+                ? '<span style="background:#fce7f3;color:#9d174d;border:1px solid #f9a8d4;border-radius:8px;padding:2px 7px;font-size:.68rem;font-weight:700;">🔧 LP</span>'
+                : '<span style="background:#ecfdf5;color:#065f46;border:1px solid #6ee7b7;border-radius:8px;padding:2px 7px;font-size:.68rem;font-weight:700;">🎓 LGT</span>';
+            echo '<td><span class="badge ' . ($is_pub ? 'badge-pub' : 'badge-pri') . '">' . safe_html(isset($row['statut'])?$row['statut']:'') . '</span> ' . $voie_badge . '</td>';
+            echo '<td class="num ' . $ival_cls . '">' . $ival_str . '</td>';
+            echo '<td class="num">' . fmt_num(isset($row['taux_bac'])?$row['taux_bac']:null, 1) . '</td>';
+            echo '<td class="num">' . fmt_num(isset($row['taux_mentions'])?$row['taux_mentions']:null, 1) . '</td>';
+            echo '<td class="num">' . fmt_int_local(isset($row['effectif_seconde'])?$row['effectif_seconde']:null) . '</td>';
+            echo '<td class="num">' . fmt_int_local(isset($row['effectif_terminale'])?$row['effectif_terminale']:null) . '</td>';
+            echo '<td class="num">' . fmt_signed_local(isset($row['evolution_effectif'])?$row['evolution_effectif']:null) . '</td>';
+            echo '<td style="text-align:center;">' . ($has_cpge ? '<span class="badge badge-cpge">⭐ CPGE</span>' : '<span style="color:#ccc;">—</span>') . '</td>';
+            echo '<td style="text-align:center;">' . ($has_bts  ? '<span class="badge badge-bts">📋 BTS</span>'  : '<span style="color:#ccc;">—</span>') . '</td>';
+            echo '<td><a class="detail-btn" href="' . safe_html($ficheUrl) . '">Voir</a></td>';
+            echo '</tr>';
+            $rank++;
+        }
+    }
+    ?>
+    </tbody>
+  </table>
+  </div>
 
-            <?php
-            $start = max(1, $page - 2);
-            $end = min($totalPages, $page + 2);
+  <!-- PAGINATION -->
+  <?php if($totalPages > 1): ?>
+  <nav class="pagination">
+    <?php if($page > 1): ?>
+      <a href="<?php echo safe_html(build_page_url($page-1)); ?>">← Préc.</a>
+    <?php endif; ?>
+    <?php
+    $start = max(1, $page-2); $end = min($totalPages, $page+2);
+    for ($i = $start; $i <= $end; $i++) {
+        if ($i == $page) echo '<span class="current">'.$i.'</span>';
+        else echo '<a href="'.safe_html(build_page_url($i)).'">'.$i.'</a>';
+    }
+    ?>
+    <?php if($page < $totalPages): ?>
+      <a href="<?php echo safe_html(build_page_url($page+1)); ?>">Suiv. →</a>
+    <?php endif; ?>
+  </nav>
+  <?php endif; ?>
 
-            for ($i = $start; $i <= $end; $i++) {
-                if ($i == $page) {
-                    echo '<span class="current">' . $i . '</span>';
-                } else {
-                    echo '<a href="' . safe_html(build_page_url($i)) . '">' . $i . '</a>';
-                }
-            }
-            ?>
-
-            <?php if ($page < $totalPages) { ?>
-                <a href="<?php echo safe_html(build_page_url($page + 1)); ?>">Suivant &rarr;</a>
-            <?php } ?>
-        </nav>
-    <?php } ?>
-
-    <section class="panel" style="margin-top:20px;">
-        <h2>Sources</h2>
-        <p>
-            Les donnees proviennent des publications publiques du ministere de l'Education nationale :
-            indicateurs IVAL, taux de reussite au bac, taux de mentions, indicateurs d'acces au bac et effectifs.
-        </p>
-        <p class="small">
-            Les champs calcules affiches sur cette page relevent d'un modele d'analyse independant.
-        </p>
-    </section>
-
-    <p class="footer-note">
-        Cette page ne comporte pas d'espace de commentaire et affiche uniquement des donnees publiques agregees.<BR>
-		©2026 Katy Ho — Hors Kadre 
-		Données publiques — Traitement et analyse indépendante  
-		Réutilisation autorisée avec attribution
-	</p>
-	<p class="footer-note">
-	<a href="legal/apropos.html">À propos / Méthodologie</a> |
-	<a href="legal/mentions-legales.html">Mentions légales</a>
-	</p>
+  <footer>
+    ©2026 Katy Saintin — Hors Kadre<br>
+    Données Open Data Ministère de l'Éducation nationale 2025 — IVAL<br>
+    <a href="legal/apropos.html">À propos</a> |
+    <a href="legal/mentions-legales.html">Mentions légales</a> |
+    <a href="mailto:katy.saintin@gmail.com">Contact</a>
+  </footer>
 
 </div>
-<!-- Bandeau RGPD -->
-    <style>
-      #rgpd{position:fixed;bottom:0;left:0;right:0;background:#1B3A6B;color:#F5F0EB;
-      padding:12px 20px;font-size:13px;display:flex;justify-content:space-between;
-      align-items:center;z-index:9999;font-family:Georgia,serif;}
-      #rgpd a{color:#C4572A;}
-      #rgpd button{background:#C4572A;color:#fff;border:none;padding:8px 16px;
-      cursor:pointer;border-radius:4px;margin-left:20px;white-space:nowrap;font-size:13px;}
-    </style>
-    <div id="rgpd">
-      <span>Ce site utilise Google Analytics pour mesurer l'audience anonymement.
-      <a href="mailto:katy.saintin@gmail.com">Contact</a></span>
-      <button onclick="document.getElementById('rgpd').style.display='none';
-        document.cookie='rgpd=1;max-age=31536000;path=/'">J'ai compris</button>
-    </div>
-    <script>
-      if(document.cookie.indexOf('rgpd=1')>=0)
-        document.getElementById('rgpd').style.display='none';
-    </script>
+
+<div id="rgpd">
+  <span>Ce site utilise Google Analytics pour mesurer l'audience anonymement.
+    <a href="legal/mentions-legales.html">En savoir plus</a></span>
+  <button onclick="document.getElementById('rgpd').style.display='none';
+    document.cookie='rgpd=1;max-age=31536000;path=/'">J'ai compris</button>
+</div>
+<script>
+  if(document.cookie.indexOf('rgpd=1')>=0)
+    document.getElementById('rgpd').style.display='none';
+</script>
 </body>
 </html>
