@@ -80,17 +80,20 @@ $cart = ($res_cart) ? mysql_fetch_assoc($res_cart) : false;
 /* Doublettes spécialités admis */
 $filiere_agregee = '';
 $type_str = strtolower($f['type_formation'] . ' ' . $f['nom_long_formation']);
+/* Detection order matters - more specific first to avoid false matches
+   PASS before Licence (PASS formations often contain "Licence" in name)
+   ingenieur before other (avoid "commerce" matching "ecole de commerce") */
 if (strpos($type_str, 'but') !== false)             $filiere_agregee = 'BUT';
 elseif (strpos($type_str, 'bts') !== false)         $filiere_agregee = 'BTS';
 elseif (strpos($type_str, 'cpge') !== false
      || strpos($type_str, 'mpsi') !== false
      || strpos($type_str, 'pcsi') !== false
      || strpos($type_str, 'bcpst') !== false)       $filiere_agregee = 'CPGE';
-elseif (strpos($type_str, 'licence') !== false)     $filiere_agregee = 'Licence';
+elseif (strpos($type_str, 'pass') !== false)        $filiere_agregee = 'PASS';
 elseif (strpos($type_str, 'ingenieur') !== false
      || strpos($type_str, 'ingénieur') !== false)   $filiere_agregee = "Ecole d'Ingenieur";
 elseif (strpos($type_str, 'commerce') !== false)    $filiere_agregee = 'Ecole de Commerce';
-elseif (strpos($type_str, 'pass') !== false)        $filiere_agregee = 'PASS';
+elseif (strpos($type_str, 'licence') !== false)     $filiere_agregee = 'Licence';
 
 /* Detect CPGE sub-family for accurate doublette filtering
    S = scientific (MPSI, PCSI, PTSI, BCPST, MP2I, TSI, TB)
@@ -140,6 +143,63 @@ if ($filiere_agregee !== '') {
         foreach ($rows_doub as $d) {
             $pct = ($total_doub > 0) ? round(intval($d['nb_admis']) / $total_doub * 100) : 0;
             $doublettes[] = array('spec' => $d['doublette'], 'pct' => $pct, 'taux' => floatval($d['taux']));
+        }
+    }
+}
+
+/* Spécialités SOLO - individual specialties cumulated from doublettes
+   Same sous_filiere filter as doublettes for CPGE consistency */
+$solo_rows  = array();
+$solo_total = 0;
+
+if ($filiere_agregee !== '') {
+    $where_sous_solo = ($sous_filiere !== '')
+        ? "AND sous_filiere = '" . mysql_real_escape_string($sous_filiere) . "'"
+        : "AND (sous_filiere = '' OR sous_filiere IS NULL)";
+
+    $sql_solo = "SELECT specialite, nb_admis_cumul, nb_voeux_cumul
+                 FROM specialites_solo
+                 WHERE filiere_agregee = '" . mysql_real_escape_string($filiere_agregee) . "'
+                 AND annee = 2024
+                 $where_sous_solo
+                 ORDER BY nb_admis_cumul DESC
+                 LIMIT 8";
+    $res_solo = mysql_query($sql_solo);
+    if ($res_solo) {
+        while ($r = mysql_fetch_assoc($res_solo)) {
+            $solo_rows[]  = $r;
+            $solo_total  += intval($r['nb_admis_cumul']);
+        }
+    }
+    for ($i = 0; $i < count($solo_rows); $i++) {
+        $solo_rows[$i]['pct'] = ($solo_total > 0)
+            ? round(intval($solo_rows[$i]['nb_admis_cumul']) / $solo_total * 100, 1) : 0;
+    }
+}
+$solo_pct_max = count($solo_rows) > 0 ? $solo_rows[0]['pct'] : 100;
+
+/* ------------------------------------------------------------------
+ * Detect filiere_detail for "Voir les formations" link
+ * Uses filiere_detaillee_bis from filiere_detail matching nom_long_formation
+ * ------------------------------------------------------------------ */
+$detail_for_link = '';
+if ($filiere_agregee !== '' && $f['nom_long_formation'] !== '') {
+    $nom_words = explode(' ', $f['nom_long_formation']);
+    /* Use longest word (>4 chars) as search key to avoid common words */
+    $search_key = '';
+    foreach ($nom_words as $w) {
+        $w = trim($w, ',-.');
+        if (strlen($w) > strlen($search_key) && strlen($w) > 4) $search_key = $w;
+    }
+    if ($search_key !== '') {
+        $sql_det = "SELECT filiere_detaillee_bis FROM filiere_detail
+                    WHERE filiere_agregee = '" . mysql_real_escape_string($filiere_agregee) . "'
+                    AND filiere_detaillee_bis LIKE '%" . mysql_real_escape_string($search_key) . "%'
+                    ORDER BY nb_formations DESC LIMIT 1";
+        $res_det = mysql_query($sql_det);
+        if ($res_det) {
+            $row_det = mysql_fetch_assoc($res_det);
+            if ($row_det) $detail_for_link = $row_det['filiere_detaillee_bis'];
         }
     }
 }
@@ -371,7 +431,14 @@ a:hover{text-decoration:underline;}
     <a href="index.php">&larr; Accueil</a>
     <a href="parcoursup.php">Parcoursup Décodé</a>
     <a href="indexival.php">Comparer les lycées</a>
+    <!-- Bandeau aide/lexique -->
+  <div style="margin-top:8px;font-size:.8rem;">
+    <a href="aide.html" style="margin:0 8px;color:var(--terra);font-weight:600;">❓ Guide</a>
+    <a href="acronymes.html" style="margin:0 8px;color:var(--navy);font-weight:600;">📖 Lexique</a>
+    <a href="typeformation.html" style="margin:0 8px;color:var(--navy);">Types de formation</a>
+    <a href="index.php" style="margin:0 8px;color:var(--navy);">Accueil</a>
   </div>
+</div>
 </header>
 
 <div class="container">
@@ -757,7 +824,7 @@ a:hover{text-decoration:underline;}
     <?php if(!empty($doublettes)): ?>
     <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
       <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">
-        📊 Spécialités lycée des admis en <?php echo e($filiere_agregee); ?> (France, 2024)
+        📊 Doublettes spécialités lycée des admis en <?php echo e($filiere_agregee); ?> (France, 2024)
       </div>
       <?php foreach($doublettes as $d): ?>
         <div style="margin-bottom:8px;">
@@ -787,6 +854,44 @@ a:hover{text-decoration:underline;}
     <p style="color:var(--gray);font-style:italic;font-size:.9rem;">
       Données de spécialités non disponibles pour cette filière.
     </p>
+    <?php endif; ?>
+
+    <?php if(!empty($solo_rows)): ?>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
+      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">
+        🔢 Spécialités individuelles — part des admis en <?php echo e($filiere_agregee); ?> (France, 2024)
+      </div>
+      <?php foreach($solo_rows as $i => $row):
+        $rang     = $i + 1;
+        $medaille = $rang===1 ? '🥇 ' : ($rang===2 ? '🥈 ' : ($rang===3 ? '🥉 ' : ''));
+        $w        = $solo_pct_max > 0 ? round($row['pct'] / $solo_pct_max * 100) : 0;
+      ?>
+        <div style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:.83rem;margin-bottom:3px;gap:8px;">
+            <span style="color:var(--navy);font-weight:600;flex:1;">
+              <?php echo $medaille . e($row['specialite']); ?>
+            </span>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+              <span style="font-weight:700;color:var(--terra);"><?php echo $row['pct']; ?>%</span>
+
+            </div>
+          </div>
+          <div style="background:var(--border);border-radius:4px;height:5px;">
+            <div style="background:var(--terra);width:<?php echo $w; ?>%;height:100%;border-radius:4px;"></div>
+          </div>
+          <div style="font-size:.72rem;color:var(--gray);margin-top:2px;">
+            <?php echo number_format(intval($row['nb_admis_cumul']),0,',',' '); ?> admis l'avaient
+          </div>
+        </div>
+      <?php endforeach; ?>
+      <p style="font-size:.72rem;color:var(--gray);margin-top:8px;font-style:italic;">
+        Méthode : chaque doublette est éclatée en 2 spécialités — le cumul dépasse 100%, c'est normal.
+        <?php if($filiere_agregee !== ''): ?>
+        <a href="doublettes.php?filiere=<?php echo urlencode($filiere_agregee); ?>&tab=solo"
+           style="color:var(--terra);">→ Classement complet</a>
+        <?php endif; ?>
+      </p>
+    </div>
     <?php endif; ?>
 
   </div>
