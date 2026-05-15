@@ -41,6 +41,33 @@ $filiere = isset($filieres[$filiere_param]) ? $filiere_param : 'BUT';
 $filiere_label = $filieres[$filiere];
 
 /* ------------------------------------------------------------------
+ * CPGE SUB-FAMILY DETECTION
+ * When detail param matches a CPGE sub-type, filter by sous_filiere
+ * S = scientific (MPSI, PCSI, PTSI, BCPST, MP2I, TSI, TB)
+ * ECG = economic (ECG, ECT)
+ * L = literary (Lettres, Khagne, Hypokhagne, B/L)
+ * '' = no filter (show all)
+ * ------------------------------------------------------------------ */
+$sous_filiere = '';
+if ($filiere === 'CPGE' && $detail_param !== '') {
+    $d_low = strtolower($detail_param);
+    if (strpos($d_low, 'mpsi') !== false
+     || strpos($d_low, 'pcsi') !== false
+     || strpos($d_low, 'ptsi') !== false
+     || strpos($d_low, 'bcpst') !== false
+     || strpos($d_low, 'mp2i') !== false
+     || strpos($d_low, 'tsi') !== false
+     || strpos($d_low, 'tb') !== false)      $sous_filiere = 'S';
+    elseif (strpos($d_low, 'ecg') !== false
+         || strpos($d_low, 'ect') !== false) $sous_filiere = 'ECG';
+    elseif (strpos($d_low, 'lettre') !== false
+         || strpos($d_low, 'khagne') !== false
+         || strpos($d_low, 'khâgne') !== false
+         || strpos($d_low, 'b/l') !== false) $sous_filiere = 'L';
+    else                                     $sous_filiere = 'S'; /* default scientific */
+}
+
+/* ------------------------------------------------------------------
  * SUB-SPECIALTY LOOKUP
  * If detail param is provided, find matching cods from filiere_detail
  * table, then count how many formations match
@@ -79,12 +106,18 @@ $rows        = array();
 $total_admis = 0;
 $total_voeux = 0;
 
+/* Build sous_filiere filter for CPGE — empty = no filter (all families) */
+$sous_filiere_clause = ($sous_filiere !== '')
+    ? "AND sous_filiere = '" . mysql_real_escape_string($sous_filiere) . "'"
+    : ($filiere === 'CPGE' ? "AND sous_filiere != ''" : "AND (sous_filiere = '' OR sous_filiere IS NULL)");
+
 $sql = "SELECT doublette, nb_voeux, nb_admis,
                ROUND(nb_admis / nb_voeux * 100, 1) AS taux
         FROM specialites_filiere
         WHERE filiere_agregee = '" . mysql_real_escape_string($filiere) . "'
         AND annee = 2024
         AND nb_voeux >= 200
+        $sous_filiere_clause
         ORDER BY taux DESC";
 
 $res = mysql_query($sql);
@@ -344,8 +377,11 @@ footer a{color:var(--terra);}
     <strong><?php echo htmlspecialchars($detail_label); ?></strong>
     <span style="color:var(--gray);">(<?php echo $nb_formations; ?> formations)</span>
     <span style="font-size:.75rem;color:var(--gray);">
-      — doublettes agrégées sur l'ensemble des
-      <?php echo htmlspecialchars($filiere); ?>
+      — <?php if($sous_filiere !== ''): ?>
+        CPGE <?php echo $sous_filiere; ?> uniquement
+      <?php else: ?>
+        doublettes agrégées sur l'ensemble des <?php echo htmlspecialchars($filiere); ?>
+      <?php endif; ?>
     </span>
   </div>
   <?php elseif($detail_param && !$detail_active): ?>
@@ -444,12 +480,12 @@ footer a{color:var(--terra);}
     Source : Open Data Parcoursup 2024 — Ministère de l'Enseignement supérieur.
     Bacheliers généraux uniquement — données agrégées au niveau national.
     <?php if($filiere === 'CPGE' && !$detail_active): ?>
-    ⚠️ Les CPGE regroupent prépas scientifiques ET littéraires —
-    les doublettes comme Maths+HLP correspondent aux prépas littéraires (Hypokhâgne/Khâgne).
-    Précisez une sous-filière (ex: MPSI, PCSI, ECG, Lettres) pour un classement plus pertinent.
+    ⚠️ Les CPGE regroupent prépas scientifiques (MPSI, PCSI...), littéraires (Lettres, Khâgne)
+    et économiques (ECG). Précisez une sous-filière pour un classement pertinent.
+    <?php elseif($filiere === 'CPGE' && $sous_filiere !== ''): ?>
+    Données filtrées sur CPGE <?php echo $sous_filiere; ?> uniquement (2024).
     <?php elseif($detail_active): ?>
-    Les doublettes affichées couvrent l'ensemble des <?php echo htmlspecialchars($filiere); ?> —
-    la granularité par sous-spécialité n'est pas disponible dans l'open data actuel.
+    Données agrégées sur l'ensemble des <?php echo htmlspecialchars($filiere); ?>.
     <?php endif; ?>
     Ces données donnent des tendances, pas des garanties individuelles.
     Vérifiez aux Journées Portes Ouvertes.
