@@ -65,9 +65,15 @@ $f = false;
 if ($res) { $f = mysql_fetch_assoc($res); }
 if (!$f)  { die('Formation introuvable.'); }
 
-/* Requête cartographie : parcours proposés */
-$sql_cart = "SELECT mentions_specialites FROM cartographie_formations
-             WHERE cod_aff_form = '" . $cod . "' AND session = 2026 LIMIT 1";
+/* Requête cartographie : parcours proposés + modalités alternance/internat
+   MAX() over all rows for this cod to get any apprentissage/internat flag */
+$sql_cart = "SELECT
+                MAX(mentions_specialites) AS mentions_specialites,
+                MAX(apprentissage)        AS has_apprentissage,
+                MAX(internat)             AS has_internat
+             FROM cartographie_formations
+             WHERE cod_aff_form = '" . $cod . "'
+             AND session = 2026";
 $res_cart = mysql_query($sql_cart);
 $cart = ($res_cart) ? mysql_fetch_assoc($res_cart) : false;
 
@@ -86,6 +92,31 @@ elseif (strpos($type_str, 'ingenieur') !== false
 elseif (strpos($type_str, 'commerce') !== false)    $filiere_agregee = 'Ecole de Commerce';
 elseif (strpos($type_str, 'pass') !== false)        $filiere_agregee = 'PASS';
 
+/* Detect CPGE sub-family for accurate doublette filtering
+   S = scientific (MPSI, PCSI, PTSI, BCPST, MP2I, TSI, TB)
+   ECG = economic (ECG, ECT)
+   L = literary (Lettres, Hypokhagne, Khagne, B/L)
+   '' = all other families (no sous_filiere filter needed) */
+$sous_filiere = '';
+if ($filiere_agregee === 'CPGE') {
+    $type_low = strtolower($f['type_formation'] . ' ' . $f['nom_long_formation']);
+    if (strpos($type_low, 'mpsi') !== false
+     || strpos($type_low, 'pcsi') !== false
+     || strpos($type_low, 'ptsi') !== false
+     || strpos($type_low, 'bcpst') !== false
+     || strpos($type_low, 'mp2i') !== false
+     || strpos($type_low, 'tsi') !== false
+     || strpos($type_low, 'tb ') !== false
+     || strpos($type_low, 'mpsi') !== false)         $sous_filiere = 'S';
+    elseif (strpos($type_low, 'ecg') !== false
+         || strpos($type_low, 'ect') !== false)      $sous_filiere = 'ECG';
+    elseif (strpos($type_low, 'lettre') !== false
+         || strpos($type_low, 'khâgne') !== false
+         || strpos($type_low, 'khagne') !== false
+         || strpos($type_low, 'b/l') !== false)      $sous_filiere = 'L';
+    else                                             $sous_filiere = 'S'; /* default scientific */
+}
+
 $doublettes = array();
 if ($filiere_agregee !== '') {
     /* Sort by conversion rate (taux = nb_admis/nb_voeux) not raw volume.
@@ -98,6 +129,7 @@ if ($filiere_agregee !== '') {
                  WHERE filiere_agregee = '" . mysql_real_escape_string($filiere_agregee) . "'
                  AND annee = 2024
                  AND nb_voeux >= 200
+                 AND (sous_filiere = '" . mysql_real_escape_string($sous_filiere) . "' OR sous_filiere = '')
                  ORDER BY taux DESC LIMIT 8";
     $res_doub = mysql_query($sql_doub);
     if ($res_doub) {
@@ -362,6 +394,9 @@ a:hover{text-decoration:underline;}
         <span class="tag tag-open">Formation non sélective</span>
       <?php endif; ?>
       <?php if ($f['internat']): ?><span class="tag tag-int">Internat disponible</span><?php endif; ?>
+      <?php if ($cart && intval($cart['has_apprentissage']) === 1): ?>
+        <span class="tag" style="background:#d1fae5;color:#065f46;border-color:#6ee7b7;">Alternance disponible</span>
+      <?php endif; ?>
       <?php if ($f['apprentissage']): ?><span class="tag tag-app">Apprentissage possible</span><?php endif; ?>
     </div>
   </div>
@@ -760,44 +795,6 @@ a:hover{text-decoration:underline;}
   <!-- ONGLET 5 : EN SAVOIR PLUS -->
   <div class="tab-panel" id="tab-plus">
   <div class="bloc">
-
-    <?php if($cart && !empty($cart['mentions_specialites'])): ?>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
-      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">🎓 Parcours proposés par cette formation</div>
-      <?php
-        $raw = $cart['mentions_specialites'];
-        // Couper sur ",BUT" ",BTS" ",CPGE" etc.
-        $raw = preg_replace('/,(BUT|BTS|BTSA|CPGE|Licence|D\.E|DEUST|DCG)\s+-/', '|$1 -', $raw);
-        $specs_list = explode('|', $raw);
-        foreach ($specs_list as $sp):
-          $sp = trim($sp); if ($sp === '') continue;
-      ?>
-        <div style="padding:6px 0;border-bottom:1px solid var(--border);font-size:.88rem;color:var(--navy);">
-          <span style="color:var(--terra);">›</span> <?php echo htmlspecialchars($sp); ?>
-        </div>
-      <?php endforeach; ?>
-    </div>
-    <?php endif; ?>
-
-    <?php if(!empty($doublettes)): ?>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
-      <div style="font-size:.78rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">
-        📊 Spécialités lycée des admis en <?php echo htmlspecialchars($filiere_agregee); ?> (France, 2024)
-      </div>
-      <?php foreach($doublettes as $d): ?>
-        <div style="margin-bottom:8px;">
-          <div style="display:flex;justify-content:space-between;font-size:.83rem;margin-bottom:3px;">
-            <span style="color:var(--navy);"><?php echo htmlspecialchars($d['spec']); ?></span>
-            <span style="font-weight:700;color:var(--terra);"><?php echo $d['pct']; ?>%</span>
-          </div>
-          <div style="background:var(--border);border-radius:4px;height:5px;">
-            <div style="background:var(--terra);width:<?php echo $d['pct']; ?>%;height:100%;border-radius:4px;"></div>
-          </div>
-        </div>
-      <?php endforeach; ?>
-      <p style="font-size:.74rem;color:var(--gray);margin-top:8px;font-style:italic;">Données nationales — varient selon l'établissement. Vérifiez aux Journées Portes Ouvertes.</p>
-    </div>
-    <?php endif; ?>
 
     <h2>🔍 Comment lire la fiche officielle Parcoursup ?</h2>
 
