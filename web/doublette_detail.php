@@ -26,6 +26,10 @@ $sort    = isset($_GET['sort'])    ? trim($_GET['sort'])                  : 'tau
 $iframe  = isset($_GET['iframe'])  && $_GET['iframe'] === '1';
 $doublette_display = isset($_GET['doublette'])
     ? stripslashes(trim($_GET['doublette'])) : '';
+/* spe = individual specialty filter from spe_solo view
+   No SQL filter — displays all formations with contextual banner */
+$spe_display = isset($_GET['spe'])
+    ? stripslashes(trim($_GET['spe'])) : '';
 
 if ($filiere === '' || $detail === '') { die('Parametres manquants.'); }
 
@@ -99,13 +103,19 @@ $sql_form = "SELECT
     MIN(f26.nom_etablissement)   AS nom_etablissement,
     MIN(f26.commune)             AS commune,
     MIN(f26.departement)         AS departement,
+    MIN(cf.code_uai)             AS code_uai,
     f25.capacite,
     f25.nb_candidats_phase_principale AS nb_candidats,
     f25.taux_acces,
     f25.selectivite,
-    ROUND(f25.nb_candidats_phase_principale / NULLIF(f25.capacite,0), 1) AS ratio
+    ROUND(f25.nb_candidats_phase_principale / NULLIF(f25.capacite,0), 1) AS ratio,
+    MIN(l.ival)                  AS ival,
+    MIN(l.taux_bac)              AS taux_bac,
+    MIN(l.taux_mentions)         AS taux_mentions
 FROM formations_2026 f26
 LEFT JOIN formations_2025 f25 ON f26.cod_aff_form = f25.cod_aff_form
+LEFT JOIN cartographie_formations cf ON f26.cod_aff_form = cf.cod_aff_form AND cf.session = 2026
+LEFT JOIN lycees_france_ival_2025 l ON cf.code_uai = l.uai
 WHERE f26.cod_aff_form IN ($cods_in)
 AND f25.nb_candidats_phase_principale > 0
 GROUP BY f26.cod_aff_form, f25.capacite,
@@ -144,10 +154,13 @@ function sort_url($col, $filiere, $detail, $iframe, $current_sort) {
     }
     $doublette_param = ($GLOBALS['doublette_display'] !== '')
         ? '&doublette=' . urlencode($GLOBALS['doublette_display']) : '';
+    $spe_param = ($GLOBALS['spe_display'] !== '')
+        ? '&spe=' . urlencode($GLOBALS['spe_display']) : '';
     return '?filiere=' . urlencode($filiere)
          . '&detail='  . urlencode($detail)
          . '&sort='    . $next
          . $doublette_param
+         . $spe_param
          . ($iframe ? '&iframe=1' : '');
 }
 
@@ -261,7 +274,14 @@ footer a{color:var(--terra);}
     <a href="doublettes.php?filiere=<?php echo urlencode($filiere);
       ?>&detail=<?php echo urlencode($detail); ?>">← Retour doublettes</a>
     <a href="parcoursup.php">Comprendre Parcoursup</a>
+    <!-- Bandeau aide/lexique -->
+  <div style="margin-top:8px;font-size:.8rem;">
+    <a href="aide.html" style="margin:0 8px;color:var(--terra);font-weight:600;">❓ Guide</a>
+    <a href="acronymes.html" style="margin:0 8px;color:var(--navy);font-weight:600;">📖 Lexique</a>
+    <a href="typeformation.html" style="margin:0 8px;color:var(--navy);">Types de formation</a>
+    <a href="index.php" style="margin:0 8px;color:var(--navy);">Accueil</a>
   </div>
+</div>
 </header>
 <?php endif; ?>
 
@@ -294,6 +314,16 @@ footer a{color:var(--terra);}
   <div class="doublette-title">
     📊 Doublette sélectionnée :
     <strong><?php echo htmlspecialchars($doublette_display); ?></strong>
+  </div>
+  <?php endif; ?>
+
+  <?php if($spe_display !== ''): ?>
+  <div class="doublette-title" style="border-left-color:var(--navy);background:#e8f4fd;">
+    🔢 Spécialité individuelle :
+    <strong><?php echo htmlspecialchars($spe_display); ?></strong>
+    <span style="font-size:.75rem;color:var(--gray);">
+      — formations dont les admis avaient cette spécialité (données nationales 2024)
+    </span>
   </div>
   <?php endif; ?>
 
@@ -359,6 +389,9 @@ footer a{color:var(--terra);}
             Accès<?php echo sort_arrow('taux',$sort); ?>
           </a>
         </th>
+        <th class="num">IVAL</th>
+        <th class="num">Bac%</th>
+        <th class="num">Mentions%</th>
         <th></th>
       </tr>
     </thead>
@@ -400,6 +433,15 @@ footer a{color:var(--terra);}
         </td>
         <td class="num <?php echo $taux_cls; ?>">
           <?php echo $f['taux_acces'] ? $taux.'%' : '—'; ?>
+        </td>
+        <td class="num" style="<?php echo $f['ival'] ? (floatval($f['ival'])>=0?'color:#2d8a4e':'color:#C4572A') : ''; ?>">
+          <?php echo $f['ival'] ? (floatval($f['ival'])>0?'+':'').round(floatval($f['ival']),1) : '—'; ?>
+        </td>
+        <td class="num">
+          <?php echo $f['taux_bac'] ? round(floatval($f['taux_bac'])).'%' : '—'; ?>
+        </td>
+        <td class="num">
+          <?php echo $f['taux_mentions'] ? round(floatval($f['taux_mentions'])).'%' : '—'; ?>
         </td>
         <td>
           <a href="formation.php?cod=<?php echo urlencode($f['cod_aff_form']); ?>"
