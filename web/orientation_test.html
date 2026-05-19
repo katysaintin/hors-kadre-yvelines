@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quel étudiant es-tu ? — Hors Kadre</title>
+<style>
+:root{
+  --navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
+  --gold:#B8860B;--gray:#555;--border:#d9d1ca;--white:#fff;
+  --green:#2d8a4e;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Georgia,"Times New Roman",serif;
+  background:#0d0d0d;color:var(--white);line-height:1.6;
+  min-height:100vh;}
+a{color:var(--terra);}
+a:hover{text-decoration:underline;}
+
+/* HEADER */
+.site-header{background:rgba(255,255,255,.05);
+  border-bottom:2px solid var(--terra);
+  padding:12px 16px;text-align:center;}
+.site-header img{max-width:200px;width:40%;height:auto;
+  filter:brightness(0) invert(1);}
+.nav-links{margin-top:6px;font-size:.8rem;}
+.nav-links a{margin:0 8px;color:#ccc;font-weight:600;}
+.nav-links a:hover{color:var(--terra);}
+
+/* HERO */
+.hero{text-align:center;padding:40px 16px 24px;
+  background:linear-gradient(180deg,#1a0a2e 0%,#0d0d0d 100%);}
+.hero h1{font-size:clamp(1.6rem,5vw,2.4rem);
+  background:linear-gradient(90deg,#ff6b35,#9b59b6,#3498db);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;margin-bottom:10px;line-height:1.2;}
+.hero p{color:#aaa;font-size:.92rem;max-width:520px;
+  margin:0 auto;line-height:1.7;}
+.hero .badge-new{display:inline-block;background:var(--terra);
+  color:#fff;padding:3px 12px;border-radius:20px;
+  font-size:.72rem;font-weight:700;margin-bottom:12px;
+  text-transform:uppercase;letter-spacing:.08em;}
+
+/* BARRE DE PROGRESSION */
+.progress-wrap{max-width:600px;margin:0 auto 32px;padding:0 16px;}
+.progress-bar{background:rgba(255,255,255,.1);
+  border-radius:20px;height:6px;overflow:hidden;}
+.progress-fill{height:100%;border-radius:20px;
+  background:linear-gradient(90deg,var(--terra),#9b59b6);
+  transition:width .4s ease;}
+.progress-label{font-size:.75rem;color:#888;
+  text-align:right;margin-top:6px;}
+
+/* QUESTION */
+.question-wrap{max-width:640px;margin:0 auto;padding:0 16px 60px;}
+.question-card{background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:28px 24px;
+  animation:fadeIn .3s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.q-num{font-size:.72rem;color:var(--terra);font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;}
+.q-emoji{font-size:2rem;margin-bottom:10px;display:block;}
+.q-texte{font-size:1.1rem;color:#fff;font-weight:600;
+  margin-bottom:20px;line-height:1.4;}
+
+/* RÉPONSES */
+.reponses{display:flex;flex-direction:column;gap:10px;}
+.rep-btn{background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:10px;padding:14px 18px;
+  font-family:Georgia,serif;font-size:.9rem;
+  color:#ddd;cursor:pointer;text-align:left;
+  transition:all .2s;line-height:1.5;}
+.rep-btn:hover{background:rgba(196,87,42,.15);
+  border-color:var(--terra);color:#fff;}
+.rep-btn.selected{background:rgba(196,87,42,.25);
+  border-color:var(--terra);color:#fff;}
+
+/* RÉSULTAT */
+.result-wrap{max-width:700px;margin:0 auto;padding:0 16px 80px;
+  display:none;}
+.result-card{border-radius:20px;overflow:hidden;
+  border:2px solid rgba(255,255,255,.15);}
+.result-header{padding:32px 28px;text-align:center;
+  background:linear-gradient(135deg,#1a0a2e,#2d1b69);}
+.result-perso{font-size:4rem;margin-bottom:8px;display:block;}
+.result-serie{font-size:.75rem;color:#aaa;
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;}
+.result-nom{font-size:2rem;font-weight:700;color:#fff;margin-bottom:4px;}
+.result-slogan{font-size:1rem;color:var(--terra);font-style:italic;}
+.result-body{background:rgba(255,255,255,.04);padding:24px 28px;}
+.result-formation{display:inline-block;
+  background:var(--terra);color:#fff;
+  padding:6px 18px;border-radius:20px;
+  font-size:.85rem;font-weight:700;margin-bottom:14px;}
+.result-desc{color:#ccc;font-size:.92rem;
+  line-height:1.8;margin-bottom:20px;}
+
+/* FORMATIONS SUGGÉRÉES */
+.formations-titre{font-size:.8rem;font-weight:700;color:#888;
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;}
+.formations-grid{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:10px;margin-bottom:20px;}
+.form-card{background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;padding:12px 14px;}
+.form-card .nom{font-size:.85rem;font-weight:600;
+  color:#fff;margin-bottom:4px;line-height:1.3;}
+.form-card .lieu{font-size:.75rem;color:#888;margin-bottom:6px;}
+.form-card .stats{display:flex;gap:8px;flex-wrap:wrap;}
+.form-stat{font-size:.72rem;padding:2px 8px;border-radius:8px;
+  background:rgba(255,255,255,.08);color:#bbb;}
+.form-stat.green{background:rgba(45,138,78,.2);color:#6ee7a5;}
+.form-stat.red{background:rgba(196,87,42,.2);color:#ff9a7a;}
+.form-link{display:inline-block;margin-top:8px;
+  font-size:.75rem;color:var(--terra);font-weight:600;}
+
+/* DÉPARTEMENT INPUT */
+.dept-wrap{background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:16px 20px;margin-bottom:20px;}
+.dept-wrap label{font-size:.82rem;color:#aaa;
+  display:block;margin-bottom:6px;}
+.dept-input{background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:8px;padding:8px 14px;
+  font-family:Georgia,serif;font-size:.88rem;
+  color:#fff;width:100%;outline:none;}
+.dept-input:focus{border-color:var(--terra);}
+
+/* BOUTONS */
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.btn{display:inline-block;padding:10px 20px;border-radius:10px;
+  font-family:Georgia,serif;font-size:.88rem;font-weight:600;
+  cursor:pointer;text-decoration:none;border:none;text-align:center;}
+.btn-primary{background:var(--terra);color:#fff;}
+.btn-primary:hover{background:#a8452a;color:#fff;text-decoration:none;}
+.btn-ghost{background:transparent;color:#aaa;
+  border:1px solid rgba(255,255,255,.2);}
+.btn-ghost:hover{color:#fff;border-color:#fff;}
+
+/* PARTAGE */
+.share-wrap{text-align:center;padding:16px 0;
+  border-top:1px solid rgba(255,255,255,.08);
+  margin-top:16px;}
+.share-wrap p{font-size:.82rem;color:#888;margin-bottom:10px;}
+.share-btn{display:inline-block;padding:8px 18px;
+  border-radius:20px;font-size:.82rem;font-weight:600;
+  cursor:pointer;border:none;font-family:Georgia,serif;}
+.share-linkedin{background:#0077b5;color:#fff;}
+.share-copy{background:rgba(255,255,255,.1);color:#ddd;}
+
+/* LOADING */
+.loading{text-align:center;color:#888;padding:24px;font-size:.9rem;}
+
+/* SCORES DEBUG (masqué) */
+.scores-debug{display:none;}
+
+@media(max-width:600px){
+  .question-card,.result-body{padding:18px 16px;}
+  .result-header{padding:24px 16px;}
+  .formations-grid{grid-template-columns:1fr;}
+  .btn-row{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="nav-links">
+    <a href="index.php">← Accueil</a>
+    <a href="parcoursup.php">Parcoursup</a>
+    <a href="doublettes.php">Spécialités</a>
+    <a href="aide.html">Guide</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="badge-new">✨ Nouveau</span>
+  <h1>Quel étudiant(e) es-tu ?</h1>
+  <p>7 questions pour découvrir ton profil d'orientation — et les formations qui te correspondent vraiment.</p>
+</div>
+
+<!-- BARRE DE PROGRESSION -->
+<div class="progress-wrap" id="progressWrap">
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill" style="width:0%"></div>
+  </div>
+  <div class="progress-label" id="progressLabel">Question 1 / 7</div>
+</div>
+
+<!-- QUESTIONS -->
+<div class="question-wrap" id="questionWrap">
+  <div class="question-card" id="questionCard">
+    <!-- Rempli par JS -->
+  </div>
+</div>
+
+<!-- RÉSULTAT -->
+<div class="result-wrap" id="resultWrap">
+
+  <!-- Filtre département -->
+  <div class="dept-wrap">
+    <label for="deptInput">📍 Tu veux des formations près de chez toi ? (optionnel)</label>
+    <input type="text" id="deptInput" class="dept-input"
+           placeholder="Ex: YVELINES, PARIS, RHONE… ou laisse vide pour toute la France"
+           onchange="chargerFormations()">
+  </div>
+
+  <!-- Carte résultat -->
+  <div class="result-card" id="resultCard">
+    <div class="result-header" id="resultHeader"></div>
+    <div class="result-body">
+      <div id="resultFormationBadge"></div>
+      <p class="result-desc" id="resultDesc"></p>
+      <div class="formations-titre">🎓 Formations qui te correspondent</div>
+      <div class="formations-grid" id="formationsGrid">
+        <div class="loading">Chargement des formations…</div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="recommencer()">🔄 Recommencer</button>
+        <button class="btn btn-ghost" onclick="voirPageComplete()">🔍 Affiner la recherche →</button>
+      </div>
+      <div class="share-wrap">
+        <p>Partage ton résultat !</p>
+        <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+          <button class="share-btn share-linkedin" onclick="partagerLinkedIn()">
+            LinkedIn
+          </button>
+          <button class="share-btn share-copy" onclick="copierLien()">
+            📋 Copier le lien
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ================================================================
+   DONNÉES — QUESTIONS & PROFILS
+   ================================================================ */
+const QUESTIONS = [
+  {
+    id:'q1', emoji:'📝',
+    texte:'Tu es en cours, le prof annonce un contrôle surprise noté. Ta réaction ?',
+    reponses:[
+      {texte:"Parfait, j'adore montrer que je suis prêt(e)", scores:{sasuke:3,tanjiro:2}},
+      {texte:"Ok, on verra bien — je travaille régulièrement", scores:{steve:3,eleven:2}},
+      {texte:"Je préfère les projets longs aux évaluations surprises", scores:{luffy:2,wednesday:2}},
+      {texte:"Je note la date pour tout réviser à fond avant", scores:{tanjiro:3,sasuke:1}},
+    ]
+  },
+  {
+    id:'q2', emoji:'🧠',
+    texte:"Pour toi, apprendre c'est surtout…",
+    reponses:[
+      {texte:"Comprendre la théorie en profondeur avant d'appliquer", scores:{sasuke:3,wednesday:3}},
+      {texte:"Faire, tester, rater, recommencer", scores:{eleven:3,steve:2}},
+      {texte:"Travailler en équipe sur des projets concrets", scores:{luffy:3,eleven:1}},
+      {texte:"Lire, chercher, explorer à mon rythme", scores:{wednesday:3,tanjiro:1}},
+    ]
+  },
+  {
+    id:'q3', emoji:'💼',
+    texte:"Tu dois choisir un stage. Tu préfères…",
+    reponses:[
+      {texte:"Une entreprise internationale avec un vrai projet", scores:{luffy:3,eleven:2}},
+      {texte:"Un labo de recherche ou une bibliothèque spécialisée", scores:{wednesday:3,tanjiro:2}},
+      {texte:"Une PME locale où tu touches à tout concrètement", scores:{steve:3,eleven:1}},
+      {texte:"Pas de stage — je préfère les concours et examens", scores:{sasuke:3}},
+    ]
+  },
+  {
+    id:'q4', emoji:'📍',
+    texte:"Quelle distance par rapport à chez toi ?",
+    reponses:[
+      {texte:"Je reste dans mon département, pas question de déménager", scores:{steve:2,wednesday:1}},
+      {texte:"Une heure max en transport, internat si besoin", scores:{sasuke:2,tanjiro:2}},
+      {texte:"France entière — je suis prêt(e) à partir", scores:{eleven:2,luffy:2}},
+      {texte:"International si possible, pourquoi pas l'étranger", scores:{luffy:3,eleven:1}},
+    ]
+  },
+  {
+    id:'q5', emoji:'🚀',
+    texte:"Dans 5 ans, tu te vois…",
+    reponses:[
+      {texte:"Dans une grande école ou une école d'élite", scores:{sasuke:3,tanjiro:1}},
+      {texte:"Ingénieur(e) ou expert(e) technique dans mon domaine", scores:{eleven:3,steve:2}},
+      {texte:"Chef(fe) de projet ou entrepreneur(e) à l'international", scores:{luffy:3,eleven:1}},
+      {texte:"Chercheur(se) ou expert(e) pointu(e) dans ma passion", scores:{wednesday:3,tanjiro:2}},
+    ]
+  },
+  {
+    id:'q6', emoji:'⚡',
+    texte:"Ton rapport au stress et à la compétition ?",
+    reponses:[
+      {texte:"La compétition me booste — je performe sous pression", scores:{sasuke:3,tanjiro:2}},
+      {texte:"Je préfère un rythme régulier sans sprint final", scores:{steve:3,wednesday:1}},
+      {texte:"Le stress me mobilise mais j'ai besoin de récupérer", scores:{eleven:2,luffy:2}},
+      {texte:"J'évite la compétition — je préfère collaborer", scores:{luffy:2,wednesday:2}},
+    ]
+  },
+  {
+    id:'q7', emoji:'📚',
+    texte:"Quelles matières t'attirent le plus ? (que tu les aies choisies ou pas encore !)",
+    reponses:[
+      {texte:"🔢 Maths, Sciences exactes — j'aime la rigueur et les démonstrations", scores:{sasuke:3,eleven:2,tanjiro:1}},
+      {texte:"💻 Techno, Informatique, Numérique, Électronique — je préfère la pratique", scores:{eleven:3,steve:2}},
+      {texte:"📊 Économie, Langues, Sciences humaines, Histoire — le monde m'intéresse", scores:{luffy:3,wednesday:2}},
+      {texte:"🌿 Sciences du vivant, Biologie, Santé — la nature et le corps humain", scores:{tanjiro:3,wednesday:1}},
+      {texte:"📚 Littérature, Philosophie, Arts — comprendre le monde en profondeur", scores:{wednesday:3,luffy:1}},
+    ]
+  },
+];
+
+const PROFILS = {
+  sasuke:{
+    nom:"Sasuke Uchiha", emoji:"🔥", serie:"Naruto (Netflix)",
+    slogan:"L'excellence ou rien",
+    formation:"CPGE", filiere:"CPGE",
+    desc:"Tu es taillé(e) pour la prépa. Compétiteur(rice) dans l'âme, tu transformes la pression en carburant. Les concours ne te font pas peur — ils te définissent. Ton objectif : intégrer une grande école et ne laisser personne te dépasser.",
+    color:"linear-gradient(135deg,#1a0a2e,#4a0e8f)"
+  },
+  eleven:{
+    nom:"Eleven", emoji:"⚡", serie:"Stranger Things (Netflix)",
+    slogan:"La puissance dans l'action",
+    formation:"BUT / École d'ingénieurs", filiere:"BUT",
+    desc:"Tu apprends en faisant. Autodidacte, curieux(se), tu as une puissance cachée qui s'exprime dans les projets concrets. Pas besoin de briller en amphi — tu brilles sur le terrain.",
+    color:"linear-gradient(135deg,#0a1a2e,#1a5276)"
+  },
+  steve:{
+    nom:"Steve Harrington", emoji:"🎸", serie:"Stranger Things (Netflix)",
+    slogan:"Solide, fiable, et meilleur qu'il n'y paraît",
+    formation:"BTS", filiere:"BTS",
+    desc:"Comme Steve avec sa guitare et son job de caissier-héros, tu n'es peut-être pas premier de la classe — mais tu es fiable, régulier(e) et tu finis toujours par t'en sortir. Le BTS est fait pour toi : concret, encadré, directement opérationnel.",
+    color:"linear-gradient(135deg,#1a1a0a,#4a3a00)"
+  },
+  luffy:{
+    nom:"Monkey D. Luffy", emoji:"🏴‍☠️", serie:"One Piece (Netflix)",
+    slogan:"Le monde est trop petit pour moi",
+    formation:"École de Commerce / BBA", filiere:"Ecole de Commerce",
+    desc:"Tu rêves grand, tu fédères les autres naturellement et tu vises l'international. Les écoles de commerce sont ton terrain : réseau, projets, stages à l'étranger, et une équipage à constituer.",
+    color:"linear-gradient(135deg,#1a0a0a,#7a1a00)"
+  },
+  wednesday:{
+    nom:"Wednesday Addams", emoji:"🖤", serie:"Wednesday (Netflix)",
+    slogan:"Je suis là pour comprendre, pas pour plaire",
+    formation:"Licence / Master / Recherche", filiere:"Licence",
+    desc:"Analytique, indépendant(e), tu creuses les sujets qui t'obsèdent sans te soucier des conventions. La licence te donne l'espace pour explorer à ton rythme. Le Master et la recherche t'attendent.",
+    color:"linear-gradient(135deg,#0a0a0a,#2d0a2d)"
+  },
+  tanjiro:{
+    nom:"Tanjiro Kamado", emoji:"🌊", serie:"Demon Slayer (Netflix)",
+    slogan:"Une vocation, une mission",
+    formation:"PASS / Paramédical", filiere:"PASS",
+    desc:"Tu as une vocation claire et tu es prêt(e) à tout pour y arriver. Travail obsessionnel, sacrifice assumé, objectif précis — comme Tanjiro qui s'entraîne sans relâche. Le PASS ou le paramédical est ta voie.",
+    color:"linear-gradient(135deg,#0a1a1a,#006a4a)"
+  }
+};
+
+/* ================================================================
+   ÉTAT
+   ================================================================ */
+let currentQ = 0;
+let scores = {sasuke:0,eleven:0,steve:0,luffy:0,wednesday:0,tanjiro:0};
+let profil = null;
+
+/* ================================================================
+   AFFICHAGE QUESTION
+   ================================================================ */
+function afficherQuestion(idx){
+  const q = QUESTIONS[idx];
+  const pct = Math.round((idx/QUESTIONS.length)*100);
+  document.getElementById('progressFill').style.width = pct+'%';
+  document.getElementById('progressLabel').textContent =
+    'Question '+(idx+1)+' / '+QUESTIONS.length;
+
+  const card = document.getElementById('questionCard');
+  card.innerHTML = `
+    <div class="q-num">Question ${idx+1} sur ${QUESTIONS.length}</div>
+    <span class="q-emoji">${q.emoji}</span>
+    <div class="q-texte">${q.texte}</div>
+    <div class="reponses">
+      ${q.reponses.map((r,i)=>`
+        <button class="rep-btn" onclick="choisir(${i})">
+          ${r.texte}
+        </button>
+      `).join('')}
+    </div>
+  `;
+  // Réanimation
+  card.style.animation = 'none';
+  card.offsetHeight; // reflow
+  card.style.animation = 'fadeIn .3s ease';
+}
+
+/* ================================================================
+   CHOIX D'UNE RÉPONSE
+   ================================================================ */
+function choisir(repIdx){
+  const q = QUESTIONS[currentQ];
+  const rep = q.reponses[repIdx];
+
+  // Mettre en évidence
+  document.querySelectorAll('.rep-btn').forEach((b,i)=>{
+    b.classList.toggle('selected', i===repIdx);
+    b.disabled = true;
+  });
+
+  // Scorer
+  for(const [profil,pts] of Object.entries(rep.scores)){
+    scores[profil] = (scores[profil]||0) + pts;
+  }
+
+  // Question suivante après 300ms
+  setTimeout(()=>{
+    currentQ++;
+    if(currentQ < QUESTIONS.length){
+      afficherQuestion(currentQ);
+    } else {
+      afficherResultat();
+    }
+  }, 350);
+}
+
+/* ================================================================
+   RÉSULTAT — redirige vers resultat.html (page partageable)
+   ================================================================ */
+function afficherResultat(){
+  // Trouver le profil gagnant
+  profil = Object.entries(scores)
+    .sort((a,b)=>b[1]-a[1])[0][0];
+
+  // Redirection vers la page résultat statique partageable
+  window.location.href = 'resultat.html?profil=' + encodeURIComponent(profil);
+}
+
+function afficherResultatInPage_UNUSED(){
+  profil = Object.entries(scores).sort((a,b)=>b[1]-a[1])[0][0];
+  const p = PROFILS[profil];
+  document.getElementById('progressWrap').style.display='none';
+  document.getElementById('questionWrap').style.display='none';
+  document.getElementById('resultWrap').style.display='block';
+
+  // Remplir le header
+  document.getElementById('resultHeader').style.background = p.color;
+  document.getElementById('resultHeader').innerHTML = `
+    <div style="font-size:.72rem;color:#aaa;text-transform:uppercase;
+      letter-spacing:.1em;margin-bottom:6px;">${p.serie}</div>
+    <span style="font-size:4rem;">${p.emoji}</span>
+    <div style="font-size:2rem;font-weight:700;color:#fff;margin:6px 0 4px;">${p.nom}</div>
+    <div style="font-size:1rem;color:#ff6b35;font-style:italic;">"${p.slogan}"</div>
+  `;
+
+  document.getElementById('resultFormationBadge').innerHTML =
+    `<span class="result-formation">🎓 ${p.formation}</span>`;
+  document.getElementById('resultDesc').textContent = p.desc;
+
+  // Charger formations
+  chargerFormations();
+}
+
+/* ================================================================
+   CHARGEMENT FORMATIONS VIA AJAX
+   ================================================================ */
+function chargerFormations(){
+  if(!profil) return;
+  const p = PROFILS[profil];
+  const dept = document.getElementById('deptInput').value.trim().toUpperCase();
+  const grid = document.getElementById('formationsGrid');
+  grid.innerHTML = '<div class="loading">⏳ Chargement des formations…</div>';
+
+  const url = 'orientation.php?filiere='
+    + encodeURIComponent(p.filiere)
+    + '&profil=' + encodeURIComponent(profil)
+    + (dept ? '&dept='+encodeURIComponent(dept) : '')
+    + '&format=json';
+
+  fetch(url)
+    .then(r=>r.json())
+    .then(data=>{
+      if(!data.formations || data.formations.length===0){
+        grid.innerHTML = '<div class="loading">Aucune formation trouvée — essaie sans filtre géographique.</div>';
+        return;
+      }
+      grid.innerHTML = data.formations.map(f=>{
+        const taux = f.taux_acces ? Math.round(f.taux_acces)+'%' : '—';
+        const ratio = f.ratio ? f.ratio+' cand./place' : '—';
+        const tauxCls = f.taux_acces
+          ? (f.taux_acces < 30 ? 'red' : (f.taux_acces > 60 ? 'green' : ''))
+          : '';
+        const internat = f.internat=='1' ? '🛏️ Internat' : '';
+        const apprent  = f.apprentissage=='1' ? '🔧 Alternance' : '';
+        return `
+          <div class="form-card">
+            <div class="nom">${f.nom_etablissement||'—'}</div>
+            <div class="lieu">📍 ${f.commune||'—'} — ${f.departement||'—'}</div>
+            <div style="font-size:.75rem;color:#aaa;margin-bottom:6px;">
+              ${f.specialite||f.filiere_agregee||''}
+            </div>
+            <div class="stats">
+              <span class="form-stat ${tauxCls}">Accès ${taux}</span>
+              <span class="form-stat">${ratio}</span>
+              ${internat?'<span class="form-stat">'+internat+'</span>':''}
+              ${apprent?'<span class="form-stat">'+apprent+'</span>':''}
+            </div>
+            <a class="form-link" href="formation.php?cod=${f.cod_aff_form}">
+              Voir la fiche →
+            </a>
+          </div>
+        `;
+      }).join('');
+    })
+    .catch(()=>{
+      grid.innerHTML = '<div class="loading">Erreur de chargement — <a href="parcoursup.php">explorer manuellement</a>.</div>';
+    });
+}
+
+/* ================================================================
+   PARTAGE
+   ================================================================ */
+function voirPageComplete(){
+  if(!profil) return;
+  const p = PROFILS[profil];
+  const dept = document.getElementById('deptInput').value.trim().toUpperCase();
+  let url = 'orientation.php?filiere='+encodeURIComponent(p.filiere)
+           +'&profil='+encodeURIComponent(profil);
+  if(dept) url += '&dept='+encodeURIComponent(dept);
+  window.location.href = url;
+}
+
+function partagerLinkedIn(){
+  if(!profil) return;
+  const p = PROFILS[profil];
+  const txt = encodeURIComponent(
+    `Je suis ${p.emoji} ${p.nom} (${p.serie}) — ma formation idéale : ${p.formation}. `+
+    `Découvre ton profil d'orientation sur Hors Kadre !`
+  );
+  window.open('https://www.linkedin.com/sharing/share-offsite/?url='+
+    encodeURIComponent(window.location.href)+'&summary='+txt,'_blank');
+}
+
+function copierLien(){
+  if(!profil) return;
+  const p = PROFILS[profil];
+  const txt = `Je suis ${p.emoji} ${p.nom} — ma formation idéale : ${p.formation}. `+
+    `Fais le test sur Hors Kadre : `+window.location.href;
+  navigator.clipboard.writeText(txt).then(()=>{
+    alert('Lien copié ! 🎉');
+  });
+}
+
+/* ================================================================
+   RECOMMENCER
+   ================================================================ */
+function recommencer(){
+  currentQ = 0;
+  scores = {sasuke:0,eleven:0,steve:0,luffy:0,wednesday:0,tanjiro:0};
+  profil = null;
+  document.getElementById('progressWrap').style.display='block';
+  document.getElementById('questionWrap').style.display='block';
+  document.getElementById('resultWrap').style.display='none';
+  document.getElementById('deptInput').value='';
+  afficherQuestion(0);
+}
+
+/* ================================================================
+   INIT
+   ================================================================ */
+afficherQuestion(0);
+</script>
+</body>
+</html>

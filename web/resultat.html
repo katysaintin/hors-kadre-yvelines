@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="page-title">Mon profil d'orientation — Hors Kadre</title>
+<meta name="description" id="meta-desc" content="Découvre ton profil d'orientation sur Hors Kadre">
+<!-- Open Graph pour partage réseaux sociaux -->
+<meta property="og:title" id="og-title" content="Mon profil d'orientation — Hors Kadre">
+<meta property="og:description" id="og-desc" content="Fais le test et découvre quel étudiant tu es !">
+<meta property="og:image" id="og-image" content="img/profils/eleven.jpg">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
+  --gold:#B8860B;--gray:#555;--border:#d9d1ca;--white:#fff;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Georgia,"Times New Roman",serif;
+  background:#0d0d0d;color:#fff;
+  min-height:100vh;line-height:1.6;}
+a{color:var(--terra);}
+
+/* HEADER */
+.site-header{background:rgba(255,255,255,.05);
+  border-bottom:2px solid var(--terra);
+  padding:12px 16px;text-align:center;}
+.site-header img{max-width:200px;width:40%;height:auto;
+  filter:brightness(0) invert(1);}
+.nav-links{margin-top:6px;font-size:.8rem;display:flex;
+  flex-wrap:wrap;justify-content:center;gap:6px 14px;}
+.nav-links a{color:#ccc;font-weight:600;}
+.nav-links a:hover{color:var(--terra);}
+
+/* CARTE RÉSULTAT */
+.result-page{max-width:680px;margin:0 auto;padding:24px 16px 60px;}
+
+.result-card{border-radius:20px;overflow:hidden;
+  border:2px solid rgba(255,255,255,.15);
+  box-shadow:0 20px 60px rgba(0,0,0,.5);}
+
+/* Header carte */
+.result-header{padding:36px 28px 28px;text-align:center;position:relative;}
+.header-serie{font-size:.72rem;color:rgba(255,255,255,.6);
+  text-transform:uppercase;letter-spacing:.15em;margin-bottom:8px;}
+.header-emoji{font-size:3.5rem;display:block;margin-bottom:10px;}
+.header-nom{font-size:2.2rem;font-weight:700;margin-bottom:6px;}
+.header-slogan{font-size:1rem;font-style:italic;
+  opacity:.85;margin-bottom:16px;}
+.header-formation{display:inline-block;
+  background:rgba(255,255,255,.15);
+  border:1px solid rgba(255,255,255,.3);
+  border-radius:20px;padding:6px 20px;
+  font-size:.88rem;font-weight:700;}
+
+/* Photo personnage */
+.perso-img{width:200px;height:200px;border-radius:50%;
+  object-fit:cover;border:4px solid rgba(255,255,255,.4);
+  margin:0 auto 20px;display:block;
+  box-shadow:0 12px 40px rgba(0,0,0,.6),0 0 0 6px rgba(255,255,255,.08);}
+.perso-img-placeholder{width:200px;height:200px;border-radius:50%;
+  background:rgba(255,255,255,.1);
+  border:3px dashed rgba(255,255,255,.3);
+  margin:0 auto 16px;display:flex;
+  align-items:center;justify-content:center;
+  font-size:4rem;}
+
+/* Corps carte */
+.result-body{background:rgba(0,0,0,.3);
+  backdrop-filter:blur(10px);padding:24px 28px;}
+
+/* Description horoscope */
+.horoscope{margin-bottom:20px;}
+.horoscope h3{font-size:.75rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;
+  color:rgba(255,255,255,.5);margin-bottom:10px;}
+.horoscope p{font-size:.92rem;line-height:1.9;color:#e0e0e0;}
+
+/* Superpouvoirs */
+.superpowers{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:8px;margin:16px 0;}
+.power{background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;padding:10px 12px;text-align:center;}
+.power .icon{font-size:1.4rem;margin-bottom:4px;}
+.power .label{font-size:.75rem;color:rgba(255,255,255,.8);line-height:1.4;}
+
+/* Contraintes */
+.contraintes{background:rgba(255,255,255,.04);
+  border-radius:10px;padding:12px 14px;
+  margin:14px 0;font-size:.85rem;color:#bbb;line-height:1.7;}
+.contraintes strong{color:#fff;}
+
+/* Boutons action */
+.actions{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
+.btn-main{display:block;padding:14px 20px;
+  background:var(--terra);color:#fff;
+  border-radius:12px;font-family:Georgia,serif;
+  font-size:.95rem;font-weight:700;text-align:center;
+  text-decoration:none;cursor:pointer;border:none;}
+.btn-main:hover{background:#a8452a;color:#fff;text-decoration:none;}
+.btn-ghost{display:block;padding:12px 20px;
+  background:rgba(255,255,255,.08);color:#ddd;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:12px;font-family:Georgia,serif;
+  font-size:.88rem;font-weight:600;text-align:center;
+  text-decoration:none;cursor:pointer;}
+.btn-ghost:hover{background:rgba(255,255,255,.15);color:#fff;text-decoration:none;}
+
+/* PARTAGE */
+.share-section{margin-top:20px;padding-top:16px;
+  border-top:1px solid rgba(255,255,255,.1);text-align:center;}
+.share-title{font-size:.78rem;color:rgba(255,255,255,.5);
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.share-btn{display:inline-flex;align-items:center;gap:6px;
+  padding:9px 18px;border-radius:10px;font-size:.83rem;
+  font-weight:700;cursor:pointer;border:none;font-family:Georgia,serif;}
+.btn-insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;}
+.btn-fb{background:#1877f2;color:#fff;}
+.btn-tiktok{background:#010101;color:#fff;border:1px solid #333;}
+.btn-linkedin{background:#0077b5;color:#fff;}
+.btn-copy{background:rgba(255,255,255,.12);color:#ddd;border:1px solid rgba(255,255,255,.2);}
+.share-feedback{font-size:.75rem;color:var(--terra);
+  margin-top:8px;height:18px;}
+
+/* REFAIRE */
+.refaire{text-align:center;margin-top:14px;
+  font-size:.82rem;color:rgba(255,255,255,.4);}
+.refaire a{color:rgba(255,255,255,.6);}
+
+/* NOT FOUND */
+.not-found{text-align:center;padding:60px 20px;color:#888;}
+
+/* SHARE CARD — la carte qui sera capturée */
+.share-card{
+  width:400px;max-width:100%;margin:0 auto;
+  border-radius:20px;overflow:hidden;
+  position:fixed;left:-9999px;top:0;
+  font-family:Georgia,"Times New Roman",serif;
+}
+.share-card-inner{
+  padding:32px 28px;text-align:center;
+  color:#fff;
+}
+.share-card .sc-site{
+  font-size:.75rem;letter-spacing:.15em;
+  text-transform:uppercase;opacity:.6;
+  margin-bottom:16px;
+}
+.share-card .sc-emoji{font-size:3rem;margin-bottom:10px;display:block;}
+.share-card .sc-serie{font-size:.7rem;opacity:.6;
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;}
+.share-card .sc-nom{font-size:1.8rem;font-weight:700;margin-bottom:6px;}
+.share-card .sc-slogan{font-size:.9rem;font-style:italic;
+  opacity:.85;margin-bottom:14px;}
+.share-card .sc-formation{
+  display:inline-block;
+  background:rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.4);
+  border-radius:20px;padding:6px 20px;
+  font-size:.85rem;font-weight:700;
+  margin-bottom:16px;
+}
+.share-card .sc-url{
+  font-size:.72rem;opacity:.5;
+  margin-top:12px;letter-spacing:.05em;
+}
+.btn-download{
+  display:flex;align-items:center;justify-content:center;
+  gap:8px;padding:13px 20px;
+  background:linear-gradient(135deg,#ff6b35,#9b59b6);
+  color:#fff;border-radius:12px;
+  font-family:Georgia,serif;font-size:.92rem;font-weight:700;
+  cursor:pointer;border:none;width:100%;
+  margin-bottom:8px;
+  transition:opacity .2s;
+}
+.btn-download:hover{opacity:.85;}
+.btn-download-hint{
+  font-size:.72rem;color:rgba(255,255,255,.4);
+  text-align:center;margin-bottom:14px;
+}
+
+@media(max-width:500px){
+  .result-header,.result-body{padding:20px 16px;}
+  .header-nom{font-size:1.7rem;}
+  .actions{gap:8px;}
+  .share-btns{gap:8px;}
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="nav-links">
+    <a href="index.php">← Accueil</a>
+    <a href="orientation_test.html">🎯 Refaire le test</a>
+    <a href="orientation.php">Recherche formations</a>
+    <a href="specialitesfilieres.html">Spécialités</a>
+  </div>
+</header>
+
+<div class="result-page">
+  <div id="result-container"></div>
+</div>
+
+<script>
+/* ================================================================
+   PROFILS — descriptions horoscope complètes
+   ================================================================ */
+const PROFILS = {
+
+  sasuke: {
+    nom: "Sasuke Uchiha",
+    emoji: "🔥",
+    serie: "Naruto (Netflix)",
+    slogan: "L'excellence ou rien",
+    formation: "CPGE — Grandes Écoles",
+    filiere: "CPGE",
+    color: "linear-gradient(135deg,#1a0a2e 0%,#4a0e8f 100%)",
+    img: "img/profils/sasuke.jpg",
+    horoscope: `Comme Sasuke, tu ne fais pas les choses à moitié. Quand tu décides quelque chose, c'est à fond — ou pas du tout. La compétition ne te fait pas peur : elle te réveille. Tu es capable d'un travail acharné que peu de tes camarades comprennent vraiment, et tu gardes un objectif en tête même quand tout le monde lâche autour de toi.
+
+Tu n'as pas besoin qu'on te tienne la main. Tu préfères les systèmes avec des règles claires — où le mérite s'évalue sur des critères objectifs. Les concours ? C'est ton terrain. Tu sais que la pression révèle ce qu'on vaut vraiment, et tu es prêt(e) à le prouver.`,
+    superpowers: [
+      {icon:"⚔️", label:"Travail acharné sous pression"},
+      {icon:"🎯", label:"Vision long terme claire"},
+      {icon:"🧠", label:"Rigueur analytique"},
+      {icon:"🏆", label:"Goût de l'excellence"},
+    ],
+    contrainte: `<strong>Ce qu'il faut savoir :</strong> la prépa c'est intense — 35h de cours par semaine, des khôlles tous les jours, des concours en fin de 2ème année. Mais comme Sasuke qui s'entraîne même la nuit, tu es fait(e) pour ça. Et 85% des élèves de CPGE intègrent une école — le jeu en vaut la chandelle.`,
+    lien_formations: "orientation.php?filiere=CPGE&profil=sasuke",
+    lien_info: "cpge_analyse.html",
+    lien_info_label: "📖 Tout savoir sur les Grandes Écoles",
+  },
+
+  eleven: {
+    nom: "Eleven",
+    emoji: "⚡",
+    serie: "Stranger Things (Netflix)",
+    slogan: "La puissance dans l'action",
+    formation: "BUT / École d'ingénieurs",
+    filiere: "BUT",
+    color: "linear-gradient(135deg,#0a1a2e 0%,#1a5276 100%)",
+    img: "img/profils/eleven.jpg",
+    horoscope: `Eleven n'a pas eu de manuel. Elle a tout appris en faisant — en testant, en ratant, en recommençant. Et c'est exactement comme ça que tu fonctionnes. Tu n'as pas besoin qu'on t'explique pendant deux heures : donne-toi un problème à résoudre et tu trouves. Ton intelligence est pratique, concrète, redoutablement efficace.
+
+Tu n'es pas du genre à briller en amphi de 500 personnes. Mais en projet, en atelier, en stage — tu es dans ton élément. Tu comptes sur ton équipe et ton équipe compte sur toi. C'est ça la vraie force d'Eleven : pas la solitude du génie, mais la puissance du lien.`,
+    superpowers: [
+      {icon:"🛠️", label:"Intelligence pratique"},
+      {icon:"🔬", label:"Apprend en faisant"},
+      {icon:"🤝", label:"Esprit d'équipe"},
+      {icon:"💡", label:"Créativité technique"},
+    ],
+    contrainte: `<strong>Ce qu'il faut savoir :</strong> le BUT c'est 3 ans en IUT avec des projets, des stages, du concret. C'est sélectif — mais pas inaccessible. Et contrairement à la prépa, tu construis quelque chose de tangible dès la première année. Comme Eleven qui apprend à contrôler ses pouvoirs progressivement.`,
+    lien_formations: "orientation.php?filiere=BUT&profil=eleven",
+    lien_info: "typeformation.html#but",
+    lien_info_label: "📖 Comprendre le BUT",
+  },
+
+  steve: {
+    nom: "Steve Harrington",
+    emoji: "🎸",
+    serie: "Stranger Things (Netflix)",
+    slogan: "Solide, fiable, et meilleur qu'il n'y paraît",
+    formation: "BTS",
+    filiere: "BTS",
+    color: "linear-gradient(135deg,#1a1a0a 0%,#3a2a00 100%)",
+    img: "img/profils/steve.jpg",
+    horoscope: `Au début de Stranger Things, Steve fait le malin. Et puis on le voit évoluer — devenir quelqu'un de fiable, de courageux, celui sur qui tout le monde compte vraiment. C'est toi. Tu n'es pas forcément celui qui brille le plus en classe, mais tu es régulier, sérieux, et tu finis toujours par t'en sortir — souvent mieux que prévu.
+
+Tu as besoin d'un cadre clair et d'un objectif concret. La théorie pure te pèse — mais dès que c'est appliqué, que tu vois à quoi ça sert, tu es efficace. Steve avec sa guitare et son job : pas le plus glamour en apparence, mais il a un vrai talent et une vraie valeur.`,
+    superpowers: [
+      {icon:"💪", label:"Régularité et fiabilité"},
+      {icon:"🎯", label:"Orientation résultat"},
+      {icon:"🤜", label:"Résistance et persévérance"},
+      {icon:"🔧", label:"Sens du concret"},
+    ],
+    contrainte: `<strong>Ce qu'il faut savoir :</strong> le BTS c'est 2 ans, encadré, directement opérationnel. Contrôle continu toute l'année — pas de grosse pression sur un seul examen final. Et à la sortie, tu es directement employable dans un vrai métier. Comme Steve qui devient le héros discret qu'on n'attendait pas.`,
+    lien_formations: "orientation.php?filiere=BTS&profil=steve",
+    lien_info: "typeformation.html#bts",
+    lien_info_label: "📖 Comprendre le BTS",
+  },
+
+  luffy: {
+    nom: "Monkey D. Luffy",
+    emoji: "🏴‍☠️",
+    serie: "One Piece (Netflix)",
+    slogan: "Le monde est trop petit pour moi",
+    formation: "École de Commerce / BBA",
+    filiere: "Ecole de Commerce",
+    color: "linear-gradient(135deg,#1a0a0a 0%,#7a1a00 100%)",
+    img: "img/profils/luffy.jpg",
+    horoscope: `Luffy ne fait pas les choses comme tout le monde. Il rêve grand — capitaine des pirates, roi des mers — et il constitue son équipage au fil des rencontres. Comme lui, tu as une vision, tu fédères naturellement autour de toi, et tu t'adaptes à tout sans perdre le fil de ton objectif.
+
+Tu n'aimes pas rester en place. Les stages à l'étranger, les projets internationaux, les rencontres avec des gens de partout — c'est ton carburant. Tu penses en réseau, en opportunités, en connexions. Les écoles de commerce sont faites pour toi : elles ont compris que les leaders se reconnaissent à leur énergie, pas à leurs notes.`,
+    superpowers: [
+      {icon:"🌍", label:"Vision internationale"},
+      {icon:"🤝", label:"Fédérateur naturel"},
+      {icon:"🚀", label:"Pensée entrepreneuriale"},
+      {icon:"🔄", label:"Adaptabilité"},
+    ],
+    contrainte: `<strong>Ce qu'il faut savoir :</strong> les écoles de commerce demandent souvent de bonnes notes en Maths et une vraie personnalité. Les entretiens comptent autant que les concours. Luffy n'a pas gagné par la force brute — il a gagné par son charisme et sa capacité à embarquer les autres dans son aventure.`,
+    lien_formations: "orientation.php?filiere=Ecole+de+Commerce&profil=luffy",
+    lien_info: "typeformation.html#commerce",
+    lien_info_label: "📖 Comprendre les Écoles de Commerce",
+  },
+
+  wednesday: {
+    nom: "Wednesday Addams",
+    emoji: "🖤",
+    serie: "Wednesday (Netflix)",
+    slogan: "Je suis là pour comprendre, pas pour plaire",
+    formation: "Licence / Master / Recherche",
+    filiere: "Licence",
+    color: "linear-gradient(135deg,#0a0a0a 0%,#2d0a2d 100%)",
+    img: "img/profils/wednesday.jpg",
+    horoscope: `Wednesday ne suit pas les règles des autres. Elle observe, analyse, creuse — jusqu'à comprendre des choses que personne d'autre n'a vues. C'est exactement toi. Tu n'as pas besoin qu'on t'applaudisse. Tu as besoin d'un sujet qui t'obsède, de la liberté de le creuser, et d'un espace où ton intelligence non conventionnelle est une force.
+
+Tu n'es pas fait(e) pour les formations ultra-encadrées où tout est balisé à l'avance. La licence te donne ce dont tu as besoin : la liberté de choisir ta direction, d'aller en profondeur, de construire ton propre chemin. Et comme Wednesday qui écrit son roman dans sa chambre — tu crées quelque chose d'unique.`,
+    superpowers: [
+      {icon:"🔍", label:"Analyse en profondeur"},
+      {icon:"💭", label:"Pensée indépendante"},
+      {icon:"📚", label:"Curiosité intellectuelle"},
+      {icon:"🎯", label:"Expertise pointue"},
+    ],
+    contrainte: `<strong>Ce qu'il faut savoir :</strong> la licence demande de l'autonomie — personne ne viendra te chercher si tu déroches. Mais si tu sais ce qui t'intéresse, c'est la formation qui te donnera la plus grande liberté. Et comme Wednesday, ton originalité est ta plus grande force — pas un défaut à corriger.`,
+    lien_formations: "orientation.php?filiere=Licence&profil=wednesday",
+    lien_info: "typeformation.html#licence",
+    lien_info_label: "📖 Comprendre la Licence",
+  },
+
+  tanjiro: {
+    nom: "Tanjiro Kamado",
+    emoji: "🌊",
+    serie: "Demon Slayer (Netflix)",
+    slogan: "Une vocation, une mission",
+    formation: "PASS / Paramédical",
+    filiere: "PASS",
+    color: "linear-gradient(135deg,#0a1a1a 0%,#006a4a 100%)",
+    img: "img/profils/tanjiro.jpg",
+    horoscope: `Tanjiro sait exactement pourquoi il se bat. Sa vocation est claire — protéger, soigner, servir — et cette clarté lui donne une force que les autres n'ont pas. Il s'entraîne sans relâche, pas pour la gloire, mais parce que sa mission le dépasse. C'est toi.
+
+Tu es venu(e) vers la santé ou le paramédical parce que quelque chose en toi le sait depuis longtemps. Ce n'est pas un choix par défaut — c'est une direction. Et cette certitude, même si le chemin est difficile, est ta plus grande ressource. Tanjiro n'abandonne jamais — pas parce qu'il est le plus fort, mais parce qu'il sait pour qui il se bat.`,
+    superpowers: [
+      {icon:"🏥", label:"Vocation profonde"},
+      {icon:"🧘", label:"Résilience exceptionnelle"},
+      {icon:"💙", label:"Empathie et soin"},
+      {icon:"🎯", label:"Objectif cristallisé"},
+    ],
+    contrainte: `<strong>Ce qu'il faut savoir :</strong> le PASS c'est exigeant — très sélectif, travail obsessionnel, PC+SVT indispensables. Mais comme Tanjiro qui s'entraîne jusqu'à l'aube, tu es capable d'un niveau d'engagement que peu de gens atteignent. Et la récompense — soigner, accompagner — est à la hauteur de l'effort.`,
+    lien_formations: "orientation.php?filiere=PASS&profil=tanjiro",
+    lien_info: "typeformation.html#pass",
+    lien_info_label: "📖 Comprendre le PASS",
+  },
+};
+
+/* ================================================================
+   LECTURE DES PARAMS GET
+   ================================================================ */
+function getParam(name) {
+  const url = new URLSearchParams(window.location.search);
+  return url.get(name) || '';
+}
+
+function render() {
+  const profilId = getParam('profil');
+  const p = PROFILS[profilId];
+  const container = document.getElementById('result-container');
+
+  if (!p) {
+    container.innerHTML = `
+      <div class="not-found">
+        <div style="font-size:3rem;margin-bottom:14px;">🤔</div>
+        <p style="margin-bottom:16px;">Profil introuvable…</p>
+        <a href="orientation_test.html" style="color:var(--terra);font-weight:700;">
+          → Faire le test d'orientation
+        </a>
+      </div>`;
+    return;
+  }
+
+  // Meta tags pour partage — querySelector plus robuste
+  const titleEl = document.getElementById('page-title');
+  if (titleEl) titleEl.textContent = `Je suis ${p.nom} — Mon profil d'orientation Hors Kadre`;
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute('content', `Je suis ${p.emoji} ${p.nom} — ${p.slogan}`);
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.setAttribute('content', `Ma formation idéale : ${p.formation}. Fais le test !`);
+  const ogImg = document.querySelector('meta[property="og:image"]');
+  if (ogImg) ogImg.setAttribute('content', p.img);
+
+  // Construire la carte
+  const imgHtml = `
+    <img src="${p.img}" alt="${p.nom}" class="perso-img"
+         onerror="this.outerHTML='<div class=\\'perso-img-placeholder\\'>${p.emoji}</div>'">`;
+
+  const powersHtml = p.superpowers.map(pw => `
+    <div class="power">
+      <div class="icon">${pw.icon}</div>
+      <div class="label">${pw.label}</div>
+    </div>`).join('');
+
+  container.innerHTML = `
+    <div class="result-card">
+      <div class="result-header" style="background:${p.color}">
+        <div class="header-serie">${p.serie}</div>
+        ${imgHtml}
+        <div class="header-nom">${p.emoji} ${p.nom}</div>
+        <div class="header-slogan">"${p.slogan}"</div>
+        <div class="header-formation">🎓 ${p.formation}</div>
+      </div>
+
+      <div class="result-body">
+
+        <div class="horoscope">
+          <h3>✨ Ton profil</h3>
+          <p>${p.horoscope.replace(/\n\n/g,'</p><p style="margin-top:12px;">')}</p>
+        </div>
+
+        <div class="superpowers">${powersHtml}</div>
+
+        <div class="contraintes">
+          ${p.contrainte}
+        </div>
+
+        <div class="actions">
+          <a href="${p.lien_formations}" class="btn-main">
+            🎓 Voir les formations qui correspondent à mon profil →
+          </a>
+          <a href="${p.lien_info}" class="btn-ghost">
+            ${p.lien_info_label}
+          </a>
+          <a href="specialitesfilieres.html" class="btn-ghost">
+            📚 Quelle spécialité choisir ?
+          </a>
+        </div>
+
+        <div class="share-section">
+          <div class="share-title">🔥 Partage ton résultat !</div>
+
+          <!-- Bouton principal : enregistrer l'image -->
+          <button class="btn-download" onclick="telechargerImage()">
+            📸 Enregistrer mon résultat dans mes photos
+          </button>
+          <div class="btn-download-hint" id="download-hint">
+            Image carrée prête pour Instagram, TikTok, FB — sans compte
+          </div>
+
+          <!-- 4 boutons réseaux sociaux -->
+          <div class="share-btns">
+            <button class="share-btn btn-insta" onclick="partagerInsta()">
+              📷 Instagram
+            </button>
+            <button class="share-btn btn-fb" onclick="partagerFB()">
+              👥 Facebook
+            </button>
+            <button class="share-btn btn-tiktok" onclick="partagerTikTok()">
+              🎵 TikTok
+            </button>
+            <button class="share-btn btn-linkedin" onclick="partagerLinkedIn()">
+              💼 LinkedIn
+            </button>
+            <button class="share-btn btn-copy" onclick="copierLien()">
+              📋 Copier le lien
+            </button>
+          </div>
+          <div class="share-feedback" id="share-feedback"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="refaire">
+      Ce n'est pas ton profil ? <a href="orientation_test.html">→ Refaire le test</a>
+    </div>
+  `;
+}
+
+/* ================================================================
+   PARTAGE
+   ================================================================ */
+function _getShareText() {
+  const profilId = getParam('profil');
+  const p = PROFILS[profilId];
+  if (!p) return '';
+  return `Je suis ${p.emoji} ${p.nom} — "${p.slogan}"\nMa formation idéale : ${p.formation}\nFais le test : ${window.location.origin}/orientation_test.html\n#HorsKadre #Parcoursup #Orientation`;
+}
+
+function partagerInsta() {
+  /* Instagram n'a pas d'API web — on enregistre l'image et on explique */
+  telechargerImage('insta');
+}
+
+function partagerFB() {
+  const url = encodeURIComponent(window.location.href);
+  window.open('https://www.facebook.com/sharer/sharer.php?u='+url, '_blank');
+}
+
+function partagerTikTok() {
+  /* TikTok n'a pas d'API web — on enregistre l'image */
+  telechargerImage('tiktok');
+}
+
+function partagerLinkedIn() {
+  const url = encodeURIComponent(window.location.href);
+  window.open('https://www.linkedin.com/sharing/share-offsite/?url='+url, '_blank');
+}
+
+function copierLien() {
+  const profilId = getParam('profil');
+  const p = PROFILS[profilId];
+  if (!p) return;
+  const texte = _getShareText();
+  navigator.clipboard.writeText(texte).then(() => {
+    _feedback('✅ Copié ! Colle-le où tu veux 🎉');
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = texte; document.body.appendChild(ta);
+    ta.select(); document.execCommand('copy');
+    document.body.removeChild(ta);
+    _feedback('✅ Copié !');
+  });
+}
+
+function _feedback(msg) {
+  const fb = document.getElementById('share-feedback');
+  if (fb) { fb.textContent = msg; setTimeout(()=>fb.textContent='', 4000); }
+}
+
+/* ================================================================
+   TÉLÉCHARGEMENT IMAGE — html2canvas
+   ================================================================ */
+let _shareTarget = 'default';
+function telechargerImage(target='default') {
+  _shareTarget = target;
+  const profilId = getParam('profil');
+  const p = PROFILS[profilId];
+  if (!p) return;
+
+  const btn = document.querySelector('.btn-download');
+  const oldText = btn.innerHTML;
+  btn.innerHTML = '⏳ Génération en cours…';
+  btn.disabled = true;
+
+  /* ---------------------------------------------------------------
+   * On dessine la carte directement sur Canvas 2D
+   * L'image de l'avatar est déjà chargée dans le DOM — on la réutilise
+   * --------------------------------------------------------------- */
+  const W = 500, H = 700;
+  const cv = document.createElement('canvas');
+  cv.width = W; cv.height = H;
+  const ctx = cv.getContext('2d');
+
+  // Fond dégradé selon le profil
+  var colors = {
+    sasuke:  ['#1a0a2e','#4a0e8f'],
+    eleven:  ['#0a1a2e','#1a5276'],
+    steve:   ['#1a1a0a','#3a2a00'],
+    luffy:   ['#1a0a0a','#7a1a00'],
+    wednesday:['#0a0a0a','#2d0a2d'],
+    tanjiro: ['#0a1a1a','#006a4a'],
+  };
+  var c = colors[profilId] || ['#1a0a2e','#0d0d0d'];
+  var grd = ctx.createLinearGradient(0, 0, W, H);
+  grd.addColorStop(0, c[0]);
+  grd.addColorStop(1, c[1]);
+  ctx.fillStyle = grd;
+  ctx.roundRect(0, 0, W, H, 28);
+  ctx.fill();
+
+  // Série en haut
+  ctx.fillStyle = 'rgba(255,255,255,0.55)';
+  ctx.font = '500 22px Georgia';
+  ctx.textAlign = 'center';
+  ctx.letterSpacing = '3px';
+  ctx.fillText(p.serie.toUpperCase(), W/2, 54);
+
+  // Avatar — récupérer l'image déjà chargée dans le DOM
+  var imgEl = document.querySelector('.perso-img');
+  var drawRest = function() {
+    // Cercle avatar centré — grand
+    var cx = W/2, cy = 240, r = 170;
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI*2);
+    ctx.clip();
+    if (imgEl && imgEl.complete && imgEl.naturalWidth > 0) {
+      ctx.drawImage(imgEl, cx-r, cy-r, r*2, r*2);
+    }
+    ctx.restore();
+    // Bordure cercle
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI*2);
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    // Halo extérieur
+    ctx.beginPath();
+    ctx.arc(cx, cy, r+10, 0, Math.PI*2);
+    ctx.strokeStyle = 'rgba(255,255,255,0.10)';
+    ctx.lineWidth = 8;
+    ctx.stroke();
+
+    // Nom
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 52px Georgia';
+    ctx.textAlign = 'center';
+    ctx.letterSpacing = '0px';
+    ctx.fillText(p.emoji + ' ' + p.nom, W/2, 454);
+
+    // Slogan
+    ctx.fillStyle = 'rgba(255,255,255,0.82)';
+    ctx.font = 'italic 26px Georgia';
+    ctx.fillText('"' + p.slogan + '"', W/2, 500);
+
+    // Badge formation
+    var badgeY = 556, badgeW = 340, badgeH = 54;
+    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.roundRect(W/2 - badgeW/2, badgeY, badgeW, badgeH, 27);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 24px Georgia';
+    ctx.fillText('🎓 ' + p.formation, W/2, badgeY + 34);
+
+    // URL en bas
+    ctx.fillStyle = 'rgba(255,255,255,0.35)';
+    ctx.font = '18px Georgia';
+    ctx.fillText('katy.ho.free.fr/orientation_test.html', W/2, H - 28);
+
+    // Télécharger
+    var link = document.createElement('a');
+    link.download = 'mon-profil-' + profilId + '-horskadre.jpg';
+    link.href = cv.toDataURL('image/jpeg', 0.93);
+    link.click();
+
+    var msgs = {
+      insta:   '✅ Enregistrée ! Ouvre Instagram → + → Depuis la galerie 🎉',
+      tiktok:  '✅ Enregistrée ! Ouvre TikTok → + → Importer 🎵',
+      default: '✅ Image enregistrée ! 🎉'
+    };
+    btn.innerHTML = msgs[_shareTarget] || msgs.default;
+    btn.disabled = false;
+    _feedback(msgs[_shareTarget] || msgs.default);
+    setTimeout(function(){ btn.innerHTML = oldText; }, 5000);
+  };
+
+  // Si l'image est déjà chargée on dessine, sinon on attend
+  if (imgEl && imgEl.complete && imgEl.naturalWidth > 0) {
+    setTimeout(drawRest, 50);
+  } else if (imgEl) {
+    imgEl.onload = drawRest;
+  } else {
+    // Pas d'image — dessiner quand même sans avatar
+    setTimeout(drawRest, 50);
+  }
+}
+
+/* ================================================================
+   INIT
+   ================================================================ */
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    render();
+  } catch(e) {
+    console.error('Erreur render:', e);
+    const c = document.getElementById('result-container');
+    if (c) c.innerHTML = '<div class="not-found" style="padding:40px;text-align:center;">⚠️ Erreur JS : ' + e.message + '<br><br><a href="orientation_test.html" style="color:#ff6b35;font-weight:700;">→ Refaire le test</a></div>';
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spécialités & Filières — Hors Kadre</title>
+<style>
+:root{--navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
+  --gold:#B8860B;--gray:#555;--border:#d9d1ca;--white:#fff;--green:#2d8a4e;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Georgia,"Times New Roman",serif;background:#fcfaf8;
+  color:var(--navy);line-height:1.7;}
+a{color:var(--terra);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.site-header{background:var(--offwhite);border-bottom:3px solid var(--terra);
+  padding:16px;text-align:center;}
+.site-header img{max-width:320px;width:50%;height:auto;}
+.nav-links{margin-top:8px;font-size:.82rem;display:flex;
+  flex-wrap:wrap;justify-content:center;gap:6px 14px;}
+.nav-links a{color:var(--navy);font-weight:600;}
+.nav-links a:hover{color:var(--terra);}
+.hero{background:var(--navy);color:#fff;
+  padding:36px 16px 28px;text-align:center;}
+.hero h1{font-size:clamp(1.3rem,4vw,1.8rem);margin-bottom:8px;}
+.hero p{font-size:.9rem;color:#c5d3e8;max-width:560px;
+  margin:0 auto;line-height:1.7;}
+.container{max-width:900px;margin:0 auto;padding:28px 16px 60px;}
+
+/* ONGLETS */
+.tabs-nav{display:flex;flex-wrap:wrap;gap:8px;
+  padding-bottom:12px;margin-bottom:20px;}
+.tab-btn{flex-shrink:0;padding:8px 14px;font-family:Georgia,serif;
+  font-size:.82rem;font-weight:600;color:var(--navy);
+  background:var(--white);border:2px solid var(--border);
+  border-radius:20px;cursor:pointer;white-space:nowrap;}
+.tab-btn:hover{border-color:var(--terra);color:var(--terra);}
+.tab-btn.active{background:var(--terra);color:#fff;border-color:var(--terra);}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+
+/* BLOCS */
+.bloc{background:var(--offwhite);border:1px solid var(--border);
+  border-radius:12px;padding:18px 20px;margin-bottom:14px;}
+.bloc h2{font-size:.92rem;font-weight:700;color:var(--terra);
+  margin-bottom:12px;padding-bottom:8px;
+  border-bottom:1px solid var(--border);}
+
+/* SPÉCIALITÉ CARD */
+.spe-grid{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;}
+.spe-card{background:var(--white);border:1px solid var(--border);
+  border-radius:10px;padding:14px 16px;}
+.spe-acro{font-size:1rem;font-weight:700;color:var(--terra);margin-bottom:4px;}
+.spe-nom{font-size:.85rem;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.spe-desc{font-size:.8rem;color:var(--gray);line-height:1.6;}
+.spe-ex{font-size:.76rem;color:var(--terra);margin-top:5px;font-style:italic;}
+.spe-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;}
+.spe-tag{padding:2px 8px;border-radius:8px;font-size:.68rem;font-weight:700;}
+.tag-s{background:#dbeafe;color:#1e40af;}
+.tag-eco{background:#fef3c7;color:#92400e;}
+.tag-l{background:#ede9fe;color:#4c1d95;}
+.tag-pro{background:#d1fae5;color:#065f46;}
+.tag-tous{background:#f3f4f6;color:#374151;}
+
+/* FILIÈRE CARD */
+.filiere-card{background:var(--white);border:1px solid var(--border);
+  border-radius:10px;padding:14px 16px;margin-bottom:10px;
+  border-left:4px solid var(--terra);}
+.filiere-card h3{font-size:.92rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.filiere-card p{font-size:.82rem;color:var(--gray);line-height:1.6;margin-bottom:6px;}
+.filiere-card .spes{font-size:.78rem;color:var(--terra);font-weight:600;}
+
+/* ENCARTS */
+.encart{border-radius:8px;padding:10px 14px;margin:10px 0;
+  font-size:.83rem;line-height:1.7;}
+.encart-info{background:#e8f4fd;border:1px solid #b3d9f5;border-left:4px solid var(--navy);}
+.encart-cpge{background:#fef3c7;border:1px solid #fcd34d;border-left:4px solid var(--gold);}
+.encart-tip{background:#fff8f0;border:1px solid #f5d0a9;border-left:4px solid var(--terra);}
+.encart strong{color:var(--navy);}
+
+/* LIEN CARD */
+.lien-grid{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:14px;}
+.lien-card{background:var(--navy);color:#fff;border-radius:10px;
+  padding:14px 16px;text-decoration:none;display:block;}
+.lien-card:hover{opacity:.85;text-decoration:none;}
+.lien-card .lc-icon{font-size:1.4rem;margin-bottom:6px;}
+.lien-card .lc-titre{font-size:.88rem;font-weight:700;margin-bottom:3px;}
+.lien-card .lc-desc{font-size:.75rem;opacity:.8;line-height:1.5;}
+
+footer{text-align:center;color:var(--gray);font-size:.78rem;
+  margin-top:28px;padding-top:14px;
+  border-top:1px solid var(--border);line-height:1.9;}
+footer a{color:var(--terra);}
+@media(max-width:600px){.spe-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="banniere.png" alt="Hors Kadre">
+  <div class="nav-links">
+    <a href="index.php">← Accueil</a>
+    <a href="orientation_test.html">🎯 Test orientation</a>
+    <a href="typeformation.html">Types de formation</a>
+    <a href="acronymes.html">📖 Lexique</a>
+    <a href="doublettes.php">Spécialités & Formations</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Spécialités & Filières lycée</h1>
+  <p>Tu es en Seconde ou Première ? Tu choisis tes spécialités ?
+     Ce guide t'aide à comprendre ce que chaque matière ouvre comme portes.</p>
+</div>
+
+<div class="container">
+
+  <div class="tabs-nav">
+    <button class="tab-btn active" onclick="showTab('generales',this)">🎓 Bac Général — Spécialités</button>
+    <button class="tab-btn" onclick="showTab('techno',this)">🔧 Bac Technologique</button>
+    <button class="tab-btn" onclick="showTab('debouches',this)">🚀 Quelle spé pour quelle formation ?</button>
+    <button class="tab-btn" onclick="showTab('cpge',this)">⭐ Et la prépa dans tout ça ?</button>
+  </div>
+
+  <!-- ===== ONGLET 1 : SPÉCIALITÉS BAC GÉNÉRAL ===== -->
+  <div class="tab-panel active" id="tab-generales">
+
+    <div class="encart encart-info">
+      <strong>En Première et Terminale générale</strong>, tu gardes 2 spécialités sur les 3 choisies en Première.
+      Ce couple de 2 spécialités s'appelle une <strong>doublette</strong> — et elle influence directement
+      les formations accessibles sur Parcoursup.
+      <a href="acronymes.html#doublette">Comprendre la doublette →</a>
+    </div>
+
+    <div class="bloc">
+      <h2>Les 12 spécialités du bac général</h2>
+      <div class="spe-grid">
+
+        <div class="spe-card">
+          <div class="spe-acro">Maths</div>
+          <div class="spe-nom">Mathématiques Spécialité</div>
+          <div class="spe-desc">Algèbre, analyse, probabilités. Rigueur et abstraction.
+            La spécialité la plus "ouvre-portes" — mais pas la seule.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-s">CPGE S</span>
+            <span class="spe-tag tag-eco">CPGE ECG</span>
+            <span class="spe-tag tag-tous">BUT</span>
+            <span class="spe-tag tag-tous">Ingénieur</span>
+          </div>
+          <div class="spe-ex">46,6% des admis en CPGE scientifique l'avaient</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">PC</div>
+          <div class="spe-nom">Physique-Chimie Spécialité</div>
+          <div class="spe-desc">Mécanique, thermodynamique, chimie organique.
+            Indispensable pour la médecine et les prépas scientifiques.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-s">CPGE S</span>
+            <span class="spe-tag tag-tous">PASS</span>
+            <span class="spe-tag tag-tous">Ingénieur</span>
+          </div>
+          <div class="spe-ex">44,3% des admis en PASS l'avaient — devant SVT !</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">SVT</div>
+          <div class="spe-nom">Sciences de la Vie et de la Terre</div>
+          <div class="spe-desc">Biologie, géologie, écologie. La "spécialité médecine"
+            — mais PC est encore plus utile pour le PASS.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-tous">PASS</span>
+            <span class="spe-tag tag-s">BCPST</span>
+            <span class="spe-tag tag-tous">Paramédical</span>
+          </div>
+          <div class="spe-ex">Doublette reine PASS : PC + SVT (48,6%)</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">NSI</div>
+          <div class="spe-nom">Numérique et Sciences Informatiques</div>
+          <div class="spe-desc">Algorithmique, programmation Python, réseaux.
+            Créée en 2019 — en doublette avec PC ou SI elle est très efficace.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-tous">BUT Info</span>
+            <span class="spe-tag tag-tous">Ingénieur</span>
+          </div>
+          <div class="spe-ex">NSI seule = 6,7% des admis BUT Info — mais NSI+PC = 29,4% !</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">SI</div>
+          <div class="spe-nom">Sciences de l'Ingénieur</div>
+          <div class="spe-desc">Mécanique, automatisme, électronique appliquée.
+            La doublette Maths+SI est la plus efficace pour le BUT Informatique.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-tous">BUT GEII</span>
+            <span class="spe-tag tag-tous">BUT Mécatronique</span>
+            <span class="spe-tag tag-s">CPGE PTSI</span>
+          </div>
+          <div class="spe-ex">Maths+SI = 34,4% de taux de conversion BUT Informatique 🥇</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">SES</div>
+          <div class="spe-nom">Sciences Économiques et Sociales</div>
+          <div class="spe-desc">Économie, sociologie, science politique.
+            Bien plus utile qu'on ne le croit — même pour les filières techniques !</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-eco">CPGE ECG</span>
+            <span class="spe-tag tag-tous">Commerce</span>
+            <span class="spe-tag tag-tous">BUT Gestion</span>
+          </div>
+          <div class="spe-ex">33,5% des admis CPGE ECG l'avaient — 2ème derrière Maths</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">HGGSP</div>
+          <div class="spe-nom">Histoire-Géo, Géopolitique & Sciences Po</div>
+          <div class="spe-desc">Géopolitique mondiale, relations internationales, enjeux contemporains.
+            La spécialité qui ouvre les prépas littéraires et le droit.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-l">CPGE L</span>
+            <span class="spe-tag tag-tous">Droit</span>
+            <span class="spe-tag tag-tous">Sciences Po</span>
+          </div>
+          <div class="spe-ex">30,6% des admis CPGE Littéraire l'avaient — 🥇</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">HLP</div>
+          <div class="spe-nom">Humanités, Littérature et Philosophie</div>
+          <div class="spe-desc">Textes philosophiques, littérature mondiale, argumentation.
+            La spécialité des prépas littéraires — doublette reine avec HGGSP.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-l">CPGE L</span>
+            <span class="spe-tag tag-tous">Lettres</span>
+            <span class="spe-tag tag-tous">ENS</span>
+          </div>
+          <div class="spe-ex">HGGSP+HLP = 48,3% en CPGE Littéraire 🥇</div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">LLCER</div>
+          <div class="spe-nom">Langues, Littératures & Cultures Étrangères</div>
+          <div class="spe-desc">Anglais, espagnol, allemand, arabe… approfondi.
+            Complète naturellement SES ou HGGSP pour le commerce international.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-tous">Commerce</span>
+            <span class="spe-tag tag-l">CPGE L</span>
+            <span class="spe-tag tag-tous">LEA</span>
+          </div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">Bio/Éco</div>
+          <div class="spe-nom">Biologie-Écologie</div>
+          <div class="spe-desc">Spécialité disponible en lycée agricole.
+            Très adaptée aux filières BCPST (prépa agro/véto) et paramédical.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-s">BCPST</span>
+            <span class="spe-tag tag-tous">Agro</span>
+            <span class="spe-tag tag-tous">Véto</span>
+          </div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">Art</div>
+          <div class="spe-nom">Arts (plastiques, cinéma, théâtre, musique)</div>
+          <div class="spe-desc">Pratique artistique et culture. Complète idéalement
+            LLCER ou HLP pour les formations créatives.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-tous">DNMADE</span>
+            <span class="spe-tag tag-tous">BTS Design</span>
+            <span class="spe-tag tag-tous">École d'art</span>
+          </div>
+        </div>
+
+        <div class="spe-card">
+          <div class="spe-acro">EPS</div>
+          <div class="spe-nom">Éducation Physique, Pratiques & Culture Sportives</div>
+          <div class="spe-desc">STAPS, management du sport, kinésithérapie.
+            Peu représentée dans les grandes filières — mais légitime pour les vocations sportives.</div>
+          <div class="spe-tags">
+            <span class="spe-tag tag-tous">STAPS</span>
+            <span class="spe-tag tag-tous">Kiné</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="encart encart-tip">
+      <strong>💡 Le bon réflexe :</strong>
+      Avant de choisir tes spécialités, regarde quelles doublettes sont efficaces
+      pour les formations qui t'intéressent.
+      <a href="doublettes.php">→ Classement des doublettes par filière</a>
+    </div>
+
+  </div>
+
+  <!-- ===== ONGLET 2 : BAC TECHNOLOGIQUE ===== -->
+  <div class="tab-panel" id="tab-techno">
+
+    <div class="encart encart-info">
+      <strong>Le bac technologique</strong> mène directement à des formations post-bac adaptées.
+      Certaines filières comme le BTS et le BUT lui sont historiquement destinées —
+      avec des <strong>quotas Parcoursup</strong> qui garantissent des places.
+      <a href="acronymes.html">Voir le lexique →</a>
+    </div>
+
+    <div class="bloc">
+      <h2>Les principales filières technologiques</h2>
+
+      <div class="filiere-card" style="border-left-color:#1e40af;">
+        <h3>🔧 STI2D — Sciences & Technologies de l'Industrie et du Développement Durable</h3>
+        <p>Mécanique, énergie, numérique, architecture. La filière ingénierie par excellence
+           pour le bac techno. Très efficace pour les BTS et BUT industriels.</p>
+        <div class="spes">Débouchés : BTS CPRP, BTS Électrotechnique, BUT GEII, BUT GMP, IUT Industriels</div>
+      </div>
+
+      <div class="filiere-card" style="border-left-color:#065f46;">
+        <h3>💼 STMG — Sciences & Technologies du Management et de la Gestion</h3>
+        <p>Comptabilité, management, marketing, droit. La filière tertiaire.
+           Accès privilégié aux BTS de commerce et gestion.</p>
+        <div class="spes">Débouchés : BTS MCO, BTS GPME, BTS CG, BTS NDRC, BUT GEA, BUT TC</div>
+      </div>
+
+      <div class="filiere-card" style="border-left-color:#9d174d;">
+        <h3>🏥 ST2S — Sciences & Technologies de la Santé et du Social</h3>
+        <p>Biologie, anatomie, sciences médico-sociales. La filière santé/social
+           pour le bac techno. Mène vers les BTS et BUT paramédical.</p>
+        <div class="spes">Débouchés : BTS SP3S, BTS ESF, IFSI (infirmier), BUT Carrières sociales</div>
+      </div>
+
+      <div class="filiere-card" style="border-left-color:#92400e;">
+        <h3>📐 STD2A — Sciences & Technologies du Design et des Arts Appliqués</h3>
+        <p>Design industriel, graphisme, architecture intérieure.
+           Mène vers les BTS design et les écoles d'art.</p>
+        <div class="spes">Débouchés : BTS Design Graphique, BTS Design d'Espace, DNMADE</div>
+      </div>
+
+      <div class="filiere-card" style="border-left-color:#4c1d95;">
+        <h3>🎵 STL — Sciences & Technologies de Laboratoire</h3>
+        <p>Chimie, biochimie, biotechnologie, physique expérimentale.
+           Pour les passionnés de sciences appliquées en laboratoire.</p>
+        <div class="spes">Débouchés : BTS Analyses de Biologie Médicale, BTS Biotechnologies, BUT Chimie</div>
+      </div>
+
+      <div class="filiere-card" style="border-left-color:#065f46;">
+        <h3>🏨 STHR — Sciences & Technologies de l'Hôtellerie et de la Restauration</h3>
+        <p>Cuisine, service, hôtellerie, gestion d'établissement.
+           Filière directement professionnalisante.</p>
+        <div class="spes">Débouchés : BTS Hôtellerie-Restauration, BUT Technologie Alimentaire</div>
+      </div>
+
+    </div>
+
+    <div class="encart encart-tip">
+      <strong>Quotas Parcoursup :</strong>
+      Depuis la loi ORE (2018), les IUT doivent réserver un minimum de places aux bacheliers
+      technologiques dans certains BUT. C'est un avantage réel — mais qui demande
+      quand même un bon dossier.
+    </div>
+
+  </div>
+
+  <!-- ===== ONGLET 3 : DÉBOUCHÉS ===== -->
+  <div class="tab-panel" id="tab-debouches">
+
+    <div class="encart encart-info">
+      <strong>Lis ce tableau dans les deux sens :</strong>
+      tu peux partir de ta spécialité pour voir où elle mène,
+      ou partir de la formation visée pour savoir quelle spécialité choisir.
+    </div>
+
+    <div class="bloc">
+      <h2>Quelle spé pour quelle formation ? (données 2024)</h2>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:.82rem;">
+          <thead>
+            <tr style="background:var(--navy);color:#fff;">
+              <th style="padding:10px;text-align:left;">Formation</th>
+              <th style="padding:10px;text-align:left;">Spé #1</th>
+              <th style="padding:10px;text-align:left;">Spé #2</th>
+              <th style="padding:10px;text-align:left;">Doublette gagnante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+            $data = array(
+              array('CPGE Scientifique','Maths (46,6%)','PC (45,2%)','Maths + PC (41,4%)'),
+              array('CPGE Littéraire','HGGSP (30,6%)','HLP (22,8%)','HGGSP + HLP (48,3%)'),
+              array('CPGE ECG (Commerce)','Maths (41,6%)','SES (33,5%)','Maths + SES'),
+              array('BUT Informatique','Maths (32%)','SES (18,3%)','Maths + SI (34,4%)'),
+              array('BUT GEII','Maths (fort)','SI (fort)','Maths + SI'),
+              array('BTS Commerce','SES','LLCER','SES + LLCER'),
+              array('PASS / Médecine','PC (44,3%)','SVT (30,8%)','PC + SVT (48,6%)'),
+              array('École de Commerce','Maths','SES','Maths + SES / SES + HGGSP'),
+              array('Licence Droit','HGGSP','SES','HGGSP + SES'),
+              array('Licence Sciences','Maths','PC / SVT','Maths + PC ou Maths + SVT'),
+            );
+            ?>
+            <?php foreach($data as $i=>$row): ?>
+            <tr style="<?php echo $i%2?'background:#fbf8f5':''; ?>">
+              <td style="padding:9px 10px;font-weight:600;color:var(--navy);"><?php echo $row[0]; ?></td>
+              <td style="padding:9px 10px;color:var(--terra);font-weight:600;"><?php echo $row[1]; ?></td>
+              <td style="padding:9px 10px;color:#c47f00;"><?php echo $row[2]; ?></td>
+              <td style="padding:9px 10px;font-size:.78rem;color:var(--gray);"><?php echo $row[3]; ?></td>
+            </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.72rem;color:var(--gray);margin-top:8px;font-style:italic;">
+        Source : Open Data Parcoursup 2024 — traitement Hors Kadre.
+        Ces données couvrent la France entière. Les pratiques varient selon l'établissement.
+      </p>
+    </div>
+
+    <div class="lien-grid">
+      <a href="doublettes.php" class="lien-card">
+        <div class="lc-icon">📊</div>
+        <div class="lc-titre">Classement complet des doublettes</div>
+        <div class="lc-desc">Tous les taux de conversion par filière</div>
+      </a>
+      <a href="doublettes.php?tab=solo" class="lien-card" style="background:var(--terra);">
+        <div class="lc-icon">🔢</div>
+        <div class="lc-titre">Spécialités individuelles</div>
+        <div class="lc-desc">Maths, NSI, SES — laquelle est vraiment utile ?</div>
+      </a>
+      <a href="acronymes.html" class="lien-card" style="background:var(--gold);">
+        <div class="lc-icon">📖</div>
+        <div class="lc-titre">Lexique & Acronymes</div>
+        <div class="lc-desc">MPSI, PCSI, BCE, SCEI… tout expliquer</div>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- ===== ONGLET 4 : CPGE ===== -->
+  <div class="tab-panel" id="tab-cpge">
+
+    <div class="encart encart-cpge">
+      <strong>⭐ La prépa n'est pas réservée aux "premiers de la classe".</strong>
+      Mais elle demande un profil spécifique — et une vraie motivation.
+      Avant de cocher la case CPGE sur Parcoursup, lis ce qui suit.
+    </div>
+
+    <div class="bloc">
+      <h2>Les 3 familles de CPGE et leurs spécialités lycée</h2>
+
+      <div class="filiere-card" style="border-left-color:#4a0e8f;">
+        <h3>🔬 CPGE Scientifique (MPSI, PCSI, MP2I, PTSI, BCPST)</h3>
+        <p>2 ans très intenses pour intégrer des écoles d'ingénieurs
+           (Polytechnique, Centrale, Mines, Arts et Métiers…) via concours.</p>
+        <div class="spes">Spécialités lycée recommandées : <strong>Maths + PC</strong>
+          (doublette reine à 41,4% de taux de conversion).
+          MP2I accepte aussi Maths + NSI.</div>
+      </div>
+
+      <div class="filiere-card" style="border-left-color:#7a4a00;">
+        <h3>💼 CPGE ECG — Économique et Commerciale (voie Générale)</h3>
+        <p>2 ans pour intégrer HEC, ESSEC, ESCP, EM Lyon… via BCE ou Écricome.</p>
+        <div class="spes">Spécialités lycée : <strong>Maths + SES</strong> est la combinaison
+          la plus fréquente. SES seule à 33,5% des admis — bien plus qu'on ne le croit.</div>
+      </div>
+
+      <div class="filiere-card" style="border-left-color:#4c1d95;">
+        <h3>📚 CPGE Littéraire (Hypokhâgne / Khâgne)</h3>
+        <p>2 ans pour intégrer les ENS, Sciences Po régionaux, École du Louvre…
+           via la Banque d'Épreuves Littéraires (BEL).</p>
+        <div class="spes">Spécialités lycée : <strong>HGGSP + HLP</strong> — doublette
+          reine à 48,3%. La réforme 2019 a parfaitement fonctionné pour cette filière.</div>
+      </div>
+
+    </div>
+
+    <div class="encart encart-info">
+      <strong>Ce que la CPGE implique vraiment :</strong>
+      35-45h de cours par semaine, khôlles hebdomadaires, concours en fin de 2ème année,
+      inscriptions payantes (100-140€ par école), stress cumulé avec le bac…
+      Mais <strong>85% des élèves de CPGE intègrent une école</strong> au final.
+    </div>
+
+    <div class="lien-grid">
+      <a href="cpge_analyse.html" class="lien-card" style="background:#7a4a00;">
+        <div class="lc-icon">🏛️</div>
+        <div class="lc-titre">Grandes Écoles — tout comprendre</div>
+        <div class="lc-desc">Banques, concours, coûts, calendrier, boursiers</div>
+      </a>
+      <a href="cpge_analyse.html#tab-acronymes" class="lien-card" style="background:#4a0e8f;">
+        <div class="lc-icon">📖</div>
+        <div class="lc-titre">Acronymes CPGE</div>
+        <div class="lc-desc">MPSI, PCSI, BCE, SCEI, SIGEM… le jargon en clair</div>
+      </a>
+      <a href="doublettes.php?filiere=CPGE" class="lien-card" style="background:var(--navy);">
+        <div class="lc-icon">📊</div>
+        <div class="lc-titre">Doublettes CPGE</div>
+        <div class="lc-desc">Quelles spés mènent en prépa ? Les données 2024</div>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  ©2026 Katy Saintin — Hors Kadre<br>
+  Données Open Data Parcoursup 2024 — Licence Ouverte 2.0<br>
+  <a href="aide.html">Guide</a> |
+  <a href="acronymes.html">Lexique</a> |
+  <a href="mailto:katy.saintin@gmail.com">Contact</a>
+</footer>
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
