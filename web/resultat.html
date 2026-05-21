@@ -11,6 +11,14 @@
 <meta property="og:image" id="og-image" content="img/profils/eleven.jpg">
 <meta property="og:url" content="">
 <meta name="twitter:card" content="summary_large_image">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTNJ36H5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TTTNJ36H5D', { 'anonymize_ip': true });
+</script>
 <style>
 :root{--navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
   --gold:#B8860B;--gray:#555;--border:#d9d1ca;--white:#fff;}
@@ -20,16 +28,40 @@ body{font-family:Georgia,"Times New Roman",serif;
   min-height:100vh;line-height:1.6;}
 a{color:var(--terra);}
 
-/* HEADER */
-.site-header{background:rgba(255,255,255,.05);
-  border-bottom:2px solid var(--terra);
-  padding:12px 16px;text-align:center;}
-.site-header img{max-width:200px;width:40%;height:auto;
-  filter:brightness(0) invert(1);}
-.nav-links{margin-top:6px;font-size:.8rem;display:flex;
-  flex-wrap:wrap;justify-content:center;gap:6px 14px;}
-.nav-links a{color:#ccc;font-weight:600;}
-.nav-links a:hover{color:var(--terra);}
+/* HEADER MINIMALISTE */
+.top-bar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 16px;
+  background:rgba(0,0,0,.3);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.top-refaire{
+  font-size:.82rem;font-weight:700;color:#fff;
+  background:var(--terra);border-radius:20px;
+  padding:6px 14px;text-decoration:none;white-space:nowrap;
+}
+.top-refaire:hover{opacity:.85;text-decoration:none;color:#fff;}
+.top-brand{
+  font-size:.78rem;color:rgba(255,255,255,.35);
+  font-style:italic;letter-spacing:.05em;
+}
+/* FOOTER NAV */
+.bottom-nav{
+  position:fixed;bottom:0;left:0;right:0;
+  background:rgba(10,10,10,.95);
+  border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-around;
+  padding:10px 0 max(10px,env(safe-area-inset-bottom));
+  z-index:100;
+}
+.bottom-nav a{
+  display:flex;flex-direction:column;align-items:center;
+  color:rgba(255,255,255,.5);font-size:.62rem;
+  text-decoration:none;gap:3px;flex:1;
+}
+.bottom-nav a:hover{color:#fff;text-decoration:none;}
+/* Padding pour que le contenu ne soit pas caché par le footer */
+.result-page{padding-bottom:80px;}
 
 /* CARTE RÉSULTAT */
 .result-page{max-width:680px;margin:0 auto;padding:24px 16px 60px;}
@@ -182,25 +214,40 @@ a{color:var(--terra);}
   text-align:center;margin-bottom:14px;
 }
 
+.story-share{margin:0;padding:20px 20px 16px;background:rgba(0,0,0,.45);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);}
+.story-share-title{font-size:1.1rem;font-weight:700;color:#fff;text-align:center;margin-bottom:4px;}
+.story-share-sub{font-size:.82rem;color:rgba(255,255,255,.6);text-align:center;margin-bottom:12px;line-height:1.5;}
+.social-proof{text-align:center;font-size:.78rem;color:rgba(255,255,255,.45);margin-bottom:14px;font-style:italic;}
+.story-btns{display:flex;flex-direction:column;gap:10px;}
+.story-btn{display:flex;align-items:center;justify-content:center;gap:12px;padding:16px 20px;border-radius:16px;font-family:Georgia,serif;font-size:1rem;font-weight:700;cursor:pointer;border:none;width:100%;transition:transform .15s,opacity .2s;}
+.story-btn:active{transform:scale(.97);}
+.story-btn-insta{background:linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);color:#fff;box-shadow:0 4px 20px rgba(220,39,67,.35);}
+.story-btn-tiktok{background:#000;color:#fff;border:1px solid #333;box-shadow:0 4px 20px rgba(0,0,0,.5);}
+.story-btn-native{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25);}
+.story-btn-save{background:rgba(255,255,255,.06);color:#ccc;border:1px solid rgba(255,255,255,.15);font-size:.88rem;padding:12px 16px;}
+.story-btn-icon{font-size:1.3rem;flex-shrink:0;}
+.story-hint{text-align:center;font-size:.76rem;color:rgba(255,255,255,.4);margin-top:10px;padding:0 8px;line-height:1.5;}
+.secondary-share{padding:12px 20px 16px;background:rgba(0,0,0,.2);}
+.secondary-share-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:8px;}
+.secondary-btn{display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:10px;font-size:.8rem;font-weight:600;cursor:pointer;border:none;font-family:Georgia,serif;}
+.sbtn-fb{background:#1877f2;color:#fff;}
+.sbtn-linkedin{background:#0077b5;color:#fff;}
+.sbtn-copy{background:rgba(255,255,255,.1);color:#ddd;border:1px solid rgba(255,255,255,.2);}
+.share-feedback{font-size:.78rem;color:var(--terra);text-align:center;min-height:20px;margin-top:4px;}
 @media(max-width:500px){
   .result-header,.result-body{padding:20px 16px;}
   .header-nom{font-size:1.7rem;}
   .actions{gap:8px;}
-  .share-btns{gap:8px;}
+  .story-btn{font-size:.95rem;padding:14px 16px;}
 }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
 
-<header class="site-header">
-  <img src="banniere.png" alt="Hors Kadre">
-  <div class="nav-links">
-    <a href="index.php">← Accueil</a>
-    <a href="orientation_test.html">🎯 Refaire le test</a>
-    <a href="orientation.php">Recherche formations</a>
-    <a href="specialitesfilieres.html">Spécialités</a>
-  </div>
+<header class="top-bar">
+  <a href="orientation_test.html" class="top-refaire">🎯 Refaire le test</a>
+  <span class="top-brand">Hors Kadre</span>
 </header>
 
 <div class="result-page">
@@ -216,7 +263,7 @@ const PROFILS = {
   sasuke: {
     nom: "Sasuke Uchiha",
     emoji: "🔥",
-    serie: "Naruto (Netflix)",
+    serie: "L’ANALYSTE - Naruto",
     slogan: "L'excellence ou rien",
     formation: "CPGE — Grandes Écoles",
     filiere: "CPGE",
@@ -240,7 +287,7 @@ Tu n'as pas besoin qu'on te tienne la main. Tu préfères les systèmes avec des
   eleven: {
     nom: "Eleven",
     emoji: "⚡",
-    serie: "Stranger Things (Netflix)",
+    serie: "L’EXPÉRIMENTATRICE - Stranger Things",
     slogan: "La puissance dans l'action",
     formation: "BUT / École d'ingénieurs",
     filiere: "BUT",
@@ -264,7 +311,7 @@ Tu n'es pas du genre à briller en amphi de 500 personnes. Mais en projet, en at
   steve: {
     nom: "Steve Harrington",
     emoji: "🎸",
-    serie: "Stranger Things (Netflix)",
+    serie: "LE PILIER - Stranger Things",
     slogan: "Solide, fiable, et meilleur qu'il n'y paraît",
     formation: "BTS",
     filiere: "BTS",
@@ -288,7 +335,7 @@ Tu as besoin d'un cadre clair et d'un objectif concret. La théorie pure te pès
   luffy: {
     nom: "Monkey D. Luffy",
     emoji: "🏴‍☠️",
-    serie: "One Piece (Netflix)",
+    serie: "LE CAPITAINE - One Piece",
     slogan: "Le monde est trop petit pour moi",
     formation: "École de Commerce / BBA",
     filiere: "Ecole de Commerce",
@@ -312,7 +359,7 @@ Tu n'aimes pas rester en place. Les stages à l'étranger, les projets internati
   wednesday: {
     nom: "Wednesday Addams",
     emoji: "🖤",
-    serie: "Wednesday (Netflix)",
+    serie: "LA STRATÈGE - Wednesday",
     slogan: "Je suis là pour comprendre, pas pour plaire",
     formation: "Licence / Master / Recherche",
     filiere: "Licence",
@@ -336,7 +383,7 @@ Tu n'es pas fait(e) pour les formations ultra-encadrées où tout est balisé à
   tanjiro: {
     nom: "Tanjiro Kamado",
     emoji: "🌊",
-    serie: "Demon Slayer (Netflix)",
+    serie: "LE PROTECTEUR - Demon Slayer",
     slogan: "Une vocation, une mission",
     formation: "PASS / Paramédical",
     filiere: "PASS",
@@ -359,6 +406,27 @@ Tu es venu(e) vers la santé ou le paramédical parce que quelque chose en toi l
 };
 
 /* ================================================================
+   CONSTRUCTION URL ORIENTATION — avec modale si Q4 = rester
+   ================================================================ */
+function buildOrientationUrl(p) {
+  var q4 = parseInt(getParam('q4'));
+  var url = 'orientation.php?type_formation=' + encodeURIComponent(
+    p.filiere === 'Ecole de Commerce' ? 'Commerce' :
+    p.filiere === 'PASS' ? 'Sante' :
+    p.filiere === 'BUT' ? 'BUT' :
+    p.filiere === 'BTS' ? 'BTS' :
+    p.filiere === 'Licence' ? 'Licence' :
+    p.filiere === 'CPGE' ? 'CPGE' : p.filiere
+  );
+  url += '&profil=' + encodeURIComponent(getParam('profil'));
+  // Q4 index 0 = "Je reste dans mon département"
+  if (q4 === 0) {
+    url += '&show_modal=1&departement=';
+  }
+  return url;
+}
+
+/* ================================================================
    LECTURE DES PARAMS GET
    ================================================================ */
 function getParam(name) {
@@ -367,300 +435,197 @@ function getParam(name) {
 }
 
 function render() {
-  const profilId = getParam('profil');
-  const p = PROFILS[profilId];
-  const container = document.getElementById('result-container');
+  var profilId = getParam("profil");
+  var p = PROFILS[profilId];
+  var container = document.getElementById("result-container");
 
   if (!p) {
-    container.innerHTML = `
-      <div class="not-found">
-        <div style="font-size:3rem;margin-bottom:14px;">🤔</div>
-        <p style="margin-bottom:16px;">Profil introuvable…</p>
-        <a href="orientation_test.html" style="color:var(--terra);font-weight:700;">
-          → Faire le test d'orientation
-        </a>
-      </div>`;
+    container.innerHTML = "<div class=\"not-found\"><div style=\"font-size:3rem;margin-bottom:14px;\">🤔</div><p style=\"margin-bottom:16px;\">Profil introuvable…</p><a href=\"orientation_test.html\" style=\"color:#C4572A;font-weight:700;\">→ Faire le test</a></div>";
     return;
   }
 
-  // Meta tags pour partage — querySelector plus robuste
-  const titleEl = document.getElementById('page-title');
-  if (titleEl) titleEl.textContent = `Je suis ${p.nom} — Mon profil d'orientation Hors Kadre`;
-  const ogTitle = document.querySelector('meta[property="og:title"]');
-  if (ogTitle) ogTitle.setAttribute('content', `Je suis ${p.emoji} ${p.nom} — ${p.slogan}`);
-  const ogDesc = document.querySelector('meta[property="og:description"]');
-  if (ogDesc) ogDesc.setAttribute('content', `Ma formation idéale : ${p.formation}. Fais le test !`);
-  const ogImg = document.querySelector('meta[property="og:image"]');
-  if (ogImg) ogImg.setAttribute('content', p.img);
+  var titleEl = document.getElementById("page-title");
+  if (titleEl) titleEl.textContent = "Je suis " + p.nom + " — Mon profil Hors Kadre";
+  var ogTitle = document.querySelector("meta[property=\"og:title\"]");
+  if (ogTitle) ogTitle.setAttribute("content", "Je suis " + p.emoji + " " + p.nom + " — " + p.slogan);
+  var ogImg = document.querySelector("meta[property=\"og:image\"]");
+  if (ogImg) ogImg.setAttribute("content", p.img);
 
-  // Construire la carte
-  const imgHtml = `
-    <img src="${p.img}" alt="${p.nom}" class="perso-img"
-         onerror="this.outerHTML='<div class=\\'perso-img-placeholder\\'>${p.emoji}</div>'">`;
+  var imgHtml = "<img src=\"" + p.img + "\" alt=\"" + p.nom + "\" class=\"perso-img\" onerror=\"this.style.display='none\">";
 
-  const powersHtml = p.superpowers.map(pw => `
-    <div class="power">
-      <div class="icon">${pw.icon}</div>
-      <div class="label">${pw.label}</div>
-    </div>`).join('');
+  var powersHtml = p.superpowers.map(function(pw) {
+    return "<div class=\"power\"><div class=\"icon\">" + pw.icon + "</div><div class=\"label\">" + pw.label + "</div></div>";
+  }).join("");
 
-  container.innerHTML = `
-    <div class="result-card">
-      <div class="result-header" style="background:${p.color}">
-        <div class="header-serie">${p.serie}</div>
-        ${imgHtml}
-        <div class="header-nom">${p.emoji} ${p.nom}</div>
-        <div class="header-slogan">"${p.slogan}"</div>
-        <div class="header-formation">🎓 ${p.formation}</div>
-      </div>
+  var html = "";
+  html += "<div class=\"result-card\">";
+  html += "<div class=\"result-header\" style=\"background:" + p.color + "\">";
+  html += "<div class=\"header-serie\">" + p.serie + "</div>";
+  html += imgHtml;
+  html += "<div class=\"header-nom\">" + p.emoji + " " + p.nom + "</div>";
+  html += "<div class=\"header-slogan\">\"" + p.slogan + "\"</div>";
+  html += "<div class=\"header-formation\">🎓 " + p.formation + "</div>";
+  html += "</div>";
 
-      <div class="result-body">
+  html += "<div class=\"story-share\">";
+  html += "<div class=\"story-share-title\">🔥 Partage ton profil</div>";
+  html += "<div class=\"story-share-sub\">Mets ton résultat en story et compare avec tes potes 👀</div>";
+  html += "<div class=\"social-proof\">⚡ Déjà des profils Eleven, Luffy et Wednesday partout en story</div>";
+  html += "<div class=\"story-btns\">";
+  html += "<button class=\"story-btn story-btn-save\" onclick=\"afficherImagePleinEcran('" + profilId + "')\"><span class=\"story-btn-icon\">📸</span><span>Enregistrer mon image</span></button>";
+  html += "<button class=\"story-btn story-btn-insta\" onclick=\"ouvrirInsta()\"><span class=\"story-btn-icon\">📷</span><span>Ouvrir Instagram</span></button>";
+  html += "<button class=\"story-btn story-btn-tiktok\" onclick=\"ouvrirTiktok()\"><span class=\"story-btn-icon\">🎵</span><span>Ouvrir TikTok</span></button>";
+  html += "</div>";
+  html += "<div class=\"story-hint\">Commence par enregistrer ton image, puis ouvre Instagram ou TikTok</div>";
+  html += "</div>";
 
-        <div class="horoscope">
-          <h3>✨ Ton profil</h3>
-          <p>${p.horoscope.replace(/\n\n/g,'</p><p style="margin-top:12px;">')}</p>
-        </div>
+  html += "<div class=\"secondary-share\">";
+  html += "<div class=\"secondary-share-row\">";
+  html += "<button class=\"secondary-btn sbtn-fb\" onclick=\"partagerFB()\">👥 Facebook</button>";
+  html += "<button class=\"secondary-btn sbtn-linkedin\" onclick=\"partagerLinkedIn()\">💼 LinkedIn</button>";
+  html += "<button class=\"secondary-btn sbtn-copy\" onclick=\"copierLien()\">🔗 Copier le lien</button>";
+  html += "</div><div class=\"share-feedback\" id=\"share-feedback\"></div></div>";
 
-        <div class="superpowers">${powersHtml}</div>
+  html += "<div class=\"result-body\">";
+  html += "<div class=\"horoscope\"><h3>✨ Ton profil</h3>";
+  html += "<p>" + p.horoscope.split("\n\n").join('</p><p style="margin-top:12px;">') + "</p></div>";
 
-        <div class="contraintes">
-          ${p.contrainte}
-        </div>
+  html += "<div class=\"superpowers\">" + powersHtml + "</div>";
+  html += "<div class=\"contraintes\">" + p.contrainte + "</div>";
+  html += "<div class=\"actions\">";
+  html += "<a href=\"" + buildOrientationUrl(p) + "\" class=\"btn-main\">🎓 Voir les formations qui me correspondent →</a>";
+  html += "<a href=\"" + p.lien_info + "\" class=\"btn-ghost\">" + p.lien_info_label + "</a>";
+  html += "<a href=\"specialitesfilieres.html\" class=\"btn-ghost\">📚 Quelle spécialité choisir ?</a>";
+  html += "</div></div></div>";
+  html += "<div class=\"refaire\">Ce n'est pas ton profil ? <a href=\"orientation_test.html\">→ Refaire le test</a></div>";
 
-        <div class="actions">
-          <a href="${p.lien_formations}" class="btn-main">
-            🎓 Voir les formations qui correspondent à mon profil →
-          </a>
-          <a href="${p.lien_info}" class="btn-ghost">
-            ${p.lien_info_label}
-          </a>
-          <a href="specialitesfilieres.html" class="btn-ghost">
-            📚 Quelle spécialité choisir ?
-          </a>
-        </div>
-
-        <div class="share-section">
-          <div class="share-title">🔥 Partage ton résultat !</div>
-
-          <!-- Bouton principal : enregistrer l'image -->
-          <button class="btn-download" onclick="telechargerImage()">
-            📸 Enregistrer mon résultat dans mes photos
-          </button>
-          <div class="btn-download-hint" id="download-hint">
-            Image carrée prête pour Instagram, TikTok, FB — sans compte
-          </div>
-
-          <!-- 4 boutons réseaux sociaux -->
-          <div class="share-btns">
-            <button class="share-btn btn-insta" onclick="partagerInsta()">
-              📷 Instagram
-            </button>
-            <button class="share-btn btn-fb" onclick="partagerFB()">
-              👥 Facebook
-            </button>
-            <button class="share-btn btn-tiktok" onclick="partagerTikTok()">
-              🎵 TikTok
-            </button>
-            <button class="share-btn btn-linkedin" onclick="partagerLinkedIn()">
-              💼 LinkedIn
-            </button>
-            <button class="share-btn btn-copy" onclick="copierLien()">
-              📋 Copier le lien
-            </button>
-          </div>
-          <div class="share-feedback" id="share-feedback"></div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="refaire">
-      Ce n'est pas ton profil ? <a href="orientation_test.html">→ Refaire le test</a>
-    </div>
-  `;
+  container.innerHTML = html;
 }
 
 /* ================================================================
-   PARTAGE
+   PARTAGE — logique unifiée Web Share API
    ================================================================ */
-function _getShareText() {
-  const profilId = getParam('profil');
-  const p = PROFILS[profilId];
-  if (!p) return '';
-  return `Je suis ${p.emoji} ${p.nom} — "${p.slogan}"\nMa formation idéale : ${p.formation}\nFais le test : ${window.location.origin}/orientation_test.html\n#HorsKadre #Parcoursup #Orientation`;
-}
-
-function partagerInsta() {
-  /* Instagram n'a pas d'API web — on enregistre l'image et on explique */
-  telechargerImage('insta');
-}
-
-function partagerFB() {
-  const url = encodeURIComponent(window.location.href);
-  window.open('https://www.facebook.com/sharer/sharer.php?u='+url, '_blank');
-}
-
-function partagerTikTok() {
-  /* TikTok n'a pas d'API web — on enregistre l'image */
-  telechargerImage('tiktok');
-}
-
-function partagerLinkedIn() {
-  const url = encodeURIComponent(window.location.href);
-  window.open('https://www.linkedin.com/sharing/share-offsite/?url='+url, '_blank');
-}
-
-function copierLien() {
-  const profilId = getParam('profil');
-  const p = PROFILS[profilId];
-  if (!p) return;
-  const texte = _getShareText();
-  navigator.clipboard.writeText(texte).then(() => {
-    _feedback('✅ Copié ! Colle-le où tu veux 🎉');
-  }).catch(() => {
-    const ta = document.createElement('textarea');
-    ta.value = texte; document.body.appendChild(ta);
-    ta.select(); document.execCommand('copy');
-    document.body.removeChild(ta);
-    _feedback('✅ Copié !');
-  });
-}
-
-function _feedback(msg) {
-  const fb = document.getElementById('share-feedback');
-  if (fb) { fb.textContent = msg; setTimeout(()=>fb.textContent='', 4000); }
-}
-
-/* ================================================================
-   TÉLÉCHARGEMENT IMAGE — html2canvas
-   ================================================================ */
-let _shareTarget = 'default';
-function telechargerImage(target='default') {
-  _shareTarget = target;
-  const profilId = getParam('profil');
-  const p = PROFILS[profilId];
-  if (!p) return;
-
-  const btn = document.querySelector('.btn-download');
-  const oldText = btn.innerHTML;
-  btn.innerHTML = '⏳ Génération en cours…';
-  btn.disabled = true;
-
-  /* ---------------------------------------------------------------
-   * On dessine la carte directement sur Canvas 2D
-   * L'image de l'avatar est déjà chargée dans le DOM — on la réutilise
-   * --------------------------------------------------------------- */
-  const W = 500, H = 700;
-  const cv = document.createElement('canvas');
-  cv.width = W; cv.height = H;
-  const ctx = cv.getContext('2d');
-
-  // Fond dégradé selon le profil
-  var colors = {
-    sasuke:  ['#1a0a2e','#4a0e8f'],
-    eleven:  ['#0a1a2e','#1a5276'],
-    steve:   ['#1a1a0a','#3a2a00'],
-    luffy:   ['#1a0a0a','#7a1a00'],
-    wednesday:['#0a0a0a','#2d0a2d'],
-    tanjiro: ['#0a1a1a','#006a4a'],
-  };
-  var c = colors[profilId] || ['#1a0a2e','#0d0d0d'];
-  var grd = ctx.createLinearGradient(0, 0, W, H);
-  grd.addColorStop(0, c[0]);
-  grd.addColorStop(1, c[1]);
-  ctx.fillStyle = grd;
-  ctx.roundRect(0, 0, W, H, 28);
-  ctx.fill();
-
-  // Série en haut
-  ctx.fillStyle = 'rgba(255,255,255,0.55)';
-  ctx.font = '500 22px Georgia';
-  ctx.textAlign = 'center';
-  ctx.letterSpacing = '3px';
-  ctx.fillText(p.serie.toUpperCase(), W/2, 54);
-
-  // Avatar — récupérer l'image déjà chargée dans le DOM
-  var imgEl = document.querySelector('.perso-img');
-  var drawRest = function() {
-    // Cercle avatar centré — grand
-    var cx = W/2, cy = 240, r = 170;
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(cx, cy, r, 0, Math.PI*2);
-    ctx.clip();
-    if (imgEl && imgEl.complete && imgEl.naturalWidth > 0) {
-      ctx.drawImage(imgEl, cx-r, cy-r, r*2, r*2);
-    }
-    ctx.restore();
-    // Bordure cercle
-    ctx.beginPath();
-    ctx.arc(cx, cy, r, 0, Math.PI*2);
-    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
-    ctx.lineWidth = 5;
-    ctx.stroke();
-    // Halo extérieur
-    ctx.beginPath();
-    ctx.arc(cx, cy, r+10, 0, Math.PI*2);
-    ctx.strokeStyle = 'rgba(255,255,255,0.10)';
-    ctx.lineWidth = 8;
-    ctx.stroke();
-
-    // Nom
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 52px Georgia';
-    ctx.textAlign = 'center';
-    ctx.letterSpacing = '0px';
-    ctx.fillText(p.emoji + ' ' + p.nom, W/2, 454);
-
-    // Slogan
-    ctx.fillStyle = 'rgba(255,255,255,0.82)';
-    ctx.font = 'italic 26px Georgia';
-    ctx.fillText('"' + p.slogan + '"', W/2, 500);
-
-    // Badge formation
-    var badgeY = 556, badgeW = 340, badgeH = 54;
-    ctx.fillStyle = 'rgba(255,255,255,0.15)';
-    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.roundRect(W/2 - badgeW/2, badgeY, badgeW, badgeH, 27);
-    ctx.fill();
-    ctx.stroke();
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 24px Georgia';
-    ctx.fillText('🎓 ' + p.formation, W/2, badgeY + 34);
-
-    // URL en bas
-    ctx.fillStyle = 'rgba(255,255,255,0.35)';
-    ctx.font = '18px Georgia';
-    ctx.fillText('katy.ho.free.fr/orientation_test.html', W/2, H - 28);
-
-    // Télécharger
-    var link = document.createElement('a');
-    link.download = 'mon-profil-' + profilId + '-horskadre.jpg';
-    link.href = cv.toDataURL('image/jpeg', 0.93);
-    link.click();
-
-    var msgs = {
-      insta:   '✅ Enregistrée ! Ouvre Instagram → + → Depuis la galerie 🎉',
-      tiktok:  '✅ Enregistrée ! Ouvre TikTok → + → Importer 🎵',
-      default: '✅ Image enregistrée ! 🎉'
-    };
-    btn.innerHTML = msgs[_shareTarget] || msgs.default;
-    btn.disabled = false;
-    _feedback(msgs[_shareTarget] || msgs.default);
-    setTimeout(function(){ btn.innerHTML = oldText; }, 5000);
-  };
-
-  // Si l'image est déjà chargée on dessine, sinon on attend
-  if (imgEl && imgEl.complete && imgEl.naturalWidth > 0) {
-    setTimeout(drawRest, 50);
-  } else if (imgEl) {
-    imgEl.onload = drawRest;
-  } else {
-    // Pas d'image — dessiner quand même sans avatar
-    setTimeout(drawRest, 50);
+async function genererImageStory(profilId) {
+  var p = PROFILS[profilId]; if (!p) return null;
+  var W=1080,H=1920,cv=document.createElement('canvas');
+  cv.width=W;cv.height=H;var ctx=cv.getContext('2d');
+  var colors={sasuke:['#1a0a2e','#4a0e8f'],eleven:['#0a1a2e','#1a5276'],
+    steve:['#1a1a0a','#3a2a00'],luffy:['#1a0a0a','#7a1a00'],
+    wednesday:['#0a0a0a','#2d0a2d'],tanjiro:['#0a1a1a','#006a4a']};
+  var c=colors[profilId]||['#1a0a2e','#0d0d0d'];
+  var grd=ctx.createLinearGradient(0,0,W,H);
+  grd.addColorStop(0,c[0]);grd.addColorStop(1,c[1]);
+  ctx.fillStyle=grd;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,0.4)';ctx.font='38px Georgia';ctx.textAlign='center';
+  ctx.fillText('HORS KADRE',W/2,100);
+  ctx.fillStyle='rgba(255,255,255,0.55)';ctx.font='42px Georgia';
+  ctx.fillText(p.serie.toUpperCase(),W/2,190);
+  var imgEl=document.querySelector('.perso-img');
+  var r=360,cx=W/2,cy=700;
+  if(imgEl&&imgEl.complete&&imgEl.naturalWidth>0){
+    ctx.save();ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.clip();
+    ctx.drawImage(imgEl,cx-r,cy-r,r*2,r*2);ctx.restore();
   }
+  ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);
+  ctx.strokeStyle='rgba(255,255,255,0.4)';ctx.lineWidth=10;ctx.stroke();
+  ctx.beginPath();ctx.arc(cx,cy,r+18,0,Math.PI*2);
+  ctx.strokeStyle='rgba(255,255,255,0.12)';ctx.lineWidth=16;ctx.stroke();
+  function fitTx(t,mw,ms,mi,tpl){var s=ms;while(s>=mi){ctx.font=tpl.replace('##',s);if(ctx.measureText(t).width<=mw)break;s-=4;}}
+  var mw=W-80;
+  ctx.fillStyle='#fff';ctx.textAlign='center';
+  var nomText=p.emoji+' '+p.nom;
+  fitTx(nomText,mw,110,60,'bold ## px Georgia');ctx.fillText(nomText,W/2,1160);
+  ctx.fillStyle='rgba(255,255,255,0.82)';
+  var sloganText='"'+p.slogan+'"';
+  fitTx(sloganText,mw,56,32,'italic ## px Georgia');ctx.fillText(sloganText,W/2,1260);
+  var formText='🎓 '+p.formation;
+  ctx.font='bold 50px Georgia';
+  var fw=ctx.measureText(formText).width+80;
+  var bw=Math.min(Math.max(fw,400),mw),by=1340,bh=90;
+  ctx.fillStyle='rgba(255,255,255,0.15)';ctx.strokeStyle='rgba(255,255,255,0.35)';ctx.lineWidth=3;
+  ctx.beginPath();ctx.roundRect(W/2-bw/2,by,bw,bh,45);ctx.fill();ctx.stroke();
+  ctx.fillStyle='#fff';ctx.fillText(formText,W/2,by+62);
+  ctx.fillStyle='rgba(255,255,255,0.5)';ctx.font='38px Georgia';
+  ctx.fillText('Et toi, tu es qui ? 👀',W/2,1520);
+  ctx.fillStyle='rgba(255,255,255,0.35)';ctx.font='34px Georgia';
+  ctx.fillText('katy.ho.free.fr/orientation_test.html',W/2,1840);
+  return new Promise(function(res){cv.toBlob(function(b){res(b);},'image/jpeg',0.92);});
+}
+
+/* Afficher l'image en plein écran — appui long → Galerie (solution Canva) */
+async function afficherImagePleinEcran(profilId) {
+  if(typeof gtag!=='undefined')gtag('event','share_result',{profil:profilId,plateforme:'modal'});
+  var blob = await genererImageStory(profilId);
+  if(!blob){ _feedback('Erreur generation image'); return; }
+  var dataURL = await new Promise(function(res){
+    var r=new FileReader(); r.onload=function(){res(r.result);}; r.readAsDataURL(blob);
+  });
+  var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  var modal = document.createElement('div');
+  modal.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.95);z-index:9999;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px;box-sizing:border-box;';
+  var img = document.createElement('img');
+  img.src = dataURL;
+  img.style.cssText='max-width:85%;max-height:65%;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.5);';
+  var msg = document.createElement('div');
+  msg.style.cssText='color:#fff;text-align:center;margin-top:24px;font-size:15px;line-height:1.7;max-width:88%;font-family:Georgia,serif;';
+  msg.innerHTML = "<p style=\"font-size:19px;margin-bottom:10px;font-weight:700;\">📸 Appuie longuement sur image</p>"
+    + (isIOS
+      ? "<p style=\"opacity:.75;\">Puis choisis <strong>Enregistrer dans Photos</strong><br>Ensuite ouvre Instagram pour poster !</p>"
+      : "<p style=\"opacity:.75;\">Puis choisis <strong>Telecharger image</strong><br>Ensuite ouvre Instagram pour poster !</p>");
+  var btnClose = document.createElement('button');
+  btnClose.textContent='✕ Fermer';
+  btnClose.style.cssText='position:absolute;top:16px;right:16px;background:rgba(255,255,255,.2);color:#fff;border:none;padding:8px 18px;border-radius:20px;font-size:15px;cursor:pointer;font-family:Georgia,serif;';
+  btnClose.onclick=function(){ document.body.removeChild(modal); };
+  modal.onclick=function(e){ if(e.target===modal) document.body.removeChild(modal); };
+  modal.appendChild(btnClose);
+  modal.appendChild(img);
+  modal.appendChild(msg);
+  document.body.appendChild(modal);
+}
+
+/* Ouvrir Instagram directement */
+function ouvrirInsta() {
+  if(typeof gtag!=='undefined')gtag('event','share_result',{profil:getParam('profil'),plateforme:'instagram'});
+  var isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if(isMobile){ window.location.href='instagram://app'; }
+  else{ window.open('https://www.instagram.com/','_blank'); }
+}
+
+/* Ouvrir TikTok directement */
+function ouvrirTiktok() {
+  if(typeof gtag!=='undefined')gtag('event','share_result',{profil:getParam('profil'),plateforme:'tiktok'});
+  var isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if(isMobile){ window.location.href='snssdk1233://'; }
+  else{ window.open('https://www.tiktok.com/','_blank'); }
+}
+
+/* Alias pour compatibilité */
+function telechargerImage(){ afficherImagePleinEcran(getParam('profil')); }
+
+function partagerFB(){
+  if(typeof gtag!=='undefined')gtag('event','share_result',{profil:getParam('profil'),plateforme:'facebook'});
+  window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');
+}
+function partagerLinkedIn(){
+  if(typeof gtag!=='undefined')gtag('event','share_result',{profil:getParam('profil'),plateforme:'linkedin'});
+  window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');
+}
+function copierLien(){
+  var url=window.location.href;
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(function(){_feedback('Lien copie !');}).catch(function(){_fb2(url);});
+  }else{_fb2(url);}
+}
+function _fb2(t){
+  var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.left='-9999px';
+  document.body.appendChild(ta);ta.focus();ta.select();
+  try{document.execCommand('copy');_feedback('Lien copie !');}catch(e){_feedback('Copiez URL manuellement');}
+  document.body.removeChild(ta);
+}
+function telechargerImage(){partagerImage(getParam('profil'),'download');}
+function _feedback(msg){
+  var fb=document.getElementById('share-feedback');
+  if(fb){fb.textContent=msg;setTimeout(function(){fb.textContent='';},4000);}
 }
 
 /* ================================================================
@@ -676,5 +641,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+<nav class="bottom-nav">
+  <a href="index.php">🏠 Accueil</a>
+  <a href="orientation_test.html">🎯 Test</a>
+  <a href="parcoursup.php">🎓 Parcoursup</a>
+  <a href="doublettes.php">📊 Spécialités</a>
+  <a href="aide.html">❓ Guide</a>
+</nav>
 </body>
 </html>
