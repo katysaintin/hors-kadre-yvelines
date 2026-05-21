@@ -216,12 +216,14 @@ footer a { color: var(--terra); }
   <img src="banniere.png" alt="Hors Kadre">
   <div class="tagline">Ce que personne ne dit vraiment — sourcé, vécu, pour les familles</div>
   <div class="nav-links" style="margin-top:8px;font-size:.82rem;">
-    <a href="aide.html" style="color:var(--terra);font-weight:600;">❓ Guide</a>
+    <a href="indexival.php" style="color:var(--navy);font-weight:600;">🏫 Lycées IVAL</a>
+    <a href="orientation_test.html" style="color:var(--terra);font-weight:700;">🎯 Test orientation</a>
+    <a href="specialitesfilieres.html" style="color:var(--navy);font-weight:600;">📚 Spécialités</a>
+    <a href="doublettes.php" style="color:var(--navy);font-weight:600;">📊 Doublettes</a>
+    <a href="parcoursup.php" style="color:var(--navy);font-weight:600;">🎓 Parcoursup</a>
+    <a href="cpge_analyse.html" style="color:var(--navy);font-weight:600;">🏛️ Grandes Écoles</a>
     <a href="acronymes.html" style="color:var(--navy);font-weight:600;">📖 Lexique</a>
-    <a href="typeformation.html" style="color:var(--navy);font-weight:600;">🎓 Formations</a>
-    <a href="parcoursup.php" style="color:var(--navy);font-weight:600;">Parcoursup</a>
-    <a href="indexival.php" style="color:var(--navy);font-weight:600;">Lycées</a>
-    <a href="doublettes.php" style="color:var(--navy);font-weight:600;">Spécialités</a>
+    <a href="aide.html" style="color:var(--navy);font-weight:600;">❓ Guide</a>
   </div>
   <div class="mediapart-links">
     <a href="https://www.facebook.com/people/Hors-Kadre/61570725300507/" target="_blank">📘 Facebook</a>
@@ -240,43 +242,69 @@ footer a { color: var(--terra); }
 
   <div class="tuiles">
 
-    <a href="parcoursup.php" class="tuile tuile-primary">
+    <!-- 1. Dès la 3ème — IVAL lycées -->
+    <a href="indexival.php" class="tuile">
+      <div class="tuile-icon">🏫</div>
+      <h2>Comparer les lycées — IVAL</h2>
+      <p>Dès la 3ème. Quel lycée apporte vraiment à ses élèves ? Les données officielles, pas le classement.</p>
+      <span class="badge">Utile dès la 3ème</span>
+    </a>
+
+    <!-- 2. Dès la Seconde — Test orientation -->
+    <a href="orientation_test.html" class="tuile tuile-primary">
+      <div class="tuile-icon">🎯</div>
+      <h2>Quel étudiant(e) es-tu ?</h2>
+      <p>7 questions. 6 profils. Eleven, Wednesday, Sasuke… Découvre ta formation idéale — et partage ton résultat !</p>
+      <span class="badge">Nouveau !</span>
+    </a>
+
+    <!-- 2b. Spécialités & formations -->
+    <a href="specialitesfilieres.html" class="tuile">
+      <div class="tuile-icon">📚</div>
+      <h2>Spécialités & Filières lycée</h2>
+      <p>Dès la Seconde. Quelle spé ouvre quelles portes ? Bac général, techno, STI2D, STMG… expliqués.</p>
+      <span class="badge">Utile dès la 2nde</span>
+    </a>
+
+    <!-- 3. En Première — Doublettes -->
+    <a href="doublettes.php" class="tuile">
+      <div class="tuile-icon">📊</div>
+      <h2>Spécialités qui ouvrent les portes</h2>
+      <p>En Première. Maths+PC, NSI, SES… Les données 2024 sur ce que chaque doublette ouvre vraiment.</p>
+    </a>
+
+    <!-- 4. En Terminale — Parcoursup -->
+    <a href="parcoursup.php" class="tuile">
       <div class="tuile-icon">🎓</div>
       <h2>Comprendre Parcoursup</h2>
-      <p>Combien de candidats pour une place ? Quel profil a été admis ? Les vrais chiffres, en clair.</p>
+      <p>En Terminale. Combien de candidats pour une place ? Quel profil a été admis ? Les vrais chiffres.</p>
       <span class="badge">France entière</span>
     </a>
 
-    <a href="indexival.php" class="tuile">
-      <div class="tuile-icon">🏫</div>
-      <h2>Comparer les lycées</h2>
-      <p>Tous les lycées ne notent pas pareil. Voyez le niveau réel de chaque établissement.</p>
-      <span class="badge">Données 2025</span>
+    <!-- 5. CPGE -->
+    <a href="cpge_analyse.html" class="tuile">
+      <div class="tuile-icon">🏛️</div>
+      <h2>Grandes Écoles — ce qu'on ne dit pas</h2>
+      <p>CPGE, banques de concours, coûts réels, boursiers, profil des élèves. Les données publiques en clair.</p>
     </a>
 
+    <!-- Ressources -->
     <a href="typeformation.html" class="tuile">
       <div class="tuile-icon">📖</div>
       <h2>Quelle formation après le bac ?</h2>
       <p>BUT, BTS, Licence, Prépa… Les différences expliquées sans jargon, en 5 minutes.</p>
     </a>
 
-    <a href="doublettes.php" class="tuile">
-      <div class="tuile-icon">📊</div>
-      <h2>Spécialités qui ouvrent les portes</h2>
-      <p>Maths+PC ouvre-t-elle vraiment toutes les portes ? Les données 2024 répondent.</p>
-      <span class="badge">Nouveau !</span>
-    </a>
-
     <a href="acronymes.html" class="tuile">
       <div class="tuile-icon">📖</div>
       <h2>Lexique & Acronymes</h2>
-      <p>BUT, BTS, IVAL, NSI, HGGSP… Tous les termes expliqués simplement, avec des exemples chiffrés.</p>
+      <p>IVAL, NSI, HGGSP, BCE, SCEI… Tous les termes expliqués avec des exemples chiffrés.</p>
     </a>
 
     <a href="aide.html" class="tuile">
       <div class="tuile-icon">❓</div>
       <h2>Guide d'utilisation</h2>
-      <p>Vous ne savez pas par où commencer ? Ce guide vous accompagne étape par étape.</p>
+      <p>Par où commencer selon votre situation ? Ce guide vous accompagne étape par étape.</p>
     </a>
 
   </div>
