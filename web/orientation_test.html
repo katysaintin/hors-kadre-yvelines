@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quel étudiant es-tu ? — Hors Kadre</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTNJ36H5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TTTNJ36H5D', { 'anonymize_ip': true });
+</script>
 <style>
 :root{
   --navy:#1B3A6B;--terra:#C4572A;--offwhite:#F5F0EB;
@@ -406,6 +413,10 @@ function choisir(repIdx){
   const q = QUESTIONS[currentQ];
   const rep = q.reponses[repIdx];
 
+  // Mémoriser réponse Q4 (index 3) et Q7 (index 6)
+  if (currentQ === 3) reponseQ4 = repIdx;
+  if (currentQ === 6) reponseQ7 = repIdx;
+
   // Mettre en évidence
   document.querySelectorAll('.rep-btn').forEach((b,i)=>{
     b.classList.toggle('selected', i===repIdx);
@@ -431,13 +442,15 @@ function choisir(repIdx){
 /* ================================================================
    RÉSULTAT — redirige vers resultat.html (page partageable)
    ================================================================ */
-function afficherResultat(){
-  // Trouver le profil gagnant
-  profil = Object.entries(scores)
-    .sort((a,b)=>b[1]-a[1])[0][0];
+/* Mémoriser Q4 (géographie) et Q7 (domaine) */
+let reponseQ4 = -1;
+let reponseQ7 = -1;
 
-  // Redirection vers la page résultat statique partageable
-  window.location.href = 'resultat.html?profil=' + encodeURIComponent(profil);
+function afficherResultat(){
+  profil = Object.entries(scores).sort((a,b)=>b[1]-a[1])[0][0];
+  window.location.href = 'resultat.html?profil=' + encodeURIComponent(profil)
+    + '&q4=' + reponseQ4
+    + '&q7=' + reponseQ7;
 }
 
 function afficherResultatInPage_UNUSED(){
