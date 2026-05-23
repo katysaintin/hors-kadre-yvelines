@@ -233,6 +233,8 @@ a{color:var(--terra);}
 .sbtn-fb{background:#1877f2;color:#fff;}
 .sbtn-linkedin{background:#0077b5;color:#fff;}
 .sbtn-copy{background:rgba(255,255,255,.1);color:#ddd;border:1px solid rgba(255,255,255,.2);}
+.sbtn-whatsapp{background:#25D366;color:#fff;}
+.sbtn-copy-text{background:rgba(255,255,255,.1);color:#ddd;border:1px solid rgba(255,255,255,.2);}
 .share-feedback{font-size:.78rem;color:var(--terra);text-align:center;min-height:20px;margin-top:4px;}
 @media(max-width:500px){
   .result-header,.result-body{padding:20px 16px;}
@@ -481,9 +483,10 @@ function render() {
 
   html += "<div class=\"secondary-share\">";
   html += "<div class=\"secondary-share-row\">";
+  html += "<button class=\"secondary-btn sbtn-whatsapp\" onclick=\"partagerWhatsApp('" + profilId + "')\">💬 WhatsApp</button>";
+  html += "<button class=\"secondary-btn sbtn-copy-text\" id=\"btn-copier\" onclick=\"copierTexte('" + profilId + "')\">📋 Copier le texte</button>";
   html += "<button class=\"secondary-btn sbtn-fb\" onclick=\"partagerFB()\">👥 Facebook</button>";
   html += "<button class=\"secondary-btn sbtn-linkedin\" onclick=\"partagerLinkedIn()\">💼 LinkedIn</button>";
-  html += "<button class=\"secondary-btn sbtn-copy\" onclick=\"copierLien()\">🔗 Copier le lien</button>";
   html += "</div><div class=\"share-feedback\" id=\"share-feedback\"></div></div>";
 
   html += "<div class=\"result-body\">";
@@ -580,6 +583,16 @@ async function afficherImagePleinEcran(profilId) {
   modal.appendChild(btnClose);
   modal.appendChild(img);
   modal.appendChild(msg);
+  // QR code via api.qrserver.com — zéro dépendance
+  var qr = document.createElement('img');
+  qr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=http://katy.ho.free.fr/orientation_test.html';
+  qr.style.cssText='width:80px;height:80px;border-radius:8px;margin-top:16px;opacity:.7;';
+  qr.alt='QR code';
+  var qrLabel = document.createElement('p');
+  qrLabel.textContent='Scanner pour faire le test';
+  qrLabel.style.cssText='color:rgba(255,255,255,.4);font-size:.7rem;margin-top:4px;font-family:Georgia,serif;';
+  modal.appendChild(qr);
+  modal.appendChild(qrLabel);
   document.body.appendChild(modal);
 }
 
@@ -615,6 +628,33 @@ function copierLien(){
   if(navigator.clipboard&&navigator.clipboard.writeText){
     navigator.clipboard.writeText(url).then(function(){_feedback('Lien copie !');}).catch(function(){_fb2(url);});
   }else{_fb2(url);}
+}
+
+function _textePartage(profilId) {
+  var p = PROFILS[profilId]; if (!p) return "";
+  var t = p.emoji + " Je suis " + p.nom + " - " + p.formation + "!\n";
+  t += "C'est quel perso pour toi ?\n";
+  t += "Fais le test -> http://katy.ho.free.fr/orientation_test.html";
+  return t;
+}
+
+function partagerWhatsApp(profilId) {
+  if(typeof gtag!=='undefined') gtag('event','share_result',{profil:profilId,plateforme:'whatsapp'});
+  var texte = _textePartage(profilId);
+  window.open('https://wa.me/?text=' + encodeURIComponent(texte), '_blank');
+}
+
+function copierTexte(profilId) {
+  if(typeof gtag!=='undefined') gtag('event','share_result',{profil:profilId,plateforme:'copy_text'});
+  var texte = _textePartage(profilId);
+  var btn = document.getElementById('btn-copier');
+  var oldLabel = btn ? btn.innerHTML : '';
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(texte).then(function(){
+      if(btn){ btn.innerHTML = '✅ Copié !'; btn.style.background='#2d8a4e'; btn.style.color='#fff'; }
+      setTimeout(function(){ if(btn){ btn.innerHTML=oldLabel; btn.style.background=''; btn.style.color=''; } }, 2000);
+    }).catch(function(){ _fb2(texte); });
+  } else { _fb2(texte); }
 }
 function _fb2(t){
   var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.left='-9999px';
