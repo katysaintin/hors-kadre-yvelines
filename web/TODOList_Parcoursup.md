@@ -120,74 +120,269 @@ Plus tard.
 👉 diffuser
 👉 observer
 
-# OUTIL STATISTIQUE V2
+# OUTIL STATISTIQUE V2 — VERSION CORRIGÉE
 
-Projet : Hors Kadre — katy.ho.free.fr
+Projet : Hors Kadre — katy.ho.free.fr  
 Stack : PHP legacy mysql_* sur free.fr, JS vanilla, MySQL
 
+==================================================
 CONTEXTE
-========
-Le test d'orientation (orientation_test.html + resultat.html) 
-génère 6 profils : luffy, eleven, sasuke, steve, wednesday, tanjiro.
-La page tendances.html affiche des stats statiques depuis data/profils_stats.json.
+==================================================
 
+Le test d’orientation :
+- orientation_test.html
+- resultat.html
+
+génère 6 profils :
+- luffy
+- eleven
+- sasuke
+- steve
+- wednesday
+- tanjiro
+
+La page tendances.html affiche actuellement :
+- des statistiques statiques
+- via data/profils_stats.json
+
+==================================================
 OBJECTIF V2
-===========
-Transformer tendances.html en observatoire participatif.
-Les utilisateurs contribuent volontairement leur parcours
-pour enrichir les données affichées publiquement.
+==================================================
 
-TABLE SQL À CRÉER
-=================
+Transformer tendances.html en :
+
+→ observatoire participatif des parcours post-bac.
+
+Les utilisateurs pourront contribuer volontairement :
+- à leur profil
+- à leur parcours d’orientation
+- à leur formation choisie
+
+afin d’enrichir les statistiques affichées publiquement.
+
+IMPORTANT :
+Le ton du projet doit rester :
+- pédagogique
+- rassurant
+- non compétitif
+- non anxiogène
+
+L’objectif n’est PAS :
+- de classer les élèves
+- de définir des “bons profils”
+- ni de prédire des métiers
+
+Mais de :
+- montrer la diversité des parcours
+- rendre visibles plusieurs façons de réussir
+- aider les familles à se projeter
+
+==================================================
+TABLE SQL
+==================================================
+
 CREATE TABLE tendances_communaute (
-  id                  INT AUTO_INCREMENT PRIMARY KEY,
-  profil_id           VARCHAR(20),
-  departement         VARCHAR(50),
-  ville               VARCHAR(100),
-  uai_lycee           VARCHAR(10),
-  nom_lycee           VARCHAR(150),
-  formation_envisagee VARCHAR(50),
-  formation_reelle    VARCHAR(50),
-  statut              ENUM('lyceen','etudiant','parent','autre'),
-  consentement        TINYINT(1) DEFAULT 1,
-  created_at          TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  id                   INT AUTO_INCREMENT PRIMARY KEY,
+  profil_id            VARCHAR(20),
+  departement          VARCHAR(50),
+  ville                VARCHAR(100),
+  uai_lycee            VARCHAR(10),
+  nom_lycee            VARCHAR(150),
+  formation_envisagee  VARCHAR(50),
+  formation_choisie    VARCHAR(50),
+  statut_utilisateur   ENUM('lyceen','etudiant','parent','autre'),
+  consentement         TINYINT(1) DEFAULT 1,
+  created_at           TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+==================================================
 FICHIERS À CRÉER
-================
+==================================================
+
 1. formulaire_tendance.php
-   - Reçoit profil_id depuis resultat.html (GET)
-   - Menus en cascade : département → ville → lycée
-     (AJAX depuis lycees_france_ival_2025 existante)
-   - Formation envisagée (BUT/BTS/CPGE/Licence/Commerce/PASS/Autre)
-   - Formation réelle (même liste + "Pas encore dans le sup")
-   - Statut (lycéen/étudiant/parent/autre)
-   - Case RGPD obligatoire
-   - Soumission → insert dans tendances_communaute
-   - Redirect vers tendances.html après validation
+----------------------------------
 
+Objectif :
+permettre à l’utilisateur de contribuer son parcours.
+
+Fonctionnement :
+- récupération profil_id depuis resultat.html (GET)
+- formulaire simple mobile-first
+- UX très fluide
+
+CHAMPS :
+- département
+- ville
+- lycée
+- formation envisagée
+- formation choisie
+- statut utilisateur
+- consentement RGPD obligatoire
+
+==================================================
+IMPORTANT UX
+==================================================
+
+Éviter menus cascade lourds.
+
+Préférer :
+🔍 recherche lycée autocomplete AJAX
+
+Source :
+table existante :
+lycees_france_ival_2025
+
+Fonctionnement :
+- recherche dynamique nom lycée
+- affichage suggestions
+- stockage UAI caché
+
+Beaucoup plus simple sur mobile.
+
+==================================================
+FORMATIONS
+==================================================
+
+Liste :
+- BUT
+- BTS
+- CPGE
+- Licence
+- PASS
+- Commerce
+- École ingénieur post-bac
+- Alternance
+- Autre
+- Pas encore dans le supérieur
+
+==================================================
+STATUT UTILISATEUR
+==================================================
+
+Ne pas utiliser le mot “statut”.
+
+Préférer :
+
+“Vous êtes :”
+
+○ Lycéen  
+○ Étudiant  
+○ Parent  
+○ Autre
+
+==================================================
+RGPD
+==================================================
+
+Aucune donnée personnelle :
+- pas de nom
+- pas de prénom
+- pas d’email
+
+Consentement obligatoire :
+
+☑ J’accepte que mes réponses soient utilisées
+de manière anonyme pour produire des statistiques agrégées.
+
+==================================================
+SOUMISSION
+==================================================
+
+INSERT INTO tendances_communaute
+
+Puis :
+redirect vers :
+tendances.html
+
+==================================================
 2. resultats_communaute.php
-   - Affichage public des contributions
-   - Croisements : profil × lycée IVAL × formation choisie
-   - Requêtes agrégées uniquement (pas de données individuelles)
-   - Même charte graphique navy/terra/offwhite
+==================================================
 
-3. Modifier tendances.html
-   - Ajouter bouton "Contribuer mon parcours →"
-   - Afficher stats temps réel depuis tendances_communaute
-     en complément du JSON statique
+Objectif :
+affichage public des tendances observées.
 
-RÈGLES
-======
-- Aucune donnée personnelle (nom, email, prénom)
-- Consentement explicite obligatoire
-- Affichage public = données agrégées uniquement
-- Compatible free.fr mysql_*
-- Lien avec lycees_france_ival_2025 via uai_lycee
-  pour croiser profil × IVAL × formation
+UNIQUEMENT données agrégées.
 
-CHARTE
-======
-navy #1B3A6B · terra #C4572A · offwhite #F5F0EB · gold #B8860B
-Ton : rassurant, pédagogique, non compétitif
+Aucune donnée individuelle affichée.
 
+==================================================
+STATISTIQUES À AFFICHER
+==================================================
+
+- profil × formation choisie
+- profil × type de lycée
+- profil × IVAL
+- profil × département
+- profil × parcours envisagé vs choisi
+
+==================================================
+IMPORTANT
+==================================================
+
+Le rendu ne doit jamais ressembler à :
+- un classement scolaire
+- un dashboard administratif
+- un outil de notation
+
+Mais plutôt :
+- un observatoire pédagogique
+- une cartographie des parcours
+- un média éducatif interactif
+
+==================================================
+3. tendances.html
+==================================================
+
+Ajouter :
+
+📊 Contribuer mon parcours
+
+Lien :
+formulaire_tendance.php
+
+==================================================
+AFFICHAGE
+==================================================
+
+Conserver :
+- JSON statique existant
+- statistiques générales profils
+
+Ajouter :
+- statistiques communautaires temps réel
+- séparées visuellement
+
+==================================================
+CHARTE GRAPHIQUE
+==================================================
+
+navy      #1B3A6B
+terra     #C4572A
+offwhite  #F5F0EB
+gold      #B8860B
+gray      #555555
+
+Style :
+- chaleureux
+- éditorial premium
+- beaucoup d’espace blanc
+- très lisible mobile
+- animations discrètes
+
+==================================================
+VISION PRODUIT
+==================================================
+
+Le projet doit montrer :
+
+→ qu’il existe plusieurs manières de réussir après le lycée
+→ que les parcours réels sont variés
+→ que les BUT/BTS/Licences ont aussi du sens
+→ qu’un “bon élève” n’a pas une seule voie possible
+
+Le projet doit rester :
+- humain
+- rassurant
+- accessible
+- non élitiste
+- basé sur les données réelles
