@@ -1,341 +1,793 @@
-<div style="max-width:900px;margin:auto;font-family:Arial,sans-serif;line-height:1.7;color:#222;">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1 style="color:#243c84;">
-Parcoursup 2026 : comprendre simplement la phase d’admission
+<title>Comprendre la phase d’admission Parcoursup 2026 simplement</title>
+
+<meta name="description" content="Guide Parcoursup 2026 pour les familles : phase d’admission, listes d’attente, classement des voeux, phase complémentaire et conseils pratiques expliqués simplement.">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTNJ36H5D"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-TTTNJ36H5D', { 'anonymize_ip': true });
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --navy:#1B3A6B;
+    --terra:#C4572A;
+    --offwhite:#F5F0EB;
+    --gold:#B8860B;
+    --gray:#555555;
+    --light:#ffffff;
+    --green:#dff5df;
+    --yellow:#fff4c7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--offwhite);
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    width:min(1100px,92%);
+    margin:auto;
+}
+
+header{
+    background:var(--light);
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:1.4rem;
+    color:var(--navy);
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--gray);
+    font-size:0.95rem;
+    transition:0.2s;
+}
+
+nav a:hover{
+    color:var(--terra);
+}
+
+.hero{
+    padding:80px 0 60px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2.5rem,5vw,4.5rem);
+    line-height:1.1;
+    color:#3b2b1f;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:1.15rem;
+    color:var(--gray);
+    margin-bottom:25px;
+}
+
+.badge{
+    display:inline-block;
+    background:#eee7e2;
+    padding:10px 14px;
+    border-radius:12px;
+    font-size:0.9rem;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    border-radius:24px;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2rem,4vw,3rem);
+    color:#3b2b1f;
+    margin-bottom:20px;
+}
+
+.section-intro{
+    color:var(--gray);
+    max-width:800px;
+    margin-bottom:40px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:24px;
+    border:1px solid #e4d8cf;
+}
+
+.card h3{
+    font-family:'Playfair Display',serif;
+    margin-bottom:10px;
+    color:#3b2b1f;
+}
+
+.card p{
+    color:var(--gray);
+}
+
+.info-box{
+    padding:20px;
+    border-radius:18px;
+    margin-top:25px;
+}
+
+.info-blue{
+    background:#d9e8ff;
+}
+
+.info-yellow{
+    background:var(--yellow);
+}
+
+.info-green{
+    background:var(--green);
+}
+
+.image-block{
+    margin:40px 0;
+}
+
+.image-block img{
+    width:100%;
+    border-radius:24px;
+}
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.timeline-step{
+    background:white;
+    border-radius:18px;
+    padding:22px;
+    border-top:4px solid var(--terra);
+}
+
+.timeline-step h4{
+    color:var(--navy);
+    margin-bottom:8px;
+}
+
+.two-cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:18px;
+    margin-top:35px;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:100%;
+    border-radius:14px;
+    margin-bottom:10px;
+}
+
+.profile strong{
+    display:block;
+    margin-bottom:4px;
+}
+
+.cta{
+    background:var(--navy);
+    color:white;
+    padding:50px;
+    border-radius:28px;
+    text-align:center;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.button{
+    display:inline-block;
+    background:var(--terra);
+    color:white;
+    padding:14px 24px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+footer{
+    padding:50px 0;
+    text-align:center;
+    color:var(--gray);
+    font-size:0.9rem;
+}
+
+@media(max-width:900px){
+
+.hero-grid,
+.two-cols{
+    grid-template-columns:1fr;
+}
+
+.hero{
+    padding-top:40px;
+}
+
+nav{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container topbar">
+
+<div class="logo">
+Hors Kadre
+</div>
+
+<nav>
+<a href="#timeline">Les étapes</a>
+<a href="#attente">Listes d’attente</a>
+<a href="#classement">Classer ses voeux</a>
+<a href="#phase-complementaire">Phase complémentaire</a>
+<a href="#aides">Aides</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+⏱ Lecture : 5 minutes
+</div>
+
+<h1>
+Comprendre la phase d’admission Parcoursup 2026 simplement
 </h1>
 
-<p style="font-size:18px;">
-À partir du <strong>2 juin 2026 à 19h</strong>, les réponses Parcoursup arrivent.
-Cette période peut être stressante pour les familles.
-Voici un mémo simple pour comprendre ce qu’il faut faire 😊
+<p>
+Le guide qui aide les familles à avancer une étape à la fois.
 </p>
 
-<hr>
-
-<h2 style="color:#243c84;">1 — Le 2 juin : début des réponses Parcoursup</h2>
-
-<p>
-Les premières propositions arrivent le <strong>2 juin à 19h</strong>.
-</p>
-
-<p>
-⚠️ Dans les premières heures, certaines actions peuvent être temporairement bloquées.
-C’est normal.
-Parcoursup veut éviter les décisions prises trop rapidement.
-</p>
-
-<p>
-👉 Il faut prendre le temps de lire calmement chaque proposition avant de répondre.
-</p>
-
-<p>
-⚠️ Beaucoup d’élèves n’ont pas immédiatement de réponse positive le premier soir.
-</p>
-
-<p>
-Il est très fréquent d’avoir :
-</p>
-
-<ul>
-<li>des vœux “en attente” ;</li>
-<li>ou uniquement des listes d’attente au début.</li>
-</ul>
-
-<p>
-👉 Cela ne veut pas dire que le dossier est mauvais.
-Les listes évoluent beaucoup pendant les semaines suivantes.
-</p>
-
-<!-- SCREENSHOT -->
-
-<hr>
-
-<h2 style="color:#243c84;">2 — Attention aux délais de réponse</h2>
-
-<p>
-Les deux premiers jours, les candidats ont <strong>3 jours</strong> pour répondre.
-</p>
-
-<p>
-Ensuite, les délais passent généralement à <strong>48h</strong>.
-</p>
-
-<p>
-📱 Les notifications arrivent :
-</p>
-
-<ul>
-<li>par mail ;</li>
-<li>par SMS ;</li>
-<li>sur le dossier Parcoursup.</li>
-</ul>
-
-<p>
-👉 Il est conseillé de consulter Parcoursup chaque matin.
-</p>
-
-<hr>
-
-<h2 style="color:#243c84;">3 — Bien vérifier avant de cliquer</h2>
-
-<p>
-Quand une proposition arrive, il faut lire attentivement les choix proposés.
-</p>
-
-<p>
-⚠️ Pour les vœux “en attente”, Parcoursup peut proposer par défaut “renoncer”.
-</p>
-
-<p>
-👉 Si l’élève souhaite garder ce vœu en attente, il faut penser à cliquer sur <strong>“maintenir”</strong>.
-</p>
-
-<p>
-Il est donc important de toujours vérifier calmement les cases cochées avant de valider.
-</p>
-
-<!-- SCREENSHOT -->
-
-<hr>
-
-<h2 style="color:#243c84;">4 — Le classement des vœux en attente (entre le 5 et le 8 juin)</h2>
-
-<p>
-Entre le <strong>5 et le 8 juin</strong>, Parcoursup demandera aux candidats de classer leurs vœux en attente.
-</p>
-
-<p>
-👉 Cela concerne tous les vœux en attente, même s’il n’y en a qu’un seul.
-</p>
-
-<p>
-Le candidat peut aussi choisir de ne pas les classer.
-</p>
-
-<p>
-Le but est d’accélérer les listes d’attente et de libérer des places plus rapidement.
-</p>
-
-<p>
-Quand un vœu est accepté :
-</p>
-
-<ul>
-<li>les vœux mieux classés restent conservés ;</li>
-<li>les vœux classés derrière sont automatiquement supprimés.</li>
-</ul>
-
-<p>
-⚠️ Il est donc important de réfléchir à l’ordre de préférence à l’avance.
-</p>
-
-<!-- SCREENSHOT -->
-
-<hr>
-
-<h2 style="color:#243c84;">5 — Comment aider son enfant à classer ses vœux ?</h2>
-
-<p>
-Le plus important est de réfléchir :
-</p>
-
-<ul>
-<li>au type d’études souhaité ;</li>
-<li>au rythme de travail ;</li>
-<li>à l’autonomie de l’élève ;</li>
-<li>à la mobilité géographique ;</li>
-<li>au projet professionnel ;</li>
-<li>au contenu réel des formations.</li>
-</ul>
-
-<p>
-👉 Il est important de relire les matières étudiées dans chaque formation.
-</p>
-
-<p>
-Les étudiants vont suivre ces cours pendant plusieurs années.
-Mieux vaut être sûr d’aimer les matières proposées 😊
-</p>
-
-<p>
-Exemples :
-</p>
-
-<ul>
-<li>BUT ;</li>
-<li>BTS ;</li>
-<li>Licence ;</li>
-<li>CPGE.</li>
-</ul>
-
-<p>
-👉 Un test d’orientation peut aussi aider à clarifier les préférences.
-</p>
-
-<hr>
-
-<h2 style="color:#243c84;">6 — À partir du 11 juin : la phase complémentaire</h2>
-
-<p>
-À partir du <strong>11 juin</strong>, de nouvelles formations avec des places disponibles apparaissent.
-</p>
-
-<p>
-👉 Il est possible de faire de nouveaux vœux.
-</p>
-
-<p>
-Cela permet parfois de découvrir :
-</p>
-
-<ul>
-<li>des formations oubliées ;</li>
-<li>des établissements dans d’autres régions ;</li>
-<li>de nouvelles possibilités.</li>
-</ul>
-
-<p>
-⚠️ En revanche, il n’est pas possible de refaire un vœu dans une formation déjà demandée auparavant.
-</p>
-
-<hr>
-
-<h2 style="color:#243c84;">7 — Pendant le bac</h2>
-
-<p>
-Parcoursup continue à envoyer des propositions pendant les épreuves du bac.
-</p>
-
-<p>
-Mais les délais de réponse sont suspendus pour permettre aux élèves de rester concentrés sur leurs examens.
-</p>
-
-<p>
-📅 Dates du bac général 2026 : à compléter
-</p>
-
-<hr>
-
-<h2 style="color:#243c84;">8 — Après le 11 juillet</h2>
-
-<p>
-Si un élève a encore des vœux en attente le 11 juillet, ils sont automatiquement archivés.
-</p>
-
-<p>
-👉 Il n’est alors plus possible de suivre l’évolution de la liste d’attente directement sur Parcoursup.
-</p>
-
-<p>
-Mais des propositions peuvent encore arriver pendant l’été.
-</p>
-
-<p>
-⚠️ Il est donc important de continuer à consulter régulièrement ses mails et son dossier Parcoursup.
-</p>
-
-<p>
-Les délais de réponse restent actifs pendant les vacances.
-</p>
-
-<p>
-Un étudiant peut :
-</p>
-
-<ul>
-<li>s’inscrire dans une formation ;</li>
-<li>recevoir ensuite une meilleure proposition ;</li>
-<li>changer finalement d’établissement.</li>
-</ul>
-
-<hr>
-
-<h2 style="color:#243c84;">9 — Comprendre son rang sur liste d’attente</h2>
-
-<p>
-Parcoursup affiche un graphique permettant de comparer :
-</p>
-
-<ul>
-<li>le rang du candidat ;</li>
-<li>le dernier candidat appelé l’année précédente ;</li>
-<li>l’évolution actuelle de la liste d’attente.</li>
-</ul>
-
-<p>
-👉 Cela permet d’estimer les chances d’obtenir une proposition.
-</p>
-
-<!-- SCREENSHOT -->
-
-<hr>
-
-<h2 style="color:#243c84;">10 — S’entraîner avant le 2 juin</h2>
-
-<p>
-Parcoursup propose un site d’entraînement gratuit.
-</p>
-
-<p>
-👉 Très utile pour réduire le stress et comprendre les écrans avant le jour J.
-</p>
-
-<p>
-<a href="https://entrainement.parcoursup.fr/Candidat/admissions?ACTION=0" target="_blank">
-Accéder au site d’entraînement Parcoursup
+<a href="#timeline" class="button">
+Commencer le guide
 </a>
+
+</div>
+
+<div>
+
+<!-- IMAGE HERO -->
+<img src="images/hero_parcoursup.jpg" alt="Parent et lycéen devant Parcoursup">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="timeline">
+
+<div class="container">
+
+<h2 class="section-title">
+Les grandes étapes à connaître
+</h2>
+
+<p class="section-intro">
+Le processus est progressif et balisé. Chaque étape suit la précédente : un parcours clair, à suivre sereinement.
 </p>
 
-<hr>
+<div class="timeline">
 
-<h2 style="color:#243c84;">11 — En cas de difficulté</h2>
+<div class="timeline-step">
+<h4>2 juin</h4>
+<p>Premières réponses</p>
+</div>
 
-<p>
-☎️ Numéro vert Parcoursup :
+<div class="timeline-step">
+<h4>5–8 juin</h4>
+<p>Classement des voeux en attente</p>
+</div>
+
+<div class="timeline-step">
+<h4>11 juin</h4>
+<p>Phase complémentaire</p>
+</div>
+
+<div class="timeline-step">
+<h4>Pendant le bac</h4>
+<p>Délais de réponse en pause</p>
+</div>
+
+<div class="timeline-step">
+<h4>11 juillet</h4>
+<p>Voeux mémorisés pour l’été</p>
+</div>
+
+</div>
+
+<div class="info-box info-blue">
+💡 Beaucoup de familles commencent à réfléchir à leurs préférences avant le 5 juin.
+</div>
+
+<div class="info-box info-yellow">
+📌 Les voeux en attente restent conservés pendant l’été. De nouvelles propositions peuvent encore arriver pendant les vacances.
+</div>
+
+</div>
+
+</section>
+
+<section id="attente">
+
+<div class="container">
+
+<h2 class="section-title">
+Avoir des voeux en attente est fréquent
+</h2>
+
+<p class="section-intro">
+Le 2 juin, de nombreux élèves ne reçoivent pas immédiatement de proposition d’admission. C’est une situation très fréquente.
+Les propositions arrivent souvent progressivement au fil des jours.
 </p>
 
-<p style="font-size:24px;font-weight:bold;color:#c62828;">
-0800 400 070
+<div class="image-block">
+
+<!-- IMAGE LISTE ATTENTE -->
+<img src="images/liste_attente.jpg" alt="Illustration liste attente Parcoursup">
+
+</div>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Les listes évoluent</h3>
+<p>Les places se libèrent peu à peu.</p>
+</div>
+
+<div class="card">
+<h3>Les réponses arrivent</h3>
+<p>Les propositions arrivent progressivement.</p>
+</div>
+
+<div class="card">
+<h3>Une étape normale</h3>
+<p>C’est fréquent sur Parcoursup.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Prenez le temps de répondre calmement
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>3 jours</h3>
+<p>pour répondre aux premières propositions</p>
+</div>
+
+<div class="card">
+<h3>48h ensuite</h3>
+<p>pour répondre aux nouvelles propositions</p>
+</div>
+
+<div class="card">
+<h3>Notifications</h3>
+<p>Email, SMS et dossier Parcoursup</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Bien vérifier avant de cliquer
+</h2>
+
+<p class="section-intro">
+Avant de valider, relire chaque choix pour bien maintenir vos voeux favoris.
 </p>
 
-<p>
-Il ne faut pas attendre en cas de problème technique ou de doute.
+<div class="image-block">
+
+<!-- IMAGE SCREEN PARCOURSUP -->
+<img src="images/maintenir_voeu.jpg" alt="Capture Parcoursup maintenir voeu">
+
+</div>
+
+<div class="info-box info-yellow">
+⚠️ Pour les voeux “en attente”, l’option cochée par défaut peut être “Renoncer” au lieu de “Maintenir”.
+</div>
+
+<p style="margin-top:30px;">
+Faire le point calmement, ensemble, devant l’écran.
 </p>
 
-<hr>
+<ul style="margin-top:20px;padding-left:20px;color:var(--gray);">
+<li>Vérifier chaque choix avant validation</li>
+<li>Le site d’entraînement officiel permet de découvrir l’interface avant le 2 juin</li>
+</ul>
 
-<h2 style="color:#243c84;">12 — Une aide gratuite pour les familles</h2>
+</div>
 
-<p>
-L’association COSI Orientation organise des permanences gratuites en visioconférence.
+</section>
+
+<section id="classement">
+
+<div class="container">
+
+<h2 class="section-title">
+Quelques questions simples peuvent aider à classer ses voeux
+</h2>
+
+<p class="section-intro">
+Entre le 5 et le 8 juin, les voeux en attente devront être classés.
+Le plus utile est de réfléchir dès maintenant au type de formation dans lequel l’élève se sentira à l’aise au quotidien.
 </p>
 
-<p>
-🗓 Tous les samedis de 10h à 11h30
-</p>
+<div class="two-cols">
 
-<p>
-👉 Les familles peuvent poser leurs questions librement.
-</p>
+<div>
 
-<p>
-<a href="https://www.assocosi-orientation.com/nos-permanences-hebdomadaires/" target="_blank">
-Informations et accès aux permanences COSI
-</a>
-</p>
+<div class="card-grid">
 
-<p>
-Zoom :
-<br>
-<a href="https://us06web.zoom.us/j/81601094627" target="_blank">
-Rejoindre la visioconférence
-</a>
-</p>
+<div class="card">
+<h3>Théorie ou pratique ?</h3>
+</div>
 
-<hr>
+<div class="card">
+<h3>Contrôle continu ou concours ?</h3>
+</div>
 
-<p style="font-size:14px;color:#666;">
-Mémo réalisé pour aider les familles à comprendre simplement la phase d’admission Parcoursup.
+<div class="card">
+<h3>Étudier près de chez moi ?</h3>
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 style="margin-bottom:20px;font-family:'Playfair Display',serif;">
+Comment ça fonctionne ?
+</h3>
+
+<ul style="padding-left:20px;line-height:2;">
+<li>Les voeux mieux classés restent possibles</li>
+<li>Les voeux derrière sont libérés automatiquement</li>
+<li>Des places sont alors reproposées rapidement pour d’autres élèves</li>
+</ul>
+
+<p style="margin-top:25px;">
+Classer, c’est trouver les priorités adaptées à ses besoins.
 </p>
 
 </div>
+
+</div>
+
+<div class="info-box" style="background:#eadfdb;margin-top:40px;">
+💡 Un test ludique gratuit peut aider : il propose 6 archétypes d’étudiants possibles.
+<br><br>
+<a href="http://katy.ho.free.fr/orientation_test.html">
+Découvrir le test d’orientation
+</a>
+</div>
+
+<div class="profile-grid">
+
+<div class="profile">
+<img src="images/eleven.jpg" alt="Profil Eleven">
+<strong>⚡ Eleven</strong>
+<p>BUT / École d’ingénieurs</p>
+</div>
+
+<div class="profile">
+<img src="images/luffy.jpg" alt="Profil Luffy">
+<strong>🏴‍☠️ Luffy</strong>
+<p>Commerce / BBA</p>
+</div>
+
+<div class="profile">
+<img src="images/steve.jpg" alt="Profil Steve">
+<strong>🎸 Steve</strong>
+<p>BTS / Terrain</p>
+</div>
+
+<div class="profile">
+<img src="images/wednesday.jpg" alt="Profil Wednesday">
+<strong>🖤 Wednesday</strong>
+<p>Licence / Recherche</p>
+</div>
+
+<div class="profile">
+<img src="images/tanjiro.jpg" alt="Profil Tanjiro">
+<strong>🌊 Tanjiro</strong>
+<p>PASS / Santé</p>
+</div>
+
+<div class="profile">
+<img src="images/sasuke.jpg" alt="Profil Sasuke">
+<strong>🔥 Sasuke</strong>
+<p>Prépa / Grandes Écoles</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="phase-complementaire">
+
+<div class="container two-cols">
+
+<div>
+
+<!-- IMAGE ROUTE -->
+<img src="images/phase_complementaire.jpg" alt="Illustration nouvelles possibilités">
+
+</div>
+
+<div>
+
+<h2 class="section-title">
+De nouvelles possibilités apparaissent
+</h2>
+
+<p class="section-intro">
+À partir du 11 juin, la phase complémentaire ouvre encore des formations avec des places disponibles.
+</p>
+
+<div class="info-box info-green">
+✅ De nouvelles possibilités existent.
+</div>
+
+<div class="card-grid" style="margin-top:30px;">
+
+<div class="card">
+<h3>Autres établissements</h3>
+<p>Formations similaires ailleurs.</p>
+</div>
+
+<div class="card">
+<h3>Autres villes</h3>
+<p>Une opportunité plus proche ou plus loin.</p>
+</div>
+
+<div class="card">
+<h3>Nouvelles idées</h3>
+<p>Des filières auxquelles on n’avait pas pensé.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Pendant le bac, Parcoursup ralentit le rythme
+</h2>
+
+<p class="section-intro">
+Pendant les épreuves du baccalauréat, Parcoursup continue d’envoyer des propositions.
+Et les délais de réponse passent en pause pour permettre aux élèves de passer sereinement leurs examens.
+</p>
+
+<div class="image-block">
+
+<!-- IMAGE BAC -->
+<img src="images/bac_parcoursup.jpg" alt="Lycéen pendant les épreuves du bac">
+
+</div>
+
+<div class="info-box info-green">
+📗 Le bac reste la priorité pendant cette période.
+</div>
+
+</div>
+
+</section>
+
+<section id="aides">
+
+<div class="container">
+
+<h2 class="section-title">
+Des aides gratuites existent
+</h2>
+
+<p class="section-intro">
+Vous n’avez pas besoin de tout comprendre d’un coup.
+Des professionnels sont là pour vous accompagner.
+</p>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Numéro vert Parcoursup</h3>
+<p>0800 400 070</p>
+</div>
+
+<div class="card">
+<h3>Permanences gratuites COSI Orientation</h3>
+<p>
+<a href="https://assocosi-orientation.com">
+assocosi-orientation.com
+</a>
+</p>
+</div>
+
+<div class="card">
+<h3>Ressources gratuites Hors Kadre</h3>
+<p>
+<a href="http://katy.ho.free.fr">
+katy.ho.free.fr
+</a>
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+Une étape à la fois 😊
+</h2>
+
+<p>
+Parcoursup peut sembler complexe de loin.
+Mais vu de près, c’est un chemin balisé,
+avec des étapes claires et des solutions à chaque tournant.
+</p>
+
+<a href="http://katy.ho.free.fr/orientation_test.html" class="button">
+Découvrir son profil d’orientation
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<p>
+Guide Parcoursup 2026 — Hors Kadre
+</p>
+
+<p style="margin-top:10px;">
+https://katysaintin.github.io/hors-kadre-yvelines/
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
