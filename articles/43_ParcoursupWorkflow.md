@@ -1,174 +1,172 @@
-Comment fonctionne Parcoursup ? (sans tabou)
+PARCOURSUP : QUI FAIT QUOI ?
 
-Étape 1 : Les candidats formulent leurs vœux
+Workflow simplifié (version de travail)
 
-Chaque élève :
+1. Les formations définissent leurs critères d’examen
 
-* choisit ses formations ;
-* dépose son dossier ;
-* rédige éventuellement un projet de formation motivé.
+Chaque formation détermine :
 
-À ce stade :
+* les matières importantes ;
+* les compétences attendues ;
+* les pondérations éventuelles ;
+* les critères d’évaluation ;
+* les éventuels entretiens ou épreuves.
 
-➡️ aucune sélection n’est encore réalisée.
+Exemples :
 
-⸻
+* BUT Informatique : importance des mathématiques ;
+* Licence de droit : importance du français et de l’expression écrite ;
+* CPGE : examen approfondi du dossier.
 
-Étape 2 : Les formations classent les dossiers
+↓
 
-Chaque formation reçoit l’ensemble des candidatures.
+2. Les lycées produisent les dossiers scolaires
 
-Elle applique ses critères :
+Le lycée transmet :
 
-* notes ;
-* appréciations ;
-* spécialités ;
-* cohérence du parcours ;
-* projet motivé ;
-* parfois éléments spécifiques à la formation.
+* les bulletins ;
+* les notes ;
+* les appréciations ;
+* la fiche Avenir ;
+* les avis des enseignants ;
+* l’avis du chef d’établissement.
 
-Résultat :
+Le lycée ne classe pas les élèves pour Parcoursup.
 
-➡️ chaque candidat obtient un rang de classement.
+↓
+
+3. Les candidats formulent leurs vœux
+
+Les élèves :
+
+* choisissent leurs formations ;
+* rédigent éventuellement un projet de formation motivé ;
+* complètent leur dossier.
+
+↓
+
+4. Parcoursup centralise les candidatures
+
+La plateforme :
+
+* collecte les vœux ;
+* vérifie les dossiers ;
+* prépare la transmission vers les formations.
+
+À ce stade, aucune décision d’admission n’est prise.
+
+↓
+
+5. Les dossiers sont transmis aux formations
+
+Chaque formation reçoit uniquement les candidatures qui la concernent.
+
+↓
+
+CAS N°1 : FORMATIONS SÉLECTIVES
+
+(BTS, BUT, CPGE, écoles, IFSI, etc.)
+
+↓
+
+6A. La formation classe les candidats
+
+La commission d’examen :
+
+* étudie les dossiers ;
+* applique ses critères ;
+* produit un classement.
 
 Exemple :
 
-Candidat	Rang
-A	1
-B	2
-C	3
-…	…
-Z	2000
+1er
+2e
+3e
+…
+5000e
 
-Ce classement est réalisé par la formation.
+↓
 
-Pas par Parcoursup.
+7A. Le classement est transmis à Parcoursup
 
-⸻
+Parcoursup ne modifie pas ce classement.
 
-Étape 3 : Parcoursup applique les capacités d’accueil
+↓
 
-La formation dispose d’un nombre limité de places.
+CAS N°2 : LICENCES UNIVERSITAIRES
 
-Exemple :
+(à confirmer selon les académies et les situations)
 
-* 100 places disponibles.
+↓
 
-Les 100 premiers classés reçoivent généralement une proposition.
+6B. Classement pédagogique
 
-Les suivants sont placés en liste d’attente.
+Les licences établissent également un classement des candidats.
 
-⸻
+↓
 
-Étape 4 : Les candidats répondent
+6C. Application de règles réglementaires
 
-Chaque candidat peut :
+Peuvent intervenir selon les formations :
+
+* priorité de secteur ;
+* taux minimal de boursiers ;
+* taux minimal de candidats hors secteur ;
+* dispositifs spécifiques prévus par la réglementation.
+
+Point à éclaircir :
+
+Quel est exactement le rôle de la DRAIO dans l’application ou le contrôle de ces règles ?
+
+La DRAIO semble intervenir davantage sur le paramétrage académique, la régulation et le suivi du dispositif que dans le classement individuel des dossiers.
+
+(À confirmer.)
+
+↓
+
+7B. Classement final transmis à Parcoursup
+
+↓
+
+PHASE D’ADMISSION
+
+8. Parcoursup applique les capacités d’accueil
+
+Pour chaque formation :
+
+* nombre de places ;
+* classement reçu ;
+* taux réglementaires éventuels.
+
+Parcoursup calcule alors :
+
+* les propositions d’admission ;
+* les listes d’attente.
+
+↓
+
+9. Les candidats répondent
+
+Ils peuvent :
 
 * accepter ;
 * renoncer ;
 * conserver certains vœux en attente.
 
-À ce moment-là, beaucoup de places se libèrent.
+↓
 
-Pourquoi ?
+10. Les listes d’attente évoluent
 
-Parce qu’un candidat admis :
-
-* en BUT ;
-* en prépa ;
-* en licence ;
-
-ne gardera finalement qu’un seul choix.
-
-⸻
-
-Étape 5 : Les listes d’attente avancent
-
-Chaque renoncement libère une place.
+Chaque désistement libère une place.
 
 Parcoursup appelle alors le candidat suivant dans le classement.
 
-Exemple :
+↓
 
-Jour J :
-
-* dernier appelé : rang 150
-
-Quelques jours plus tard :
-
-* dernier appelé : rang 600
-
-Puis :
-
-* rang 1200
-
-Puis :
-
-* rang 2000
-
-Les listes peuvent avancer très loin.
-
-⸻
-
-Étape 6 : Pourquoi ça bouge beaucoup au début ?
-
-Parce que les meilleurs dossiers occupent souvent plusieurs places simultanément.
-
-Exemple :
-
-Un élève peut recevoir :
-
-* une prépa ;
-* un BUT ;
-* une licence ;
-* une école.
-
-Quand il choisit finalement une seule formation :
-
-➡️ plusieurs places se libèrent d’un coup.
-
-C’est ce qui provoque les grands mouvements observés en début de phase.
-
-⸻
-
-Étape 7 : Le rôle de Parcoursup
-
-Parcoursup ne décide pas qui est admis.
-
-La plateforme :
-
-* collecte les candidatures ;
-* applique les classements fournis par les formations ;
-* gère les listes d’attente ;
-* met à jour les propositions.
-
-Le classement initial vient de la formation.
-
-⸻
-
-Étape 8 : Pourquoi les rangs d’appel sont importants ?
-
-Deux candidats peuvent être :
-
-* tous les deux en attente ;
-* tous les deux classés 800e.
-
-Mais si :
-
-* l’année précédente la formation a appelé jusqu’au rang 850 ;
-
-la situation est différente que si :
-
-* elle a appelé jusqu’au rang 2500.
-
-C’est pour cela que les données historiques sont précieuses.
-
-⸻
-
-La phrase à retenir
-
-Parcoursup ne choisit pas les candidats.
+Résumé
 
 Les formations classent.
-
-Parcoursup organise les appels dans ce classement au fur et à mesure que des places se libèren
+Les lycées alimentent les dossiers.
+Parcoursup exécute les appels.
+Les règles nationales et académiques encadrent certaines formations.
+La DRAIO supervise et régule le dispositif à l’échelle académique.
