@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Articles & Notes</title>
+<style>
+  body { font-family: sans-serif; }
+  #galerie a { display: block; padding: 2px 0; }
+</style>
+</head>
+<body>
+
+<div id="galerie"></div>
+
+<script>
+// --- CONFIGURATION ---
+// Si la page est sur https://USER.github.io/REPO/dossier/index.html
+// ces valeurs sont détectées automatiquement.
+// Sinon, vous pouvez les forcer manuellement ci-dessous.
+
+let owner = location.hostname.split('.')[0];       // ex: "katysaintin"
+
+// Cas "repo utilisateur" (le dépôt s'appelle USER.github.io) :
+// tout le chemin après le domaine est un sous-dossier du dépôt.
+let repo = location.hostname;                       // ex: "katysaintin.github.io"
+let folder = location.pathname.split('/').filter(p => p.length).join('/'); // ex: "diplomes"
+
+// (Si un jour vous utilisez un repo "projet" du type
+//  https://USER.github.io/NOMDUREPO/dossier, remplacez par :
+//  let pathParts = location.pathname.split('/').filter(p => p.length);
+//  let repo = pathParts[0];
+//  let folder = pathParts.slice(1).join('/');
+// )
+
+let branch = 'main';                                // changez en "master" si besoin
+
+// --- RÉCUPÉRATION DE LA LISTE ---
+const url = `https://api.github.com/repos/${owner}/${repo}/contents/${folder}?ref=${branch}`;
+
+fetch(url)
+  .then(r => {
+    if (!r.ok) throw new Error('Erreur ' + r.status + ' - vérifiez owner/repo/branch');
+    return r.json();
+  })
+  .then(files => {
+    files.sort((a, b) => a.name.localeCompare(b.name));
+
+    const container = document.getElementById('galerie');
+
+    files.forEach(f => {
+      if (f.name === 'index.html' || f.name === '.git') return;
+      if (f.type !== 'file') return;
+
+      const a = document.createElement('a');
+      a.href = f.name;
+      a.target = '_blank';
+      a.textContent = f.name;
+      container.appendChild(a);
+    });
+  })
+  .catch(err => {
+    document.getElementById('galerie').outerHTML =
+      '<p style="color:red">Impossible de charger la liste : ' + err.message + '</p>';
+  });
+
+</script>
+
+</body>
+</html>
