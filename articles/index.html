@@ -22,14 +22,14 @@ let owner = location.hostname.split('.')[0];       // ex: "katysaintin"
 
 // Cas "repo utilisateur" (le dépôt s'appelle USER.github.io) :
 // tout le chemin après le domaine est un sous-dossier du dépôt.
-let repo = location.hostname;                       // ex: "katysaintin.github.io"
-let folder = location.pathname.split('/').filter(p => p.length).join('/'); // ex: "diplomes"
+// let repo = location.hostname;                       // ex: "katysaintin.github.io"
+// let folder = location.pathname.split('/').filter(p => p.length).join('/'); // ex: "diplomes"
 
 // (Si un jour vous utilisez un repo "projet" du type
 //  https://USER.github.io/NOMDUREPO/dossier, remplacez par :
-//  let pathParts = location.pathname.split('/').filter(p => p.length);
-//  let repo = pathParts[0];
-//  let folder = pathParts.slice(1).join('/');
+let pathParts = location.pathname.split('/').filter(p => p.length);
+let repo = pathParts[0];
+let folder = pathParts.slice(1).join('/');
 // )
 
 let branch = 'main';                                // changez en "master" si besoin
