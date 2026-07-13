@@ -251,3 +251,330 @@ que NSI n'a pas encore convaincu les lycéens."*
 - Données calculées : taux de conversion = nb_admis/nb_voeux par doublette
 
 *Ces données couvrent l'ensemble de la France. Les réalités locales varient.*
+
+
+------
+
+# Notes de travail — Parcoursup : ce qui fonctionne vraiment
+
+## Idée générale
+
+Ne plus écrire un article sur "Parcoursup fait peur", mais sur :
+
+> Parcoursup est imparfait, mais les données montrent qu'il fonctionne beaucoup mieux que son image médiatique.
+
+Objectif :
+- rassurer les familles ;
+- déconstruire les idées reçues ;
+- expliquer ce qui dépend réellement de Parcoursup... et ce qui n'en dépend pas.
+
+---
+
+# Positionnement éditorial
+
+Je ne souhaite ni défendre aveuglément Parcoursup, ni l'attaquer.
+
+Je souhaite expliquer :
+
+- ce que fait réellement Parcoursup ;
+- ce que Parcoursup ne fait pas ;
+- où se trouvent les vraies difficultés ;
+- ce qui fonctionne concrètement chez les élèves qui réussissent.
+
+L'objectif est d'aider les familles à agir sur ce qu'elles peuvent réellement maîtriser.
+
+---
+
+# Ma légitimité
+
+Après deux enfants, deux parcours très différents.
+
+## Mon fils
+
+Profil scientifique.
+
+Pas premier de classe.
+
+Bulletins sérieux.
+
+Projet construit depuis la Seconde.
+
+- stages
+- salons
+- JPO
+- spécialités cohérentes
+- motivation argumentée
+
+Résultat :
+
+- 4 admissions dès le premier jour
+- 9 propositions au total
+
+dont
+
+- BUT GEII Cachan
+- BUT GEII Ville d'Avray
+- BUT Informatique
+- licences sous tension
+
+Le dossier n'était pas exceptionnel.
+
+Le projet l'était davantage.
+
+---
+
+## Ma fille
+
+Profil totalement différent.
+
+Objectif :
+
+journalisme, communication, international.
+
+Choix assumés :
+
+- AMC
+- HGGSP
+- SES
+- Chinois LV3
+
+Stages :
+
+- Kering (finance internationale / Chine)
+- communication mairie
+
+Première publication :
+
+une page entière dans le magazine municipal.
+
+Projet futur :
+
+stage linguistique Oxford/Cambridge.
+
+Même logique.
+
+Ce n'est pas le même profil que son frère.
+
+C'est la même cohérence.
+
+---
+
+# Une idée forte
+
+Les familles pensent souvent :
+
+"Il faut choisir les maths."
+
+Je voudrais montrer que la vraie question est plutôt :
+
+> Est-ce que votre dossier raconte une histoire cohérente ?
+
+Le jury doit pouvoir se dire :
+
+"Cette candidature est logique."
+
+---
+
+# Ce que Parcoursup ne fait pas
+
+Parcoursup ne décide pas des critères.
+
+Les critères sont définis par chaque formation.
+
+Les algorithmes locaux appartiennent aux formations.
+
+Parcoursup :
+
+- centralise
+- transmet
+- ordonne
+- gère les réponses
+
+Il ne choisit pas les meilleurs élèves.
+
+Les établissements le font.
+
+---
+
+# Ce qui fonctionne réellement
+
+Commencer tôt.
+
+Dès la Seconde.
+
+Construire progressivement.
+
+Pas en Terminale.
+
+Exemples :
+
+- visites
+- JPO
+- stages
+- salons
+- rencontres
+- curiosité
+- lectures
+- projets personnels
+
+---
+
+# Choisir une orientation plutôt qu'un métier
+
+Un élève de Seconde ne connaît pas les centaines de métiers existants.
+
+En revanche il peut savoir :
+
+- j'aime expliquer
+- j'aime programmer
+- j'aime convaincre
+- j'aime réparer
+- j'aime dessiner
+- j'aime écrire
+- j'aime voyager
+- j'aime comprendre le monde
+
+Construire autour de cela.
+
+---
+
+# Les spécialités
+
+Ne pas choisir une spécialité "par peur".
+
+Ne pas choisir "Maths" uniquement parce que tout le monde dit qu'il faut faire Maths.
+
+Choisir :
+
+- ses points forts
+- son mode de fonctionnement
+- son projet
+
+Puis rechercher les formations compatibles.
+
+---
+
+# Les données que je souhaite montrer
+
+Les chiffres finaux.
+
+Pas ceux du mois de juin.
+
+Comparer :
+
+début de procédure
+
+↓
+
+fin juillet
+
+↓
+
+septembre
+
+↓
+
+clôture.
+
+Montrer :
+
+combien obtiennent finalement une proposition.
+
+Comparer avec les titres anxiogènes de la presse.
+
+---
+
+# Présentation aux parents
+
+Titre possible
+
+Parcoursup :
+les idées reçues...
+et les chiffres qui racontent une autre histoire.
+
+ou
+
+Parcoursup :
+ce qui fonctionne vraiment.
+
+ou
+
+Parcoursup :
+comprendre avant d'avoir peur.
+
+---
+
+# Structure de la conférence
+
+1.
+Comment fonctionne réellement Parcoursup ?
+
+2.
+Qui décide ?
+
+3.
+Que regarde une formation ?
+
+4.
+Les erreurs les plus fréquentes.
+
+5.
+Les idées reçues.
+
+6.
+Ce qui fait vraiment progresser un dossier.
+
+7.
+Questions.
+
+---
+
+# Message central
+
+Le meilleur dossier n'est pas toujours celui qui a les meilleures notes.
+
+C'est souvent celui qui est le plus cohérent.
+
+---
+
+# Citation possible
+
+"On ne construit pas un dossier Parcoursup en janvier de Terminale.
+
+On construit progressivement une histoire crédible à raconter."
+
+---
+
+# Lien avec mes autres articles
+
+- Léopold Sédar Senghor
+→ toutes les intelligences ne s'expriment pas de la même façon.
+
+- Mme HorsKase
+→ attention aux modèles uniques.
+
+- ChatGPT et les impôts
+→ un outil n'est ni bon ni mauvais.
+Tout dépend de l'usage.
+
+- Le tendon qui fait clac
+→ l'expérience personnelle permet parfois de mieux comprendre un système.
+
+---
+
+# Idée de conclusion
+
+Finalement, après avoir accompagné des centaines de familles, développé des outils, analysé les données publiques, vécu Parcoursup avec un profil scientifique puis avec un futur profil littéraire, je n'ai toujours pas trouvé de recette miracle.
+
+En revanche, je retrouve presque toujours les mêmes ingrédients :
+
+de la curiosité,
+de la cohérence,
+des expériences concrètes,
+des rencontres,
+des essais,
+des erreurs...
+
+Bref, un projet qui se construit.
+
+Et c'est peut-être cela, plus que les notes, qui raconte le mieux un futur étudiant.
