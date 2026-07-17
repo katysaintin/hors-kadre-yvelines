@@ -84,6 +84,7 @@ Les données Parcoursup racontent une histoire un peu différente. C'est moitié
 •••
 
 Trente ans. Trois profils. Une même mécanique.
+Ce n’est donc probablement plus une coïncidence. C’est un design.
 
 Puis arrive Bence.
 
