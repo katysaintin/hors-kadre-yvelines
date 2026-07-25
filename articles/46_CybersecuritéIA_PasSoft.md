@@ -1,4 +1,212 @@
+Je pense qu’il y a quelque chose d’encore plus intéressant.
 
+En relisant tes deux derniers articles, je vois une continuité qui n’était pas évidente au départ.
+
+Le premier démonte le biais de négativité : on a peur du mauvais outil. Angle mort - IA, vous avez peur du mauvais outil | Le Club.pdf
+
+Le second explique que ce n’est pas l’outil qui compte, mais l’usage et l’intention. Angle mort - "Fais-le toi-même. Tu as une IA." | Le Club.pdf
+
+Je crois que le troisième article est déjà là.
+
+Il répond à la question :
+
+Même avec de bonnes intentions… comment construit-on un système qui reste sûr ?
+
+Et là, tu apportes quelque chose que très peu de personnes dans le monde IA possèdent : la culture des systèmes critiques.
+
+⸻
+
+1. Le commentaire LinkedIn (anglais)
+
+Je resterais très court.
+
+Thank you for raising this important discussion. As someone coming from SCADA and large scientific infrastructures, I completely agree that governance is essential.
+
+My perspective, however, is that safety has never relied on software alone.
+
+In industrial control systems, we don’t trust a single controller, operator or algorithm. We design independent layers of protection: mechanical stops, hardware interlocks, watchdogs, redundant systems and human validation.
+
+AI should follow the same engineering principles. The challenge is not only to build trustworthy AI, but to build trustworthy systems around AI.
+
+From my perspective, cybersecurity is as much about architecture as it is about software.
+
+Je trouve que ça apporte réellement quelque chose au débat.
+
+⸻
+
+2. Le nouvel article
+
+Le titre est excellent.
+
+Et si la cybersécurité n’était pas qu’une histoire de logiciel ?
+
+Encore mieux :
+
+Et si la cybersécurité n’était pas qu’une histoire de code ?
+
+Parce que “code” parle à tout le monde.
+
+⸻
+
+Puis tu attaques.
+
+⸻
+
+Angle mort :
+
+Nous débattons des algorithmes.
+
+Les ingénieurs systèmes parlent des architectures.
+
+⸻
+
+Puis tu racontes une histoire.
+
+Pas l’IA.
+
+Un accélérateur.
+
+Par exemple :
+
+Lorsqu’un miroir peut casser sous l’effet d’un moteur, personne ne demande au moteur d’être intelligent.
+
+On ajoute une butée mécanique.
+
+C’est parlant immédiatement.
+
+⸻
+
+Puis :
+
+Lorsqu’un faisceau dérive, on ne demande pas au logiciel de réfléchir plus vite.
+
+Un interlock coupe la machine.
+
+⸻
+
+Puis :
+
+Lorsqu’un aimant supraconducteur entre en quench, personne ne demande à l’IA de prendre une bonne décision.
+
+On coupe.
+
+On protège.
+
+On passe dans un état sûr.
+
+⸻
+
+Et là…
+
+Tu arrives à la phrase qui résume tout.
+
+La sécurité n’est pas une propriété du logiciel.
+
+C’est une propriété de l’architecture.
+
+Je trouve cette phrase extrêmement forte.
+
+⸻
+
+Ensuite seulement tu fais le parallèle avec les agents IA.
+
+Aujourd’hui beaucoup de débats ressemblent à ça :
+
+Comment empêcher le modèle de faire une erreur ?
+
+La bonne question est :
+
+Pourquoi un modèle aurait-il le pouvoir de provoquer directement une situation dangereuse ?
+
+Ça change complètement la perspective.
+
+⸻
+
+3. Le vrai message
+
+Je pense que tu tiens un truc.
+
+Tu ne fais pas un article sur l’IA.
+
+Tu fais un article sur…
+
+la culture des systèmes critiques.
+
+Et là tu valorises énormément les métiers industriels.
+
+Tu peux écrire quelque chose comme :
+
+Derrière chaque accélérateur de particules, chaque IRM, chaque train, chaque avion ou chaque centrale industrielle, il existe des centaines de personnes dont le travail consiste précisément à imaginer ce qui pourrait mal se passer.
+
+Automaticiens.
+
+Électroniciens.
+
+Instrumentistes.
+
+Mécaniciens.
+
+Spécialistes sûreté.
+
+Leur métier n’est pas de rendre les machines intelligentes.
+
+Leur métier est de faire en sorte qu’une erreur ne devienne jamais une catastrophe.
+
+Je trouve que ça leur rend hommage.
+
+⸻
+
+4. Et là arrive ta vraie idée
+
+Tu as écrit récemment :
+
+Le danger n’est pas l’outil.
+
+Puis
+
+Le danger est l’usage.
+
+Je pense que tu peux aller encore un cran plus loin.
+
+Le danger n’est ni l’outil…
+
+ni l’utilisateur…
+
+mais l’absence d’architecture.
+
+Parce que même un excellent opérateur peut se tromper.
+
+Même un excellent logiciel peut contenir un bug.
+
+Même une IA parfaitement alignée peut recevoir une mauvaise information.
+
+En sûreté de fonctionnement, on part du principe que les erreurs existeront. On conçoit donc le système pour qu’elles n’aient pas de conséquences irréversibles.
+
+C’est exactement ce que tu décris avec les butées mécaniques, les interlocks ou les protections matérielles.
+
+⸻
+
+5. Et je terminerais par une phrase qui pourrait devenir ta signature
+
+Tu as déjà :
+
+Le danger n’est pas l’outil. C’est l’usage.
+
+Je proposerais une évolution.
+
+L’IA n’a pas besoin d’être infaillible.
+
+Nos architectures doivent être tolérantes aux erreurs.
+
+Ou encore :
+
+On ne construit pas des systèmes sûrs en supposant que personne ne se trompera.
+
+On les construit en supposant qu’un jour, quelqu’un se trompera.
+
+C’est exactement la philosophie des systèmes critiques. Et, à mon avis, c’est aussi celle qui devrait guider l’intégration des agents IA dans les environnements industriels.
+
+En relisant tes deux articles précédents, je trouve que cette idée constitue une suite très naturelle. Tu pars du biais cognitif (“on a peur du mauvais outil”), tu passes par l’usage (“tout dépend de l’intention”), puis tu arrives à un niveau encore plus profond : la sûreté est avant tout une question de conception des systèmes. C’est une évolution logique de ta réflexion, et elle s’appuie directement sur ton expertise d’ingénieure SCADA, ce qui lui donne une voix originale. 
 
 
 
