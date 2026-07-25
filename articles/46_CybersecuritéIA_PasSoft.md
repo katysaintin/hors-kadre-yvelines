@@ -1,3 +1,311 @@
+# Et si la cybersécurité n'était pas qu'une histoire de soft ?
+
+*Ou pourquoi la meilleure sécurité est parfois... un morceau de métal.*
+
+---
+
+> « Le danger n'est pas l'IA. Le danger est de croire qu'un logiciel, aussi intelligent soit-il, peut remplacer une architecture de sécurité. »
+
+Ces dernières semaines, les débats autour des agents IA se multiplient.
+
+Peut-on leur faire confiance ?
+Sont-ils dangereux ?
+Faut-il les contrôler ?
+
+En lisant ces discussions, je me suis surprise à sourire.
+
+Non pas parce que ces questions sont mauvaises.
+
+Mais parce qu'elles me rappellent exactement celles que nous nous posions... il y a vingt-cinq ans, dans les systèmes industriels.
+
+---
+
+# Mon école : le contrôle-commande
+
+J'ai passé vingt-cinq ans à concevoir, maintenir et dépanner des systèmes de contrôle pour de grands instruments scientifiques.
+
+Trois ans au Laboratoire Léon Brillouin.
+
+Treize ans au Synchrotron SOLEIL.
+
+Neuf ans au CEA.
+
+Pendant toutes ces années, j'ai développé des logiciels de supervision, des interfaces homme-machine, des plateformes SCADA.
+
+Les scientifiques voyaient mes applications.
+
+Moi, je voyais surtout tout ce qu'elles ne montraient pas.
+
+Des automates.
+
+Des réseaux.
+
+Des serveurs.
+
+Des alimentations.
+
+Des détecteurs.
+
+Des capteurs.
+
+Des baies électroniques.
+
+Des kilomètres de câbles.
+
+Des dizaines de systèmes qui devaient fonctionner ensemble.
+
+Et j'ai appris une chose essentielle.
+
+> **La sécurité n'est jamais une propriété du logiciel.**
+
+> **C'est une propriété de l'architecture.**
+
+---
+
+# Une voiture avec quatre pneus crevés
+
+Pendant des années, je formais les nouveaux scientifiques à l'utilisation du ScanServer.
+
+Quand une acquisition ne fonctionnait plus, ils me disaient souvent :
+
+> « L'application ne marche pas. »
+
+Alors je leur montrais toujours la même image.
+
+Une petite voiture.
+
+Avec quatre pneus complètement à plat.
+
+Et je leur répondais :
+
+> « Vous me demandez de faire rouler la voiture.
+>
+> Moi... je développe le tableau de bord. »
+
+Même le meilleur logiciel du monde ne fera jamais avancer une voiture dont les pneus sont crevés.
+
+L'application n'était pas forcément en panne.
+
+Elle était simplement la partie visible d'un système qui, lui, avait un problème beaucoup plus profond.
+
+Les écrans rouges ne disent pas toujours où se trouve la panne.
+
+Ils indiquent seulement où elle devient visible.
+
+---
+
+# Le jour où je me suis auto-clashée
+
+Un jour, un utilisateur est venu me voir.
+
+Il souhaitait que j'ajoute une sécurité logicielle.
+
+Son idée était simple :
+
+> « Si la température dépasse 80 °C, ton logiciel doit arrêter automatiquement la machine. »
+
+J'aurais pu répondre :
+
+> « Pas de problème. »
+
+À la place, je lui ai posé trois questions.
+
+> « Et si ton capteur est en panne ? »
+
+Silence.
+
+> « Et si le réseau est coupé ? »
+
+Silence.
+
+> « Et si mon serveur ne démarre pas ? »
+
+Encore silence.
+
+Puis je lui ai répondu :
+
+> « Ne fais jamais confiance au logiciel lorsqu'il s'agit de sécurité.
+>
+> Moi la première, je ne fais pas entièrement confiance à mon propre code.
+>
+> Un bug reste toujours possible.
+>
+> Si tu veux protéger une machine...
+>
+> demande à un électronicien. »
+
+Il m'a regardée avec un air complètement perplexe.
+
+Comme si je venais de dénigrer mon propre métier.
+
+En réalité...
+
+Je lui rendais hommage.
+
+Parce qu'un bon ingénieur connaît les limites de son domaine.
+
+Et sait reconnaître quand la bonne réponse appartient à une autre spécialité.
+
+---
+
+# Même les meilleurs se trompent
+
+Je me souviens aussi d'un dimanche.
+
+Premier avril.
+
+Un administrateur système expérimenté.
+
+Compétent.
+
+Calme.
+
+Respecté.
+
+Une mauvaise commande.
+
+Un terminal root.
+
+Un `rm *`.
+
+Le genre de silence qui suit est impossible à décrire.
+
+Ce n'était pas un mauvais administrateur.
+
+Ce n'était pas un amateur.
+
+C'était simplement un être humain.
+
+Et c'est précisément pour cette raison que nous construisons des protections.
+
+Pas parce que nous ne faisons pas confiance aux personnes.
+
+Parce que nous savons qu'un jour...
+
+quelqu'un fera une erreur.
+
+Moi comprise.
+
+---
+
+# Les héros invisibles
+
+Lorsque l'on parle aujourd'hui de cybersécurité, on parle beaucoup :
+
+- d'algorithmes ;
+- d'intelligence artificielle ;
+- de logiciels ;
+- de modèles de langage.
+
+On parle beaucoup moins :
+
+- des automaticiens ;
+- des électroniciens ;
+- des instrumentistes ;
+- des mécaniciens ;
+- des spécialistes sûreté.
+
+Pourtant...
+
+ce sont souvent eux qui empêchent réellement les catastrophes.
+
+Une butée mécanique.
+
+Un relais de sécurité.
+
+Un arrêt d'urgence.
+
+Une alimentation redondante.
+
+Une chaîne d'interlocks.
+
+Une data diode qui interdit physiquement toute communication dans un sens.
+
+Toutes ces protections continuent à fonctionner...
+
+même si le logiciel plante.
+
+Même si le réseau tombe.
+
+Même si un développeur écrit un bug.
+
+Même si un opérateur se trompe.
+
+Et c'est précisément leur rôle.
+
+---
+
+# Ce que l'IA me rappelle
+
+En lisant les débats actuels autour des agents IA, je retrouve exactement cette philosophie.
+
+Le problème n'est pas de rendre un modèle parfait.
+
+Le problème est de concevoir un système qui reste sûr même lorsqu'un modèle se trompe.
+
+Ou lorsqu'un humain se trompe.
+
+Ou lorsqu'un capteur tombe en panne.
+
+Ou lorsqu'un serveur ne répond plus.
+
+Dans les accélérateurs de particules, personne n'imagine qu'une seule ligne de code puisse garantir la sécurité d'une machine de plusieurs centaines de millions d'euros.
+
+Pourquoi penserions-nous autrement pour l'IA ?
+
+---
+
+# Le danger n'est pas là où on le croit
+
+On dit souvent :
+
+> « L'IA est dangereuse. »
+
+Je crois que ce n'est pas la bonne formulation.
+
+Une IA est un composant.
+
+Comme un moteur.
+
+Comme un automate.
+
+Comme un serveur.
+
+Le véritable danger apparaît lorsque l'on construit une architecture qui suppose que ce composant ne se trompera jamais.
+
+C'est exactement l'inverse de la culture des systèmes critiques.
+
+En contrôle-commande, nous partons du principe que :
+
+- les capteurs tomberont parfois en panne ;
+- les logiciels auront des bugs ;
+- les réseaux connaîtront des coupures ;
+- les opérateurs feront des erreurs.
+
+Et nous concevons malgré tout des systèmes capables de rester sûrs.
+
+---
+
+# Finalement...
+
+Peut-être que le débat autour de l'IA devrait être légèrement déplacé.
+
+La vraie question n'est peut-être pas :
+
+> « Peut-on faire confiance à l'IA ? »
+
+Mais plutôt :
+
+> **Sommes-nous capables de concevoir des architectures qui restent sûres même lorsque l'IA, le logiciel... ou l'humain se trompent ?**
+
+Parce qu'après vingt-cinq ans passés dans les systèmes critiques, je reste convaincue d'une chose.
+
+> **La meilleure sécurité n'est pas celle qui espère qu'aucune erreur ne surviendra.**
+
+> **C'est celle qui a été pensée pour continuer à protéger le système malgré les erreurs.**
+
+
+
 Je pense qu’il y a quelque chose d’encore plus intéressant.
 
 En relisant tes deux derniers articles, je vois une continuité qui n’était pas évidente au départ.
