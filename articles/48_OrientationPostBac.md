@@ -316,3 +316,357 @@ Le lecteur est ensuite libre de construire sa propre analyse.
 - les indicateurs de réorientation lorsqu'ils existent.
 
 L'objectif ne serait pas de classer les formations selon leur prestige, mais de documenter le parcours complet des étudiants et la capacité des établissements à les accompagner jusqu'à une issue positive, y compris lorsqu'elle passe par un changement de voie.
+
+# Hors Kadre - Extension "Et après le bac ?"
+
+> Note de travail – Piste de développement
+>
+> Version : août 2026
+
+---
+
+# Contexte
+
+Aujourd'hui, Hors Kadre aide principalement les familles à répondre à une question :
+
+> **Comment choisir une formation sur Parcoursup ?**
+
+Les fiches présentent notamment :
+
+- la concurrence ;
+- le taux d'accès ;
+- le rang du dernier appelé ;
+- le profil des admis ;
+- les spécialités les plus adaptées ;
+- des explications vulgarisées permettant d'interpréter les données.
+
+Ces informations répondent essentiellement à la question :
+
+> **Comment entrer dans une formation ?**
+
+Une dimension importante manque encore :
+
+> **Que se passe-t-il après l'admission ?**
+
+---
+
+# Philosophie
+
+L'objectif n'est pas de classer les formations.
+
+L'objectif est de donner aux familles des informations supplémentaires pour choisir une formation adaptée au profil de leur enfant.
+
+Comme pour les classements IVAL, il ne s'agit pas de dire :
+
+> Cette formation est meilleure.
+
+Mais plutôt :
+
+> Cette formation semble mieux accompagner ses étudiants.
+
+ou
+
+> Cette formation demande un niveau important d'autonomie.
+
+Le lecteur reste libre de son interprétation.
+
+---
+
+# Pourquoi ce nouvel onglet ?
+
+Aujourd'hui, les familles disposent essentiellement de données sur :
+
+- l'admission ;
+- la sélectivité ;
+- les débouchés.
+
+Très peu d'informations sont visibles concernant :
+
+- la réussite dans la formation ;
+- la progression des étudiants ;
+- le devenir des étudiants qui quittent la formation.
+
+Pourtant, ces éléments peuvent être utiles lors du choix d'une orientation.
+
+---
+
+# Une nouvelle rubrique
+
+## 🎓 Et après le bac ?
+
+Cette rubrique viendrait compléter les fiches Parcoursup existantes.
+
+Elle présenterait des indicateurs de suivi des étudiants.
+
+Exemples :
+
+- effectif entrant
+- effectif après un an
+- effectif après deux ans
+- effectif après trois ans
+- diplômés
+- réussite en 3 ans
+- réussite en 4 ans
+- insertion professionnelle
+- poursuite d'études
+
+L'objectif est uniquement descriptif.
+
+---
+
+# Ce que cela permettrait
+
+Aujourd'hui, une famille choisit souvent une formation en regardant :
+
+- sa réputation ;
+- son taux d'admission ;
+- sa sélectivité.
+
+Demain, elle pourrait également observer :
+
+- combien d'étudiants poursuivent leur parcours ;
+- combien obtiennent effectivement leur diplôme ;
+- quels sont les débouchés ;
+- quelle est la poursuite d'études.
+
+Ces indicateurs ne disent pas quelle formation choisir.
+
+Ils permettent simplement de mieux comprendre les parcours.
+
+---
+
+# Une approche centrée sur le parcours étudiant
+
+Aujourd'hui, le parcours visible est souvent :
+
+Terminale
+
+↓
+
+Parcoursup
+
+↓
+
+Admission
+
+Le projet Hors Kadre pourrait présenter un parcours beaucoup plus complet :
+
+Terminale
+
+↓
+
+Parcoursup
+
+↓
+
+Admission
+
+↓
+
+Formation
+
+↓
+
+Progression des étudiants
+
+↓
+
+Diplôme
+
+↓
+
+Insertion professionnelle
+
+Cette représentation replace Parcoursup dans un parcours plus global.
+
+---
+
+# Un parallèle avec l'IVAL
+
+Le travail réalisé sur les lycées a montré qu'il était insuffisant de regarder uniquement :
+
+- le taux de réussite au bac.
+
+L'IVAL apporte une information complémentaire :
+
+- la capacité d'un établissement à faire progresser ses élèves.
+
+Le même raisonnement peut être appliqué à l'enseignement supérieur.
+
+Au lieu de regarder uniquement :
+
+- la sélectivité ;
+- le prestige ;
+- le salaire.
+
+On peut également observer :
+
+- la progression des étudiants ;
+- la réussite ;
+- le devenir de la cohorte.
+
+---
+
+# Ce que l'on ne cherche PAS à faire
+
+Ce projet ne vise pas à :
+
+- établir un nouveau classement ;
+- décourager les élèves ambitieux ;
+- recommander une formation plutôt qu'une autre.
+
+Chaque parcours est différent.
+
+Une CPGE peut être parfaitement adaptée à certains profils.
+
+Un BUT peut convenir davantage à d'autres.
+
+Une licence peut être le meilleur choix pour un étudiant autonome.
+
+Le rôle de Hors Kadre est uniquement de rendre visibles des informations aujourd'hui peu accessibles.
+
+---
+
+# Hypothèse de travail
+
+Les familles choisissent souvent une formation à partir de sa réputation.
+
+Elles disposent rarement de données permettant d'évaluer :
+
+- la réussite des étudiants ;
+- la progression de la cohorte ;
+- les parcours possibles en cas de réorientation.
+
+Ces informations pourraient constituer une aide complémentaire à la décision.
+
+---
+
+# Architecture de données envisagée
+
+Créer une nouvelle table indépendante des données Parcoursup.
+
+Exemple :
+
+formation_suivi
+
+- id_formation
+- annee_reference
+
+- effectif_entree
+- effectif_n1
+- effectif_n2
+- effectif_n3
+- effectif_n4
+
+- diplomes_n
+- diplomes_n1
+- diplomes_n2
+
+- taux_reussite_3_ans
+- taux_reussite_4_ans
+
+- poursuite_etudes
+- insertion_professionnelle
+
+- source
+- date_import
+
+Choix volontaire :
+
+Les noms restent génériques.
+
+Ils permettent d'intégrer ultérieurement plusieurs types de formations :
+
+- Licence
+- BUT
+- BTS
+- CPGE
+- PASS
+- écoles
+
+sans modifier le modèle.
+
+---
+
+# Evolutions possibles
+
+Lorsque des données seront disponibles :
+
+ajouter :
+
+## 🔄 Réorientation
+
+- existence de passerelles
+- poursuite dans une autre formation
+- données publiques disponibles
+- accompagnement proposé
+
+---
+
+# Questions de recherche
+
+## Open Data
+
+□ Quels jeux de données SIES sont disponibles ?
+
+□ Existe-t-il des données par établissement ?
+
+□ Les données sont-elles disponibles par mention ?
+
+□ Existe-t-il des données ouvertes sur les réorientations ?
+
+---
+
+## Indicateurs
+
+Quels indicateurs sont réellement utiles aux familles ?
+
+Exemples :
+
+✓ réussite
+
+✓ progression
+
+✓ diplomation
+
+✓ insertion
+
+✓ poursuite d'études
+
+---
+
+## Interface
+
+Comment représenter visuellement le parcours ?
+
+Idées :
+
+- frise chronologique
+
+- diagramme de cohorte
+
+- barres de progression
+
+- pictogrammes
+
+---
+
+# Vision à long terme
+
+Aujourd'hui, Hors Kadre répond principalement à la question :
+
+> Comment entrer dans une formation ?
+
+L'objectif est désormais d'aider les familles à répondre à une question plus importante encore :
+
+> **Quelle formation donnera à mon enfant les meilleures chances de réussir son propre parcours ?**
+
+Il ne s'agit plus seulement de mesurer la capacité d'une formation à recruter.
+
+Il s'agit également de rendre visible sa capacité à accompagner les étudiants jusqu'à une issue positive, qu'il s'agisse d'une diplomation, d'une poursuite d'études, d'une insertion professionnelle ou, lorsque cela est documenté, d'une réorientation réussie.
+
+---
+
+# Une phrase qui pourrait devenir la signature de ce module
+
+> **Une orientation réussie n'est pas forcément celle qui mène à la formation la plus prestigieuse. C'est celle qui permet à un étudiant de construire durablement son parcours de réussite.**
