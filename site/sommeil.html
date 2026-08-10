@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sommeil — 2019–2025</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --ink: #0B1220;
+    --panel: #101A2B;
+    --panel-2: #14213A;
+    --grid: #23324A;
+    --text: #E7ECF3;
+    --muted: #8CA0BE;
+    --accent: #E8C170;
+    --line: #2A3A55;
+
+    --y2019: #6B8FA3;
+    --y2020: #4FA3A0;
+    --y2021: #C9705F;
+    --y2022: #7FB069;
+    --y2023: #D4A574;
+    --y2024: #9D8DF1;
+    --y2025: #E8C170;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(circle at 15% 0%, #16223A 0%, transparent 45%),
+      radial-gradient(circle at 100% 20%, #10192C 0%, transparent 40%),
+      var(--ink);
+    color:var(--text);
+    font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    min-height:100vh;
+  }
+  .mono{ font-family:"IBM Plex Mono","SF Mono",Consolas,monospace; }
+
+  header{
+    padding:56px 6vw 28px 6vw;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    font-size:12px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--accent); font-family:"IBM Plex Mono",monospace;
+    margin:0 0 14px 0;
+  }
+  h1{
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(28px,4vw,46px);
+    margin:0 0 10px 0;
+    letter-spacing:-0.01em;
+  }
+  .sub{
+    color:var(--muted); max-width:760px; line-height:1.55; font-size:15px;
+  }
+
+  main{ padding: 36px 6vw 80px 6vw; }
+
+  .panel{
+    background: var(--panel);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:26px 26px 14px 26px;
+    margin-bottom:28px;
+  }
+  .panel h2{
+    font-family:"IBM Plex Serif", Georgia, serif;
+    font-weight:600; font-size:19px; margin:0 0 4px 0;
+  }
+  .panel .desc{ color:var(--muted); font-size:13.5px; margin-bottom:18px; }
+
+  .toolbar{
+    display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center;
+    margin-bottom:18px;
+  }
+  .yr-toggle{
+    display:flex; align-items:center; gap:7px;
+    font-family:"IBM Plex Mono",monospace; font-size:12.5px;
+    color:var(--muted); cursor:pointer; user-select:none;
+    padding:6px 12px 6px 8px; border-radius:20px;
+    border:1px solid var(--line); background:var(--panel-2);
+    transition:opacity .15s;
+  }
+  .yr-toggle.off{ opacity:.35; }
+  .dot{ width:9px; height:9px; border-radius:50%; flex:none; }
+
+  .chart-wrap{ position:relative; height:460px; }
+  .chart-wrap.small{ height:220px; }
+
+  .grid-2{
+    display:grid; grid-template-columns: 1.4fr 1fr; gap:28px;
+  }
+  @media (max-width:900px){ .grid-2{ grid-template-columns:1fr; } }
+
+  table{ width:100%; border-collapse:collapse; font-size:13px; }
+  th,td{ text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); }
+  th{ color:var(--muted); font-weight:500; font-family:"IBM Plex Mono",monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; }
+  td.num, th.num{ text-align:right; font-family:"IBM Plex Mono",monospace; }
+  tr:last-child td{ border-bottom:none; }
+
+  .annot-box textarea{
+    width:100%; min-height:120px; background:var(--panel-2);
+    border:1px solid var(--line); border-radius:8px; color:var(--text);
+    font-family:"IBM Plex Mono",monospace; font-size:12.5px; padding:12px;
+    resize:vertical; line-height:1.6;
+  }
+  .annot-box button{
+    margin-top:10px; background:var(--accent); color:#1a1400;
+    border:none; padding:9px 16px; border-radius:7px; font-weight:600;
+    cursor:pointer; font-size:13px;
+  }
+  .annot-help{ color:var(--muted); font-size:12px; margin-top:8px; line-height:1.6; }
+
+  .note{
+    background:rgba(232,193,112,0.08); border:1px solid rgba(232,193,112,0.3);
+    border-radius:10px; padding:14px 18px; font-size:13px; color:var(--muted);
+    line-height:1.6; margin-bottom:28px;
+  }
+  .note b{ color:var(--text); }
+
+  footer{
+    padding:20px 6vw 50px 6vw; color:var(--muted); font-size:12px;
+    border-top:1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Apple Santé · Sommeil · Vue annuelle</p>
+  <h1>Sept années de nuits</h1>
+  <p class="sub">Comparaison mois par mois de la durée moyenne de sommeil, 2019–2025 — pour repérer visuellement les périodes de creux (stress, surcharge, burnout) et les périodes de récupération.</p>
+</header>
+
+<main>
+
+  <div class="note">
+    <b>Note sur les données.</b> Les 7 courbes ont été reconstituées à partir des captures d'écran de l'app Santé (vue « Année »). Les valeurs mensuelles sont des estimations visuelles au point près sur chaque graphe d'origine — fiables pour la tendance et les comparaisons, mais pas au chiffre exact près. Les moyennes annuelles et le nombre de « jours objectif atteint », eux, viennent directement des chiffres affichés par l'app.
+  </div>
+
+  <div class="panel">
+    <h2>Durée moyenne de sommeil — toutes années</h2>
+    <div class="desc">Cliquez sur une année pour l'isoler ou la masquer. La ligne pointillée marque 7h, l'objectif de sommeil.</div>
+    <div class="toolbar" id="toggles"></div>
+    <div class="chart-wrap"><canvas id="mainChart"></canvas></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Vos repères</h2>
+      <div class="desc">Ajoutez ici les événements (stress, surcharge, déménagement, vacances, changement de poste…) que vous voulez visualiser sur le graphe. Une ligne par événement, format : <span class="mono">AAAA-MM | Libellé</span>.</div>
+      <div class="annot-box">
+        <textarea id="annotInput">2021-02 | Ex: pic de charge projet
+2023-09 | Ex: rentrée / nouvelle responsabilité</textarea>
+        <button onclick="applyAnnotations()">Placer les repères sur le graphe</button>
+        <div class="annot-help">Les repères apparaissent comme des marqueurs verticaux sur la courbe de l'année correspondante. Modifiez le texte puis cliquez à nouveau — tout se recalcule sans recharger la page. Ce texte n'est pas sauvegardé : gardez une copie si vous fermez la page.</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Synthèse annuelle</h2>
+      <div class="desc">Moyenne quotidienne et jours où l'objectif de sommeil a été atteint.</div>
+      <table>
+        <thead><tr><th>Année</th><th class="num">Moyenne</th><th class="num">Jours objectif atteint</th></tr></thead>
+        <tbody id="summaryBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Écart à la moyenne 2019–2025, par mois</h2>
+    <div class="desc">Chaque barre = moyenne du mois (toutes années confondues) moins la moyenne générale. Permet de voir si certains mois de l'année sont structurellement plus courts en sommeil (ex. rentrée, fin d'année).</div>
+    <div class="chart-wrap small"><canvas id="seasonalChart"></canvas></div>
+  </div>
+
+</main>
+
+<footer>
+  Généré à partir des exports Apple Santé — usage personnel. Les couleurs suivent l'ordre chronologique, du plus ancien (bleu ardoise, 2019) au plus récent (or, 2025).
+</footer>
+
+<script>
+const MONTHS = ["J","F","M","A","M","J","J","A","S","O","N","D"];
+
+// Valeurs mensuelles approximatives (en minutes), lues sur les graphes fournis.
+// Modifiable librement si vous avez les vrais chiffres exportés depuis Santé.
+const DATA = {
+  2019: { color: "#6B8FA3", avg: "6h 53m", goalDays: 157,
+    values: [375,415,375,415,425,395,380,395,395,375,425,415] },
+  2020: { color: "#4FA3A0", avg: "7h 00m", goalDays: 135,
+    values: [425,415,415,415,425,385,375,410,375,415,425,415] },
+  2021: { color: "#C9705F", avg: "6h 27m", goalDays: 72,
+    values: [425,375,380,395,410,365,380,390,375,375,385,415] },
+  2022: { color: "#7FB069", avg: "6h 51m", goalDays: 162,
+    values: [425,415,405,415,410,385,380,415,375,370,405,400] },
+  2023: { color: "#D4A574", avg: "6h 33m", goalDays: 140,
+    values: [370,380,380,410,415,385,375,405,380,375,370,410] },
+  2024: { color: "#9D8DF1", avg: "6h 42m", goalDays: 115,
+    values: [375,380,395,395,415,395,400,420,380,375,395,415] },
+  2025: { color: "#E8C170", avg: "6h 29m", goalDays: 113,
+    values: [410,415,405,395,425,390,380,395,390,385,365,435] },
+};
+
+const years = Object.keys(DATA);
+
+// ---- Toggles ----
+const togglesEl = document.getElementById("toggles");
+years.forEach(y=>{
+  const el = document.createElement("div");
+  el.className = "yr-toggle";
+  el.dataset.year = y;
+  el.innerHTML = `<span class="dot" style="background:${DATA[y].color}"></span>${y}`;
+  el.onclick = ()=>{
+    el.classList.toggle("off");
+    const idx = years.indexOf(y);
+    mainChart.getDatasetMeta(idx).hidden = el.classList.contains("off");
+    mainChart.update();
+  };
+  togglesEl.appendChild(el);
+});
+
+// ---- Summary table ----
+const tbody = document.getElementById("summaryBody");
+years.forEach(y=>{
+  const d = DATA[y];
+  tbody.innerHTML += `<tr>
+    <td><span class="dot" style="display:inline-block;background:${d.color};margin-right:8px;"></span>${y}</td>
+    <td class="num">${d.avg}</td>
+    <td class="num">${d.goalDays} j</td>
+  </tr>`;
+});
+
+// ---- Main chart ----
+const ctx = document.getElementById("mainChart").getContext("2d");
+const goalLine = {
+  id: "goalLine",
+  afterDraw(chart){
+    const {ctx, chartArea:{left,right}, scales:{y}} = chart;
+    const yPix = y.getPixelForValue(420); // 7h = 420 min
+    ctx.save();
+    ctx.strokeStyle = "rgba(232,193,112,0.45)";
+    ctx.setLineDash([4,5]);
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(left,yPix); ctx.lineTo(right,yPix);
+    ctx.stroke();
+    ctx.restore();
+  }
+};
+
+const mainChart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: MONTHS,
+    datasets: years.map(y=>({
+      label: y,
+      data: DATA[y].values,
+      borderColor: DATA[y].color,
+      backgroundColor: DATA[y].color,
+      pointRadius: 3,
+      pointHoverRadius: 5,
+      borderWidth: y === "2025" ? 3 : 2,
+      tension: 0.35,
+      spanGaps: true,
+    }))
+  },
+  options: {
+    responsive:true, maintainAspectRatio:false,
+    interaction:{ mode:"index", intersect:false },
+    plugins:{
+      legend:{ display:false },
+      tooltip:{
+        backgroundColor:"#0B1220", borderColor:"#2A3A55", borderWidth:1,
+        titleColor:"#E7ECF3", bodyColor:"#E7ECF3",
+        callbacks:{
+          label: (item)=>{
+            const m = item.raw;
+            return ` ${item.dataset.label} — ${Math.floor(m/60)}h${String(m%60).padStart(2,"0")}`;
+          }
+        }
+      }
+    },
+    scales:{
+      x:{ grid:{ color:"#1B2740" }, ticks:{ color:"#8CA0BE" } },
+      y:{
+        min:300, max:480,
+        grid:{ color:"#1B2740" },
+        ticks:{
+          color:"#8CA0BE",
+          callback:(v)=> Math.floor(v/60)+"h"
+        }
+      }
+    }
+  },
+  plugins:[goalLine]
+});
+
+// ---- Seasonal chart (average deviation per month) ----
+const monthAverages = MONTHS.map((_,i)=>{
+  const vals = years.map(y=>DATA[y].values[i]);
+  return vals.reduce((a,b)=>a+b,0)/vals.length;
+});
+const overall = monthAverages.reduce((a,b)=>a+b,0)/monthAverages.length;
+const deviations = monthAverages.map(v=>Math.round(v-overall));
+
+new Chart(document.getElementById("seasonalChart"), {
+  type:"bar",
+  data:{
+    labels: MONTHS,
+    datasets:[{
+      data: deviations,
+      backgroundColor: deviations.map(v=> v>=0 ? "rgba(127,176,105,0.75)" : "rgba(201,112,95,0.75)"),
+      borderRadius:4,
+    }]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{ legend:{display:false},
+      tooltip:{ callbacks:{ label:(item)=> `${item.raw>=0?"+":""}${item.raw} min vs moyenne` } }
+    },
+    scales:{
+      x:{ grid:{display:false}, ticks:{ color:"#8CA0BE" } },
+      y:{ grid:{ color:"#1B2740" }, ticks:{ color:"#8CA0BE", callback:(v)=>v+"m" } }
+    }
+  }
+});
+
+// ---- Annotations ----
+let annotationPlugin = null;
+function applyAnnotations(){
+  const raw = document.getElementById("annotInput").value;
+  const lines = raw.split("\n").map(l=>l.trim()).filter(l=>l && l.includes("|"));
+  const parsed = lines.map(l=>{
+    const [datePart, ...rest] = l.split("|");
+    const [y,m] = datePart.trim().split("-");
+    return { year: y, monthIdx: parseInt(m,10)-1, label: rest.join("|").trim() };
+  }).filter(a=> DATA[a.year] && a.monthIdx>=0 && a.monthIdx<=11);
+
+  // Remove previous annotation dataset markers by re-adding a scatter dataset
+  const existingIdx = mainChart.data.datasets.findIndex(d=>d.isAnnotationLayer);
+  if(existingIdx>-1) mainChart.data.datasets.splice(existingIdx,1);
+
+  if(parsed.length){
+    mainChart.data.datasets.push({
+      label:"Repères",
+      isAnnotationLayer:true,
+      type:"scatter",
+      data: parsed.map(a=>({x:a.monthIdx, y: DATA[a.year].values[a.monthIdx]})),
+      backgroundColor:"#E7ECF3",
+      borderColor:"#0B1220",
+      borderWidth:2,
+      pointStyle:"triangle",
+      pointRadius:8,
+      pointHoverRadius:10,
+      showLine:false,
+    });
+  }
+  mainChart.update();
+}
+applyAnnotations();
+</script>
+
+</body>
+</html>
