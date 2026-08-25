@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNAAPE Lycée Descartes — Newsletter de rentrée 2026-2027</title>
+<meta name="description" content="Newsletter de rentrée UNAAPE Lycée Descartes : qui sommes-nous, comment on communique, dates à retenir, adhésion 2026-2027.">
+<meta name="robots" content="noindex, nofollow">
+
+<style>
+
+:root{
+    --blue:#1C4B8C;
+    --blue-dark:#123566;
+    --blue-soft:#EAF0F9;
+    --red:#B3261E;
+    --red-soft:#FBEAEA;
+    --gray:#555555;
+    --border:#dfe3ea;
+    --bg-soft:#F7F9FC;
+    --white:#ffffff;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--white);
+    color:#222;
+    line-height:1.7;
+}
+
+[id]{ scroll-margin-top:24px; }
+
+.container{
+    width:min(820px,92%);
+    margin:auto;
+}
+
+/* ---------- HEADER ---------- */
+header{
+    background:var(--white);
+    border-bottom:4px solid var(--red);
+    padding:26px 0 20px;
+}
+
+.header-lockup{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.header-unaape{
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:1.9rem;
+    font-weight:700;
+    color:var(--blue);
+    letter-spacing:0.5px;
+}
+
+.header-divider{
+    width:2px;
+    height:34px;
+    background:var(--red);
+}
+
+.header-lycee{
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:1rem;
+    color:var(--red);
+    font-weight:700;
+}
+
+.header-sub{
+    text-align:center;
+    color:var(--gray);
+    font-size:0.9rem;
+    margin-top:6px;
+}
+
+/* ---------- COVER ---------- */
+.cover{
+    padding:50px 0 30px;
+    text-align:center;
+}
+
+.cover h1{
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:clamp(1.6rem,4vw,2.3rem);
+    color:var(--blue-dark);
+    margin-bottom:14px;
+}
+
+.cover .badge{
+    display:inline-block;
+    background:var(--blue-soft);
+    color:var(--blue-dark);
+    border:1px solid var(--blue);
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:0.85rem;
+    margin-bottom:20px;
+}
+
+.cover p{
+    color:var(--gray);
+    font-size:0.95rem;
+    max-width:520px;
+    margin:0 auto;
+}
+
+/* ---------- SOMMAIRE ---------- */
+.sommaire{
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:26px 30px;
+    margin:20px 0 50px;
+}
+
+.sommaire h2{
+    font-family:Georgia,serif;
+    color:var(--blue-dark);
+    font-size:1.2rem;
+    margin-bottom:14px;
+}
+
+.sommaire ol{
+    list-style:none;
+    columns:2;
+    -webkit-columns:2;
+}
+
+@media(max-width:600px){ .sommaire ol{ columns:1; } }
+
+.sommaire li{ margin-bottom:10px; break-inside:avoid; }
+
+.sommaire a{
+    color:var(--blue);
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.92rem;
+}
+
+.sommaire a:hover{ text-decoration:underline; color:var(--red); }
+
+/* ---------- SECTIONS ---------- */
+section{
+    padding:44px 0;
+    border-top:1px solid var(--border);
+}
+
+section:first-of-type{ border-top:none; }
+
+.chapter-title{
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:clamp(1.4rem,3vw,1.9rem);
+    color:var(--blue-dark);
+    margin-bottom:18px;
+    padding-bottom:10px;
+    border-bottom:3px solid var(--red);
+    display:inline-block;
+}
+
+h3.sub{
+    font-family:Georgia,serif;
+    color:var(--red);
+    font-size:1.1rem;
+    margin:26px 0 10px;
+}
+
+p{ margin-bottom:14px; color:#333; }
+
+ul.plain{ padding-left:20px; margin-bottom:14px; }
+ul.plain li{ margin-bottom:6px; color:#333; }
+
+a{ color:var(--blue); }
+a:hover{ color:var(--red); }
+
+/* ---------- BOXES ---------- */
+.box{
+    border-radius:10px;
+    padding:18px 22px;
+    margin:16px 0;
+    border-left:4px solid var(--gray);
+    background:var(--bg-soft);
+}
+
+.box-blue{ background:var(--blue-soft); border-left-color:var(--blue); }
+.box-red{ background:var(--red-soft); border-left-color:var(--red); }
+
+.box strong.label{
+    display:block;
+    color:var(--blue-dark);
+    margin-bottom:8px;
+    font-size:0.95rem;
+}
+
+.box-red strong.label{ color:var(--red); }
+
+.box p:last-child{ margin-bottom:0; }
+.box p{ color:#333; }
+
+/* ---------- TABLES ---------- */
+.table-wrap{
+    overflow-x:auto;
+    margin:20px 0;
+    border:1px solid var(--border);
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:0.9rem;
+}
+
+thead th{
+    background:var(--blue);
+    color:white;
+    text-align:left;
+    padding:10px 14px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+tbody td{
+    padding:9px 14px;
+    border-top:1px solid var(--border);
+}
+
+tbody tr:nth-child(even){ background:var(--bg-soft); }
+
+/* ---------- DATES ---------- */
+.date-row{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    padding:16px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.date-row:last-child{ border-bottom:none; }
+
+.date-chip{
+    flex-shrink:0;
+    background:var(--blue);
+    color:white;
+    border-radius:10px;
+    padding:8px 14px;
+    text-align:center;
+    font-weight:700;
+    font-size:0.85rem;
+    min-width:88px;
+}
+
+.date-chip.tbd{ background:var(--gray); }
+
+.date-row h4{ font-size:1rem; color:var(--blue-dark); margin-bottom:4px; }
+.date-row p{ margin-bottom:0; color:#333; font-size:0.92rem; }
+
+/* ---------- CTA / ADHÉSION ---------- */
+.cta-btn{
+    display:inline-block;
+    background:var(--red);
+    color:white !important;
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none !important;
+    font-weight:700;
+    margin-top:10px;
+}
+
+.cta-btn:hover{ opacity:0.9; }
+
+.closing{
+    background:var(--blue-dark);
+    color:white;
+    text-align:center;
+    padding:40px 30px;
+    border-radius:14px;
+    margin:20px 0;
+}
+
+.closing h2{
+    font-family:Georgia,serif;
+    font-size:1.5rem;
+    margin-bottom:14px;
+}
+
+.closing p{ color:#dbe4f2; max-width:600px; margin:0 auto 10px; }
+.closing a.cta-btn{ background:white; color:var(--blue-dark) !important; margin-top:14px; }
+
+footer{
+    text-align:center;
+    color:var(--gray);
+    font-size:0.82rem;
+    padding:36px 0;
+    border-top:1px solid var(--border);
+}
+
+footer a{ color:var(--blue); }
+
+.back-to-top{
+    display:inline-block;
+    margin-top:30px;
+    font-size:0.85rem;
+    color:var(--blue);
+    text-decoration:none;
+}
+
+.todo{
+    background:#fff8e1;
+    border:1px dashed #c9a227;
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:0.82rem;
+    color:#7a5c00;
+    margin-top:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-lockup">
+<span class="header-unaape">UNAAPE</span>
+<span class="header-divider"></span>
+<span class="header-lycee">Lycée Descartes</span>
+</div>
+<div class="header-sub">Montigny-le-Bretonneux</div>
+</header>
+
+<div class="container">
+
+<!-- ============ COUVERTURE ============ -->
+<div class="cover" id="haut">
+<div class="badge">Newsletter de rentrée 2026-2027</div>
+<h1>Bienvenue au Lycée Descartes</h1>
+<p>Qui on est, comment nous joindre, et tout ce qu'il faut savoir pour bien démarrer l'année ⏱️</p>
+</div>
+
+<!-- ============ SOMMAIRE ============ -->
+<div class="sommaire">
+<h2>Sommaire</h2>
+<ol>
+<li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+<li><a href="#actions">Ce qu'on fait au lycée</a></li>
+<li><a href="#communication">Comment on communique</a></li>
+<li><a href="#dates">Dates à retenir</a></li>
+<li><a href="#adhesion">Adhérer à l'UNAAPE</a></li>
+<li><a href="#gazette">Revivre l'année 2025-2026</a></li>
+</ol>
+</div>
+
+<!-- ============ QUI SOMMES-NOUS ============ -->
+<section id="qui-sommes-nous">
+<h2 class="chapter-title">👋 Qui sommes-nous ?</h2>
+
+<p>L'UNAAPE est une association de parents d'élèves <strong>autonome et indépendante</strong> — sans étiquette politique, syndicale ou religieuse. Notre seule boussole : défendre les intérêts de tous les enfants et de toutes les familles du lycée.</p>
+
+<p>Au Lycée Descartes, nous sommes présents dans les conseils d'administration, les conseils de classe, et sur toutes les questions qui touchent à la vie et à la scolarité de vos enfants.</p>
+
+<div class="box box-blue">
+<strong class="label">Nous contacter</strong>
+<p>📧 <a href="mailto:unaape.descartes78@gmail.com">unaape.descartes78@gmail.com</a></p>
+<p>🌐 <a href="https://unaape-montigny.fr/college-et-lycee/lycee-descartes/" target="_blank" rel="noopener">Notre page dédiée au Lycée Descartes</a></p>
+</div>
+</section>
+
+<!-- ============ ACTIONS ============ -->
+<section id="actions">
+<h2 class="chapter-title">🤝 Ce qu'on fait au lycée</h2>
+<ul class="plain">
+<li>🏛️ Conseils d'administration</li>
+<li>📝 Conseils de classe</li>
+<li>⚖️ Commissions éducatives, discipline, appels</li>
+<li>🚪 Réunions d'entrée au lycée</li>
+<li>📢 Action départementale contre le manque de personnel éducatif</li>
+</ul>
+<div class="box">
+<strong class="label">🔎 Le saviez-vous ?</strong>
+<p>Toute l'année, nous publions le bilan chiffré de ces actions dans notre Gazette de fin d'année — <a href="#gazette">on vous en reparle plus bas</a>.</p>
+</div>
+</section>
+
+<!-- ============ COMMUNICATION ============ -->
+<section id="communication">
+<h2 class="chapter-title">📬 Comment on communique</h2>
+
+<p>Pas de flyers papier cette année — pour des raisons écologiques, toute notre communication de rentrée passe en format numérique, via l'ENT et par mail.</p>
+
+<h3 class="sub">📋 Une liste de diffusion par classe</h3>
+<p>Chaque classe dispose déjà de sa propre liste de diffusion, animée par des parents délégués bénévoles. Grâce à elle, vous pouvez contacter les représentants de la classe de votre enfant directement — sans avoir besoin de connaître leur adresse mail personnelle.</p>
+<p>C'est moi qui administre l'ensemble de ces listes à la rentrée, et qui recrute chaque année les parents volontaires pour les animer.</p>
+<div class="box box-blue">
+<strong class="label">🙋 64 parents bénévoles</strong>
+<p>C'est le nombre de parents délégués qui se sont portés volontaires l'an dernier, à raison d'un par classe (ou presque !). Envie de rejoindre l'aventure cette année ? On en parle à la réunion de rentrée — ou <a href="mailto:unaape.descartes78@gmail.com">écrivez-nous directement</a>.</p>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Format des listes : <code>[classe]-descartes@googlegroups.com</code> (par exemple <code>2GT1-descartes@googlegroups.com</code>) — 29 listes au total, une par division, de la Seconde à la Terminale.</p>
+
+<h3 class="sub">📲 Nos autres canaux</h3>
+<ul class="plain">
+<li>Chaîne <a href="https://whatsapp.com/channel/0029VbBTxCGId7nRAx2wE20t" target="_blank" rel="noopener">WhatsApp Lycée Descartes</a></li>
+<li>Newsletters (comme celle-ci)</li>
+<li>Notre page <a href="https://unaape-montigny.fr/college-et-lycee/lycee-descartes/" target="_blank" rel="noopener">unaape-montigny.fr</a></li>
+</ul>
+</section>
+
+<!-- ============ DATES ============ -->
+<section id="dates">
+<h2 class="chapter-title">📅 Dates à retenir</h2>
+
+<div class="date-row">
+<div class="date-chip">5 sept.</div>
+<div><h4>Forum des associations</h4><p>Ferme du Manet — l'UNAAPE y tient un stand, toutes structures confondues (écoles, collèges, lycées).</p></div>
+</div>
+
+<div class="date-row">
+<div class="date-chip tbd">10 sept.</div>
+<div><h4>Réunion d'information de rentrée UNAAPE</h4><p>Jeudi 10 septembre à 18h, au Lycée Descartes — date prévisionnelle, sous réserve de disponibilité d'une salle.</p></div>
+</div>
+
+<div class="date-row">
+<div class="date-chip">9 oct.</div>
+<div><h4>Élections des représentants de parents d'élèves</h4><p>Vendredi 9 octobre 2026, fixé par le <a href="https://www.education.gouv.fr/bo/2026/Hebdo30/MENE2615797N" target="_blank" rel="noopener">Bulletin officiel de l'Éducation nationale</a>. Vote électronique via Pronote, comme l'an dernier.</p></div>
+</div>
+</section>
+
+<!-- ============ ADHÉSION ============ -->
+<section id="adhesion">
+<h2 class="chapter-title">💳 Adhérer à l'UNAAPE</h2>
+<p>Une seule cotisation par famille, quel que soit le nombre d'enfants scolarisés. Plus nous sommes nombreux, plus notre voix pèse dans les décisions qui concernent vos enfants.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Formule</th><th>Montant</th></tr></thead>
+<tbody>
+<tr><td>Membre</td><td>14 €</td></tr>
+<tr><td>Soutien</td><td>20 €</td></tr>
+<tr><td>Bienfaiteur</td><td>30 €</td></tr>
+<tr><td>Don libre</td><td>Montant de votre choix</td></tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:0.85rem;color:var(--gray);">Association d'intérêt général : un reçu fiscal vous est automatiquement délivré lors de l'adhésion en ligne (art. 200 du Code Général des Impôts).</p>
+
+<a href="https://www.helloasso.com/associations/association-autonome-des-parents-d-eleves-de-montigny-le-bretonneux-et-ses-environs-a-a-p-e-m/adhesions/adhesion-unaape-montigny-2026-27" target="_blank" rel="noopener" class="cta-btn">💳 Adhérer en ligne (HelloAsso)</a>
+</section>
+
+<!-- ============ GAZETTE ============ -->
+<section id="gazette">
+<h2 class="chapter-title">📖 Revivre l'année 2025-2026</h2>
+<p>Nouveau au lycée, ou juste curieux de voir ce qu'on a fait cette année ? Notre Gazette de fin d'année résume tout : Parcoursup, conseils de classe, réseau des parents, perspectives 2026-2027…</p>
+<a href="https://katysaintin.github.io/hors-kadre-yvelines/unaape/gazette_unaape_2025_2026.html" target="_blank" rel="noopener" class="cta-btn" style="background:var(--blue);">📖 Lire la Gazette 2025-2026</a>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section>
+<div class="closing">
+<h2>🎓 Belle rentrée à tous !</h2>
+<p>Une question, une envie de vous impliquer, une info à nous faire remonter ? On est là toute l'année.</p>
+<a href="mailto:unaape.descartes78@gmail.com" class="cta-btn">📧 unaape.descartes78@gmail.com</a>
+</div>
+<div style="text-align:center;">
+<a href="#haut" class="back-to-top">↑ Retour en haut</a>
+</div>
+</section>
+
+</div>
+
+<footer>
+UNAAPE Lycée Descartes — Montigny-le-Bretonneux<br>
+<a href="mailto:unaape.descartes78@gmail.com">unaape.descartes78@gmail.com</a> ·
+<a href="https://unaape-montigny.fr/college-et-lycee/lycee-descartes/" target="_blank" rel="noopener">unaape-montigny.fr</a>
+</footer>
+
+</body>
+</html>
