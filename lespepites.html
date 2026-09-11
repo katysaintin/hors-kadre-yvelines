@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Pépites de Charly & Laura 💎 — Hors Kadre</title>
+<style>
+  :root{
+    --navy:#16233F;
+    --terracotta:#C0673B;
+    --offwhite:#F5EFE4;
+    --gold:#D9A441;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Georgia","Iowan Old Style",serif;
+    background:var(--offwhite);
+    color:var(--navy);
+    line-height:1.55;
+  }
+  header{
+    background:var(--navy);
+    color:var(--offwhite);
+    padding:2.5rem 1.5rem 2rem;
+    text-align:center;
+  }
+  header img{
+    max-width:180px;
+    margin-bottom:1rem;
+  }
+  header h1{
+    font-size:2rem;
+    margin:0.3rem 0;
+  }
+  header p.subtitle{
+    color:var(--gold);
+    font-style:italic;
+    margin:0.4rem 0 0;
+  }
+  nav.top-links{
+    margin-top:1rem;
+    font-size:0.9rem;
+  }
+  nav.top-links a{
+    color:var(--offwhite);
+    text-decoration:underline;
+    margin:0 0.4rem;
+  }
+  .intro{
+    max-width:760px;
+    margin:2rem auto 0;
+    padding:0 1.5rem;
+    text-align:center;
+  }
+  .intro blockquote{
+    font-style:italic;
+    color:var(--terracotta);
+    border-left:3px solid var(--gold);
+    padding-left:1rem;
+    text-align:left;
+    margin:1.5rem auto;
+    max-width:640px;
+  }
+  .controls{
+    max-width:900px;
+    margin:1.5rem auto;
+    padding:0 1.5rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.6rem;
+    justify-content:center;
+  }
+  .controls button{
+    font-family:inherit;
+    font-size:0.95rem;
+    padding:0.5rem 1.1rem;
+    border-radius:999px;
+    border:2px solid var(--navy);
+    background:var(--offwhite);
+    color:var(--navy);
+    cursor:pointer;
+    transition:all 0.15s ease;
+  }
+  .controls button.active,
+  .controls button:hover{
+    background:var(--navy);
+    color:var(--offwhite);
+  }
+  main{
+    max-width:900px;
+    margin:0 auto;
+    padding:0.5rem 1.5rem 3rem;
+  }
+  .age-group{
+    margin-top:2.2rem;
+  }
+  .age-group h2{
+    color:var(--terracotta);
+    border-bottom:2px solid var(--gold);
+    padding-bottom:0.3rem;
+    font-size:1.2rem;
+  }
+  .card{
+    background:#fff;
+    border-left:4px solid var(--gold);
+    border-radius:6px;
+    padding:1rem 1.2rem;
+    margin:0.9rem 0;
+    box-shadow:0 1px 3px rgba(22,35,63,0.08);
+  }
+  .card .who{
+    display:inline-block;
+    font-size:0.75rem;
+    font-weight:bold;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    padding:0.15rem 0.6rem;
+    border-radius:999px;
+    margin-bottom:0.5rem;
+  }
+  .card.charly .who{ background:#DCE6F0; color:var(--navy); }
+  .card.laura .who{ background:#F3DFC9; color:var(--terracotta); }
+  .card p{ margin:0; }
+  .empty-state{
+    text-align:center;
+    color:#888;
+    font-style:italic;
+    margin-top:3rem;
+  }
+  footer{
+    text-align:center;
+    padding:2rem 1.5rem 3rem;
+    color:var(--navy);
+    font-size:0.85rem;
+  }
+  footer a{ color:var(--terracotta); }
+  .stat-line{
+    text-align:center;
+    color:var(--navy);
+    font-size:0.9rem;
+    margin-top:0.5rem;
+    opacity:0.75;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="HorsKadre.png" alt="Hors Kadre" onerror="this.style.display='none'">
+  <h1>💎 Les Pépites de Charly & Laura</h1>
+  <p class="subtitle">Avant les perles des IA, il y avait déjà des perles à la maison</p>
+  <nav class="top-links">
+    <a href="./">← Hors Kadre Yvelines</a>
+    <a href="lesperlesia.html">Les Perles des IA →</a>
+  </nav>
+</header>
+
+<div class="intro">
+  <p>Depuis qu'ils savent parler, Charly et Laura sortent des phrases qu'on note en vitesse sur le coin d'un téléphone pour ne pas les oublier. Certaines datent d'avant leurs souvenirs à eux. D'autres sont d'hier.</p>
+  <blockquote>"Les enfants disent des mignonneries qu'on note pour ne pas les oublier." — Katy Ho</blockquote>
+  <p class="stat-line" id="stat-line"></p>
+</div>
+
+<div class="controls" id="controls">
+  <button data-filter="tous" class="active">Tous</button>
+  <button data-filter="Charly">Charly</button>
+  <button data-filter="Laura">Laura</button>
+</div>
+
+<main id="main">
+  <p class="empty-state">Chargement des pépites…</p>
+</main>
+
+<footer>
+  E=HK² — Hors Kadre — Katy Ho<br>
+  <a href="./">← Retour au site Hors Kadre Yvelines</a>
+</footer>
+
+<script>
+const DATA_URL = "pepites-enfants.json";
+let allData = [];
+let currentFilter = "tous";
+
+function ageSortKey(age){
+  if(!age) return -1;
+  const m = age.match(/(\d+)\s*mois/);
+  if(m) return parseInt(m[1],10) / 12;
+  const a = age.match(/(\d+)\s*ans/);
+  if(a) return parseInt(a[1],10);
+  return 999;
+}
+
+function render(){
+  const main = document.getElementById("main");
+  const filtered = currentFilter === "tous"
+    ? allData
+    : allData.filter(d => d.enfant === currentFilter);
+
+  if(filtered.length === 0){
+    main.innerHTML = '<p class="empty-state">Aucune pépite pour ce filtre.</p>';
+    return;
+  }
+
+  // group by age, preserving first-seen order within each age bucket,
+  // and ordering age buckets chronologically
+  const groups = new Map();
+  filtered.forEach(item => {
+    const key = item.age || "Âge non précisé";
+    if(!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(item);
+  });
+
+  const orderedKeys = Array.from(groups.keys()).sort((a,b) => {
+    if(a === "Âge non précisé") return -1;
+    if(b === "Âge non précisé") return 1;
+    return ageSortKey(a) - ageSortKey(b);
+  });
+
+  main.innerHTML = orderedKeys.map(key => {
+    const items = groups.get(key);
+    const cards = items.map(item => `
+      <div class="card ${item.enfant.toLowerCase()}">
+        <span class="who">${item.enfant}</span>
+        <p>${item.pepite}</p>
+      </div>
+    `).join("");
+    return `<section class="age-group"><h2>${key}</h2>${cards}</section>`;
+  }).join("");
+}
+
+document.getElementById("controls").addEventListener("click", (e) => {
+  if(e.target.tagName !== "BUTTON") return;
+  document.querySelectorAll("#controls button").forEach(b => b.classList.remove("active"));
+  e.target.classList.add("active");
+  currentFilter = e.target.dataset.filter;
+  render();
+});
+
+fetch(DATA_URL)
+  .then(r => r.json())
+  .then(data => {
+    allData = data;
+    const nbCharly = data.filter(d => d.enfant === "Charly").length;
+    const nbLaura = data.filter(d => d.enfant === "Laura").length;
+    document.getElementById("stat-line").textContent =
+      `${data.length} pépites · ${nbCharly} de Charly · ${nbLaura} de Laura`;
+    render();
+  })
+  .catch(err => {
+    document.getElementById("main").innerHTML =
+      '<p class="empty-state">Impossible de charger pepites-enfants.json (vérifie qu\'il est bien dans le même dossier).</p>';
+    console.error(err);
+  });
+</script>
+
+</body>
+</html>
