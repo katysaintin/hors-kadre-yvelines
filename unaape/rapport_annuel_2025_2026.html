@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNAAPE Lycée Descartes — Rapport annuel 2025-2026, synthèse factuelle</title>
+<meta name="description" content="Synthèse factuelle du rapport de fonctionnement pédagogique du Lycée Descartes 2025-2026 : effectifs, résultats, Parcoursup, vie scolaire, chiffres extraits du rapport.">
+<meta name="robots" content="noindex, nofollow">
+
+<style>
+
+:root{
+    --blue:#1C4B8C;
+    --blue-dark:#123566;
+    --blue-soft:#EAF0F9;
+    --red:#B3261E;
+    --red-soft:#FBEAEA;
+    --gray:#555555;
+    --border:#dfe3ea;
+    --bg-soft:#F7F9FC;
+    --white:#ffffff;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--white);
+    color:#222;
+    line-height:1.7;
+}
+
+[id]{ scroll-margin-top:24px; }
+
+.container{ width:min(860px,92%); margin:auto; }
+
+/* HEADER */
+header{ background:var(--white); border-bottom:4px solid var(--red); padding:26px 0 20px; }
+.header-lockup{ display:flex; align-items:center; gap:16px; justify-content:center; flex-wrap:wrap; }
+.header-unaape{ font-family:Georgia,'Times New Roman',serif; font-size:1.9rem; font-weight:700; color:var(--blue); letter-spacing:0.5px; }
+.header-divider{ width:2px; height:34px; background:var(--red); }
+.header-lycee{ font-family:Georgia,'Times New Roman',serif; font-size:1rem; color:var(--red); font-weight:700; }
+.header-sub{ text-align:center; color:var(--gray); font-size:0.9rem; margin-top:6px; }
+
+/* COVER */
+.cover{ padding:50px 0 30px; text-align:center; }
+.cover h1{ font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.5rem,4vw,2.2rem); color:var(--blue-dark); margin-bottom:14px; }
+.cover .badge{ display:inline-block; background:var(--blue-soft); color:var(--blue-dark); border:1px solid var(--blue); padding:8px 16px; border-radius:20px; font-size:0.85rem; margin-bottom:20px; }
+.cover p{ color:var(--gray); font-size:0.95rem; max-width:600px; margin:0 auto; }
+
+/* CALLOUT CA */
+.callout-ca{
+    background:var(--blue-dark);
+    color:white;
+    border-radius:14px;
+    padding:26px 30px;
+    margin:10px 0 40px;
+    text-align:center;
+}
+.callout-ca h3{ font-family:Georgia,serif; font-size:1.2rem; margin-bottom:10px; }
+.callout-ca p{ color:#dbe4f2; max-width:640px; margin:0 auto 6px; font-size:0.95rem; }
+.callout-ca a{ color:white; font-weight:700; }
+
+/* SOMMAIRE */
+.sommaire{ background:var(--bg-soft); border:1px solid var(--border); border-radius:12px; padding:26px 30px; margin:20px 0 50px; }
+.sommaire h2{ font-family:Georgia,serif; color:var(--blue-dark); font-size:1.2rem; margin-bottom:14px; }
+.sommaire ol{ list-style:none; columns:2; -webkit-columns:2; }
+@media(max-width:600px){ .sommaire ol{ columns:1; } }
+.sommaire li{ margin-bottom:10px; break-inside:avoid; }
+.sommaire a{ color:var(--blue); text-decoration:none; font-weight:600; font-size:0.9rem; }
+.sommaire a:hover{ text-decoration:underline; color:var(--red); }
+
+/* SECTIONS */
+section{ padding:40px 0; border-top:1px solid var(--border); }
+section:first-of-type{ border-top:none; }
+.chapter-title{ font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.3rem,3vw,1.7rem); color:var(--blue-dark); margin-bottom:16px; padding-bottom:10px; border-bottom:3px solid var(--red); display:inline-block; }
+h3.sub{ font-family:Georgia,serif; color:var(--red); font-size:1.05rem; margin:22px 0 10px; }
+p{ margin-bottom:12px; color:#333; }
+ul.plain{ padding-left:20px; margin-bottom:14px; }
+ul.plain li{ margin-bottom:6px; color:#333; }
+a{ color:var(--blue); }
+a:hover{ color:var(--red); }
+
+/* BOX */
+.box{ border-radius:10px; padding:16px 20px; margin:14px 0; border-left:4px solid var(--gray); background:var(--bg-soft); }
+.box-blue{ background:var(--blue-soft); border-left-color:var(--blue); }
+.box strong.label{ display:block; color:var(--blue-dark); margin-bottom:6px; font-size:0.9rem; }
+.box p{ color:#333; margin-bottom:0; font-size:0.92rem; }
+
+/* TABLES */
+.table-wrap{ overflow-x:auto; margin:16px 0; border:1px solid var(--border); border-radius:10px; }
+table{ width:100%; border-collapse:collapse; font-size:0.85rem; }
+thead th{ background:var(--blue); color:white; text-align:left; padding:9px 12px; font-weight:700; white-space:nowrap; }
+tbody td{ padding:8px 12px; border-top:1px solid var(--border); }
+tbody tr:nth-child(even){ background:var(--bg-soft); }
+
+/* STAT CARDS */
+.stat-cards{ display:flex; flex-wrap:wrap; gap:14px; margin:18px 0; }
+.stat-card{ flex:1 1 140px; background:var(--bg-soft); border:1px solid var(--border); border-radius:10px; padding:16px; text-align:center; }
+.stat-card .num{ font-family:Georgia,serif; font-size:1.6rem; color:var(--blue-dark); font-weight:700; }
+.stat-card .lbl{ font-size:0.78rem; color:var(--gray); margin-top:4px; }
+
+/* DONUT CHARTS */
+.chart-row{ display:flex; gap:28px; align-items:center; flex-wrap:wrap; margin:18px 0; }
+.donut-wrap{ flex:0 0 auto; }
+.donut{
+    width:180px; height:180px; border-radius:50%;
+    position:relative;
+}
+.donut::after{
+    content:""; position:absolute; top:22px; left:22px; width:136px; height:136px;
+    background:white; border-radius:50%;
+}
+.donut-center{
+    position:absolute; top:0; left:0; width:180px; height:180px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:Georgia,serif; font-size:0.85rem; color:var(--blue-dark); text-align:center; font-weight:700;
+    z-index:2;
+}
+.legend{ flex:1 1 220px; font-size:0.85rem; }
+.legend-item{ display:flex; align-items:center; gap:8px; margin-bottom:7px; }
+.legend-swatch{ width:13px; height:13px; border-radius:3px; flex-shrink:0; }
+.legend-item span.val{ color:var(--gray); margin-left:auto; font-weight:700; white-space:nowrap; }
+
+/* BAR CHARTS */
+.bar-chart{ display:flex; align-items:flex-end; gap:14px; height:170px; margin:22px 0 8px; padding:0 4px; border-bottom:2px solid var(--border); }
+.bar-col{ flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; }
+.bar{ width:100%; max-width:46px; background:var(--blue); border-radius:5px 5px 0 0; position:relative; }
+.bar.alt{ background:var(--blue-dark); }
+.bar .bar-val{ position:absolute; top:-20px; left:0; right:0; text-align:center; font-size:0.72rem; font-weight:700; color:var(--blue-dark); }
+.bar-labels{ display:flex; gap:14px; padding:0 4px; }
+.bar-labels span{ flex:1; text-align:center; font-size:0.72rem; color:var(--gray); }
+.chart-note{ font-size:0.8rem; color:var(--gray); font-style:italic; margin-top:6px; }
+
+/* IMAGE PLACEHOLDER */
+.img-placeholder{
+    border:2px dashed var(--border); border-radius:10px; background:var(--bg-soft);
+    padding:30px 16px; text-align:center; color:var(--gray); font-size:0.85rem; margin:14px 0;
+}
+.img-placeholder code{ background:white; padding:2px 6px; border-radius:4px; border:1px solid var(--border); }
+
+/* CLOSING / FOOTER */
+.closing{ background:var(--blue-dark); color:white; text-align:center; padding:36px 30px; border-radius:14px; margin:20px 0; }
+.closing h2{ font-family:Georgia,serif; font-size:1.4rem; margin-bottom:12px; }
+.closing p{ color:#dbe4f2; max-width:600px; margin:0 auto 8px; }
+.cta-btn{ display:inline-block; background:var(--red); color:white !important; padding:12px 24px; border-radius:10px; text-decoration:none !important; font-weight:700; margin-top:10px; }
+.closing a.cta-btn{ background:white; color:var(--blue-dark) !important; }
+footer{ text-align:center; color:var(--gray); font-size:0.8rem; padding:32px 0; border-top:1px solid var(--border); }
+.back-to-top{ display:inline-block; margin-top:26px; font-size:0.82rem; color:var(--blue); text-decoration:none; }
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-lockup">
+<img src="gazette_images/UNAAPE.jpg" alt="Logo UNAAPE" style="height: 60px; width: 60px">
+<span class="header-unaape">UNAAPE</span>
+<span class="header-divider"></span>
+<span class="header-lycee">Lycée Descartes</span>
+<img src="gazette_images/Descartes.jpg" alt="Logo Descartes" style="height: 60px; width: 60px">
+</div>
+<div class="header-sub">Montigny-le-Bretonneux</div>
+</header>
+
+<div class="container">
+
+<div class="cover" id="haut">
+<div class="badge">Rapport de fonctionnement pédagogique 2025-2026</div>
+<h1>Le lycée Descartes en chiffres</h1>
+<p>Synthèse factuelle du rapport annuel rédigé par la cheffe d'établissement — chiffres extraits tels quels, sans analyse ni interprétation.</p>
+<p style="margin-top:16px;"><a href="https://drive.google.com/file/d/1pcHWkLGGkb-4C-y-EXLvamzROZWMqBRz/view?usp=sharing" target="_blank" rel="noopener" style="font-weight:700;">📄 Consulter le rapport complet</a></p>
+</div>
+
+<div class="callout-ca">
+<h3>📋 Prochain Conseil d'Administration : 24 septembre</h3>
+<p>Ce rapport a été transmis en préparation du CA du 24 septembre. Il permet d'en dégager certaines questions.</p>
+<p>Si vous souhaitez remonter vos propres questions, merci de nous écrire avant le <strong>22 septembre au soir</strong> :</p>
+<p><a href="mailto:unaape.descartes78@gmail.com">unaape.descartes78@gmail.com</a></p>
+</div>
+
+<div class="sommaire">
+<h2>Sommaire</h2>
+<ol>
+<li><a href="#effectifs">Effectifs et caractéristiques</a></li>
+<li><a href="#resultats">Résultats aux examens</a></li>
+<li><a href="#viescolaire">Vie scolaire</a></li>
+<li><a href="#culture">Ouverture culturelle</a></li>
+<li><a href="#international">Ouverture internationale</a></li>
+<li><a href="#cesce">Le CESCE (santé, citoyenneté)</a></li>
+<li><a href="#dd">Développement durable</a></li>
+<li><a href="#orientation">Préparation à l'orientation</a></li>
+<li><a href="#cdi">Bilan du CDI</a></li>
+<li><a href="#sport">Association sportive</a></li>
+<li><a href="#numerique">Bilan numérique</a></li>
+<li><a href="#cadre">Cadre de vie</a></li>
+</ol>
+</div>
+
+<!-- ============ I. EFFECTIFS ============ -->
+<section id="effectifs">
+<h2 class="chapter-title">👥 Effectifs et caractéristiques de l'établissement</h2>
+
+<div class="stat-cards">
+<div class="stat-card"><div class="num">1050</div><div class="lbl">Effectif total 2025</div></div>
+<div class="stat-card"><div class="num">50,4%</div><div class="lbl">de filles</div></div>
+<div class="stat-card"><div class="num">80%</div><div class="lbl">demi-pensionnaires</div></div>
+<div class="stat-card"><div class="num">75</div><div class="lbl">professeurs</div></div>
+</div>
+
+<h3 class="sub">Évolution des effectifs (2021-2025)</h3>
+<div class="bar-chart">
+<div class="bar-col"><div class="bar" style="height:87.4%"><span class="bar-val">1014</span></div></div>
+<div class="bar-col"><div class="bar" style="height:86.8%"><span class="bar-val">1007</span></div></div>
+<div class="bar-col"><div class="bar" style="height:89.2%"><span class="bar-val">1035</span></div></div>
+<div class="bar-col"><div class="bar" style="height:91.7%"><span class="bar-val">1064</span></div></div>
+<div class="bar-col"><div class="bar" style="height:90.4%"><span class="bar-val">1050</span></div></div>
+</div>
+<div class="bar-labels"><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span></div>
+<p class="chart-note">Total Lycée GT + CPGE + BTS. Soit +3,5 % sur 5 ans, avec -15 élèves à la rentrée 2025.</p>
+
+<p>Population scolaire 2025 : Lycée GT 934 — CPGE 60 — BTS 56. 11 maintiens (5 en 2nde, 1 en STMG, 2 en STS, 3 en PC).</p>
+
+<h3 class="sub">Taux de boursiers — Lycée GT (2021-2025)</h3>
+<div class="bar-chart" style="height:130px;">
+<div class="bar-col"><div class="bar alt" style="height:85%"><span class="bar-val">10,2%</span></div></div>
+<div class="bar-col"><div class="bar alt" style="height:85.8%"><span class="bar-val">10,3%</span></div></div>
+<div class="bar-col"><div class="bar alt" style="height:84.2%"><span class="bar-val">10,1%</span></div></div>
+<div class="bar-col"><div class="bar alt" style="height:65%"><span class="bar-val">7,8%</span></div></div>
+<div class="bar-col"><div class="bar alt" style="height:51%"><span class="bar-val">6,12%</span></div></div>
+</div>
+<div class="bar-labels"><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span></div>
+<p class="chart-note">Pour comparaison, 2024 : Académie 15,8 % — France 19,7 %.</p>
+
+<h3 class="sub">Répartition par milieu social (PCS regroupées, rentrée 2025)</h3>
+<div class="chart-row">
+<div class="donut-wrap">
+<div class="donut" style="background:conic-gradient(var(--blue-dark) 0% 65%, var(--blue) 65% 76%, #9AA5B3 76% 91%, var(--gray) 91% 100%);">
+<div class="donut-center">100%</div>
+</div>
+</div>
+<div class="legend">
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue-dark)"></span> Très favorisé <span class="val">65%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue)"></span> Favorisé <span class="val">11%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#9AA5B3"></span> Moyen <span class="val">15%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:var(--gray)"></span> Défavorisé <span class="val">9%</span></div>
+</div>
+</div>
+
+<h3 class="sub">Indice de Position Sociale (IPS) — rentrée 2025</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th></th><th>Lycée Descartes (LGT)</th><th>Académie Versailles</th><th>France</th></tr></thead>
+<tbody><tr><td>IPS</td><td>142,7</td><td>124,3</td><td>117,3</td></tr></tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">IPS ensemble (LGT+BTS+CPGE) : 141,1 — BTS : 100 — CPGE : 154,6.</p>
+
+<h3 class="sub">Personnels</h3>
+<ul class="plain">
+<li>Équipe de direction : proviseur, proviseur adjoint, secrétaire générale</li>
+<li>Vie scolaire : 2 CPE, 6 AED (5,1 ETP)</li>
+<li>75 professeurs affectés (1 sur 2 établissements, 4 stagiaires), ancienneté moyenne 8 ans</li>
+<li>3 secrétaires + 2 assistants de laboratoire</li>
+<li>1 infirmière à mi-temps, 1 psy-EN partagée sur 3 établissements</li>
+<li>19 personnels techniques</li>
+</ul>
+</section>
+
+<!-- ============ II. RESULTATS ============ -->
+<section id="resultats">
+<h2 class="chapter-title">🎓 Résultats aux examens et concours</h2>
+
+<h3 class="sub">Baccalauréat 2026</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Filière</th><th>Admis</th><th>Refusés</th><th>Réussite</th><th>Mentions</th></tr></thead>
+<tbody>
+<tr><td>Général</td><td>238</td><td>1</td><td>99,58%</td><td>181 (76%)</td></tr>
+<tr><td>STMG RH</td><td>33</td><td>8</td><td>80,49%</td><td>9 (27,27%)</td></tr>
+<tr><td>STMG GF</td><td>26</td><td>2</td><td>92,86%</td><td>16 (61,5%)</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Historique réussite bac général : 2024 : 98,7% — 2025 : 99,17% — 2026 : 99,58%.</p>
+
+<h3 class="sub">BTS Gestion de la PME — taux de réussite</h3>
+<div class="bar-chart" style="height:130px;">
+<div class="bar-col"><div class="bar" style="height:89.3%"><span class="bar-val">89,3</span></div></div>
+<div class="bar-col"><div class="bar" style="height:46.4%"><span class="bar-val">46,4</span></div></div>
+<div class="bar-col"><div class="bar" style="height:72.7%"><span class="bar-val">72,7</span></div></div>
+<div class="bar-col"><div class="bar" style="height:76.9%"><span class="bar-val">76,9</span></div></div>
+<div class="bar-col"><div class="bar" style="height:71.4%"><span class="bar-val">71,4</span></div></div>
+<div class="bar-col"><div class="bar" style="height:91.3%"><span class="bar-val">91,3</span></div></div>
+</div>
+<div class="bar-labels"><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div>
+
+<p><strong>Prépa Sciences Po/IEP :</strong> 14 élèves en 2025-2026 ; résultats 2026 : 1 admise Sciences Po Paris, 3 admis IEP. Depuis 2017-2018 : 19 admis Sciences Po Paris, 28 admis IEP.</p>
+
+<h3 class="sub">Orientation fin de Seconde (2025 → 2026)</h3>
+<div class="chart-row">
+<div class="donut-wrap">
+<div class="donut" style="background:conic-gradient(var(--blue-dark) 0% 77.8%, var(--blue) 77.8% 98.1%, #9AA5B3 98.1% 99.1%, #C7CDD6 99.1% 99.7%, var(--red) 99.7% 100%);">
+<div class="donut-center">2026</div>
+</div>
+</div>
+<div class="legend">
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue-dark)"></span> 1ère Générale <span class="val">77,8%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue)"></span> Voie techno. (tous MEF) <span class="val">20,3%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#9AA5B3"></span> 1ère Pro <span class="val">1%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#C7CDD6"></span> Maintien <span class="val">0,6%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:var(--red)"></span> Autre <span class="val">0,3%</span></div>
+</div>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Détail voie technologique : 1ère STMG 12,9% — STI2D 4,8% — ST2S 0,3% — TMD/Hôtellerie 0,3% — STAV 0,6% — STL 0,6% — ST2A 0,6%. (2025 : 1ère générale 75,1% — voie techno. tous MEF 21,4%)</p>
+
+<h3 class="sub">Parcoursup 2026 — Bacheliers généraux</h3>
+<div class="chart-row">
+<div class="donut-wrap">
+<div class="donut" style="background:conic-gradient(
+  #123566 0% 45.1%,
+  #1C4B8C 45.1% 56.5%,
+  #3E6BA8 56.5% 66.6%,
+  #5F8CC3 66.6% 74.6%,
+  #8AACD6 74.6% 80.9%,
+  #B0C7E3 80.9% 86.4%,
+  #6B7D99 86.4% 91.5%,
+  #9AA5B3 91.5% 93.2%,
+  #C7CDD6 93.2% 94.9%,
+  #D9DEE5 94.9% 96.6%,
+  #EAF0F9 96.6% 100%
+);">
+<div class="donut-center">237<br>élèves</div>
+</div>
+</div>
+<div class="legend">
+<div class="legend-item"><span class="legend-swatch" style="background:#123566"></span> Licences <span class="val">45,1% (107)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#1C4B8C"></span> Écoles d'ingénieurs <span class="val">11,4% (27)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#3E6BA8"></span> CPGE <span class="val">10,1% (24)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#5F8CC3"></span> BUT / DCG <span class="val">8% (19)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#8AACD6"></span> Hors Parcoursup <span class="val">6,3% (15)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#B0C7E3"></span> BTS <span class="val">5,5% (13)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#6B7D99"></span> Écoles de commerce <span class="val">5,1% (12)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#9AA5B3"></span> Santé/social <span class="val">1,7% (4)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#C7CDD6"></span> IEP/Sciences Po <span class="val">1,7% (4)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#D9DEE5"></span> DN MADE/écoles d'art <span class="val">1,7% (4)</span></div>
+</div>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Répartition Licences : Droit 22 — PASS/LAS 22 — Sciences 18 — Sc. humaines et sociales 17 — AES/éco-gestion/infocom/sc.po 12 — Langues 9 — STAPS 6 — LPE 1.</p>
+
+<div class="stat-cards">
+<div class="stat-card"><div class="num">8</div><div class="lbl">élèves sans proposition à la rentrée (3,4%) — 2025 : 1,3%</div></div>
+</div>
+
+<h3 class="sub">Parcoursup 2026 — Bacheliers STMG</h3>
+<div class="chart-row">
+<div class="donut-wrap">
+<div class="donut" style="background:conic-gradient(
+  #123566 0% 40.6%,
+  #1C4B8C 40.6% 66%,
+  #5F8CC3 66% 72.8%,
+  #8AACD6 72.8% 79.6%,
+  #B0C7E3 79.6% 84.7%,
+  #6B7D99 84.7% 89.8%,
+  #9AA5B3 89.8% 94.9%,
+  #EAF0F9 94.9% 100%
+);">
+<div class="donut-center">94,9%<br>chiffré</div>
+</div>
+</div>
+<div class="legend">
+<div class="legend-item"><span class="legend-swatch" style="background:#123566"></span> BTS <span class="val">40,6% (24)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#1C4B8C"></span> BUT Services <span class="val">25,4% (15)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#5F8CC3"></span> Licences <span class="val">6,8% (4)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#8AACD6"></span> Hors Parcoursup <span class="val">6,8% (4)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#B0C7E3"></span> École de commerce <span class="val">5,1% (3)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#6B7D99"></span> DCG <span class="val">5,1% (3)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#9AA5B3"></span> Santé/social <span class="val">5,1% (3)</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#EAF0F9;border:1px solid var(--border)"></span> Non chiffré dans le rapport</div>
+</div>
+</div>
+<div class="stat-cards">
+<div class="stat-card"><div class="num">3</div><div class="lbl">élèves sans proposition à la rentrée — 2025 : 1,6%</div></div>
+</div>
+
+<div class="img-placeholder">
+📷 Le lycée a accueilli Philippe Baptiste, Ministre de l'Enseignement Supérieur, le 4 juin 2026, pour l'ouverture de la phase d'admission Parcoursup.<br>
+Placeholder : <code>images/ministre-baptiste-4juin2026.jpg</code>
+</div>
+</section>
+
+<!-- ============ III. VIE SCOLAIRE ============ -->
+<section id="viescolaire">
+<h2 class="chapter-title">🏫 Vie scolaire</h2>
+
+<h3 class="sub">Absentéisme par niveau (2025/2026)</h3>
+<div class="bar-chart" style="height:150px;">
+<div class="bar-col"><div class="bar" style="height:33%"><span class="bar-val">2,95</span></div></div>
+<div class="bar-col"><div class="bar" style="height:30%"><span class="bar-val">2,67</span></div></div>
+<div class="bar-col"><div class="bar" style="height:40.7%"><span class="bar-val">3,63</span></div></div>
+<div class="bar-col"><div class="bar" style="height:32.3%"><span class="bar-val">2,88</span></div></div>
+<div class="bar-col"><div class="bar alt" style="height:89.1%"><span class="bar-val">7,95</span></div></div>
+<div class="bar-col"><div class="bar" style="height:5%"><span class="bar-val">0,45</span></div></div>
+<div class="bar-col"><div class="bar" style="height:37.6%"><span class="bar-val">3,35</span></div></div>
+</div>
+<div class="bar-labels"><span>2GT</span><span>1GT</span><span>1STMG</span><span>TG</span><span>TSTMG</span><span>Prépa</span><span>BTS</span></div>
+<p class="chart-note">Taux établissement 2025/2026 : 3,03% (2023/24 : 3,90% — 2024/25 : 3,67%). Taux national LGT 2024/2025 : 10%.</p>
+
+<p><strong>Motifs d'absence :</strong> 52,4% médicaux — 18,42% non justifiées administrativement — 3,26% jugées non valables.</p>
+
+<div class="box">
+<strong class="label">Suivi individuel</strong>
+<p>Plus de 450 entretiens individuels menés par les CPE en 2025-2026. Suivi lourd : phobies/dépressions/hospitalisations (19 élèves), décrochage persistant (15 élèves), 10 commissions/équipe éducative pour absentéisme. Plus d'une trentaine d'élèves suivis pour des problématiques psychologiques lourdes.</p>
+</div>
+
+<h3 class="sub">Retards</h3>
+<p>Taux de retards stable à 3,10% (moitié le matin entre 8h et 10h). 1077 heures de cours manquées pour retards non acceptés, dont 558h en STMG et 139h en BTS.</p>
+
+<h3 class="sub">Sanctions (2025/2026)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Total</th><th>Dont STMG</th></tr></thead>
+<tbody>
+<tr><td>Avertissement</td><td>0</td><td>—</td></tr>
+<tr><td>Blâme</td><td>5</td><td>—</td></tr>
+<tr><td>Exclusions temporaires de l'établissement</td><td>37</td><td>27</td></tr>
+<tr><td>Exclusions temporaires de la classe</td><td>4</td><td>4</td></tr>
+<tr><td>Conseils de discipline</td><td>5</td><td>4</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- ============ IV. CULTURE ============ -->
+<section id="culture">
+<h2 class="chapter-title">🎭 Ouverture culturelle et artistique</h2>
+<ul class="plain">
+<li>Semaine des arts (19-23 janvier 2026)</li>
+<li>Tournoi d'échecs (15 avril 2026) : 15 élèves inscrits, dont 3 licenciés FFE, 1 seule fille</li>
+<li>Projets PEAC : atelier cinéma « Descartes fait son cinéma », « La nature reprend ses droits en ville », « Les gestes qui sauvent ou pas », atelier astronomie exoplanètes (vernissage 30 mai 2026)</li>
+<li>Projet théâtre Euridyce : 170 élèves concernés (1ère/Tale STMG + BTS)</li>
+<li>Concours général d'histoire : 11 élèves de 1ère générale</li>
+<li>CNRD (1ère participation du lycée) : 47 élèves (17 en 2nde, 6 en 1ère, 24 en Tale) — 4 groupes lauréats académiques sur 7 récompensés, 1 groupe sélectionné au niveau national</li>
+<li>Concours « je filme le métier qui me plait » (STS) : clap de bronze sur 700 films présentés</li>
+<li>Concours de débats citoyens : 2ème place en finale académique</li>
+</ul>
+
+<div class="img-placeholder">
+📷 Concours « Dessine-moi le chinois 2026 » — résultats (1er, 2ème, 3ème prix)<br>
+Placeholder : <code>images/dessine-moi-le-chinois-2026.jpg</code>
+</div>
+</section>
+
+<!-- ============ V. INTERNATIONAL ============ -->
+<section id="international">
+<h2 class="chapter-title">🌍 Ouverture internationale</h2>
+
+<h3 class="sub">Mobilités des élèves du lycée (2025-2026)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Destination</th><th>Public</th><th>Effectif</th><th>Période</th></tr></thead>
+<tbody>
+<tr><td>Bruxelles</td><td>Tale Activ English</td><td>32</td><td>Décembre 2025</td></tr>
+<tr><td>Bruxelles</td><td>Tale section euro</td><td>48</td><td>Janvier 2026</td></tr>
+<tr><td>Rome</td><td>Latinistes (tous niveaux)</td><td>24</td><td>Janvier 2026</td></tr>
+<tr><td>Liverpool</td><td>1ère section euro</td><td>48</td><td>Février 2026</td></tr>
+<tr><td>Dublin/Wicklow</td><td>1ère/Tale euro + Activ English</td><td>20</td><td>Avril 2026</td></tr>
+<tr><td>San Fernando (Espagne)</td><td>2nde</td><td>26</td><td>Mai 2026</td></tr>
+</tbody>
+</table>
+</div>
+<p>Accueil : 14 élèves + 2 enseignants irlandais (9-15 novembre 2025) ; 24 élèves de San Fernando. Jumelage Montigny-Wicklow : 30 ans.</p>
+<p><strong>Certifications Terminale :</strong> Cambridge (section Euro + spécialité AMC) et TOEIC pour tous les élèves de Terminale, via le partenariat UVSQ/CEREL.</p>
+</section>
+
+<!-- ============ VI. CESCE ============ -->
+<section id="cesce">
+<h2 class="chapter-title">💚 Le CESCE — santé, citoyenneté, environnement</h2>
+<ul class="plain">
+<li>Santé mentale / gestion du stress : 2ndes (2h, CRIPS, oct-nov 2025), 1ères (1h30, oct-nov 2025), adultes du lycée (1h30, 10 avril 2026)</li>
+<li>EVARS : modules dédiés par niveau (2nde, 1ère, Tale/CPGE/STS)</li>
+<li>Label EDUSANTE niveau 2</li>
+<li>Programme pHARE (depuis 2023) : concours dessin/écriture + dress code (6 novembre 2025), formation à l'empathie, formation de 4 élèves ambassadeurs, Safer Internet Day</li>
+</ul>
+
+<h3 class="sub">Plan « Les filles et les maths »</h3>
+<p>Flyer distribué aux parents en septembre 2025 ; rencontre avec 6 femmes aux parcours scientifiques (21 mai 2026, 50 élèves de 2nde volontaires) ; stage UVSQ « Filles, maths et informatique » (7 mai 2026).</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>% de filles en spécialité (Terminale)</th><th>2024</th><th>2025</th></tr></thead>
+<tbody>
+<tr><td>Maths</td><td>31,1</td><td>41,7</td></tr>
+<tr><td>NSI</td><td>14,3</td><td>25</td></tr>
+<tr><td>Physique-Chimie</td><td>35,1</td><td>43,8</td></tr>
+<tr><td>SVT</td><td>44,1</td><td>62,9</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">% de filles en CPGE : 2024 : 40,6% — 2025 : 37,3%.</p>
+<p>Atelier « Décodeuses & Friends » : 30 élèves de 2nde dont 14 filles en 2025-2026.</p>
+</section>
+
+<!-- ============ VII. DD ============ -->
+<section id="dd">
+<h2 class="chapter-title">🌱 Développement durable</h2>
+<ul class="plain">
+<li>Option Développement Durable (2nde) : 8 élèves — projet « Potager parfait » avec le Biolab de la Cité des sciences, restitution publique le 28 mai 2026</li>
+<li>Labellisation <strong>E3D niveau expert</strong> (le plus haut niveau), obtenue à nouveau</li>
+<li>25 éco-délégués volontaires, créneau hebdomadaire (lundi 12h)</li>
+<li>Lycée classé 11e sur 89 établissements participants (appel à projet régional de recyclage des équipements électroniques)</li>
+</ul>
+</section>
+
+<!-- ============ VIII. ORIENTATION ============ -->
+<section id="orientation">
+<h2 class="chapter-title">🧭 Préparation à l'orientation</h2>
+
+<div class="stat-cards">
+<div class="stat-card"><div class="num">168</div><div class="lbl">entretiens Psy-EN proposés</div></div>
+<div class="stat-card"><div class="num">131</div><div class="lbl">entretiens réalisés</div></div>
+<div class="stat-card"><div class="num">8</div><div class="lbl">réunions GPDS</div></div>
+<div class="stat-card"><div class="num">13</div><div class="lbl">séances collectives</div></div>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">La Psy-EN est présente 2 demi-journées par semaine (service partagé sur 3 établissements).</p>
+
+<h3 class="sub">Forum des métiers et de l'orientation (5 décembre 2025)</h3>
+<div class="stat-cards">
+<div class="stat-card"><div class="num">111</div><div class="lbl">intervenants (101 anciens élèves)</div></div>
+<div class="stat-card"><div class="num">65</div><div class="lbl">thématiques proposées</div></div>
+<div class="stat-card"><div class="num">582</div><div class="lbl">élèves participants (62,37%)</div></div>
+</div>
+
+<p><strong>Stages de fin de seconde</strong> (15-26 juin 2026) : 310 élèves concernés, 3 stages effectués à l'étranger.</p>
+</section>
+
+<!-- ============ IX. CDI ============ -->
+<section id="cdi">
+<h2 class="chapter-title">📚 Bilan du CDI</h2>
+
+<div class="stat-cards">
+<div class="stat-card"><div class="num">220 m²</div><div class="lbl">82 places, ouvert 30h/semaine</div></div>
+<div class="stat-card"><div class="num">5991</div><div class="lbl">passages en 2025-2026</div></div>
+<div class="stat-card"><div class="num">822</div><div class="lbl">prêts sur l'année</div></div>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Fréquentation historique : 8123 (2023-2024) → 7893 (2024-2025) → 5991 (2025-2026). Budget : 3000€ fonds documentaire + 4000€ abonnements.</p>
+
+<h3 class="sub">Fréquentation par niveau</h3>
+<div class="chart-row">
+<div class="donut-wrap">
+<div class="donut" style="background:conic-gradient(var(--blue-dark) 0% 49%, var(--blue) 49% 71.3%, #8AACD6 71.3% 98.4%, #C7CDD6 98.4% 99.5%, #EAF0F9 99.5% 100%);">
+<div class="donut-center">%</div>
+</div>
+</div>
+<div class="legend">
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue-dark)"></span> Seconde <span class="val">49%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue)"></span> Première <span class="val">22,3%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#8AACD6"></span> Terminale <span class="val">27,1%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#C7CDD6"></span> BTS <span class="val">1,1%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#EAF0F9;border:1px solid var(--border)"></span> CPGE <span class="val">0,6%</span></div>
+</div>
+</div>
+
+<h3 class="sub">Usages du lieu</h3>
+<div class="chart-row">
+<div class="donut-wrap">
+<div class="donut" style="background:conic-gradient(var(--blue-dark) 0% 36.7%, var(--blue) 36.7% 54%, #8AACD6 54% 91.4%, #C7CDD6 91.4% 98.3%, #9AA5B3 98.3% 99.9%, #EAF0F9 99.9% 100%);">
+<div class="donut-center">%</div>
+</div>
+</div>
+<div class="legend">
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue-dark)"></span> Activité/travail avec un prof <span class="val">36,7%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:var(--blue)"></span> Travail avec la prof-documentaliste <span class="val">17,3%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#8AACD6"></span> Recherche/travail personnel <span class="val">37,4%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#C7CDD6"></span> Lecture <span class="val">6,9%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#9AA5B3"></span> Évènement/exposition <span class="val">1,6%</span></div>
+<div class="legend-item"><span class="legend-swatch" style="background:#EAF0F9;border:1px solid var(--border)"></span> Orientation <span class="val">0,2%</span></div>
+</div>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Part des livres dans les prêts : 84% (52% du fonds). Part des fictions dans les prêts : 45% (19% du fonds).</p>
+</section>
+
+<!-- ============ X. SPORT ============ -->
+<section id="sport">
+<h2 class="chapter-title">🏅 Bilan de l'association sportive</h2>
+
+<div class="stat-cards">
+<div class="stat-card"><div class="num">152</div><div class="lbl">licenciés (100 élèves distincts : 40 filles / 60 garçons)</div></div>
+</div>
+
+<h3 class="sub">Effectifs par activité</h3>
+<div class="bar-chart" style="height:160px;">
+<div class="bar-col"><div class="bar" style="height:64%"><span class="bar-val">32</span></div></div>
+<div class="bar-col"><div class="bar" style="height:88%"><span class="bar-val">44</span></div></div>
+<div class="bar-col"><div class="bar" style="height:4%"><span class="bar-val">2</span></div></div>
+<div class="bar-col"><div class="bar" style="height:54%"><span class="bar-val">27</span></div></div>
+<div class="bar-col"><div class="bar" style="height:8%"><span class="bar-val">4</span></div></div>
+<div class="bar-col"><div class="bar" style="height:16%"><span class="bar-val">8</span></div></div>
+<div class="bar-col"><div class="bar" style="height:70%"><span class="bar-val">35</span></div></div>
+</div>
+<div class="bar-labels"><span>Volley</span><span>Badm.</span><span>Cycl.</span><span>Cross</span><span>Laser</span><span>C.O.</span><span>Olymp.</span></div>
+
+<p><strong>Palmarès :</strong> équipe Badminton Excellence classée 3ème au championnat académique (Boulogne-Billancourt) ; 1 duo garçons classé 1er au championnat de district, 1 duo filles classé 3ème ; Course d'orientation : championne académique, 22e place au championnat de France (Castres) ; Volley-ball : équipe garçons 10e/22 au championnat départemental.</p>
+</section>
+
+<!-- ============ XI. NUMERIQUE ============ -->
+<section id="numerique">
+<h2 class="chapter-title">💻 Bilan numérique</h2>
+<ul class="plain">
+<li>312 ordinateurs distribués en septembre 2025, une dizaine dans l'année</li>
+<li>Fin du marché Unowhy avec la Région ; à la rentrée prochaine, les élèves de 2nde et les enseignants volontaires seront dotés d'un Chromebook (nouveau marché régional)</li>
+<li>Bascule sur fibre directe (FTTO) en mars/avril 2026</li>
+<li>Installation d'un pare-feu Stormshield le 25 juin 2026</li>
+<li>11 nouveaux écrans numériques interactifs (ENI) attendus à la rentrée prochaine</li>
+</ul>
+
+<h3 class="sub">PACTE 2025-2026</h3>
+<p>13,5 parts fonctionnelles attribuées : 11 parts RCD, 1 part voie professionnelle, 1,5 part « autres missions » (Club Med + référent développement durable).</p>
+</section>
+
+<!-- ============ CADRE DE VIE ============ -->
+<section id="cadre">
+<h2 class="chapter-title">🔧 Amélioration du cadre de vie</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Période</th><th>Travaux</th><th>Montant</th></tr></thead>
+<tbody>
+<tr><td>Octobre 2025</td><td>Réfection terrasse bâtiment logements</td><td>146 443€</td></tr>
+<tr><td>Octobre 2025</td><td>Sécurisation clôture</td><td>51 809€</td></tr>
+<tr><td>Octobre 2025</td><td>Travaux volets roulants</td><td>98 474€</td></tr>
+<tr><td>Décembre 2025</td><td>Rénovation blocs sanitaires élèves</td><td>82 522€</td></tr>
+<tr><td>Août 2026</td><td>Remplacement du lave-vaisselle</td><td>66 838€</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Travaux complémentaires financés par la Région en février et avril 2026 (sanitaires, éclairage, faux plafonds, carrelage).</p>
+
+<p>Le DUERP (document unique d'évaluation des risques professionnels), non actualisé depuis 2010, a été finalisé cette année et présenté en CHS (janvier 2026) et au Conseil d'Administration du 16 février 2026. Budget prévu pour 2026 : 2000€.</p>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section>
+<div class="closing">
+<h2>💬 Vos questions pour le CA du 24 septembre</h2>
+<p>Cette synthèse reprend uniquement les données du rapport annuel, sans analyse. Vos représentants échangeront séparément sur les questions à porter en séance.</p>
+<p>Pour nous faire remonter une question avant le 22 septembre au soir :</p>
+<a href="mailto:unaape.descartes78@gmail.com" class="cta-btn">📧 unaape.descartes78@gmail.com</a>
+<p style="margin-top:14px;"><a href="https://drive.google.com/file/d/1pcHWkLGGkb-4C-y-EXLvamzROZWMqBRz/view?usp=sharing" target="_blank" rel="noopener" style="color:#dbe4f2;text-decoration:underline;">📄 Télécharger le rapport complet</a></p>
+</div>
+<div style="text-align:center;">
+<a href="#haut" class="back-to-top">↑ Retour en haut</a>
+</div>
+</section>
+
+</div>
+
+<footer>
+UNAAPE Lycée Descartes — Montigny-le-Bretonneux<br>
+Source : Rapport de fonctionnement pédagogique, année scolaire 2025-2026, rédigé par Françoise Martin-Juan, cheffe d'établissement.
+</footer>
+
+</body>
+</html>
