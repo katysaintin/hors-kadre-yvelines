@@ -848,3 +848,9 @@ Et peut-être accepter de poser la question sans avoir immédiatement besoin d'y
 - Travaux scientifiques sur l'apprentissage espacé et le rappel actif
 - Rapports français sur les rythmes scolaires et l'alternance 7/2
 - Témoignage de Noé, scolarisé principalement le matin à bord d'un voilier
+
+https://www.marianne.net/agora/tribunes-libres/classement-pisa-la-veritable-cause-du-naufrage-francais-est-d-ordre-ideologique?fbclid=IwVERDUAUfeatwZG9mAWZkaWQWUO5Ygs7r3pfZ4ONgk4L0V_YSL5oZeGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR7k-Xc1jgrYYroe4Vhl_sLBM-s6fHL56-7LZlqZzdYq-eRwquHBY_6r4HmD1w_aem_rqmCpod15Dn0mJGCSJe0zw
+https://etudiant.lefigaro.fr/vos-etudes/magazine/49502-noe-prepas/
+https://www.banquedesterritoires.fr/rythmes-scolaires-emmanuel-macron-pour-des-journees-et-des-vacances-plus-courtes
+https://www.franceinfo.fr/societe/education/bruno-le-maire-souhaite-avancer-la-maternelle-de-3-ans-a-1-an-face-a-la-baisse-des-resultats-des-eleves-francais-au-test-pisa_8184428.html
+
