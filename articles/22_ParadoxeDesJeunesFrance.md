@@ -492,3 +492,359 @@ Mais de se demander :
 ---
 
 **E=HK² 💥**
+
+---
+
+# Et si le problème n'était pas que les enfants ne travaillent pas assez ?
+
+*PISA, écrans, journées interminables, vacances scolaires : et si nous confondions quantité de travail et qualité des apprentissages ?*
+
+---
+
+On parle beaucoup, ces derniers temps, de la baisse du niveau scolaire.
+
+Les résultats de PISA sont mauvais. En mathématiques comme en compréhension de l'écrit, une part importante des élèves français n'atteint pas le niveau considéré comme minimal. Et le constat est suffisamment préoccupant pour que les mêmes réponses reviennent régulièrement :
+
+Il faudrait davantage d'exigence.
+
+Davantage de travail.
+
+Davantage de fondamentaux.
+
+Davantage d'heures.
+
+Et si nous faisions une pause avant d'ajouter encore une heure ?
+
+Non pas pour nier le problème.
+
+Mais pour poser une question peut-être un peu moins confortable :
+
+**qu'est-ce qui fait réellement apprendre un enfant ?**
+
+---
+
+## Toujours plus de temps pour apprendre ?
+
+La France n'est pas un pays où les élèves passent particulièrement peu de temps à l'école.
+
+Pourtant, elle n'est pas non plus parmi les pays qui obtiennent les meilleurs résultats aux évaluations internationales.
+
+PISA ne dit d'ailleurs pas simplement que les systèmes les plus performants sont ceux qui font travailler leurs élèves le plus longtemps.
+
+C'est même beaucoup plus nuancé.
+
+Alors, évidemment, cela ne signifie pas que les heures de cours ne servent à rien.
+
+Cela signifie seulement qu'il existe peut-être une différence entre :
+
+**le temps passé à l'école**
+
+et
+
+**le temps pendant lequel un élève apprend réellement.**
+
+Une journée peut être longue sans être efficace.
+
+Cours, déplacements, changements de salle, consignes, évaluations, devoirs, interruptions, fatigue, sollicitations numériques...
+
+Et cette densité est parfois invisible.
+
+---
+
+## « J'apprends pour le DS. Après, j'oublie. »
+
+C'est une phrase que mes enfants pourraient presque dire machinalement.
+
+Ils apprennent une leçon.
+
+Ils font les exercices.
+
+Ils révisent.
+
+Ils passent le DS.
+
+La note arrive.
+
+Puis quelques semaines plus tard, certaines notions ont disparu.
+
+Alors je me demande :
+
+**avons-nous organisé l'école pour apprendre durablement, ou pour réussir la prochaine évaluation ?**
+
+Ce n'est évidemment pas la même chose.
+
+La mémoire a besoin de temps.
+
+Les connaissances ont besoin d'être réactivées.
+
+Les notions ont besoin d'être réutilisées dans d'autres contextes.
+
+Et parfois, apprendre demande paradoxalement de ne pas être constamment en train d'apprendre quelque chose de nouveau.
+
+Il faut laisser le temps aux connaissances de s'installer.
+
+---
+
+## Et si le problème était aussi le rythme ?
+
+On entend régulièrement que les enfants français ont « trop de vacances ».
+
+C'est une manière assez particulière de regarder le calendrier.
+
+Parce que la vraie question n'est peut-être pas :
+
+**combien de vacances avons-nous ?**
+
+Mais :
+
+**comment répartissons-nous le temps de travail et le temps de récupération ?**
+
+Depuis des années, des rapports français sur les rythmes scolaires recommandent d'ailleurs de réfléchir à cette alternance et aux effets de périodes de travail trop longues.
+
+Le rythme 7 semaines de cours / 2 semaines de vacances a notamment été proposé pour mieux respecter les rythmes des enfants.
+
+La question n'est donc pas nouvelle.
+
+Mais elle revient régulièrement sans vraiment être résolue.
+
+---
+
+## Et le cerveau de l'adolescent dans tout ça ?
+
+Il y a une autre curiosité.
+
+À l'adolescence, l'horloge biologique se décale naturellement.
+
+Les adolescents ont tendance à s'endormir plus tard.
+
+Ils ont pourtant toujours besoin de beaucoup de sommeil.
+
+Et nous leur demandons parfois d'être pleinement disponibles intellectuellement à 8 heures du matin, après une journée qui peut se terminer à 17 ou 18 heures, avant de reprendre avec les devoirs et les révisions.
+
+Puis nous nous étonnons parfois qu'ils soient fatigués.
+
+Peut-être faudrait-il distinguer :
+
+**être présent**
+
+de
+
+**être disponible cognitivement.**
+
+---
+
+## Les écrans ? Oui. Mais lesquels ?
+
+Il serait tentant de désigner les écrans comme responsables.
+
+Ce serait probablement trop simple.
+
+Les données montrent bien que les distractions numériques peuvent perturber les apprentissages.
+
+Mais un écran n'est pas une activité en soi.
+
+Un documentaire scientifique, une visioconférence, une recherche documentaire, un jeu vidéo, une vidéo courte ou une succession de notifications ne sollicitent pas nécessairement notre attention de la même manière.
+
+La question n'est donc peut-être pas seulement :
+
+**combien de temps les enfants passent-ils devant un écran ?**
+
+Mais aussi :
+
+**à quoi consacrent-ils leur attention pendant ce temps ?**
+
+Et surtout :
+
+**qui contrôle cette attention ?**
+
+Car une chose a changé très vite.
+
+Nos enfants grandissent dans un environnement où une partie des contenus proposés est précisément conçue pour retenir leur attention le plus longtemps possible.
+
+Ce n'est pas tout à fait la même chose que regarder la télévision pendant une heure.
+
+---
+
+## Et si certaines activités que nous considérons comme du « temps perdu » ne l'étaient pas ?
+
+J'ai repensé récemment à l'histoire de Noé.
+
+Un jeune garçon qui a grandi sur un voilier, avec une scolarité principalement le matin.
+
+Ses après-midi étaient consacrés au kayak, aux explorations, aux rencontres, à la vie à bord.
+
+Il a pourtant obtenu son bac avec mention très bien avant d'intégrer une BCPST à Saint-Louis.
+
+Son histoire est évidemment exceptionnelle.
+
+Elle ne prouve absolument pas que tous les enfants devraient faire l'école le matin sur un bateau.
+
+Ce serait absurde.
+
+Mais elle pose une question intéressante.
+
+**Que considérons-nous comme du temps d'apprentissage ?**
+
+Et que considérons-nous comme du temps perdu ?
+
+Faire du sport.
+
+Lire librement.
+
+Bricoler.
+
+Explorer.
+
+Discuter.
+
+S'ennuyer.
+
+Pratiquer une activité artistique.
+
+Être dehors.
+
+Faire quelque chose qui n'a aucun rapport apparent avec le programme scolaire.
+
+Est-ce nécessairement du temps retiré aux apprentissages ?
+
+Ou certains de ces temps participent-ils aussi à la construction d'un enfant capable d'apprendre ?
+
+---
+
+## Plus tôt ? Plus longtemps ? Toujours plus ?
+
+Dans le même temps, le débat public revient régulièrement sur l'idée de commencer l'école toujours plus tôt.
+
+Pourquoi pas dès un an ?
+
+La question est souvent posée en termes d'apprentissage, de langage, de socialisation.
+
+Mais on pourrait aussi poser la question autrement :
+
+**si nous pensons que le niveau scolaire baisse, devons-nous nécessairement ajouter du temps scolaire ?**
+
+Et si nous commencions par regarder ce que nous faisons déjà de ce temps ?
+
+---
+
+## Le paradoxe du lycée
+
+Et puis il y a quelque chose qui me frappe de plus en plus.
+
+Nous demandons aujourd'hui aux lycéens d'être :
+
+- bons élèves ;
+- autonomes ;
+- engagés ;
+- sportifs ;
+- curieux ;
+- cultivés ;
+- capables de travailler en équipe ;
+- capables de prendre des initiatives ;
+- impliqués dans des projets ;
+- parfois engagés dans une association ;
+- capables de faire des stages ;
+- capables de développer des compétences à l'extérieur de l'école.
+
+Tout cela pour construire un dossier d'orientation cohérent.
+
+Mais dans le même temps, leurs journées deviennent parfois extrêmement denses.
+
+Alors où trouve-t-on le temps pour faire tout cela ?
+
+---
+
+## Et puis il y a le monde du travail
+
+C'est peut-être la question la plus personnelle de cette réflexion.
+
+Depuis mon propre burn-out, je regarde différemment certaines choses.
+
+Je regarde mes enfants.
+
+Je vois leurs journées.
+
+Je vois les horaires.
+
+Je vois les devoirs.
+
+Je vois les évaluations.
+
+Je vois la pression de l'orientation.
+
+Et je me demande parfois quel modèle de vie nous leur présentons.
+
+Nous leur expliquons qu'il faut bien travailler à l'école.
+
+Puis réussir.
+
+Puis faire de bonnes études.
+
+Puis éventuellement intégrer une grande école.
+
+Puis devenir ingénieur ou cadre.
+
+Et parfois travailler longtemps.
+
+Être disponible.
+
+Répondre aux mails.
+
+Accepter les réunions tardives.
+
+Ne pas vraiment compter ses heures.
+
+Alors une question me vient :
+
+**quelle vie sommes-nous en train de préparer ?**
+
+---
+
+## Peut-être que la question n'est pas « travailler plus »
+
+Peut-être que les partisans d'un retour à davantage d'exigence ont raison sur certains points.
+
+Peut-être que les programmes sont trop lourds.
+
+Peut-être que certaines connaissances fondamentales ne sont plus suffisamment maîtrisées.
+
+Peut-être que les écrans prennent trop de place.
+
+Peut-être aussi que les inégalités sociales expliquent une partie importante des écarts.
+
+Peut-être que la formation des enseignants doit évoluer.
+
+Peut-être que tout cela est vrai en même temps.
+
+Mais avant d'ajouter une heure de cours, un devoir, un stage de vacances ou une nouvelle réforme, il faudrait peut-être poser une question beaucoup plus simple :
+
+### **Qu'est-ce qui fait réellement apprendre un enfant ?**
+
+Est-ce le nombre d'heures passées devant un tableau ?
+
+Est-ce la quantité de notions parcourues ?
+
+Est-ce la répétition intensive avant le contrôle ?
+
+Est-ce le temps passé à l'école ?
+
+Ou est-ce aussi le sommeil, le mouvement, la répétition espacée, la lecture, la curiosité, les expériences, les discussions, le temps libre et le temps nécessaire pour que les connaissances s'installent ?
+
+Nous parlons beaucoup du niveau scolaire.
+
+**Peut-être devrions-nous aussi parler du temps scolaire.**
+
+Et peut-être accepter de poser la question sans avoir immédiatement besoin d'y apporter une réponse.
+
+---
+
+### Sources et pistes à documenter
+
+- OCDE / PISA : temps d'apprentissage et performances
+- OCDE / PISA 2025 : résultats France, usages numériques et distraction
+- DEPP : résultats PISA France
+- Académie nationale de médecine : rythmes scolaires, sommeil et chronobiologie
+- Santé publique France : sommeil des adolescents
+- Travaux scientifiques sur l'apprentissage espacé et le rappel actif
+- Rapports français sur les rythmes scolaires et l'alternance 7/2
+- Témoignage de Noé, scolarisé principalement le matin à bord d'un voilier
