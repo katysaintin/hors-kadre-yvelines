@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNAAPE Lycée Descartes — Réunion de parents de 1ère 2026-2027</title>
+<meta name="description" content="Newsletter UNAAPE du Lycée Descartes — Réunion de parents de 1ère : tronc commun et spécialités, orientation, coefficients du bac, contrôle continu, calendrier des épreuves.">
+<meta name="robots" content="noindex, nofollow">
+
+<style>
+:root{
+    --blue:#1C4B8C; --blue-dark:#123566; --blue-soft:#EAF0F9;
+    --red:#B3261E; --red-soft:#FBEAEA; --gray:#555555;
+    --border:#dfe3ea; --bg-soft:#F7F9FC; --white:#ffffff;
+}
+*{ margin:0; padding:0; box-sizing:border-box; }
+body{ font-family:Arial,Helvetica,sans-serif; background:var(--white); color:#222; line-height:1.7; }
+[id]{ scroll-margin-top:24px; }
+.container{ width:min(820px,92%); margin:auto; }
+header{ background:var(--white); border-bottom:4px solid var(--red); padding:26px 0 20px; }
+.header-lockup{ display:flex; align-items:center; gap:16px; justify-content:center; flex-wrap:wrap; }
+.header-unaape{ font-family:Georgia,'Times New Roman',serif; font-size:1.9rem; font-weight:700; color:var(--blue); letter-spacing:0.5px; }
+.header-divider{ width:2px; height:34px; background:var(--red); }
+.header-lycee{ font-family:Georgia,'Times New Roman',serif; font-size:1rem; color:var(--red); font-weight:700; }
+.header-sub{ text-align:center; color:var(--gray); font-size:0.9rem; margin-top:6px; }
+.cover{ padding:50px 0 30px; text-align:center; }
+.cover h1{ font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.6rem,4vw,2.3rem); color:var(--blue-dark); margin-bottom:14px; }
+.cover .badge{ display:inline-block; background:var(--blue-soft); color:var(--blue-dark); border:1px solid var(--blue); padding:8px 16px; border-radius:20px; font-size:0.85rem; margin-bottom:20px; }
+.cover p{ color:var(--gray); font-size:0.95rem; max-width:560px; margin:0 auto; }
+.sommaire{ background:var(--bg-soft); border:1px solid var(--border); border-radius:12px; padding:26px 30px; margin:20px 0 50px; }
+.sommaire h2{ font-family:Georgia,serif; color:var(--blue-dark); font-size:1.2rem; margin-bottom:14px; }
+.sommaire ol{ list-style:none; columns:2; -webkit-columns:2; }
+@media(max-width:600px){ .sommaire ol{ columns:1; } }
+.sommaire li{ margin-bottom:10px; break-inside:avoid; }
+.sommaire a{ color:var(--blue); text-decoration:none; font-weight:600; font-size:0.9rem; }
+.sommaire a:hover{ text-decoration:underline; color:var(--red); }
+section{ padding:40px 0; border-top:1px solid var(--border); }
+section:first-of-type{ border-top:none; }
+.chapter-title{ font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.3rem,3vw,1.8rem); color:var(--blue-dark); margin-bottom:16px; padding-bottom:10px; border-bottom:3px solid var(--red); display:inline-block; }
+h3.sub{ font-family:Georgia,serif; color:var(--red); font-size:1.05rem; margin:22px 0 10px; }
+p{ margin-bottom:12px; color:#333; }
+ul.plain{ padding-left:20px; margin-bottom:14px; }
+ul.plain li{ margin-bottom:6px; color:#333; }
+a{ color:var(--blue); }
+a:hover{ color:var(--red); }
+.box{ border-radius:10px; padding:16px 20px; margin:14px 0; border-left:4px solid var(--gray); background:var(--bg-soft); }
+.box-blue{ background:var(--blue-soft); border-left-color:var(--blue); }
+.box-red{ background:var(--red-soft); border-left-color:var(--red); }
+.box strong.label{ display:block; color:var(--blue-dark); margin-bottom:6px; font-size:0.9rem; }
+.box-red strong.label{ color:var(--red); }
+.box p{ color:#333; margin-bottom:0; font-size:0.92rem; }
+.table-wrap{ overflow-x:auto; margin:16px 0; border:1px solid var(--border); border-radius:10px; }
+table{ width:100%; border-collapse:collapse; font-size:0.85rem; }
+thead th{ background:var(--blue); color:white; text-align:left; padding:9px 12px; font-weight:700; white-space:nowrap; }
+tbody td{ padding:8px 12px; border-top:1px solid var(--border); }
+tbody tr:nth-child(even){ background:var(--bg-soft); }
+.date-row{ display:flex; gap:16px; align-items:flex-start; padding:14px 0; border-bottom:1px solid var(--border); }
+.date-row:last-child{ border-bottom:none; }
+.date-chip{ flex-shrink:0; background:var(--blue); color:white; border-radius:10px; padding:8px 14px; text-align:center; font-weight:700; font-size:0.82rem; min-width:100px; }
+.date-chip.tbd{ background:var(--gray); }
+.date-row h4{ font-size:0.98rem; color:var(--blue-dark); margin-bottom:3px; }
+.date-row p{ margin-bottom:0; color:#333; font-size:0.9rem; }
+.resource-row{ display:flex; gap:14px; align-items:flex-start; padding:14px 0; border-bottom:1px solid var(--border); }
+.resource-row:last-child{ border-bottom:none; }
+.resource-icon{ font-size:1.4rem; flex-shrink:0; }
+.resource-row h4{ font-size:0.98rem; color:var(--blue-dark); margin-bottom:2px; }
+.resource-row p{ margin-bottom:0; font-size:0.88rem; }
+.closing{ background:var(--blue-dark); color:white; text-align:center; padding:40px 30px; border-radius:14px; margin:20px 0; }
+.closing h2{ font-family:Georgia,serif; font-size:1.5rem; margin-bottom:14px; }
+.closing p{ color:#dbe4f2; max-width:600px; margin:0 auto 10px; }
+.cta-btn{ display:inline-block; background:var(--red); color:white !important; padding:14px 28px; border-radius:10px; text-decoration:none !important; font-weight:700; margin-top:10px; }
+.closing a.cta-btn{ background:white; color:var(--blue-dark) !important; }
+footer{ text-align:center; color:var(--gray); font-size:0.82rem; padding:36px 0; border-top:1px solid var(--border); }
+.back-to-top{ display:inline-block; margin-top:30px; font-size:0.85rem; color:var(--blue); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-lockup">
+<img src="gazette_images/UNAAPE.jpg" alt="Logo UNAAPE" style="height: 60px; width: 60px">
+<span class="header-unaape">UNAAPE</span>
+<span class="header-divider"></span>
+<span class="header-lycee">Lycée Descartes</span>
+<img src="gazette_images/Descartes.jpg" alt="Logo Descartes" style="height: 60px; width: 60px">
+</div>
+<div class="header-sub">Montigny-le-Bretonneux</div>
+</header>
+
+<div class="container">
+
+<div class="cover" id="haut">
+<div class="badge">Réunion de parents de 1ère — 22 septembre 2026</div>
+<h1>Niveau Première : ce qu'il faut retenir</h1>
+<p>Tronc commun, spécialités, orientation, coefficients du bac, calendrier des épreuves — l'essentiel pour accompagner votre enfant cette année 📘</p>
+</div>
+
+<div class="sommaire">
+<h2>Sommaire</h2>
+<ol>
+<li><a href="#ent">L'ENT et PRONOTE</a></li>
+<li><a href="#deux-annees">Deux années pour réussir</a></li>
+<li><a href="#orientation">Travailler l'orientation</a></li>
+<li><a href="#note-finale">La note finale au bac</a></li>
+<li><a href="#controle-continu">Le contrôle continu</a></li>
+<li><a href="#calendrier">Calendrier &amp; inscription</a></li>
+<li><a href="#reussir">Pour réussir au lycée</a></li>
+<li><a href="#ressources">Pour aller plus loin</a></li>
+</ol>
+</div>
+
+<!-- ENT -->
+<section id="ent">
+<h2 class="chapter-title">💻 L'ENT et PRONOTE</h2>
+<p>L'ENT est désormais opérationnel : c'est le point d'entrée à privilégier pour contacter l'équipe éducative. Il donne accès aux applications pédagogiques et à PRONOTE (une application mobile existe).</p>
+<div class="box box-blue">
+<strong class="label">📌 À consulter régulièrement</strong>
+<p>Le carnet d'observations sur PRONOTE ne déclenche aucune notification — c'est aux familles d'aller le consulter. Fréquence conseillée : tous les deux jours pour les parents, tous les jours pour les élèves.</p>
+</div>
+</section>
+
+<!-- DEUX ANNEES -->
+<section id="deux-annees">
+<h2 class="chapter-title">🧭 Deux années pour réussir ses études supérieures</h2>
+<ul class="plain">
+<li>Un tronc commun d'enseignements : français en 1ère, philosophie en terminale, histoire-géographie, enseignement moral et civique, langues, enseignement scientifique, EPS.</li>
+<li>3 enseignements de spécialité en 1ère, 2 en terminale.</li>
+<li>1 à 2 enseignements facultatifs possibles, en 1ère comme en terminale.</li>
+<li>Pour les élèves de STMG, un choix est à faire entre les options Ressources Humaines et Finance, à suivre en terminale.</li>
+</ul>
+
+<div class="box box-red">
+<strong class="label">⚠️ Le choix des spécialités compte double</strong>
+<p>En fin de 1ère, une spécialité parmi les trois est abandonnée : elle compte alors pour un coefficient 8 au bac, tandis que les deux spécialités conservées comptent chacune pour un coefficient 16. Il faut donc bien réfléchir, dès la première, à celles qui seront conservées en terminale.</p>
+</div>
+
+<p style="font-size:0.85rem;color:var(--gray);">💡 En 1ère, il n'y a pas de redoublement : les deux années (1ère et terminale) se font quel que soit le résultat obtenu. Seules des raisons médicales peuvent permettre un maintien.</p>
+</section>
+
+<!-- ORIENTATION -->
+<section id="orientation">
+<h2 class="chapter-title">🎯 Travailler l'orientation</h2>
+<ul class="plain">
+<li>Choix des deux spécialités conservées en terminale : un vrai choix, pas une décision contrainte.</li>
+<li>Se renseigner sur le post-bac et les attendus des différentes filières de l'enseignement supérieur.</li>
+<li>Participer au forum de l'orientation, aux portes ouvertes des établissements du supérieur, rencontrer la psy-EN.</li>
+</ul>
+
+<div class="box">
+<strong class="label">🧭 Simulation Parcoursup dès maintenant</strong>
+<p>Il est conseillé de consulter dès à présent la carte des formations sur Parcoursup : en renseignant ses notes de spécialités et sa moyenne générale, l'outil fournit une simulation du taux d'accès à une formation donnée. Si le résultat est encourageant, on continue dans cette direction ; sinon, mieux vaut prévoir un plan B.</p>
+</div>
+
+<div class="date-row">
+<div class="date-chip">4 déc.</div>
+<div><h4>Forum des métiers et de l'orientation</h4><p>Vendredi soir. L'UNAAPE enverra un sondage pour recenser les parents volontaires souhaitant intervenir. Il est recommandé que les élèves y participent sans leurs parents.</p></div>
+</div>
+
+<p style="font-size:0.85rem;color:var(--gray);">💬 Message de la direction : l'orientation est un chemin de traverse — il ne faut pas que Parcoursup devienne un facteur de stress.</p>
+</section>
+
+<!-- NOTE FINALE -->
+<section id="note-finale">
+<h2 class="chapter-title">🎓 La note finale au baccalauréat</h2>
+
+<h3 class="sub">Contrôle continu — 40% de la note finale</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Enseignement</th><th>1ère</th><th>Terminale</th><th>Total cycle</th></tr></thead>
+<tbody>
+<tr><td>Spécialité de 1ère (abandonnée)</td><td>8</td><td>—</td><td>8</td></tr>
+<tr><td>Histoire-Géographie</td><td>3</td><td>3</td><td>6</td></tr>
+<tr><td>Langue vivante A</td><td>3</td><td>3</td><td>6</td></tr>
+<tr><td>Langue vivante B</td><td>3</td><td>3</td><td>6</td></tr>
+<tr><td>Enseignement scientifique</td><td>3</td><td>3</td><td>6</td></tr>
+<tr><td>EPS</td><td colspan="2" style="text-align:center;">6 (sur les 2 ans)</td><td>6</td></tr>
+<tr><td>Enseignement moral et civique</td><td>1</td><td>1</td><td>2</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="sub">Épreuves terminales — 60% de la note finale</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Épreuve</th><th>Coefficient</th></tr></thead>
+<tbody>
+<tr><td>Français écrit + oral (fin de 1ère)</td><td>5 + 5</td></tr>
+<tr><td>Mathématiques (fin de 1ère, STMG / tronc commun)</td><td>2</td></tr>
+<tr><td>Spécialité n°1 et n°2 (terminale)</td><td>16 + 16</td></tr>
+<tr><td>Philosophie</td><td>8 (générale) / 4 (techno.)</td></tr>
+<tr><td>Grand oral</td><td>8 (générale) / 12 (techno.)</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:var(--gray);">Enseignements optionnels : coefficient 2 à 4 supplémentaires. Il faut un total de 1000 points sur le cycle pour valider le bac ; un repêchage est possible à partir de 8/20 de moyenne générale.</p>
+</section>
+
+<!-- CONTROLE CONTINU -->
+<section id="controle-continu">
+<h2 class="chapter-title">📝 Le contrôle continu : les règles</h2>
+<ul class="plain">
+<li>Les moyennes sont arrondies au 10ème supérieur.</li>
+<li>La note de chaque enseignement est la moyenne des moyennes trimestrielles ; toutes les notes comptent.</li>
+<li>En cas d'absence à une évaluation, l'élève peut être amené à la refaire.</li>
+<li>Si la moyenne n'est pas représentative, l'élève est convoqué à une épreuve de remplacement portant sur l'ensemble du programme.</li>
+</ul>
+
+<div class="box box-red">
+<strong class="label">📵 Fraude et téléphones portables</strong>
+<p>La fraude est présentée comme un manquement à l'équité entre élèves. Des boîtes à portables sont utilisées avant chaque devoir surveillé : un téléphone, même éteint, gardé sur soi est considéré comme une suspicion de fraude, avec des conséquences sur Parcoursup et l'orientation.</p>
+</div>
+</section>
+
+<!-- CALENDRIER -->
+<section id="calendrier">
+<h2 class="chapter-title">📅 Calendrier des épreuves et inscription</h2>
+
+<div class="date-row">
+<div class="date-chip">15 juin 27</div>
+<div><h4>Français écrit</h4></div>
+</div>
+<div class="date-row">
+<div class="date-chip">21 juin 27</div>
+<div><h4>Mathématiques</h4></div>
+</div>
+<div class="date-row">
+<div class="date-chip tbd">22/06-2/07</div>
+<div><h4>Français oral</h4><p>Dates à confirmer.</p></div>
+</div>
+<div class="date-row">
+<div class="date-chip tbd">Juin 2028</div>
+<div><h4>Épreuves de Terminale</h4><p>Philosophie, les deux spécialités, Grand oral (48% de la note du bac).</p></div>
+</div>
+<div class="date-row">
+<div class="date-chip">9-29 nov.</div>
+<div><h4>Inscription au baccalauréat</h4><p>Demande d'aménagements (PAI, PAP, PPS) à formuler avant le 29 novembre.</p></div>
+</div>
+
+<p style="font-size:0.85rem;color:var(--gray);">💡 Le calendrier des épreuves finales relève du rectorat, pas du lycée. Vérifiez bien la fiche d'inscription (spécialités, options, langues) : une erreur de déclaration peut obliger l'élève à passer une épreuve non préparée.</p>
+</section>
+
+<!-- REUSSIR -->
+<section id="reussir">
+<h2 class="chapter-title">✅ Pour réussir au lycée</h2>
+<ul class="plain">
+<li>Un travail personnel régulier et approfondi : 1h30 minimum par jour.</li>
+<li>Une autonomie et une responsabilité affirmées — sans confondre autonomie et indépendance.</li>
+<li>Une curiosité intellectuelle aiguisée.</li>
+<li>Deux évidences : ponctualité et assiduité (retards et absences comptent pour Parcoursup).</li>
+</ul>
+<p style="font-size:0.85rem;color:var(--gray);">💬 Message de la direction : le lycée se charge de la pression scolaire — il est demandé aux parents de ne pas en rajouter et de rester bienveillants.</p>
+</section>
+
+<!-- RESSOURCES -->
+<section id="ressources">
+<h2 class="chapter-title">🔗 Pour aller plus loin</h2>
+
+<div class="resource-row">
+<div class="resource-icon">📊</div>
+<div><h4>Slides du lycée — réunion de parents de 1ère</h4><p><a href="https://drive.google.com/file/d/1yUr51HV9-LP5AaOEkWVCCwmlpsoCe_9W/view?usp=drivesdk" target="_blank" rel="noopener">Consulter les slides présentées en réunion</a></p></div>
+</div>
+<div class="resource-row">
+<div class="resource-icon">📈</div>
+<div><h4>Rapport annuel du lycée 2025-2026</h4><p><a href="https://katysaintin.github.io/hors-kadre-yvelines/unaape/rapport_annuel_2025_2026.html" target="_blank" rel="noopener">Chiffres clés extraits du rapport de fonctionnement pédagogique</a></p></div>
+</div>
+<div class="resource-row">
+<div class="resource-icon">🧭</div>
+<div><h4>Simulateur Parcoursup Île-de-France</h4><p><a href="https://katysaintin.github.io/hors-kadre-yvelines/parcoursup_idf.html" target="_blank" rel="noopener">Explorer les formations et les chances d'accès (Hors Kadre)</a></p></div>
+</div>
+<div class="resource-row">
+<div class="resource-icon">📄</div>
+<div><h4>Le Bac de Français 2026</h4><p><a href="https://katysaintin.github.io/hors-kadre-yvelines/pdf/Le-Bac-de-Francais-2026.pdf" target="_blank" rel="noopener">Guide de l'épreuve (Hors Kadre)</a></p></div>
+</div>
+<div class="resource-row">
+<div class="resource-icon">📄</div>
+<div><h4>L'épreuve de Mathématiques 2026</h4><p><a href="https://katysaintin.github.io/hors-kadre-yvelines/pdf/Epreuve-de-Maths-2026.pdf" target="_blank" rel="noopener">Guide de l'épreuve (Hors Kadre)</a></p></div>
+</div>
+</section>
+
+<!-- CLOSING -->
+<section>
+<div class="closing">
+<h2>💬 Une question ?</h2>
+<p>Cette synthèse est partagée pour informer toutes les familles de première. N'hésitez pas à vous rapprocher des représentants de votre classe pour tout complément.</p>
+<a href="mailto:unaape.descartes78@gmail.com" class="cta-btn">📧 unaape.descartes78@gmail.com</a>
+</div>
+<div style="text-align:center;">
+<a href="#haut" class="back-to-top">↑ Retour en haut</a>
+</div>
+</section>
+
+</div>
+
+<footer>
+UNAAPE Lycée Descartes — Montigny-le-Bretonneux<br>
+<a href="mailto:unaape.descartes78@gmail.com">unaape.descartes78@gmail.com</a>
+</footer>
+
+</body>
+</html>
