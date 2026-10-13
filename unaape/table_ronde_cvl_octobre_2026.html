@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNAAPE Lycée Descartes — Élections des parents et parole des lycéens</title>
+<meta name="description" content="Élections des représentants des parents d'élèves au Lycée Descartes et restitution de la table ronde du CVL du 9 octobre 2026 : charge de travail, orientation, bien-être et restauration.">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Google Tag Manager UNAAPE -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QF6K5TV');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+
+:root{
+    --blue:#1C4B8C;
+    --blue-dark:#123566;
+    --blue-soft:#EAF0F9;
+    --red:#B3261E;
+    --red-soft:#FBEAEA;
+    --gray:#555555;
+    --border:#dfe3ea;
+    --bg-soft:#F7F9FC;
+    --white:#ffffff;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--white);
+    color:#222;
+    line-height:1.7;
+}
+
+[id]{ scroll-margin-top:24px; }
+
+.container{ width:min(820px,92%); margin:auto; }
+
+/* HEADER */
+header{ background:var(--white); border-bottom:4px solid var(--red); padding:26px 0 20px; }
+.header-lockup{ display:flex; align-items:center; gap:16px; justify-content:center; flex-wrap:wrap; }
+.header-unaape{ font-family:Georgia,'Times New Roman',serif; font-size:1.9rem; font-weight:700; color:var(--blue); letter-spacing:0.5px; }
+.header-divider{ width:2px; height:34px; background:var(--red); }
+.header-lycee{ font-family:Georgia,'Times New Roman',serif; font-size:1rem; color:var(--red); font-weight:700; }
+.header-sub{ text-align:center; color:var(--gray); font-size:0.9rem; margin-top:6px; }
+
+/* COVER */
+.cover{ padding:46px 0 26px; text-align:center; }
+.cover h1{ font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.4rem,4vw,2rem); color:var(--blue-dark); margin-bottom:14px; }
+.cover .badge{ display:inline-block; background:var(--blue-soft); color:var(--blue-dark); border:1px solid var(--blue); padding:8px 16px; border-radius:20px; font-size:0.85rem; margin-bottom:18px; }
+.cover p{ color:var(--gray); font-size:0.95rem; max-width:600px; margin:0 auto; }
+
+/* SOMMAIRE */
+.sommaire{ background:var(--bg-soft); border:1px solid var(--border); border-radius:12px; padding:26px 30px; margin:20px 0 46px; }
+.sommaire h2{ font-family:Georgia,serif; color:var(--blue-dark); font-size:1.2rem; margin-bottom:14px; }
+.sommaire ol{ list-style:none; columns:2; -webkit-columns:2; }
+@media(max-width:600px){ .sommaire ol{ columns:1; } }
+.sommaire li{ margin-bottom:10px; break-inside:avoid; }
+.sommaire a{ color:var(--blue); text-decoration:none; font-weight:600; font-size:0.9rem; }
+.sommaire a:hover{ text-decoration:underline; color:var(--red); }
+
+/* SECTIONS */
+section{ padding:36px 0; border-top:1px solid var(--border); }
+section:first-of-type{ border-top:none; }
+.chapter-title{ font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.25rem,3vw,1.6rem); color:var(--blue-dark); margin-bottom:16px; padding-bottom:10px; border-bottom:3px solid var(--red); display:inline-block; }
+h3.sub{ font-family:Georgia,serif; color:var(--red); font-size:1.02rem; margin:22px 0 10px; }
+p{ margin-bottom:12px; color:#333; }
+ul.plain{ padding-left:20px; margin-bottom:14px; }
+ul.plain li{ margin-bottom:6px; color:#333; }
+a{ color:var(--blue); }
+a:hover{ color:var(--red); }
+
+/* BOX */
+.box{ border-radius:10px; padding:16px 20px; margin:14px 0; border-left:4px solid var(--gray); background:var(--bg-soft); }
+.box-blue{ background:var(--blue-soft); border-left-color:var(--blue); }
+.box-red{ background:var(--red-soft); border-left-color:var(--red); }
+.box strong.label{ display:block; color:var(--blue-dark); margin-bottom:6px; font-size:0.9rem; }
+.box-red strong.label{ color:var(--red); }
+.box p{ color:#333; margin-bottom:0; font-size:0.92rem; }
+.box p + p{ margin-top:8px; }
+
+/* STAT CARDS */
+.stat-cards{ display:flex; flex-wrap:wrap; gap:14px; margin:18px 0; }
+.stat-card{ flex:1 1 140px; background:var(--bg-soft); border:1px solid var(--border); border-radius:10px; padding:16px; text-align:center; }
+.stat-card .num{ font-family:Georgia,serif; font-size:1.5rem; color:var(--blue-dark); font-weight:700; }
+.stat-card .lbl{ font-size:0.78rem; color:var(--gray); margin-top:4px; }
+
+/* TABLES */
+.table-wrap{ overflow-x:auto; margin:16px 0; border:1px solid var(--border); border-radius:10px; }
+table{ width:100%; border-collapse:collapse; font-size:0.85rem; }
+thead th{ background:var(--blue); color:white; text-align:left; padding:9px 12px; font-weight:700; white-space:nowrap; }
+tbody td{ padding:8px 12px; border-top:1px solid var(--border); }
+tbody tr:nth-child(even){ background:var(--bg-soft); }
+
+/* THEME SUB-GROUPS (expressed / response / tracks) */
+.theme-block{ margin:10px 0 36px; padding-bottom:28px; border-bottom:1px solid var(--border); }
+.theme-block:last-child{ border-bottom:none; }
+.sg{ margin:16px 0 20px; }
+.sg-label{ display:inline-block; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.4px; padding:4px 11px; border-radius:12px; margin-bottom:10px; }
+.sg-expressed .sg-label{ background:var(--red-soft); color:var(--red); }
+.sg-response .sg-label{ background:var(--blue-soft); color:var(--blue-dark); }
+.sg-track .sg-label{ background:#EFEFEF; color:var(--gray); }
+
+/* CLOSING / FOOTER */
+.closing{ background:var(--blue-dark); color:white; text-align:center; padding:34px 28px; border-radius:14px; margin:20px 0; }
+.closing h2{ font-family:Georgia,serif; font-size:1.3rem; margin-bottom:12px; }
+.closing p{ color:#dbe4f2; max-width:600px; margin:0 auto 8px; }
+.cta-btn{ display:inline-block; background:var(--red); color:white !important; padding:12px 24px; border-radius:10px; text-decoration:none !important; font-weight:700; margin-top:10px; }
+footer{ text-align:center; color:var(--gray); font-size:0.8rem; padding:32px 0; border-top:1px solid var(--border); }
+.back-to-top{ display:inline-block; margin-top:26px; font-size:0.82rem; color:var(--blue); text-decoration:none; }
+.signature{ text-align:center; font-family:Georgia,serif; color:var(--blue-dark); font-weight:700; margin-top:18px; }
+
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QF6K5TV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+<div class="header-lockup">
+<img src="gazette_images/UNAAPE.jpg" alt="Logo UNAAPE" style="height:60px;width:60px">
+<span class="header-unaape">UNAAPE</span>
+<span class="header-divider"></span>
+<span class="header-lycee">Lycée Descartes</span>
+<img src="gazette_images/Descartes.jpg" alt="Logo Descartes" style="height:60px;width:60px">
+</div>
+<div class="header-sub">Montigny-le-Bretonneux</div>
+</header>
+
+<div class="container">
+
+<div class="cover" id="haut">
+<div class="badge">Octobre 2026</div>
+<h1>Élections des parents et parole des lycéens : retour sur les dernières semaines</h1>
+<p>L'UNAAPE vous remercie pour votre participation et vous propose une restitution de la table ronde du CVL du 9 octobre.</p>
+</div>
+
+<div class="sommaire">
+<h2>Sommaire</h2>
+<ol>
+<li><a href="#elections">Merci pour votre confiance</a></li>
+<li><a href="#tableronde">La table ronde du 9 octobre</a></li>
+<li><a href="#theme1">Charge de travail et emplois du temps</a></li>
+<li><a href="#theme2">Orientation et Parcoursup</a></li>
+<li><a href="#theme3">Stress et bien-être des élèves</a></li>
+<li><a href="#theme4">Restauration scolaire</a></li>
+<li><a href="#synthese">Synthèse générale</a></li>
+<li><a href="#conclusion">Et maintenant ?</a></li>
+</ol>
+</div>
+
+<!-- ============ A/B. ELECTIONS ============ -->
+<section id="elections">
+<h2 class="chapter-title">🗳️ Merci pour votre confiance</h2>
+<p>Un grand merci à tous les parents qui ont pris le temps de voter aux élections des représentants des parents d'élèves, et à ceux qui ont accordé leur confiance à l'UNAAPE. Voici les résultats :</p>
+
+<div class="stat-cards">
+<div class="stat-card"><div class="num">27 %</div><div class="lbl">de participation</div></div>
+<div class="stat-card"><div class="num">3</div><div class="lbl">sièges UNAAPE au CA</div></div>
+<div class="stat-card"><div class="num">2</div><div class="lbl">sièges FCPE au CA</div></div>
+</div>
+
+<div class="box box-blue">
+<strong class="label">À noter</strong>
+<p>Le taux de 27 % correspond à la participation globale au scrutin, et ne représente pas un niveau de soutien à l'une ou l'autre des listes.</p>
+</div>
+
+<p>Représenter les parents au Conseil d'Administration s'accompagne d'un engagement : dialoguer avec l'équipe éducative, informer les familles et faire remonter vos préoccupations. C'est dans cet esprit que nous vous proposons, ci-dessous, une restitution de la table ronde organisée avec le Conseil de la vie lycéenne (CVL) quelques jours avant les élections.</p>
+</section>
+
+<!-- ============ C. PRESENTATION TABLE RONDE ============ -->
+<section id="tableronde">
+<h2 class="chapter-title">🤝 La table ronde du 9 octobre</h2>
+<p>Le vendredi 9 octobre 2026, le lycée a organisé une table ronde de concertation réunissant des élèves du CVL, la direction, la CPE, des enseignants et des représentants des parents (UNAAPE et FCPE).</p>
+<p>La rencontre s'est déroulée en deux temps : une première heure durant laquelle les élèves ont circulé entre plusieurs tables thématiques pour noter constats, difficultés et propositions, puis une seconde heure consacrée aux échanges et aux réponses apportées par la direction et les personnels présents.</p>
+<div class="box">
+<strong class="label">Une restitution, pas un procès-verbal</strong>
+<p>Ce qui suit est un compte rendu établi à partir de notes personnelles prises pendant la rencontre, reformulées pour faciliter la lecture. Les chiffres et affirmations rapportés par les participants n'ont pas fait l'objet d'une vérification indépendante, et les pistes évoquées ne constituent pas des décisions annoncées par le lycée.</p>
+</div>
+</section>
+
+<!-- ============ THEME 1 ============ -->
+<section id="theme1">
+<h2 class="chapter-title">🗓️ Charge de travail et emplois du temps</h2>
+<div class="theme-block">
+
+<div class="sg sg-expressed">
+<span class="sg-label">🗣️ Ce que les élèves ont exprimé</span>
+<ul class="plain">
+<li>Des emplois du temps jugés chargés, avec de nombreuses périodes creuses entre les cours.</li>
+<li>Trop de devoirs et de projets à réaliser à la maison.</li>
+<li>Pour certains élèves, des trajets importants et un temps disponible pour déjeuner jugé insuffisant.</li>
+<li>La gestion des spécialités dans la construction des emplois du temps est critiquée ; les contraintes horaires empêchent aussi certains élèves de participer à l'association sportive.</li>
+<li>Des redondances possibles ont été évoquées entre l'enseignement scientifique et une spécialité déjà suivie dans la même matière.</li>
+<li>Une élève du CVL a souligné que ce type de rencontre devrait permettre aux élèves et aux professeurs de travailler ensemble plutôt que de s'opposer.</li>
+</ul>
+</div>
+
+<div class="sg sg-response">
+<span class="sg-label">🏫 Réponses et précisions apportées</span>
+<ul class="plain">
+<li>La direction a rappelé que le volume horaire à placer dans les emplois du temps est largement imposé et ne relève pas de la seule décision du lycée.</li>
+<li>Les périodes creuses s'expliquent notamment par le fait que les spécialités et options réunissent des groupes différents, dont le placement dépend des disponibilités des enseignants et des salles.</li>
+<li>Le lycée est conçu pour accueillir environ 900 élèves, mais en accueille aujourd'hui environ 1 100 ; le manque de salles complique la construction des emplois du temps.</li>
+<li>La transformation de la cantine en salle de cours a été évoquée, mais la salle est utilisée jusqu'à 14 h et doit ensuite être nettoyée.</li>
+<li>Selon les explications données, les effectifs devraient encore augmenter durant les deux prochaines années avant de diminuer — une tendance présentée comme régionale, sans investissement d'agrandissement prévu par l'État à ce stade.</li>
+<li>Le lycée propose huit spécialités et plusieurs options (dont latin et chinois), ce qui représente jusqu'à 56 combinaisons de triplettes théoriquement possibles.</li>
+<li>Face à un témoignage sur des journées pouvant aller de 8 h à 18 h, il a été répondu que certains cours sont dédoublés pour favoriser les conditions d'apprentissage.</li>
+</ul>
+</div>
+
+<div class="sg sg-track">
+<span class="sg-label">💡 Pistes évoquées</span>
+<ul class="plain">
+<li>Alléger les emplois du temps et réduire les périodes creuses, y compris le mercredi après-midi.</li>
+<li>Mieux coordonner les devoirs et limiter les projets à faire à la maison ; une proposition a été faite pour que l'ENT cesse de recevoir de nouveaux devoirs à partir d'une certaine heure.</li>
+<li>Réfléchir à un compromis entre l'ancien système de choix des spécialités et la réforme actuelle.</li>
+<li>Étudier la possibilité de limiter le nombre de triplettes de spécialités — un enseignant a proposé de les limiter à neuf pour faciliter la construction des emplois du temps.</li>
+<li>Comparer l'organisation du temps scolaire français à celle de pays obtenant de bons résultats aux évaluations PISA avec un nombre d'heures différent ; une réduction des vacances scolaires a également été évoquée.</li>
+</ul>
+</div>
+
+<div class="box box-blue">
+<strong class="label">📊 Donnée complémentaire UNAAPE — à ne pas confondre avec les chiffres de la table ronde</strong>
+<p>Pour éclairer ce débat sur le nombre de triplettes, l'UNAAPE a croisé la liste officielle des élèves par classe pour 2026-2027 : sur les 56 combinaisons théoriquement possibles, <strong>25 triplettes sont effectivement choisies</strong> par les élèves de 1ère cette année. Cinq d'entre elles (Maths/Physique-Chimie/SVT, Maths/NSI/Physique-Chimie, AMC/HGGSP/SES, HGGSP/Maths/SES, AMC/Maths/SES) concentrent à elles seules 70 % des élèves.</p>
+<p>Cette analyse est une donnée propre à l'UNAAPE, indépendante du compte rendu de la table ronde.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ============ THEME 2 ============ -->
+<section id="theme2">
+<h2 class="chapter-title">🎯 Orientation et Parcoursup</h2>
+<div class="theme-block">
+
+<div class="sg sg-expressed">
+<span class="sg-label">🗣️ Ce que les élèves ont exprimé</span>
+<ul class="plain">
+<li>Parcoursup est revenu à plusieurs reprises dans les échanges : plusieurs élèves ont décrit un dispositif qu'ils comprennent mal et qui génère du stress.</li>
+<li>Une pression ressentie de la part des parents, et parfois des enseignants, a été évoquée, ainsi que le poids des notes, du contrôle continu et des coefficients des spécialités.</li>
+<li>Plusieurs élèves estiment manquer d'informations sur les spécialités dès la seconde et souhaitent un accompagnement plus précoce.</li>
+<li>Des inquiétudes ont été exprimées sur les conséquences des absences sur le dossier Parcoursup, avec le souhait de pouvoir rattraper plus facilement les cours manqués, y compris à distance.</li>
+<li>Des questions ont porté sur le recrutement des enseignants remplaçants et leur préparation à accompagner les élèves vers le bac et Parcoursup.</li>
+</ul>
+</div>
+
+<div class="sg sg-response">
+<span class="sg-label">🏫 Réponses et précisions apportées</span>
+<ul class="plain">
+<li>La CPE a précisé que les absences ne sont pas directement notifiées sur Parcoursup ; des absences répétées peuvent toutefois faire l'objet de remarques dans les bulletins, et il faut distinguer les absences justifiées des absences non justifiées.</li>
+<li>Sur les remplacements : les enseignants ont au minimum une licence (bac+3), certains poursuivant jusqu'à bac+5. Le proviseur a expliqué que le système informatique utilisé pour gérer les affectations est ancien, et que les remplacements sont organisés par zones géographiques — un enseignant affecté aux Yvelines Nord ne peut pas nécessairement remplacer un enseignant absent dans les Yvelines Sud, l'étendue de l'académie de Versailles compliquant encore l'exercice. La durée d'un remplacement n'est pas toujours connue à l'avance.</li>
+<li>Un enseignant a rappelé que Parcoursup ne choisit pas à la place des élèves, qui doivent rester acteurs de leur orientation, tout en reconnaissant que le système peut être source de stress.</li>
+<li>Le proviseur a indiqué qu'il n'était pas possible pour les professeurs de dispenser une formation spécifique à Parcoursup, et a conseillé aux élèves de consulter tôt la carte des formations et les outils de simulation disponibles.</li>
+<li>Des capsules vidéo explicatives conçues par un enseignant en terminale ont été mentionnées comme appréciées, mais pas suffisamment connues ou partagées.</li>
+<li>La documentaliste diffuse des informations sur les salons étudiants, les journées portes ouvertes et les conférences.</li>
+<li>En seconde, les professeurs principaux proposent un accompagnement personnalisé, et les élèves peuvent demander un rendez-vous avec la psychologue de l'Éducation nationale.</li>
+<li>Un échange a porté sur la valorisation des filières technologiques (notamment STMG) : un point de vue d'élève sur ce sujet a été discuté, avec un rappel que différentes filières sont présentées et que des mini-stages sont proposés.</li>
+</ul>
+</div>
+
+<div class="sg sg-track">
+<span class="sg-label">💡 Pistes évoquées</span>
+<ul class="plain">
+<li>Permettre aux élèves de seconde d'assister à un cours de spécialité pour la découvrir avant de choisir.</li>
+<li>Expliquer plus simplement Parcoursup et les mécanismes de sélection.</li>
+<li>Présenter les métiers et les parcours possibles en fonction des spécialités.</li>
+<li>Commencer l'accompagnement à l'orientation plus tôt, dès la seconde.</li>
+<li>Créer un canal d'information regroupant les informations sur Parcoursup et les critères de sélection.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- ============ THEME 3 ============ -->
+<section id="theme3">
+<h2 class="chapter-title">💙 Stress et bien-être des élèves</h2>
+<div class="theme-block">
+
+<div class="sg sg-expressed">
+<span class="sg-label">🗣️ Ce que les élèves ont exprimé</span>
+<ul class="plain">
+<li>Certains élèves disent consacrer l'essentiel de leur temps au travail scolaire, au détriment de leur vie sociale, de leurs activités personnelles et de leur bien-être.</li>
+<li>Un élève a indiqué que certains enseignants pouvaient exercer une pression importante, avec parfois des remarques vécues comme blessantes.</li>
+<li>Un élève du CVL a cité un chiffre de 19,5 % d'élèves ressentant de la dépression et de la solitude face à Parcoursup et à l'orientation. La source et la méthode de calcul de ce chiffre n'ont pas été précisées dans les échanges ; il ne s'agit donc pas d'une donnée officielle du lycée.</li>
+</ul>
+</div>
+
+<div class="sg sg-response">
+<span class="sg-label">🏫 Réponses et précisions apportées</span>
+<ul class="plain">
+<li>La CPE a indiqué que des activités de gestion du stress, des émotions et d'amélioration du sommeil doivent être proposées au lycée.</li>
+<li>Deux personnels de la vie scolaire sont actuellement en formation pour devenir référents en santé mentale.</li>
+<li>Il a été précisé que ces activités ne remplaceraient pas un accompagnement psychologique.</li>
+</ul>
+</div>
+
+<div class="sg sg-track">
+<span class="sg-label">💡 Pistes évoquées</span>
+<ul class="plain">
+<li>Le déploiement, au lycée, d'activités autour de la gestion du stress, des émotions et du sommeil — sans qu'un calendrier précis ait été communiqué pendant la rencontre.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- ============ THEME 4 ============ -->
+<section id="theme4">
+<h2 class="chapter-title">🍽️ Restauration scolaire</h2>
+<div class="theme-block">
+
+<div class="sg sg-expressed">
+<span class="sg-label">🗣️ Ce que les élèves ont exprimé</span>
+<ul class="plain">
+<li>Les files d'attente sont jugées trop longues et le temps disponible pour manger trop court : 45 minutes à une heure ne suffiraient pas toujours.</li>
+<li>Une demande de davantage de diversité dans les plats a été formulée, avec notamment plus de pâtes et moins de blé.</li>
+<li>Le troisième service est perçu comme disposant de beaucoup moins de choix, notamment pour les entrées et les desserts.</li>
+<li>L'installation de davantage de machines pour accélérer le passage a été suggérée.</li>
+</ul>
+</div>
+
+<div class="sg sg-response">
+<span class="sg-label">🏫 Réponses et précisions apportées</span>
+<ul class="plain">
+<li>L'équipe a reconnu les difficultés liées à la capacité et à la place disponible dans la salle de restauration.</li>
+<li>Le lycée fonctionne avec trois services et réfléchit à des solutions concernant l'organisation et les menus.</li>
+</ul>
+</div>
+
+<div class="sg sg-track">
+<span class="sg-label">💡 Pistes évoquées</span>
+<ul class="plain">
+<li>Aucune mesure précise ni aucun calendrier de mise en œuvre n'ont été consignés dans les notes prises pendant la rencontre.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- ============ SYNTHESE ============ -->
+<section id="synthese">
+<h2 class="chapter-title">📝 Synthèse générale</h2>
+<div class="box box-blue">
+<p>Quatre préoccupations transversales ressortent de ces échanges. L'<strong>orientation et Parcoursup</strong> arrivent en tête : les élèves demandent des informations plus claires et plus précoces sur les spécialités et les formations, ainsi qu'une meilleure compréhension des mécanismes de sélection. La <strong>charge de travail et les emplois du temps</strong> sont également au centre des discussions, entre journées fragmentées et devoirs à la maison. Le <strong>stress et le bien-être</strong> apparaissent comme un sujet transversal, lié aux notes, à l'orientation et au manque de temps. Enfin, la <strong>restauration scolaire</strong> a fait l'objet de remarques sur les files d'attente et la diversité des menus.</p>
+<p style="margin-top:10px;">Ces échanges permettent de mieux identifier les attentes exprimées par les élèves, mais ne constituent pas, en eux-mêmes, un plan d'action adopté par le lycée.</p>
+</div>
+</section>
+
+<!-- ============ CONCLUSION ============ -->
+<section id="conclusion">
+<h2 class="chapter-title">🤝 Et maintenant ?</h2>
+<p>L'UNAAPE souhaite continuer à faire remonter les préoccupations des familles et des élèves, à informer les parents et à favoriser un dialogue constructif avec le lycée. Les pistes évoquées lors de cette table ronde n'engagent pas, à ce stade, de calendrier ni de décision formelle de la part de l'établissement — nous resterons attentifs à leur suite et reviendrons vers vous dès que nous en saurons davantage.</p>
+<p class="signature">L'équipe UNAAPE – Lycée Descartes</p>
+
+<div class="closing" style="margin-top:28px;">
+<h2>💬 Une question, une préoccupation à nous faire remonter ?</h2>
+<p>N'hésitez pas à nous écrire : c'est aussi comme cela que nous construisons les sujets que nous portons auprès du lycée.</p>
+<a href="mailto:unaape.descartes78@gmail.com" class="cta-btn">📧 unaape.descartes78@gmail.com</a>
+</div>
+
+<div style="text-align:center;">
+<a href="#haut" class="back-to-top">↑ Retour en haut</a>
+</div>
+</section>
+
+</div>
+
+<footer>
+UNAAPE Lycée Descartes — Montigny-le-Bretonneux<br>
+Restitution établie à partir de notes prises pendant la table ronde CVL du 9 octobre 2026. Les propos ont été reformulés pour faciliter la lecture.
+</footer>
+
+</body>
+</html>
