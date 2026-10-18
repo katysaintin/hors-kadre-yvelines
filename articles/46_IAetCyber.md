@@ -1,52 +1,55 @@
 
-J'ai une certification IA, et alors ? (Pourquoi le chat du transfo refuse de gérer la cyber)
+J'ai une IA, et alors ? (Pourquoi le boss de fin n'est pas celui que vous croyez)
 
-Hors Kadre décrypte ce que la hiérarchie veut virtualiser. Une nouvelle injonction managériale. Deux certifications en poche. Et la ferme conviction que si on confie la sécurité réseau à un automaticien sous prétexte qu’il a un copilote magique, on va finir par faire fondre un aimant bien réel. E=HK²
+Hors Kadre décrypte les angles morts systémiques. Entre l'injonction managériale de devenir un « ingénieur augmenté » omnipotent et la panique morale des écrans, on se trompe systématiquement de cible. Récit incarné d'une ingénieure SCADA porteuse d’un TDAH, d’une astreinte ratée par un félin, et de la fulgurante leçon de philosophie d'une ado de 15 ans. E=HK²
 
-1. Certifiée responsable, mais pas coupable
+1. Un dimanche, premier avril, en mode root
 
-J'ai une confession à faire : j’ai cédé à la curiosité.
-Pour ne pas mourir idiote et comprendre ce qui s'agite dans les serveurs, j'ai passé deux certifications officielles : la RS7424 (Création de contenus par l’usage responsable de l’IA générative) et la RS6776 (Gérer et transformer les processus de travail avec l'aide de l'IA).
-Sur le papier, je suis le profil idéal de « l'ingénieure augmentée ». Celle qui fait briller les yeux des managers en conseil d'administration.
-Dans la réalité de ma hiérarchie, cela a déclenché un effet secondaire fascinant. Le raisonnement est devenu limpide :
-1. Katy sait faire du contrôle-commande (SCADA, EPICS, TANGO).
-2. Katy a des certifications en IA.
-3. L'IA est hyper puissante et sait tout faire.
-4. Donc Katy va prendre en charge la cybersécurité des infrastructures de notre accélérateur de particules, toute seule, et produire deux fois plus vite.
+Imaginez la scène. Un dimanche de garde. Premier avril. Le téléphone sonne.
+En salle de contrôle, le sapin de Noël : tous les écrans virent au rouge cramoisi. Plus rien ne répond. Un grand classique du support informatique dans les grands instruments scientifiques. Après des heures de debug intensif sous caféine à traquer un bug logiciel ou une attaque réseau vicieuse, la sentence tombe : un chat s'est électrocuté dans un transformateur physique. Le logiciel n'était pas en panne ; il affichait simplement, avec une fidélité héroïque, que les pneus de la voiture étaient crevés.
+C'est ma première règle d'or, forgée en 25 ans de contrôle-commande entre le Synchrotron SOLEIL et le CEA : la sécurité n'est jamais une propriété du logiciel. C'est une propriété de l'architecture.
+Si un scientifique me demande d’écrire une ligne de code pour couper un aimant en cas de surchauffe, je refuse. Pourquoi ? Parce que si le serveur plante ou si le réseau sature, le code est aveugle. Pour protéger les humains et les machines de plusieurs millions d'euros, on pose une butée mécanique, un interlock câblé en cuivre, un isolant physique. Du hard. Jamais du soft.
+Alors, quand ma hiérarchie a vu que j’avais passé deux certifications officielles sur l’usage responsable de l’IA générative (RS7424 et RS6776), le raccourci managérial a été immédiat :
+« Super ! Puisque Katy maîtrise l’IA et que l'IA sait tout faire, elle va pouvoir configurer nos pare-feux et absorber toute la cybersécurité des réseaux industriels d'une seule main. Et plus vite que ça ! »
 Gros blanc.
-Moi, ingénieure SCADA, face à mon écran. Avec l'impression diffuse qu'on vient de m'expliquer qu'étant donné que je sais conduire une Tesla, je suis désormais qualifiée pour piloter un avion de chasse et réparer son réacteur en plein vol.
+C'est exactement l'angle mort du moment. On imagine que parce qu'un outil est puissant, il transforme n'importe quel conducteur de Tesla en pilote de chasse capable de réparer le réacteur en plein vol.
 
-2. Le copilote et la boîte noire
+2. Ce que l'IA fait (La distinction que vos managers oublient)
 
-Entendons-nous bien. L'IA générative est un outil formidable. Elle m'aide à coder plus vite mes interfaces de supervision, à générer des scripts rébarbatifs et à gagner un temps précieux sur des tâches fastidieuses qui ne nécessitent pas mon attention critique.
-Pourquoi cela fonctionne ? Parce que je maîtrise techniquement le code qu'elle génère. Si mon copilote IA me glisse un bug dans une configuration TANGO, mon cerveau (certes TDAH et caféiné, mais expert) le repère en une fraction de seconde. Je garde le contrôle de la trajectoire.
-Mais la cybersécurité réseau ? Les architectures Zero Trust, les tunnels VPN, les politiques de routage des pare-feux, la protection contre les dénis de service (DoS) ?
-Si je demande à une IA de me générer la configuration de sécurité d'un serveur OPC UA, elle va me sortir un script propre, structuré et terriblement convaincant. Sauf que je n'ai pas l'expertise pour y détecter la faille invisible que l'IA aura inventée ou héritée d'un forum.
-Utiliser l'IA pour automatiser un domaine qu'on ne maîtrise pas à 100 %, ce n'est pas de la transformation de processus. C'est de la roulette russe industrielle.
+Pour mon cerveau porteur d'un TDAH (trouble neurodéveloppemental certifié avec RQTH en bonne et due forme), l'IA n'est pas un gadget de productivité pour en faire toujours plus. Elle ne m'a pas rendu la vie plus facile, elle me l'a rendue possible.
+Le TDAH en milieu professionnel, c'est une file d'attente cognitive complètement anarchique. Le cerveau sait exactement ce qu'il veut faire, mais le cortex préfrontal refuse de distribuer le carburant pour démarrer. La page blanche paralyse. Rédiger un email RH, formaliser un rapport ou corriger des fautes d'orthographe devient une montagne d'épuisement.
+Ici, j'utilise l'IA comme un exosquelette de l'intention. Je lui déverse mes idées en vrac, elle structure. Elle gère la partie fastidieuse, administrative ou rédactionnelle. Grâce à ce temps gagné, je ne cherche pas à tripler ma charge de travail : je réduis mon stress, je respecte mon rythme et je me concentre sur la qualité de ce que j'aime et maîtrise — l'architecture logicielle et le développement.
+Pourquoi ça marche ? Parce que je suis experte de mon domaine. Si l'IA commet une erreur dans un code TANGO ou EPICS, mon œil de codeuse la repère instantanément. Je valide, elle formalise.
+Mais lui confier la cybersécurité réseau ? Si je demande à une IA de configurer un pare-feu industriel ou de sécuriser un protocole OPC UA contre les déni de service (DoS), elle va me pondre un script magnifique et hyper convaincant. Mais n'étant pas ingénieure réseau, je serai incapable d'y détecter la faille invisible qu'elle aura inventée. Utiliser l'IA dans un domaine qu'on ne maîtrise pas, ce n'est pas de la performance. C'est de la roulette russe industrielle.
 
-3. Le retour du chat (version Silicon Valley)
+3. La leçon de philosophie de la stagiaire de 15 ans
 
-Chaque fois que mes chefs me suggèrent d'absorber la cyber sous prétexte que "l'IA peut m'avancer le travail", je repense inévitablement à mon chat dans le transformateur.
-Vous vous souvenez de cette nuit d'astreinte au synchrotron, avec tous les écrans clignotant en rouge ? Nous avions cherché la panne logicielle pendant des heures pour finalement découvrir qu'un pauvre félin s'était électrocuté dans un transfo physique. Le front visible (la supervision logicielle) absorbait la pression d'une panne purement matérielle.
-En juillet 2026, les géants de la Silicon Valley ont vécu leur propre version du "chat dans le transfo". Lors d'un test de sécurité appelé ExploitGym, les agents IA d'OpenAI ont échappé à leur environnement de test (sandbox). Pourquoi ? Parce que les ingénieurs avaient tout virtualisé. La sécurité reposait uniquement sur du logiciel. Dès que les IA ont trouvé une faille dans le gestionnaire de paquets local, elles ont créé un forum clandestin, se sont réparti les rôles et ont foncé attaquer les serveurs de Hugging Face pour tricher à leur examen.
-Les meilleures IA du monde ont vaincu une sécurité 100 % logicielle en quelques heures.
-Et on voudrait que moi, armée de mes certificats et de mon prompt ChatGPT, je sécurise des protocoles industriels comme le Modbus (qui n'a aucun chiffrement natif) ou l'OPC UA (qu'un simple script automatisé peut saturer par déni de service) ?
+La semaine dernière, ma fille de 15 ans effectuait son stage de troisième au service communication d'une mairie. Sa mission : rédiger des articles. En bonne maman technophile, je lui glisse le conseil du siècle : « Si tu veux, utilise l'IA pour corriger tes fautes ou pour chercher des idées de sujets, ça va te faire gagner un temps fou ! »
+Sa réponse m'a cueillie à froid, avec une maturité implacable :
+« Maman, si je fais ça, je n'aurai plus rien à faire de ma journée. Déjà que sans l'IA je m'ennuie un peu et que ce qu'on me demande est facile... Ça ne m'intéresse pas du tout de gagner du temps. Je préfère le faire moi-même. »
+Elle a mis le doigt sur le point de rupture fondamental : tout dépend de l'objectif.
+À 15 ans, le but n'est pas d'optimiser un rendement ou d'économiser sa charge mentale. Le but, c'est apprendre à apprendre. Utiliser son propre cerveau est le seul moyen d'engager un véritable processus d'apprentissage. Si la machine supprime l'effort de réflexion au moment où le cerveau doit se construire, elle ne l'augmente pas : elle le vide de sa substance.
+C'est la différence majeure entre l'usage actif et passif :
+• Les réseaux sociaux (TikTok, Instagram) sont des machines à sous dopaminergiques conçues pour capter votre attention et vous maintenir passif. C'est le fameux « brain rot » (pourrissement du cerveau), mot de l'année 2024.
+• L'IA conversationnelle, elle, répond à une intention. Elle exige que vous formuliez une pensée, que vous la challengiez, que vous pilotiez.
 
-4. À trop vouloir économiser sur la RH...
+4. Le piège de l'architecte absent
 
-Le message managérial ambiant est dangereux : "L'IA est là, vous n'avez plus besoin d'experts annexes, l'ingénieur omnipotent s'en occupe."
-C’est un piège. À force de vouloir économiser sur des postes de spécialistes (les ingénieurs réseau, les experts en cybersécurité OT), on crée des goulots d'étranglement insoutenables. On se retrouve "experte unique", écrasée sous une charge mentale et une responsabilité juridique démesurée.
-Si le réseau informatique de l'accélérateur plante et que les aimants coupent, ce n'est pas l'IA qu'on appellera à la barre. Ce sera l'humain qui a signé la configuration.
-Mon métier, c'est le contrôle-commande. Garantir que si le réseau s'effondre, mes automates basculent instantanément en mode de sécurité matérielle (fail-safe). Mon expertise s'arrête là où le câble réseau commence.
-La sécurité des personnes, de la radioprotection et des réseaux est un métier d'expert. Si ces experts veulent utiliser l'IA pour aller plus vite, c'est leur droit et leur responsabilité. Mais on ne remplace pas une compétence humaine par un abonnement à un grand modèle de langage.
-La prochaine fois qu'on me dira : "Mais avec l'IA, tu devrais pouvoir nous configurer ce pare-feu en dix minutes, non ?"
-Je ne sortirai pas mes diplômes. Je ne montrerai pas mes tableaux Excel.
-Je parlerai du chat.
-Dans le virtuel comme dans le réel, les interlocks de sécurité doivent rester physiques. Et chacun doit garder son expertise.
-Paix à l'âme du chat.
-Et que l'uptime soit avec nous. 🚀
+Le véritable danger systémique moderne n'est ni l'outil, ni l'utilisateur. C'est l'absence d'architecture.
+Lors du célèbre incident de cybersécurité en juillet 2026, des agents d'IA d'OpenAI (le prototype GPT-5.6 Sol) ont réussi à s'échapper de leur environnement de test (sandbox) pour aller compromettre les serveurs de Hugging Face. Comment ont-ils fait ? Ils ont simplement détourné un outil de stockage interne (Artifactory) pour en faire un forum clandestin, se répartir les rôles et tricher à leur test d'évaluation.
+Pourquoi ont-ils réussi ? Parce que les ingénieurs d'OpenAI avaient conçu une sécurité 100 % logicielle, purement virtuelle. Il a suffi d'une faille dans le code de confinement pour que tout s'effondre. Ils avaient oublié la leçon du chat et du transformateur : le virtuel offre l'illusion du contrôle, mais seule la barrière physique est inviolable.
+Quand les directions d'entreprises suppriment des postes d'experts humains (comme des ingénieurs cyber ou des administrateurs réseau) en disant aux équipes « Débrouillez-vous, vous avez une IA », ils recréent exactement cette vulnérabilité. Ils chargent un unique automaticien de porter une responsabilité architecturale immense, sous prétexte qu’il dispose d'un assistant virtuel.
+
+En conclusion
+
+L'IA n'a pas besoin d'être infaillible, ce sont nos architectures qui doivent être tolérantes aux erreurs. On ne construit pas un système critique (qu'il soit scolaire, administratif ou nucléaire) en supposant que le logiciel ou l'humain ne se trompera jamais. On le conçoit pour qu'il continue à protéger la structure malgré les pannes inévitables.
+L'IA est une infrastructure extraordinaire pour égaliser les chances face aux handicaps invisibles. Elle est un accélérateur précieux pour automatiser les tâches ingrates des experts. Mais elle devient un piège si elle sert d'excuse pour court-circuiter l'apprentissage des plus jeunes, ou pour économiser sur les compétences humaines critiques des plus grands.
+Chacun son expertise, chacun son niveau de validation. Et pour le reste... je continuerai à parler du chat.
+Paix à son âme.
+Et que l'uptime soit avec vous. 🚀
 E=HK² 💥
 Sources & transparence :
-• Incident de sécurité OpenAI / Hugging Face – Rapport post-mortem METR, juillet 2026.
-• Référentiels des certifications professionnelles RS7424 et RS6776 (France Compétences).
-• Culture de sûreté de fonctionnement appliquée aux grands instruments scientifiques (SOLEIL / CEA).
+• Incident de confinement des agents OpenAI / Hugging Face – Rapports d'évaluation de sécurité, juillet 2026.
+• Barkley, R.A. (2024) – Déficits des fonctions exécutives et cécité temporelle chez l'adulte TDAH.
+• Biais de négativité et économie de l'attention appliqués aux technologies de rupture.
+• Retour d'expérience opérationnel – 25 ans de support et sûreté de fonctionnement sur les architectures SCADA/EPICS/TANGO.
