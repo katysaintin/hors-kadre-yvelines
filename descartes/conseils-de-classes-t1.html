@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conseils de classe T1 – Lycée Descartes</title>
@@ -151,12 +154,51 @@
   .footer { text-align:center; padding:24px 16px 0; font-size:11px; color:var(--muted); }
   .footer strong { color:var(--navy); }
 
-  /* responsive */
-  @media (max-width: 500px) {
-    .conseil-table td:nth-child(4) { display:none; }
-    .conseil-table th:nth-child(4) { display:none; }
+  /* Liens e-mail : coupure propre au lieu de déborder */
+  .conseil-table td a[href^="mailto"] { overflow-wrap:anywhere; word-break:break-word; }
+  tr.urgent { background: var(--urgent-bg); }
+
+  /* ===== RESPONSIVE : tableau → cartes ===== */
+  @media (max-width: 680px) {
+    .header { padding:26px 18px 22px; }
+    .header h1 { font-size:22px; }
+    .header .badge { font-size:10px; letter-spacing:1px; }
+
+    .tabs { padding:16px 0 0; }
+    .tab { flex:1 1 0; text-align:center; padding:9px 6px; font-size:12.5px; }
+    .tab-content { margin:0; padding:10px; border-radius:0 0 12px 12px; }
+
+    .conseil-table, .conseil-table tbody { display:block; width:100%; }
+    .conseil-table thead { display:none; }
+
+    .conseil-table tbody tr {
+      display:grid;
+      grid-template-columns:auto 1fr;
+      gap:8px 12px;
+      align-items:center;
+      padding:12px 10px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      margin-bottom:10px;
+    }
+    .conseil-table tbody tr:last-child { margin-bottom:0; }
+    .conseil-table td { display:block; padding:0; min-width:0; background:transparent !important; }
+    .conseil-table td:nth-child(1) { grid-column:1; }
+    .conseil-table td:nth-child(2) { grid-column:2; }
+    .conseil-table td:nth-child(3),
+    .conseil-table td:nth-child(4) { grid-column:1 / -1; }
+
+    tr.urgent { border-color: var(--urgent-border) !important; }
+
+    .btn-wrap { flex-direction:row; flex-wrap:wrap; gap:6px; }
+    .btn-stats { margin-top:0; }
+    .btn-sondage, .btn-stats { padding:7px 12px; }
+
+    .memo-box, .individuel-box { margin-left:14px; margin-right:14px; }
   }
 </style>
+</head>
+<body>
 
 
 
@@ -203,7 +245,7 @@
       <tbody id="tbody-sec">
         <tr data-date="2026-11-23T18:30">
           <td><span class="classe-badge sec">2GT1</span></td>
-          <td class="date-cell"><span class="status-dot"></span>Lundi 11 novembre<span class="heure">18h30</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Lundi 23 novembre<span class="heure">18h30</span></td>
           <td><a href="mailto:2gt1-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt1-descartes@googlegroups.com</a></td>
           <td><div class="btn-wrap"><a class="btn-sondage" href="https://forms.gle/DwnYYZfETn263MLE7" target="_blank">📝 Sondage 2GT1</a><a class="btn-stats" href="https://docs.google.com/forms/d/1OpTVxA5GoByaQwofSQggtEml3U0ODoW_a88kLjsNP7A/viewanalytics" target="_blank">📊 Stats publiques</a></div></td>
         </tr>
@@ -256,7 +298,7 @@
           <td><div class="btn-wrap"><a class="btn-sondage" href="https://forms.gle/x2TdZyJ5SNcb5HY68" target="_blank">📝 Sondage 2GT9</a><a class="btn-stats" href="https://docs.google.com/forms/d/1wJ4TiXbIc2a5R4byz58QuaMGN-Xemjwc0YQ6gL2HP9g/viewanalytics" target="_blank">📊 Stats publiques</a></div></td>
         </tr>
   <tr data-date="2026-11-24T18:30">
-          <td><span class="classe-badge sec">2GT9</span></td>
+          <td><span class="classe-badge sec">2GT10</span></td>
           <td class="date-cell"><span class="status-dot"></span>Mardi 24 novembre<span class="heure">18h30</span></td>
           <td><a href="mailto:2gt10-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">2gt10-descartes@googlegroups.com</a></td>
           <td><div class="btn-wrap"><a class="btn-sondage" href="https://forms.gle/pZyTRmfamFYs6Kvz7" target="_blank">📝 Sondage 2GT10</a><a class="btn-stats" href="https://docs.google.com/forms/d/147CxioWy70lEATrFHBSi8z1SMhO8iic5gvTIvxUkb9A/viewanalytics" target="_blank">📊 Stats publiques</a></div></td>
@@ -403,7 +445,7 @@
         </tr>
         <tr data-date="2026-12-07T17:00">
           <td><span class="classe-badge stmg">TSTMG2</span></td>
-          <td class="date-cell"><span class="status-dot"></span>Vendredi 7 décembre<span class="heure">17h00</span></td>
+          <td class="date-cell"><span class="status-dot"></span>Lundi 7 décembre<span class="heure">17h00</span></td>
           <td><a href="mailto:tstmg2-descartes@googlegroups.com" style="font-size:11.5px;color:var(--sky);">tstmg2-descartes@googlegroups.com</a></td>
           <td><div class="btn-wrap"><a class="btn-sondage" href="https://forms.gle/zr9AAYqLYLggSGQb9" target="_blank">📝 Sondage TSTMG2</a><a class="btn-stats" href="https://docs.google.com/forms/d/1xnmpmD2j0CY3h78-i-L8vnlf8lfKdzMRmrBwD5Rtqxw/viewanalytics" target="_blank">📊 Stats publiques</a></div></td>
         </tr>
@@ -435,7 +477,7 @@
 
 <!-- FOOTER -->
 <div class="footer">
-  <p><strong>Représentants de parents d'élèves UNAAPE</strong><br>Lycée Descartes · Montigny-le-Bretonneux · Année 2025–2026</p>
+  <p><strong>Représentants de parents d'élèves du Lycée Descartes</strong><br>Lycée Descartes · Montigny-le-Bretonneux · Année 2026–2027</p>
   <p style="margin-top:6px;color:#b0bac8;">Document d'information — pour toute question, contactez vos représentants de classe.</p>
 </div>
 
@@ -468,3 +510,5 @@
 
   colorRows();
 </script>
+</body>
+</html>
